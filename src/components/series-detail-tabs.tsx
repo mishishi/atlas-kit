@@ -13,7 +13,13 @@ interface SeriesDetailTabsProps {
 type Tab = "all" | "newest" | "top";
 
 export function SeriesDetailTabs({ cards }: SeriesDetailTabsProps) {
-  const [tab, setTab] = useState<Tab>("all");
+  // Default to "top" — it's the most useful view (highest-scored cards first).
+  // If user lands via deep link (?tab=...), they'll get the right one.
+  const [tab, setTab] = useState<Tab>(() => {
+    if (typeof window === "undefined") return "top";
+    const initial = new URLSearchParams(window.location.search).get("tab");
+    return initial === "all" || initial === "newest" ? initial : "top";
+  });
 
   const sortedCards = (() => {
     if (tab === "newest") {

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import { ArrowLeft, ArrowRight, Sparkles, Loader2, Check, CheckCircle2, BookMarked } from "lucide-react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { ArrowLeft, ArrowRight, Sparkles, Loader2, Check, CheckCircle2, BookMarked, Lightbulb, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { THEME_TYPES, type ThemeType } from "@/lib/theme-types";
 import { SERIES_TYPES, type SeriesType, getDefaultSeriesSlugForKind, recommendSeries } from "@/lib/series-types";
@@ -29,18 +29,59 @@ const PALETTES: { key: string; label: string; colors: [string, string, string] }
 
 export function GenerationWizard() {
   const router = useRouter();
-  const [step, setStep] = useState<Step>(1);
-  const [topic, setTopic] = useState("");
-  const [kind, setKind] = useState<Kind>("pet");
-  const [seriesSlug, setSeriesSlug] = useState<string>(getDefaultSeriesSlugForKind("pet"));
-  const [palette, setPalette] = useState("auto");
+  const searchParams = useSearchParams();
+  // ── Restore state from URL on mount (deep-link support: share "stuck on step 3 with topic X") ──
+  const initialStep = (() => {
+    const s = Number(searchParams.get("step") ?? "1");
+    return s >= 1 && s <= 5 ? (s as Step) : 1;
+  })();
+  const initialTopic = searchParams.get("q") ?? "";
+  const initialKind = (() => {
+    const k = searchParams.get("kind") ?? "pet";
+    return THEME_TYPES.some((t) => t.key === k) ? (k as Kind) : "pet";
+  })();
+  const initialSeries = (() => {
+    const s = searchParams.get("series") ?? getDefaultSeriesSlugForKind(initialKind);
+    return s;
+  })();
+  const initialPalette = searchParams.get("palette") ?? "auto";
+
+  const [step, setStep] = useState<Step>(initialStep);
+  const [topic, setTopic] = useState(initialTopic);
+  const [kind, setKind] = useState<Kind>(initialKind);
+  const [seriesSlug, setSeriesSlug] = useState<string>(initialSeries);
+  const [palette, setPalette] = useState(initialPalette);
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // AbortController so user can cancel a 30-60s generation run
+  const abortRef = useRef<AbortController | null>(null);
+
+  // ── Sync state → URL (replaceState, no scroll) ──
+  const syncUrl = useCallback(
+    (next: { step?: Step; q?: string; kind?: Kind; series?: string; palette?: string }) => {
+      if (typeof window === "undefined") return;
+      const params = new URLSearchParams(window.location.search);
+      if (next.step) params.set("step", String(next.step));
+      if (next.q !== undefined) params.set("q", next.q);
+      if (next.kind) params.set("kind", next.kind);
+      if (next.series) params.set("series", next.series);
+      if (next.palette) params.set("palette", next.palette);
+      const qs = params.toString();
+      const url = qs ? `/create?${qs}` : "/create";
+      window.history.replaceState(null, "", url);
+    },
+    [],
+  );
 
   // When kind changes, re-default the series (and pre-highlight the best match for current topic)
   useEffect(() => {
     setSeriesSlug(getDefaultSeriesSlugForKind(kind));
   }, [kind]);
+
+  // Mirror step changes into the URL so the back button + shareable links work
+  useEffect(() => {
+    syncUrl({ step, q: topic, kind, series: seriesSlug, palette });
+  }, [step, topic, kind, seriesSlug, palette, syncUrl]);
 
   // AI recommender: rank series against current (topic, kind) for "推荐" badge
   const recommendations = useMemo(
@@ -59,11 +100,14 @@ export function GenerationWizard() {
   const handleGenerate = async () => {
     setGenerating(true);
     setError(null);
+    const controller = new AbortController();
+    abortRef.current = controller;
     try {
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic: topic.trim(), kind, seriesSlug, palette }),
+        signal: controller.signal,
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -72,10 +116,19 @@ export function GenerationWizard() {
       const data = await res.json();
       // Redirect to the newly created card detail page
       router.push(`/cards/${data.slug}`);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "生成失败,请重试");
+    } catch (e: any) {
+      if (e?.name === "AbortError") {
+        setError("已取消生成");
+      } else {
+        setError(e instanceof Error ? e.message : "生成失败,请重试");
+      }
       setGenerating(false);
+      abortRef.current = null;
     }
+  };
+
+  const handleCancelGenerate = () => {
+    abortRef.current?.abort();
   };
 
   return (
@@ -218,7 +271,10 @@ export function GenerationWizard() {
                       </div>
                       <p className="text-xs text-muted-foreground line-clamp-1">{s.tagline}</p>
                       {selected && reason && (
-                        <p className="text-[11px] text-gold-deep mt-1.5">💡 {reason}</p>
+                        <p className="text-[11px] text-gold-deep mt-1.5 flex items-start gap-1">
+                          <Lightbulb className="h-3 w-3 mt-0.5 shrink-0" aria-hidden="true" />
+                          <span>{reason}</span>
+                        </p>
                       )}
                     </div>
                     {selected && (
@@ -308,30 +364,47 @@ export function GenerationWizard() {
               </div>
             )}
 
-            <button
-              type="button"
-              onClick={handleGenerate}
-              disabled={generating}
-              aria-busy={generating}
-              className={cn(
-                "inline-flex min-h-[44px] items-center gap-2 rounded-md bg-gold-deep px-8 py-3 text-base font-medium text-cream shadow-card transition-all",
-                "hover:bg-gold hover:-translate-y-0.5",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0",
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <button
+                type="button"
+                onClick={handleGenerate}
+                disabled={generating}
+                aria-busy={generating}
+                className={cn(
+                  "inline-flex min-h-[44px] items-center gap-2 rounded-md bg-gold-deep px-8 py-3 text-base font-medium text-cream shadow-card transition-all",
+                  "hover:bg-gold hover:-translate-y-0.5",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                  "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0",
+                )}
+              >
+                {generating ? (
+                  <>
+                    <Loader2 className="h-5 w-5 animate-spin" aria-hidden="true" />
+                    AI 创作中...
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="h-5 w-5" aria-hidden="true" />
+                    生成图鉴
+                  </>
+                )}
+              </button>
+              {generating && (
+                <button
+                  type="button"
+                  onClick={handleCancelGenerate}
+                  className={cn(
+                    "inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-card px-5 py-3 text-sm font-medium",
+                    "hover:bg-muted",
+                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                    "transition-colors",
+                  )}
+                >
+                  <X className="h-4 w-4" aria-hidden="true" />
+                  取消
+                </button>
               )}
-            >
-              {generating ? (
-                <>
-                  <Loader2 className="h-5 w-5 animate-spin" aria-hidden="true" />
-                  AI 创作中...
-                </>
-              ) : (
-                <>
-                  <Sparkles className="h-5 w-5" aria-hidden="true" />
-                  生成图鉴
-                </>
-              )}
-            </button>
+            </div>
 
             {generating && (
               <p className="text-xs text-muted-foreground">

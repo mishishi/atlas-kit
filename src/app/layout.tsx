@@ -62,7 +62,7 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="light">
           <div className="flex min-h-dvh flex-col">
             <SiteHeader />
-            <main className="flex-1">{children}</main>
+            <main id="main" className="flex-1" tabIndex={-1}>{children}</main>
             <SiteFooter />
           </div>
         </ThemeProvider>

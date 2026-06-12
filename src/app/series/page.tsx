@@ -23,8 +23,8 @@ export default function SeriesPage() {
         </p>
       </header>
 
-      <div className="space-y-8">
-        {series.map((s) => {
+      <ul className="space-y-8 list-none p-0" aria-label="所有系列列表">
+        {series.map((s, index) => {
           // Pick: 1 hero (latest) + 5 thumbnails (rest)
           const sortedCards = [...s.cards].sort((a, b) =>
             a.createdAt < b.createdAt ? 1 : -1,
@@ -33,6 +33,7 @@ export default function SeriesPage() {
           const thumbs = sortedCards.slice(1, 6); // up to 5
 
           return (
+            <li>
             <Link
               key={s.slug}
               href={`/series/${s.slug}`}
@@ -53,7 +54,9 @@ export default function SeriesPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, 200px"
                       className="object-cover object-center"
-                      priority={false}
+                      // First series row's hero is the LCP candidate — preload it.
+                      // Other rows stay lazy so we don't bloat the initial bundle.
+                      priority={index === 0}
                     />
                   ) : (
                     <div
@@ -156,13 +159,14 @@ export default function SeriesPage() {
                 </div>
               </div>
             </Link>
+            </li>
           );
         })}
-      </div>
+      </ul>
 
       {/* Stats footer */}
-      <div className="mt-16 rounded-lg border border-border bg-card p-6 paper-grain">
-        <h3 className="font-serif text-lg font-semibold mb-4">主题分布</h3>
+      <section aria-labelledby="kind-stats-title" className="mt-16 rounded-lg border border-border bg-card p-6 paper-grain">
+        <h2 id="kind-stats-title" className="font-serif text-lg font-semibold mb-4">主题分布</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
           {Object.entries(kindCounts).map(([kind, count]) => (
             <div key={kind} className="text-center">
@@ -173,7 +177,7 @@ export default function SeriesPage() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -2,48 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─────────────────────────────────────────────────────────────────────
+   Atlas Kit · 图鉴社 — Design Tokens
+   Editorial Archive · warm minimalism
+   All colors are HSL components (h s% l%) so they compose with
+   `hsl(var(--token) / <alpha>)`. Semantic layers below the brand palette
+   (surface / elevated / overlay / scrim) drive layout. Brand colors
+   (gold / sage / ink / cream / terracotta) remain available for accents.
+   ───────────────────────────────────────────────────────────────────── */
 @layer base {
   :root {
-    /* Atlas Kit — Light: warm cream + sage + ink
-       ui-ux-pro-max v2 direction: "Editorial Archive" (Minimalism & Swiss Style) */
-    --background: 38 30% 92%;       /* cream #F5F0E6 */
-    --foreground: 30 14% 16%;       /* ink #2E2A24 */
+    /* ── Brand surfaces (paper, inky, warm) ── */
+    --background: 38 30% 92%;        /* cream #F5F0E6 — page bg */
+    --foreground: 30 14% 16%;        /* ink #2E2A24 — body text */
+    --surface: 38 30% 92%;           /* alias of background, semantic */
+    --elevated: 0 0% 100%;           /* card on top of page */
+    --overlay: 38 30% 96%;           /* popover / menu / tooltip */
+    --scrim: 30 14% 16% / 0.45;      /* modal backdrop (HSL with alpha) */
+
+    /* ── Brand primary (antique gold) ── */
+    --primary: 30 38% 57%;           /* gold #B8956A — CTA, links */
+    --primary-foreground: 38 30% 95%; /* on-gold text */
+    --on-primary: 38 30% 95%;
+
+    /* ── Brand secondary (botanic sage) ── */
+    --secondary: 95 15% 67%;         /* sage #A8B89C */
+    --secondary-foreground: 30 14% 16%;
+    --accent: 95 15% 67%;
+    --accent-foreground: 30 14% 16%;
+
+    /* ── Neutrals ── */
+    --muted: 38 25% 88%;             /* soft beige — chips, code blocks */
+    --muted-foreground: 30 8% 40%;   /* captions, secondary text */
+    --border: 35 25% 84%;            /* line, divider */
+    --input: 35 25% 84%;             /* form field border */
+    --ring: 30 38% 57%;              /* focus ring matches primary */
     --card: 0 0% 100%;
     --card-foreground: 30 14% 16%;
-    --primary: 30 38% 57%;          /* gold #B8956A */
-    --primary-foreground: 30 14% 16%;
-    --secondary: 95 15% 67%;        /* sage #A8B89C */
-    --secondary-foreground: 30 14% 16%;
-    --muted: 38 25% 88%;            /* soft beige */
-    --muted-foreground: 30 8% 40%;
-    --accent: 95 15% 67%;           /* sage */
-    --accent-foreground: 30 14% 16%;
-    --border: 35 25% 84%;
-    --input: 35 25% 84%;
-    --ring: 30 38% 57%;
-    --destructive: 8 60% 55%;       /* terracotta-ish red for error states */
+
+    /* ── Status ── */
+    --destructive: 8 60% 55%;        /* terracotta — error / danger */
     --destructive-foreground: 38 30% 95%;
+    --destructive-soft: 8 60% 92%;   /* light error bg */
+    --warning: 35 75% 50%;           /* amber — caution */
+    --warning-foreground: 30 14% 16%;
+    --warning-soft: 35 75% 92%;
+    --success: 145 40% 45%;          /* forest — success */
+    --success-foreground: 38 30% 95%;
+    --success-soft: 145 40% 92%;
+
+    /* ── Brand-named tokens (free to use directly) ── */
+    --brand-cream: 38 30% 92%;
+    --brand-cream-deep: 35 25% 84%;
+    --brand-sage: 95 15% 67%;
+    --brand-sage-deep: 95 18% 45%;
+    --brand-gold: 30 38% 57%;
+    --brand-gold-deep: 28 32% 45%;
+    --brand-ink: 30 14% 16%;
+    --brand-ink-soft: 30 8% 40%;
+    --brand-ink-mute: 30 8% 60%;
+    --brand-terracotta: 8 50% 56%;
+    --brand-line: 35 25% 84%;
+    --brand-line-soft: 38 30% 90%;
   }
 
   .dark {
-    /* Atlas Kit — Dark: warm charcoal + dim gold */
-    --background: 30 8% 11%;        /* deep charcoal */
-    --foreground: 38 30% 88%;
-    --card: 30 6% 16%;
-    --card-foreground: 38 30% 88%;
-    --primary: 35 38% 65%;          /* dimmer gold */
+    /* ── Brand surfaces (deep charcoal, slightly warm) ── */
+    --background: 30 8% 11%;         /* deep charcoal */
+    --foreground: 38 30% 88%;        /* off-cream text */
+    --surface: 30 8% 11%;            /* alias */
+    --elevated: 30 6% 16%;           /* cards: +5% lift */
+    --overlay: 30 6% 20%;            /* popover: +9% lift */
+    --scrim: 0 0% 0% / 0.65;         /* darker scrim for OLED-like feel */
+
+    /* ── Brand primary — brighter gold for dark on contrast ── */
+    --primary: 35 50% 70%;           /* dimmer gold, lighter for dark */
     --primary-foreground: 30 8% 11%;
-    --secondary: 95 10% 35%;        /* dark sage */
+    --on-primary: 30 8% 11%;
+
+    /* ── Brand secondary — desaturated sage ── */
+    --secondary: 95 12% 45%;
     --secondary-foreground: 38 30% 88%;
+    --accent: 95 12% 45%;
+    --accent-foreground: 38 30% 88%;
+
+    /* ── Neutrals ── */
     --muted: 30 6% 20%;
     --muted-foreground: 38 12% 65%;
-    --accent: 95 10% 35%;
-    --accent-foreground: 38 30% 88%;
-    --border: 30 6% 22%;
-    --input: 30 6% 22%;
-    --ring: 35 38% 65%;
-    --destructive: 8 50% 50%;
+    --border: 30 6% 24%;             /* slightly lighter than card for visibility */
+    --input: 30 6% 24%;
+    --ring: 35 50% 70%;
+    --card: 30 6% 16%;
+    --card-foreground: 38 30% 88%;
+
+    /* ── Status (darker mode: brighter foreground, deeper bg) ── */
+    --destructive: 8 60% 60%;
     --destructive-foreground: 38 30% 95%;
+    --destructive-soft: 8 40% 22%;
+    --warning: 35 70% 60%;
+    --warning-foreground: 30 8% 11%;
+    --warning-soft: 35 40% 22%;
+    --success: 145 45% 55%;
+    --success-foreground: 30 8% 11%;
+    --success-soft: 145 30% 22%;
+
+    /* ── Brand in dark: lift cream/sage, soften ink ── */
+    --brand-cream: 38 25% 88%;
+    --brand-cream-deep: 38 18% 75%;
+    --brand-sage: 95 12% 55%;
+    --brand-sage-deep: 95 18% 70%;
+    --brand-gold: 35 50% 70%;
+    --brand-gold-deep: 35 40% 55%;
+    --brand-ink: 38 30% 88%;          /* ink flips to off-cream in dark */
+    --brand-ink-soft: 38 15% 70%;
+    --brand-ink-mute: 38 8% 55%;
+    --brand-terracotta: 8 50% 65%;
+    --brand-line: 30 6% 28%;
+    --brand-line-soft: 30 6% 22%;
   }
 
   * {
@@ -62,8 +137,6 @@
   }
 
   /* ───────── a11y: focus-visible (skill ux HIGH) ───────── */
-  /* Replace default outline with a 2px gold ring; only show on keyboard nav,
-     not on mouse click. Applied to all interactive elements. */
   *:focus {
     outline: none;
   }
@@ -84,8 +157,6 @@
   }
 
   /* ───────── editorial typography defaults ───────── */
-  /* Headings default to serif (Editorial Archive direction);
-     body text uses sans. Authors can opt-out with .font-sans. */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif), "Songti SC", "Source Han Serif SC", serif;
     font-weight: 600;
@@ -129,4 +200,17 @@
     font-variant-numeric: tabular-nums;
     font-feature-settings: "tnum" 1;
   }
+
+  /* ── Semantic surface helpers (use these instead of raw colors) ── */
+  .bg-surface { background-color: hsl(var(--surface)); }
+  .bg-elevated { background-color: hsl(var(--elevated)); }
+  .bg-overlay { background-color: hsl(var(--overlay)); }
+  .text-foreground { color: hsl(var(--foreground)); }
+  .text-muted-foreground { color: hsl(var(--muted-foreground)); }
+
+  /* ── Soft status bg (for messages, badges) ── */
+  .bg-destructive-soft { background-color: hsl(var(--destructive-soft)); }
+  .text-destructive-soft { color: hsl(var(--destructive-soft)); }
+  .bg-warning-soft { background-color: hsl(var(--warning-soft)); }
+  .bg-success-soft { background-color: hsl(var(--success-soft)); }
 }

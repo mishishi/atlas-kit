@@ -63,6 +63,7 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               alt={`${card.title} 科普图鉴`}
               fill
               priority
+              quality={90}
               sizes="(max-width: 1024px) 100vw, 480px"
               className="object-cover"
             />
@@ -131,18 +132,20 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          {/* Palette */}
+          {/* Palette — horizontal single row, more compact for sidebar density. */}
           <div>
             <h3 className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">配色</h3>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-3">
               {card.palette.map((color, i) => (
                 <div key={i} className="flex flex-col items-center">
                   <div
-                    className="h-12 w-12 rounded-md border border-border shadow-card"
+                    className="h-10 w-10 rounded-md border border-border shadow-card"
                     style={{ backgroundColor: color }}
                     aria-label={`Color ${color}`}
                   />
-                  <span className="mt-1 text-[10px] font-mono text-muted-foreground">{color}</span>
+                  <span className="mt-1 text-[10px] font-mono text-foreground/70 tabular-nums">
+                    {color}
+                  </span>
                 </div>
               ))}
             </div>
@@ -192,6 +195,17 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               </Link>
             ))}
           </div>
+          {seriesCards.length > 4 && (
+            <div className="mt-6 text-center">
+              <Link
+                href={`/series/${card.series}`}
+                className="inline-flex min-h-[44px] items-center gap-1.5 text-sm text-gold-deep hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+              >
+                查看 {seriesName} 全部 {seriesCards.length} 张
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          )}
         </section>
       )}
     </article>

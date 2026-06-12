@@ -23,12 +23,16 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Atlas Kit design tokens — warm minimalism + editorial
+        // ── Semantic layers (use these for layout) ──
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: "hsl(var(--surface))",
+        elevated: "hsl(var(--elevated))",
+        overlay: "hsl(var(--overlay))",
+        scrim: "hsl(var(--scrim))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -49,24 +53,37 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // ── Status (with -soft variants for tinted backgrounds) ──
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+          soft: "hsl(var(--destructive-soft))",
         },
-        // Brand palette — "Editorial Archive" direction
-        // Warm cream paper, sage botanic, antique gold, deep ink
-        cream: "#F5F0E6",
-        "cream-deep": "#EBE3D2",
-        sage: "#A8B89C",
-        "sage-deep": "#7A8B6E",
-        gold: "#B8956A",
-        "gold-deep": "#8C6F4D",
-        ink: "#2E2A24",
-        "ink-soft": "#6B655A",
-        "ink-mute": "#9C9588",
-        terracotta: "#C97064",
-        line: "#E5DED0",
-        "line-soft": "#EFE9DC",
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+          soft: "hsl(var(--warning-soft))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+          soft: "hsl(var(--success-soft))",
+        },
+        // ── Brand palette — "Editorial Archive" direction.
+        // Pulled from CSS vars so dark mode flips correctly.
+        // Use these for explicit brand moments only; prefer semantic tokens above. ──
+        cream: "hsl(var(--brand-cream))",
+        "cream-deep": "hsl(var(--brand-cream-deep))",
+        sage: "hsl(var(--brand-sage))",
+        "sage-deep": "hsl(var(--brand-sage-deep))",
+        gold: "hsl(var(--brand-gold))",
+        "gold-deep": "hsl(var(--brand-gold-deep))",
+        ink: "hsl(var(--brand-ink))",
+        "ink-soft": "hsl(var(--brand-ink-soft))",
+        "ink-mute": "hsl(var(--brand-ink-mute))",
+        terracotta: "hsl(var(--brand-terracotta))",
+        line: "hsl(var(--brand-line))",
+        "line-soft": "hsl(var(--brand-line-soft))",
       },
       borderRadius: {
         // 4/8 dp rhythm — used by skill best practice

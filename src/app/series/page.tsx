@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Layers, Sparkles } from "lucide-react";
 import { getAllSeries, getKindCounts } from "@/lib/data";
 import { displayLabel } from "@/lib/types";
+import { THEME_TYPES } from "@/lib/theme-types";
 
 export const metadata = {
   title: "所有系列 · 图鉴社",
@@ -168,14 +169,23 @@ export default function SeriesPage() {
       <section aria-labelledby="kind-stats-title" className="mt-16 rounded-lg border border-border bg-card p-6 paper-grain">
         <h2 id="kind-stats-title" className="font-serif text-lg font-semibold mb-4">主题分布</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-          {Object.entries(kindCounts).map(([kind, count]) => (
-            <div key={kind} className="text-center">
-              <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">{count}</div>
-              <div className="text-xs text-muted-foreground mt-1">
-                {displayLabel(kind)}
+          {THEME_TYPES.map((t) => {
+            const count = kindCounts[t.key] ?? 0;
+            return (
+              <div
+                key={t.key}
+                className="text-center rounded-md py-2"
+                style={{ opacity: count === 0 ? 0.4 : 1 }}
+              >
+                <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">
+                  {count}
+                </div>
+                <div className="text-xs text-muted-foreground mt-1">
+                  {displayLabel(t.key)}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     </div>

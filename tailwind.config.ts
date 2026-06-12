@@ -141,11 +141,17 @@ const config: Config = {
           from: { opacity: "0", transform: "scale(0.95)" },
           to: { opacity: "1", transform: "scale(1)" },
         },
+        // wizard step transition: subtle slide + fade
+        "step-in": {
+          from: { opacity: "0", transform: "translateX(12px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         "fade-in": "fade-in 250ms cubic-bezier(0.16, 1, 0.3, 1)",
         "scale-in": "scale-in 200ms cubic-bezier(0.16, 1, 0.3, 1)",
         "shimmer": "shimmer 2s linear infinite",
+        "step-in": "step-in 280ms cubic-bezier(0.16, 1, 0.3, 1)",
       },
       transitionTimingFunction: {
         "spring": "cubic-bezier(0.16, 1, 0.3, 1)",

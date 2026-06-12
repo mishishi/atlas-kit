@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Toaster } from "sonner";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -43,9 +44,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
   openGraph: {
     title: "图鉴社 · Atlas Kit",
-    description: "系列化中文科普图鉴卡片集",
+    description: "系列化中文科普图鉴卡片集 · 博物馆质感 · AI 一键生成",
     type: "website",
     locale: "zh_CN",
+    // images auto-resolved from /opengraph-image.tsx (1200x630)
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "图鉴社 · Atlas Kit",
+    description: "系列化中文科普图鉴卡片集",
   },
 };
 
@@ -66,6 +73,19 @@ export default function RootLayout({
             <SiteFooter />
           </div>
         </ThemeProvider>
+        {/* Toast notifications — inherits theme from <html class="dark"> via sonner theme="system" */}
+        <Toaster
+          position="bottom-center"
+          theme="system"
+          richColors
+          closeButton
+          toastOptions={{
+            classNames: {
+              toast: "font-sans",
+              title: "font-serif",
+            },
+          }}
+        />
       </body>
     </html>
   );

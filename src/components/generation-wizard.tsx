@@ -3,9 +3,11 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowLeft, ArrowRight, Sparkles, Loader2, Check, CheckCircle2, BookMarked, Lightbulb, X } from "lucide-react";
+import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { THEME_TYPES, type ThemeType } from "@/lib/theme-types";
 import { SERIES_TYPES, type SeriesType, getDefaultSeriesSlugForKind, recommendSeries } from "@/lib/series-types";
+import cardsData from "../../data/cards.json";
 
 type Step = 1 | 2 | 3 | 4 | 5;
 type Kind = ThemeType["key"];
@@ -27,24 +29,97 @@ const PALETTES: { key: string; label: string; colors: [string, string, string] }
   { key: "botanical", label: "植物系", colors: ["#F5F0E6", "#A8B89C", "#7A8B6E"] },
 ];
 
+// Top 3 most-picked kinds from existing data — used as a hint on step 2 so
+// new users know what's popular. Computed at module load (build-time).
+const POPULAR_KINDS: { key: Kind; label: string; count: number }[] = (() => {
+  const counts = new Map<Kind, number>();
+  for (const c of cardsData as { kind: Kind }[]) {
+    counts.set(c.kind, (counts.get(c.kind) ?? 0) + 1);
+  }
+  return Array.from(counts.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([k, count]) => ({
+      key: k,
+      label: THEME_TYPES.find((t) => t.key === k)?.label ?? k,
+      count,
+    }));
+})();
+
+function PopularKindsHint() {
+  if (POPULAR_KINDS.length === 0) return null;
+  return (
+    <p className="text-xs text-muted-foreground mb-2">
+      已有 {cardsData.length} 张图鉴, 最受欢迎的 3 个类型:{" "}
+      {POPULAR_KINDS.map((p, i) => (
+        <span key={p.key}>
+          <span className="font-medium text-foreground">{p.label}</span>
+          <span className="text-muted-foreground/70 tabular-nums ml-0.5">({p.count})</span>
+          {i < POPULAR_KINDS.length - 1 && <span className="mx-1.5">·</span>}
+        </span>
+      ))}
+    </p>
+  );
+}
+
+// Wizard state backup key — survives accidental page refresh / browser crash.
+const WIZARD_DRAFT_KEY = "atlas-kit:wizard-draft-v1";
+
+interface WizardDraft {
+  step: Step;
+  topic: string;
+  kind: Kind;
+  seriesSlug: string;
+  palette: string;
+  savedAt: number;
+}
+
+function loadDraft(): WizardDraft | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(WIZARD_DRAFT_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as WizardDraft;
+    // Expire drafts older than 7 days — they're stale
+    if (Date.now() - parsed.savedAt > 7 * 24 * 60 * 60 * 1000) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function clearDraft() {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.removeItem(WIZARD_DRAFT_KEY);
+  } catch {
+    // ignore quota / disabled storage
+  }
+}
+
 export function GenerationWizard() {
   const router = useRouter();
   const searchParams = useSearchParams();
   // ── Restore state from URL on mount (deep-link support: share "stuck on step 3 with topic X") ──
-  const initialStep = (() => {
-    const s = Number(searchParams.get("step") ?? "1");
-    return s >= 1 && s <= 5 ? (s as Step) : 1;
+  // URL takes precedence over localStorage; localStorage only kicks in if URL is empty.
+  const urlStep = (() => {
+    const s = Number(searchParams.get("step") ?? "");
+    return s >= 1 && s <= 5 ? (s as Step) : null;
   })();
-  const initialTopic = searchParams.get("q") ?? "";
+  const draft = loadDraft();
+  const initialStep =
+    urlStep ??
+    (draft && draft.step >= 1 && draft.step <= 5 ? draft.step : 1);
+  const initialTopic = searchParams.get("q") ?? draft?.topic ?? "";
   const initialKind = (() => {
-    const k = searchParams.get("kind") ?? "pet";
+    const k = searchParams.get("kind") ?? draft?.kind ?? "pet";
     return THEME_TYPES.some((t) => t.key === k) ? (k as Kind) : "pet";
   })();
   const initialSeries = (() => {
-    const s = searchParams.get("series") ?? getDefaultSeriesSlugForKind(initialKind);
+    const s = searchParams.get("series") ?? draft?.seriesSlug ?? getDefaultSeriesSlugForKind(initialKind);
     return s;
   })();
-  const initialPalette = searchParams.get("palette") ?? "auto";
+  const initialPalette = searchParams.get("palette") ?? draft?.palette ?? "auto";
 
   const [step, setStep] = useState<Step>(initialStep);
   const [topic, setTopic] = useState(initialTopic);
@@ -55,6 +130,22 @@ export function GenerationWizard() {
   const [error, setError] = useState<string | null>(null);
   // AbortController so user can cancel a 30-60s generation run
   const abortRef = useRef<AbortController | null>(null);
+
+  // ── Persist state to localStorage on every change (debounced 300ms) ──
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const timer = setTimeout(() => {
+      try {
+        const draft: WizardDraft = {
+          step, topic, kind, seriesSlug, palette, savedAt: Date.now(),
+        };
+        window.localStorage.setItem(WIZARD_DRAFT_KEY, JSON.stringify(draft));
+      } catch {
+        // ignore quota errors
+      }
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [step, topic, kind, seriesSlug, palette]);
 
   // ── Sync state → URL (replaceState, no scroll) ──
   const syncUrl = useCallback(
@@ -115,6 +206,12 @@ export function GenerationWizard() {
       }
       const data = await res.json();
       // Redirect to the newly created card detail page
+      clearDraft();
+      const seriesName = SERIES_TYPES.find((s) => s.slug === seriesSlug)?.name ?? seriesSlug;
+      toast.success(`已收录到「${seriesName}」`, {
+        description: `${data.title} · No.${data.image.match(/-(\w+)\.png$/)?.[1] ?? "?"}`,
+        duration: 4000,
+      });
       router.push(`/cards/${data.slug}`);
     } catch (e: any) {
       if (e?.name === "AbortError") {
@@ -137,35 +234,110 @@ export function GenerationWizard() {
       <div
         role="group"
         aria-label={`生成图鉴流程,当前第 ${step} 步,共 5 步`}
-        className="mb-8 flex items-center justify-center gap-2"
+        className="mb-8"
       >
-        {[1, 2, 3, 4, 5].map((s) => (
-          <div key={s} className="flex items-center">
-            <div
-              aria-current={step === s ? "step" : undefined}
-              className={cn(
-                "grid h-8 w-8 place-items-center rounded-full text-xs font-medium transition-colors",
-                step >= s ? "bg-gold-deep text-cream" : "bg-muted text-muted-foreground",
-              )}
-            >
-              {step > s ? <Check className="h-4 w-4" aria-hidden="true" /> : s}
-            </div>
-            {s < 5 && (
+        {/* Step breadcrumb — clickable to jump back, shows step name + state */}
+        <ol
+          className="mb-3 flex items-center justify-center gap-1.5 text-xs flex-wrap list-none p-0"
+          aria-label="生成图鉴步骤"
+        >
+          {[
+            { n: 1, label: "主题" },
+            { n: 2, label: "类型" },
+            { n: 3, label: "系列" },
+            { n: 4, label: "配色" },
+            { n: 5, label: "确认" },
+          ].map((s) => {
+            const done = step > s.n;
+            const current = step === s.n;
+            const reachable = done || current;
+            const Wrapper: "button" | "span" = reachable ? "button" : "span";
+            return (
+              <li key={s.n} className="contents">
+                <Wrapper
+                  type={reachable ? "button" : undefined}
+                  onClick={
+                    reachable
+                      ? () => setStep(s.n as Step)
+                      : undefined
+                  }
+                  aria-current={current ? "step" : undefined}
+                  disabled={!reachable}
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 transition-colors",
+                    current && "bg-gold/10 font-medium text-gold-deep",
+                    done && "text-foreground hover:bg-muted cursor-pointer",
+                    !reachable && "text-muted-foreground/60 cursor-not-allowed",
+                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                  )}
+                >
+                  {done ? (
+                    <Check className="h-3 w-3 text-gold-deep" aria-hidden="true" />
+                  ) : (
+                    <span
+                      className={cn(
+                        "grid h-4 w-4 place-items-center rounded-full text-[10px] font-medium tabular-nums",
+                        current ? "bg-gold-deep text-cream" : "bg-muted text-muted-foreground",
+                      )}
+                    >
+                      {s.n}
+                    </span>
+                  )}
+                  <span>{s.label}</span>
+                </Wrapper>
+                {s.n < 5 && (
+                  <span aria-hidden="true" className="text-muted-foreground/30">/</span>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+
+        {/* Stepper dots — visual progress */}
+        <div className="flex items-center justify-center gap-2">
+          {[1, 2, 3, 4, 5].map((s) => (
+            <div key={s} className="flex items-center">
               <div
                 aria-hidden="true"
-                className={cn("h-px w-8 transition-colors", step > s ? "bg-gold-deep" : "bg-border")}
+                className={cn(
+                  "h-1.5 w-8 rounded-full transition-colors",
+                  step >= s ? "bg-gold-deep" : "bg-muted",
+                )}
               />
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="rounded-lg border border-border bg-card p-6 md:p-8 shadow-card paper-grain">
+      <div
+        // Re-mount on step change to re-trigger the entrance animation
+        key={`step-${step}`}
+        className="rounded-lg border border-border bg-card p-6 md:p-8 shadow-card paper-grain animate-step-in"
+      >
         {step === 1 && (
           <div className="space-y-4">
             <div>
               <h2 className="font-serif text-xl font-semibold mb-1">输入主题</h2>
-              <p className="text-sm text-muted-foreground">比如 "金毛寻回犬"、"普洱茶"、"二十四节气"</p>
+              <p className="text-sm text-muted-foreground mb-3">点一个试试, 或自己输入任意主题 (30 字以内)</p>
+              <ul className="flex flex-wrap gap-1.5 list-none p-0" aria-label="主题示例">
+                {["金毛寻回犬", "西湖龙井", "二十四节气", "雪豹", "玛瑙"].map((example) => (
+                  <li key={example}>
+                    <button
+                      type="button"
+                      onClick={() => setTopic(example)}
+                      className={cn(
+                        "inline-flex items-center rounded-full border px-3 py-1 text-xs transition-colors",
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                        topic === example
+                          ? "border-gold-deep bg-gold text-cream"
+                          : "border-border bg-background text-muted-foreground hover:border-gold hover:text-foreground",
+                      )}
+                    >
+                      {example}
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
             <label className="block">
               <span className="sr-only">图鉴主题</span>
@@ -190,7 +362,9 @@ export function GenerationWizard() {
           <div role="group" aria-labelledby="step2-title" className="space-y-4">
             <div>
               <h2 id="step2-title" className="font-serif text-xl font-semibold mb-1">选择类型</h2>
-              <p className="text-sm text-muted-foreground">不同类型有不同的字段槽位</p>
+              <p className="text-sm text-muted-foreground mb-2">不同类型有不同的字段槽位</p>
+              {/* Show the top 3 most-picked kinds from existing cards as a quick hint */}
+              <PopularKindsHint />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {KINDS.map((k) => {

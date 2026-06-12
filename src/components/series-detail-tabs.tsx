@@ -26,9 +26,13 @@ export function SeriesDetailTabs({ cards }: SeriesDetailTabsProps) {
       return [...cards].sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
     }
     if (tab === "top") {
-      return [...cards].sort((a, b) => b.score - a.score);
+      // score desc with seriesNo asc as tiebreaker (so unrated cards sort stably)
+      return [...cards].sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return a.seriesNo.localeCompare(b.seriesNo);
+      });
     }
-    return cards;
+    return [...cards].sort((a, b) => a.seriesNo.localeCompare(b.seriesNo));
   })();
 
   if (cards.length === 0) {

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsBySeries } from "@/lib/data";
 import { Tag } from "@/components/tag";
+import { ShareActions } from "@/components/share-actions";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { cn, formatDate } from "@/lib/utils";
@@ -60,7 +61,7 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
           >
             <Image
               src={card.image}
-              alt={`${card.title} 科普图鉴`}
+              alt={card.subtitle || card.title}
               fill
               priority
               quality={90}
@@ -88,34 +89,62 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
 
           <p className="text-base leading-relaxed text-foreground/90">{card.description}</p>
 
-          {/* Meta table */}
+          {/* Meta table — always 6 rows, even if some fields are empty */}
           <dl className="rounded-lg border border-border bg-card p-4 space-y-2.5 text-sm">
-            {card.latin && (
-              <div className="flex justify-between gap-4">
-                <dt className="text-muted-foreground">学名</dt>
-                <dd className="font-mono text-xs">{card.latin}</dd>
-              </div>
-            )}
-            {card.titleEn && (
-              <div className="flex justify-between gap-4">
-                <dt className="text-muted-foreground">English</dt>
-                <dd className="italic">{card.titleEn}</dd>
-              </div>
-            )}
+            <div className="flex justify-between gap-4">
+              <dt className="text-muted-foreground">学名</dt>
+              <dd className="font-mono text-xs text-right">
+                {card.latin || <span className="text-muted-foreground/50">—</span>}
+              </dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-muted-foreground">English</dt>
+              <dd className="italic text-right">
+                {card.titleEn || <span className="text-muted-foreground/50 not-italic">—</span>}
+              </dd>
+            </div>
             <div className="flex justify-between gap-4">
               <dt className="text-muted-foreground">类型</dt>
               <dd>{displayLabel(card.kind)}</dd>
             </div>
             <div className="flex justify-between gap-4">
+              <dt className="text-muted-foreground">所属系列</dt>
+              <dd>
+                <Link
+                  href={`/series/${card.series}`}
+                  className="hover:text-gold-deep underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+                >
+                  {seriesName}
+                </Link>
+                <span className="text-muted-foreground ml-1.5 text-xs tabular-nums">
+                  · No.{card.seriesNo}
+                </span>
+              </dd>
+            </div>
+            <div className="flex justify-between gap-4">
               <dt className="text-muted-foreground">评分</dt>
-              <dd className="font-serif font-bold text-gold-deep tabular-nums">{card.score.toFixed(1)} / 10</dd>
+              <dd className="font-serif font-bold text-gold-deep tabular-nums">
+                {card.score.toFixed(1)} / 10
+              </dd>
             </div>
             <div className="flex justify-between gap-4">
               <dt className="text-muted-foreground">
-                <Calendar className="inline h-3 w-3 mr-1" />
-                发布
+                <Calendar className="inline h-3 w-3 mr-1" aria-hidden="true" />
+                收录
               </dt>
               <dd>{formatDate(card.createdAt)}</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-muted-foreground">标签数</dt>
+              <dd className="tabular-nums">
+                {card.tags.length} 个
+                {card.tags.length > 0 && (
+                  <span className="text-muted-foreground/70 text-xs ml-1">
+                    ({card.tags.slice(0, 2).join(" · ")}
+                    {card.tags.length > 2 ? "…" : ""})
+                  </span>
+                )}
+              </dd>
             </div>
           </dl>
 
@@ -151,17 +180,12 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          {/* Download */}
-          <a
-            href={card.image}
-            download={`${card.slug}.png`}
-            className={cn(
-              "flex min-h-[44px] w-full items-center justify-center rounded-md bg-gold-deep px-4 py-2.5 text-center text-sm font-medium text-cream",
-              "transition-colors hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-            )}
-          >
-            下载图鉴原图
-          </a>
+          {/* Download + share */}
+          <ShareActions
+            imageUrl={card.image}
+            imageFilename={card.slug}
+            title={card.title}
+          />
         </aside>
       </div>
 

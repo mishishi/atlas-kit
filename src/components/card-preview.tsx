@@ -25,7 +25,10 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
       <div className="relative aspect-[9/16] overflow-hidden bg-muted">
         <Image
           src={card.image}
-          alt={`${card.title} 科普图鉴`}
+          // Alt describes the IMAGE's content (card.subtitle), not the card itself.
+          // Avoids SR users hearing "金毛寻回犬 科普图鉴" twice when the parent link
+          // already announces the title via aria-label.
+          alt={card.subtitle || card.title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           priority={priority}

@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { getAllCards, getAllSeries, getKindCounts } from "@/lib/data";
+import { THEME_TYPES } from "@/lib/theme-types";
 import { CardGrid } from "@/components/card-grid";
 import { KindFilter } from "@/components/kind-filter";
 
@@ -15,28 +17,42 @@ export default function Home({ searchParams }: HomeProps) {
   const activeKind = searchParams.kind;
   const filteredCards = activeKind ? allCards.filter((c) => c.kind === activeKind) : allCards;
   const featuredCards = filteredCards.slice(0, 8);
+  // Pick 4 visually-staggered cards for the hero collage (different series for variety)
+  const heroCards = (() => {
+    const seen = new Set<string>();
+    const picked: typeof allCards = [];
+    for (const c of allCards) {
+      if (!seen.has(c.series)) {
+        seen.add(c.series);
+        picked.push(c);
+        if (picked.length === 4) break;
+      }
+    }
+    return picked.length === 4 ? picked : allCards.slice(0, 4);
+  })();
 
   return (
     <>
       {/* Hero */}
       <section className="border-b border-border paper-grain">
         <div className="container py-16 md:py-24">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold bg-gold/10 px-3 py-1 text-xs text-gold-deep mb-6">
-              <Sparkles className="h-3 w-3" />
-              <span>系列化中文科普图鉴 · Atlas Kit</span>
-            </div>
-            <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 animate-fade-in">
-              知识整理 · 模块信息 · <br className="hidden md:block" />
-              <span className="text-gold-deep italic">图鉴式展示</span>
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              每一张图鉴都像翻一页百科书: 主视觉、基础档案、外观特征、性格习性、养护评分、优缺点对比、趣味冷知识、健康风险 — 9 个模块完整呈现一个主题。
+          <div className="grid gap-10 lg:gap-16 lg:grid-cols-[1.1fr_1fr] items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-gold bg-gold/10 px-3 py-1 text-xs text-gold-deep mb-6">
+                <Sparkles className="h-3 w-3" aria-hidden="true" />
+                <span>系列化中文科普图鉴 · Atlas Kit</span>
+              </div>
+              <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 animate-fade-in">
+                知识整理 · 模块信息 · <br className="hidden md:block" />
+                <span className="text-gold-deep italic">图鉴式展示</span>
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
+                每一张图鉴都像翻一页百科书: 主视觉、基础档案、外观特征、性格习性、养护评分、优缺点对比、趣味冷知识、健康风险 — 9 个模块完整呈现一个主题。
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/create"
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-md bg-gold-deep px-5 py-2.5 text-sm font-medium text-cream shadow-card transition-all hover:bg-gold hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-md bg-gold-deep px-5 py-2.5 text-sm font-medium text-cream shadow-card transition-all hover:bg-gold hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <Sparkles className="h-4 w-4" aria-hidden="true" />
                 生成你的图鉴
@@ -44,10 +60,42 @@ export default function Home({ searchParams }: HomeProps) {
               </Link>
               <Link
                 href="/series"
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
               >
                 浏览所有系列
               </Link>
+            </div>
+            </div>
+
+            {/* Right: 4-card magazine collage. Hidden on mobile to keep hero fast. */}
+            <div
+              aria-hidden="true"
+              className="relative h-[420px] lg:h-[480px] hidden lg:block"
+            >
+              {heroCards.map((c, i) => {
+                // 2x2 grid with each card tilted slightly and lifted via shadow
+                const positions = [
+                  "top-0 left-0 rotate-[-3deg] z-10",
+                  "top-4 right-0 rotate-[2deg] z-20",
+                  "bottom-4 left-8 rotate-[2deg] z-30",
+                  "bottom-0 right-4 rotate-[-3deg] z-40",
+                ];
+                return (
+                  <div
+                    key={c.slug}
+                    className={`absolute w-[200px] aspect-[9/16] rounded-lg overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 ${positions[i]}`}
+                    style={{ backgroundColor: c.palette[0], borderColor: c.palette[1] }}
+                  >
+                    <Image
+                      src={c.image}
+                      alt=""
+                      fill
+                      sizes="200px"
+                      className="object-cover object-center"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -69,7 +117,7 @@ export default function Home({ searchParams }: HomeProps) {
             </div>
             <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
               <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">
-                {new Set(allCards.map((c) => c.kind)).size}
+                {THEME_TYPES.length}
               </div>
               <div className="text-xs text-muted-foreground mt-1">主题类型</div>
             </div>

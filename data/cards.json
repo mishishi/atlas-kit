@@ -500,5 +500,26 @@
     "subtitle": "",
     "description": "",
     "createdAt": "2026-06-12"
+  },
+  {
+    "slug": "card-kavy",
+    "title": "玛瑙",
+    "titleEn": "",
+    "latin": "",
+    "kind": "object",
+    "series": "atlas-miscellany",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781270122695-card-kavy.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-12"
   }
 ]

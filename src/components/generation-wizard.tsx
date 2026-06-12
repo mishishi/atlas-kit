@@ -213,11 +213,16 @@ export function GenerationWizard() {
         throw new Error(data.error || `生成失败 (${res.status})`);
       }
       const data = await res.json();
-      // Redirect to the newly created card detail page
+      // Success path: stop the spinner BEFORE redirect so the button
+      // doesn't keep showing "AI 创作中..." if the push is slow or
+      // throws internally (router.push is async and can reject).
+      setGenerating(false);
+      abortRef.current = null;
       clearDraft();
       const seriesName = SERIES_TYPES.find((s) => s.slug === seriesSlug)?.name ?? seriesSlug;
+      const seriesNo = data.image.match(/-(\w+)\.png$/)?.[1] ?? "?";
       toast.success(`已收录到「${seriesName}」`, {
-        description: `${data.title} · No.${data.image.match(/-(\w+)\.png$/)?.[1] ?? "?"}`,
+        description: `${data.title} · No.${seriesNo}`,
         duration: 4000,
       });
       router.push(`/cards/${data.slug}`);

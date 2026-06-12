@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { CardPreview } from "./card-preview";
 import { Card as CardType, displayLabel } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -12,14 +13,34 @@ interface SeriesDetailTabsProps {
 
 type Tab = "all" | "newest" | "top";
 
+function isTab(v: string | null | undefined): v is Tab {
+  return v === "all" || v === "newest" || v === "top";
+}
+
 export function SeriesDetailTabs({ cards }: SeriesDetailTabsProps) {
-  // Default to "top" — it's the most useful view (highest-scored cards first).
-  // If user lands via deep link (?tab=...), they'll get the right one.
-  const [tab, setTab] = useState<Tab>(() => {
-    if (typeof window === "undefined") return "top";
-    const initial = new URLSearchParams(window.location.search).get("tab");
-    return initial === "all" || initial === "newest" ? initial : "top";
-  });
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  // Tab state is driven by the URL (?tab=newest). Default = "top".
+  // Reading + writing the URL (instead of just useState) means deep links
+  // and back/forward navigation work correctly.
+  const urlTab = searchParams.get("tab");
+  const tab: Tab = isTab(urlTab) ? urlTab : "top";
+
+  const setTab = useCallback(
+    (next: Tab) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (next === "top") {
+        params.delete("tab"); // keep URL clean when on default
+      } else {
+        params.set("tab", next);
+      }
+      const qs = params.toString();
+      router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    },
+    [router, pathname, searchParams],
+  );
 
   const sortedCards = (() => {
     if (tab === "newest") {
@@ -56,6 +77,7 @@ export function SeriesDetailTabs({ cards }: SeriesDetailTabsProps) {
             key={t.key}
             type="button"
             onClick={() => setTab(t.key)}
+            aria-current={tab === t.key ? "true" : undefined}
             className={cn(
               "relative px-4 py-2 text-sm transition-colors",
               tab === t.key

@@ -34,24 +34,23 @@ export default function SeriesPage() {
           const thumbs = sortedCards.slice(1, 6); // up to 5
 
           return (
-            <li>
+            <li key={s.slug}>
             <Link
-              key={s.slug}
               href={`/series/${s.slug}`}
               aria-label={`进入系列 ${s.name},已收录 ${s.count} 张图鉴`}
               className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all hover:-translate-y-0.5"
               style={{ borderColor: s.palette[1] }}
             >
-              <div className="flex flex-col md:flex-row">
-                {/* Hero cover — 3:4 portrait (260×347px). Source images are
-                    9:16 (0.5625) portraits; 4:3 (1.33) would force
-                    object-cover to crop the subject horizontally and
-                    squish it, so 3:4 (0.75) is the closest balanced
-                    match. 9:16 at 200w was 355px tall and left a 130px
-                    dead zone on the right; 3:4 at 260w lands at 347px —
-                    close to the right column and doesn't waste space. */}
+              {/* Vertical card: hero on top, info block below.
+                  Mobile keeps 9:16 portrait (the source aspect, no crop).
+                  md+ switches to 16:9 banner — a curated "cover image"
+                  feel that matches the wider desktop layout. Either way
+                  the card has a consistent top-heavy shape and the info
+                  block underneath fills the remaining space naturally. */}
+              <div className="flex flex-col">
+                {/* Hero cover */}
                 <div
-                  className="relative w-full md:w-[260px] shrink-0 aspect-[3/4] md:aspect-[3/4]"
+                  className="relative w-full aspect-[9/16] md:aspect-[16/9]"
                   style={{ backgroundColor: s.palette[0] }}
                 >
                   {heroCard ? (
@@ -59,7 +58,7 @@ export default function SeriesPage() {
                       src={heroCard.image}
                       alt={heroCard.title}
                       fill
-                      sizes="(max-width: 768px) 100vw, 260px"
+                      sizes="(max-width: 768px) 100vw, 100vw"
                       className="object-cover object-center"
                       quality={95}
                       // First series row's hero is the LCP candidate — preload it.
@@ -78,12 +77,11 @@ export default function SeriesPage() {
                   )}
                 </div>
 
-                {/* Right content — fills the hero's height and vertically
-                    distributes the 3 layers (head / thumbs / footer) so
-                    there's no dead space in the middle. */}
-                <div className="flex-1 p-5 paper-grain min-w-0 flex flex-col md:justify-between gap-3">
-                  {/* Layer 1: title + count */}
-                  <div className="flex items-baseline justify-between gap-3 mb-3">
+                {/* Info block: title + tagline on top, thumbs strip in the
+                    middle, palette + tags + CTA pinned to the bottom. */}
+                <div className="p-5 paper-grain flex flex-col gap-4">
+                  {/* Head: title + count */}
+                  <div className="flex items-baseline justify-between gap-3">
                     <h2
                       className="font-serif text-xl font-semibold group-hover:opacity-80 transition-opacity truncate"
                       style={{ color: s.palette[1] }}
@@ -97,75 +95,75 @@ export default function SeriesPage() {
                     </div>
                   </div>
 
-                  {/* Layer 2: tagline */}
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+                  {/* Tagline */}
+                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 -mt-2">
                     {s.tagline}
                   </p>
 
-                  {/* Layer 3: thumbnails strip + tags + CTA */}
-                  <div>
-                    {thumbs.length > 0 ? (
-                      <div
-                        className="flex gap-2 overflow-x-auto pb-1"
-                        role="list"
-                        aria-label={`同系列其他 ${thumbs.length} 张`}
-                      >
-                        {thumbs.map((c) => (
-                          <div
-                            key={c.slug}
-                            className="relative shrink-0 w-16 aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-black/5"
-                            style={{ backgroundColor: s.palette[0] }}
-                            role="listitem"
-                          >
-                            <Image
-                              src={c.image}
-                              alt={c.title}
-                              fill
-                              sizes="64px"
-                              className="object-cover object-center"
-                              quality={95}
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <div
-                        className="h-16 rounded-sm border border-dashed flex items-center justify-center text-[10px]"
-                        style={{ borderColor: s.palette[1], color: s.palette[1] }}
-                      >
-                        等待更多图鉴收录
-                      </div>
-                    )}
-
-                    <div className="flex items-center justify-between gap-2 pt-1">
-                      <div className="flex items-center gap-1.5 flex-wrap min-w-0">
-                        {/* Palette swatches */}
-                        {s.palette.map((color, i) => (
-                          <div
-                            key={i}
-                            className="h-2.5 w-5 rounded-sm border border-black/5"
-                            style={{ backgroundColor: color }}
-                            title={color}
-                            aria-label={`色卡 ${i + 1}: ${color}`}
+                  {/* Thumbs strip — wider thumbs on desktop since the strip
+                      has full card width to play with. */}
+                  {thumbs.length > 0 ? (
+                    <div
+                      className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1"
+                      role="list"
+                      aria-label={`同系列其他 ${thumbs.length} 张`}
+                    >
+                      {thumbs.map((c) => (
+                        <div
+                          key={c.slug}
+                          className="relative shrink-0 w-14 md:w-16 aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-black/5"
+                          style={{ backgroundColor: s.palette[0] }}
+                          role="listitem"
+                        >
+                          <Image
+                            src={c.image}
+                            alt={c.title}
+                            fill
+                            sizes="64px"
+                            className="object-cover object-center"
+                            quality={95}
                           />
-                        ))}
-                        {/* Theme tags */}
-                        {s.themeTags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground"
-                          >
-                            #{displayLabel(tag)}
-                          </span>
-                        ))}
-                      </div>
-                      <span
-                        className="text-xs font-medium shrink-0 tabular-nums"
-                        style={{ color: s.palette[1] }}
-                      >
-                        进入 →
-                      </span>
+                        </div>
+                      ))}
                     </div>
+                  ) : (
+                    <div
+                      className="h-14 rounded-sm border border-dashed flex items-center justify-center text-[10px]"
+                      style={{ borderColor: s.palette[1], color: s.palette[1] }}
+                    >
+                      等待更多图鉴收录
+                    </div>
+                  )}
+
+                  {/* Footer: palette + tags + CTA */}
+                  <div className="flex items-center justify-between gap-2 pt-1 border-t border-border/60">
+                    <div className="flex items-center gap-1.5 flex-wrap min-w-0">
+                      {/* Palette swatches */}
+                      {s.palette.map((color, i) => (
+                        <div
+                          key={i}
+                          className="h-2.5 w-5 rounded-sm border border-black/5"
+                          style={{ backgroundColor: color }}
+                          title={color}
+                          aria-label={`色卡 ${i + 1}: ${color}`}
+                        />
+                      ))}
+                      {/* Theme tags */}
+                      {s.themeTags.slice(0, 3).map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground"
+                        >
+                          #{displayLabel(tag)}
+                        </span>
+                      ))}
+                    </div>
+                    <span
+                      className="text-xs font-medium shrink-0 tabular-nums"
+                      style={{ color: s.palette[1] }}
+                    >
+                      进入 →
+                    </span>
                   </div>
                 </div>
               </div>

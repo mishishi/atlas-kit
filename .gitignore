@@ -1,0 +1,70 @@
+# ─── Atlas Kit · 图鉴社 ──────────────────────────────────────────────
+# https://help.github.com/articles/ignoring-files/
+
+# ─── Node / npm ───────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Next.js ─────────────────────────────────────────────────────────
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── Testing ─────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ─── Env / secrets ───────────────────────────────────────────────────
+# Real env files (含 API key) 永远不入仓; 复制 .env.local.example 改
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# ─── Atlas Kit runtime data (不入仓) ───────────────────────────────
+# 用户生成 + 初始图鉴的图片都在这里, 都视为"运行时产物" 不入仓
+public/cards/*.png
+public/cards/*.jpg
+public/cards/*.jpeg
+public/cards/*.webp
+# 调试用的临时 json / log 散落在根
+*.tmp-*.json
+.tmp-*.json
+/tmp/
+
+# ─── Design reference (设计样图, 留在本地不入仓) ────────────────────
+golden_optimized_*.png
+golden_optimized_*.jpeg
+minimax_golden_*.jpeg
+minimax_golden_*.png
+
+# ─── Dev / runtime logs ──────────────────────────────────────────────
+dev.log
+dev-err.log
+*.log
+
+# ─── Editor / OS ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Vercel ──────────────────────────────────────────────────────────
+.vercel
+
+# ─── Cache / misc ────────────────────────────────────────────────────
+.cache/
+.eslintcache
+.turbo

@@ -1,0 +1,504 @@
+[
+  {
+    "slug": "golden-retriever",
+    "title": "金毛寻回犬",
+    "titleEn": "Golden Retriever",
+    "latin": "Canis lupus familiaris",
+    "kind": "dog",
+    "series": "pet-breed-guide",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/001-golden-retriever.png",
+    "score": 9.5,
+    "tags": [
+      "友善",
+      "聪慧",
+      "温顺",
+      "家庭犬"
+    ],
+    "tagline": "世界最受欢迎的家庭犬之一",
+    "subtitle": "友善 · 聪慧 · 温顺",
+    "description": "金毛寻回犬起源于19世纪苏格兰, 由金色寻回犬与拉布拉多培育而成。它们性格温顺友善、聪明忠诚, 是天生的家庭伴侣犬, 也常被训练为导盲犬和治疗犬。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "corgi",
+    "title": "彭布罗克威尔士柯基",
+    "titleEn": "Pembroke Welsh Corgi",
+    "latin": "Canis lupus familiaris",
+    "kind": "dog",
+    "series": "pet-breed-guide",
+    "seriesNo": "002",
+    "palette": [
+      "#FAF3E9",
+      "#C97064",
+      "#D9B48E"
+    ],
+    "image": "/cards/002-corgi.png",
+    "score": 9.6,
+    "tags": [
+      "机灵",
+      "勇敢",
+      "可爱",
+      "短腿"
+    ],
+    "tagline": "英国女王最爱的牧牛犬",
+    "subtitle": "机灵 · 勇敢 · 可爱",
+    "description": "彭布罗克威尔士柯基是源自英国威尔士的古老犬种, 最初用于牧牛。它们以标志性的短腿、长身和大直立耳朵闻名, 性格机灵勇敢、活泼亲人。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "husky",
+    "title": "西伯利亚哈士奇",
+    "titleEn": "Siberian Husky",
+    "latin": "Canis lupus familiaris",
+    "kind": "dog",
+    "series": "pet-breed-guide",
+    "seriesNo": "003",
+    "palette": [
+      "#F0F4F7",
+      "#6B8294",
+      "#B7C5CE"
+    ],
+    "image": "/cards/003-husky.png",
+    "score": 8.5,
+    "tags": [
+      "自由",
+      "野性",
+      "拆家",
+      "冰蓝眼睛"
+    ],
+    "tagline": "来自西伯利亚的雪橇犬",
+    "subtitle": "自由 · 野性 · 雪橇",
+    "description": "西伯利亚哈士奇是源自东北亚楚科奇人部落的雪橇犬, 以冰蓝色的眼睛和厚实的双层被毛著称。它们性格独立、活泼好动, 是犬类中最接近狼的品种之一。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "border-collie",
+    "title": "边境牧羊犬",
+    "titleEn": "Border Collie",
+    "latin": "Canis lupus familiaris",
+    "kind": "dog",
+    "series": "pet-breed-guide",
+    "seriesNo": "004",
+    "palette": [
+      "#F5F0E6",
+      "#3D3830",
+      "#A8B89C"
+    ],
+    "image": "/cards/004-border-collie.png",
+    "score": 8.5,
+    "tags": [
+      "聪慧",
+      "敏锐",
+      "专注",
+      "牧羊"
+    ],
+    "tagline": "世界犬类智商排名第一",
+    "subtitle": "聪慧 · 敏锐 · 专注",
+    "description": "边境牧羊犬是源自英国苏格兰边境的工作犬, 以惊人的智商和专注力著称。它们能识别数百个人类词汇, 标志性的'眼神控制'可操纵羊群移动, 是现代牧羊比赛的常胜将军。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "shiba-inu",
+    "title": "柴犬",
+    "titleEn": "Shiba Inu",
+    "latin": "Canis lupus familiaris",
+    "kind": "dog",
+    "series": "pet-breed-guide",
+    "seriesNo": "005",
+    "palette": [
+      "#FAF3E9",
+      "#B85C50",
+      "#D9B48E"
+    ],
+    "image": "/cards/005-shiba.png",
+    "score": 9.5,
+    "tags": [
+      "赤柴",
+      "日式",
+      "憨厚",
+      "独立"
+    ],
+    "tagline": "日本国宝级犬种",
+    "subtitle": "憨厚 · 独立 · 微笑",
+    "description": "柴犬是日本最古老的犬种之一, 以赤色被毛、卷尾和标志性的'柴犬笑'闻名。它们性格独立、聪明忠诚, 是风靡全球的网红犬种, 也是Doge meme的原型。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "opossum",
+    "title": "负鼠",
+    "titleEn": "Virginia Opossum",
+    "latin": "Didelphis virginiana",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#8C7F6E",
+      "#A8B89C"
+    ],
+    "image": "/cards/006-opossum.png",
+    "score": 9,
+    "tags": [
+      "夜行",
+      "独居",
+      "装死大师",
+      "生态清道夫"
+    ],
+    "tagline": "北美唯一原生有袋类",
+    "subtitle": "夜行 · 装死 · 抗毒",
+    "description": "负鼠是北美唯一原生的有袋目动物, 性格胆小机警、擅长装死应激反应。它们是生态清道夫, 极少携带狂犬病毒, 还能抗蝮蛇毒, 是被严重低估的生态益兽。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "puer-tea",
+    "title": "普洱茶",
+    "titleEn": "Pu'er Tea",
+    "latin": "Camellia sinensis var. assamica",
+    "kind": "plant",
+    "series": "atlas-miscellany",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#A8B89C",
+      "#B85C50"
+    ],
+    "image": "/cards/007-puer-tea.png",
+    "score": 9,
+    "tags": [
+      "云南",
+      "古树",
+      "越陈越香",
+      "茶马古道"
+    ],
+    "tagline": "能喝的古董",
+    "subtitle": "古树 · 越陈 · 茶马古道",
+    "description": "普洱茶产自云南西双版纳等地, 以大叶种茶树鲜叶为原料, 分生熟两类。其核心魅力在于'越陈越香', 百年古树茶尤为珍贵, 是茶马古道上千年流通的文化符号。",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-rs1e",
+    "title": "龙猫",
+    "titleEn": "",
+    "latin": "",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "002",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781205102043-card-rs1e.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-q8hnld",
+    "title": "英国短毛猫",
+    "titleEn": "",
+    "latin": "",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781206671537-card-q8hnld.png",
+    "score": 8,
+    "tags": [
+      "英短",
+      "蓝猫",
+      "圆润",
+      "亲人"
+    ],
+    "tagline": "英国最受欢迎的家庭猫",
+    "subtitle": "优雅温顺 · 圆润可爱",
+    "description": "英国短毛猫起源于古罗马时期, 是英国最古老的猫品种之一。它们以圆润的体态、浓密的短绒毛和温顺的性格著称, 是新手友好型家庭伴侣猫的典型代表。",
+    "createdAt": "2026-06-12"
+  },
+  {
+    "slug": "card-gnj76",
+    "title": "泰迪犬",
+    "titleEn": "",
+    "latin": "",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "002",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781207678840-card-gnj76.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-j05su",
+    "title": "红尾蚺",
+    "titleEn": "",
+    "latin": "",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "003",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781208642233-card-j05su.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-fil5l",
+    "title": "朱元璋",
+    "titleEn": "",
+    "latin": "",
+    "kind": "concept",
+    "series": "atlas-miscellany",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781214491156-card-fil5l.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-iut1",
+    "title": "毛峰",
+    "titleEn": "",
+    "latin": "",
+    "kind": "plant",
+    "series": "atlas-miscellany",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781214663277-card-iut1.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-fjehf",
+    "title": "普洱茶",
+    "titleEn": "",
+    "latin": "",
+    "kind": "plant",
+    "series": "atlas-miscellany",
+    "seriesNo": "002",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781214881487-card-fjehf.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-xv4exk",
+    "title": "二十四节气",
+    "titleEn": "",
+    "latin": "",
+    "kind": "concept",
+    "series": "atlas-miscellany",
+    "seriesNo": "002",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781215265552-card-xv4exk.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-i3v5",
+    "title": "杭州",
+    "titleEn": "",
+    "latin": "",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781217506219-card-i3v5.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-mrjj",
+    "title": "苏州",
+    "titleEn": "",
+    "latin": "",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "002",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781218748307-card-mrjj.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-qw8w",
+    "title": "马犬",
+    "titleEn": "",
+    "latin": "",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "004",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781219050684-card-qw8w.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-els7",
+    "title": "冬至",
+    "titleEn": "",
+    "latin": "",
+    "kind": "festival",
+    "series": "festival-almanac",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781219450688-card-els7.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "card-nw16",
+    "title": "西安",
+    "titleEn": "",
+    "latin": "",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "003",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781221167788-card-nw16.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "slug": "smoke-repro-kc8387",
+    "title": "smoke repro",
+    "titleEn": "",
+    "latin": "",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "010",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781237375797-smoke-repro-kc8387.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-12"
+  },
+  {
+    "slug": "card-dvhp",
+    "title": "上海",
+    "titleEn": "",
+    "latin": "",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "004",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/1781237840663-card-dvhp.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
+    "createdAt": "2026-06-12"
+  }
+]

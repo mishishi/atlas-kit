@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Atlas Kit — Light: warm cream + sage + ink
+       ui-ux-pro-max v2 direction: "Editorial Archive" (Minimalism & Swiss Style) */
+    --background: 38 30% 92%;       /* cream #F5F0E6 */
+    --foreground: 30 14% 16%;       /* ink #2E2A24 */
+    --card: 0 0% 100%;
+    --card-foreground: 30 14% 16%;
+    --primary: 30 38% 57%;          /* gold #B8956A */
+    --primary-foreground: 30 14% 16%;
+    --secondary: 95 15% 67%;        /* sage #A8B89C */
+    --secondary-foreground: 30 14% 16%;
+    --muted: 38 25% 88%;            /* soft beige */
+    --muted-foreground: 30 8% 40%;
+    --accent: 95 15% 67%;           /* sage */
+    --accent-foreground: 30 14% 16%;
+    --border: 35 25% 84%;
+    --input: 35 25% 84%;
+    --ring: 30 38% 57%;
+    --destructive: 8 60% 55%;       /* terracotta-ish red for error states */
+    --destructive-foreground: 38 30% 95%;
+  }
+
+  .dark {
+    /* Atlas Kit — Dark: warm charcoal + dim gold */
+    --background: 30 8% 11%;        /* deep charcoal */
+    --foreground: 38 30% 88%;
+    --card: 30 6% 16%;
+    --card-foreground: 38 30% 88%;
+    --primary: 35 38% 65%;          /* dimmer gold */
+    --primary-foreground: 30 8% 11%;
+    --secondary: 95 10% 35%;        /* dark sage */
+    --secondary-foreground: 38 30% 88%;
+    --muted: 30 6% 20%;
+    --muted-foreground: 38 12% 65%;
+    --accent: 95 10% 35%;
+    --accent-foreground: 38 30% 88%;
+    --border: 30 6% 22%;
+    --input: 30 6% 22%;
+    --ring: 35 38% 65%;
+    --destructive: 8 50% 50%;
+    --destructive-foreground: 38 30% 95%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    color: hsl(var(--foreground));
+    background: hsl(var(--background));
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* Editorial selection color — warm gold tint, not the default blue */
+    ::selection {
+      background-color: hsl(var(--primary) / 0.25);
+      color: hsl(var(--foreground));
+    }
+  }
+
+  /* ───────── a11y: focus-visible (skill ux HIGH) ───────── */
+  /* Replace default outline with a 2px gold ring; only show on keyboard nav,
+     not on mouse click. Applied to all interactive elements. */
+  *:focus {
+    outline: none;
+  }
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Honor reduced-motion (skill ux a11y CRITICAL) */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ───────── editorial typography defaults ───────── */
+  /* Headings default to serif (Editorial Archive direction);
+     body text uses sans. Authors can opt-out with .font-sans. */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), "Songti SC", "Source Han Serif SC", serif;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Subtle paper grain texture for cards in light mode */
+  .paper-grain {
+    background-image:
+      radial-gradient(at 0% 0%, rgba(184, 149, 106, 0.04), transparent 40%),
+      radial-gradient(at 100% 100%, rgba(168, 184, 156, 0.06), transparent 40%);
+  }
+
+  .dark .paper-grain {
+    background-image:
+      radial-gradient(at 0% 0%, rgba(184, 149, 106, 0.05), transparent 40%),
+      radial-gradient(at 100% 100%, rgba(168, 184, 156, 0.08), transparent 40%);
+  }
+
+  /* Skeleton shimmer */
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 0%,
+      hsl(var(--muted-foreground) / 0.1) 50%,
+      hsl(var(--muted)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s linear infinite;
+  }
+
+  /* Tabular numerals for data columns (skill typography MED) */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+}

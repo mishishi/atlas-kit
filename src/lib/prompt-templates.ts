@@ -1,0 +1,527 @@
+import type { CardKind } from "./types";
+import { THEME_TYPE_MAP } from "./theme-types";
+
+export interface GenerateInput {
+  topic: string;
+  kind: CardKind;
+  palette: string;
+}
+
+const PALETTE_HEX: Record<string, [string, string, string]> = {
+  auto: ["#F5F0E6", "#B8956A", "#A8B89C"],
+  warm: ["#FAF3E9", "#C97064", "#D9B48E"],
+  cool: ["#F0F4F7", "#6B8294", "#B7C5CE"],
+  earth: ["#F5F0E6", "#8C7F6E", "#A8B89C"],
+  monochrome: ["#F5F0E6", "#2E2A24", "#A8B89C"],
+  botanical: ["#F5F0E6", "#A8B89C", "#7A8B6E"],
+};
+
+/**
+ * Build the pure-Chinese prompt for image generation.
+ *
+ * Two variables, both sourced from the wizard → theme-types.ts:
+ *   {topic}        — the subject to depict
+ *   {promptType}   — theme type label (城市/动物/宠物/...) inserted into
+ *                    the 【主题类型】 field so AI follows the right rules
+ *
+ * All other text is fixed (the user's curated template).
+ */
+export function buildPrompt(input: GenerateInput): string {
+  const { topic, kind } = input;
+  const themeType = THEME_TYPE_MAP[kind];
+  const promptTypeLabel = themeType?.promptType ?? "其他";
+  const seriesName = themeType?.series ?? "百科图鉴系列";
+
+  return `请根据【主题】生成一张高质量竖版「科普百科图鉴」。
+
+主题：【${topic}】
+
+主题类型：【城市 / 动物 / 宠物 / 植物 / 人物 / 节日 / 食物 / 自然现象 / 历史事件 / 器物 / 科技概念 / 其他】
+
+这是一张完整成图版百科信息图，不需要后期排版。
+
+它不是普通海报，也不是单纯插画，而是一张兼具「图鉴感、百科感、信息结构感、收藏感」的模块化科普卡片。
+
+核心目标：
+
+整体信息密度应接近现代百科书页、高级博物图鉴或高质量知识杂志内页。
+
+画面要丰富、耐看、可收藏。
+
+不要过度极简，不要空洞留白。
+
+不要做成轻量知识卡。
+
+但也不要拥挤、杂乱或小字堆满。
+
+版式密度规则：
+
+画面中下部默认设置 8 个完整信息模块。
+
+允许在不拥挤的前提下，额外加入 1-2 个小型补充模块。
+
+补充模块最多 2 个，不要超过 2 个。
+
+如果画面空间不足，优先保留 8 个完整模块，删除补充模块。
+
+每个完整模块包含 2-4 条短文本。
+
+补充模块只放短标签、图标或小型可视化，不写长句。
+
+整体强调百科书页的信息密度和收藏感。
+
+必须包含多种可视化元素。
+
+不要过度极简，不要把模块做得过于简陋。
+
+版面比例：
+
+主视觉占画面高度约 28%-35%。
+
+信息模块区占画面高度约 50%-58%。
+
+顶部标题区清晰但不要过高。
+
+底部总结栏简洁，不要占用太多空间。
+
+不要让主视觉挤压信息模块。
+
+不要让模块挤压标题和底部总结。
+
+系列感要求：
+
+整体版式应像同一套百科图鉴系列模板。
+
+可以替换不同主题，但保持统一的信息结构和视觉秩序。
+
+标题区、主视觉区、局部放大区、信息模块区、底部总结栏的层级要稳定。
+
+不同主题可以变化配色和图标，但整体风格要统一。
+
+整体风格：
+
+高级博物图鉴、现代百科书页、生活方式知识卡、社交媒体高传播信息图的结合。
+
+浅色干净背景，柔和配色，轻阴影，精致小图标，圆角信息框，细线标注，整洁网格排版。
+
+信息丰富但层级清楚，阅读体验好，适合收藏和系列化生产。
+
+不要做成商业广告、旅游宣传海报、促销海报或单纯插画。
+
+如果是宠物主题，也不要做成可爱卖萌海报、宠物店广告或领养宣传图。
+
+画面比例：
+
+竖版 9:16。
+
+适合手机屏幕阅读。
+
+顶部标题，中上部主视觉，中下部模块信息，底部总结栏。
+
+一、标题区
+
+顶部放置清晰标题：
+
+「【${topic}】百科图鉴」
+
+副标题用一句短句概括主题特征。
+
+添加 3-5 个短标签。
+
+标签必须简短，例如：
+
+#古都 #生态 #节气 #结构 #习性 #护理
+
+二、主视觉区
+
+画面中上部放置一个清晰漂亮的主题主视觉。
+
+主视觉要像图鉴中的核心标本、城市样本、动物观察样本、宠物品种档案、人物档案、节日场景、结构样本或知识对象。
+
+画面精致、可信、干净，有图鉴插画感。
+
+不要过度夸张，不要杂乱拼贴。
+
+三、局部特征放大
+
+围绕主视觉设置 4-5 个放大细节框。
+
+根据主题自动选择最值得观察的局部特征。
+
+使用细线、编号、短标签连接主视觉。
+
+放大框要有真实观察感，而不是装饰圆点。
+
+四、模块化信息区
+
+画面中下部设置 8 个完整信息模块。
+
+模块可以有大小主次，但每个模块都要看起来完整。
+
+不要把后几个模块做得过于简陋。
+
+允许额外加入 1-2 个小型补充模块，但不能造成拥挤。
+
+每个完整模块包含：
+
+1 个清楚小标题
+
+1 个小图标
+
+2-4 条短句或短标签
+
+必要时加入评分条、时间轴、地图、结构图、对比条、流程图等可视化元素
+
+小型补充模块可以是：
+
+冷知识
+
+色谱
+
+风味轮
+
+季节轮盘
+
+风险等级
+
+地图索引
+
+形态对比
+
+结构剖面
+
+小型 Top 清单
+
+关键词标签组
+
+补充模块要求：
+
+只放短标签、图标、小型图表或 1-2 条极短文字。
+
+不要写长句。
+
+不要抢占主模块层级。
+
+最多 2 个补充模块。
+
+空间不足时取消补充模块。
+
+文字密度要求：
+
+每个完整模块 2-4 条短文本。
+
+每条文字尽量控制在 10-16 个中文字符。
+
+允许少量较长专有名词。
+
+不要写大段正文。
+
+不要生成密密麻麻的小字。
+
+画面要有百科书页的信息密度，但必须保持清晰行距和模块留白。
+
+短句丰富，层级清楚，信息完整。
+
+如果文字过多会影响清晰度，优先减少正文数量，而不是缩小字号或生成伪字。
+
+如果文字区域不足，优先压缩句子，不要缩小到不可读。
+
+事实准确性要求：
+
+内容应基于常识性、稳定性较高的百科信息。
+
+不要编造不确定事实。
+
+无法确定的内容，用通用描述、图标或结构表达。
+
+避免使用过细、过新、可能变化的数据。
+
+不要生成看似精确但无法确认的数字。
+
+五、栏目选择规则
+
+请根据主题类型自动选择最合适的 8 个信息模块。
+
+如果主题是城市：
+
+基础档案、地理位置、历史坐标、城市结构、代表地标、生活方式、快速评分卡、地图速览。
+
+可选内容：地貌气候、街区肌理、美食、交通格局、文化符号。
+
+补充模块可选：城市印章、街区剖面、地标剪影、饮食标签、交通线索。
+
+如果主题是动物：
+
+基础档案、分类信息、外观特征、栖息环境、生活习性、食性结构、风险等级、冷知识。
+
+可选内容：繁殖方式、分布区域、保护等级、天敌关系。
+
+补充模块可选：足迹、体型比例、生态位、分布小地图、叫声标签。
+
+如果主题是宠物：
+
+基础档案、品种特征、性格倾向、饲养难度、日常护理、适合人群、风险注意、快速评分卡。
+
+可选内容：运动需求、饮食建议、毛发护理、训练难度、社交需求、常见疾病、空间需求、花费等级。
+
+补充模块可选：体型比例、毛色图鉴、护理清单、适合人群标签、常见误区。
+
+宠物主题要像「宠物饲养百科图鉴」，不要像萌宠写真或宠物用品广告。
+
+如果主题是植物：
+
+基础档案、分类信息、形态特征、生长环境、花果周期、养护建议、用途价值、注意事项。
+
+可选内容：分布区域、毒性、观赏价值、药用或食用价值。
+
+补充模块可选：叶形图鉴、花期轮盘、生长条件、土壤湿度、毒性等级。
+
+如果主题是人物：
+
+基础档案、生平时间线、代表成就、关键作品、人物关键词、影响力评分、时代背景、争议或局限。
+
+可选内容：人物关系、思想主张、历史评价、重要节点。
+
+补充模块可选：语录标签、作品索引、关系图、时代坐标、成就徽章。
+
+如果主题是节日：
+
+基础档案、起源传说、时间节点、核心习俗、象征物、节令食物、地域差异、文化意义。
+
+可选内容：仪式流程、相关诗词、禁忌事项、现代变化。
+
+补充模块可选：节令色卡、习俗流程、食物清单、地域地图、象征物小图鉴。
+
+如果主题是食物：
+
+基础档案、原料结构、风味特征、制作流程、地域流派、食用场景、搭配建议、注意事项。
+
+可选内容：营养特点、历史来源、口感层次、常见变体。
+
+补充模块可选：风味雷达、色谱、口感标签、原料剖面、制作步骤小图。
+
+如果主题是自然现象：
+
+形成机制、发生条件、结构组成、观测方式、典型案例、风险等级、季节分布、防护建议。
+
+可选内容：影响范围、科学原理、记录数据、预警信号。
+
+补充模块可选：观测窗口、风险图例、形成流程、数据刻度、影响范围图。
+
+如果主题是历史事件：
+
+基础档案、时间线、关键人物、事件过程、地点地图、因果关系、历史影响、争议点。
+
+可选内容：背景条件、转折节点、后续变化、相关文献。
+
+补充模块可选：关键日期、势力关系、地点索引、事件流程、影响标签。
+
+如果主题是器物：
+
+基础档案、结构组成、用途场景、工艺特点、发展历史、材料说明、维护建议、收藏价值。
+
+可选内容：剖面结构、使用流程、优缺点、文化意义。
+
+补充模块可选：结构剖面、材料色卡、工艺步骤、尺寸标注、收藏等级。
+
+如果主题是科技概念：
+
+基础定义、工作原理、结构组成、应用场景、发展阶段、优缺点、风险提醒、未来趋势。
+
+可选内容：流程图、技术路线、关键指标、常见误区。
+
+补充模块可选：流程图、技术栈、应用矩阵、风险等级、未来趋势箭头。
+
+如果主题类型不明确：
+
+自动选择最适合该主题的 8 个信息模块，保持百科图鉴感。
+
+六、可视化模块要求
+
+必须包含至少 5 种可视化元素：
+
+局部放大框
+
+Top 5 或编号清单
+
+快速评分卡或对比条
+
+时间轴或流程图
+
+迷你地图、结构示意、生态分布图、风险等级、季节轮盘中的任意一种
+
+可根据主题类型自动选择最合适的可视化方式：
+
+城市适合迷你地图、时间轴、Top 5、城市结构图。
+
+动物适合生态分布图、食性结构、风险等级、外形标注。
+
+宠物适合评分卡、护理清单、适合人群标签、体型比例图。
+
+植物适合季节轮盘、形态结构、生长条件、养护图标。
+
+人物适合时间线、成就清单、影响力评分、人物关系图。
+
+节日适合时间节点、习俗流程、象征物图鉴、地域差异图。
+
+食物适合原料结构、制作流程、风味雷达、地域流派图。
+
+自然现象适合形成机制图、风险等级、观测条件、影响范围图。
+
+器物适合结构剖面、材料标注、使用流程、工艺细节。
+
+科技概念适合工作原理图、流程图、优缺点对比、应用场景图。
+
+七、文字质量要求
+
+中文简体。
+
+标题和栏目名必须清晰。
+
+正文以短句和标签为主。
+
+避免长段落。
+
+避免极小字号。
+
+避免乱码、伪字、错别字。
+
+不要写空泛宣传语。
+
+不要使用夸张广告口吻。
+
+不要为了填满版面生成无意义文字。
+
+如果文字区域不足，优先压缩句子，不要缩小到不可读。
+
+八、视觉细节
+
+背景浅色，有轻微纸张质感。
+
+模块使用圆角卡片、细边框、轻阴影。
+
+配色柔和但有层次。
+
+小图标精致统一。
+
+编号、标签、箭头、标注线要整洁。
+
+整体像真正可以发布、阅读、收藏、系列化生产的百科图鉴卡。
+
+视觉复杂度要高于普通知识卡，但仍然保持清爽秩序。
+
+九、底部总结
+
+底部放一个总结栏。
+
+写一句简短总结。
+
+控制在 16-24 个中文字符。
+
+语气像百科书页注释，不要像广告口号。
+
+最终效果：
+
+一张完整、清晰、精致、信息丰富、可收藏的竖版科普百科图鉴。
+
+突出「知识整理 + 模块信息 + 图鉴式展示」。
+
+底部水印：© ${topic}百科 · ${seriesName}`;
+}
+
+/**
+ * Small dictionary of common species → Latin name. Returns "" for unknown
+ * topics or non-biological kinds (only pet/animal/plant get Latin names).
+ */
+const KNOWN_LATIN: Record<string, string> = {
+  // Dogs
+  "金毛寻回犬": "Canis lupus familiaris",
+  "金毛": "Canis lupus familiaris",
+  "彭布罗克威尔士柯基": "Canis lupus familiaris",
+  "柯基": "Canis lupus familiaris",
+  "西伯利亚哈士奇": "Canis lupus familiaris",
+  "哈士奇": "Canis lupus familiaris",
+  "边境牧羊犬": "Canis lupus familiaris",
+  "边牧": "Canis lupus familiaris",
+  "柴犬": "Canis lupus familiaris",
+  "拉布拉多": "Canis lupus familiaris",
+  // Cats
+  "英国短毛猫": "Felis catus",
+  "英短": "Felis catus",
+  "美国短毛猫": "Felis catus",
+  "美短": "Felis catus",
+  "波斯猫": "Felis catus",
+  "布偶猫": "Felis catus",
+  "橘猫": "Felis catus",
+  "中华田园猫": "Felis catus",
+  // Animals
+  "负鼠": "Didelphis virginiana",
+  "藏羚羊": "Pantholops hodgsonii",
+  "雪豹": "Panthera uncia",
+  "大熊猫": "Ailuropoda melanoleuca",
+  // Plants
+  "普洱茶": "Camellia sinensis var. assamica",
+  "毛峰": "Camellia sinensis",
+  "西湖龙井": "Camellia sinensis var. sinensis",
+  "铁观音": "Camellia sinensis",
+  // Birds
+  "玄凤鹦鹉": "Nymphicus hollandicus",
+  "虎皮鹦鹉": "Melopsittacus undulatus",
+  // Reptiles
+  "豹纹守宫": "Eublepharis macularius",
+  "玉米蛇": "Pantherophis guttatus",
+};
+
+export function guessLatin(topic: string, kind: CardKind): string {
+  if (kind !== "pet" && kind !== "animal" && kind !== "plant") return "";
+  return KNOWN_LATIN[topic] ?? "";
+}
+
+const KNOWN_TITLE_EN: Record<string, string> = {
+  "金毛寻回犬": "Golden Retriever",
+  "金毛": "Golden Retriever",
+  "彭布罗克威尔士柯基": "Pembroke Welsh Corgi",
+  "柯基": "Pembroke Welsh Corgi",
+  "西伯利亚哈士奇": "Siberian Husky",
+  "哈士奇": "Siberian Husky",
+  "边境牧羊犬": "Border Collie",
+  "边牧": "Border Collie",
+  "柴犬": "Shiba Inu",
+  "拉布拉多": "Labrador Retriever",
+  "英国短毛猫": "British Shorthair",
+  "英短": "British Shorthair",
+  "美国短毛猫": "American Shorthair",
+  "美短": "American Shorthair",
+  "波斯猫": "Persian Cat",
+  "布偶猫": "Ragdoll",
+  "橘猫": "Orange Tabby",
+  "中华田园猫": "Chinese Li Hua",
+  "负鼠": "Virginia Opossum",
+  "藏羚羊": "Tibetan Antelope",
+  "雪豹": "Snow Leopard",
+  "大熊猫": "Giant Panda",
+  "普洱茶": "Pu'er Tea",
+  "毛峰": "Mao Feng Tea",
+  "西湖龙井": "Longjing Tea",
+  "铁观音": "Tieguanyin Tea",
+  "玄凤鹦鹉": "Cockatiel",
+  "虎皮鹦鹉": "Budgerigar",
+  "豹纹守宫": "Leopard Gecko",
+  "玉米蛇": "Corn Snake",
+  "朱元璋": "Zhu Yuanzhang",
+};
+
+export function guessTitleEn(topic: string, kind: CardKind): string {
+  if (kind !== "pet" && kind !== "animal" && kind !== "plant") return "";
+  return KNOWN_TITLE_EN[topic] ?? "";
+}
+
+export function getPaletteColors(paletteKey: string): [string, string, string] {
+  return PALETTE_HEX[paletteKey] ?? PALETTE_HEX.auto;
+}
+
+// seriesName now lives in theme-types.ts to keep one source of truth.
+// Helper for callers that still need the old name:
+export function getSeriesName(kind: CardKind): string {
+  return THEME_TYPE_MAP[kind]?.series ?? "百科图鉴系列";
+}

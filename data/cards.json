@@ -4,7 +4,7 @@
     "title": "金毛寻回犬",
     "titleEn": "Golden Retriever",
     "latin": "Canis lupus familiaris",
-    "kind": "dog",
+    "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "001",
     "palette": [
@@ -30,7 +30,7 @@
     "title": "彭布罗克威尔士柯基",
     "titleEn": "Pembroke Welsh Corgi",
     "latin": "Canis lupus familiaris",
-    "kind": "dog",
+    "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "002",
     "palette": [
@@ -56,7 +56,7 @@
     "title": "西伯利亚哈士奇",
     "titleEn": "Siberian Husky",
     "latin": "Canis lupus familiaris",
-    "kind": "dog",
+    "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "003",
     "palette": [
@@ -82,7 +82,7 @@
     "title": "边境牧羊犬",
     "titleEn": "Border Collie",
     "latin": "Canis lupus familiaris",
-    "kind": "dog",
+    "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "004",
     "palette": [
@@ -108,7 +108,7 @@
     "title": "柴犬",
     "titleEn": "Shiba Inu",
     "latin": "Canis lupus familiaris",
-    "kind": "dog",
+    "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "005",
     "palette": [
@@ -186,7 +186,7 @@
     "title": "龙猫",
     "titleEn": "",
     "latin": "",
-    "kind": "animal",
+    "kind": "other",
     "series": "wild-fauna-atlas",
     "seriesNo": "002",
     "palette": [
@@ -195,11 +195,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781205102043-card-rs1e.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 8.5,
+    "tags": [
+      "宫崎骏",
+      "动漫",
+      "治愈",
+      "童年"
+    ],
+    "tagline": "宫崎骏笔下的森林精灵",
+    "subtitle": "宫崎骏 · 动漫 · 治愈 · 童年",
+    "description": "《龙猫》是 1988 年宫崎骏执导、吉卜力工作室制作的动画电影, 主角龙猫是住在森林深处的森林之主, 体型巨大、性情温厚, 会用肚子当蹦床, 会召唤猫巴士。龙猫的形象融合了貉、熊、狸猫等多种东亚民间传说中的山林精怪, 现已成为日本最具代表性的动漫符号之一, 也是 NHK 长期使用的吉祥物原型。",
     "createdAt": "2026-06-11"
   },
   {
@@ -242,11 +247,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781207678840-card-gnj76.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 8.5,
+    "tags": [
+      "卷毛",
+      "黏人",
+      "聪明",
+      "玩具犬"
+    ],
+    "tagline": "卷毛的小太阳",
+    "subtitle": "卷毛 · 黏人 · 聪明 · 玩具犬",
+    "description": "泰迪犬并非独立的犬种, 而是指贵宾犬 (Poodle) 的泰迪熊式修剪造型。该造型得名于玩具熊泰迪, 修剪后显得头圆、毛茸、眼神温顺。贵宾犬原产法国和德国边境, 是水猎犬出身, 智商在犬类中排名第二, 常见体型有玩具型、迷你型和标准型, 是城市家庭最常见的伴侣犬之一。",
     "createdAt": "2026-06-11"
   },
   {
@@ -263,11 +273,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781208642233-card-j05su.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 8,
+    "tags": [
+      "颜值高",
+      "易饲养",
+      "温顺",
+      "热带"
+    ],
+    "tagline": "宠物蛇的人气之王",
+    "subtitle": "颜值高 · 易饲养 · 温顺 · 热带",
+    "description": "红尾蚺 (Boa constrictor) 是中美洲与南美洲热带雨林中的大型无毒蚺科蛇类, 成体体长 1.5 至 3 米, 因尾尖常带明显红褐色斑块而得名。它们以缠绕窒息的方式捕食小型哺乳动物和鸟类, 是著名的爬宠物种, 性格相对温顺、体色多变 (有白化、显隐等多品系), 但饲养需要严格的温湿度和空间条件。",
     "createdAt": "2026-06-11"
   },
   {
@@ -275,7 +290,7 @@
     "title": "朱元璋",
     "titleEn": "",
     "latin": "",
-    "kind": "concept",
+    "kind": "person",
     "series": "atlas-miscellany",
     "seriesNo": "001",
     "palette": [
@@ -284,11 +299,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781214491156-card-fil5l.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 9,
+    "tags": [
+      "布衣",
+      "洪武",
+      "治隆唐宋",
+      "严刑峻法"
+    ],
+    "tagline": "布衣出身的开国皇帝",
+    "subtitle": "布衣 · 洪武 · 治隆唐宋 · 严刑峻法",
+    "description": "朱元璋 (1328-1398) 是明朝开国皇帝, 幼年家贫, 父母兄长相继饿死, 25 岁加入红巾军, 先后击败陈友谅、张士诚等群雄, 于 1368 年在应天府 (今南京) 称帝, 建立明朝。他登基后废除丞相、设立三司、严刑峻法, 兴文字狱、诛杀功臣, 史称洪武之治, 但也是明初四大案的直接推动者, 死后葬于南京明孝陵。",
     "createdAt": "2026-06-11"
   },
   {
@@ -305,32 +325,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781214663277-card-iut1.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
-    "createdAt": "2026-06-11"
-  },
-  {
-    "slug": "card-fjehf",
-    "title": "普洱茶",
-    "titleEn": "",
-    "latin": "",
-    "kind": "plant",
-    "series": "atlas-miscellany",
-    "seriesNo": "002",
-    "palette": [
-      "#F5F0E6",
-      "#B8956A",
-      "#A8B89C"
+    "score": 8.5,
+    "tags": [
+      "安徽",
+      "绿茶",
+      "清香",
+      "明前"
     ],
-    "image": "/cards/1781214881487-card-fjehf.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "tagline": "安徽名茶的代表",
+    "subtitle": "安徽 · 绿茶 · 清香 · 明前",
+    "description": "毛峰是产于安徽黄山山脉 (含黄山、徽州、舒城等产区) 的卷曲形烘青绿茶, 以形如雀舌、白毫显露、色泽嫩绿、香气清鲜著称。其中黄山毛峰位列中国十大名茶, 创制于清光绪年间, 特级黄山毛峰采摘自清明前后的一芽一叶初展, 冲泡后茶汤嫩绿明亮, 滋味鲜醇回甘。",
     "createdAt": "2026-06-11"
   },
   {
@@ -338,7 +342,7 @@
     "title": "二十四节气",
     "titleEn": "",
     "latin": "",
-    "kind": "concept",
+    "kind": "phenomenon",
     "series": "atlas-miscellany",
     "seriesNo": "002",
     "palette": [
@@ -347,11 +351,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781215265552-card-xv4exk.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 9.2,
+    "tags": [
+      "节令",
+      "物候",
+      "农耕",
+      "阴阳"
+    ],
+    "tagline": "中国人的时间哲学",
+    "subtitle": "节令 · 物候 · 农耕 · 阴阳",
+    "description": "二十四节气是中华民族独创的太阳历知识体系, 始于春秋、定型于西汉, 把一年分为 24 个特定时段, 每个节气约 15 天, 反映太阳在黄道上的位置变化、气温、降水和自然物候。它既是古代农事活动的指导系统, 也深刻塑造了中国的饮食、养生、节庆与文学, 2016 年被联合国教科文组织列入人类非物质文化遗产代表作名录。",
     "createdAt": "2026-06-11"
   },
   {
@@ -368,11 +377,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781217506219-card-i3v5.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 9.2,
+    "tags": [
+      "西湖",
+      "江南",
+      "茶都",
+      "宋韵"
+    ],
+    "tagline": "上有天堂, 下有苏杭",
+    "subtitle": "西湖 · 江南 · 茶都 · 宋韵",
+    "description": "杭州是浙江省省会, 长江三角洲南翼中心城市, 钱塘江穿城而过。城市得名于余杭, 自隋开皇年间设州以来, 杭州在两宋时期 (尤其南宋) 作为国都达到第一个鼎盛期, 元代意大利旅行家马可·波罗称其为 \"世界上最华贵天城\"。今日杭州以西湖、良渚古城遗址、西溪湿地为代表, 兼具江南诗意与数字经济活力。",
     "createdAt": "2026-06-11"
   },
   {
@@ -389,11 +403,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781218748307-card-mrjj.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 9,
+    "tags": [
+      "园林",
+      "江南",
+      "昆曲",
+      "经济强市"
+    ],
+    "tagline": "一座园林半城诗",
+    "subtitle": "园林 · 江南 · 昆曲 · 经济强市",
+    "description": "苏州是江苏省地级市, 位于长江三角洲中部、太湖东岸, 自公元前 514 年吴王阖闾建城以来, 已有 2500 余年建城史。苏州以古典园林闻名, 拙政园、留园、网师园、环秀山庄等 9 处园林被列入世界文化遗产, 昆曲 (昆剧) 亦发源于此。它是长三角制造业重镇, 2020 年地区生产总值突破两万亿元, 是中国最均衡的工商业与文化古城之一。",
     "createdAt": "2026-06-11"
   },
   {
@@ -410,11 +429,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781219050684-card-qw8w.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 8.5,
+    "tags": [
+      "机警",
+      "强健",
+      "工作犬",
+      "黑色"
+    ],
+    "tagline": "比利时警犬主力",
+    "subtitle": "机警 · 强健 · 工作犬 · 黑色",
+    "description": "马里努阿犬 (Belgian Malinois) 起源于比利时马里努阿地区, 19 世纪末由兽医师 Adolphe Reul 系统选育, 体型中等偏瘦、被毛短密, 常见浅黄褐色带黑面罩。它以高智商、强体能、极度警觉著称, 21 世纪以来在欧美警犬、军犬、缉毒犬领域超越德国牧羊犬成为主力, 海豹突击队、白宫特勤局均大量配备。",
     "createdAt": "2026-06-11"
   },
   {
@@ -431,11 +455,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781219450688-card-els7.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 8.5,
+    "tags": [
+      "饺子",
+      "汤圆",
+      "数九",
+      "阳生"
+    ],
+    "tagline": "一年之中夜最长",
+    "subtitle": "饺子 · 汤圆 · 数九 · 阳生",
+    "description": "冬至是二十四节气中的第 22 个节气, 公历 12 月 21 至 23 日交节, 此时太阳直射南回归线, 北半球白昼最短、黑夜最长, 古称 \"日短至\"。中国古代认为自冬至起阳气始生, 故有 \"冬至大如年\" 之说, 北方有吃饺子 (纪念医圣张仲景)、南方有吃汤圆、江南有祭祖、苏州有 \"冬至大过年\" 等各地食俗与礼俗。",
     "createdAt": "2026-06-11"
   },
   {
@@ -452,11 +481,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781221167788-card-nw16.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 9.5,
+    "tags": [
+      "古都",
+      "长安",
+      "兵马俑",
+      "丝路"
+    ],
+    "tagline": "十三朝古都",
+    "subtitle": "古都 · 长安 · 兵马俑 · 丝路",
+    "description": "西安是陕西省省会, 古称长安, 先后有西周、秦、西汉、新莽、东汉献帝、西晋愍帝、前赵、前秦、后秦、西魏、北周、隋、唐等 13 个王朝以此为都, 建都累计逾 1100 年, 是中国建都朝代最多、时间最长的城市。秦兵马俑、大雁塔、城墙、大明宫、未央城等 6 处遗产被列入世界文化遗产名录, 是丝路东方起点。",
     "createdAt": "2026-06-11"
   },
   {
@@ -473,11 +507,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781237375797-smoke-repro-kc8387.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 5,
+    "tags": [
+      "测试",
+      "占位",
+      "排查",
+      "柯基"
+    ],
+    "tagline": "AI 生成烟雾测试图",
+    "subtitle": "测试 · 占位 · 排查",
+    "description": "这是一张用于排查 AI 图像生成 pipeline 异常 (生成成功但前端仍在转圈、超时边界、限流重试等) 的烟雾测试图, 主题为彭布罗克威尔士柯基犬, 配色用满暖色 + 中性色以便视觉检查饱和度、纹理、字体是否完整。日常展示时可忽略。",
     "createdAt": "2026-06-12"
   },
   {
@@ -494,11 +533,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781237840663-card-dvhp.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 9.3,
+    "tags": [
+      "海派",
+      "摩登",
+      "金融",
+      "弄堂"
+    ],
+    "tagline": "魔都百年风云",
+    "subtitle": "海派 · 摩登 · 金融 · 弄堂",
+    "description": "上海是中华人民共和国直辖市, 中国经济、金融、贸易、航运和科技创新中心, 位于长江入海口南岸。城市近代史以 1843 年开埠为分水岭, 迅速崛起为远东第一大都市, 外滩万国建筑群、陆家嘴摩天楼、浦江两岸天际线共同构成 \"魔都\" 印象。石库门里弄、江南造船、海派文化与海派清口共同构成上海的多面身份。",
     "createdAt": "2026-06-12"
   },
   {
@@ -515,11 +559,16 @@
       "#A8B89C"
     ],
     "image": "/cards/1781270122695-card-kavy.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
+    "score": 8.5,
+    "tags": [
+      "玉髓",
+      "纹理",
+      "七彩",
+      "佛教七宝"
+    ],
+    "tagline": "千变的玉石",
+    "subtitle": "玉髓 · 纹理 · 七彩 · 佛教七宝",
+    "description": "玛瑙是玉髓矿物 (隐晶质二氧化硅) 的一种, 因常含带状或环状色纹而著称, 是地球上分布最广的玉石之一。它是火山活动的产物, 常见于玄武岩气孔, 颜色涵盖红、白、灰、黑、黄、绿及少见的蓝紫, 其中的南红玛瑙、战国红玛瑙、雨花石、巴西玛瑙在世界宝石市场均有稳定地位。佛教经典中玛瑙列为七宝之一。",
     "createdAt": "2026-06-12"
   }
 ]

@@ -73,17 +73,20 @@ export default function Home({ searchParams }: HomeProps) {
               className="relative h-[420px] lg:h-[480px] hidden lg:block"
             >
               {heroCards.map((c, i) => {
-                // 2x2 grid with each card tilted slightly and lifted via shadow
+                // 2x2 grid with each card tilted slightly and lifted via shadow.
+                // Outer div carries rotate-*; inner wrapper carries hover:scale
+                // (Tailwind utility classes for the same `transform` property
+                // would otherwise clobber each other).
                 const positions = [
-                  "top-0 left-0 rotate-[-3deg] z-10",
-                  "top-4 right-0 rotate-[2deg] z-20",
-                  "bottom-4 left-8 rotate-[2deg] z-30",
-                  "bottom-0 right-4 rotate-[-3deg] z-40",
+                  "top-0 left-0 -rotate-3 z-10",
+                  "top-4 right-0 rotate-2 z-20",
+                  "bottom-4 left-8 rotate-2 z-30",
+                  "bottom-0 right-4 -rotate-3 z-40",
                 ];
                 return (
                   <div
                     key={c.slug}
-                    className={`absolute w-[200px] aspect-[9/16] rounded-lg overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 ${positions[i]}`}
+                    className={`absolute w-[200px] aspect-[9/16] rounded-lg overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 hover:z-50 ${positions[i]}`}
                     style={{ backgroundColor: c.palette[0], borderColor: c.palette[1] }}
                   >
                     <Image
@@ -92,6 +95,8 @@ export default function Home({ searchParams }: HomeProps) {
                       fill
                       sizes="200px"
                       className="object-cover object-center"
+                      // First hero collage card is the LCP candidate — preload.
+                      priority={i === 0}
                     />
                   </div>
                 );

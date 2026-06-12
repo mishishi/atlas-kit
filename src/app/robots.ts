@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/.next/"],
       },
     ],
-    sitemap: "http://localhost:3000/sitemap.xml", // Production: replace
+    sitemap: `${process.env.SITE_URL ?? "http://localhost:3000"}/sitemap.xml`,
   };
 }

@@ -5,6 +5,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { WebVitals } from "@/components/web-vitals";
 
 // Local fonts only — no Google Fonts URL.
 // Files copied from C:\Windows\Fonts into src/app/fonts/.
@@ -41,7 +42,7 @@ const notoSerifSC = localFont({
 export const metadata: Metadata = {
   title: "图鉴社 · Atlas Kit — 系列化中文科普图鉴",
   description: "高质量、可系列化的中文科普图鉴卡片集。浏览、收藏、并通过 AI 一键生成你自己的图鉴。",
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
   openGraph: {
     title: "图鉴社 · Atlas Kit",
     description: "系列化中文科普图鉴卡片集 · 博物馆质感 · AI 一键生成",
@@ -65,6 +66,16 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${notoSansSC.variable} ${notoSerifSC.variable}`}
     >
+      <head>
+        {/* Preconnect to the matrix CDN so AI-generated images start
+            downloading in parallel with the HTML body. Best-effort: misses
+            are silent and cost nothing. */}
+        <link rel="preconnect" href="https://cdn.minimaxi.com" crossOrigin="anonymous" />
+        {/* theme-color: matches brand cream so Safari/Chrome mobile chrome
+            blends instead of having a stark white bar. */}
+        <meta name="theme-color" content="#f7f2e8" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)" />
+      </head>
       <body className="min-h-dvh antialiased font-sans">
         <ThemeProvider defaultTheme="light">
           <div className="flex min-h-dvh flex-col">
@@ -86,6 +97,7 @@ export default function RootLayout({
             },
           }}
         />
+        <WebVitals />
       </body>
     </html>
   );

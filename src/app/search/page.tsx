@@ -1,5 +1,5 @@
 import { CardGrid } from "@/components/card-grid";
-import { getAllCards, searchCards } from "@/lib/data";
+import { getAllCards, getDiverseFeatured, searchCards } from "@/lib/data";
 import { Search as SearchIcon } from "lucide-react";
 
 export const metadata = {
@@ -41,7 +41,7 @@ export default function SearchPage({ searchParams }: SearchProps) {
   const query = searchParams.q ?? "";
   const results = query ? searchCards(query) : [];
   const allCards = getAllCards();
-  const popularSuggestions = allCards.slice(0, 4);
+  const popularSuggestions = getDiverseFeatured(4);
   const noResultSuggestions = buildNoResultSuggestions(allCards);
 
   return (

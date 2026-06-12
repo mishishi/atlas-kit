@@ -4,7 +4,7 @@ import { getAllCards, getAllSeries } from "@/lib/data";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "http://localhost:3000"; // Production: replace with real domain
+  const base = process.env.SITE_URL ?? "http://localhost:3000";
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [

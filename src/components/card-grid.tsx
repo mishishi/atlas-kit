@@ -10,6 +10,9 @@ interface CardGridProps {
    *  list (used by search "no results" to push users to other queries). */
   suggestions?: { label: string; href: string }[];
   emptyTitle?: string;
+  /** Override grid columns (e.g. "xl:grid-cols-5" for /cards 列表页). */
+  cols?: string;
+  ariaLabel?: string;
 }
 
 export function CardGrid({
@@ -17,6 +20,8 @@ export function CardGrid({
   emptyMessage = "暂无图鉴",
   suggestions,
   emptyTitle,
+  cols = "lg:grid-cols-3 xl:grid-cols-4",
+  ariaLabel,
 }: CardGridProps) {
   if (cards.length === 0) {
     if (suggestions && suggestions.length > 0) {
@@ -56,10 +61,16 @@ export function CardGrid({
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <ul
+      className={`grid grid-cols-1 sm:grid-cols-2 ${cols} gap-6 list-none p-0 min-h-[60vh] items-start`}
+      role="list"
+      aria-label={ariaLabel}
+    >
       {cards.map((card, idx) => (
-        <CardPreview key={card.slug} card={card} priority={idx < 4} />
+        <li key={card.slug} className="h-full">
+          <CardPreview card={card} priority={idx < 4} className="h-full" />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

@@ -34,6 +34,17 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
           priority={priority}
           className="object-cover"
         />
+        {/* "New" badge: surfaces cards added in the last 24h so users notice
+            fresh content on repeat visits. */}
+        {Date.now() - new Date(card.createdAt).getTime() < 86400000 && (
+          <span
+            className="absolute top-2 left-2 inline-flex items-center gap-1 rounded-full bg-success px-2 py-0.5 text-[10px] font-medium text-success-foreground shadow-card"
+            aria-label="24 小时内新收录"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-cream animate-pulse" aria-hidden="true" />
+            新收录
+          </span>
+        )}
       </div>
 
       <div className="p-4 paper-grain">
@@ -45,7 +56,7 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
         <h3 className="font-serif text-lg font-semibold leading-tight mb-1 group-hover:text-gold-deep transition-colors">
           {card.title}
         </h3>
-        <p className="text-xs italic text-muted-foreground mb-3">{card.subtitle}</p>
+        <p className="text-xs text-muted-foreground mb-3">{card.subtitle}</p>
         <div className="flex flex-wrap gap-1.5">
           {card.tags.slice(0, 3).map((tag) => (
             <Tag key={tag}>{tag}</Tag>

@@ -182,11 +182,12 @@ export async function POST(req: Request) {
     requests: [{ prompt, aspect_ratio: "9:16", resolution: "2K" }],
   };
 
-  // 5. Call mavis mcp matrix_generate_image
-  const tmpJson = path.join(process.cwd(), `.tmp-${Date.now()}.json`);
-  // Write file as plain UTF-8 (Node defaults to no BOM)
-  await fs.writeFile(tmpJson, JSON.stringify(requestJson), "utf8");
-  console.log("[generate] tmpJson written:", tmpJson, "exists:", await fs.stat(tmpJson).then(() => true).catch(() => false));
+  // 5. Call mavis daemon HTTP API (skips the mavis CLI which has unreliable
+  //    daemon-discovery in Next.js child processes — see memory).
+  //    Daemon URL is configurable via MAVIS_DAEMON_URL env (defaults to
+  //    localhost for dev). On Vercel, set this to your daemon's public URL.
+  const daemonUrl = process.env.MAVIS_DAEMON_URL ?? "http://127.0.0.1:15321";
+  const daemonMcpPath = `${daemonUrl}/mavis/api/mcp/call`;
 
   let mcpOutput = "";
   let lastError: any = null;
@@ -201,7 +202,7 @@ export async function POST(req: Request) {
       // file is readable from the Next.js process but the CLI's auto-detect
       // path returns null). Calling /mavis/api/mcp/call directly is faster
       // and side-steps the preflight entirely.
-      const res = await fetch("http://127.0.0.1:15321/mavis/api/mcp/call", {
+      const res = await fetch(daemonMcpPath, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -233,7 +234,6 @@ export async function POST(req: Request) {
     }
   }
   if (lastError || !mcpOutput) {
-    await fs.unlink(tmpJson).catch(() => {});
     return NextResponse.json(
       {
         error: `AI 生成失败: ${lastError?.message ?? "无输出"}`,
@@ -241,7 +241,6 @@ export async function POST(req: Request) {
       { status: 502 },
     );
   }
-  await fs.unlink(tmpJson).catch(() => {});
 
   // 6. Parse CDN URL
   // The daemon returns an MCP-style envelope: { content: [{type:"text", text:"<matrix JSON>"}], isError }

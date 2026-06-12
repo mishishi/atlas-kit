@@ -94,7 +94,58 @@ export function getKindCounts(): Record<string, number> {
   return counts;
 }
 
+/** Top N tags across all cards (for filter UI). */
+export function getTopTags(limit = 16): { tag: string; count: number }[] {
+  const counts: Record<string, number> = {};
+  for (const card of cards) {
+    for (const t of card.tags) {
+      counts[t] = (counts[t] ?? 0) + 1;
+    }
+  }
+  return Object.entries(counts)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit)
+    .map(([tag, count]) => ({ tag, count }));
+}
+
+export function getCardsByTag(tag: string): Card[] {
+  return cards.filter((c) => c.tags.includes(tag));
+}
+
 /** Helper: is a series slug valid? */
 export function isValidSeries(slug: string): boolean {
   return slug in SERIES_TYPE_MAP;
+}
+
+/**
+ * Pick N cards from getAllCards(), one per kind when possible, so the
+ * "popular" / "featured" rows look varied instead of clustered.
+ * Ties broken by createdAt desc (newest first).
+ */
+export function getDiverseFeatured(n: number): Card[] {
+  const all = getAllCards();
+  const byKind = new Map<string, Card[]>();
+  for (const c of all) {
+    const arr = byKind.get(c.kind) ?? [];
+    arr.push(c);
+    byKind.set(c.kind, arr);
+  }
+  const out: Card[] = [];
+  const kinds = [...byKind.keys()];
+  // Round-robin: pick newest from each kind until we hit `n` or exhaust kinds
+  let k = 0;
+  while (out.length < n && k < 50) {
+    let pickedThisRound = 0;
+    for (const kind of kinds) {
+      if (out.length >= n) break;
+      const arr = byKind.get(kind)!;
+      if (arr.length > k) {
+        out.push(arr[k]);
+        pickedThisRound++;
+      }
+    }
+    if (pickedThisRound === 0) break;
+    k++;
+  }
+  return out;
 }

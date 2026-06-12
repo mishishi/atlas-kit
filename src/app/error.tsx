@@ -32,9 +32,20 @@ export default function Error({
           页面遇到了一个意外错误。重试一下, 或者回到首页继续浏览图鉴。
         </p>
         {error.digest && (
-          <p className="text-xs font-mono text-muted-foreground mb-8">
+          <p className="text-xs font-mono text-muted-foreground mb-2">
             错误 ID: {error.digest}
           </p>
+        )}
+        {process.env.NODE_ENV === "development" && error.message && (
+          <details className="mb-8 text-left rounded-md border border-destructive/30 bg-destructive/5 p-3 text-xs">
+            <summary className="cursor-pointer font-medium text-destructive">
+              调试信息 (仅 dev)
+            </summary>
+            <pre className="mt-2 whitespace-pre-wrap break-all font-mono text-[11px] text-muted-foreground">
+              {error.message}
+              {error.stack ? `\n\n${error.stack}` : ""}
+            </pre>
+          </details>
         )}
 
         <div className="flex flex-wrap justify-center gap-3">

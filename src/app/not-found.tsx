@@ -1,11 +1,16 @@
-import Link from "next/link";
-import { Compass, Search, Home } from "lucide-react";
+"use client";
 
-export const metadata = {
-  title: "找不到图鉴 · 图鉴社",
-};
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Compass, Search, Home, Sparkles, ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
+  const pathname = usePathname() ?? "";
+  // Path-aware CTAs: if user came looking for a specific card or series,
+  // surface the right "go back" entry point.
+  const isCardPath = pathname.startsWith("/cards/");
+  const isSeriesPath = pathname.startsWith("/series/");
+
   return (
     <div className="container py-section min-h-[60vh]">
       <div className="mx-auto max-w-xl text-center">
@@ -16,7 +21,11 @@ export default function NotFound() {
         <div className="mb-2 text-xs uppercase tracking-[0.2em] text-gold-deep">404 · NOT FOUND</div>
         <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3">这片图鉴似乎走丢了</h1>
         <p className="text-muted-foreground leading-relaxed mb-8">
-          你要找的页面、图鉴或系列可能已经下架, 或链接拼写有误。
+          {isCardPath
+            ? "这张图鉴可能还没有收录, 或者链接拼写有误。"
+            : isSeriesPath
+              ? "这个系列可能还在筹备中, 或名称已经更新。"
+              : "你要找的页面、图鉴或系列可能已经下架, 或链接拼写有误。"}
           试试下面这些入口:
         </p>
 
@@ -28,12 +37,37 @@ export default function NotFound() {
             <Home className="h-4 w-4" aria-hidden="true" />
             回到首页
           </Link>
+          {isCardPath ? (
+            <Link
+              href="/cards"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              返回图鉴列表
+            </Link>
+          ) : isSeriesPath ? (
+            <Link
+              href="/series"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              返回系列列表
+            </Link>
+          ) : (
+            <Link
+              href="/series"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            >
+              <Compass className="h-4 w-4" aria-hidden="true" />
+              浏览所有系列
+            </Link>
+          )}
           <Link
-            href="/series"
+            href="/create"
             className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
           >
-            <Compass className="h-4 w-4" aria-hidden="true" />
-            浏览所有系列
+            <Sparkles className="h-4 w-4" aria-hidden="true" />
+            生成一张新的
           </Link>
           <Link
             href="/search"

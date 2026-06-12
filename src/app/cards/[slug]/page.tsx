@@ -33,6 +33,28 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
 
   return (
     <article className="container py-8 md:py-12">
+      {/* JSON-LD: helps search engines surface rich snippets (image, date, tags). */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            name: card.title,
+            alternateName: card.titleEn,
+            description: card.tagline,
+            contentUrl: card.image,
+            keywords: card.tags.join(", "),
+            inLanguage: "zh-CN",
+            datePublished: card.createdAt,
+            genre: displayLabel(card.kind),
+            isPartOf: {
+              "@type": "Collection",
+              name: seriesName,
+            },
+          }),
+        }}
+      />
       {/* Breadcrumb */}
       <nav aria-label="面包屑" className="mb-6 text-sm text-muted-foreground flex flex-wrap items-center">
         <Link

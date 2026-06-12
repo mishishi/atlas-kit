@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowLeft, ArrowRight, Sparkles, Loader2, Check, CheckCircle2, BookMarked, Lightbulb, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles, Loader2, Check, CheckCircle2, BookMarked, Lightbulb, X, Palette, FileText } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { THEME_TYPES, type ThemeType } from "@/lib/theme-types";
@@ -147,6 +147,14 @@ export function GenerationWizard() {
     return () => clearTimeout(timer);
   }, [step, topic, kind, seriesSlug, palette]);
 
+  // ── Reset scroll on step change (wizard body is shorter than viewport
+  //    in some cases, so the previous step's scroll position can persist
+  //    awkwardly if the next step is shorter).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [step]);
+
   // ── Sync state → URL (replaceState, no scroll) ──
   const syncUrl = useCallback(
     (next: { step?: Step; q?: string; kind?: Kind; series?: string; palette?: string }) => {
@@ -238,7 +246,7 @@ export function GenerationWizard() {
       >
         {/* Step breadcrumb — clickable to jump back, shows step name + state */}
         <ol
-          className="mb-3 flex items-center justify-center gap-1.5 text-xs flex-wrap list-none p-0"
+          className="mb-3 flex items-center justify-center gap-1 text-[11px] sm:gap-1.5 sm:text-xs flex-wrap list-none p-0"
           aria-label="生成图鉴步骤"
         >
           {[
@@ -264,7 +272,7 @@ export function GenerationWizard() {
                   aria-current={current ? "step" : undefined}
                   disabled={!reachable}
                   className={cn(
-                    "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 transition-colors",
+                    "inline-flex items-center gap-1 sm:gap-1.5 rounded-full px-2 py-0.5 sm:px-2.5 sm:py-1 transition-colors",
                     current && "bg-gold/10 font-medium text-gold-deep",
                     done && "text-foreground hover:bg-muted cursor-pointer",
                     !reachable && "text-muted-foreground/60 cursor-not-allowed",
@@ -406,7 +414,7 @@ export function GenerationWizard() {
               <h2 id="step3-title" className="font-serif text-xl font-semibold mb-1">选择系列归属</h2>
               <p className="text-sm text-muted-foreground">这张图鉴会加入哪个系列收藏</p>
             </div>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
               {SERIES_TYPES.map((s) => {
                 const selected = seriesSlug === s.slug;
                 const isTop = recommendations[0]?.series.slug === s.slug;
@@ -419,7 +427,7 @@ export function GenerationWizard() {
                     aria-pressed={selected}
                     aria-label={reason ? `${s.name} — ${reason}` : s.name}
                     className={cn(
-                      "relative w-full flex min-h-[44px] items-center gap-4 rounded-md border p-4 text-left transition-all",
+                      "relative w-full h-full flex min-h-[44px] flex-col items-stretch gap-2 rounded-md border p-4 text-left transition-all",
                       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                       selected
                         ? "border-gold-deep shadow-card-hover scale-[0.99]"
@@ -511,21 +519,33 @@ export function GenerationWizard() {
             </div>
 
             <dl className="mx-auto max-w-md space-y-3 text-left">
-              <div className="flex justify-between gap-4 rounded-md bg-muted/50 p-3">
-                <dt className="text-muted-foreground text-sm">主题</dt>
-                <dd className="font-medium">{topic}</dd>
+              <div className="flex justify-between items-center gap-4 rounded-md bg-muted/50 p-3">
+                <dt className="text-muted-foreground text-sm flex items-center gap-2">
+                  <FileText className="h-3.5 w-3.5" aria-hidden="true" />
+                  主题
+                </dt>
+                <dd className="font-medium text-right">{topic}</dd>
               </div>
-              <div className="flex justify-between gap-4 rounded-md bg-muted/50 p-3">
-                <dt className="text-muted-foreground text-sm">类型</dt>
-                <dd className="font-medium">{KINDS.find((k) => k.key === kind)?.label}</dd>
+              <div className="flex justify-between items-center gap-4 rounded-md bg-muted/50 p-3">
+                <dt className="text-muted-foreground text-sm flex items-center gap-2">
+                  <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                  类型
+                </dt>
+                <dd className="font-medium text-right">{KINDS.find((k) => k.key === kind)?.label}</dd>
               </div>
-              <div className="flex justify-between gap-4 rounded-md bg-muted/50 p-3">
-                <dt className="text-muted-foreground text-sm">系列</dt>
-                <dd className="font-medium">{SERIES_TYPES.find((s) => s.slug === seriesSlug)?.name}</dd>
+              <div className="flex justify-between items-center gap-4 rounded-md bg-muted/50 p-3">
+                <dt className="text-muted-foreground text-sm flex items-center gap-2">
+                  <BookMarked className="h-3.5 w-3.5" aria-hidden="true" />
+                  系列
+                </dt>
+                <dd className="font-medium text-right">{SERIES_TYPES.find((s) => s.slug === seriesSlug)?.name}</dd>
               </div>
-              <div className="flex justify-between gap-4 rounded-md bg-muted/50 p-3">
-                <dt className="text-muted-foreground text-sm">配色</dt>
-                <dd className="font-medium">{PALETTES.find((p) => p.key === palette)?.label}</dd>
+              <div className="flex justify-between items-center gap-4 rounded-md bg-muted/50 p-3">
+                <dt className="text-muted-foreground text-sm flex items-center gap-2">
+                  <Palette className="h-3.5 w-3.5" aria-hidden="true" />
+                  配色
+                </dt>
+                <dd className="font-medium text-right">{PALETTES.find((p) => p.key === palette)?.label}</dd>
               </div>
             </dl>
 

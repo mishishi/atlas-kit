@@ -59,7 +59,11 @@ export default function SeriesPage() {
                       alt={heroCard.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 100vw"
-                      className="object-cover object-center"
+                      // object-top: keeps the card's "title region" visible.
+                      // Default object-center would crop both top + bottom
+                      // equally, hiding the species/brand label that's
+                      // printed near the top of each card.
+                      className="object-cover object-top"
                       quality={95}
                       // First series row's hero is the LCP candidate — preload it.
                       // Other rows stay lazy so we don't bloat the initial bundle.

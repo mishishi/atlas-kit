@@ -43,13 +43,15 @@ export default function SeriesPage() {
               style={{ borderColor: s.palette[1] }}
             >
               <div className="flex flex-col md:flex-row">
-                {/* Hero cover — wide banner 4:3 (landscape magazine style).
-                    9:16 portrait cards sat 200×355px next to ~220px of
-                    content, leaving a 130px dead zone. 4:3 banner at 220w
-                    is 165px tall — matches the content column more closely
-                    and feels like a curated collection cover, not a poster. */}
+                {/* Hero cover — 3:4 portrait (260×347px). Source images are
+                    9:16 (0.5625) portraits; 4:3 (1.33) would force
+                    object-cover to crop the subject horizontally and
+                    squish it, so 3:4 (0.75) is the closest balanced
+                    match. 9:16 at 200w was 355px tall and left a 130px
+                    dead zone on the right; 3:4 at 260w lands at 347px —
+                    close to the right column and doesn't waste space. */}
                 <div
-                  className="relative w-full md:w-[260px] shrink-0 aspect-[4/3] md:aspect-[4/3]"
+                  className="relative w-full md:w-[260px] shrink-0 aspect-[3/4] md:aspect-[3/4]"
                   style={{ backgroundColor: s.palette[0] }}
                 >
                   {heroCard ? (
@@ -59,6 +61,7 @@ export default function SeriesPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, 260px"
                       className="object-cover object-center"
+                      quality={95}
                       // First series row's hero is the LCP candidate — preload it.
                       // Other rows stay lazy so we don't bloat the initial bundle.
                       priority={index === 0}
@@ -75,9 +78,10 @@ export default function SeriesPage() {
                   )}
                 </div>
 
-                {/* Right content — flex column so the column matches the
-                    hero cover's height. Each layer keeps its own gap. */}
-                <div className="flex-1 p-5 paper-grain min-w-0 flex flex-col">
+                {/* Right content — fills the hero's height and vertically
+                    distributes the 3 layers (head / thumbs / footer) so
+                    there's no dead space in the middle. */}
+                <div className="flex-1 p-5 paper-grain min-w-0 flex flex-col md:justify-between gap-3">
                   {/* Layer 1: title + count */}
                   <div className="flex items-baseline justify-between gap-3 mb-3">
                     <h2
@@ -99,7 +103,7 @@ export default function SeriesPage() {
                   </p>
 
                   {/* Layer 3: thumbnails strip + tags + CTA */}
-                  <div className="space-y-3">
+                  <div>
                     {thumbs.length > 0 ? (
                       <div
                         className="flex gap-2 overflow-x-auto pb-1"
@@ -119,6 +123,7 @@ export default function SeriesPage() {
                               fill
                               sizes="64px"
                               className="object-cover object-center"
+                              quality={95}
                             />
                           </div>
                         ))}

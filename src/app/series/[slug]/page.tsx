@@ -39,31 +39,58 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
         所有系列
       </Link>
 
-      {/* Series header with collage + meta */}
+      {/* Series header with hero + meta */}
       <header className="mb-10">
         <div className="grid gap-6 md:grid-cols-[1fr_2fr] items-start">
-          {/* Cover collage (left, 1:1 square) */}
-          <div
-            className="relative aspect-square rounded-lg border shadow-card overflow-hidden grid grid-cols-2 grid-rows-2 gap-0.5 p-1"
-            style={{ backgroundColor: series.palette[0], borderColor: series.palette[1] }}
-          >
-            {headerCards.length > 0 ? (
-              headerCards.map((c) => (
-                <div key={c.slug} className="relative aspect-[9/16] overflow-hidden rounded-sm">
-                  <Image
-                    src={c.image}
-                    alt={c.title}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover object-center"
-                  />
+          {/* Hero collage: 1 full-width cover card (object-top so the
+              species label is visible) + 3 thumbs below. The previous
+              1:1 2x2 grid squished 9:16 source cards into 1:1 cells,
+              cropping the subject on both axes. */}
+          <div className="space-y-2">
+            <div
+              className="relative w-full aspect-[9/16] md:aspect-[3/4] rounded-lg border shadow-card overflow-hidden"
+              style={{ backgroundColor: series.palette[0], borderColor: series.palette[1] }}
+            >
+              {headerCards[0] ? (
+                <Image
+                  src={headerCards[0].image}
+                  alt={headerCards[0].title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover object-top"
+                  quality={95}
+                  // Header hero is the LCP candidate for series detail pages.
+                  priority
+                />
+              ) : (
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center text-center p-4"
+                  style={{ color: series.palette[1] }}
+                >
+                  <Sparkles className="h-12 w-12 mb-3 opacity-50" />
+                  <div className="font-serif text-lg font-semibold">系列筹备中</div>
+                  <div className="text-xs opacity-70 mt-1">去生成第一张</div>
                 </div>
-              ))
-            ) : (
-              <div className="col-span-2 row-span-2 flex flex-col items-center justify-center text-center" style={{ color: series.palette[1] }}>
-                <Sparkles className="h-12 w-12 mb-3 opacity-50" />
-                <div className="font-serif text-lg font-semibold">系列筹备中</div>
-                <div className="text-xs opacity-70 mt-1">去生成第一张</div>
+              )}
+            </div>
+            {headerCards.length > 1 && (
+              <div className="flex gap-2">
+                {headerCards.slice(1, 4).map((c) => (
+                  <div
+                    key={c.slug}
+                    className="relative flex-1 aspect-[3/4] overflow-hidden rounded-md ring-1 ring-black/5"
+                    style={{ backgroundColor: series.palette[0] }}
+                  >
+                    <Image
+                      src={c.image}
+                      alt={c.title}
+                      fill
+                      sizes="(max-width: 768px) 33vw, 11vw"
+                      className="object-cover object-top"
+                      quality={95}
+                    />
+                  </div>
+                ))}
               </div>
             )}
           </div>
@@ -74,7 +101,7 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
               主题系列
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-bold mb-3">{series.name}</h1>
-            <p className="font-serif text-lg text-muted-foreground italic mb-4">{series.tagline}</p>
+            <p className="font-serif text-lg text-muted-foreground mb-4">{series.tagline}</p>
             <p className="text-sm leading-relaxed text-foreground/80 mb-5 max-w-prose">
               {series.description}
             </p>

@@ -43,9 +43,13 @@ export default function SeriesPage() {
               style={{ borderColor: s.palette[1] }}
             >
               <div className="flex flex-col md:flex-row">
-                {/* Hero cover — large, full 9:16, object-cover to keep subject centered */}
+                {/* Hero cover — wide banner 4:3 (landscape magazine style).
+                    9:16 portrait cards sat 200×355px next to ~220px of
+                    content, leaving a 130px dead zone. 4:3 banner at 220w
+                    is 165px tall — matches the content column more closely
+                    and feels like a curated collection cover, not a poster. */}
                 <div
-                  className="relative w-full md:w-[200px] shrink-0 aspect-[9/16] md:aspect-[9/16]"
+                  className="relative w-full md:w-[260px] shrink-0 aspect-[4/3] md:aspect-[4/3]"
                   style={{ backgroundColor: s.palette[0] }}
                 >
                   {heroCard ? (
@@ -53,7 +57,7 @@ export default function SeriesPage() {
                       src={heroCard.image}
                       alt={heroCard.title}
                       fill
-                      sizes="(max-width: 768px) 100vw, 200px"
+                      sizes="(max-width: 768px) 100vw, 260px"
                       className="object-cover object-center"
                       // First series row's hero is the LCP candidate — preload it.
                       // Other rows stay lazy so we don't bloat the initial bundle.
@@ -71,8 +75,9 @@ export default function SeriesPage() {
                   )}
                 </div>
 
-                {/* Right content — 3 vertical layers */}
-                <div className="flex-1 p-5 paper-grain min-w-0">
+                {/* Right content — flex column so the column matches the
+                    hero cover's height. Each layer keeps its own gap. */}
+                <div className="flex-1 p-5 paper-grain min-w-0 flex flex-col">
                   {/* Layer 1: title + count */}
                   <div className="flex items-baseline justify-between gap-3 mb-3">
                     <h2
@@ -89,7 +94,7 @@ export default function SeriesPage() {
                   </div>
 
                   {/* Layer 2: tagline */}
-                  <p className="text-sm text-muted-foreground italic leading-relaxed mb-4 line-clamp-2">
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
                     {s.tagline}
                   </p>
 
@@ -97,14 +102,14 @@ export default function SeriesPage() {
                   <div className="space-y-3">
                     {thumbs.length > 0 ? (
                       <div
-                        className="flex gap-1.5 overflow-x-auto pb-1"
+                        className="flex gap-2 overflow-x-auto pb-1"
                         role="list"
                         aria-label={`同系列其他 ${thumbs.length} 张`}
                       >
                         {thumbs.map((c) => (
                           <div
                             key={c.slug}
-                            className="relative shrink-0 w-12 aspect-[9/16] overflow-hidden rounded-sm ring-1 ring-black/5"
+                            className="relative shrink-0 w-16 aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-black/5"
                             style={{ backgroundColor: s.palette[0] }}
                             role="listitem"
                           >
@@ -112,7 +117,7 @@ export default function SeriesPage() {
                               src={c.image}
                               alt={c.title}
                               fill
-                              sizes="48px"
+                              sizes="64px"
                               className="object-cover object-center"
                             />
                           </div>
@@ -120,7 +125,7 @@ export default function SeriesPage() {
                       </div>
                     ) : (
                       <div
-                        className="h-12 rounded-sm border border-dashed flex items-center justify-center text-[10px]"
+                        className="h-16 rounded-sm border border-dashed flex items-center justify-center text-[10px]"
                         style={{ borderColor: s.palette[1], color: s.palette[1] }}
                       >
                         等待更多图鉴收录

@@ -25,8 +25,6 @@ export type CardKind =
 export interface Card {
   slug: string;
   title: string;
-  titleEn: string;
-  latin: string;
   kind: CardKind;
   /** Series slug — points to SERIES_TYPES[].slug. Decoupled from kind (a card's
    *  series is editorial/story-level, while kind is taxonomic/category-level). */

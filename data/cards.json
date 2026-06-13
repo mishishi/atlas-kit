@@ -2,8 +2,6 @@
   {
     "slug": "golden-retriever",
     "title": "金毛寻回犬",
-    "titleEn": "Golden Retriever",
-    "latin": "Canis lupus familiaris",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "001",
@@ -28,8 +26,6 @@
   {
     "slug": "corgi",
     "title": "彭布罗克威尔士柯基",
-    "titleEn": "Pembroke Welsh Corgi",
-    "latin": "Canis lupus familiaris",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "002",
@@ -54,8 +50,6 @@
   {
     "slug": "husky",
     "title": "西伯利亚哈士奇",
-    "titleEn": "Siberian Husky",
-    "latin": "Canis lupus familiaris",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "003",
@@ -80,8 +74,6 @@
   {
     "slug": "border-collie",
     "title": "边境牧羊犬",
-    "titleEn": "Border Collie",
-    "latin": "Canis lupus familiaris",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "004",
@@ -106,8 +98,6 @@
   {
     "slug": "shiba-inu",
     "title": "柴犬",
-    "titleEn": "Shiba Inu",
-    "latin": "Canis lupus familiaris",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "005",
@@ -132,8 +122,6 @@
   {
     "slug": "opossum",
     "title": "负鼠",
-    "titleEn": "Virginia Opossum",
-    "latin": "Didelphis virginiana",
     "kind": "animal",
     "series": "wild-fauna-atlas",
     "seriesNo": "001",
@@ -158,8 +146,6 @@
   {
     "slug": "puer-tea",
     "title": "普洱茶",
-    "titleEn": "Pu'er Tea",
-    "latin": "Camellia sinensis var. assamica",
     "kind": "plant",
     "series": "atlas-miscellany",
     "seriesNo": "001",
@@ -184,8 +170,6 @@
   {
     "slug": "card-rs1e",
     "title": "龙猫",
-    "titleEn": "",
-    "latin": "",
     "kind": "other",
     "series": "wild-fauna-atlas",
     "seriesNo": "002",
@@ -210,8 +194,6 @@
   {
     "slug": "card-q8hnld",
     "title": "英国短毛猫",
-    "titleEn": "",
-    "latin": "",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "001",
@@ -236,8 +218,6 @@
   {
     "slug": "card-gnj76",
     "title": "泰迪犬",
-    "titleEn": "",
-    "latin": "",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "002",
@@ -262,8 +242,6 @@
   {
     "slug": "card-j05su",
     "title": "红尾蚺",
-    "titleEn": "",
-    "latin": "",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "003",
@@ -288,8 +266,6 @@
   {
     "slug": "card-fil5l",
     "title": "朱元璋",
-    "titleEn": "",
-    "latin": "",
     "kind": "person",
     "series": "atlas-miscellany",
     "seriesNo": "001",
@@ -314,8 +290,6 @@
   {
     "slug": "card-iut1",
     "title": "毛峰",
-    "titleEn": "",
-    "latin": "",
     "kind": "plant",
     "series": "atlas-miscellany",
     "seriesNo": "001",
@@ -340,8 +314,6 @@
   {
     "slug": "card-xv4exk",
     "title": "二十四节气",
-    "titleEn": "",
-    "latin": "",
     "kind": "phenomenon",
     "series": "atlas-miscellany",
     "seriesNo": "002",
@@ -366,8 +338,6 @@
   {
     "slug": "card-i3v5",
     "title": "杭州",
-    "titleEn": "",
-    "latin": "",
     "kind": "city",
     "series": "city-encyclopedia",
     "seriesNo": "001",
@@ -392,8 +362,6 @@
   {
     "slug": "card-mrjj",
     "title": "苏州",
-    "titleEn": "",
-    "latin": "",
     "kind": "city",
     "series": "city-encyclopedia",
     "seriesNo": "002",
@@ -418,8 +386,6 @@
   {
     "slug": "card-qw8w",
     "title": "马犬",
-    "titleEn": "",
-    "latin": "",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "004",
@@ -444,8 +410,6 @@
   {
     "slug": "card-els7",
     "title": "冬至",
-    "titleEn": "",
-    "latin": "",
     "kind": "festival",
     "series": "festival-almanac",
     "seriesNo": "001",
@@ -470,8 +434,6 @@
   {
     "slug": "card-nw16",
     "title": "西安",
-    "titleEn": "",
-    "latin": "",
     "kind": "city",
     "series": "city-encyclopedia",
     "seriesNo": "003",
@@ -496,8 +458,6 @@
   {
     "slug": "smoke-repro-kc8387",
     "title": "smoke repro",
-    "titleEn": "",
-    "latin": "",
     "kind": "pet",
     "series": "pet-breed-guide",
     "seriesNo": "010",
@@ -522,8 +482,6 @@
   {
     "slug": "card-dvhp",
     "title": "上海",
-    "titleEn": "",
-    "latin": "",
     "kind": "city",
     "series": "city-encyclopedia",
     "seriesNo": "004",
@@ -548,8 +506,6 @@
   {
     "slug": "card-kavy",
     "title": "玛瑙",
-    "titleEn": "",
-    "latin": "",
     "kind": "object",
     "series": "atlas-miscellany",
     "seriesNo": "006",

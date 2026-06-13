@@ -8,95 +8,6 @@ import { THEME_TYPES } from "@/lib/theme-types";
 import { SERIES_TYPES, getDefaultSeriesSlugForKind, SERIES_TYPE_MAP } from "@/lib/series-types";
 import cardsData from "../../../../data/cards.json";
 
-// Small dictionary of common species → Latin name. Falls back to "" for unknown
-// topics. Extend as needed; missing entries are safe (UI gracefully hides empty fields).
-const KNOWN_LATIN: Record<string, string> = {
-  // Dogs
-  "金毛寻回犬": "Canis lupus familiaris",
-  "金毛": "Canis lupus familiaris",
-  "彭布罗克威尔士柯基": "Canis lupus familiaris",
-  "柯基": "Canis lupus familiaris",
-  "西伯利亚哈士奇": "Canis lupus familiaris",
-  "哈士奇": "Canis lupus familiaris",
-  "边境牧羊犬": "Canis lupus familiaris",
-  "边牧": "Canis lupus familiaris",
-  "柴犬": "Canis lupus familiaris",
-  "拉布拉多": "Canis lupus familiaris",
-  // Cats
-  "英国短毛猫": "Felis catus",
-  "英短": "Felis catus",
-  "美国短毛猫": "Felis catus",
-  "美短": "Felis catus",
-  "波斯猫": "Felis catus",
-  "布偶猫": "Felis catus",
-  "橘猫": "Felis catus",
-  "中华田园猫": "Felis catus",
-  // Animals
-  "负鼠": "Didelphis virginiana",
-  "藏羚羊": "Pantholops hodgsonii",
-  "雪豹": "Panthera uncia",
-  "大熊猫": "Ailuropoda melanoleuca",
-  // Plants
-  "普洱茶": "Camellia sinensis var. assamica",
-  "毛峰": "Camellia sinensis",
-  "西湖龙井": "Camellia sinensis var. sinensis",
-  "铁观音": "Camellia sinensis",
-  // Birds
-  "玄凤鹦鹉": "Nymphicus hollandicus",
-  "虎皮鹦鹉": "Melopsittacus undulatus",
-  // Reptiles
-  "豹纹守宫": "Eublepharis macularius",
-  "玉米蛇": "Pantherophis guttatus",
-};
-
-function guessLatin(topic: string, kind: CardKind): string {
-  // Latin / scientific names only apply to biological topics
-  if (kind !== "pet" && kind !== "animal" && kind !== "plant") return "";
-  return KNOWN_LATIN[topic] ?? "";
-}
-
-// Common-species → English name. Falls back to "" for unknown topics.
-const KNOWN_TITLE_EN: Record<string, string> = {
-  "金毛寻回犬": "Golden Retriever",
-  "金毛": "Golden Retriever",
-  "彭布罗克威尔士柯基": "Pembroke Welsh Corgi",
-  "柯基": "Pembroke Welsh Corgi",
-  "西伯利亚哈士奇": "Siberian Husky",
-  "哈士奇": "Siberian Husky",
-  "边境牧羊犬": "Border Collie",
-  "边牧": "Border Collie",
-  "柴犬": "Shiba Inu",
-  "拉布拉多": "Labrador Retriever",
-  "英国短毛猫": "British Shorthair",
-  "英短": "British Shorthair",
-  "美国短毛猫": "American Shorthair",
-  "美短": "American Shorthair",
-  "波斯猫": "Persian Cat",
-  "布偶猫": "Ragdoll",
-  "橘猫": "Orange Tabby",
-  "中华田园猫": "Chinese Li Hua",
-  "负鼠": "Virginia Opossum",
-  "藏羚羊": "Tibetan Antelope",
-  "雪豹": "Snow Leopard",
-  "大熊猫": "Giant Panda",
-  "普洱茶": "Pu'er Tea",
-  "毛峰": "Mao Feng Tea",
-  "西湖龙井": "Longjing Tea",
-  "铁观音": "Tieguanyin Tea",
-  "玄凤鹦鹉": "Cockatiel",
-  "虎皮鹦鹉": "Budgerigar",
-  "豹纹守宫": "Leopard Gecko",
-  "玉米蛇": "Corn Snake",
-  "朱元璋": "Zhu Yuanzhang",
-};
-
-function guessTitleEn(topic: string, kind: CardKind): string {
-  // English name only for biological topics (pets/animals/plants).
-  // Concepts/food/objects typically don't need an English name.
-  if (kind !== "pet" && kind !== "animal" && kind !== "plant") return "";
-  return KNOWN_TITLE_EN[topic] ?? "";
-}
-
 interface RequestBody {
   topic: string;
   kind: CardKind;
@@ -289,8 +200,6 @@ export async function POST(req: Request) {
   const newCard = {
     slug,
     title: trimmedTopic,
-    titleEn: guessTitleEn(trimmedTopic, kind),
-    latin: guessLatin(trimmedTopic, kind),
     kind,
     series: seriesSlug, // store slug, not Chinese name
     seriesNo: String(cards.filter((c) => c.series === seriesSlug).length + 1).padStart(3, "0"),

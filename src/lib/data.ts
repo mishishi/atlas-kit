@@ -80,7 +80,6 @@ export function searchCards(query: string): Card[] {
   return cards.filter(
     (c) =>
       c.title.toLowerCase().includes(q) ||
-      c.titleEn.toLowerCase().includes(q) ||
       c.tags.some((t) => t.toLowerCase().includes(q)) ||
       c.description.toLowerCase().includes(q),
   );

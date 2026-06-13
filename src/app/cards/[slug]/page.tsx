@@ -41,7 +41,6 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             "@context": "https://schema.org",
             "@type": "ImageObject",
             name: card.title,
-            alternateName: card.titleEn,
             description: card.tagline,
             contentUrl: card.image,
             keywords: card.tags.join(", "),
@@ -105,26 +104,14 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             <h1 className="font-serif text-3xl md:text-4xl font-bold leading-tight mb-2">
               {card.title}
             </h1>
-            <p className="text-sm italic text-muted-foreground mb-4">{card.titleEn}</p>
-            <p className="font-serif italic text-lg text-gold-deep">{card.subtitle}</p>
+            <p className="font-serif text-lg text-gold-deep mb-4">{card.subtitle}</p>
           </div>
 
           <p className="text-base leading-relaxed text-foreground/90">{card.description}</p>
 
-          {/* Meta table — always 6 rows, even if some fields are empty */}
+          {/* Meta table — 4 rows: 类型 / 系列 / 收录 / 标签. The old
+              学名/English rows are gone (Chinese-only editorial tone). */}
           <dl className="rounded-lg border border-border bg-card p-4 space-y-2.5 text-sm">
-            <div className="flex justify-between gap-4">
-              <dt className="text-muted-foreground">学名</dt>
-              <dd className="font-mono text-xs text-right">
-                {card.latin || <span className="text-muted-foreground/50">—</span>}
-              </dd>
-            </div>
-            <div className="flex justify-between gap-4">
-              <dt className="text-muted-foreground">English</dt>
-              <dd className="italic text-right">
-                {card.titleEn || <span className="text-muted-foreground/50 not-italic">—</span>}
-              </dd>
-            </div>
             <div className="flex justify-between gap-4">
               <dt className="text-muted-foreground">类型</dt>
               <dd>{displayLabel(card.kind)}</dd>

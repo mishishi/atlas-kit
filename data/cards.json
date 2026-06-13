@@ -10,7 +10,7 @@
       "#3A3A3A",
       "#A89878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/belgian-malinois.png",
     "score": 8.5,
     "tags": [
       "机警",
@@ -106,7 +106,7 @@
       "#B8956A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/corn-snake.png",
     "score": 8.2,
     "tags": [
       "温顺",
@@ -130,7 +130,7 @@
       "#5B8C5A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/tibetan-antelope.png",
     "score": 9.2,
     "tags": [
       "高原",
@@ -154,7 +154,7 @@
       "#5B8C5A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/giant-panda.png",
     "score": 9.8,
     "tags": [
       "国宝",
@@ -178,7 +178,7 @@
       "#5B8C5A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/snow-leopard.png",
     "score": 9.4,
     "tags": [
       "高原",
@@ -202,7 +202,7 @@
       "#5B8C5A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/siberian-tiger.png",
     "score": 9.5,
     "tags": [
       "丛林之王",
@@ -226,7 +226,7 @@
       "#5B8C5A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/crested-ibis.png",
     "score": 9,
     "tags": [
       "国宝",
@@ -250,7 +250,7 @@
       "#6B8E5A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/longjing-tea.png",
     "score": 9.3,
     "tags": [
       "绿茶",
@@ -274,7 +274,7 @@
       "#6B8E5A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/ginkgo.png",
     "score": 9,
     "tags": [
       "活化石",
@@ -298,7 +298,7 @@
       "#6B8E5A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/plum-blossom.png",
     "score": 9,
     "tags": [
       "岁寒三友",
@@ -322,7 +322,7 @@
       "#6B8E5A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/orchid.png",
     "score": 8.8,
     "tags": [
       "花中君子",
@@ -346,7 +346,7 @@
       "#6B8E5A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/bamboo.png",
     "score": 8.8,
     "tags": [
       "禾本",
@@ -370,7 +370,7 @@
       "#4A6B8A",
       "#A0B4C8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/shanghai.png",
     "score": 9.3,
     "tags": [
       "海派",
@@ -394,7 +394,7 @@
       "#5B8C5A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/hangzhou.png",
     "score": 9.2,
     "tags": [
       "西湖",
@@ -418,7 +418,7 @@
       "#7B6855",
       "#D4B896"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/suzhou.png",
     "score": 9,
     "tags": [
       "园林",
@@ -442,7 +442,7 @@
       "#9A6B3D",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/xian.png",
     "score": 9.5,
     "tags": [
       "古都",
@@ -466,7 +466,7 @@
       "#9A6B3D",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/beijing.png",
     "score": 9.5,
     "tags": [
       "首都",
@@ -490,7 +490,7 @@
       "#7B5B3A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/li-bai.png",
     "score": 9.5,
     "tags": [
       "诗仙",
@@ -514,7 +514,7 @@
       "#7B5B3A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/du-fu.png",
     "score": 9.5,
     "tags": [
       "诗圣",
@@ -538,7 +538,7 @@
       "#7B5B3A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/su-shi.png",
     "score": 9.6,
     "tags": [
       "东坡",
@@ -562,7 +562,7 @@
       "#7B5B3A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/cai-lun.png",
     "score": 8.8,
     "tags": [
       "东汉",
@@ -586,7 +586,7 @@
       "#7B5B3A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/zhang-heng.png",
     "score": 8.9,
     "tags": [
       "东汉",
@@ -610,7 +610,7 @@
       "#7B3F2A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/winter-solstice.png",
     "score": 8.5,
     "tags": [
       "饺子",
@@ -634,7 +634,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/spring-festival.png",
     "score": 9.7,
     "tags": [
       "农历",
@@ -658,7 +658,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/qingming.png",
     "score": 9,
     "tags": [
       "祭祖",
@@ -682,7 +682,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/dragon-boat.png",
     "score": 9,
     "tags": [
       "屈原",
@@ -706,7 +706,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/mid-autumn.png",
     "score": 9.3,
     "tags": [
       "月亮",
@@ -730,7 +730,7 @@
       "#B0503A",
       "#E8C078"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/peking-duck.png",
     "score": 9,
     "tags": [
       "京菜",
@@ -754,7 +754,7 @@
       "#B0503A",
       "#E8C078"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/lamian.png",
     "score": 8.8,
     "tags": [
       "甘肃",
@@ -778,7 +778,7 @@
       "#B0503A",
       "#E8C078"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/rougamo.png",
     "score": 8.5,
     "tags": [
       "陕西",
@@ -802,7 +802,7 @@
       "#B0503A",
       "#E8C078"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/yum-cha.png",
     "score": 8.8,
     "tags": [
       "粤菜",
@@ -826,7 +826,7 @@
       "#B0503A",
       "#E8C078"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/chongqing-hotpot.png",
     "score": 9,
     "tags": [
       "麻辣",
@@ -850,7 +850,7 @@
       "#4A6B8A",
       "#A0B4C8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/plum-rain.png",
     "score": 8.5,
     "tags": [
       "长江中下游",
@@ -874,7 +874,7 @@
       "#4A6B8A",
       "#A0B4C8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/aurora.png",
     "score": 9.5,
     "tags": [
       "高纬度",
@@ -898,7 +898,7 @@
       "#4A6B8A",
       "#A0B4C8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/qiantang-tide.png",
     "score": 9.2,
     "tags": [
       "喇叭口",
@@ -922,7 +922,7 @@
       "#4A6B8A",
       "#A0B4C8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/tide.png",
     "score": 8.8,
     "tags": [
       "月引力",
@@ -946,7 +946,7 @@
       "#4A6B8A",
       "#A0B4C8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/el-nino.png",
     "score": 8.5,
     "tags": [
       "太平洋",
@@ -970,7 +970,7 @@
       "#7B5B3A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/silk-road.png",
     "score": 9.2,
     "tags": [
       "汉代",
@@ -994,7 +994,7 @@
       "#7B5B3A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/reign-of-zhenguan.png",
     "score": 9.2,
     "tags": [
       "唐太宗",
@@ -1018,7 +1018,7 @@
       "#7B5B3A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/an-shi-rebellion.png",
     "score": 8.8,
     "tags": [
       "唐代",
@@ -1042,7 +1042,7 @@
       "#7B5B3A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/hundred-days-reform.png",
     "score": 8.5,
     "tags": [
       "晚清",
@@ -1066,7 +1066,7 @@
       "#7B5B3A",
       "#C8A878"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/xian-incident.png",
     "score": 9,
     "tags": [
       "1936",
@@ -1090,7 +1090,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/agate.png",
     "score": 8.5,
     "tags": [
       "玉髓",
@@ -1114,7 +1114,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/jade-bi.png",
     "score": 8.8,
     "tags": [
       "礼器",
@@ -1138,7 +1138,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/lacquerware.png",
     "score": 8.8,
     "tags": [
       "天然漆",
@@ -1162,7 +1162,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/blue-white-porcelain.png",
     "score": 9,
     "tags": [
       "元代",
@@ -1186,7 +1186,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/abacus.png",
     "score": 8.5,
     "tags": [
       "计算",
@@ -1210,7 +1210,7 @@
       "#3A5A7A",
       "#8AA0B8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/5g.png",
     "score": 8.5,
     "tags": [
       "蜂窝",
@@ -1234,7 +1234,7 @@
       "#3A5A7A",
       "#8AA0B8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/artificial-intelligence.png",
     "score": 9,
     "tags": [
       "机器学习",
@@ -1258,7 +1258,7 @@
       "#3A5A7A",
       "#8AA0B8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/quantum-computing.png",
     "score": 9,
     "tags": [
       "叠加",
@@ -1282,7 +1282,7 @@
       "#3A5A7A",
       "#8AA0B8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/blockchain.png",
     "score": 8.5,
     "tags": [
       "去中心化",
@@ -1306,7 +1306,7 @@
       "#3A5A7A",
       "#8AA0B8"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/space-station.png",
     "score": 9,
     "tags": [
       "近地轨道",
@@ -1330,7 +1330,7 @@
       "#6B5B7B",
       "#B0A0C0"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/forbidden-city.png",
     "score": 9.5,
     "tags": [
       "明清",
@@ -1354,7 +1354,7 @@
       "#6B5B7B",
       "#B0A0C0"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/mogao-caves.png",
     "score": 9.6,
     "tags": [
       "壁画",
@@ -1378,7 +1378,7 @@
       "#6B5B7B",
       "#B0A0C0"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/suzhou-gardens.png",
     "score": 9.3,
     "tags": [
       "江南",
@@ -1402,7 +1402,7 @@
       "#6B5B7B",
       "#B0A0C0"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/three-body.png",
     "score": 9.2,
     "tags": [
       "科幻",
@@ -1426,7 +1426,7 @@
       "#6B5B7B",
       "#B0A0C0"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/sanxingdui.png",
     "score": 9.4,
     "tags": [
       "古蜀",
@@ -1437,25 +1437,6 @@
     "tagline": "古蜀文明的青铜之谜",
     "subtitle": "古蜀 · 青铜 · 面具 · 三星伴月",
     "description": "三星堆遗址位于四川广汉三星堆镇鸭子河畔, 距成都约 40 公里, 是古蜀国 (今四川盆地西部) 最重要的考古发现, 遗址面积 12 平方公里, 文化遗存分四期, 年代约公元前 2800 年至公元前 1100 年。1986 年两大祭祀坑出土青铜神树、青铜大立人、青铜纵目面具、黄金面罩、太阳形器、玉璋、玉琮等 1700 余件文物, 2020-2022 年新发现 6 座祭祀坑, 出土象牙、青铜器、金器、丝绸等更多文物, 三星堆是中华文明多元一体起源说的重要实证, 现建有三星堆博物馆。",
-    "createdAt": "2026-06-13"
-  },
-  {
-    "slug": "card-edfjgj",
-    "title": "测试跳转",
-    "kind": "pet",
-    "series": "pet-breed-guide",
-    "seriesNo": "006",
-    "palette": [
-      "#F5F0E6",
-      "#B8956A",
-      "#A8B89C"
-    ],
-    "image": "/cards/card-edfjgj.png",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
-    "subtitle": "",
-    "description": "",
     "createdAt": "2026-06-13"
   }
 ]

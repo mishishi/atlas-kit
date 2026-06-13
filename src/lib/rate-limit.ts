@@ -9,7 +9,9 @@ interface RateLimitEntry {
 const store = new Map<string, RateLimitEntry>();
 
 const WINDOW_MS = 5 * 60 * 1000; // 5 minutes
-const MAX_REQUESTS = 3; // 3 generations per 5 minutes per IP
+// Temporarily disabled while the user is batch-running the 60
+// placeholder cards. Re-enable (3) before deploying to production.
+const MAX_REQUESTS = 9999;
 
 export function rateLimit(ip: string): { allowed: boolean; remaining: number; resetAt: number } {
   const now = Date.now();

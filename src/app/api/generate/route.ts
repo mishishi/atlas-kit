@@ -181,7 +181,13 @@ export async function POST(req: Request) {
   }
 
   // 7. Download image to public/cards/
-  const imageFilename = `${Date.now()}-${slug}.png`;
+  // Filename: `<slug>.png` — directly matches the cards.json `image`
+  // field, so wizard-generated cards slot in without manual patching.
+  // We deliberately do NOT use a timestamp prefix: each slug should
+  // produce one stable filename that overwrites any previous version
+  // (the user's request when re-running the wizard for the same topic
+  // is "replace the old image", not "keep N copies").
+  const imageFilename = `${slug}.png`;
   const localPath = path.join(process.cwd(), "public", "cards", imageFilename);
   try {
     const res = await fetch(cdnUrl);

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
@@ -245,6 +245,29 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {/* 相关搜索 — show this card's tags as clickable pills. Tapping a
+          pill jumps to /search?q=<tag> or /cards?tag=<tag> so the
+          user can keep exploring the topic tree from the page they
+          just read, without re-typing the keyword. */}
+      {card.tags.length > 0 && (
+        <section className="mt-12">
+          <h2 className="font-serif text-lg font-semibold mb-3 text-muted-foreground">相关搜索</h2>
+          <ul className="flex flex-wrap gap-2 list-none p-0">
+            {card.tags.map((tag) => (
+              <li key={tag}>
+                <Link
+                  href={`/cards?tag=${encodeURIComponent(tag)}`}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5 text-sm text-muted-foreground hover:text-foreground hover:border-gold hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                >
+                  <Search className="h-3.5 w-3.5" aria-hidden="true" />
+                  #{tag}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

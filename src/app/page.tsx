@@ -164,6 +164,87 @@ export default function Home({ searchParams }: HomeProps) {
         </div>
       </section>
 
+      {/* 5 series preview — each series gets a row with its own cover
+          card + tagline + 1 'see all' CTA. Sits between the stat strip
+          and the featured-cards grid so users see 'this is curated
+          collections' before 'here are individual cards'. */}
+      <section className="border-b border-border bg-muted/30 paper-grain">
+        <div className="container py-12 md:py-16">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-gold-deep mb-2">CURATED COLLECTIONS</div>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-1">五大系列</h2>
+              <p className="text-sm text-muted-foreground">按主题分组的图鉴合集, 每个系列都有自己的故事、视觉规范与收藏价值</p>
+            </div>
+            <Link
+              href="/series"
+              className="inline-flex min-h-[44px] items-center gap-1.5 text-sm text-gold-deep hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm self-start md:self-auto"
+            >
+              查看全部 {allSeries.length} 个系列
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </div>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 list-none p-0">
+            {allSeries.slice(0, 5).map((s) => (
+              <li key={s.slug}>
+                <Link
+                  href={`/series/${s.slug}`}
+                  aria-label={`进入系列 ${s.name},已收录 ${s.count} 张图鉴`}
+                  className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all h-full"
+                  style={{ borderColor: s.palette[1] }}
+                >
+                  {/* Cover: first card of this series, 9:16 portrait.
+                      Use -thumb.webp (already 384w; just upscaled on
+                      retina but small footprint) — keeps this section
+                      light even with 5 series cards. */}
+                  {s.cards[0] ? (
+                    <div className="relative aspect-[9/16] overflow-hidden">
+                      <Image
+                        src={s.cards[0].image_thumb ?? s.cards[0].image}
+                        alt={s.cards[0].title}
+                        fill
+                        sizes="(max-width: 640px) 50vw, 20vw"
+                        className="object-cover object-top transition-transform group-hover:scale-105"
+                      />
+                      <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent p-3 pt-8">
+                        <p className="text-[10px] uppercase tracking-[0.18em] text-cream/80 mb-0.5">No.001</p>
+                        <p className="font-serif text-xs text-cream font-medium leading-tight line-clamp-2">
+                          {s.cards[0].title}
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      className="aspect-[9/16] flex flex-col items-center justify-center text-center p-3"
+                      style={{ backgroundColor: s.palette[0], color: s.palette[1] }}
+                    >
+                      <Sparkles className="h-6 w-6 mb-1 opacity-50" />
+                      <div className="text-[10px] font-medium">尚无图鉴</div>
+                    </div>
+                  )}
+                  <div className="p-3">
+                    <h3
+                      className="font-serif text-sm font-semibold leading-tight mb-1 truncate group-hover:opacity-80 transition-opacity"
+                      style={{ color: s.palette[1] }}
+                      title={s.name}
+                    >
+                      {s.name}
+                    </h3>
+                    <p className="text-[11px] text-muted-foreground line-clamp-2 leading-snug mb-1.5">{s.tagline}</p>
+                    <div className="flex items-center justify-between text-[10px] text-muted-foreground">
+                      <span className="tabular-nums">{s.count} 张</span>
+                      <span style={{ color: s.palette[1] }} className="font-medium">
+                        进入 →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* Cards grid */}
       <section className="container py-12 md:py-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">

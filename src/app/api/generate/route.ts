@@ -57,34 +57,60 @@ export async function POST(req: Request) {
     seriesSlug = getDefaultSeriesSlugForKind(kind);
   }
 
-  // 3. Slug — keep ASCII-safe for routing; Chinese stays only in `title`
-  // Use a short deterministic hash from the topic so the URL is stable and shareable
-  function toSlug(text: string): string {
-    // Strip non-ASCII to avoid URL encoding / routing issues
-    const ascii = text
-      .normalize("NFKD")
-      .replace(/[\u0300-\u036f]/g, "") // remove diacritics
-      .replace(/[^a-zA-Z0-9]+/g, "-")
-      .replace(/^-|-$/g, "")
-      .toLowerCase()
-      .slice(0, 40);
-    // Stable short hash from original text (handles pure-Chinese topics)
+  // 3. Slug — prefer the curated English slug table for the 60
+  //    placeholder topics; fall back to a stable hash-based slug
+  //    for any new topic the user might type in.
+  //
+  //    Why the table: the 60 cards.json entries all use English slugs
+  //    (labrador-retriever, hangzhou, peking-duck, ...). If wizard
+  //    produced hash slugs (card-abc123), re-running the wizard
+  //    for "拉布拉多" would not match "labrador-retriever" in cards.json
+  //    and would create a duplicate entry.
+  function toSlugFallback(text: string): string {
+    // Stable short hash from pure-Chinese text — only used for topics
+    // not in SLUG_TABLE (e.g. user types a custom topic).
     let hash = 0;
     for (let i = 0; i < text.length; i++) {
       hash = ((hash << 5) - hash + text.charCodeAt(i)) | 0;
     }
-    const hashStr = Math.abs(hash).toString(36).slice(0, 6);
-    return (ascii || "card") + "-" + hashStr;
+    return "card-" + Math.abs(hash).toString(36).slice(0, 6);
   }
-  const slug = toSlug(trimmedTopic);
+  const SLUG_TABLE: Record<string, string> = {
+    // pet
+    "拉布拉多": "labrador-retriever", "布偶猫": "ragdoll", "玄凤鹦鹉": "cockatiel",
+    "玉米蛇": "corn-snake", "马犬": "belgian-malinois",
+    // animal
+    "藏羚羊": "tibetan-antelope", "大熊猫": "giant-panda", "雪豹": "snow-leopard",
+    "东北虎": "siberian-tiger", "朱鹮": "crested-ibis",
+    // plant
+    "西湖龙井": "longjing-tea", "银杏": "ginkgo", "梅花": "plum-blossom",
+    "兰花": "orchid", "竹子": "bamboo",
+    // city
+    "上海": "shanghai", "杭州": "hangzhou", "苏州": "suzhou", "西安": "xian", "北京": "beijing",
+    // person
+    "李白": "li-bai", "杜甫": "du-fu", "苏轼": "su-shi", "蔡伦": "cai-lun", "张衡": "zhang-heng",
+    // festival
+    "春节": "spring-festival", "清明": "qingming", "端午": "dragon-boat", "中秋": "mid-autumn", "冬至": "winter-solstice",
+    // food
+    "北京烤鸭": "peking-duck", "兰州拉面": "lamian", "肉夹馍": "rougamo", "广式早茶": "yum-cha", "重庆火锅": "chongqing-hotpot",
+    // phenomenon
+    "极光": "aurora", "梅雨": "plum-rain", "钱塘江大潮": "qiantang-tide", "潮汐": "tide", "厄尔尼诺": "el-nino",
+    // history
+    "丝绸之路": "silk-road", "贞观之治": "reign-of-zhenguan", "安史之乱": "an-shi-rebellion",
+    "戊戌变法": "hundred-days-reform", "西安事变": "xian-incident",
+    // object
+    "玛瑙": "agate", "玉璧": "jade-bi", "漆器": "lacquerware", "青花瓷": "blue-white-porcelain", "算盘": "abacus",
+    // tech
+    "5G": "5g", "人工智能": "artificial-intelligence", "量子计算": "quantum-computing", "区块链": "blockchain", "空间站": "space-station",
+    // other
+    "故宫": "forbidden-city", "敦煌莫高窟": "mogao-caves", "苏州园林": "suzhou-gardens", "三体": "three-body", "三星堆": "sanxingdui",
+  };
+  const slug = SLUG_TABLE[trimmedTopic] ?? toSlugFallback(trimmedTopic);
 
   const cards = cardsData as any[];
-  // Match by Chinese title (not by hash slug) — the 60 placeholder cards
-  // use topic as slug ("拉布拉多"), but wizard's hash slug ("card-abc123")
-  // would never collide. Matching by title lets the user re-run wizard
-  // for any existing card to replace its image (placeholder or low-quality
-  // AI gen) without creating a duplicate entry.
-  const existing = cards.find((c) => c.title === trimmedTopic);
+  // Match by English slug. Re-running wizard for an existing card
+  // updates its image only (preserves hand-written content).
+  const existing = cards.find((c) => c.slug === slug);
 
   // 4. Build prompt
   const prompt = buildPrompt({ topic: trimmedTopic, kind, palette });
@@ -180,12 +206,13 @@ export async function POST(req: Request) {
   }
 
   // 7. Download image to public/cards/
-  // Filename: encodeURIComponent(topic).png — directly matches the
-  // cards.json `image` field for the 60 placeholder cards (each one
-  // uses `/cards/<topic>.png`). The wizard's URL-safe `slug` (e.g.
-  // "card-abc123") is for routing only, not for filename.
-  const safeTopic = encodeURIComponent(trimmedTopic);
-  const imageFilename = `${safeTopic}.png`;
+  // Filename: `<slug>.png` — directly matches the cards.json `image`
+  // field, which we set to `/cards/<slug>.png` for the 60 placeholder
+  // cards. Slugs are English (labrador-retriever, hangzhou, etc.) so
+  // the filename is also English — URL-safe, no encodeURIComponent
+  // needed. Re-running the wizard for an existing card overwrites the
+  // previous image, which is the desired behavior.
+  const imageFilename = `${slug}.png`;
   const localPath = path.join(process.cwd(), "public", "cards", imageFilename);
   try {
     const res = await fetch(cdnUrl);

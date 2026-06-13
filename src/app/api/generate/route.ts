@@ -79,13 +79,12 @@ export async function POST(req: Request) {
   const slug = toSlug(trimmedTopic);
 
   const cards = cardsData as any[];
-  const existing = cards.find((c) => c.slug === slug);
-  if (existing) {
-    return NextResponse.json(
-      { error: `主题 "${trimmedTopic}" 已存在,请换一个名字` },
-      { status: 409 },
-    );
-  }
+  // Match by Chinese title (not by hash slug) — the 60 placeholder cards
+  // use topic as slug ("拉布拉多"), but wizard's hash slug ("card-abc123")
+  // would never collide. Matching by title lets the user re-run wizard
+  // for any existing card to replace its image (placeholder or low-quality
+  // AI gen) without creating a duplicate entry.
+  const existing = cards.find((c) => c.title === trimmedTopic);
 
   // 4. Build prompt
   const prompt = buildPrompt({ topic: trimmedTopic, kind, palette });
@@ -200,24 +199,34 @@ export async function POST(req: Request) {
     );
   }
 
-  // 8. Append to cards.json
+  // 8. Persist to cards.json
   const paletteColors = getPaletteColors(palette);
-  const newCard = {
-    slug,
-    title: trimmedTopic,
-    kind,
-    series: seriesSlug, // store slug, not Chinese name
-    seriesNo: String(cards.filter((c) => c.series === seriesSlug).length + 1).padStart(3, "0"),
-    palette: paletteColors,
-    image: `/cards/${imageFilename}`,
-    score: 0,
-    tags: [],
-    tagline: "",
-    subtitle: "",
-    description: "",
-    createdAt: new Date().toISOString().split('T')[0],
-  };
-  cards.push(newCard);
+  const imagePath = `/cards/${imageFilename}`;
+  let resultSlug: string;
+  if (existing) {
+    // Re-run for an existing card: only update the image. Keep the
+    // hand-written tagline / description / tags / score untouched.
+    existing.image = imagePath;
+    resultSlug = existing.slug;
+  } else {
+    const newCard = {
+      slug,
+      title: trimmedTopic,
+      kind,
+      series: seriesSlug, // store slug, not Chinese name
+      seriesNo: String(cards.filter((c) => c.series === seriesSlug).length + 1).padStart(3, "0"),
+      palette: paletteColors,
+      image: imagePath,
+      score: 0,
+      tags: [],
+      tagline: "",
+      subtitle: "",
+      description: "",
+      createdAt: new Date().toISOString().split('T')[0],
+    };
+    cards.push(newCard);
+    resultSlug = slug;
+  }
   await fs.writeFile(
     path.join(process.cwd(), "data", "cards.json"),
     JSON.stringify(cards, null, 2),
@@ -225,8 +234,8 @@ export async function POST(req: Request) {
   );
 
   return NextResponse.json({
-    slug,
-    image: newCard.image,
-    title: newCard.title,
+    slug: resultSlug,
+    image: imagePath,
+    title: trimmedTopic,
   });
 }

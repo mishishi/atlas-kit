@@ -181,13 +181,12 @@ export async function POST(req: Request) {
   }
 
   // 7. Download image to public/cards/
-  // Filename: `<slug>.png` — directly matches the cards.json `image`
-  // field, so wizard-generated cards slot in without manual patching.
-  // We deliberately do NOT use a timestamp prefix: each slug should
-  // produce one stable filename that overwrites any previous version
-  // (the user's request when re-running the wizard for the same topic
-  // is "replace the old image", not "keep N copies").
-  const imageFilename = `${slug}.png`;
+  // Filename: encodeURIComponent(topic).png — directly matches the
+  // cards.json `image` field for the 60 placeholder cards (each one
+  // uses `/cards/<topic>.png`). The wizard's URL-safe `slug` (e.g.
+  // "card-abc123") is for routing only, not for filename.
+  const safeTopic = encodeURIComponent(trimmedTopic);
+  const imageFilename = `${safeTopic}.png`;
   const localPath = path.join(process.cwd(), "public", "cards", imageFilename);
   try {
     const res = await fetch(cdnUrl);

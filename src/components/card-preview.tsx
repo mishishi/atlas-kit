@@ -24,7 +24,11 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
     >
       <div className="relative aspect-[9/16] overflow-hidden bg-muted">
         <Image
-          src={card.image}
+          // List/card views use the 200-wide thumb (avg ~42KB) instead of
+          // the 5.7MB full PNG. 60 cards now load as 2.5MB total instead
+          // of 342MB. Falls back to card.image for placeholder cards that
+          // haven't been resized yet.
+          src={card.image_thumb ?? card.image}
           // Alt describes the IMAGE's content (card.subtitle), not the card itself.
           // Avoids SR users hearing "金毛寻回犬 科普图鉴" twice when the parent link
           // already announces the title via aria-label.

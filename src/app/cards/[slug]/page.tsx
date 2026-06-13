@@ -42,7 +42,7 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             "@type": "ImageObject",
             name: card.title,
             description: card.tagline,
-            contentUrl: card.image,
+            contentUrl: card.image_full ?? card.image,
             keywords: card.tags.join(", "),
             inLanguage: "zh-CN",
             datePublished: card.createdAt,
@@ -90,6 +90,16 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               className="object-cover"
             />
           </div>
+          {card.image_full && card.image_full !== card.image && (
+            <a
+              href={card.image_full}
+              target="_blank"
+              rel="noopener"
+              className="mt-2 block text-center text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+            >
+              查看原图 (1024×1792) ↗
+            </a>
+          )}
         </div>
 
         {/* Info panel */}
@@ -189,9 +199,9 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          {/* Download + share */}
+          {/* Download + share — give users the full-quality image */}
           <ShareActions
-            imageUrl={card.image}
+            imageUrl={card.image_full ?? card.image}
             imageFilename={card.slug}
             title={card.title}
           />

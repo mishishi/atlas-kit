@@ -32,6 +32,10 @@ export interface Card {
   seriesNo: string;
   palette: [string, string, string]; // [bg, accent, secondary]
   image: string;
+  /** 200-wide thumbnail (~42KB). Falls back to `image` for un-resized cards. */
+  image_thumb?: string;
+  /** 1024-wide original (~5MB). Use for download / "view original" link. */
+  image_full?: string;
   score: number;
   tags: string[];
   tagline: string;

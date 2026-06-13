@@ -90,7 +90,9 @@ export default function Home({ searchParams }: HomeProps) {
                     style={{ backgroundColor: c.palette[0], borderColor: c.palette[1] }}
                   >
                     <Image
-                      src={c.image}
+                      // 200px wide hero cards use the 200-wide thumb
+                      // (~42KB each instead of 5.7MB).
+                      src={c.image_thumb ?? c.image}
                       alt=""
                       fill
                       sizes="200px"

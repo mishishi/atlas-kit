@@ -37,6 +37,8 @@ public/cards/*.png
 public/cards/*.jpg
 public/cards/*.jpeg
 public/cards/*.webp
+# prompt A/B test 临时 sample 图不入仓
+public/cards/sample-*.png
 # 调试用的临时 json / log 散落在根
 *.tmp-*.json
 .tmp-*.json

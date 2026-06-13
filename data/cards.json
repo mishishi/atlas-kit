@@ -34,7 +34,7 @@
       "#B8956A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/labrador-retriever.png",
     "score": 9.3,
     "tags": [
       "温顺",
@@ -58,7 +58,7 @@
       "#B8956A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/ragdoll.png",
     "score": 8.8,
     "tags": [
       "蓝眼",
@@ -82,7 +82,7 @@
       "#B8956A",
       "#A8B89C"
     ],
-    "image": "/cards/placeholder.svg",
+    "image": "/cards/cockatiel.png",
     "score": 8.5,
     "tags": [
       "凤头",
@@ -1437,6 +1437,25 @@
     "tagline": "古蜀文明的青铜之谜",
     "subtitle": "古蜀 · 青铜 · 面具 · 三星伴月",
     "description": "三星堆遗址位于四川广汉三星堆镇鸭子河畔, 距成都约 40 公里, 是古蜀国 (今四川盆地西部) 最重要的考古发现, 遗址面积 12 平方公里, 文化遗存分四期, 年代约公元前 2800 年至公元前 1100 年。1986 年两大祭祀坑出土青铜神树、青铜大立人、青铜纵目面具、黄金面罩、太阳形器、玉璋、玉琮等 1700 余件文物, 2020-2022 年新发现 6 座祭祀坑, 出土象牙、青铜器、金器、丝绸等更多文物, 三星堆是中华文明多元一体起源说的重要实证, 现建有三星堆博物馆。",
+    "createdAt": "2026-06-13"
+  },
+  {
+    "slug": "card-edfjgj",
+    "title": "测试跳转",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#B8956A",
+      "#A8B89C"
+    ],
+    "image": "/cards/card-edfjgj.png",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "",
+    "description": "",
     "createdAt": "2026-06-13"
   }
 ]

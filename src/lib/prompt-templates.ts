@@ -29,8 +29,8 @@ const PALETTE_HEX: Record<string, [string, string, string]> = {
 export function buildPrompt(input: GenerateInput): string {
   const { topic, kind } = input;
   const themeType = THEME_TYPE_MAP[kind];
-  const promptTypeLabel = themeType?.promptType ?? "其他";
-  const seriesName = themeType?.series ?? "百科图鉴系列";
+  // const promptTypeLabel = themeType?.promptType ?? "其他";
+  // const seriesName = themeType?.series ?? "百科图鉴系列";
 
   return `请根据【主题】生成一张高质量竖版「科普百科图鉴」。
 
@@ -428,99 +428,6 @@ Top 5 或编号清单
 `;
 }
 
-/**
- * Small dictionary of common species → Latin name. Returns "" for unknown
- * topics or non-biological kinds (only pet/animal/plant get Latin names).
- */
-const KNOWN_LATIN: Record<string, string> = {
-  // Dogs
-  "金毛寻回犬": "Canis lupus familiaris",
-  "金毛": "Canis lupus familiaris",
-  "彭布罗克威尔士柯基": "Canis lupus familiaris",
-  "柯基": "Canis lupus familiaris",
-  "西伯利亚哈士奇": "Canis lupus familiaris",
-  "哈士奇": "Canis lupus familiaris",
-  "边境牧羊犬": "Canis lupus familiaris",
-  "边牧": "Canis lupus familiaris",
-  "柴犬": "Canis lupus familiaris",
-  "拉布拉多": "Canis lupus familiaris",
-  // Cats
-  "英国短毛猫": "Felis catus",
-  "英短": "Felis catus",
-  "美国短毛猫": "Felis catus",
-  "美短": "Felis catus",
-  "波斯猫": "Felis catus",
-  "布偶猫": "Felis catus",
-  "橘猫": "Felis catus",
-  "中华田园猫": "Felis catus",
-  // Animals
-  "负鼠": "Didelphis virginiana",
-  "藏羚羊": "Pantholops hodgsonii",
-  "雪豹": "Panthera uncia",
-  "大熊猫": "Ailuropoda melanoleuca",
-  // Plants
-  "普洱茶": "Camellia sinensis var. assamica",
-  "毛峰": "Camellia sinensis",
-  "西湖龙井": "Camellia sinensis var. sinensis",
-  "铁观音": "Camellia sinensis",
-  // Birds
-  "玄凤鹦鹉": "Nymphicus hollandicus",
-  "虎皮鹦鹉": "Melopsittacus undulatus",
-  // Reptiles
-  "豹纹守宫": "Eublepharis macularius",
-  "玉米蛇": "Pantherophis guttatus",
-};
-
-export function guessLatin(topic: string, kind: CardKind): string {
-  if (kind !== "pet" && kind !== "animal" && kind !== "plant") return "";
-  return KNOWN_LATIN[topic] ?? "";
-}
-
-const KNOWN_TITLE_EN: Record<string, string> = {
-  "金毛寻回犬": "Golden Retriever",
-  "金毛": "Golden Retriever",
-  "彭布罗克威尔士柯基": "Pembroke Welsh Corgi",
-  "柯基": "Pembroke Welsh Corgi",
-  "西伯利亚哈士奇": "Siberian Husky",
-  "哈士奇": "Siberian Husky",
-  "边境牧羊犬": "Border Collie",
-  "边牧": "Border Collie",
-  "柴犬": "Shiba Inu",
-  "拉布拉多": "Labrador Retriever",
-  "英国短毛猫": "British Shorthair",
-  "英短": "British Shorthair",
-  "美国短毛猫": "American Shorthair",
-  "美短": "American Shorthair",
-  "波斯猫": "Persian Cat",
-  "布偶猫": "Ragdoll",
-  "橘猫": "Orange Tabby",
-  "中华田园猫": "Chinese Li Hua",
-  "负鼠": "Virginia Opossum",
-  "藏羚羊": "Tibetan Antelope",
-  "雪豹": "Snow Leopard",
-  "大熊猫": "Giant Panda",
-  "普洱茶": "Pu'er Tea",
-  "毛峰": "Mao Feng Tea",
-  "西湖龙井": "Longjing Tea",
-  "铁观音": "Tieguanyin Tea",
-  "玄凤鹦鹉": "Cockatiel",
-  "虎皮鹦鹉": "Budgerigar",
-  "豹纹守宫": "Leopard Gecko",
-  "玉米蛇": "Corn Snake",
-  "朱元璋": "Zhu Yuanzhang",
-};
-
-export function guessTitleEn(topic: string, kind: CardKind): string {
-  if (kind !== "pet" && kind !== "animal" && kind !== "plant") return "";
-  return KNOWN_TITLE_EN[topic] ?? "";
-}
-
 export function getPaletteColors(paletteKey: string): [string, string, string] {
   return PALETTE_HEX[paletteKey] ?? PALETTE_HEX.auto;
-}
-
-// seriesName now lives in theme-types.ts to keep one source of truth.
-// Helper for callers that still need the old name:
-export function getSeriesName(kind: CardKind): string {
-  return THEME_TYPE_MAP[kind]?.series ?? "百科图鉴系列";
 }

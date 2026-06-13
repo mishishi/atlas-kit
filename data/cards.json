@@ -456,30 +456,6 @@
     "createdAt": "2026-06-11"
   },
   {
-    "slug": "smoke-repro-kc8387",
-    "title": "smoke repro",
-    "kind": "pet",
-    "series": "pet-breed-guide",
-    "seriesNo": "010",
-    "palette": [
-      "#F5F0E6",
-      "#B8956A",
-      "#A8B89C"
-    ],
-    "image": "/cards/1781237375797-smoke-repro-kc8387.png",
-    "score": 5,
-    "tags": [
-      "测试",
-      "占位",
-      "排查",
-      "柯基"
-    ],
-    "tagline": "AI 生成烟雾测试图",
-    "subtitle": "测试 · 占位 · 排查",
-    "description": "这是一张用于排查 AI 图像生成 pipeline 异常 (生成成功但前端仍在转圈、超时边界、限流重试等) 的烟雾测试图, 主题为彭布罗克威尔士柯基犬, 配色用满暖色 + 中性色以便视觉检查饱和度、纹理、字体是否完整。日常展示时可忽略。",
-    "createdAt": "2026-06-12"
-  },
-  {
     "slug": "card-dvhp",
     "title": "上海",
     "kind": "city",

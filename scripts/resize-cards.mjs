@@ -21,19 +21,26 @@ const log = (m) => console.log(m);
 for (const c of cards) {
   // The batch run wrote the full PNG to public/cards/<slug>.png.
   // We treat that file as the source-of-truth "full" image.
-  const full = c.image.replace(/^\/cards\//, "");
-  const srcPath = path.join(CARDS_DIR, full);
-  if (!fs.existsSync(srcPath) || !srcPath.endsWith(".png")) {
+  // Source of truth for resizing is the -full.png (1024w original).
+  // On first run, c.image points to it; on re-runs the rename below
+  // makes c.image the -card, so we look up -full explicitly.
+  const base = c.image_full
+    ? c.image_full.replace(/^\/cards\//, "").replace(/-full\.png$/, "")
+    : c.image.replace(/^\/cards\//, "").replace(/\.png$/, "");
+  const srcPath = path.join(CARDS_DIR, `${base}-full.png`);
+  if (!fs.existsSync(srcPath)) {
     skipped++;
     continue;
   }
-  const base = full.replace(/\.png$/, "");
   try {
-    // thumb: 200 wide
-    const thumbPath = path.join(CARDS_DIR, `${base}-thumb.png`);
+    // thumb: 384 wide, WebP. 384 = 2x retina at 192 CSS px, so the
+    // browser never upscales the source (which caused the previous
+    // 200w thumbs to look blurry on retina displays). WebP cuts
+    // 200w-PNG's ~42KB down to ~15-20KB while keeping alpha.
+    const thumbPath = path.join(CARDS_DIR, `${base}-thumb.webp`);
     await sharp(srcPath)
-      .resize(200, null, { withoutEnlargement: true })
-      .png({ quality: 80, compressionLevel: 9 })
+      .resize(384, null, { withoutEnlargement: true })
+      .webp({ quality: 82, effort: 4 })
       .toFile(thumbPath);
 
     // card: 600 wide
@@ -49,7 +56,7 @@ for (const c of cards) {
 
     // Update cards.json
     c.image = `/cards/${base}-card.png`;          // default for detail page
-    c.image_thumb = `/cards/${base}-thumb.png`;  // for list views
+    c.image_thumb = `/cards/${base}-thumb.webp`;  // for list views (WebP)
     c.image_full = `/cards/${base}-full.png`;    // "view original" link
 
     const origSize = fs.statSync(fullNewPath).size;

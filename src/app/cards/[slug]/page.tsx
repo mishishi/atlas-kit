@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked } from "lucide-react";
-import { getAllCards, getCardBySlug, getCardsBySeries } from "@/lib/data";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink } from "lucide-react";
+import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
@@ -30,6 +30,14 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
   const seriesName = seriesType?.name ?? card.series; // fallback to slug if missing
   const seriesCards = getCardsBySeries(card.series).filter((c) => c.slug !== card.slug);
   const idx = seriesCards.findIndex((c) => c.slug === card.slug) + 1;
+
+  // Same-kind recommendations: other cards of this kind, excluding
+  // the current card AND any series siblings (so the two sections
+  // don't show the same cards twice).
+  const siblingSlugs = new Set(seriesCards.map((c) => c.slug));
+  const relatedByKind = getCardsByKind(card.kind)
+    .filter((c) => c.slug !== card.slug && !siblingSlugs.has(c.slug))
+    .slice(0, 4);
 
   return (
     <article className="container py-8 md:py-12">
@@ -207,6 +215,74 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
           />
         </aside>
       </div>
+
+      {/* 同类推荐 (other cards of the same kind, excluding current + series siblings to avoid duplication) */}
+      {relatedByKind.length > 0 && (
+        <section className="mt-16">
+          <h2 className="font-serif text-2xl font-bold mb-6">
+            其他{displayLabel(card.kind)}图鉴
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {relatedByKind.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/cards/${c.slug}`}
+                aria-label={`查看 ${c.title}`}
+                className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all hover:-translate-y-0.5"
+              >
+                <div className="relative aspect-[9/16]">
+                  <Image
+                    src={c.image_thumb ?? c.image}
+                    alt={c.title}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3">
+                  <p className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">{c.title}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* 延伸阅读 — 外部权威百科 (Wikipedia 中文 / 百度百科) */}
+      <section className="mt-12">
+        <h2 className="font-serif text-2xl font-bold mb-6">延伸阅读</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <a
+            href={`https://zh.wikipedia.org/wiki/${encodeURIComponent(card.title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-gold hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
+          >
+            <BookOpen className="h-5 w-5 mt-0.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
+            <div className="min-w-0 flex-1">
+              <div className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">维基百科</div>
+              <div className="text-xs text-muted-foreground mt-0.5 truncate">{card.title} · 自由百科全书</div>
+            </div>
+            <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 mt-0.5" aria-hidden="true" />
+          </a>
+          <a
+            href={`https://baike.baidu.com/item/${encodeURIComponent(card.title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-gold hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
+          >
+            <BookMarked className="h-5 w-5 mt-0.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
+            <div className="min-w-0 flex-1">
+              <div className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">百度百科</div>
+              <div className="text-xs text-muted-foreground mt-0.5 truncate">{card.title} · 中文百科</div>
+            </div>
+            <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 mt-0.5" aria-hidden="true" />
+          </a>
+        </div>
+        <p className="mt-3 text-xs text-muted-foreground">
+          外部链接仅供参考, 内容以本站图鉴及权威百科为准。
+        </p>
+      </section>
 
       {/* Series siblings */}
       {seriesCards.length > 0 && (

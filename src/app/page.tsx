@@ -67,42 +67,74 @@ export default function Home({ searchParams }: HomeProps) {
             </div>
             </div>
 
-            {/* Right: 4-card magazine collage. Hidden on mobile to keep hero fast. */}
+            {/* Right: hero collage — 1 featured card (medium-large, 280×498)
+                center-front + 4 supporting thumbs fanned out behind it. The
+                5 cards come from different series so the spread feels like
+                a curated library shelf rather than one series. */}
             <div
               aria-hidden="true"
-              className="relative h-[420px] lg:h-[480px] hidden lg:block"
+              className="relative h-[440px] lg:h-[500px] hidden lg:block"
             >
-              {heroCards.map((c, i) => {
-                // 2x2 grid with each card tilted slightly and lifted via shadow.
-                // Outer div carries rotate-*; inner wrapper carries hover:scale
-                // (Tailwind utility classes for the same `transform` property
-                // would otherwise clobber each other).
+              {/* Background fan: 4 thumbs positioned at the corners, each
+                  tilted differently. Rendered first so the center card
+                  sits on top. */}
+              {heroCards.slice(0, 4).map((c, i) => {
+                // top-left, top-right, bottom-left, bottom-right corners
                 const positions = [
-                  "top-0 left-0 -rotate-3 z-10",
-                  "top-4 right-0 rotate-2 z-20",
-                  "bottom-4 left-8 rotate-2 z-30",
-                  "bottom-0 right-4 -rotate-3 z-40",
+                  "top-2 left-2 -rotate-6 z-10",
+                  "top-6 right-4 rotate-4 z-20",
+                  "bottom-8 left-10 rotate-5 z-15",
+                  "bottom-2 right-2 -rotate-4 z-25",
                 ];
                 return (
-                  <div
+                  <Link
                     key={c.slug}
-                    className={`absolute w-[200px] aspect-[9/16] rounded-lg overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 hover:z-50 ${positions[i]}`}
+                    href={`/cards/${c.slug}`}
+                    className={`absolute w-[110px] aspect-[9/16] rounded-md overflow-hidden border shadow-card ring-1 ring-black/5 transition-transform duration-300 hover:scale-110 hover:z-50 ${positions[i]}`}
                     style={{ backgroundColor: c.palette[0], borderColor: c.palette[1] }}
                   >
                     <Image
-                      // 200px wide hero cards use the 200-wide thumb
-                      // (~42KB each instead of 5.7MB).
                       src={c.image_thumb ?? c.image}
                       alt=""
                       fill
-                      sizes="200px"
-                      className="object-cover object-center"
-                      // First hero collage card is the LCP candidate — preload.
+                      sizes="110px"
+                      className="object-cover object-top"
+                      // Only the first card is the LCP candidate; the rest
+                      // lazy-load (default).
                       priority={i === 0}
                     />
-                  </div>
+                  </Link>
                 );
               })}
+
+              {/* Center featured card — bigger, slightly tilted right, sits
+                  on top. This is the visual focal point. */}
+              {heroCards[0] && (
+                <Link
+                  href={`/cards/${heroCards[0].slug}`}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] aspect-[9/16] rounded-xl overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 z-40"
+                  style={{ backgroundColor: heroCards[0].palette[0], borderColor: heroCards[0].palette[1] }}
+                >
+                  <Image
+                    // Use the 600-wide -card for the center piece (visible
+                    // at ~280px CSS width, 600 source = 2x retina).
+                    src={heroCards[0].image}
+                    alt=""
+                    fill
+                    sizes="280px"
+                    className="object-cover object-top"
+                    priority
+                  />
+                  {/* Subtle label ribbon at the bottom — gives the hero a
+                      "this is one of the cards" anchor. */}
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-3 pt-6">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-cream/80 mb-0.5">精选</p>
+                    <p className="font-serif text-sm text-cream font-medium leading-tight line-clamp-2">
+                      {heroCards[0].title}
+                    </p>
+                  </div>
+                </Link>
+              )}
             </div>
           </div>
 

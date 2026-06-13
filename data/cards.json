@@ -192,30 +192,6 @@
     "createdAt": "2026-06-11"
   },
   {
-    "slug": "card-q8hnld",
-    "title": "英国短毛猫",
-    "kind": "pet",
-    "series": "pet-breed-guide",
-    "seriesNo": "001",
-    "palette": [
-      "#F5F0E6",
-      "#B8956A",
-      "#A8B89C"
-    ],
-    "image": "/cards/1781206671537-card-q8hnld.png",
-    "score": 8,
-    "tags": [
-      "英短",
-      "蓝猫",
-      "圆润",
-      "亲人"
-    ],
-    "tagline": "英国最受欢迎的家庭猫",
-    "subtitle": "优雅温顺 · 圆润可爱",
-    "description": "英国短毛猫起源于古罗马时期, 是英国最古老的猫品种之一。它们以圆润的体态、浓密的短绒毛和温顺的性格著称, 是新手友好型家庭伴侣猫的典型代表。",
-    "createdAt": "2026-06-12"
-  },
-  {
     "slug": "card-gnj76",
     "title": "泰迪犬",
     "kind": "pet",

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Layers, Sparkles } from "lucide-react";
 import { getAllSeries, getKindCounts } from "@/lib/data";
-import { displayLabel } from "@/lib/types";
+import { displayLabel, type Card, type Series } from "@/lib/types";
 import { THEME_TYPES } from "@/lib/theme-types";
 
 export const metadata = {
@@ -33,6 +33,16 @@ export default function SeriesPage() {
           const heroCard = sortedCards[0];
           const thumbs = sortedCards.slice(1, 6); // up to 5
 
+          // ── Layout family — break the "5 series share the same row layout"
+          // Pre-Fail by rotating across 3 families:
+          //   0: vertical stack — hero on top, info below (default)
+          //   1: horizontal split — hero left 9:16, info right
+          //   2: editorial text-first — title + tagline top, hero strip
+          //      below as a horizontal scroll, no per-card thumbnail
+          // The visual variation also serves the section's job: each
+          // series gets a different "first impression" treatment.
+          const layoutFamily = (index % 3) as 0 | 1 | 2;
+
           return (
             <li key={s.slug}>
             <Link
@@ -41,53 +51,75 @@ export default function SeriesPage() {
               className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all hover:-translate-y-0.5"
               style={{ borderColor: s.palette[1] }}
             >
-              {/* Vertical card: hero on top, info block below.
-                  Mobile keeps 9:16 portrait (the source aspect, no crop).
-                  md+ switches to 16:9 banner — a curated "cover image"
-                  feel that matches the wider desktop layout. Either way
-                  the card has a consistent top-heavy shape and the info
-                  block underneath fills the remaining space naturally. */}
-              <div className="flex flex-col">
-                {/* Hero cover */}
-                <div
-                  className="relative w-full aspect-[9/16] md:aspect-[16/9]"
-                  style={{ backgroundColor: s.palette[0] }}
-                >
-                  {heroCard ? (
-                    <Image
-                      src={heroCard.image}
-                      alt={heroCard.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 100vw"
-                      // object-top: keeps the card's "title region" visible.
-                      // Default object-center would crop both top + bottom
-                      // equally, hiding the species/brand label that's
-                      // printed near the top of each card.
-                      className="object-cover object-top"
-                      quality={95}
-                      // First series row's hero is the LCP candidate — preload it.
-                      // Other rows stay lazy so we don't bloat the initial bundle.
-                      priority={index === 0}
-                    />
-                  ) : (
-                    <div
-                      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4"
-                      style={{ color: s.palette[1] }}
-                    >
-                      <Sparkles className="h-10 w-10 mb-2 opacity-50" />
-                      <div className="text-xs font-medium">尚无图鉴</div>
-                      <div className="text-[10px] opacity-70 mt-1">去生成第一张</div>
-                    </div>
-                  )}
+              {/* Layout family 0 (default): vertical stack — 9:16 cover
+                  top, info block below. Used for index % 3 === 0. */}
+              {/* Family 0: vertical stack (default) */}
+              {layoutFamily === 0 && (
+                <div className="flex flex-col">
+                  <div
+                    className="relative w-full aspect-[9/16] md:aspect-[16/9]"
+                    style={{ backgroundColor: s.palette[0] }}
+                  >
+                    {heroCard ? (
+                      <Image
+                        src={heroCard.image}
+                        alt={heroCard.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 100vw"
+                        className="object-cover object-top"
+                        quality={95}
+                        priority={index === 0}
+                      />
+                    ) : (
+                      <SeriesEmpty color={s.palette[1]} />
+                    )}
+                  </div>
+                  <SeriesInfoBlock
+                    s={s}
+                    thumbs={thumbs}
+                    heroCard={heroCard}
+                  />
                 </div>
+              )}
 
-                {/* Info block: title + tagline on top, thumbs strip in the
-                    middle, palette + tags + CTA pinned to the bottom. */}
-                <div className="p-5 paper-grain flex flex-col gap-4">
-                  {/* Head: title + count */}
+              {/* Family 1: horizontal split (desktop only — stacks on mobile) */}
+              {layoutFamily === 1 && (
+                <div className="grid md:grid-cols-[280px_1fr]">
+                  <div
+                    className="relative w-full aspect-[9/16] md:aspect-auto md:h-full"
+                    style={{ backgroundColor: s.palette[0] }}
+                  >
+                    {heroCard ? (
+                      <Image
+                        src={heroCard.image}
+                        alt={heroCard.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 280px"
+                        className="object-cover object-top"
+                        quality={95}
+                      />
+                    ) : (
+                      <SeriesEmpty color={s.palette[1]} />
+                    )}
+                  </div>
+                  <div className="p-5 paper-grain flex flex-col gap-4">
+                    <SeriesHeader s={s} />
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {s.tagline}
+                    </p>
+                    <SeriesFooter s={s} />
+                  </div>
+                </div>
+              )}
+
+              {/* Family 2: editorial text-first (no cover image, hero is
+                  a horizontal thumb strip instead — the title carries the
+                  visual weight) */}
+              {layoutFamily === 2 && (
+                <div className="p-5 paper-grain flex flex-col gap-5">
                   <div className="flex items-baseline justify-between gap-3">
                     <h2
-                      className="font-serif text-xl font-semibold group-hover:opacity-80 transition-opacity truncate"
+                      className="font-serif text-2xl font-semibold group-hover:opacity-80 transition-opacity truncate"
                       style={{ color: s.palette[1] }}
                     >
                       {s.name}
@@ -98,79 +130,60 @@ export default function SeriesPage() {
                       <span>张</span>
                     </div>
                   </div>
-
-                  {/* Tagline */}
-                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 -mt-2">
+                  <p className="text-sm text-muted-foreground leading-relaxed -mt-3 max-w-2xl">
                     {s.tagline}
                   </p>
-
-                  {/* Thumbs strip — wider thumbs on desktop since the strip
-                      has full card width to play with. */}
-                  {thumbs.length > 0 ? (
-                    <div
-                      className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1"
-                      role="list"
-                      aria-label={`同系列其他 ${thumbs.length} 张`}
-                    >
-                      {thumbs.map((c) => (
-                        <div
-                          key={c.slug}
-                          className="relative shrink-0 w-14 md:w-16 aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-black/5"
-                          style={{ backgroundColor: s.palette[0] }}
-                          role="listitem"
-                        >
+                  {/* Hero strip: large 9:16 thumb on left + 4 small
+                      3:4 thumbs on right, single row on md+, stack on
+                      mobile. This is the ONLY place the cover image
+                      appears for family-2 series. */}
+                  {thumbs.length > 0 || heroCard ? (
+                    <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-3">
+                      <div
+                        className="relative aspect-[9/16] overflow-hidden rounded-md ring-1 ring-black/5"
+                        style={{ backgroundColor: s.palette[0] }}
+                      >
+                        {heroCard && (
                           <Image
-                            src={c.image}
-                            alt={c.title}
+                            src={heroCard.image}
+                            alt={heroCard.title}
                             fill
-                            sizes="64px"
-                            className="object-cover object-center"
+                            sizes="(max-width: 640px) 100vw, 200px"
+                            className="object-cover object-top"
                             quality={95}
                           />
-                        </div>
-                      ))}
+                        )}
+                      </div>
+                      <div className="grid grid-cols-4 gap-2">
+                        {thumbs.slice(0, 4).map((c) => (
+                          <div
+                            key={c.slug}
+                            className="relative aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-black/5"
+                            style={{ backgroundColor: s.palette[0] }}
+                          >
+                            <Image
+                              src={c.image}
+                              alt={c.title}
+                              fill
+                              sizes="120px"
+                              className="object-cover object-center"
+                              quality={95}
+                            />
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ) : (
                     <div
-                      className="h-14 rounded-sm border border-dashed flex items-center justify-center text-[10px]"
+                      className="h-24 rounded-sm border border-dashed flex items-center justify-center text-xs"
                       style={{ borderColor: s.palette[1], color: s.palette[1] }}
                     >
                       等待更多图鉴收录
                     </div>
                   )}
-
-                  {/* Footer: palette + tags + CTA */}
-                  <div className="flex items-center justify-between gap-2 pt-1 border-t border-border/60">
-                    <div className="flex items-center gap-1.5 flex-wrap min-w-0">
-                      {/* Palette swatches */}
-                      {s.palette.map((color, i) => (
-                        <div
-                          key={i}
-                          className="h-2.5 w-5 rounded-sm border border-black/5"
-                          style={{ backgroundColor: color }}
-                          title={color}
-                          aria-label={`色卡 ${i + 1}: ${color}`}
-                        />
-                      ))}
-                      {/* Theme tags */}
-                      {s.themeTags.slice(0, 3).map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground"
-                        >
-                          #{displayLabel(tag)}
-                        </span>
-                      ))}
-                    </div>
-                    <span
-                      className="text-xs font-medium shrink-0 tabular-nums"
-                      style={{ color: s.palette[1] }}
-                    >
-                      进入 →
-                    </span>
-                  </div>
+                  <SeriesFooter s={s} />
                 </div>
-              </div>
+              )}
             </Link>
             </li>
           );
@@ -200,6 +213,126 @@ export default function SeriesPage() {
           })}
         </div>
       </section>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────
+// Sub-components for the 3 row layout families (Series page).
+// Server-renderable, no client JS, no shared layout collapse.
+// ─────────────────────────────────────────────────────────────
+
+function SeriesEmpty({ color }: { color: string }) {
+  return (
+    <div
+      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4"
+      style={{ color }}
+    >
+      <Sparkles className="h-10 w-10 mb-2 opacity-50" />
+      <div className="text-xs font-medium">尚无图鉴</div>
+      <div className="text-[10px] opacity-70 mt-1">去生成第一张</div>
+    </div>
+  );
+}
+
+function SeriesHeader({ s }: { s: Series }) {
+  return (
+    <div className="flex items-baseline justify-between gap-3">
+      <h2
+        className="font-serif text-xl font-semibold group-hover:opacity-80 transition-opacity truncate"
+        style={{ color: s.palette[1] }}
+      >
+        {s.name}
+      </h2>
+      <div className="flex items-center gap-1 text-xs text-muted-foreground shrink-0 tabular-nums">
+        <Layers className="h-3 w-3" />
+        <span className="font-medium text-foreground">{s.count}</span>
+        <span>张</span>
+      </div>
+    </div>
+  );
+}
+
+function SeriesFooter({ s }: { s: Series }) {
+  return (
+    <div className="flex items-center justify-between gap-2 pt-1 border-t border-border/60">
+      <div className="flex items-center gap-1.5 flex-wrap min-w-0">
+        {s.palette.map((color, i) => (
+          <div
+            key={i}
+            className="h-2.5 w-5 rounded-sm border border-black/5"
+            style={{ backgroundColor: color }}
+            title={color}
+            aria-label={`色卡 ${i + 1}: ${color}`}
+          />
+        ))}
+        {s.themeTags.slice(0, 3).map((tag) => (
+          <span
+            key={tag}
+            className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground"
+          >
+            #{displayLabel(tag)}
+          </span>
+        ))}
+      </div>
+      <span
+        className="text-xs font-medium shrink-0 tabular-nums"
+        style={{ color: s.palette[1] }}
+      >
+        进入 →
+      </span>
+    </div>
+  );
+}
+
+function SeriesInfoBlock({
+  s,
+  thumbs,
+  heroCard,
+}: {
+  s: Series;
+  thumbs: Card[];
+  heroCard?: Card;
+}) {
+  return (
+    <div className="p-5 paper-grain flex flex-col gap-4">
+      <SeriesHeader s={s} />
+      <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 -mt-2">
+        {s.tagline}
+      </p>
+      {thumbs.length > 0 ? (
+        <div
+          className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1"
+          role="list"
+          aria-label={`同系列其他 ${thumbs.length} 张`}
+        >
+          {thumbs.map((c) => (
+            <div
+              key={c.slug}
+              className="relative shrink-0 w-14 md:w-16 aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-black/5"
+              style={{ backgroundColor: s.palette[0] }}
+              role="listitem"
+            >
+              <Image
+                src={c.image}
+                alt={c.title}
+                fill
+                sizes="64px"
+                className="object-cover object-center"
+                quality={95}
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div
+          className="h-14 rounded-sm border border-dashed flex items-center justify-center text-[10px]"
+          style={{ borderColor: s.palette[1], color: s.palette[1] }}
+        >
+          {heroCard ? "" : "等待更多图鉴收录"}
+        </div>
+      )}
+      <SeriesFooter s={s} />
     </div>
   );
 }

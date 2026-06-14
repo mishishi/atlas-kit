@@ -271,37 +271,40 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
         </section>
       )}
 
-      {/* 延伸阅读 — 外部权威百科 (Wikipedia 中文 / 百度百科) */}
+      {/* 延伸阅读 — 外部权威百科 (Wikipedia 中文 / 百度百科)
+          Stacked full-width text rows (NOT a 2-col image+text card grid) to
+          break the 3rd consecutive image+text-split section per the design
+          review (zigzag cap = max 2 in a row). */}
       <section className="mt-12">
         <h2 className="font-serif text-2xl font-bold mb-6">延伸阅读</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <a
-            href={`https://zh.wikipedia.org/wiki/${encodeURIComponent(card.title)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-gold hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
-          >
-            <BookOpen className="h-5 w-5 mt-0.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
-            <div className="min-w-0 flex-1">
-              <div className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">维基百科</div>
-              <div className="text-xs text-muted-foreground mt-0.5 truncate">{card.title} · 自由百科全书</div>
-            </div>
-            <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 mt-0.5" aria-hidden="true" />
-          </a>
-          <a
-            href={`https://baike.baidu.com/item/${encodeURIComponent(card.title)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-gold hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
-          >
-            <BookMarked className="h-5 w-5 mt-0.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
-            <div className="min-w-0 flex-1">
-              <div className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">百度百科</div>
-              <div className="text-xs text-muted-foreground mt-0.5 truncate">{card.title} · 中文百科</div>
-            </div>
-            <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 mt-0.5" aria-hidden="true" />
-          </a>
-        </div>
+        <ul className="divide-y divide-border/60 list-none p-0">
+          <li>
+            <a
+              href={`https://zh.wikipedia.org/wiki/${encodeURIComponent(card.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 py-3.5 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
+            >
+              <BookOpen className="h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
+              <span className="font-serif text-sm font-medium">维基百科</span>
+              <span className="text-xs text-muted-foreground">· {card.title} · 自由百科全书</span>
+              <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
+            </a>
+          </li>
+          <li>
+            <a
+              href={`https://baike.baidu.com/item/${encodeURIComponent(card.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 py-3.5 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
+            >
+              <BookMarked className="h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
+              <span className="font-serif text-sm font-medium">百度百科</span>
+              <span className="text-xs text-muted-foreground">· {card.title} · 中文百科</span>
+              <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
+            </a>
+          </li>
+        </ul>
         <p className="mt-3 text-xs text-muted-foreground">
           外部链接仅供参考, 内容以本站图鉴及权威百科为准。
         </p>

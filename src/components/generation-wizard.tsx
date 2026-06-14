@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowLeft, ArrowRight, Sparkles, Loader2, Check, CheckCircle2, BookMarked, Lightbulb, X, Palette, FileText } from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles, Loader2, CheckCircle2, BookMarked, Lightbulb, X, Palette, FileText, Coffee } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { THEME_TYPES, type ThemeType } from "@/lib/theme-types";
@@ -243,71 +243,15 @@ export function GenerationWizard() {
 
   return (
     <div className="mx-auto max-w-2xl">
-      {/* Stepper */}
+      {/* Stepper — single visual layer (dots) + a compact step label,
+          no breadcrumb. The previous design had both a clickable
+          breadcrumb AND a dot row, which was redundant UI noise. */}
       <div
         role="group"
         aria-label={`生成图鉴流程,当前第 ${step} 步,共 5 步`}
         className="mb-8"
       >
-        {/* Step breadcrumb — clickable to jump back, shows step name + state */}
-        <ol
-          className="mb-3 flex items-center justify-center gap-1 text-[11px] sm:gap-1.5 sm:text-xs flex-wrap list-none p-0"
-          aria-label="生成图鉴步骤"
-        >
-          {[
-            { n: 1, label: "主题" },
-            { n: 2, label: "类型" },
-            { n: 3, label: "系列" },
-            { n: 4, label: "配色" },
-            { n: 5, label: "确认" },
-          ].map((s) => {
-            const done = step > s.n;
-            const current = step === s.n;
-            const reachable = done || current;
-            const Wrapper: "button" | "span" = reachable ? "button" : "span";
-            return (
-              <li key={s.n} className="contents">
-                <Wrapper
-                  type={reachable ? "button" : undefined}
-                  onClick={
-                    reachable
-                      ? () => setStep(s.n as Step)
-                      : undefined
-                  }
-                  aria-current={current ? "step" : undefined}
-                  disabled={!reachable}
-                  className={cn(
-                    "inline-flex items-center gap-1 sm:gap-1.5 rounded-full px-2 py-0.5 sm:px-2.5 sm:py-1 transition-colors",
-                    current && "bg-gold/10 font-medium text-gold-deep",
-                    done && "text-foreground hover:bg-muted cursor-pointer",
-                    !reachable && "text-muted-foreground/60 cursor-not-allowed",
-                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                  )}
-                >
-                  {done ? (
-                    <Check className="h-3 w-3 text-gold-deep" aria-hidden="true" />
-                  ) : (
-                    <span
-                      className={cn(
-                        "grid h-4 w-4 place-items-center rounded-full text-[10px] font-medium tabular-nums",
-                        current ? "bg-gold-deep text-cream" : "bg-muted text-muted-foreground",
-                      )}
-                    >
-                      {s.n}
-                    </span>
-                  )}
-                  <span>{s.label}</span>
-                </Wrapper>
-                {s.n < 5 && (
-                  <span aria-hidden="true" className="text-muted-foreground/30">/</span>
-                )}
-              </li>
-            );
-          })}
-        </ol>
-
-        {/* Stepper dots — visual progress */}
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 mb-2">
           {[1, 2, 3, 4, 5].map((s) => (
             <div key={s} className="flex items-center">
               <div
@@ -320,6 +264,9 @@ export function GenerationWizard() {
             </div>
           ))}
         </div>
+        <p className="text-center text-xs text-muted-foreground tabular-nums">
+          第 {step} / 5 步
+        </p>
       </div>
 
       <div
@@ -393,7 +340,7 @@ export function GenerationWizard() {
                       "relative flex min-h-[44px] flex-col items-start gap-1 rounded-md border p-4 text-left transition-all",
                       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                       selected
-                        ? "border-gold-deep bg-gold-deep text-cream shadow-card-hover scale-[0.98]"
+                        ? "border-gold-deep bg-gold-deep text-cream shadow-card-hover"
                         : "border-border bg-background text-foreground hover:border-gold hover:bg-muted/50",
                     )}
                   >
@@ -435,7 +382,7 @@ export function GenerationWizard() {
                       "relative w-full h-full flex min-h-[44px] flex-col items-stretch gap-2 rounded-md border p-4 text-left transition-all",
                       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                       selected
-                        ? "border-gold-deep shadow-card-hover scale-[0.99]"
+                        ? "border-gold-deep shadow-card-hover"
                         : "border-border bg-background hover:border-gold hover:bg-muted/30",
                     )}
                     style={selected ? { backgroundColor: s.palette[0] } : undefined}
@@ -494,7 +441,7 @@ export function GenerationWizard() {
                       "relative flex min-h-[44px] flex-col gap-2 rounded-md border p-3 text-left transition-all",
                       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                       selected
-                        ? "border-gold-deep bg-gold-deep text-cream shadow-card-hover scale-[0.98]"
+                        ? "border-gold-deep bg-gold-deep text-cream shadow-card-hover"
                         : "border-border bg-background text-foreground hover:border-gold hover:bg-muted/50",
                     )}
                   >
@@ -517,13 +464,13 @@ export function GenerationWizard() {
         )}
 
         {step === 5 && (
-          <div className="space-y-6 text-center py-8">
+          <div className="space-y-6 py-4">
             <div>
               <h2 className="font-serif text-xl font-semibold mb-1">确认生成</h2>
               <p className="text-sm text-muted-foreground">检查信息无误后点击生成</p>
             </div>
 
-            <dl className="mx-auto max-w-md space-y-3 text-left">
+            <dl className="space-y-3 text-left max-w-md">
               <div className="flex justify-between items-center gap-4 rounded-md bg-muted/50 p-3">
                 <dt className="text-muted-foreground text-sm flex items-center gap-2">
                   <FileText className="h-3.5 w-3.5" aria-hidden="true" />
@@ -557,13 +504,13 @@ export function GenerationWizard() {
             {error && (
               <div
                 role="alert"
-                className="mx-auto max-w-md rounded-md border border-destructive bg-destructive/10 p-3 text-sm text-destructive"
+                className="rounded-md border border-destructive bg-destructive/10 p-3 text-sm text-destructive"
               >
                 {error}
               </div>
             )}
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <button
                 type="button"
                 onClick={handleGenerate}
@@ -606,8 +553,9 @@ export function GenerationWizard() {
             </div>
 
             {generating && (
-              <p className="text-xs text-muted-foreground">
-                通常需要 30-60 秒,可以喝杯茶 ☕
+              <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                <Coffee className="h-3.5 w-3.5" aria-hidden="true" />
+                通常需要 30-60 秒, 可以休息一下。
               </p>
             )}
           </div>

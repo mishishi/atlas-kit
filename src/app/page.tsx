@@ -134,7 +134,9 @@ export default function Home({ searchParams }: HomeProps) {
             </div>
           </div>
 
-          {/* Series strip */}
+          {/* Series strip — 4-cell bento with one feature cell (平均评分)
+              dropped from the bordered 'card on card' pattern so the row
+              has visual rhythm, per Section 4.7 'Bento Background Diversity'. */}
           <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
               <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">{allCards.length}</div>
@@ -144,11 +146,11 @@ export default function Home({ searchParams }: HomeProps) {
               <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">{allSeries.length}</div>
               <div className="text-xs text-muted-foreground mt-1">主题系列</div>
             </div>
-            <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
-              <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">
+            <div className="rounded-lg p-4 paper-grain flex flex-col justify-center">
+              <div className="font-serif text-3xl font-bold text-foreground tabular-nums leading-none">
                 {(allCards.reduce((a, c) => a + c.score, 0) / allCards.length).toFixed(1)}
               </div>
-              <div className="text-xs text-muted-foreground mt-1">平均评分</div>
+              <div className="text-xs text-muted-foreground mt-1">平均评分 / 10</div>
             </div>
             <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
               <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">

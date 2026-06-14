@@ -39,20 +39,22 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
           className="object-cover"
         />
         {/* "New" badge: surfaces cards added in the last 24h so users notice
-            fresh content on repeat visits. */}
+            fresh content on repeat visits. Static dot (no infinite pulse) per
+            the design review — MOTION_INTENSITY=4 doesn't justify a perpetual
+            animation in a list of 60 cards. */}
         {Date.now() - new Date(card.createdAt).getTime() < 86400000 && (
           <span
             className="absolute top-2 left-2 inline-flex items-center gap-1 rounded-full bg-success px-2 py-0.5 text-[10px] font-medium text-success-foreground shadow-card"
             aria-label="24 小时内新收录"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-cream animate-pulse" aria-hidden="true" />
+            <span className="h-1.5 w-1.5 rounded-full bg-cream" aria-hidden="true" />
             新收录
           </span>
         )}
       </div>
 
       <div className="p-4 paper-grain">
-        <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-2">
+        <div className="flex items-center gap-2 text-[9px] uppercase tracking-[0.2em] text-muted-foreground/70 mb-2">
           <span>{seriesName}</span>
           <span>·</span>
           <span>No.{card.seriesNo}</span>

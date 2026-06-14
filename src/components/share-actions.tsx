@@ -19,7 +19,7 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
     try {
       await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
-      toast.success("链接已复制", { description: "可粘贴到小红书 / 微信 / Twitter" });
+      toast.success("链接已复制", { description: "可粘贴到小红书 / 微信 / X" });
       setTimeout(() => setCopied(false), 2000);
     } catch {
       toast.error("复制失败", { description: "请手动从地址栏复制" });

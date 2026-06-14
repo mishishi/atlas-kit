@@ -248,69 +248,13 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
         </section>
       )}
 
-      {/* 相关搜索 — show this card's tags as clickable pills. Tapping a
-          pill jumps to /search?q=<tag> or /cards?tag=<tag> so the
-          user can keep exploring the topic tree from the page they
-          just read, without re-typing the keyword. */}
-      {card.tags.length > 0 && (
-        <section className="mt-12">
-          <h2 className="font-serif text-lg font-semibold mb-3 text-muted-foreground">相关搜索</h2>
-          <ul className="flex flex-wrap gap-2 list-none p-0">
-            {card.tags.map((tag) => (
-              <li key={tag}>
-                <Link
-                  href={`/cards?tag=${encodeURIComponent(tag)}`}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5 text-sm text-muted-foreground hover:text-foreground hover:border-gold hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
-                >
-                  <Search className="h-3.5 w-3.5" aria-hidden="true" />
-                  #{tag}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* 延伸阅读 — 外部权威百科 (Wikipedia 中文 / 百度百科)
-          Stacked full-width text rows (NOT a 2-col image+text card grid) to
-          break the 3rd consecutive image+text-split section per the design
-          review (zigzag cap = max 2 in a row). */}
-      <section className="mt-12">
-        <h2 className="font-serif text-2xl font-bold mb-6">延伸阅读</h2>
-        <ul className="divide-y divide-border/60 list-none p-0">
-          <li>
-            <a
-              href={`https://zh.wikipedia.org/wiki/${encodeURIComponent(card.title)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 py-3.5 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
-            >
-              <BookOpen className="h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
-              <span className="font-serif text-sm font-medium">维基百科</span>
-              <span className="text-xs text-muted-foreground">· {card.title} · 自由百科全书</span>
-              <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={`https://baike.baidu.com/item/${encodeURIComponent(card.title)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 py-3.5 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
-            >
-              <BookMarked className="h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
-              <span className="font-serif text-sm font-medium">百度百科</span>
-              <span className="text-xs text-muted-foreground">· {card.title} · 中文百科</span>
-              <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
-            </a>
-          </li>
-        </ul>
-        <p className="mt-3 text-xs text-muted-foreground">
-          外部链接仅供参考, 内容以本站图鉴及权威百科为准。
-        </p>
-      </section>
-
-      {/* Series siblings */}
+      {/* Series siblings — moved up per the design review so the
+          narrative goes: 'other 同类 cards' (thematic neighbours) →
+          'siblings in the same series' (within-collection) →
+          'tag-based exploration' (related search) → 'external
+          reading' (outbound context, end of page). The previous
+          order had 同系列 at the very end, which buried the most
+          contextually relevant next step. */}
       {seriesCards.length > 0 && (
         <section className="mt-16">
           <h2 className="font-serif text-2xl font-bold mb-6">
@@ -353,6 +297,69 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
           )}
         </section>
       )}
+
+      {/* 相关搜索 — show this card's tags as clickable pills. Tapping a
+          pill jumps to /search?q=<tag> or /cards?tag=<tag> so the
+          user can keep exploring the topic tree from the page they
+          just read, without re-typing the keyword. */}
+      {card.tags.length > 0 && (
+        <section className="mt-12">
+          <h2 className="font-serif text-lg font-semibold mb-3 text-muted-foreground">相关搜索</h2>
+          <ul className="flex flex-wrap gap-2 list-none p-0">
+            {card.tags.map((tag) => (
+              <li key={tag}>
+                <Link
+                  href={`/cards?tag=${encodeURIComponent(tag)}`}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5 text-sm text-muted-foreground hover:text-foreground hover:border-gold hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                >
+                  <Search className="h-3.5 w-3.5" aria-hidden="true" />
+                  #{tag}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* 延伸阅读 — 外部权威百科 (Wikipedia 中文 / 百度百科)
+          Stacked full-width text rows (NOT a 2-col image+text card grid) to
+          break the 3rd consecutive image+text-split section per the design
+          review (zigzag cap = max 2 in a row). Now at the end of the
+          page — external reading is the natural closer. */}
+      <section className="mt-12">
+        <h2 className="font-serif text-2xl font-bold mb-6">延伸阅读</h2>
+        <ul className="divide-y divide-border/60 list-none p-0">
+          <li>
+            <a
+              href={`https://zh.wikipedia.org/wiki/${encodeURIComponent(card.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 py-3.5 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
+            >
+              <BookOpen className="h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
+              <span className="font-serif text-sm font-medium">维基百科</span>
+              <span className="text-xs text-muted-foreground">· {card.title} · 自由百科全书</span>
+              <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
+            </a>
+          </li>
+          <li>
+            <a
+              href={`https://baike.baidu.com/item/${encodeURIComponent(card.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 py-3.5 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
+            >
+              <BookMarked className="h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0" aria-hidden="true" />
+              <span className="font-serif text-sm font-medium">百度百科</span>
+              <span className="text-xs text-muted-foreground">· {card.title} · 中文百科</span>
+              <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
+            </a>
+          </li>
+        </ul>
+        <p className="mt-3 text-xs text-muted-foreground">
+          外部链接仅供参考, 内容以本站图鉴及权威百科为准。
+        </p>
+      </section>
     </article>
   );
 }

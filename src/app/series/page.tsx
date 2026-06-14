@@ -62,7 +62,7 @@ export default function SeriesPage() {
                   >
                     {heroCard ? (
                       <Image
-                        src={heroCard.image}
+                        src={heroCard.image_full ?? heroCard.image}
                         alt={heroCard.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 100vw"
@@ -91,7 +91,7 @@ export default function SeriesPage() {
                   >
                     {heroCard ? (
                       <Image
-                        src={heroCard.image}
+                        src={heroCard.image_full ?? heroCard.image}
                         alt={heroCard.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 280px"
@@ -145,7 +145,7 @@ export default function SeriesPage() {
                       >
                         {heroCard && (
                           <Image
-                            src={heroCard.image}
+                            src={heroCard.image_full ?? heroCard.image}
                             alt={heroCard.title}
                             fill
                             sizes="(max-width: 640px) 100vw, 200px"

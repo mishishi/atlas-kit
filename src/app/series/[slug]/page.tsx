@@ -53,7 +53,7 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
             >
               {headerCards[0] ? (
                 <Image
-                  src={headerCards[0].image}
+                  src={headerCards[0].image_full ?? headerCards[0].image}
                   alt={headerCards[0].title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"

@@ -38,16 +38,12 @@ export default function Home({ searchParams }: HomeProps) {
         <div className="container py-16 md:py-24">
           <div className="grid gap-10 lg:gap-16 lg:grid-cols-[1.1fr_1fr] items-center">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-gold bg-gold/10 px-3 py-1 text-xs text-gold-deep mb-6">
-                <Sparkles className="h-3 w-3" aria-hidden="true" />
-                <span>系列化中文科普图鉴 · Atlas Kit</span>
-              </div>
               <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 animate-fade-in">
                 知识整理 · 模块信息 · <br className="hidden md:block" />
                 <span className="text-gold-deep italic">图鉴式展示</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-                每一张图鉴都像翻一页百科书: 主视觉、基础档案、外观特征、性格习性、养护评分、优缺点对比、趣味冷知识、健康风险 — 9 个模块完整呈现一个主题。
+                9 个固定模块 · 任意主题 · 像翻一页百科书的图鉴卡片。
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link

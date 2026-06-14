@@ -33,7 +33,7 @@ export function SiteHeader() {
           aria-label="图鉴社 回到首页"
           className="flex items-center gap-2 group rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
-          <div className="grid h-8 w-8 place-items-center rounded-md bg-gradient-to-br from-gold to-gold-deep text-cream shadow-card transition-transform group-hover:scale-105">
+          <div className="grid h-8 w-8 place-items-center rounded-md bg-gold-deep text-cream shadow-card transition-transform group-hover:scale-105">
             <span className="font-serif text-lg font-bold" aria-hidden="true">A</span>
           </div>
           <div className="flex flex-col leading-none">

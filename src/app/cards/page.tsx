@@ -122,7 +122,7 @@ export default function AllCardsPage({ searchParams }: AllCardsPageProps) {
             )}
             <Link
               href="/create"
-              className="inline-flex min-h-[44px] items-center gap-2 rounded-md bg-gradient-to-br from-gold to-gold-deep px-4 py-2 text-sm font-medium text-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md bg-gold-deep px-4 py-2 text-sm font-medium text-cream hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               去生成第一张 →
             </Link>

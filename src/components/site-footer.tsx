@@ -13,7 +13,7 @@ export function SiteFooter() {
           {/* Brand block */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-gold to-gold-deep text-cream">
+              <div className="grid h-7 w-7 place-items-center rounded-md bg-gold-deep text-cream">
                 <span className="font-serif text-base font-bold" aria-hidden="true">A</span>
               </div>
               <div className="flex flex-col leading-none">

@@ -45,22 +45,28 @@ See `data/cards.json` — 12 kind × 5 cards. Series assignment:
 
 ## Image tier conventions
 
-Three resize tiers per card via `scripts/resize-cards.mjs` (sharp):
+Three resize tiers per card (sharp):
 
 | Field | Source | Size | Use |
 |---|---|---|---|
 | `image_thumb` | `<slug>-thumb.webp` | 384w WebP | Card grid + list views (~50 KB) |
 | `image` | `<slug>-card.png` | 600w PNG | Detail hero + series cover (mid-quality, ~350 KB) |
-| `image_full` | `<slug>-full.png` | 1024w PNG | Download original + large hero |
+| `image_full` | `<slug>-full.webp` | 1024w WebP | Lightbox modal + download (pixel-real zoom, ~310 KB) |
+
+**History**:
+- The original `resize-cards.mjs` had a bug: `withoutEnlargement: true`
+  meant 1536w source → no-op downsize → -full.png ended up 1536w @ ~5.5 MB
+  each. 60 cards = 334 MB, over Vercel Hobby 100 MB static upload cap.
+- `scripts/rewrite-image-full.mjs` was a band-aid that set
+  `image_full = image` (600w) so the detail page download still worked.
+- `scripts/reencode-full-webp.mjs` (2026-06-16) is the real fix:
+  re-encoded 60 -full.png → 1024w WebP q90 → 19 MB total, fits Hobby
+  with 81 MB headroom. Updated `image_full` paths in cards.json to
+  `.webp` extension.
 
 Series list + detail page covers use `image_full` for crispness on
 desktop (was 600w card size, looked blurry at 100vw — fixed 2026-06-14
 in commit `f098548`). Card list + thumbnails still use 384w WebP.
-
-**Tradeoff accepted**: each series list page downloads ~28 MB of cover
-imagery on first visit (5 covers × 5.7 MB). Acceptable for "museum
-catalog fidelity" priority. If snappy list becomes more important,
-revert to `c.image` and accept slight blur on retina.
 
 ## Dev server quirks
 
@@ -90,7 +96,16 @@ revert to `c.image` and accept slight blur on retina.
 
 ## Scripts (in `scripts/`)
 
-- `resize-cards.mjs` — sharp batch resize 60 PNGs into 3 tiers. Keep.
+- `resize-cards.mjs` — sharp batch resize 60 PNGs into 3 tiers. Keep
+  (initial generation from a non-1536 source; current files are
+  re-encoded by reencode-full-webp.mjs).
+- `reencode-full-webp.mjs` — 1536w PNG → 1024w WebP q90 (-95% size).
+  Run after any new batch of cards to keep static bundle under cap.
+- `restore-image-full.mjs` — inverse of rewrite-image-full.mjs;
+  re-points cards.json image_full to the -full.webp paths.
+- `rewrite-image-full.mjs` — legacy band-aid that set
+  `image_full = image` (600w). Kept for reference; superseded by
+  reencode-full-webp.mjs.
 - ~~`run-60.mjs`~~ — one-off batch image generator (deleted 2026-06-15).
 - ~~`retry-4.mjs`~~ — one-off retry (deleted 2026-06-15).
 - ~~`sample-gen.mjs`~~ — one-off sample (deleted 2026-06-15).

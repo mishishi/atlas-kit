@@ -3,7 +3,7 @@
 /**
  * Lightbox — fullscreen modal image viewer.
  *
- * Design choices (Plan A: 自建 client component):
+ * Design choices (Plan A: self-built client component):
  * - 0 dependencies, full control over the cream/gold brand
  * - Uses bg-scrim (--scrim CSS var) for the backdrop, matches the
  *   design system token (same as other overlays would)
@@ -13,11 +13,19 @@
  *   would need yet-another-react-lightbox or a focus-trap lib)
  * - scale-in keyframe (already in tailwind.config) gives a subtle
  *   open animation
- * - Zoom controls: + / - buttons in the footer (was a decorative
- *   icon that did nothing — fixed in commit immediately after first
- *   ship). 1× / 1.5× / 2× / 3× via CSS transform: scale() so we
- *   don't need a higher-res source. + / - keyboard shortcuts work
- *   when the lightbox has focus.
+ *
+ * Zoom model (2026-06-15 fix — was a fake CSS transform: scale()
+ * on a 600w PNG, looked pixelated):
+ * - Default: `fit` — the 1024w image is rendered at its natural
+ *   aspect (9/16) and CSS-scaled down to fit the viewport, with
+ *   `object-contain` so the user sees the whole picture.
+ * - `100%` (or "原始尺寸") — the image is shown at native 1024×1820
+ *   pixels, overflowing the container. The user can scroll inside
+ *   the modal to pan around, or use the `+` / `-` keyboard shortcut.
+ * - Click on the image toggles `fit` ↔ `100%` (cursor: zoom-in
+ *   at fit, zoom-out at 100%).
+ *
+ * Image source is `image_full` (1024w WebP) passed in by the parent.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -27,6 +35,7 @@ import { cn } from "@/lib/utils";
 interface LightboxProps {
   open: boolean;
   onClose: () => void;
+  /** 1024w high-res PNG */
   src: string;
   alt: string;
   /** Optional filename for the download link (e.g. "labrador-retriever") */
@@ -35,12 +44,23 @@ interface LightboxProps {
   caption?: string;
 }
 
-const ZOOM_LEVELS = [1, 1.5, 2, 3] as const;
-type ZoomLevel = (typeof ZOOM_LEVELS)[number];
+/** Display modes: fit-to-viewport (CSS-scaled, whole image visible)
+ *  or 100% natural pixel size (overflows, user can pan). */
+type DisplayMode = "fit" | "natural";
+
+/** Source-of-truth dimensions for the -full.webp tier. The matrix
+ *  image generator returns 1536w; resize-cards.mjs was supposed to
+ *  scale down to 1024w but `withoutEnlargement: true` was wrong
+ *  (1536 < 2048 source → no-op, files stayed 1536w). The 1024w tier
+ *  was finally realized by scripts/reencode-full-webp.mjs (2026-06-16)
+ *  which also re-encoded PNG → WebP (334 MB → 19 MB, fits Vercel
+ *  Hobby 100 MB static upload cap). */
+const NATURAL_W = 1024;
+const NATURAL_H = 1835;
 
 export function Lightbox({ open, onClose, src, alt, filename, caption }: LightboxProps) {
   const closeBtnRef = useRef<HTMLButtonElement>(null);
-  const [zoom, setZoom] = useState<ZoomLevel>(1);
+  const [mode, setMode] = useState<DisplayMode>("fit");
 
   // Lock body scroll while open
   useEffect(() => {
@@ -52,7 +72,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
     };
   }, [open]);
 
-  // ESC closes; +/- adjusts zoom; 0 resets
+  // ESC closes; + / - toggles fit ↔ natural; 0 / r resets to fit
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -60,18 +80,16 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
         onClose();
         return;
       }
-      // Ignore when the user is typing in an input (none in this
-      // modal, but defensive in case we add a caption input later)
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
       if (e.key === "+" || e.key === "=") {
         e.preventDefault();
-        setZoom((z) => ZOOM_LEVELS[Math.min(ZOOM_LEVELS.length - 1, ZOOM_LEVELS.indexOf(z) + 1)] ?? z);
+        setMode("natural");
       } else if (e.key === "-" || e.key === "_") {
         e.preventDefault();
-        setZoom((z) => ZOOM_LEVELS[Math.max(0, ZOOM_LEVELS.indexOf(z) - 1)] ?? z);
-      } else if (e.key === "0") {
+        setMode("fit");
+      } else if (e.key === "0" || e.key.toLowerCase() === "r") {
         e.preventDefault();
-        setZoom(1);
+        setMode("fit");
       }
     };
     window.addEventListener("keydown", onKey);
@@ -83,25 +101,17 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
     if (open) closeBtnRef.current?.focus();
   }, [open]);
 
-  // Reset zoom when the lightbox re-opens (otherwise it would stay
-  // at the last level across sessions and confuse the user)
+  // Reset to fit mode on open (otherwise the next open might be
+  // stuck at natural, which overflows the viewport on a smaller screen)
   useEffect(() => {
-    if (open) setZoom(1);
+    if (open) setMode("fit");
   }, [open]);
 
-  const zoomIn = useCallback(() => {
-    setZoom((z) => ZOOM_LEVELS[Math.min(ZOOM_LEVELS.length - 1, ZOOM_LEVELS.indexOf(z) + 1)] ?? z);
+  const toggleMode = useCallback(() => {
+    setMode((m) => (m === "fit" ? "natural" : "fit"));
   }, []);
-  const zoomOut = useCallback(() => {
-    setZoom((z) => ZOOM_LEVELS[Math.max(0, ZOOM_LEVELS.indexOf(z) - 1)] ?? z);
-  }, []);
-  const zoomReset = useCallback(() => setZoom(1), []);
 
   if (!open) return null;
-
-  const canZoomIn = zoom < ZOOM_LEVELS[ZOOM_LEVELS.length - 1];
-  const canZoomOut = zoom > ZOOM_LEVELS[0];
-  const isZoomed = zoom > 1;
 
   return (
     <div
@@ -128,66 +138,74 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
       </button>
 
       {/* Image container — click on the figure does NOT close (stops
-          bubbling) so right-click / long-press on the image stays put.
-          When zoomed in, the image overflows; overflow-auto on the
-          inner div lets the user pan around the larger image. */}
+          bubbling) so right-click / long-press on the image stays put. */}
       <figure
         onClick={(e) => e.stopPropagation()}
         className="relative flex max-h-[calc(100vh-2rem)] max-w-[calc(100vw-2rem)] flex-col items-center gap-3 animate-scale-in"
       >
         <div
           className={cn(
-            "relative overflow-auto rounded-lg shadow-dark-card ring-1 ring-border/40",
-            isZoomed ? "cursor-zoom-out" : "cursor-zoom-in",
+            "relative rounded-lg shadow-dark-card ring-1 ring-border/40",
+            mode === "fit"
+              ? "overflow-hidden cursor-zoom-in"
+              : "overflow-auto cursor-zoom-out",
           )}
-          style={{ maxHeight: "calc(100vh - 8rem)", maxWidth: "calc(100vw - 2rem)" }}
-          onClick={() => (isZoomed ? zoomReset() : zoomIn())}
+          style={{
+            maxHeight: "calc(100vh - 8rem)",
+            maxWidth: "calc(100vw - 2rem)",
+          }}
+          onClick={toggleMode}
         >
+          {/* Render at intrinsic 1024×1820. In 'fit' mode, CSS scales
+              the wrapper down to viewport via the outer max-w/max-h
+              + object-contain-style behavior. In 'natural' mode, the
+              image overflows the container (overflow-auto lets the
+              user pan with mouse wheel / scroll). */}
           <Image
             src={src}
             alt={alt}
-            width={900}
-            height={1600}
-            sizes="(max-width: 768px) 100vw, 900px"
+            width={NATURAL_W}
+            height={NATURAL_H}
+            sizes="(max-width: 1024px) 100vw, 1024px"
             quality={95}
             priority
-            className="block w-auto max-w-none select-none"
-            style={{
-              // At 1× the image is constrained to the viewport; at higher
-              // zoom levels it grows past the container (which is
-              // overflow-auto so the user can pan). maxHeight on the
-              // parent only applies at 1×; once scaled, the rendered
-              // image is larger and pannable.
-              maxHeight: zoom === 1 ? "calc(100vh - 8rem)" : undefined,
-              transform: `scale(${zoom})`,
-              transformOrigin: "top left",
-              transition: "transform 200ms cubic-bezier(0.16, 1, 0.3, 1)",
-            }}
             draggable={false}
+            className={cn(
+              "block select-none",
+              mode === "fit"
+                // CSS-scaled to fit the container (max-w/max-h on parent
+                // constrains the wrapper; the image fills it while keeping
+                // the 9/16 aspect via w-auto / h-auto).
+                ? "h-full w-auto max-h-[calc(100vh-8rem)] max-w-full"
+                // Natural pixel size, overflows the container for panning.
+                : "h-auto w-auto",
+            )}
           />
         </div>
 
-        {/* Caption + zoom controls + download row */}
+        {/* Caption + mode controls + download row */}
         <figcaption className="flex w-full flex-wrap items-center justify-between gap-3 rounded-md bg-card/95 px-4 py-2.5 text-sm shadow-card backdrop-blur">
           <div className="flex min-w-0 items-center gap-2 text-foreground">
             <span className="font-serif truncate">{caption ?? alt}</span>
           </div>
 
           <div className="flex shrink-0 items-center gap-2">
-            {/* Zoom controls — previously a decorative icon (bug fixed
-                2026-06-15). + / - / reset. Disabled state at the
-                bounds, with a clear 100% label so the user always
-                knows the current level. */}
+            {/* Mode controls — was a fake '100%/150%/200%/300%' CSS
+                transform: scale() (bug fix 2026-06-15: the scale only
+                stretched pixels, no real resolution). Now toggles
+                between 'fit' (whole image, scaled to viewport) and
+                '100%' (native 1024w, overflows + pans). The middle
+                label doubles as a reset to 'fit'. */}
             <div
               role="group"
-              aria-label="缩放"
+              aria-label="显示模式"
               className="flex items-center gap-0.5 rounded-md border border-border bg-card/50 p-0.5"
             >
               <button
                 type="button"
-                onClick={zoomOut}
-                disabled={!canZoomOut}
-                aria-label="缩小"
+                onClick={() => setMode("fit")}
+                disabled={mode === "fit"}
+                aria-label="适应窗口"
                 className={cn(
                   "grid h-8 w-8 min-h-[32px] min-w-[32px] place-items-center rounded text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
@@ -199,30 +217,30 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
               </button>
               <button
                 type="button"
-                onClick={zoomReset}
-                disabled={!isZoomed}
-                aria-label={`重置缩放 (当前 ${Math.round(zoom * 100)}%)`}
+                onClick={() => setMode("fit")}
+                disabled={mode === "fit"}
+                aria-label="重置为适应窗口"
                 className={cn(
-                  "min-h-[32px] min-w-[44px] rounded px-1.5 text-xs font-medium tabular-nums text-foreground",
+                  "min-h-[32px] min-w-[52px] rounded px-1.5 text-xs font-medium tabular-nums text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   "disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent",
                   "transition-colors",
                 )}
               >
-                {isZoomed ? (
+                {mode === "natural" ? (
                   <span className="inline-flex items-center gap-1">
                     <RotateCcw className="h-3 w-3" aria-hidden="true" />
-                    {Math.round(zoom * 100)}%
+                    适应
                   </span>
                 ) : (
-                  "100%"
+                  "适应"
                 )}
               </button>
               <button
                 type="button"
-                onClick={zoomIn}
-                disabled={!canZoomIn}
-                aria-label="放大"
+                onClick={() => setMode("natural")}
+                disabled={mode === "natural"}
+                aria-label="原始 100% 尺寸"
                 className={cn(
                   "grid h-8 w-8 min-h-[32px] min-w-[32px] place-items-center rounded text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
@@ -237,7 +255,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
             {filename && (
               <a
                 href={src}
-                download={`${filename}.png`}
+                download={`${filename}.webp`}
                 onClick={(e) => e.stopPropagation()}
                 className={cn(
                   "inline-flex shrink-0 items-center gap-1.5 rounded-md bg-gold-deep px-3 py-1.5 text-xs font-medium text-cream",
@@ -246,7 +264,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
                 )}
               >
                 <Download className="h-3.5 w-3.5" aria-hidden="true" />
-                下载
+                下载原图
               </a>
             )}
           </div>

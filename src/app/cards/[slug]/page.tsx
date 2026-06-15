@@ -106,6 +106,7 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             a download button in the footer, and locks body scroll. */}
         <HeroWithLightbox
           src={card.image}
+          fullSrc={card.image_full ?? card.image}
           alt={card.subtitle || card.title}
           bgColor={card.palette[0]}
           filename={card.slug}

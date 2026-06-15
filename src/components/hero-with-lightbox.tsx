@@ -9,6 +9,14 @@
  * Why a client island: the detail page is a server component for SEO
  * (it emits JSON-LD from card data at request time). Only the hero
  * needs interactivity, so we hydrate just this subtree.
+ *
+ * Image tiers (60 cards, all English slugs):
+ *   - thumb.webp  (384w)   — list views
+ *   - card.png    (600w)   — detail hero (this component)
+ *   - full.webp   (1024w)  — lightbox modal (high-res "view original")
+ *                           (was 1536w PNG ~5.5MB; re-encoded to
+ *                            1024w WebP q90 in 2026-06-16 — 19 MB
+ *                            total, fits Vercel Hobby 100 MB cap)
  */
 import Image from "next/image";
 import { useState } from "react";
@@ -17,7 +25,10 @@ import { Lightbox } from "./lightbox";
 import { cn } from "@/lib/utils";
 
 interface HeroWithLightboxProps {
+  /** 600w card PNG — used for the hero (faster load) */
   src: string;
+  /** 1024w high-res WebP — used inside the lightbox (pixel-real zoom) */
+  fullSrc: string;
   alt: string;
   /** Card palette[0] — used as a background while the image loads */
   bgColor: string;
@@ -27,19 +38,19 @@ interface HeroWithLightboxProps {
   caption: string;
 }
 
-export function HeroWithLightbox({ src, alt, bgColor, filename, caption }: HeroWithLightboxProps) {
+export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption }: HeroWithLightboxProps) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       <div className="relative">
         {/* Clickable hero — the whole card is a button so the user
-            has a generous tap target (the previous "查看大图" text
-            link was a thin sliver below the image and easy to miss). */}
+            has a generous tap target (was a thin sliver below the
+            image, easy to miss). */}
         <button
           type="button"
           onClick={() => setOpen(true)}
-          aria-label={`查看大图：${alt}`}
+          aria-label={`查看原图：${alt}`}
           className={cn(
             "group relative block aspect-[9/16] w-full max-w-[480px] mx-auto overflow-hidden rounded-lg border border-border bg-card shadow-card-hover",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
@@ -67,25 +78,27 @@ export function HeroWithLightbox({ src, alt, bgColor, filename, caption }: HeroW
             aria-hidden="true"
           >
             <Maximize2 className="h-3.5 w-3.5" />
-            查看大图
+            查看原图
           </span>
         </button>
 
-        {/* Secondary text link below the image — same action, different
-            affordance for users who didn't notice the magnifier pill. */}
+        {/* Secondary text link below the image — opens the 1024w
+            original inside the lightbox. The honest label tells the
+            user the modal will show the 1024w source, not the 600w
+            thumbnail they were just looking at. */}
         <button
           type="button"
           onClick={() => setOpen(true)}
           className="mt-2 block w-full text-center text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
         >
-          查看大图 (600×1067) ↗
+          查看原图 (1024×1835) ↗
         </button>
       </div>
 
       <Lightbox
         open={open}
         onClose={() => setOpen(false)}
-        src={src}
+        src={fullSrc}
         alt={alt}
         filename={filename}
         caption={caption}

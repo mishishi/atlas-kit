@@ -30,7 +30,7 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
     <div className="grid grid-cols-2 gap-2">
       <a
         href={imageUrl}
-        download={`${imageFilename}.png`}
+        download={`${imageFilename}.webp`}
         className={cn(
           "flex min-h-[44px] items-center justify-center gap-2 rounded-md bg-gold-deep px-4 py-2.5 text-sm font-medium text-cream",
           "transition-colors hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",

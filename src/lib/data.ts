@@ -168,7 +168,7 @@ export function getRelatedCards(
   const scored = cards
     .filter((c) => !exclude.has(c.slug))
     .map((c) => ({ c, score: relatedScore(target, c) }))
-    .filter((x) => x.score >= 1); // minimum: at least one signal (kind or series or tag or palette)
+    .filter((x) => x.score >= 3); // minimum: at least one shared cross-tag (or 1+tag + same kind)
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
     return a.c.createdAt < b.c.createdAt ? 1 : -1;

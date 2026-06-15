@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search } from "lucide-react";
-import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries } from "@/lib/data";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles } from "lucide-react";
+import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
@@ -55,16 +55,18 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
     .filter((c) => c.slug !== card.slug && !siblingSlugs.has(c.slug))
     .slice(0, 4);
 
-  // Note on dropped section: a "你可能也会喜欢" cross-kind / cross-
-  // series recommendation block was prototyped in src/lib/data.ts
-  // (see getRelatedCards + relatedScore) but never wired to the UI.
-  // With only 17 / 1770 card pairs sharing a tag (and all within
-  // the same series), the algorithm had no signal to work with and
-  // would have produced the same 4 cards for every target. Drop
-  // the section rather than ship a recommendation carousel that
-  // shows stale suggestions. Revisit when the dataset grows past
-  // ~200 cards or when a content-based signal (vector embeddings,
-  // shared source material) becomes available.
+  // 你可能也会喜欢 — weighted score: same kind +5, same series +3
+  // (excluded below since 同系列 is above), shared tags +3 each
+  // (cap +9). The dataset now has cross-cutting categorical tags
+  // (中国 / 古代 / 江南 / etc., see scripts/add-cross-tags.mjs) so
+  // the algorithm has real cross-kind / cross-series signal.
+  // Excludes current + same-series siblings + same-kind cards so
+  // the three sections don't overlap.
+  const relatedByInterest = getRelatedCards(
+    card,
+    4,
+    new Set([...siblingSlugs, ...relatedByKind.map((c) => c.slug)]),
+  );
 
   return (
     <article className="container py-8 md:py-12">
@@ -309,6 +311,44 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               </Link>
             </div>
           )}
+        </section>
+      )}
+
+      {/* 你可能也会喜欢 — weighted score across cross-cutting
+          categorical tags (中国 / 古代 / 江南 / etc). Different
+          signal from 同类推荐 (kind-only) and 同系列 (siblings-
+          only) above, so the three sections don't overlap. Skip
+          if no candidates scored ≥ 3 (very small datasets, or
+          very unique cards with no overlap to anything). */}
+      {relatedByInterest.length > 0 && (
+        <section className="mt-16">
+          <h2 className="font-serif text-2xl font-bold mb-6 flex items-center gap-2">
+            <Sparkles className="h-5 w-5 text-gold-deep" aria-hidden="true" />
+            你可能也会喜欢
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {relatedByInterest.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/cards/${c.slug}`}
+                aria-label={`查看 ${c.title}`}
+                className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all hover:-translate-y-0.5"
+              >
+                <div className="relative aspect-[9/16]">
+                  <Image
+                    src={c.image_thumb ?? c.image}
+                    alt={c.title}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3">
+                  <p className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">{c.title}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </section>
       )}
 

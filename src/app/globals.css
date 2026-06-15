@@ -267,3 +267,75 @@
   /* dark mode gets the brighter gold automatically via the
      --brand-gold-deep CSS var swap in .dark above */
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Print styles — A4 portrait, single column, generous margins.
+   Applied to:
+     1. /print/cards/[slug] — the dedicated printable view (Cmd+P
+        → "Save as PDF" is the user's "export PDF" path)
+     2. /cards/[slug] and /cards when the user happens to print
+        them (header/footer/nav stripped, single card per page)
+   Goal: a clean, magazine-quality printout without browser
+   chrome (URL bar, page numbers, etc).
+   ───────────────────────────────────────────────────────────────────── */
+@layer base {
+  @media print {
+    /* Reset to a known paper background. The cream/ink brand would
+       look muddy on white printer paper, so flip to white bg + ink
+       text. */
+    :root, .dark {
+      --background: 0 0% 100%;
+      --foreground: 30 14% 16%;
+      --card: 0 0% 100%;
+      --card-foreground: 30 14% 16%;
+    }
+    body {
+      background: white !important;
+      color: #2E2A24 !important;
+    }
+    /* Strip site chrome — header, footer, mobile nav, theme toggle */
+    header[role="banner"],
+    nav[aria-label="主导航"],
+    nav[aria-label="主导航 (移动)"],
+    footer,
+    .site-footer,
+    .site-header,
+    [data-print="hide"] {
+      display: none !important;
+    }
+    /* Page margins — Chrome respects these via the print dialog
+       "Margins: Custom" but we set @page too as a fallback. */
+    @page {
+      size: A4 portrait;
+      margin: 18mm 16mm 16mm 16mm;
+    }
+    /* Prevent awkward internal page breaks */
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+    a {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+    /* Show external link URLs after the link text — academic style */
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 0.75em;
+      color: #999;
+    }
+    /* But skip the perma-link footer URL — that one we want clean */
+    footer a[href^="http"]::after {
+      content: "";
+    }
+    /* Show image alt text fallback in case browsers suppress images */
+    img {
+      max-height: 100% !important;
+    }
+    /* Avoid content being orphaned at the bottom of a page */
+    section {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+  }
+}

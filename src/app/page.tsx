@@ -73,14 +73,16 @@ export default function Home({ searchParams }: HomeProps) {
             >
               {/* Background fan: 4 thumbs positioned at the corners, each
                   tilted differently. Rendered first so the center card
-                  sits on top. */}
+                  sits on top.
+                  Angle softened from -6°+4°+5°-4° to -3°+2°+2°-2°
+                  per design-taste-frontend editorial restraint (VARIANCE=6). */}
               {heroCards.slice(0, 4).map((c, i) => {
                 // top-left, top-right, bottom-left, bottom-right corners
                 const positions = [
-                  "top-2 left-2 -rotate-6 z-10",
-                  "top-6 right-4 rotate-4 z-20",
-                  "bottom-8 left-10 rotate-5 z-15",
-                  "bottom-2 right-2 -rotate-4 z-25",
+                  "top-2 left-2 -rotate-3 z-10",
+                  "top-6 right-4 rotate-2 z-20",
+                  "bottom-8 left-10 rotate-2 z-15",
+                  "bottom-2 right-2 -rotate-2 z-25",
                 ];
                 return (
                   <Link

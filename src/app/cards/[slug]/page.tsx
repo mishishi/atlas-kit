@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles } from "lucide-react";
-import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards } from "@/lib/data";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2 } from "lucide-react";
+import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
+import { LinkedText } from "@/components/linked-text";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { cn, formatDate } from "@/lib/utils";
@@ -67,6 +68,13 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
     4,
     new Set([...siblingSlugs, ...relatedByKind.map((c) => c.slug)]),
   );
+
+  // Reverse references — cards whose text mentions this card. Part
+  // of the "知识网络" upgrade (issue 80bf9e4's roadmap).
+  const reverseMentions = getReverseMentions(card.slug, 8);
+  // Title → slug map for the body description — turns "提到了 X"
+  // into a real <Link> to X's detail page.
+  const mentionMap = getAllCardsForMentionMap(card.slug);
 
   return (
     <article className="container py-8 md:py-12">
@@ -141,7 +149,9 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             <p className="font-serif text-lg text-gold-deep mb-4">{card.subtitle}</p>
           </div>
 
-          <p className="text-base leading-relaxed text-foreground/90">{card.description}</p>
+          <p className="text-base leading-relaxed text-foreground/90">
+            <LinkedText text={card.description} titleToSlug={mentionMap} />
+          </p>
 
           {/* Meta table — 4 rows: 类型 / 系列 / 收录 / 标签. The old
               学名/English rows are gone (Chinese-only editorial tone). */}
@@ -349,6 +359,48 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {/* 反向引用 — cards whose body text mentions THIS card.
+          Distinguishes the "knowledge graph" feel from the
+          recommendation feel above (which is computed by tag
+          similarity). The two sections together make the detail
+          page feel like a Wikipedia article: see-also links in
+          both directions. Newest references first. */}
+      {reverseMentions.length > 0 && (
+        <section className="mt-16">
+          <h2 className="font-serif text-2xl font-bold mb-6 flex items-center gap-2">
+            <Link2 className="h-5 w-5 text-gold-deep" aria-hidden="true" />
+            提到了「{card.title}」的图鉴
+          </h2>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 list-none p-0">
+            {reverseMentions.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={`/cards/${c.slug}`}
+                  className="group flex items-center gap-2.5 rounded-md border border-border bg-card p-3 hover:border-gold hover:shadow-card transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  <div
+                    className="relative h-10 w-7 shrink-0 overflow-hidden rounded-sm"
+                    style={{ backgroundColor: c.palette[0] }}
+                  >
+                    <Image
+                      src={c.image_thumb ?? c.image}
+                      alt=""
+                      fill
+                      sizes="28px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-serif text-sm font-medium leading-snug truncate group-hover:text-gold-deep transition-colors">{c.title}</p>
+                    <p className="text-[10px] text-muted-foreground/70 tabular-nums">{c.seriesNo} · {c.kind}</p>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

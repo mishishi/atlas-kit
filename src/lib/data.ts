@@ -181,6 +181,83 @@ export function getRecentCards(n: number): Card[] {
   return getAllCards().slice(0, n);
 }
 
+/**
+ * Build a forward-mention index: for every card slug, list the slugs
+ * of OTHER cards whose titles appear in this card's description /
+ * tagline / subtitle text.
+ *
+ * Used by the detail page for two things:
+ *   1. Inline `<Link>` rendering inside the description body
+ *   2. "X 也提到了这张" reverse-reference section
+ *
+ * Why a Map<string, Set<string>> and not a Map<string, string[]>:
+ * sets dedupe by definition, and a card mentioning another card
+ * twice in its body shouldn't be counted twice downstream.
+ *
+ * The index is built once per process (60 cards, cheap) and shared.
+ */
+let _mentionIndex: Map<string, Set<string>> | null = null;
+export function getMentionIndex(): Map<string, Set<string>> {
+  if (_mentionIndex) return _mentionIndex;
+  // Build a title → slug map. Use the FIRST slug if two cards share
+  // a title (shouldn't happen with English slugs, but defensive).
+  const titleToSlug = new Map<string, string>();
+  for (const c of cards) {
+    if (!titleToSlug.has(c.title)) titleToSlug.set(c.title, c.slug);
+  }
+  const idx = new Map<string, Set<string>>();
+  for (const c of cards) {
+    const haystack = [c.description, c.tagline, c.subtitle].filter(Boolean).join(" ");
+    const mentioned = new Set<string>();
+    for (const [title, slug] of titleToSlug) {
+      if (slug === c.slug) continue;
+      if (title.length < 2) continue; // skip 1-char false positives
+      if (haystack.includes(title)) mentioned.add(slug);
+    }
+    idx.set(c.slug, mentioned);
+  }
+  _mentionIndex = idx;
+  return idx;
+}
+
+/** Forward mentions of a card (cards that this card mentions in its text). */
+export function getForwardMentions(slug: string): Card[] {
+  const idx = getMentionIndex();
+  const slugs = idx.get(slug) ?? new Set();
+  return cards.filter((c) => slugs.has(c.slug));
+}
+
+/** Reverse references: cards that mention this card in their text. */
+export function getReverseMentions(slug: string, limit = 8): Card[] {
+  const idx = getMentionIndex();
+  const refs: Card[] = [];
+  for (const [otherSlug, mentioned] of idx) {
+    if (otherSlug === slug) continue;
+    if (mentioned.has(slug)) {
+      const c = cards.find((x) => x.slug === otherSlug);
+      if (c) refs.push(c);
+    }
+  }
+  // Newest mentions first
+  refs.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  return refs.slice(0, limit);
+}
+
+/**
+ * Build a {title: slug} map for ALL other cards, used by <LinkedText>
+ * to render the description body with internal links to any card
+ * whose title appears in the text.
+ */
+export function getAllCardsForMentionMap(excludeSlug?: string): Record<string, string> {
+  const map: Record<string, string> = {};
+  for (const c of cards) {
+    if (c.slug === excludeSlug) continue;
+    // Don't overwrite if two cards share a title — keep the first
+    if (!(c.title in map)) map[c.title] = c.slug;
+  }
+  return map;
+}
+
 export function getKindCounts(): Record<string, number> {
   const counts: Record<string, number> = {};
   for (const card of cards) {

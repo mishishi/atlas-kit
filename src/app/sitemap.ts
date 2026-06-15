@@ -25,7 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const cardRoutes: MetadataRoute.Sitemap = getAllCards().map((c) => ({
     url: `${base}/cards/${c.slug}`,
-    lastModified: now,
+    // Per-card lastModified = the card's own createdAt, so sitemap
+    // tells crawlers "this card was last touched at the time it was
+    // generated, not at the time the build ran". More accurate
+    // change signals = better crawl prioritization.
+    lastModified: new Date(c.createdAt),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));

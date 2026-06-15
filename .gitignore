@@ -31,13 +31,14 @@ coverage/
 .env.production.local
 *.pem
 
-# ─── Atlas Kit runtime data (不入仓) ───────────────────────────────
-# 用户生成 + 初始图鉴的图片都在这里, 都视为"运行时产物" 不入仓
-public/cards/*.png
-public/cards/*.jpg
-public/cards/*.jpeg
-public/cards/*.webp
-# prompt A/B test 临时 sample 图不入仓
+# ─── Atlas Kit runtime data (不入仓 by default, 用 -f 强制 add 初始 60 张) ─
+# 注释:
+#   早期阶段 (60 张 placeholder card) 把所有 *.png / *.webp 强制 add 进了 git
+#   (`git add -f public/cards/*.{png,webp}`), 这样 Vercel deploy 才能 serve 这些
+#   图片. 后续 wizard 生成的新图应该照样走 -f 路径, 否则 Vercel 上看不到.
+#   真正的"用户内容"应该迁去外部 CDN, 不要把整个 public/cards 当 git binary
+#   blob 用 (clone 慢 + diff 难).
+# 例外 (依然忽略, 不强制 add):
 public/cards/sample-*.png
 # 调试用的临时 json / log 散落在根
 *.tmp-*.json

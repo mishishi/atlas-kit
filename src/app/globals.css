@@ -221,4 +221,49 @@
   .text-destructive-soft { color: hsl(var(--destructive-soft)); }
   .bg-warning-soft { background-color: hsl(var(--warning-soft)); }
   .bg-success-soft { background-color: hsl(var(--success-soft)); }
+
+  /* ── Editorial scrollbar — matches the cream/gold/ink brand.
+     Use on overflow containers (lightbox image, code blocks, etc).
+     Scoped to .scrollbar-editorial so the global scrollbar stays
+     native (the user can still scroll the page with the default
+     look — we don't take over the entire viewport).
+
+     - Webkit (Chrome, Edge, Safari): ::-webkit-scrollbar-* pseudo
+       elements with brand colors and a pill shape.
+     - Firefox 64+: scrollbar-color + scrollbar-width.
+     - Color tokens resolve to brand-gold in light, brighter
+       brand-gold in dark (auto-flips via .dark class). */
+  .scrollbar-editorial {
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--brand-gold-deep) / 0.45) transparent;
+  }
+  .scrollbar-editorial::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-editorial::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-editorial::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--brand-gold-deep) / 0.45);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  .scrollbar-editorial:hover::-webkit-scrollbar-thumb,
+  .scrollbar-editorial:focus-visible::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--brand-gold-deep) / 0.7);
+  }
+  /* Slightly wider thumb on hover for affordance (8px → 10px) */
+  .scrollbar-editorial:hover::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  /* When actively scrolling, full opacity so the user can see it */
+  .scrollbar-editorial::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--brand-gold-deep) / 0.85);
+  }
+  /* dark mode gets the brighter gold automatically via the
+     --brand-gold-deep CSS var swap in .dark above */
 }

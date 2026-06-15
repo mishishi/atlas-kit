@@ -145,7 +145,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
       >
         <div
           className={cn(
-            "relative rounded-lg shadow-dark-card ring-1 ring-border/40",
+            "relative rounded-lg shadow-dark-card ring-1 ring-border/40 scrollbar-editorial",
             mode === "fit"
               ? "overflow-hidden cursor-zoom-in"
               : "overflow-auto cursor-zoom-out",

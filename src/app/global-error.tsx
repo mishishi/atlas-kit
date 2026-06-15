@@ -3,7 +3,14 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { AlertCircle, Home, RefreshCw } from "lucide-react";
+import { EDGE_TOKENS as T } from "@/lib/edge-tokens";
 
+// global-error.tsx runs OUTSIDE the root layout, so:
+//   - Tailwind classes don't work (CSS bundle not yet applied)
+//   - CSS vars in globals.css are not yet resolvable
+//   - All styling must be inline with explicit values
+// We import EDGE_TOKENS so the colors stay in sync with the
+// rest of the brand (light-mode cream + gold + ink).
 export default function GlobalError({
   error,
   reset,
@@ -21,8 +28,8 @@ export default function GlobalError({
       <body
         style={{
           fontFamily: "system-ui, -apple-system, 'Segoe UI', sans-serif",
-          background: "#F5F0E6",
-          color: "#2E2A24",
+          background: T.cream,
+          color: T.ink,
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
@@ -40,17 +47,17 @@ export default function GlobalError({
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "50%",
-              background: "rgba(201, 112, 100, 0.1)",
-              border: "2px dashed #C97064",
+              background: T.destructiveSoft,
+              border: `2px dashed ${T.destructive}`,
               marginBottom: "20px",
             }}
           >
-            <AlertCircle size={36} color="#C97064" aria-hidden="true" />
+            <AlertCircle size={36} color={T.destructive} aria-hidden="true" />
           </div>
           <h1 style={{ fontSize: "28px", fontWeight: 700, margin: "0 0 8px" }}>
             应用出现异常
           </h1>
-          <p style={{ color: "#6B655A", lineHeight: 1.5, margin: "0 0 24px" }}>
+          <p style={{ color: T.inkSoft, lineHeight: 1.5, margin: "0 0 24px" }}>
             页面遇到了一个未捕获的错误。刷新试试, 或回到首页继续浏览。
           </p>
           {error.digest && (
@@ -58,7 +65,7 @@ export default function GlobalError({
               style={{
                 fontSize: "12px",
                 fontFamily: "monospace",
-                color: "#9C9588",
+                color: T.inkMute,
                 marginBottom: "24px",
               }}
             >
@@ -74,8 +81,8 @@ export default function GlobalError({
                 gap: "8px",
                 minHeight: "44px",
                 padding: "10px 20px",
-                background: "#8C6F4D",
-                color: "#F5F0E6",
+                background: T.goldDeep,
+                color: T.cream,
                 border: "none",
                 borderRadius: "6px",
                 fontSize: "14px",
@@ -94,9 +101,9 @@ export default function GlobalError({
                 gap: "8px",
                 minHeight: "44px",
                 padding: "10px 20px",
-                background: "white",
-                color: "#2E2A24",
-                border: "1px solid #E5DED0",
+                background: T.white,
+                color: T.ink,
+                border: `1px solid ${T.creamDeep}`,
                 borderRadius: "6px",
                 fontSize: "14px",
                 fontWeight: 500,

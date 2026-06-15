@@ -1,11 +1,19 @@
 import { ImageResponse } from "next/og";
 import { getAllCards } from "@/lib/data";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
+import { EDGE_TOKENS as T } from "@/lib/edge-tokens";
 
+// Edge runtime (next/og) — cannot use CSS vars. EDGE_TOKENS keeps
+// the brand colors in sync with the rest of the design system.
 export const runtime = "edge";
 export const alt = "图鉴社 · Atlas Kit — 系列化中文科普图鉴";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+// Cream-deeper for the gradient end (used in this file only,
+// ~5% darker than EDGE_TOKENS.cream). Kept inline as a local
+// constant since it doesn't appear elsewhere in the brand.
+const CREAM_DEEP = "#EBE3D2";
 
 export default async function Image() {
   const cards = getAllCards().slice(0, 4);
@@ -16,7 +24,7 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "linear-gradient(135deg, #F5F0E6 0%, #EBE3D2 100%)",
+          background: `linear-gradient(135deg, ${T.cream} 0%, ${CREAM_DEEP} 100%)`,
           padding: "60px",
           fontFamily: "serif",
         }}
@@ -40,8 +48,8 @@ export default async function Image() {
                 alignItems: "center",
                 justifyContent: "center",
                 borderRadius: "12px",
-                background: "linear-gradient(135deg, #B8956A 0%, #8C6F4D 100%)",
-                color: "#F5F0E6",
+                background: `linear-gradient(135deg, ${T.gold} 0%, ${T.goldDeep} 100%)`,
+                color: T.cream,
                 fontSize: "36px",
                 fontWeight: "bold",
               }}
@@ -49,13 +57,13 @@ export default async function Image() {
               A
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ fontSize: "32px", fontWeight: 700, color: "#2E2A24" }}>
+              <div style={{ fontSize: "32px", fontWeight: 700, color: T.ink }}>
                 图鉴社
               </div>
               <div
                 style={{
                   fontSize: "16px",
-                  color: "#6B655A",
+                  color: T.inkSoft,
                   letterSpacing: "0.2em",
                   marginTop: "2px",
                 }}
@@ -70,7 +78,7 @@ export default async function Image() {
               style={{
                 fontSize: "52px",
                 fontWeight: 700,
-                color: "#2E2A24",
+                color: T.ink,
                 lineHeight: 1.15,
                 fontStyle: "italic",
               }}
@@ -81,7 +89,7 @@ export default async function Image() {
               style={{
                 fontSize: "52px",
                 fontWeight: 700,
-                color: "#8C6F4D",
+                color: T.goldDeep,
                 lineHeight: 1.15,
                 marginTop: "8px",
               }}
@@ -91,7 +99,7 @@ export default async function Image() {
             <div
               style={{
                 fontSize: "20px",
-                color: "#6B655A",
+                color: T.inkSoft,
                 marginTop: "24px",
                 lineHeight: 1.4,
               }}
@@ -105,7 +113,7 @@ export default async function Image() {
               display: "flex",
               gap: "24px",
               fontSize: "16px",
-              color: "#6B655A",
+              color: T.inkSoft,
             }}
           >
             <div>{cards.length}+ 张图鉴</div>

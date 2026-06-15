@@ -9,9 +9,12 @@ interface RateLimitEntry {
 const store = new Map<string, RateLimitEntry>();
 
 const WINDOW_MS = 5 * 60 * 1000; // 5 minutes
-// Temporarily disabled while the user is batch-running the 60
-// placeholder cards. Re-enable (3) before deploying to production.
-const MAX_REQUESTS = 9999;
+// Production rate limit: 3 generation requests per 5 minutes per IP.
+// The previous value (9999) was for batch-running the 60 placeholder
+// cards and must not ship to production. The generation wizard calls
+// matrix MCP, which is itself rate-limited; 3/5min keeps a single
+// user from triggering 502 floods when the upstream is throttled.
+const MAX_REQUESTS = 3;
 
 export function rateLimit(ip: string): { allowed: boolean; remaining: number; resetAt: number } {
   const now = Date.now();

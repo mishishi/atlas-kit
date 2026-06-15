@@ -13,9 +13,24 @@ export function generateStaticParams() {
   return getAllCards().map((c) => ({ slug: c.slug }));
 }
 
+// `dynamicParams = false` means an unknown slug is rejected at the
+// framework level (404 status) instead of falling through to SSR
+// (which Next 14 serves with 200 + not-found body, see:
+// https://github.com/vercel/next.js/issues/47975). Combined with
+// the notFound() call in generateMetadata above, the user gets
+// the proper 404 response with the path-aware not-found.tsx body.
+export const dynamicParams = false;
+
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const card = getCardBySlug(params.slug);
-  if (!card) return { title: "图鉴未找到 · 图鉴社" };
+  if (!card) {
+    // Trigger notFound() at the metadata layer so Next.js serves a true
+    // 404 response with the not-found.tsx body, instead of returning
+    // 200 with the '图鉴未找到' title and a partially-rendered page
+    // (which was happening because notFound() thrown inside the
+    // default function races with the metadata-rendered title).
+    notFound();
+  }
   return {
     title: `${card.title} · 图鉴社`,
     description: card.tagline,

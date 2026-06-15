@@ -10,9 +10,18 @@ export function generateStaticParams() {
   return getAllSeries().map((s) => ({ slug: s.slug }));
 }
 
+// See /cards/[slug] for the rationale — dynamicParams=false forces
+// a real 404 on unknown series slugs instead of Next 14's default
+// 200 + not-found body.
+export const dynamicParams = false;
+
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const series = getSeriesBySlug(params.slug);
-  if (!series) return { title: "系列未找到 · 图鉴社" };
+  if (!series) {
+    // See /cards/[slug] for the rationale — throw at the metadata layer
+    // so Next.js serves a real 404 with the not-found body.
+    notFound();
+  }
   return {
     title: `${series.name} · 图鉴社`,
     description: series.tagline,

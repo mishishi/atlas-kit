@@ -55,6 +55,17 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
     .filter((c) => c.slug !== card.slug && !siblingSlugs.has(c.slug))
     .slice(0, 4);
 
+  // Note on dropped section: a "你可能也会喜欢" cross-kind / cross-
+  // series recommendation block was prototyped in src/lib/data.ts
+  // (see getRelatedCards + relatedScore) but never wired to the UI.
+  // With only 17 / 1770 card pairs sharing a tag (and all within
+  // the same series), the algorithm had no signal to work with and
+  // would have produced the same 4 cards for every target. Drop
+  // the section rather than ship a recommendation carousel that
+  // shows stale suggestions. Revisit when the dataset grows past
+  // ~200 cards or when a content-based signal (vector embeddings,
+  // shared source material) becomes available.
+
   return (
     <article className="container py-8 md:py-12">
       {/* JSON-LD: helps search engines surface rich snippets (image, date, tags). */}

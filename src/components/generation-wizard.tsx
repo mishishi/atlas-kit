@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowLeft, ArrowRight, Sparkles, Loader2, CheckCircle2, BookMarked, Lightbulb, X, Palette, FileText, Coffee } from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles, Loader2, CheckCircle2, BookMarked, Lightbulb, X, Palette, FileText, Coffee, History, Clock } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { THEME_TYPES, type ThemeType } from "@/lib/theme-types";
@@ -64,6 +64,89 @@ function PopularKindsHint() {
 
 // Wizard state backup key — survives accidental page refresh / browser crash.
 const WIZARD_DRAFT_KEY = "atlas-kit:wizard-draft-v1";
+
+// Topic history — last 8 topics the user typed, deduplicated by case-
+// insensitive match, newest first. Survives across wizard sessions.
+// Separate key from the in-progress draft so a cleared draft doesn't
+// wipe the history (and vice versa).
+const WIZARD_TOPIC_HISTORY_KEY = "atlas-kit:wizard-topics-v1";
+const TOPIC_HISTORY_MAX = 8;
+
+interface TopicHistoryEntry {
+  /** Display text, exactly as the user typed it (preserves casing). */
+  text: string;
+  /** ISO date string — used to render the relative time. */
+  usedAt: string;
+}
+
+function loadTopicHistory(): TopicHistoryEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(WIZARD_TOPIC_HISTORY_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw) as TopicHistoryEntry[];
+    if (!Array.isArray(parsed)) return [];
+    // Drop entries older than 30 days — history is a short-term helper
+    const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    return parsed.filter((e) => e && typeof e.text === "string" && new Date(e.usedAt).getTime() > cutoff);
+  } catch {
+    return [];
+  }
+}
+
+function pushTopicHistory(text: string): TopicHistoryEntry[] {
+  if (typeof window === "undefined") return [];
+  const trimmed = text.trim();
+  if (!trimmed) return loadTopicHistory();
+  const current = loadTopicHistory();
+  const lower = trimmed.toLowerCase();
+  const next: TopicHistoryEntry[] = [
+    { text: trimmed, usedAt: new Date().toISOString() },
+    ...current.filter((e) => e.text.toLowerCase() !== lower),
+  ].slice(0, TOPIC_HISTORY_MAX);
+  try {
+    window.localStorage.setItem(WIZARD_TOPIC_HISTORY_KEY, JSON.stringify(next));
+  } catch {
+    // ignore quota
+  }
+  return next;
+}
+
+function removeTopicFromHistory(text: string): TopicHistoryEntry[] {
+  if (typeof window === "undefined") return [];
+  const lower = text.toLowerCase();
+  const next = loadTopicHistory().filter((e) => e.text.toLowerCase() !== lower);
+  try {
+    window.localStorage.setItem(WIZARD_TOPIC_HISTORY_KEY, JSON.stringify(next));
+  } catch {
+    // ignore
+  }
+  return next;
+}
+
+function clearTopicHistory() {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.removeItem(WIZARD_TOPIC_HISTORY_KEY);
+  } catch {
+    // ignore
+  }
+}
+
+/** Compact relative-time string for the topic-history tooltip. */
+function formatRelativeTime(iso: string): string {
+  const t = new Date(iso).getTime();
+  if (Number.isNaN(t)) return "";
+  const diffMs = Date.now() - t;
+  const min = Math.round(diffMs / 60_000);
+  if (min < 1) return "刚刚";
+  if (min < 60) return `${min} 分钟前`;
+  const hr = Math.round(min / 60);
+  if (hr < 24) return `${hr} 小时前`;
+  const day = Math.round(hr / 24);
+  if (day < 30) return `${day} 天前`;
+  return new Date(iso).toLocaleDateString("zh-CN");
+}
 
 interface WizardDraft {
   step: Step;
@@ -130,6 +213,12 @@ export function GenerationWizard() {
   const [error, setError] = useState<string | null>(null);
   // AbortController so user can cancel a 30-60s generation run
   const abortRef = useRef<AbortController | null>(null);
+  // Topic history — only read after mount (avoids hydration mismatch),
+  // then the user can click an entry to refill the input.
+  const [topicHistory, setTopicHistory] = useState<TopicHistoryEntry[]>([]);
+  useEffect(() => {
+    setTopicHistory(loadTopicHistory());
+  }, []);
 
   // ── Persist state to localStorage on every change (debounced 300ms) ──
   useEffect(() => {
@@ -218,6 +307,8 @@ export function GenerationWizard() {
       setGenerating(false);
       abortRef.current = null;
       clearDraft();
+      // Save the topic to history (newest first, dedup, cap at 8)
+      setTopicHistory(pushTopicHistory(topic));
       const seriesName = SERIES_TYPES.find((s) => s.slug === seriesSlug)?.name ?? seriesSlug;
       const seriesNo = data.image.match(/-(\w+)\.png$/)?.[1] ?? "?";
       toast.success(`已收录到「${seriesName}」`, {
@@ -303,6 +394,69 @@ export function GenerationWizard() {
                     </li>
                   ))}
                 </ul>
+
+                {/* Recent topics — only render after mount (avoids
+                    hydration mismatch from localStorage). Clicking a
+                    chip fills the input; the × button removes a
+                    single entry; "清空" wipes the whole list. */}
+                {topicHistory.length > 0 && (
+                  <div className="mb-3 rounded-md border border-border/60 bg-muted/30 px-3 py-2.5">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <p className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+                        <History className="h-3 w-3" aria-hidden="true" />
+                        最近用过
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          clearTopicHistory();
+                          setTopicHistory([]);
+                        }}
+                        className="text-[11px] text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
+                      >
+                        清空
+                      </button>
+                    </div>
+                    <ul className="flex flex-wrap gap-1.5 list-none p-0">
+                      {topicHistory.map((entry) => {
+                        const active = topic.trim() === entry.text;
+                        return (
+                          <li key={`${entry.text}-${entry.usedAt}`} className="group inline-flex items-center">
+                            <button
+                              type="button"
+                              onClick={() => setTopic(entry.text)}
+                              title={`${entry.text} · ${formatRelativeTime(entry.usedAt)}`}
+                              className={cn(
+                                "inline-flex items-center gap-1 rounded-l-full border border-r-0 px-2.5 py-1 text-xs transition-colors",
+                                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                                active
+                                  ? "border-gold-deep bg-gold-deep text-cream"
+                                  : "border-border bg-card text-foreground hover:border-gold hover:text-foreground",
+                              )}
+                            >
+                              <Clock className="h-3 w-3 opacity-70" aria-hidden="true" />
+                              {entry.text}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setTopicHistory(removeTopicFromHistory(entry.text))}
+                              aria-label={`从历史中移除 ${entry.text}`}
+                              className={cn(
+                                "rounded-r-full border px-1.5 py-1 text-xs transition-colors",
+                                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                                active
+                                  ? "border-gold-deep bg-gold-deep text-cream hover:bg-gold"
+                                  : "border-border bg-card text-muted-foreground hover:bg-muted hover:text-foreground",
+                              )}
+                            >
+                              <X className="h-3 w-3" aria-hidden="true" />
+                            </button>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
                 <input
                   id="topic-input"
                   type="text"

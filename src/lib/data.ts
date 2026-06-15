@@ -74,15 +74,111 @@ export function seriesToSlug(name: string): string {
   return name.replace(/\s+/g, "-").toLowerCase();
 }
 
+/**
+ * Fuzzy search across title, subtitle, tagline, description and tags.
+ * Uses fuse.js (already a dependency). Returns cards sorted by
+ * relevance score (lower = better in fuse). Empty query returns [].
+ *
+ * Weights: title/subtitle/tagline are user-facing and carry the
+ * strongest signal; description is longer so we set a smaller weight;
+ * tags are already the most-sparse signal so we keep them moderate.
+ *
+ * Threshold 0.4 = quite permissive (catches typos like "金毛" → "金
+ * 茂" too), so the empty-state copy is "try one of these" rather
+ * than "no results" for the common typo case.
+ */
 export function searchCards(query: string): Card[] {
-  const q = query.trim().toLowerCase();
+  const q = query.trim();
   if (!q) return [];
-  return cards.filter(
-    (c) =>
-      c.title.toLowerCase().includes(q) ||
-      c.tags.some((t) => t.toLowerCase().includes(q)) ||
-      c.description.toLowerCase().includes(q),
-  );
+  // Lazy-init fuse on first call. Module-level so the search index
+  // is built once per process and shared across requests.
+  const fuse = getFuse();
+  return fuse.search(q).map((r) => r.item);
+}
+
+// Fuse instance — built once on first search, re-used for subsequent
+// queries. 60 cards is tiny (few KB of memory) so there's no win in
+// streaming or rebuild logic.
+let _fuse: import("fuse.js").default<Card> | null = null;
+function getFuse() {
+  if (_fuse) return _fuse;
+  // Dynamic import would be ideal for server bundle, but fuse.js is
+  // only ~6KB and we always need it (search is the primary entry),
+  // so a static import is fine.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const Fuse = require("fuse.js").default as typeof import("fuse.js").default;
+  _fuse = new Fuse(cards, {
+    keys: [
+      { name: "title", weight: 3 },
+      { name: "subtitle", weight: 1.5 },
+      { name: "tagline", weight: 1.5 },
+      { name: "tags", weight: 1 },
+      { name: "description", weight: 0.5 },
+    ],
+    threshold: 0.4,
+    ignoreLocation: true,
+    includeScore: true,
+    minMatchCharLength: 1,
+  });
+  return _fuse;
+}
+
+/**
+ * Score a card against a target card for "你可能也会喜欢" recommendations.
+ * Used by getRelatedCards() below. Higher = more related.
+ *
+ *   +5 same kind (taxonomic similarity)
+ *   +3 same series (story similarity — usually already shown in 同系列
+ *       siblings block, so caller excludes those before calling this)
+ *   +3 per shared tag (up to +9 cap; tags are the strongest thematic
+ *       signal in this dataset)
+ *
+ * Palette similarity was tried in 2026-06 but dropped: the 60-card
+ * batch run used only 6 distinct palettes (one per series), so the
+ * palette check either matched everything (low threshold) or
+ * nothing (high threshold). Tags give us actual content-based
+ * differentiation. Bring palette back if/when palettes diversify.
+ */
+function relatedScore(target: Card, candidate: Card): number {
+  let score = 0;
+  if (target.kind === candidate.kind) score += 5;
+  if (target.series === candidate.series) score += 3;
+  const shared = target.tags.filter((t) => candidate.tags.includes(t)).length;
+  score += Math.min(shared * 3, 9);
+  return score;
+}
+
+/**
+ * Pick N cards related to `target` for the "你可能也会喜欢" section
+ * on the detail page. Excludes:
+ *   - the target itself
+ *   - same-series siblings (they're already in the 同系列 block)
+ *   - cards of the same kind already shown in 同类推荐 (the caller
+ *     passes those slugs in `excludeSlugs`)
+ *
+ * Algorithm: score all candidates with relatedScore, sort desc, take
+ * top N. Tie-breaker: newer createdAt first.
+ */
+export function getRelatedCards(
+  target: Card,
+  n: number,
+  excludeSlugs: Set<string> = new Set(),
+): Card[] {
+  const exclude = new Set([target.slug, ...excludeSlugs]);
+  const scored = cards
+    .filter((c) => !exclude.has(c.slug))
+    .map((c) => ({ c, score: relatedScore(target, c) }))
+    .filter((x) => x.score >= 1); // minimum: at least one signal (kind or series or tag or palette)
+  scored.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return a.c.createdAt < b.c.createdAt ? 1 : -1;
+  });
+  return scored.slice(0, n).map((x) => x.c);
+}
+
+/** Return the N most recently added cards. */
+export function getRecentCards(n: number): Card[] {
+  return getAllCards().slice(0, n);
 }
 
 export function getKindCounts(): Record<string, number> {

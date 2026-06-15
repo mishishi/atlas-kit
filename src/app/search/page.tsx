@@ -75,7 +75,7 @@ export default function SearchPage({ searchParams }: SearchProps) {
 
       {query && (
         <div className="mb-6 text-sm text-muted-foreground" aria-live="polite">
-          搜索 <span className="font-serif font-bold text-foreground">"{query}"</span> 找到{" "}
+          搜索 <span className="font-serif font-bold text-foreground">“{query}”</span> 找到{" "}
           <span className="font-serif font-bold text-gold-deep tabular-nums">{results.length}</span> 张图鉴
         </div>
       )}
@@ -83,7 +83,7 @@ export default function SearchPage({ searchParams }: SearchProps) {
       {query ? (
         <CardGrid
           cards={results}
-          emptyMessage={`没有找到关于 "${query}" 的图鉴, 换个词试试?`}
+          emptyMessage={`没有找到关于 “${query}” 的图鉴, 换个词试试?`}
           emptyTitle="暂无匹配结果"
           suggestions={noResultSuggestions}
         />

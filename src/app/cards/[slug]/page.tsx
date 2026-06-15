@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
+import { HeroWithLightbox } from "@/components/hero-with-lightbox";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { cn, formatDate } from "@/lib/utils";
@@ -97,41 +98,19 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
       </nav>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_400px]">
-        {/* Image */}
-        <div className="relative">
-          <div
-            className="relative aspect-[9/16] w-full max-w-[480px] mx-auto overflow-hidden rounded-lg border border-border bg-card shadow-card-hover"
-            style={{ backgroundColor: card.palette[0] }}
-          >
-            <Image
-              src={card.image}
-              alt={card.subtitle || card.title}
-              fill
-              priority
-              quality={90}
-              sizes="(max-width: 1024px) 100vw, 480px"
-              className="object-cover"
-            />
-          </div>
-          {/* Download/view-large link. Always shown now (was previously
-              gated on image_full !== image, but after the -full.png
-              deletion the two point to the same 600w file). Label
-              is honest about the dimensions: 600w is the current
-              source-of-truth tier. The link opens the PNG in a new
-              tab where the user can right-click → save, or use the
-              browser's "download" affordance. */}
-          {card.image_full && (
-            <a
-              href={card.image_full}
-              target="_blank"
-              rel="noopener"
-              download={`${card.slug}.png`}
-              className="mt-2 block text-center text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            >
-              查看大图 (600×1067) ↗
-            </a>
-          )}
-        </div>
+        {/* Image — clickable hero that opens a fullscreen lightbox
+            (Plan A: 自建 <Lightbox> 组件). Was a static <Image> + a
+            "查看大图" text link. Now the whole card is a button with
+            a magnifier-pill affordance on hover, plus a secondary
+            text button below. Lightbox has ESC + click-outside close,
+            a download button in the footer, and locks body scroll. */}
+        <HeroWithLightbox
+          src={card.image}
+          alt={card.subtitle || card.title}
+          bgColor={card.palette[0]}
+          filename={card.slug}
+          caption={card.title}
+        />
 
         {/* Info panel */}
         <aside className="space-y-6">

@@ -266,6 +266,33 @@
   }
   /* dark mode gets the brighter gold automatically via the
      --brand-gold-deep CSS var swap in .dark above */
+
+  /* ─────────────────────────────────────────────────────────────────────
+     Leaflet map — light overrides. We only need to tame Leaflet's
+     default popup styling so it matches the cream/gold/ink brand.
+     The rest of Leaflet (tiles, zoom controls) is fine as-is.
+     ───────────────────────────────────────────────────────────────────── */
+  .atlas-popup .leaflet-popup-content-wrapper {
+    background: hsl(var(--background));
+    border: 1px solid hsl(var(--border));
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(60, 50, 30, 0.12);
+    padding: 4px;
+  }
+  .atlas-popup .leaflet-popup-content {
+    margin: 8px 10px;
+    font-family: var(--font-serif), serif;
+  }
+  .atlas-popup .leaflet-popup-tip {
+    background: hsl(var(--background));
+    border: 1px solid hsl(var(--border));
+  }
+  /* Hide the leaflet attribution flag's default right offset so
+     the small text doesn't visually compete with our site footer. */
+  .leaflet-control-attribution {
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────

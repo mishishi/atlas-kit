@@ -54,6 +54,8 @@ export interface Card {
   createdAt: string; // ISO date
   /** 5-8 历史节点, 详情页底部"历史沿革"区使用. 草拟 by AI + 人工校对. */
   history?: HistoryNode[];
+  /** 地理坐标 (用于 /map 视图). 仅 12 张地理图鉴有. */
+  coords?: { lat: number; lng: number };
   /** 参考来源 / 引用. 未来添加 (issue 6/6). */
   sources?: Array<{ title: string; url?: string; type?: string }>;
 }

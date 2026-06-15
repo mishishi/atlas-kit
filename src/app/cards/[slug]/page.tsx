@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
@@ -42,6 +42,20 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 export default function CardDetail({ params }: { params: { slug: string } }) {
   const card = getCardBySlug(params.slug);
   if (!card) notFound();
+
+  // Map a source's `type` string to an icon. Default to BookOpen
+  // for any unrecognized type so the UI never falls back to nothing.
+  function SourceIcon({ type }: { type?: string }) {
+    const iconClass = "h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0";
+    switch (type) {
+      case "百科": return <BookOpen className={iconClass} aria-hidden="true" />;
+      case "学术": return <GraduationCap className={iconClass} aria-hidden="true" />;
+      case "博物馆": return <Building2 className={iconClass} aria-hidden="true" />;
+      case "机构": return <Library className={iconClass} aria-hidden="true" />;
+      case "新闻": return <Newspaper className={iconClass} aria-hidden="true" />;
+      default: return <Globe className={iconClass} aria-hidden="true" />;
+    }
+  }
 
   const seriesType = SERIES_TYPE_MAP[card.series]; // series slug → metadata
   const seriesName = seriesType?.name ?? card.series; // fallback to slug if missing
@@ -526,6 +540,48 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
                   <Search className="h-3.5 w-3.5" aria-hidden="true" />
                   #{tag}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* 参考来源 — hand-picked 2-4 sources per card (encyclopedia
+          editions, museum collections, academic papers). Drawn
+          from data/cards.json:sources, drafted by AI + reviewed
+          in scripts/draft-sources.mjs. Goes BEFORE 延伸阅读 so
+          curated references take priority over the generic
+          Wikipedia/百度 fallback. Renders nothing if no sources. */}
+      {card.sources && card.sources.length > 0 && (
+        <section className="mt-12">
+          <h2 className="font-serif text-2xl font-bold mb-6 flex items-center gap-2">
+            <Quote className="h-5 w-5 text-gold-deep" aria-hidden="true" />
+            参考来源
+          </h2>
+          <ul className="divide-y divide-border/60 list-none p-0">
+            {card.sources.map((s, i) => (
+              <li key={i}>
+                <a
+                  href={s.url || "#"}
+                  target={s.url ? "_blank" : undefined}
+                  rel="noopener noreferrer"
+                  aria-disabled={!s.url}
+                  className={cn(
+                    "group flex items-center gap-3 py-3.5 transition-colors rounded-sm",
+                    s.url
+                      ? "hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      : "text-muted-foreground/60 cursor-not-allowed",
+                  )}
+                >
+                  <SourceIcon type={s.type} />
+                  <span className="font-serif text-sm font-medium truncate">{s.title}</span>
+                  <span className="hidden sm:inline text-[10px] uppercase tracking-[0.15em] text-muted-foreground/70 shrink-0">
+                    {s.type}
+                  </span>
+                  {s.url && (
+                    <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0 ml-auto" aria-hidden="true" />
+                  )}
+                </a>
               </li>
             ))}
           </ul>

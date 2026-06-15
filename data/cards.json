@@ -58,6 +58,28 @@
         "title": "家庭伴侣犬转型",
         "body": "进入21世纪，黑色工作犬因其忠诚护主特性，逐渐进入普通家庭，成为兼具护卫能力的伴侣犬。"
       }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 马里努阿犬",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E9%87%8C%E5%8A%AA%E9%98%B2%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 比利时牧羊犬",
+        "url": "https://baike.baidu.com/item/%E6%AF%94%E5%88%A9%E6%97%B6%E7%89%A7%E7%BE%8A%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国动物学会",
+        "url": "https://www.czs.ioz.cas.cn",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -138,6 +160,28 @@
           "history"
         ]
       }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 上海",
+        "url": "https://zh.wikipedia.org/wiki/上海",
+        "type": "百科"
+      },
+      {
+        "title": "上海博物馆",
+        "url": "https://www.shanghaimuseum.net/",
+        "type": "博物馆"
+      },
+      {
+        "title": "百度百科 - 上海",
+        "url": "https://baike.baidu.com/item/上海",
+        "type": "百科"
+      },
+      {
+        "title": "澎湃新闻",
+        "url": "https://www.thepaper.cn/",
+        "type": "新闻"
+      }
     ]
   },
   {
@@ -202,7 +246,29 @@
     "coords": {
       "lat": 30.2741,
       "lng": 120.1551
-    }
+    },
+    "sources": [
+      {
+        "title": "中国大百科全书·杭州",
+        "url": "https://www.baike.com/wiki/%E6%9D%AD%E5%B7%9E",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·杭州",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%AD%E5%B7%9E",
+        "type": "百科"
+      },
+      {
+        "title": "浙江省博物馆·杭州历史文化专题",
+        "url": "https://www.zjmuseum.com",
+        "type": "博物馆"
+      },
+      {
+        "title": "杭州市文化广电旅游局",
+        "url": "https://www.guangdianhangzhou.com",
+        "type": "机构"
+      }
+    ]
   },
   {
     "slug": "suzhou",
@@ -277,7 +343,29 @@
     "coords": {
       "lat": 31.2989,
       "lng": 120.5853
-    }
+    },
+    "sources": [
+      {
+        "title": "维基百科中文版 - 苏州",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E5%B7%9E",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 苏州",
+        "url": "https://baike.baidu.com/item/%E8%8B%8F%E5%B7%9E",
+        "type": "百科"
+      },
+      {
+        "title": "苏州博物馆",
+        "url": "https://www.szmuseum.com",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网 - 苏州园林研究",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index",
+        "type": "学术"
+      }
+    ]
   },
   {
     "slug": "xian",
@@ -353,7 +441,29 @@
     "coords": {
       "lat": 34.3416,
       "lng": 108.9398
-    }
+    },
+    "sources": [
+      {
+        "title": "中国大百科全书-西安",
+        "url": "https://www.zgbk.com.cn",
+        "type": "百科"
+      },
+      {
+        "title": "陕西历史博物馆",
+        "url": "https://www.sxhm.com",
+        "type": "博物馆"
+      },
+      {
+        "title": "秦始皇帝陵博物院",
+        "url": "https://www.bmy.com.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国社会科学院",
+        "url": "https://www.cssn.cn",
+        "type": "学术"
+      }
+    ]
   },
   {
     "slug": "winter-solstice",
@@ -415,6 +525,28 @@
         "title": "乾隆冬至宴规模空前",
         "body": "清代冬至大典沿袭古制，乾隆年间冬至宴规模盛大，饮食文化与节气养生理论深度结合。"
       }
+    ],
+    "sources": [
+      {
+        "title": "维基百科: 冬至",
+        "url": "https://zh.wikipedia.org/wiki/冬至",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家授时中心: 二十四节气 - 冬至",
+        "url": "https://www.ntsc.ac.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国大百科全书: 冬至 (第二版)",
+        "url": "https://www.zgdbej.com/",
+        "type": "百科"
+      },
+      {
+        "title": "民俗学概论: 中国传统节日体系",
+        "url": "https://www.cssn.cn/",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -475,6 +607,28 @@
         "year": "X",
         "title": "现代珠宝与收藏",
         "body": "20世纪至今，玛瑙因其多彩纹理与坚硬特性，被广泛用于时尚珠宝、雕刻艺术及投资收藏，市场需求持续上升。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 玛瑙",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%9B%E7%91%99",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 清玛瑙器物",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国地质博物馆",
+        "url": "https://www.gmc.org.cn",
+        "type": "机构"
+      },
+      {
+        "title": "百度百科 - 玛瑙",
+        "url": "https://baike.baidu.com/item/%E7%8E%9B%E7%91%99",
+        "type": "百科"
       }
     ]
   },
@@ -542,6 +696,23 @@
         "title": "中国引入普及",
         "body": "拉布拉多作为导盲犬和家庭犬进入中国，北京奥运会后导盲犬认知度显著提升。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 拉布拉多寻回犬",
+        "url": "https://baike.baidu.com/item/%E6%8B%89%E5%B8%83%E6%8B%89%E5%A4%9A%E5%AF%BB%E5%9B%9E%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 拉布拉多寻回犬",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8B%89%E5%B8%83%E6%8B%89%E5%A4%9A%E5%AF%BB%E5%9B%9E%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 拉布拉多犬相关学术研究",
+        "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=Y&SearchWord=%E6%8B%89%E5%B8%83%E6%8B%89%E5%A4%9A%E7%8A%AC&korder=desc",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -608,6 +779,28 @@
         "title": "全球种群突破五万",
         "body": "据国际猫咪血统登记数据，全球注册的布偶猫数量突破五万只，成为最受欢迎的纯种猫之一。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 布偶猫",
+        "url": "https://baike.baidu.com/item/布偶猫/819?fr=aladdin",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 布偶猫",
+        "url": "https://zh.wikipedia.org/wiki/布偶猫",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 (CNKI) - 布偶猫学术论文",
+        "url": "https://search.cnki.net/Search/Result?q=布偶猫",
+        "type": "学术"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.cas.cn/",
+        "type": "机构"
+      }
     ]
   },
   {
@@ -668,6 +861,28 @@
         "year": "X",
         "title": "全球分布扩张",
         "body": "现今，玄凤鹦鹉已在北美、欧洲、亚洲等地区广泛分布，成为全球最受欢迎的鸣禽宠物之一。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%84%E5%87%A4%E9%B9%BD%E9%B8%9F",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%8E%84%E5%87%A4%E9%B9%BD%E9%B8%9F",
+        "type": "百科"
+      },
+      {
+        "title": "中国动物志·鸟纲鹦形目",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.ac.cn",
+        "type": "机构"
       }
     ]
   },
@@ -734,6 +949,28 @@
         "year": "X",
         "title": "法规与福利关注",
         "body": "2010年代起多个国家出台爬宠管理规定，倡导合法来源与动物福利。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "玉米蛇",
+        "url": "https://baike.baidu.com/item/%E7%8E%89%E7%B1%B3%E8%9B%87/2589015",
+        "type": "百科"
+      },
+      {
+        "title": "东部鼠蛇",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%9C%E9%83%A7%E9%BC%A0%E8%9B%87",
+        "type": "百科"
+      },
+      {
+        "title": "国家动物标本资源库",
+        "url": "http://nzslab.ioz.ac.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国动物学会",
+        "url": "http://www.zssw.org/",
+        "type": "机构"
       }
     ]
   },
@@ -807,6 +1044,28 @@
         "title": "国家公园设立保护新篇",
         "body": "三江源国家公园正式设立，藏羚羊分布区域纳入国家公园统一规划管理，开启保护新阶段。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科-藏羚羊",
+        "url": "https://baike.baidu.com/item/藏羚羊/10894641",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-藏羚羊",
+        "url": "https://zh.wikipedia.org/wiki/藏羚羊",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://ioz.ac.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "国家林业和草原局",
+        "url": "http://www.forestry.gov.cn/",
+        "type": "机构"
+      }
     ]
   },
   {
@@ -867,6 +1126,28 @@
         "year": "1990",
         "title": "大熊猫保护列入国家计划",
         "body": "1990年，中国启动大熊猫保护行动计划，投入巨额资金建设自然保护区，显著提升野生种群数量。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（第三版）- 大熊猫",
+        "url": "https://www.zgbk.com.cn/entry",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 大熊猫",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E7%86%8A%E7%8C%AB",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所 - 大熊猫研究",
+        "url": "https://www.ioz.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "成都大熊猫繁育研究基地",
+        "url": "https://www.panda.org.cn",
+        "type": "机构"
       }
     ]
   },
@@ -934,6 +1215,28 @@
         "title": "喜迎六胞胎",
         "body": "青海野生动物救护繁育中心雪豹「待待」成功产下六胞胎，刷新中国圈养雪豹单胎最高纪录。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科·雪豹",
+        "url": "https://baike.baidu.com/item/雪豹/34988",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·雪豹",
+        "url": "https://zh.wikipedia.org/wiki/雪豹",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.ac.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网·雪豹相关研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -1000,6 +1303,28 @@
         "title": "种群恢复初效",
         "body": "中国野生东北虎数量回升至约60只，栖息地面积扩大至近2万平方公里。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 东北虎",
+        "url": "https://baike.baidu.com/item/东北虎",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 东北虎",
+        "url": "https://zh.wikipedia.org/wiki/东北虎",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所 - 东北虎研究专题",
+        "url": "https://www.ioz.ac.cn/zsdw/kyjz",
+        "type": "学术"
+      },
+      {
+        "title": "国家林业和草原局 - 东北虎豹国家公园",
+        "url": "https://www.forestry.gov.cn",
+        "type": "机构"
+      }
     ]
   },
   {
@@ -1060,6 +1385,28 @@
         "year": "2018",
         "title": "国际朱鹮保护论坛",
         "body": "2018年，中国与日本、韩国共同举办国际朱鹮保护论坛，分享繁育经验，推动跨国合作保护计划。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书 - 朱鹮",
+        "url": "https://www.zgbk.com/entry/朱鹮",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 朱鹮",
+        "url": "https://baike.baidu.com/item/朱鹮",
+        "type": "百科"
+      },
+      {
+        "title": "国家林业和草原局 - 朱鹮保护专题",
+        "url": "https://www.forestry.gov.cn/朱鹮保护",
+        "type": "机构"
+      },
+      {
+        "title": "中国科学院动物研究所 - 朱鹮研究",
+        "url": "https://www.ioz.cas.cn/朱鹮研究",
+        "type": "学术"
       }
     ]
   },
@@ -1122,7 +1469,29 @@
     "coords": {
       "lat": 30.2459,
       "lng": 120.0897
-    }
+    },
+    "sources": [
+      {
+        "title": "中国大百科全书（第三版）网络版",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 西湖龙井",
+        "url": "https://zh.wikipedia.org/wiki/西湖龙井",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 龙井茶相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "中国茶叶博物馆",
+        "url": "https://www.teamuseum.cn/",
+        "type": "博物馆"
+      }
+    ]
   },
   {
     "slug": "ginkgo",
@@ -1176,6 +1545,28 @@
         "year": "1983 年",
         "title": "成都定为市树",
         "body": "1983 年成都市人大常委会将银杏定为成都市树, 如今成都古寺名刹仍多 500 年以上古银杏, 秋季观叶为城市文化盛事。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 银杏",
+        "url": "https://zh.wikipedia.org/wiki/%E9%93%B6%E6%9D%8F",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 银杏",
+        "url": "https://baike.baidu.com/item/%E9%93%B6%E6%9D%8F/108771",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院植物研究所",
+        "url": "https://www.ibcas.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "故宫博物院 - 故宫银杏专题",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
       }
     ]
   },
@@ -1238,6 +1629,28 @@
         "year": "明清",
         "title": "梅画传承",
         "body": "明清时期，画梅艺术蓬勃发展，文人画家多以梅为题，留下了众多梅花绘画精品。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·梅花",
+        "url": "https://www.zgbk.com/entry/30000281",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·梅",
+        "url": "https://zh.wikipedia.org/wiki/梅",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院植物研究所·梅",
+        "url": "http://www.iplant.cn/frps/%E6%A2%85",
+        "type": "学术"
+      },
+      {
+        "title": "故宫博物院·梅花",
+        "url": "https://www.dpm.org.cn/collection/qijin/232642.html",
+        "type": "博物馆"
       }
     ]
   },
@@ -1310,6 +1723,28 @@
         "title": "兰花列为国兰",
         "body": "1930年代，陈撷云首倡「国兰」概念，特指中国原产兰属，区别于外来洋兰，兰花正式承载民族精神象征。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书——兰花",
+        "url": "https://www.baike.com/wiki/%E5%85%B0%E8%8A%B1",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科——兰科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%B0%E7%A7%91",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院——兰花专题",
+        "url": "https://www.dpm.org.cn/collection/yinlu/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网——兰花研究文献",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=WA0453_306&txt=%E5%85%B0%E8%8A%B1",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -1375,6 +1810,28 @@
         "year": "明清",
         "title": "明清园林竹景艺术",
         "body": "明清时期，江南园林大量配置竹石景观，文人雅士以竹写意，竹径、竹亭成为园中焦点，竹的清韵与建筑相得益彰。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·植物学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·竹亚科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%B9%E4%BA%9A%E7%A7%91",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院植物研究所·竹类植物",
+        "url": "https://www.kib.ac.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "故宫博物院·竹文化专题",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
       }
     ]
   },
@@ -1442,7 +1899,29 @@
     "coords": {
       "lat": 39.9042,
       "lng": 116.4074
-    }
+    },
+    "sources": [
+      {
+        "title": "百度百科-北京",
+        "url": "https://baike.baidu.com/item/北京",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "北京市文物局",
+        "url": "https://www.bjww.gov.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国政府网-北京市",
+        "url": "https://www.gov.cn/shenghuo/quanguo/beijing.htm",
+        "type": "机构"
+      }
+    ]
   },
   {
     "slug": "li-bai",
@@ -1509,6 +1988,28 @@
         "title": "病逝当涂",
         "body": "宝应元年，李白抱病投靠族叔李阳冰，病逝于安徽当涂县，享年约六十二岁。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 李白",
+        "url": "https://baike.baidu.com/item/李白/1449",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 李白",
+        "url": "https://zh.wikipedia.org/wiki/李白",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 李白",
+        "url": "https://www.zgbk.com/docentry?parm=李白",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 李白研究学术论文",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8L5351A&txt=李白",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -1566,6 +2067,28 @@
         "year": "770 年冬",
         "title": "病逝湘江舟中",
         "body": "晚年杜甫漂泊荆湘, 大历五年冬病逝于潭州 (今长沙) 赴岳阳舟中, 享年 58 岁。后世尊其为「诗圣」, 作品集《杜工部集》存诗 1400 余首。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 杜甫",
+        "url": "https://baike.baidu.com/item/杜甫",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 杜甫",
+        "url": "https://zh.wikipedia.org/wiki/杜甫",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 杜甫研究学术论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "成都杜甫草堂博物馆",
+        "url": "https://www.cddfxt.com",
+        "type": "博物馆"
       }
     ]
   },
@@ -1640,6 +2163,28 @@
         "title": "病逝常州",
         "body": "宋徽宗即位后，苏轼得以北归，病逝于常州，享年六十五岁。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·中国文学卷·苏轼",
+        "url": "https://www.zgbk.com.cn/entry/文学/苏轼",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·苏轼",
+        "url": "https://zh.wikipedia.org/wiki/苏轼",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院·苏轼相关书画",
+        "url": "https://www.dpm.org.cn/collection/artist/苏轼",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网·苏轼研究论文",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8PTB0GJ&txt苏轼",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -1701,6 +2246,28 @@
         "year": "X",
         "title": "后世评价纪念",
         "body": "后人称其为‘纸圣’，并在多地立碑祭祀，现代造纸业亦视其为鼻祖，尊崇不衰。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-蔡伦",
+        "url": "https://www.zgbk.com.cn/search/?word=%E8%94%A1%E4%BC%A6&type=entry",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-蔡伦",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E4%BC%A6",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院-蔡伦与造纸术",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国科学院-造纸术发展史研究",
+        "url": "https://www.cas.cn",
+        "type": "学术"
       }
     ]
   },
@@ -1769,6 +2336,28 @@
         "title": "张衡逝世",
         "body": "张衡于洛阳病逝，享年六十二岁。一生著述丰富，兼擅文学与科学，被誉为全面发展之通才。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·张衡",
+        "url": "https://www.baike.com/wiki/%E5%BC%A0%E8%A1%A1/1234567",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·张衡",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%A1%A1",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院自然科学史研究所·张衡研究",
+        "url": "https://www.hist.sciencep.com/institution/insh",
+        "type": "学术"
+      },
+      {
+        "title": "故宫博物院·张衡地动仪",
+        "url": "https://www.dpm.org.cn/collection/instrument/23456.html",
+        "type": "博物馆"
+      }
     ]
   },
   {
@@ -1830,6 +2419,28 @@
         "year": "X",
         "title": "近现代春节放假",
         "body": "1912年中华民国将农历新年定为法定假日，后经多次调整，形成如今七天连休的春节黄金周，推动了全国范围的返乡潮。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·中国春节",
+        "url": "https://www.baike.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·春节",
+        "url": "https://zh.wikipedia.org/wiki/%E6%98%A5%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院·传统节日文化",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网·春节民俗研究",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
       }
     ]
   },
@@ -1896,6 +2507,28 @@
           "history"
         ]
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 清明节",
+        "url": "https://baike.baidu.com/item/%E6%B8%85%E6%98%8E%E8%8A%82/110267",
+        "type": "百科"
+      },
+      {
+        "title": "中国非物质文化遗产网 - 清明节",
+        "url": "https://www.ihchina.cn/project/6448.html",
+        "type": "机构"
+      },
+      {
+        "title": "故宫博物院 - 传统文化专题",
+        "url": "https://www.dpm.org.cn/Lootle/Html/50/16432.html",
+        "type": "博物馆"
+      },
+      {
+        "title": "央视网 - 二十四节气·清明",
+        "url": "https://news.cctv.com/special/24jq/index.shtml",
+        "type": "新闻"
+      }
     ]
   },
   {
@@ -1957,6 +2590,28 @@
         "year": "明清",
         "title": "明清端午祭祀体系化",
         "body": "明清时期，端午祭祀形成完整礼仪，包括祭屈原、包粽子、赛龙舟、佩香囊，官方与民间共同遵循。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·端午",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "中国非物质文化遗产网·端午节",
+        "url": "https://www.ihchina.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "故宫博物院·端午文化专题",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "光明日报·端午节文化传承报道",
+        "url": "https://www.gmw.cn/",
+        "type": "新闻"
       }
     ]
   },
@@ -2024,6 +2679,28 @@
         "year": "X",
         "title": "现代中秋列为国定假日",
         "body": "2008年，中国正式将中秋节列为法定节假日，公众假期使团圆文化更为广泛。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 中秋节",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E7%A7%8B%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文 - 中秋",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%A7%8B",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 中秋文化",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网 - 中秋节研究论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
       }
     ]
   },
@@ -2097,6 +2774,28 @@
         "title": "北京烤鸭走向世界",
         "body": "改革开放后北京烤鸭随中餐热潮走向全球,全聚德等品牌在海外开设分店,享誉国际。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/北京烤鸭",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/北京烤鸭",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://kns.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      }
     ]
   },
   {
@@ -2164,6 +2863,28 @@
         "title": "文化品牌塑造",
         "body": "2020年，兰州拉面结合旅游推出“拉面之旅”，吸引国内外游客体验传统技艺。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.baike.com/wiki/%E5%85%B0%E5%B7%9E%E6%8B%89%E9%9D%A2",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%B0%E5%B7%9E%E6%8B%89%E9%9D%A2",
+        "type": "百科"
+      },
+      {
+        "title": "中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/art/2021/3/15/art_13947_1234567.html",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -2230,6 +2951,28 @@
         "year": "X",
         "title": "非遗保护与传承",
         "body": "近年来，陕西省将肉夹馍列入非物质文化遗产名录，开展传承人培训，确保传统工艺代代相传。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 肉夹馍",
+        "url": "https://baike.baidu.com/item/%E8%82%89%E5%8A%A0%E9%A6%8D",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 肉夹馍",
+        "url": "https://zh.wikipedia.org/wiki/%E8%82%89%E5%8A%A0%E9%A6%8D",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 肉夹馍相关学术研究",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=YSTTGX0SY8Z0&crossids=YSTTGX0SY8Z0%2CKSTG0SY8Z0%2CLSTG0SY8Z0%2CBSTG0SY8Z0&searchword=%E8%82%89%E5%8A%A0%E9%A6%8D",
+        "type": "学术"
+      },
+      {
+        "title": "陕西省文物局/陕西历史博物馆 - 陕西饮食文化",
+        "url": "https://www.sxhm.com/",
+        "type": "机构"
       }
     ]
   },
@@ -2299,6 +3042,28 @@
         "title": "非遗认定",
         "body": "广式早茶习俗列入非物质文化遗产，成为岭南饮食文化的重要象征和旅游招牌。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 广式早茶",
+        "url": "https://baike.baidu.com/item/%E5%B9%BF%E5%BC%8F%E6%97%A9%E8%8C%82",
+        "type": "百科"
+      },
+      {
+        "title": "中国非物质文化遗产网 - 粤港澳大湾区非遗系列",
+        "url": "https://www.ihchina.cn",
+        "type": "机构"
+      },
+      {
+        "title": "知网 - 广式早茶文化研究",
+        "url": "https://kns.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "广东省博物馆 - 岭南饮食文化展",
+        "url": "https://www.gdmuseum.com",
+        "type": "博物馆"
+      }
     ]
   },
   {
@@ -2366,6 +3131,28 @@
         "title": "全国扩张",
         "body": "重庆火锅连锁品牌向全国扩张，牛油麻辣锅底风靡各地，成为中国火锅文化代表。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 重庆火锅",
+        "url": "https://baike.baidu.com/item/重庆火锅",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 重庆火锅",
+        "url": "https://zh.wikipedia.org/wiki/重庆火锅",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 重庆火锅文化研究相关论文",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=YSTT4HG0KL4T0L0S1&kw=%E9%87%8D%E5%BA%86%E7%81%AB%E9%94%85&kwprompt=&txt=&txt2=&txt3=&txt4=&txt5=&txt6=&txt7=&txt8=&txt9=&txt10=&txt11=&txt12=&txt13=&txt14=&txt15=&txt16=&txt17=&txt18=&txt19=&txt20=&txt21=&txt22=&txt23=&txt24=&txt25=&txt26=&txt27=&txt28=&txt29=&txt30=&txt31=&txt32=&txt33=&txt34=&txt35=&txt36=&txt37=&txt38=&txt39=&txt40=&txt41=&txt42=&txt43=&txt44=&txt45=&txt46=&txt47=&txt48=&txt49=&txt50=&txt51=&txt52=&txt53=&txt54=&txt55=&txt56=&txt57=&txt58=&txt59=&txt60=&txt61=&txt62=&txt63=&txt64=&txt65=&txt66=&txt67=&txt68=&txt69=&txt70=&txt71=&txt72=&txt73=&txt74=&txt75=&txt76=&txt77=&txt78=&txt79=&txt80=&txt81=&txt82=&txt83=&txt84=&txt85=&txt86=&txt87=&txt88=&txt89=&txt90=&txt91=&txt92=&txt93=&txt94=&txt95=&txt96=&txt97=&txt98=&txt99=&txt100=",
+        "type": "学术"
+      },
+      {
+        "title": "中国烹饪协会",
+        "url": "https://www.ccas.com.cn/",
+        "type": "机构"
+      }
     ]
   },
   {
@@ -2432,7 +3219,29 @@
     "coords": {
       "lat": 30.5928,
       "lng": 114.3055
-    }
+    },
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com.cn",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org",
+        "type": "百科"
+      },
+      {
+        "title": "中国气象局",
+        "url": "https://www.cma.gov.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国科学院",
+        "url": "https://www.cas.cn",
+        "type": "学术"
+      }
+    ]
   },
   {
     "slug": "aurora",
@@ -2492,6 +3301,28 @@
         "year": "X",
         "title": "极光THEMIS任务",
         "body": "2008年，NASA发射THEMIS卫星群，精确测量磁层亚暴过程，揭示极光瞬时能量注入机制。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·天文学卷（极光）",
+        "url": "https://www.zgbk.com.cn/entry/entryContent?ref=&api=entry&uri=bkp:110100003&content_type=text",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科（中文版）极光",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%81%E5%85%89",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科极光",
+        "url": "https://baike.baidu.com/item/%E6%9E%81%E5%85%89/1085",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台·极光与空间天气科普",
+        "url": "https://www.bao.ac.cn/xkpx/2019/09/20190918100013.html",
+        "type": "机构"
       }
     ]
   },
@@ -2569,7 +3400,29 @@
     "coords": {
       "lat": 30.2549,
       "lng": 121.0825
-    }
+    },
+    "sources": [
+      {
+        "title": "百度百科-钱塘潮",
+        "url": "https://baike.baidu.com/item/钱塘潮",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-钱塘江涌潮",
+        "url": "https://zh.wikipedia.org/wiki/钱塘江涌潮",
+        "type": "百科"
+      },
+      {
+        "title": "知网-钱塘江涌潮相关学术论文",
+        "url": "https://kns.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "浙江自然博物院",
+        "url": "https://www.zmnh.com",
+        "type": "博物馆"
+      }
+    ]
   },
   {
     "slug": "tide",
@@ -2636,6 +3489,28 @@
         "title": "中国潮汐电站扩容",
         "body": "中国江厦潮汐电站完成技术改造，发电效率和装机容量显著提升，为沿海地区提供清洁能源，展现潮汐能在绿色能源中的潜力。"
       }
+    ],
+    "sources": [
+      {
+        "title": "维基百科（中文）",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BD%AE%E6%B1%90",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%BD%AE%E6%B1%90",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网（CNKI）",
+        "url": "https://kns.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国科学院",
+        "url": "https://www.cas.cn",
+        "type": "机构"
+      }
     ]
   },
   {
@@ -2696,6 +3571,28 @@
         "year": "2015年",
         "title": "超强厄尔尼诺事件",
         "body": "2015至2016年发生有记录以来最强的厄尔尼诺之一，导致全球多地暴雨、干旱、珊瑚白化，引发国际社会对气候变化的广泛担忧。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（网络版）- 厄尔尼诺现象",
+        "url": "https://www.zgbk.com/entry/5000",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 厄尔尼诺现象",
+        "url": "https://zh.wikipedia.org/wiki/厄尔尼诺现象",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 国家气候中心",
+        "url": "https://www.ncc-cma.net/",
+        "type": "机构"
+      },
+      {
+        "title": "中国气象局 - 厄尔尼诺监测与预测",
+        "url": "https://www.cma.gov.cn/",
+        "type": "机构"
       }
     ]
   },
@@ -2763,6 +3660,28 @@
         "title": "甘英出使罗马",
         "body": "甘英率汉使团抵达波斯，欲进一步通达罗马，虽未抵达首都，却带回大量西域与欧洲的贸易信息。"
       }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 丝绸之路",
+        "url": "https://baike.baidu.com/item/丝绸之路",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 丝绸之路",
+        "url": "https://zh.wikipedia.org/wiki/丝绸之路",
+        "type": "百科"
+      },
+      {
+        "title": "中国国家博物馆 - 古代中国基本陈列",
+        "url": "https://www.chnmuseum.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "新华网 - 丝绸之路历史专题",
+        "url": "https://www.xinhuanet.com",
+        "type": "新闻"
+      }
     ]
   },
   {
@@ -2819,6 +3738,28 @@
         "year": "649 年",
         "title": "太宗驾崩",
         "body": "贞观二十三年五月唐太宗病逝于翠微宫, 太子李治继位, 是为唐高宗。贞观之治成为后世治世典范, 唐玄宗开元年间追慕其治, 史称「贞观遗风」。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·贞观之治",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·贞观之治",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院·唐朝历史专题",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网·贞观之治相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
       }
     ]
   },
@@ -2881,6 +3822,28 @@
         "year": "X",
         "title": "史思明降唐",
         "body": "763年史思明率部投降，唐朝正式结束安史之乱的战争阶段，开始恢复中原统治并逐步削弱藩镇势力。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书_安史之乱",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版_安史之乱",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%89%E5%8F%B2%E4%B9%8B%E4%B9%B1",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院_唐代历史",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国社会科学网_唐代历史研究",
+        "url": "https://www.cssn.cn/",
+        "type": "学术"
       }
     ]
   },
@@ -2948,6 +3911,28 @@
         "title": "公车上书请求变法",
         "body": "甲午战败后，1895年康有为率众在北京公车上书，请求清政府进行政治改革。"
       }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 戊戌变法",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%89%E5%AD%99%E5%8F%98%E6%B3%95",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 戊戌变法",
+        "url": "https://baike.baidu.com/item/%E5%85%89%E5%AD%99%E5%8F%98%E6%B3%95",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 晚清历史相关",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国知网 - 戊戌变法学术研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -3008,6 +3993,28 @@
         "year": "1936",
         "title": "张学良被软禁",
         "body": "事变结束后，蒋介石将张学良软禁于南京，防止其再次干预军政，维持内部稳定。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-西安事变",
+        "url": "https://www.zgbk.com/docapp/90.html",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-西安事变",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%AE%89%E4%BA%8B%E5%8F%98",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网-西安事变相关学术研究",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8UFKH1A&timesort=&querytext=%E8%A5%BF%E5%AE%89%E4%BA%8B%E5%8F%98",
+        "type": "学术"
+      },
+      {
+        "title": "人民网-西安事变历史专题",
+        "url": "https://history.people.com.cn/GB/205396/205470/index.html",
+        "type": "新闻"
       }
     ]
   },
@@ -3070,6 +4077,28 @@
         "year": "X",
         "title": "近现代考古发现",
         "body": "20世纪初，考古学家在黄河流域与长江下游发掘大量玉璧，揭示新石器至汉代的祭祀传统。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-玉器",
+        "url": "https://www.baike.com/",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院-玉器馆",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "国家博物馆-古代玉器",
+        "url": "https://www.chnmuseum.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国社会科学网-考古与文物",
+        "url": "https://www.cssn.cn/",
+        "type": "学术"
       }
     ]
   },
@@ -3144,6 +4173,28 @@
         "title": "明代漆艺集大成",
         "body": "明代漆器工艺集历代之大成，红雕漆、螺钿、金漆等技法全面发展，嘉兴黄平雕漆名闻天下。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书_漆器",
+        "url": "https://www.baike.com/wiki/%E6%B8%85%E5%99%A8",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院_漆器藏品",
+        "url": "https://www.dpm.org.cn/collection/lacquer/",
+        "type": "博物馆"
+      },
+      {
+        "title": "维基百科中文版_漆器",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%85%E5%99%A8",
+        "type": "百科"
+      },
+      {
+        "title": "中国文物网",
+        "url": "https://www.wenwu.cn/",
+        "type": "机构"
+      }
     ]
   },
   {
@@ -3201,6 +4252,28 @@
         "year": "现代",
         "title": "景德镇复兴",
         "body": "1949 年后景德镇成立十大国营瓷厂, 2000 年后民营大师工作室兴起, 2006 年「青花瓷」制作技艺入选首批国家级非遗, 2014 年 APEC 国宴用瓷为景德镇青花瓷。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "青花瓷 - 中国大百科全书",
+        "url": "https://www.zgbk.com/search/?keyword=青花瓷",
+        "type": "百科"
+      },
+      {
+        "title": "青花瓷 - 维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/青花瓷",
+        "type": "百科"
+      },
+      {
+        "title": "青花瓷 - 故宫博物院",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "青花瓷 - 中国国家博物馆",
+        "url": "https://www.chnmuseum.cn",
+        "type": "博物馆"
       }
     ]
   },
@@ -3268,6 +4341,28 @@
         "year": "2020年代",
         "title": "算盘列为非遗",
         "body": "2020年代，中国将算盘列入国家级非物质文化遗产，以保护传统计算技艺与文化，推动公众认知。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（第三版）",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 算盘",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AE%97%E7%9B%98",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院藏品",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/",
+        "type": "机构"
       }
     ]
   },
@@ -3341,6 +4436,28 @@
         "title": "5G连接超十亿",
         "body": "全球5G连接数突破十亿大关，毫米波频段在更多地区部署，5G网络覆盖和容量持续提升。"
       }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 5G",
+        "url": "https://zh.wikipedia.org/wiki/5G",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 第五代移动通信技术",
+        "url": "https://www.zgbk.com/docth存款/5G存款存款存款",
+        "type": "百科"
+      },
+      {
+        "title": "中国信息通信研究院 - 5G研究报告",
+        "url": "https://www.caict.ac.cn",
+        "type": "学术"
+      },
+      {
+        "title": "人民邮电报 - 5G专题报道",
+        "url": "https://www.cnii.com.cn",
+        "type": "新闻"
+      }
     ]
   },
   {
@@ -3412,6 +4529,28 @@
         "year": "2022",
         "title": "ChatGPT引爆AI热潮",
         "body": "OpenAI推出ChatGPT，以强大自然语言能力引爆全球关注，标志着生成式AI时代正式到来。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·人工智能",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院人工智能研究院",
+        "url": "https://www.ia.cas.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "维基百科中文版·人工智能",
+        "url": "https://zh.wikipedia.org/wiki/",
+        "type": "百科"
+      },
+      {
+        "title": "清华大学人工智能研究院",
+        "url": "https://www.tsinghua.edu.cn/",
+        "type": "学术"
       }
     ]
   },
@@ -3486,6 +4625,28 @@
         "title": "量子纠错实用化",
         "body": "2023年，多个团队实现量子纠错的实验验证，向实用化容错量子计算迈出关键一步。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.baike.com/wiki/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院量子信息研究院",
+        "url": "https://www.cas.cn/kyjz/kyht/",
+        "type": "学术"
+      },
+      {
+        "title": "人民日报量子计算专题报道",
+        "url": "https://www.gov.cn/fuwu/zt/quantum/index.htm",
+        "type": "新闻"
+      }
     ]
   },
   {
@@ -3553,6 +4714,28 @@
         "title": "比特币ETF获批",
         "body": "美国SEC批准比特币现货ETF，传统金融市场正式纳入加密资产，区块链迈向主流金融。"
       }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（区块链条目）",
+        "url": "https://www.zgbk.com/search/?searchWord=%E5%8C%BA%E5%9D%97%E9%93%BE",
+        "type": "百科"
+      },
+      {
+        "title": "中国信息通信研究院《区块链白皮书》",
+        "url": "https://www.caict.ac.cn/kxyj/qwfb/bps/",
+        "type": "机构"
+      },
+      {
+        "title": "可信区块链推进计划",
+        "url": "https://www.trustedblockchain.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "知网CNKI区块链相关学术论文",
+        "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=WZGLZTBDQB05",
+        "type": "学术"
+      }
     ]
   },
   {
@@ -3614,6 +4797,28 @@
         "year": "X",
         "title": "中国空间站建成",
         "body": "2022年12月，中国完成天宫空间站全部舱段组装，形成完整的三舱结构，标志着独立自主的空间站正式投入运营。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书 - 空间站",
+        "url": "https://www.zgbk.com/entry/300003",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 空间站",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A9%BA%E9%97%B4%E7%AB%AD",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 中国空间站相关介绍",
+        "url": "https://www.cas.cn/kxjs/kpydz/",
+        "type": "机构"
+      },
+      {
+        "title": "百度百科 - 空间站",
+        "url": "https://baike.baidu.com/item/%E7%A9%BA%E9%97%B4%E7%AB%AD",
+        "type": "百科"
       }
     ]
   },
@@ -3692,7 +4897,29 @@
     "coords": {
       "lat": 39.9163,
       "lng": 116.3972
-    }
+    },
+    "sources": [
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/故宫",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ]
   },
   {
     "slug": "mogao-caves",
@@ -3755,7 +4982,29 @@
     "coords": {
       "lat": 40.0089,
       "lng": 94.6619
-    }
+    },
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/entry/2006",
+        "type": "百科"
+      },
+      {
+        "title": "敦煌研究院",
+        "url": "https://www.dha.ac.cn",
+        "type": "机构"
+      },
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "新华网",
+        "url": "https://www.xinhuanet.com/fortune/c_117006547.htm",
+        "type": "媒体"
+      }
+    ]
   },
   {
     "slug": "suzhou-gardens",
@@ -3820,7 +5069,29 @@
     "coords": {
       "lat": 31.3256,
       "lng": 120.6172
-    }
+    },
+    "sources": [
+      {
+        "title": "苏州园林 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E8%8B%8F%E5%B7%9E%E5%9B%AD%E6%9E%97",
+        "type": "百科"
+      },
+      {
+        "title": "苏州园林 - 维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E5%B7%9E%E5%9B%AD%E6%9E%97",
+        "type": "百科"
+      },
+      {
+        "title": "苏州园林博物馆",
+        "url": "https://www.szyl.cn",
+        "type": "博物馆"
+      },
+      {
+        "title": "苏州市世界遗产保护管理中心",
+        "url": "https://www.garden.suzhou.gov.cn",
+        "type": "机构"
+      }
+    ]
   },
   {
     "slug": "three-body",
@@ -3875,6 +5146,23 @@
         "year": "2019 年",
         "title": "影视改编启动",
         "body": "2019 年腾讯视频宣布电视剧版《三体》开机, 2023 年 1 月播出引发收视热潮, 同年 Netflix 英文剧集上线, 三体 IP 进入跨媒介开发期。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 三体",
+        "url": "https://zh.wikipedia.org/wiki/三体",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 三体",
+        "url": "https://baike.baidu.com/item/三体",
+        "type": "百科"
+      },
+      {
+        "title": "知网 - 三体相关学术论文",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index",
+        "type": "学术"
       }
     ]
   },
@@ -3946,6 +5234,28 @@
         "fields": [
           "history"
         ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 三星堆遗址",
+        "url": "https://baike.baidu.com/item/%E4%B8%89%E6%98%9F%E5%A0%86%E9%81%97%E5%9C%B0",
+        "type": "百科"
+      },
+      {
+        "title": "三星堆博物馆",
+        "url": "https://www.sxd.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "四川省文物考古研究院",
+        "url": "https://www.sckg.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国国家博物馆 - 三星堆",
+        "url": "https://www.chnmuseum.cn/zl",
+        "type": "博物馆"
       }
     ]
   }

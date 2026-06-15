@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2 } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
@@ -241,6 +241,57 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
           />
         </aside>
       </div>
+
+      {/* 历史沿革 — vertical timeline of 5-8 historical milestones,
+          sorted oldest → newest. Each node is {year, title, body}
+          drafted by AI + hand-checked (see scripts/draft-history.mjs
+          and scripts/handwrite-history.mjs). The rail on the left
+          (desktop only) and dot markers echo the /timeline page so
+          the site's "temporal" visual language stays consistent. */}
+      {card.history && card.history.length > 0 && (
+        <section className="mt-16" data-section="history">
+          <h2 className="font-serif text-2xl font-bold mb-6 flex items-center gap-2">
+            <ScrollText className="h-5 w-5 text-gold-deep" aria-hidden="true" />
+            历史沿革
+          </h2>
+          {/* Relative wrapper so the absolute-positioned rail
+              anchors to the section rather than the viewport */}
+          <div className="relative">
+            <div
+              aria-hidden="true"
+              className="hidden md:block absolute top-2 bottom-2 left-[6.5rem] w-px bg-gradient-to-b from-gold-deep/40 via-border to-transparent"
+            />
+            <ol className="space-y-6 list-none p-0">
+              {card.history.map((node, idx) => (
+                <li key={idx} className="relative md:pl-[8.5rem]">
+                  {/* Year stamp — left rail (desktop), inline (mobile) */}
+                  <span
+                    className="hidden md:block absolute left-0 top-1 w-[5.5rem] text-right text-xs uppercase tracking-[0.15em] text-gold-deep font-medium tabular-nums"
+                  >
+                    {node.year}
+                  </span>
+                  {/* Timeline dot (desktop) */}
+                  <span
+                    aria-hidden="true"
+                    className="hidden md:block absolute left-[6.15rem] top-2 h-2.5 w-2.5 rounded-full bg-gold-deep ring-4 ring-background"
+                  />
+                  <div>
+                    <p className="md:hidden text-[10px] uppercase tracking-[0.15em] text-gold-deep font-medium tabular-nums mb-1">
+                      {node.year}
+                    </p>
+                    <h3 className="font-serif text-base font-semibold leading-snug mb-1">
+                      {node.title}
+                    </h3>
+                    <p className="text-sm text-foreground/85 leading-relaxed">
+                      {node.body}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      )}
 
       {/* 同类推荐 (other cards of the same kind, excluding current + series siblings to avoid duplication) */}
       {relatedByKind.length > 0 && (

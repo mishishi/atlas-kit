@@ -22,6 +22,16 @@ export type CardKind =
   | "tech"
   | "other";
 
+/** A historical milestone on the detail page's 历史沿革 timeline. */
+export interface HistoryNode {
+  /** Display string: "前 11 世纪" | "627 年" | "1921 年" | "2023 年 5 月" */
+  year: string;
+  /** 6-12 字标题 */
+  title: string;
+  /** 30-80 字史实描述 */
+  body: string;
+}
+
 export interface Card {
   slug: string;
   title: string;
@@ -42,6 +52,10 @@ export interface Card {
   subtitle: string;
   description: string;
   createdAt: string; // ISO date
+  /** 5-8 历史节点, 详情页底部"历史沿革"区使用. 草拟 by AI + 人工校对. */
+  history?: HistoryNode[];
+  /** 参考来源 / 引用. 未来添加 (issue 6/6). */
+  sources?: Array<{ title: string; url?: string; type?: string }>;
 }
 
 /** Series — collection-level view (slug, name, plus runtime-aggregated fields) */

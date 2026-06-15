@@ -9,7 +9,7 @@ import { THEME_TYPES, type ThemeType } from "@/lib/theme-types";
 import { SERIES_TYPES, type SeriesType, getDefaultSeriesSlugForKind, recommendSeries } from "@/lib/series-types";
 import cardsData from "../../data/cards.json";
 
-type Step = 1 | 2 | 3 | 4 | 5;
+type Step = 1 | 2 | 3 | 4;
 type Kind = ThemeType["key"];
 
 // Single source of truth: theme-types.ts
@@ -104,12 +104,12 @@ export function GenerationWizard() {
   // URL takes precedence over localStorage; localStorage only kicks in if URL is empty.
   const urlStep = (() => {
     const s = Number(searchParams.get("step") ?? "");
-    return s >= 1 && s <= 5 ? (s as Step) : null;
+    return s >= 1 && s <= 4 ? (s as Step) : null;
   })();
   const draft = loadDraft();
   const initialStep =
     urlStep ??
-    (draft && draft.step >= 1 && draft.step <= 5 ? draft.step : 1);
+    (draft && draft.step >= 1 && draft.step <= 4 ? draft.step : 1);
   const initialTopic = searchParams.get("q") ?? draft?.topic ?? "";
   const initialKind = (() => {
     const k = searchParams.get("kind") ?? draft?.kind ?? "pet";
@@ -189,10 +189,9 @@ export function GenerationWizard() {
   );
 
   const canNext = (s: Step) => {
-    if (s === 1) return topic.trim().length > 0 && topic.trim().length <= 30;
-    if (s === 2) return !!kind;
-    if (s === 3) return !!seriesSlug;
-    if (s === 4) return !!palette;
+    if (s === 1) return topic.trim().length > 0 && topic.trim().length <= 30 && !!kind;
+    if (s === 2) return !!seriesSlug;
+    if (s === 3) return !!palette;
     return false;
   };
 
@@ -252,7 +251,7 @@ export function GenerationWizard() {
         className="mb-8"
       >
         <div className="flex items-center justify-center gap-2 mb-2">
-          {[1, 2, 3, 4, 5].map((s) => (
+          {[1, 2, 3, 4].map((s) => (
             <div key={s} className="flex items-center">
               <div
                 aria-hidden="true"
@@ -265,7 +264,7 @@ export function GenerationWizard() {
           ))}
         </div>
         <p className="text-center text-xs text-muted-foreground tabular-nums">
-          第 {step} / 5 步
+          第 {step} / 4 步
         </p>
       </div>
 
@@ -275,92 +274,90 @@ export function GenerationWizard() {
         className="rounded-lg border border-border bg-card p-6 md:p-8 shadow-card paper-grain animate-step-in"
       >
         {step === 1 && (
-          <div className="space-y-4">
+          <div className="space-y-6">
             <div>
-              <h2 className="font-serif text-xl font-semibold mb-1">输入主题</h2>
-              <p className="text-sm text-muted-foreground mb-3">点一个试试, 或自己输入任意主题 (30 字以内)</p>
-              <ul className="flex flex-wrap gap-1.5 list-none p-0" aria-label="主题示例">
-                {["金毛寻回犬", "西湖龙井", "二十四节气", "雪豹", "玛瑙"].map((example) => (
-                  <li key={example}>
-                    <button
-                      type="button"
-                      onClick={() => setTopic(example)}
-                      className={cn(
-                        "inline-flex items-center rounded-full border px-3 py-1 text-xs transition-colors",
-                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                        topic === example
-                          ? "border-gold-deep bg-gold text-cream"
-                          : "border-border bg-background text-muted-foreground hover:border-gold hover:text-foreground",
-                      )}
-                    >
-                      {example}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              <h2 className="font-serif text-xl font-semibold mb-1">输入主题与类型</h2>
+              <p className="text-sm text-muted-foreground">先告诉 AI 你想生成什么, 再选个类型。</p>
             </div>
-            <label className="block">
-              <span className="sr-only">图鉴主题</span>
-              <input
-                type="text"
-                value={topic}
-                onChange={(e) => setTopic(e.target.value)}
-                placeholder="输入你想生成的图鉴主题..."
-                maxLength={30}
-                aria-describedby="topic-counter"
-                className="w-full rounded-md border border-border bg-background px-4 py-3 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                autoFocus
-              />
-            </label>
-            <div id="topic-counter" className="text-xs text-muted-foreground text-right tabular-nums">
-              {topic.length} / 30
+            <div className="space-y-5">
+              <div>
+                <label htmlFor="topic-input" className="block text-sm font-medium text-foreground mb-2">
+                  主题
+                </label>
+                <ul className="flex flex-wrap gap-1.5 list-none p-0 mb-2" aria-label="主题示例">
+                  {["金毛寻回犬", "西湖龙井", "二十四节气", "雪豹", "玛瑙"].map((example) => (
+                    <li key={example}>
+                      <button
+                        type="button"
+                        onClick={() => setTopic(example)}
+                        className={cn(
+                          "inline-flex items-center rounded-full border px-3 py-1 text-xs transition-colors",
+                          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                          topic === example
+                            ? "border-gold-deep bg-gold text-cream"
+                            : "border-border bg-background text-muted-foreground hover:border-gold hover:text-foreground",
+                        )}
+                      >
+                        {example}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <input
+                  id="topic-input"
+                  type="text"
+                  value={topic}
+                  onChange={(e) => setTopic(e.target.value)}
+                  placeholder="输入你想生成的图鉴主题..."
+                  maxLength={30}
+                  aria-describedby="topic-counter"
+                  className="w-full rounded-md border border-border bg-background px-4 py-3 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  autoFocus
+                />
+                <div id="topic-counter" className="mt-1 text-xs text-muted-foreground text-right tabular-nums">
+                  {topic.length} / 30
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-foreground mb-2">类型</p>
+                <PopularKindsHint />
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {KINDS.map((k) => {
+                    const selected = kind === k.key;
+                    return (
+                      <button
+                        key={k.key}
+                        type="button"
+                        onClick={() => setKind(k.key)}
+                        aria-pressed={selected}
+                        aria-label={k.desc ? `${k.label} — ${k.desc}` : k.label}
+                        className={cn(
+                          "relative flex min-h-[44px] flex-col items-start gap-1 rounded-md border p-4 text-left transition-all",
+                          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                          selected
+                            ? "border-gold-deep bg-gold-deep text-cream shadow-card-hover"
+                            : "border-border bg-background text-foreground hover:border-gold hover:bg-muted/50",
+                        )}
+                      >
+                        {selected && (
+                          <CheckCircle2 className="absolute top-2 right-2 h-5 w-5 text-cream" aria-hidden="true" />
+                        )}
+                        <span className={cn("font-serif font-medium text-base leading-snug", !selected && "text-foreground")}>
+                          {k.label}
+                        </span>
+                        <span className={cn("text-xs", selected ? "text-cream/80" : "text-muted-foreground")}>
+                          {k.desc}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         )}
 
         {step === 2 && (
-          <div role="group" aria-labelledby="step2-title" className="space-y-4">
-            <div>
-              <h2 id="step2-title" className="font-serif text-xl font-semibold mb-1">选择类型</h2>
-              <p className="text-sm text-muted-foreground mb-2">不同类型有不同的字段槽位</p>
-              {/* Show the top 3 most-picked kinds from existing cards as a quick hint */}
-              <PopularKindsHint />
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {KINDS.map((k) => {
-                const selected = kind === k.key;
-                return (
-                  <button
-                    key={k.key}
-                    type="button"
-                    onClick={() => setKind(k.key)}
-                    aria-pressed={selected}
-                    aria-label={k.desc ? `${k.label} — ${k.desc}` : k.label}
-                    className={cn(
-                      "relative flex min-h-[44px] flex-col items-start gap-1 rounded-md border p-4 text-left transition-all",
-                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                      selected
-                        ? "border-gold-deep bg-gold-deep text-cream shadow-card-hover"
-                        : "border-border bg-background text-foreground hover:border-gold hover:bg-muted/50",
-                    )}
-                  >
-                    {selected && (
-                      <CheckCircle2 className="absolute top-2 right-2 h-5 w-5 text-cream" aria-hidden="true" />
-                    )}
-                    <span className={cn("font-serif font-medium text-base leading-snug", !selected && "text-foreground")}>
-                      {k.label}
-                    </span>
-                    <span className={cn("text-xs", selected ? "text-cream/80" : "text-muted-foreground")}>
-                      {k.desc}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
-        {step === 3 && (
           <div role="group" aria-labelledby="step3-title" className="space-y-4">
             <div>
               <h2 id="step3-title" className="font-serif text-xl font-semibold mb-1">选择系列归属</h2>
@@ -421,7 +418,7 @@ export function GenerationWizard() {
           </div>
         )}
 
-        {step === 4 && (
+        {step === 3 && (
           <div role="group" aria-labelledby="step4-title" className="space-y-4">
             <div>
               <h2 id="step4-title" className="font-serif text-xl font-semibold mb-1">选择配色</h2>
@@ -463,7 +460,7 @@ export function GenerationWizard() {
           </div>
         )}
 
-        {step === 5 && (
+        {step === 4 && (
           <div className="space-y-6 py-4">
             <div>
               <h2 className="font-serif text-xl font-semibold mb-1">确认生成</h2>
@@ -562,7 +559,7 @@ export function GenerationWizard() {
         )}
 
         {/* Nav */}
-        {step < 5 && (
+        {step < 4 && (
           <div className="mt-8 flex items-center justify-between pt-6 border-t border-border">
             <button
               type="button"

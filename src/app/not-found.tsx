@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Compass, Search, Home, Sparkles, ArrowLeft } from "lucide-react";
+import { CardGrid } from "@/components/card-grid";
+import { getDiverseFeatured } from "@/lib/data";
 
 export default function NotFound() {
   const pathname = usePathname() ?? "";
@@ -10,6 +12,11 @@ export default function NotFound() {
   // surface the right "go back" entry point.
   const isCardPath = pathname.startsWith("/cards/");
   const isSeriesPath = pathname.startsWith("/series/");
+  // 4 featured cards from across kinds — gives the user a real
+  // "what to look at instead" anchor instead of just navigation
+  // buttons. (Diverse 12-kind mix prevents the section from
+  // looking like an ad for one series.)
+  const featured = getDiverseFeatured(4);
 
   return (
     <div className="container py-section min-h-[60vh]">
@@ -78,6 +85,21 @@ export default function NotFound() {
           </Link>
         </nav>
       </div>
+
+      {/* Featured cards — give users a real next destination
+          instead of just nav links. Diverse across kinds so we
+          don't bias toward one series. The CardGrid component
+          already uses 384w WebP thumbs so this section is
+          cheap on first paint. */}
+      <section className="mt-16" aria-labelledby="featured-on-404">
+        <h2
+          id="featured-on-404"
+          className="font-serif text-lg font-semibold mb-6 text-center text-muted-foreground"
+        >
+          或者看看这些
+        </h2>
+        <CardGrid cards={featured} cols="lg:grid-cols-4" />
+      </section>
     </div>
   );
 }

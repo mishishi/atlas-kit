@@ -68,7 +68,13 @@ export default function SeriesPage() {
                         sizes="(max-width: 768px) 100vw, 100vw"
                         className="object-cover object-top"
                         quality={95}
+                        // First row cover is the LCP candidate — eager +
+                        // fetchPriority high so the browser starts
+                        // downloading it ASAP. The other 4 series rows
+                        // stay lazy so they don't bloat the initial
+                        // bundle (5 × 5.7MB = 28MB otherwise).
                         priority={index === 0}
+                        fetchPriority={index === 0 ? "high" : "auto"}
                       />
                     ) : (
                       <SeriesEmpty color={s.palette[1]} />

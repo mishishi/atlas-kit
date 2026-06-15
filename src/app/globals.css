@@ -20,9 +20,15 @@
     --overlay: 38 30% 96%;           /* popover / menu / tooltip */
     --scrim: 30 14% 16% / 0.45;      /* modal backdrop (HSL with alpha) */
 
-    /* ── Brand primary (antique gold) ── */
-    --primary: 30 38% 57%;           /* gold #B8956A — CTA, links */
-    --primary-foreground: 38 30% 95%; /* on-gold text */
+    /* ── Brand primary (antique gold) ──
+       gold-deep: L 45% → 33% to clear WCAG AA body-text contrast
+       against the cream bg (L 92%). Previous 45% gave 3.21:1
+       (AA fail for body, OK only for ≥18px text). New 33% gives
+       ~5.4:1 — passes AA for both body and large text. Visual
+       shift: slightly deeper, more "burnished bronze" than
+       "antique brass", but the warm character is preserved. */
+    --primary: 30 38% 57%;           /* gold #B8956A — accent only, not body text */
+    --primary-foreground: 38 30% 95%; /* on-gold text (large UI only) */
     --on-primary: 38 30% 95%;
 
     /* ── Brand secondary (botanic sage) ── */
@@ -36,7 +42,7 @@
     --muted-foreground: 30 8% 40%;   /* captions, secondary text */
     --border: 35 25% 84%;            /* line, divider */
     --input: 35 25% 84%;             /* form field border */
-    --ring: 30 38% 57%;              /* focus ring matches primary */
+    --ring: 28 32% 33%;              /* focus ring = gold-deep (AA-compliant) */
     --card: 0 0% 100%;
     --card-foreground: 30 14% 16%;
 
@@ -57,7 +63,7 @@
     --brand-sage: 95 15% 67%;
     --brand-sage-deep: 95 18% 45%;
     --brand-gold: 30 38% 57%;
-    --brand-gold-deep: 28 32% 45%;
+    --brand-gold-deep: 28 32% 33%;   /* darkened for AA body contrast on cream */
     --brand-ink: 30 14% 16%;
     --brand-ink-soft: 30 8% 40%;
     --brand-ink-mute: 30 8% 60%;
@@ -91,7 +97,7 @@
     --muted-foreground: 38 12% 65%;
     --border: 30 6% 24%;             /* slightly lighter than card for visibility */
     --input: 30 6% 24%;
-    --ring: 35 50% 70%;
+    --ring: 35 40% 68%;              /* focus ring = dark-mode gold-deep */
     --card: 30 6% 16%;
     --card-foreground: 38 30% 88%;
 
@@ -106,13 +112,15 @@
     --success-foreground: 30 8% 11%;
     --success-soft: 145 30% 22%;
 
-    /* ── Brand in dark: lift cream/sage, soften ink ── */
+    /* ── Brand in dark: lift cream/sage, soften ink ──
+       gold-deep in dark: 55% → 68% (lighter for contrast against
+       the dark cream bg, which is the "surface" in dark mode) */
     --brand-cream: 38 25% 88%;
     --brand-cream-deep: 38 18% 75%;
     --brand-sage: 95 12% 55%;
     --brand-sage-deep: 95 18% 70%;
     --brand-gold: 35 50% 70%;
-    --brand-gold-deep: 35 40% 55%;
+    --brand-gold-deep: 35 40% 68%;
     --brand-ink: 38 30% 88%;          /* ink flips to off-cream in dark */
     --brand-ink-soft: 38 15% 70%;
     --brand-ink-mute: 38 8% 55%;

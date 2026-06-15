@@ -23,7 +23,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/belgian-malinois-thumb.webp",
-    "image_full": "/cards/belgian-malinois-full.png"
+    "image_full": "/cards/belgian-malinois-card.png"
   },
   {
     "slug": "labrador-retriever",
@@ -49,7 +49,7 @@
     "description": "拉布拉多寻回犬 (Labrador Retriever) 起源于加拿大纽芬兰, 19 世纪被引入英国系统选育, 是当今全球饲养量最大的犬种之一。它们以温顺的性情、强健的体格和极高的服从性著称, 广泛担任导盲犬、搜救犬、缉毒犬等公共角色。毛色有黑、黄、巧克力三色, 平均寿命 10-12 年, 是非常适合家庭与儿童的家庭犬。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/labrador-retriever-thumb.webp",
-    "image_full": "/cards/labrador-retriever-full.png"
+    "image_full": "/cards/labrador-retriever-card.png"
   },
   {
     "slug": "ragdoll",
@@ -75,7 +75,7 @@
     "description": "布偶猫 (Ragdoll) 是 20 世纪 60 年代由美国育种者 Ann Baker 培育的品种, 因被人抱起时全身松弛如布偶而得名。它们体型大, 公猫可达 6-9 公斤, 拥有标志性的海豹色、海豹蓝、蓝色等被毛色型与深蓝色大眼睛, 性格极度温顺、依赖主人, 是少数被称为「狗性猫」的品种之一。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/ragdoll-thumb.webp",
-    "image_full": "/cards/ragdoll-full.png"
+    "image_full": "/cards/ragdoll-card.png"
   },
   {
     "slug": "cockatiel",
@@ -101,7 +101,7 @@
     "description": "玄凤鹦鹉 (Nymphicus hollandicus) 又名鸡尾鹦鹉, 是澳大利亚特有的小型凤头鹦鹉, 头冠黄色、脸颊有橙色耳羽。它们在原栖地常成大群活动, 鸣声响亮而婉转, 雌雄可通过羽色区分。家养玄凤是全球最常见的宠物鸟之一, 平均寿命 15-25 年, 可训练简单口哨与互动。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/cockatiel-thumb.webp",
-    "image_full": "/cards/cockatiel-full.png"
+    "image_full": "/cards/cockatiel-card.png"
   },
   {
     "slug": "corn-snake",
@@ -127,7 +127,7 @@
     "description": "玉米蛇 (Pantherophis guttatus) 是北美东部常见的无毒小型游蛇, 因腹部格子花纹形似玉米而得名。它们体长 80-120 厘米, 性情温顺、攻击性低、颜色与花纹变体极多 (白化、显隐、薰衣草等上百品系), 是国际爬宠市场最受欢迎的入门蛇种, 平均寿命 15-20 年, 主要以小型啮齿动物为食。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/corn-snake-thumb.webp",
-    "image_full": "/cards/corn-snake-full.png"
+    "image_full": "/cards/corn-snake-card.png"
   },
   {
     "slug": "tibetan-antelope",
@@ -153,7 +153,7 @@
     "description": "藏羚羊 (Pantholops hodgsonii) 是青藏高原特有的国家一级保护动物, 主要分布于海拔 3700-5500 米的高原荒漠与可可西里地区。它们以雌雄均有的细长黑角著称, 公羊角长可达 60-70 厘米, 每年夏季完成 300-400 公里的产仔迁徙, 是世界上栖息海拔最高的哺乳动物之一, 1990 年代因羊绒贸易濒危, 现状已大幅恢复。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/tibetan-antelope-thumb.webp",
-    "image_full": "/cards/tibetan-antelope-full.png"
+    "image_full": "/cards/tibetan-antelope-card.png"
   },
   {
     "slug": "giant-panda",
@@ -179,7 +179,7 @@
     "description": "大熊猫 (Ailuropoda melanoleuca) 是中国特有的大型哺乳动物, 国家一级保护动物, 列入世界自然保护联盟 (IUCN) 红色名录易危级别。它们 99% 的食物是竹子, 一只成年熊猫每天进食 12-38 公斤竹子, 分布于四川、陕西、甘肃三省的高海拔竹林。野生种群约 1864 只, 圈养种群超 600 只, 是全球野生动物保护旗舰物种。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/giant-panda-thumb.webp",
-    "image_full": "/cards/giant-panda-full.png"
+    "image_full": "/cards/giant-panda-card.png"
   },
   {
     "slug": "snow-leopard",
@@ -205,7 +205,7 @@
     "description": "雪豹 (Panthera uncia) 是分布于中亚高山地带的大型猫科动物, 活动海拔 3000-4500 米, 是垂直分布最高的猫科动物。它们毛皮灰白带黑斑、尾巴粗长可达体长的 90%, 主要捕食岩羊、北山羊、旱獭等高原动物, 是高原生态系统的顶级捕食者。全球野生种群约 4000-6500 只, 中国是其最大分布国, 列为国家一级保护动物。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/snow-leopard-thumb.webp",
-    "image_full": "/cards/snow-leopard-full.png"
+    "image_full": "/cards/snow-leopard-card.png"
   },
   {
     "slug": "siberian-tiger",
@@ -231,7 +231,7 @@
     "description": "东北虎 (Panthera tigris altaica), 又称西伯利亚虎、阿穆尔虎, 是现存体型最大的虎亚种, 雄性体重可达 180-300 公斤, 体长 2.5-3 米, 毛色橙黄带黑纹, 冬季毛皮显著变长变密以适应严寒。它们主要分布于俄罗斯远东、中国东北 (黑龙江、吉林) 与朝鲜半岛北部, 是食物链顶端的独居掠食者, 野生种群约 500-600 只。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/siberian-tiger-thumb.webp",
-    "image_full": "/cards/siberian-tiger-full.png"
+    "image_full": "/cards/siberian-tiger-card.png"
   },
   {
     "slug": "crested-ibis",
@@ -257,7 +257,7 @@
     "description": "朱鹮 (Nipponia nippon) 是东亚特有的中型涉禽, 通体雪白, 翅膀与尾羽在阳光下呈淡粉朱红色, 喙尖黑色、基部朱红, 是世界濒危鸟类保护的标志性物种之一。20 世纪曾一度被认为已灭绝, 1981 年在中国陕西洋县发现 7 只野生个体, 经过 40 年保护, 野生种群已恢复到 9000 余只, 韩国、日本已成功重引入。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/crested-ibis-thumb.webp",
-    "image_full": "/cards/crested-ibis-full.png"
+    "image_full": "/cards/crested-ibis-card.png"
   },
   {
     "slug": "longjing-tea",
@@ -283,7 +283,7 @@
     "description": "西湖龙井是产于浙江杭州西湖区龙井村一带的扁形炒青绿茶, 因产地得名, 创制于宋、盛于明清, 居中国十大名茶之首。干茶外形扁平挺直、色泽嫩绿光润, 冲泡后茶汤嫩绿明亮、香气清高持久, 滋味鲜醇甘爽。特级龙井采摘自清明前的「明前茶」一芽一叶初展, 1 公斤干茶需 6-8 万颗茶芽。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/longjing-tea-thumb.webp",
-    "image_full": "/cards/longjing-tea-full.png"
+    "image_full": "/cards/longjing-tea-card.png"
   },
   {
     "slug": "ginkgo",
@@ -309,7 +309,7 @@
     "description": "银杏 (Ginkgo biloba) 是银杏科唯一现存的物种, 出现于 2 亿年前的古生代二叠纪, 是地球上最古老的裸子植物之一, 被誉为「活化石」。它们为落叶大乔木, 叶扇形, 雌雄异株, 雌株秋季结橙黄色种实, 是中国特有树种, 树龄可达数千年, 广泛栽培于城市行道与寺庙, 是世界五大行道树之一。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/ginkgo-thumb.webp",
-    "image_full": "/cards/ginkgo-full.png"
+    "image_full": "/cards/ginkgo-card.png"
   },
   {
     "slug": "plum-blossom",
@@ -335,7 +335,7 @@
     "description": "梅花 (Prunus mume) 是蔷薇科李属的小乔木, 原产中国南方, 是中国十大名花之首, 与松、竹并称「岁寒三友」。它们在冬末春初先花后叶, 花色白、粉、红, 花香清雅, 花期 1-3 月, 是中国传统文学中最具象征意义的花卉之一, 代表着高洁、坚韧与早春意象。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/plum-blossom-thumb.webp",
-    "image_full": "/cards/plum-blossom-full.png"
+    "image_full": "/cards/plum-blossom-card.png"
   },
   {
     "slug": "orchid",
@@ -361,7 +361,7 @@
     "description": "兰花是兰科 (Orchidaceae) 植物统称, 全球约 700 属 28000 种, 是被子植物中最大的科之一。中国传统「兰花」多指兰属 (Cymbidium) 的地生兰, 如春兰、蕙兰、建兰、墨兰、寒兰等, 分布于中国南方亚热带森林, 花色淡雅、幽香清远, 与梅、竹、菊并列「四君子」, 象征高洁脱俗。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/orchid-thumb.webp",
-    "image_full": "/cards/orchid-full.png"
+    "image_full": "/cards/orchid-card.png"
   },
   {
     "slug": "bamboo",
@@ -387,7 +387,7 @@
     "description": "竹子是禾本科竹亚科 (Bambusoideae) 植物的统称, 全球约 164 属 1500 余种, 主要分布于亚洲、东非和南美热带、亚热带地区。它们是地球上生长最快的植物之一, 某些竹种每天可生长 90 厘米以上, 茎中空有节, 一次开花结实后即枯死。中国是竹子种类最丰富的国家, 已知 39 属 500 余种, 广泛用于建筑、家具、造纸与饮食。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/bamboo-thumb.webp",
-    "image_full": "/cards/bamboo-full.png"
+    "image_full": "/cards/bamboo-card.png"
   },
   {
     "slug": "shanghai",
@@ -413,7 +413,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/shanghai-thumb.webp",
-    "image_full": "/cards/shanghai-full.png"
+    "image_full": "/cards/shanghai-card.png"
   },
   {
     "slug": "hangzhou",
@@ -439,7 +439,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/hangzhou-thumb.webp",
-    "image_full": "/cards/hangzhou-full.png"
+    "image_full": "/cards/hangzhou-card.png"
   },
   {
     "slug": "suzhou",
@@ -465,7 +465,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/suzhou-thumb.webp",
-    "image_full": "/cards/suzhou-full.png"
+    "image_full": "/cards/suzhou-card.png"
   },
   {
     "slug": "xian",
@@ -491,7 +491,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/xian-thumb.webp",
-    "image_full": "/cards/xian-full.png"
+    "image_full": "/cards/xian-card.png"
   },
   {
     "slug": "beijing",
@@ -517,7 +517,7 @@
     "description": "北京是中华人民共和国首都, 位于华北平原北端, 全市面积 1.64 万平方公里, 人口 2180 万, 是全国政治、文化、国际交往与科技创新中心。北京建城史可追溯至 3000 多年前的蓟城, 自辽以来先后成为辽南京、金中都、元大都、明清皇都, 现有故宫、天坛、长城 (北京段)、颐和园、周口店等 7 处世界文化遗产, 是全球拥有世界遗产最多的城市之一。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/beijing-thumb.webp",
-    "image_full": "/cards/beijing-full.png"
+    "image_full": "/cards/beijing-card.png"
   },
   {
     "slug": "li-bai",
@@ -543,7 +543,7 @@
     "description": "李白 (701-762), 字太白, 号青莲居士, 唐代伟大的浪漫主义诗人, 被誉为「诗仙」。祖籍陇西成纪, 生于碎叶城 (今吉尔吉斯斯坦境内), 5 岁随父迁居四川江油。他一生游历大半个中国, 代表作有《静夜思》《早发白帝城》《将进酒》《蜀道难》等 900 余首, 是中国文学史上最具国际影响力的诗人之一。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/li-bai-thumb.webp",
-    "image_full": "/cards/li-bai-full.png"
+    "image_full": "/cards/li-bai-card.png"
   },
   {
     "slug": "du-fu",
@@ -569,7 +569,7 @@
     "description": "杜甫 (712-770), 字子美, 自号少陵野老, 唐代现实主义诗人, 被誉为「诗圣」, 其诗被称为「诗史」。祖籍襄阳, 生于河南巩县, 出身奉儒守官之家, 一生颠沛流离, 经历安史之乱, 代表作「三吏三别」、《茅屋为秋风所破歌》、《登高》等, 反映唐代由盛转衰的社会现实。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/du-fu-thumb.webp",
-    "image_full": "/cards/du-fu-full.png"
+    "image_full": "/cards/du-fu-card.png"
   },
   {
     "slug": "su-shi",
@@ -595,7 +595,7 @@
     "description": "苏轼 (1037-1101), 字子瞻, 号东坡居士, 北宋豪放派词人、文学家、书法家、画家, 「唐宋八大家」之一。眉州眉山 (今四川眉山) 人, 与父苏洵、弟苏辙合称「三苏」, 21 岁中进士。一生宦海浮沉, 屡贬惠州、儋州, 却在诗文书画饮食水利上成就卓著, 代表作有《赤壁赋》《念奴娇·赤壁怀古》《水调歌头·明月几时有》等, 是中国文人气节与生活美学的典范。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/su-shi-thumb.webp",
-    "image_full": "/cards/su-shi-full.png"
+    "image_full": "/cards/su-shi-card.png"
   },
   {
     "slug": "cai-lun",
@@ -621,7 +621,7 @@
     "description": "蔡伦 (约 62-121), 字敬仲, 东汉桂阳郡 (今湖南耒阳) 人, 是中国东汉时期著名的宦官和发明家。他于公元 105 年总结西汉以来的造纸经验, 改进工艺, 树皮、麻头、破布、旧渔网为原料, 造出质优价廉的「蔡侯纸」, 使纸张得以大规模生产, 深刻改变了世界文明的传播方式。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/cai-lun-thumb.webp",
-    "image_full": "/cards/cai-lun-full.png"
+    "image_full": "/cards/cai-lun-card.png"
   },
   {
     "slug": "zhang-heng",
@@ -647,7 +647,7 @@
     "description": "张衡 (78-139), 字平子, 南阳西鄂 (今河南南阳) 人, 东汉时期杰出的天文学家、数学家、发明家、文学家。他制造了世界上第一台监测地震的仪器 — 候风地动仪, 还发明了指南车、记里鼓车、独飞木鹅等机械; 文学上以《二京赋》《归田赋》著称, 是东汉中期科学文化的代表人物, 后世将月球上一座环形山命名为「张衡山」。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/zhang-heng-thumb.webp",
-    "image_full": "/cards/zhang-heng-full.png"
+    "image_full": "/cards/zhang-heng-card.png"
   },
   {
     "slug": "winter-solstice",
@@ -673,7 +673,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/winter-solstice-thumb.webp",
-    "image_full": "/cards/winter-solstice-full.png"
+    "image_full": "/cards/winter-solstice-card.png"
   },
   {
     "slug": "spring-festival",
@@ -699,7 +699,7 @@
     "description": "春节是农历正月初一, 又称「年节」, 是中华民族最重要的传统节日, 已有 4000 余年历史。春节源于上古岁首祈年祭祀, 至汉代定型, 融合了祭祖、迎春、团圆、饮食等多元民俗。除夕夜阖家团圆吃年夜饭、守岁, 初一拜年、放鞭炮、贴春联、给压岁钱, 各地又有舞狮舞龙、庙会、社火等差异。春节在 2006 年被列入国家级非物质文化遗产名录。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/spring-festival-thumb.webp",
-    "image_full": "/cards/spring-festival-full.png"
+    "image_full": "/cards/spring-festival-card.png"
   },
   {
     "slug": "qingming",
@@ -725,7 +725,7 @@
     "description": "清明是二十四节气中的第 5 个节气, 公历 4 月 4-6 日交节, 也是中国最重要的祭祖节日之一。清明节融合了上古「寒食节」(介子推故事) 与「上巳节」(修禊踏青) 的传统, 唐代起被正式定为节日, 距今已有 2500 多年历史。节日习俗包括扫墓祭祖、踏青郊游、放风筝、荡秋千、吃青团 (江南) 等, 2006 年被列入国家级非物质文化遗产名录。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/qingming-thumb.webp",
-    "image_full": "/cards/qingming-full.png"
+    "image_full": "/cards/qingming-card.png"
   },
   {
     "slug": "dragon-boat",
@@ -751,7 +751,7 @@
     "description": "端午节为农历五月初五, 又称端阳节、龙舟节、重五节, 是中国首个入选世界非物质文化遗产的节日 (2009 年)。节日源于多种古老信仰: 战国楚国诗人屈原于五月初五投汨罗江, 后人划龙舟、投粽子以纪念; 南方还有伍子胥、曹娥等地方传说。节日习俗包括赛龙舟、吃粽子、挂艾草菖蒲、佩香囊、戴五彩绳。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/dragon-boat-thumb.webp",
-    "image_full": "/cards/dragon-boat-full.png"
+    "image_full": "/cards/dragon-boat-card.png"
   },
   {
     "slug": "mid-autumn",
@@ -777,7 +777,7 @@
     "description": "中秋节为农历八月十五, 是中国四大传统节日之一, 2006 年列入国家级非物质文化遗产。中秋节起源于上古月神崇拜, 至唐初定型为「赏月、团圆」节日, 宋代成为全民节日, 与春节齐名。节日习俗有赏月、祭月、吃月饼、饮桂花酒、猜灯谜、赏桂花。中秋是东亚文化圈共同的节日, 韩国、越南、日本、东南亚华人聚居区均有庆祝。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/mid-autumn-thumb.webp",
-    "image_full": "/cards/mid-autumn-full.png"
+    "image_full": "/cards/mid-autumn-card.png"
   },
   {
     "slug": "peking-duck",
@@ -803,7 +803,7 @@
     "description": "北京烤鸭是源于南京、盛于北京的著名京菜, 距今已有 600 余年历史, 明永乐年间随明成祖迁都北上。它以填鸭为原料, 烫皮、打色、晾胚后, 挂入果木 (枣木、梨木、苹果木) 炉中以明火烤制, 成品色泽金红、皮酥肉嫩、油润不腻。传统分挂炉 (全聚德) 与焖炉 (便宜坊) 两派, 食用时配甜面酱、葱丝、薄饼, 是中国国宴必上菜之一。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/peking-duck-thumb.webp",
-    "image_full": "/cards/peking-duck-full.png"
+    "image_full": "/cards/peking-duck-card.png"
   },
   {
     "slug": "lamian",
@@ -829,7 +829,7 @@
     "description": "兰州牛肉拉面是甘肃省兰州市的传统名吃, 创始于清嘉庆年间, 2013 年兰州拉面行业协会正式发布行业标准。一碗合格的兰州拉面讲究「一清 (汤清)、二白 (萝卜白)、三红 (辣椒油红)、四绿 (香菜蒜苗绿)、五黄 (面条黄亮)」, 牛肉面按毛细、细、二细、三细、韭叶、宽、大宽等 9 种规格区分粗细, 已成为遍布全国乃至世界的代表性中式快餐。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/lamian-thumb.webp",
-    "image_full": "/cards/lamian-full.png"
+    "image_full": "/cards/lamian-card.png"
   },
   {
     "slug": "rougamo",
@@ -855,7 +855,7 @@
     "description": "肉夹馍是源于陕西关中地区的传统小吃, 实际是「肉夹于馍」的简称, 距今已有上千年历史。它由腊汁肉 (猪肉) 与白吉馍组合而成, 腊汁肉用陈年老汤卤制数小时, 肥而不腻、瘦而不柴; 白吉馍用半发面烤制, 外皮酥脆、内里柔韧。肉夹馍与羊肉泡馍、凉皮、biangbiang 面并称「陕西美食四巨头」, 2016 年陕西肉夹馍列入陕西省非物质文化遗产名录。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/rougamo-thumb.webp",
-    "image_full": "/cards/rougamo-full.png"
+    "image_full": "/cards/rougamo-card.png"
   },
   {
     "slug": "yum-cha",
@@ -881,7 +881,7 @@
     "description": "广式早茶是源自广东广州、盛行于珠三角及香港的饮食习俗, 始于清代咸丰同治年间, 已有一百六十余年历史。「叹早茶」是指一盅茶 (普洱、铁观音、菊花) 加两件点心 (虾饺、烧麦、肠粉、叉烧包、凤爪等), 是岭南饮食文化的重要组成部分。茶楼不仅是餐饮场所, 也是家庭聚会、朋友叙旧、商务洽谈的社交空间, 体现了粤人「食不厌精、脍不厌细」的生活态度。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/yum-cha-thumb.webp",
-    "image_full": "/cards/yum-cha-full.png"
+    "image_full": "/cards/yum-cha-card.png"
   },
   {
     "slug": "chongqing-hotpot",
@@ -907,7 +907,7 @@
     "description": "重庆火锅是发源于重庆长江、嘉陵江两岸船工的「水八块」饮食, 民国时期形成现代形态。它以牛油、豆瓣酱、花椒、辣椒、姜蒜为底料, 配以九宫格铜锅或铁锅, 涮烫毛肚、鸭肠、黄喉、老肉片、藕片、土豆等, 油碟 (芝麻油 + 蒜泥) 解辣增香。2016 年, 毛肚、鸭肠、火锅底料等被列入重庆市非物质文化遗产, 已成为重庆的城市名片。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/chongqing-hotpot-thumb.webp",
-    "image_full": "/cards/chongqing-hotpot-full.png"
+    "image_full": "/cards/chongqing-hotpot-card.png"
   },
   {
     "slug": "plum-rain",
@@ -933,7 +933,7 @@
     "description": "梅雨是每年 6 月中旬至 7 月上旬出现在中国长江中下游地区 (江淮、江南) 与日本、韩国的连续阴雨天气, 因此时正值江南梅子成熟而得名。它由副热带高压北抬与北方冷空气在江淮一带形成的准静止锋造成, 持续期约 20-30 天, 带来大量降水, 历史上「黄梅时节家家雨」是江南典型物候, 但连绵阴雨也易引发内涝与作物病害, 气象学上称「江淮准静止锋」。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/plum-rain-thumb.webp",
-    "image_full": "/cards/plum-rain-full.png"
+    "image_full": "/cards/plum-rain-card.png"
   },
   {
     "slug": "aurora",
@@ -959,7 +959,7 @@
     "description": "极光是地球高纬度地区高空出现的彩色发光现象, 主要见于南北纬 67° 附近的极地夜空。它由太阳风带电粒子沿地磁场线进入两极高层大气, 与氧、氮原子碰撞激发产生, 颜色取决于碰撞粒子类型与高度: 氧原子发出绿色 (100-300 km) 与红色 (>300 km), 氮原子发出紫蓝色 (100 km)。中国最北端的漠河偶可观测到北极光。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/aurora-thumb.webp",
-    "image_full": "/cards/aurora-full.png"
+    "image_full": "/cards/aurora-card.png"
   },
   {
     "slug": "qiantang-tide",
@@ -985,7 +985,7 @@
     "description": "钱塘江大潮是世界著名的天文潮景观, 每年农历八月十八前后最为壮观, 因钱塘江入海口呈喇叭口形, 潮波涌入时受地形挤压抬升, 形成「一线潮」「回头潮」「冲天潮」等奇观, 最大潮差可达 9 米。它由月球、太阳引力与地球自转共同作用, 加之喇叭口地形的放大效应所致, 自唐宋以来即为观潮胜地。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/qiantang-tide-thumb.webp",
-    "image_full": "/cards/qiantang-tide-full.png"
+    "image_full": "/cards/qiantang-tide-card.png"
   },
   {
     "slug": "tide",
@@ -1011,7 +1011,7 @@
     "description": "潮汐是海水在月球、太阳引力作用下产生的周期性涨落现象, 平均周期约 12 小时 25 分 (半日潮) 或 24 小时 50 分 (全日潮)。月球引力是主导因素 (贡献 2/3), 太阳引力其次 (1/3); 朔望日 (农历初一、十五) 月地日共线形成大潮, 上弦下弦日 (初八、廿三) 月地日成直角形成小潮。潮汐能是清洁的可再生能源, 全球可开发潮汐能年发电量可达万亿千瓦时量级。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/tide-thumb.webp",
-    "image_full": "/cards/tide-full.png"
+    "image_full": "/cards/tide-card.png"
   },
   {
     "slug": "el-nino",
@@ -1037,7 +1037,7 @@
     "description": "厄尔尼诺 (El Niño) 是赤道东太平洋海温周期性异常增暖的现象, 通常持续 6-18 个月, 每 2-7 年发生一次。它通过海气耦合作用影响全球气候: 中国南方多雨洪涝、北方夏热冬暖; 太平洋东部沿岸 (秘鲁、厄瓜多尔) 渔业减产; 澳大利亚、东南亚干旱。它是全球最重要的年际气候变率信号之一, 与拉尼娜 (La Niña, 反向冷相位) 共同构成 ENSO 循环。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/el-nino-thumb.webp",
-    "image_full": "/cards/el-nino-full.png"
+    "image_full": "/cards/el-nino-card.png"
   },
   {
     "slug": "silk-road",
@@ -1063,7 +1063,7 @@
     "description": "丝绸之路是西汉 (公元前 202 年-公元 8 年) 时期开辟的横贯东西、连接欧亚大陆的陆上贸易通道, 最初由汉武帝派张骞出使西域 (公元前 138 年) 而打通。它东起长安, 经河西走廊、西域 (今新疆)、中亚、西亚, 直至地中海东岸的罗马帝国, 全长约 7000 公里, 运送丝绸、瓷器、铁器, 换回香料、宝石、玻璃、马匹, 2014 年「丝绸之路: 长安-天山廊道的路网」列入世界文化遗产。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/silk-road-thumb.webp",
-    "image_full": "/cards/silk-road-full.png"
+    "image_full": "/cards/silk-road-card.png"
   },
   {
     "slug": "reign-of-zhenguan",
@@ -1089,7 +1089,7 @@
     "description": "贞观之治 (627-649) 是唐太宗李世民在位期间的治世, 被称为中国历史上最辉煌的盛世之一。太宗吸取隋亡教训, 虚心纳谏 (重用魏徵等谏臣), 推行三省六部制、租庸调制、府兵制, 完善科举, 平定突厥, 开通丝路, 统一多民族国家得到巩固, 社会相对安定、经济恢复发展、文化繁荣, 是「文景之治」后又一典范盛世, 为开元盛世奠定基础。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/reign-of-zhenguan-thumb.webp",
-    "image_full": "/cards/reign-of-zhenguan-full.png"
+    "image_full": "/cards/reign-of-zhenguan-card.png"
   },
   {
     "slug": "an-shi-rebellion",
@@ -1115,7 +1115,7 @@
     "description": "安史之乱 (755-763) 是唐代中期由节度使安禄山、史思明发动的长达 8 年的内战, 是唐朝由盛转衰的转折点。安禄山身兼范阳、平卢、河东三镇节度使, 拥兵 15 万, 自范阳起兵南下, 攻陷洛阳、长安, 唐玄宗逃往四川, 太子李亨在灵武即位 (唐肃宗)。最终在郭子仪、李光弼等将领及回纥援兵帮助下平定, 但藩镇割据、宦官专权、均田制崩溃随之而来。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/an-shi-rebellion-thumb.webp",
-    "image_full": "/cards/an-shi-rebellion-full.png"
+    "image_full": "/cards/an-shi-rebellion-card.png"
   },
   {
     "slug": "hundred-days-reform",
@@ -1141,7 +1141,7 @@
     "description": "戊戌变法又称百日维新, 是 1898 年 (农历戊戌年) 由康有为、梁启超等维新派推动、光绪帝支持的一场自上而下的资产阶级改良运动。从 6 月 11 日颁布「明定国是」诏书到 9 月 21 日慈禧太后发动政变共 103 天, 颁布了废科举、办学堂、设京师大学堂、译西书、练新军等数十道改革诏令, 最终被慈禧镇压, 谭嗣同等「六君子」殉难, 标志改良主义道路在近代中国失败。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/hundred-days-reform-thumb.webp",
-    "image_full": "/cards/hundred-days-reform-full.png"
+    "image_full": "/cards/hundred-days-reform-card.png"
   },
   {
     "slug": "xian-incident",
@@ -1167,7 +1167,7 @@
     "description": "西安事变 (1936 年 12 月 12 日) 是东北军将领张学良、西北军将领杨虎城在陕西西安发动的「兵谏」, 扣留了赴西安督促「剿共」的国民政府军事委员会委员长蒋介石, 逼蒋停止内战、联共抗日。中共派周恩来等赴西安参与斡旋, 事变得以和平解决, 标志着十年内战基本结束, 抗日民族统一战线初步形成, 是扭转近代中国国运的重大转折点。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/xian-incident-thumb.webp",
-    "image_full": "/cards/xian-incident-full.png"
+    "image_full": "/cards/xian-incident-card.png"
   },
   {
     "slug": "agate",
@@ -1193,7 +1193,7 @@
     "description": "",
     "createdAt": "2026-06-11",
     "image_thumb": "/cards/agate-thumb.webp",
-    "image_full": "/cards/agate-full.png"
+    "image_full": "/cards/agate-card.png"
   },
   {
     "slug": "jade-bi",
@@ -1219,7 +1219,7 @@
     "description": "玉璧是中国古代重要的礼器之一, 由新石器时代至汉代均有制作, 是「六器」(璧、琮、圭、璋、琥、璜) 之首。璧为扁圆形、中有圆孔, 因「以苍璧礼天」而成为祭天礼器, 历代帝王多以璧为瑞信, 诸侯朝聘也以璧为礼物。最著名的战国时期「和氏璧」据考证即为玉璧, 后演绎出「价值连城」「完璧归赵」等成语, 是中国玉文化的重要符号。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/jade-bi-thumb.webp",
-    "image_full": "/cards/jade-bi-full.png"
+    "image_full": "/cards/jade-bi-card.png"
   },
   {
     "slug": "lacquerware",
@@ -1245,7 +1245,7 @@
     "description": "漆器是以天然漆 (生漆, 取自漆树) 髹涂于木、竹、皮、夹纻胎体表面, 经反复打磨、推光而成的器物, 中国是世界上最早使用漆的国家, 跨湖桥文化 (约 8000 年前) 出土的漆弓是已知最早的漆器。漆器在战国、汉代、唐代达到艺术高峰, 其纹饰技法包括描金、贴金、螺钿、雕填、雕漆等。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/lacquerware-thumb.webp",
-    "image_full": "/cards/lacquerware-full.png"
+    "image_full": "/cards/lacquerware-card.png"
   },
   {
     "slug": "blue-white-porcelain",
@@ -1271,7 +1271,7 @@
     "description": "青花瓷是用含钴的矿物颜料在白瓷胎上绘画, 再覆透明釉, 经 1300℃ 高温一次烧成的釉下彩瓷器。它成熟于元代景德镇窑, 盛行于明清, 是中国陶瓷最具代表性的品种之一, 14 世纪起通过海上丝绸之路远销西亚、欧洲, 成为东西方文化交流的重要载体。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/blue-white-porcelain-thumb.webp",
-    "image_full": "/cards/blue-white-porcelain-full.png"
+    "image_full": "/cards/blue-white-porcelain-card.png"
   },
   {
     "slug": "abacus",
@@ -1297,7 +1297,7 @@
     "description": "算盘是中国传统的计算工具, 由矩形木框、横梁与排列的算珠组成, 上档二珠、下档五珠 (也有上一下四、上三下五等形制), 起源可追溯至东汉徐岳《数术记遗》记载的「珠算」, 成熟于明代, 普及于明清商业社会。它通过拨动算珠完成加减乘除、开方等运算, 16 世纪后传至日本、朝鲜、东南亚, 是中国古代商业繁荣的重要技术支撑, 2013 年珠算正式列入联合国教科文组织人类非物质文化遗产代表作名录。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/abacus-thumb.webp",
-    "image_full": "/cards/abacus-full.png"
+    "image_full": "/cards/abacus-card.png"
   },
   {
     "slug": "5g",
@@ -1323,7 +1323,7 @@
     "description": "5G 是第五代蜂窝移动通信技术, 2019 年正式商用, 峰值速率可达 10 Gbps, 理论时延低至 1 毫秒, 连接密度 100 万设备/平方公里, 是 4G 速率的 10-100 倍。它使用 sub-6 GHz 与毫米波 (24-52 GHz) 双频段, 大规模 MIMO (多入多出)、波束赋形、网络切片是关键技术。5G 不仅是「更快的 4G」, 更是支撑物联网 (IoT)、自动驾驶、远程医疗、智能工厂、工业 4.0 的新一代基础设施, 全球 5G 用户数已超 18 亿。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/5g-thumb.webp",
-    "image_full": "/cards/5g-full.png"
+    "image_full": "/cards/5g-card.png"
   },
   {
     "slug": "artificial-intelligence",
@@ -1349,7 +1349,7 @@
     "description": "人工智能 (Artificial Intelligence, AI) 是研究如何使计算机具有类似人类智能的学科, 1956 年由麦卡锡 (John McCarthy) 在达特茅斯会议正式提出。它涵盖机器学习、深度学习、自然语言处理、计算机视觉、专家系统、机器人等子领域, 核心是让机器能从数据中学习规律并做出决策。2012 年 AlexNet 在 ImageNet 比赛夺冠开启深度学习时代, 2017 年 Transformer 架构催生了 BERT、GPT 系列大模型, 2022 年 ChatGPT 引发生成式 AI 浪潮, AI 正从判别式走向通用人工智能 (AGI) 方向。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/artificial-intelligence-thumb.webp",
-    "image_full": "/cards/artificial-intelligence-full.png"
+    "image_full": "/cards/artificial-intelligence-card.png"
   },
   {
     "slug": "quantum-computing",
@@ -1375,7 +1375,7 @@
     "description": "量子计算是利用量子力学叠加 (superposition) 与纠缠 (entanglement) 原理进行信息处理的新型计算范式, 基本单元是量子比特 (qubit), 它可同时表示 0 和 1 的叠加态, N 个量子比特可同时表示 2^N 个状态, 理论上具有指数级并行计算能力。代表性算法有 Shor 算法 (大数分解, 威胁 RSA 加密)、Grover 算法 (搜索加速)。当前主流物理实现有超导电路 (IBM、Google)、离子阱 (IonQ)、光量子 (中国九章) 等多条技术路线, 2023 年中国「九章三号」操纵 255 光子刷新世界纪录。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/quantum-computing-thumb.webp",
-    "image_full": "/cards/quantum-computing-full.png"
+    "image_full": "/cards/quantum-computing-card.png"
   },
   {
     "slug": "blockchain",
@@ -1401,7 +1401,7 @@
     "description": "区块链是分布式数据存储、点对点传输、共识机制、加密算法等计算机技术的新型应用模式, 本质上是一个去中心化的共享账本, 数据按时间顺序以「区块」形式链式追加, 每个区块包含前一区块的哈希值, 不可篡改。比特币 (2008 年中本聪) 是其第一个成功应用, 以太坊 (2015) 引入智能合约拓展至更广泛的可编程领域。它被应用于金融、供应链、政务、版权等需要多方信任的场景, 也面临能耗、扩展性、监管等挑战。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/blockchain-thumb.webp",
-    "image_full": "/cards/blockchain-full.png"
+    "image_full": "/cards/blockchain-card.png"
   },
   {
     "slug": "space-station",
@@ -1427,7 +1427,7 @@
     "description": "空间站是可供人类长期居住和工作的大型近地轨道航天器, 充当太空实验室、前哨基地与中转站。1971 年苏联礼炮一号发射, 标志人类进入空间站时代; 后续有苏联和平号、美国天空实验室、中国天宫等。截至 2024 年在轨的最大空间站是中国空间站 (天宫, 由天和核心舱、问天实验舱、夢天实验舱组成, 2022 年完成 T 字构型) 与国际空间站 (ISS, 1998 年开始组装, 美俄欧日加合作)。它们承担微重力生物学、物理学、天文学、地球观测等研究。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/space-station-thumb.webp",
-    "image_full": "/cards/space-station-full.png"
+    "image_full": "/cards/space-station-card.png"
   },
   {
     "slug": "forbidden-city",
@@ -1453,7 +1453,7 @@
     "description": "故宫全称「故宫博物院」, 旧称紫禁城, 是明清两朝 (1420-1912) 皇家宫殿, 位于北京中轴线中心, 占地 72 万平方米, 建筑面积约 15 万平方米, 有房屋 8707 间, 是世界上现存规模最大、保存最完整的木结构古建筑群。它由永乐帝朱棣下令修建 (1406-1420), 前后 24 位皇帝在此居住, 1925 年改辟为博物院, 馆藏文物逾 180 万件。故宫于 1987 年被列入联合国教科文组织世界文化遗产名录, 是中国最重要的国家文化名片。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/forbidden-city-thumb.webp",
-    "image_full": "/cards/forbidden-city-full.png"
+    "image_full": "/cards/forbidden-city-card.png"
   },
   {
     "slug": "mogao-caves",
@@ -1479,7 +1479,7 @@
     "description": "敦煌莫高窟又称千佛洞, 位于甘肃敦煌东南 25 公里的鸣沙山东麓断崖上, 始建于前秦建元二年 (366 年), 至元代停止开凿, 历经十六国、北魏、隋、唐、五代、宋、西夏、元等朝代, 连续营造 1000 多年。现有洞窟 735 个, 壁画 4.5 万平方米, 彩塑 2415 尊, 是世界现存规模最大、内容最丰富的佛教艺术圣地。1900 年发现的藏经洞 (17 窟) 出土文献 5 万余件, 1987 年列入世界文化遗产名录。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/mogao-caves-thumb.webp",
-    "image_full": "/cards/mogao-caves-full.png"
+    "image_full": "/cards/mogao-caves-card.png"
   },
   {
     "slug": "suzhou-gardens",
@@ -1505,7 +1505,7 @@
     "description": "苏州古典园林是中国江南私家园林的杰出代表, 起源于春秋吴王苑囿, 兴盛于明清, 至今保存较好的有拙政园、留园、网师园、环秀山庄、沧浪亭、狮子林、耦园、艺圃、退思园等 9 处 (1997 年起分批列入世界文化遗产)。它们以「咫尺之内再造乾坤」的写意山水手法, 在数百平方米内营造出峰、峦、谷、涧、湖、溪、瀑等自然景观, 体现「虽由人作, 宛自天开」的造园理念, 是中国古典哲学、美学与居住文化的极致结合。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/suzhou-gardens-thumb.webp",
-    "image_full": "/cards/suzhou-gardens-full.png"
+    "image_full": "/cards/suzhou-gardens-card.png"
   },
   {
     "slug": "three-body",
@@ -1531,7 +1531,7 @@
     "description": "《三体》是刘慈欣创作的长篇科幻小说, 2006 年起在《科幻世界》杂志连载, 2008 年出版单行本, 由「地球往事」「黑暗森林」「死神永生」三部组成。它讲述了地球人类文明与三体文明 (距地球 4.2 光年的半人马座 α) 在文化、哲学、生存层面的碰撞, 提出了「黑暗森林法则」「技术爆炸」「降维打击」等核心概念。2015 年获第 73 届雨果奖最佳长篇小说奖, 是亚洲首次获此殊荣, 2023 年 Netflix 版改编剧集引发全球关注, 推动了中国科幻走向世界。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/three-body-thumb.webp",
-    "image_full": "/cards/three-body-full.png"
+    "image_full": "/cards/three-body-card.png"
   },
   {
     "slug": "sanxingdui",
@@ -1557,6 +1557,6 @@
     "description": "三星堆遗址位于四川广汉三星堆镇鸭子河畔, 距成都约 40 公里, 是古蜀国 (今四川盆地西部) 最重要的考古发现, 遗址面积 12 平方公里, 文化遗存分四期, 年代约公元前 2800 年至公元前 1100 年。1986 年两大祭祀坑出土青铜神树、青铜大立人、青铜纵目面具、黄金面罩、太阳形器、玉璋、玉琮等 1700 余件文物, 2020-2022 年新发现 6 座祭祀坑, 出土象牙、青铜器、金器、丝绸等更多文物, 三星堆是中华文明多元一体起源说的重要实证, 现建有三星堆博物馆。",
     "createdAt": "2026-06-13",
     "image_thumb": "/cards/sanxingdui-thumb.webp",
-    "image_full": "/cards/sanxingdui-full.png"
+    "image_full": "/cards/sanxingdui-card.png"
   }
 ]

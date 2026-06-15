@@ -113,14 +113,22 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               className="object-cover"
             />
           </div>
-          {card.image_full && card.image_full !== card.image && (
+          {/* Download/view-large link. Always shown now (was previously
+              gated on image_full !== image, but after the -full.png
+              deletion the two point to the same 600w file). Label
+              is honest about the dimensions: 600w is the current
+              source-of-truth tier. The link opens the PNG in a new
+              tab where the user can right-click → save, or use the
+              browser's "download" affordance. */}
+          {card.image_full && (
             <a
               href={card.image_full}
               target="_blank"
               rel="noopener"
+              download={`${card.slug}.png`}
               className="mt-2 block text-center text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
             >
-              查看原图 (1024×1792) ↗
+              查看大图 (600×1067) ↗
             </a>
           )}
         </div>

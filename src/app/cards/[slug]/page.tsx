@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
@@ -239,6 +239,22 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             imageFilename={card.slug}
             title={card.title}
           />
+
+          {/* 勘误 — single small link, not a CTA. The user can report
+              a factual error via email (mailto, opens native mail
+              client). We use a mailto with a prefilled subject and
+              body, no form, no DB, no auth. Author address is read
+              from env so the project owner can change it without
+              touching the code (set SITE_AUTHOR_EMAIL in .env). */}
+          <a
+            href={`mailto:${process.env.NEXT_PUBLIC_SITE_AUTHOR_EMAIL ?? "atlas-kit@example.com"}?subject=${encodeURIComponent(`[勘误] ${card.title} (${card.slug})`)}&body=${encodeURIComponent(
+              `你好, 我发现「${card.title}」有以下问题:\n\n[请描述错误, 如「清明节是 24 节气第 5 个, 但 2006 年才入选非遗」等]\n\n— 来源链接: ${process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlas-kit.vercel.app"}/cards/${card.slug}`,
+            )}`}
+            className="inline-flex items-center gap-1 text-[11px] text-muted-foreground/80 hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
+          >
+            <AlertCircle className="h-3 w-3" aria-hidden="true" />
+            发现错误? 告诉我们
+          </a>
         </aside>
       </div>
 
@@ -410,6 +426,44 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {/* 修订记录 — collapsed by default, expand to see changelog.
+          Renders nothing if no revisions exist (60/60 currently
+          have 0 entries — the first one is the initial creation,
+          which the user / wizard will log manually going forward
+          via scripts/log-revision.mjs). */}
+      {card.revisions && card.revisions.length > 0 && (
+        <section className="mt-16">
+          <details className="rounded-lg border border-border bg-card p-4 group">
+            <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm">
+              <History className="h-4 w-4" aria-hidden="true" />
+              修订记录
+              <span className="text-xs tabular-nums text-muted-foreground/70">({card.revisions.length} 条)</span>
+              <span className="ml-auto text-xs text-gold-deep group-open:rotate-180 transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <ol className="mt-4 space-y-2 list-none p-0 text-sm">
+              {card.revisions
+                .slice()
+                .reverse() // newest first
+                .map((r, i) => (
+                  <li key={i} className="flex gap-3 text-muted-foreground">
+                    <span className="font-mono text-xs tabular-nums shrink-0 text-foreground/70">
+                      {r.date.slice(0, 10)}
+                    </span>
+                    <span className="flex-1">
+                      <span className="text-foreground/90">{r.summary}</span>
+                      {r.fields && r.fields.length > 0 && (
+                        <span className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground/70 ml-2">
+                          [{r.fields.join(", ")}]
+                        </span>
+                      )}
+                    </span>
+                  </li>
+                ))}
+            </ol>
+          </details>
         </section>
       )}
 

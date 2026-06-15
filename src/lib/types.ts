@@ -32,6 +32,16 @@ export interface HistoryNode {
   body: string;
 }
 
+/** A revision entry on a card — tracks content edits over time. */
+export interface RevisionEntry {
+  /** ISO date string when the revision was made */
+  date: string;
+  /** One-line human description of what changed */
+  summary: string;
+  /** Which card fields were touched (description / tags / history / etc.) */
+  fields: string[];
+}
+
 export interface Card {
   slug: string;
   title: string;
@@ -56,6 +66,8 @@ export interface Card {
   history?: HistoryNode[];
   /** 地理坐标 (用于 /map 视图). 仅 12 张地理图鉴有. */
   coords?: { lat: number; lng: number };
+  /** 修订记录. scripts/log-revision.mjs 维护. */
+  revisions?: RevisionEntry[];
   /** 参考来源 / 引用. 未来添加 (issue 6/6). */
   sources?: Array<{ title: string; url?: string; type?: string }>;
 }

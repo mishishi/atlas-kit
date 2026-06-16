@@ -81,10 +81,14 @@ const mythFact = {
 
 const cards = JSON.parse(readFileSync(cardsPath, "utf-8"));
 let updated = 0;
+let skipped = 0;
+const seenSlugs = new Set();
 for (const c of cards) {
   const pair = mythFact[c.slug];
   if (!pair) continue;
+  seenSlugs.add(c.slug);
   if (c.myth || c.fact) {
+    skipped++;
     console.log(`SKIP ${c.slug} (already has myth/fact)`);
     continue;
   }
@@ -94,4 +98,18 @@ for (const c of cards) {
   console.log(`+ ${c.slug}: myth/fact added`);
 }
 writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf-8");
-console.log(`\nDone. ${updated} card(s) updated.`);
+
+// Drift detection: any hard-coded slug that no longer exists in
+// cards.json. Round 23 fix — same pattern as handwrite-history.mjs.
+// Catches renames / deletions early instead of silently leaving the
+// hard-coded pair orphaned in source.
+const missingFromCards = Object.keys(mythFact).filter(
+  (slug) => !seenSlugs.has(slug),
+);
+if (missingFromCards.length > 0) {
+  console.warn(
+    `⚠️  ${missingFromCards.length} hard-coded myth/fact slug(s) not found in cards.json: ${missingFromCards.join(", ")}`,
+  );
+}
+
+console.log(`\nDone. ${updated} added, ${skipped} skipped.`);

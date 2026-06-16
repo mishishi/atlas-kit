@@ -129,7 +129,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/mishishi/atlas-kit"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex min-h-[44px] items-center gap-1.5 rounded-sm hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -141,7 +141,12 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href="mailto:hello@atlas-kit.example"
+                  // Round 20 fix: read env so the production footer uses
+                  // the same email as the per-card errata link. Previously
+                  // hard-coded `hello@atlas-kit.example` (a `.example`
+                  // reserved TLD that never delivers) and didn't match the
+                  // detail page's `NEXT_PUBLIC_SITE_AUTHOR_EMAIL` lookup.
+                  href={`mailto:${process.env.NEXT_PUBLIC_SITE_AUTHOR_EMAIL ?? "atlas-kit@example.com"}`}
                   className="inline-flex min-h-[44px] items-center gap-1.5 rounded-sm hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
                   <Mail className="h-3 w-3" aria-hidden="true" />
@@ -154,7 +159,7 @@ export function SiteFooter() {
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
           <p>© 2026 图鉴社 · Atlas Kit. 保留所有权利。</p>
-          <p className="font-serif italic">知识整理 · 模块信息 · 图鉴式展示</p>
+          <p className="font-serif italic">知识整理 · 信息归档 · 图鉴式展示</p>
         </div>
       </div>
     </footer>

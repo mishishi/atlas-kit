@@ -90,9 +90,15 @@ export function SiteHeader() {
               aria-current={active ? "page" : undefined}
               aria-label={item.accent ? `${item.label} (AI 生成)` : item.label}
               className={cn(
+                // Round 20 fix: added `bg-muted` to the active branch so
+                // mobile active state matches desktop (was text-only,
+                // which made it visually weak against the 5 inactive
+                // siblings in the row).
                 "flex flex-col items-center gap-1 rounded-md min-h-[44px] px-3 py-2 text-xs transition-colors",
                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                active ? "text-foreground font-medium" : "text-muted-foreground",
+                active
+                  ? "bg-muted text-foreground font-medium"
+                  : "text-muted-foreground hover:bg-muted/50",
               )}
             >
               <Icon className="h-5 w-5" aria-hidden="true" />

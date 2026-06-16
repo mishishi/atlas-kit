@@ -83,7 +83,7 @@ export default async function Image() {
                 fontStyle: "italic",
               }}
             >
-              知识整理 · 模块信息
+              知识整理 · 信息归档
             </div>
             <div
               style={{

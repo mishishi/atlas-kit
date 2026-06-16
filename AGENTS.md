@@ -254,7 +254,56 @@ AI drafting cost: **~$0.45 total** via `mmx text chat` (MiniMax M2.7).
 2. Hero image — click → lightbox with 1024w zoom, no browser scrollbar
 3. Scroll down — find 历史沿革, 同类推荐, 同系列, 你可能也会喜欢,
    提到了「X」, 修订记录 (折叠), 相关搜索, 参考来源, 延伸阅读
-4. Try `/map`, `/timeline`, `/browse`, `/all`, `/random`
+4. Try `/map` (12 gold pins, client-side search, 0-coord fallback),
+   `/timeline`, `/cards` (per-kind preview by default), `/all` (3
+   distinct layout families), `/random`
 5. Edit a card's description in data/cards.json, then
    `node scripts/log-revision.mjs <slug> "summary"` to record
    the change
+
+## Round 8: design audit (2026-06-16)
+
+`docs/design-audit-2026-06-16.md` is the full taste-skill +
+ui-ux-pro-max review (5 critical + 8 important + 7 nice-to-have
+findings, 4.0/5 overall). All 20 findings fixed in a single
+commit `3bb29b6` (19 files, +989/-427 lines).
+
+## Round 9: myth/fact (2026-06-16)
+
+10 cards now have a hand-written `myth` + `fact` micro-block
+sitting next to the 轶事 block in the detail page info panel.
+M2.7 (mmx text chat) couldn't reliably return a structured
+myth/fact pair in Round 7, so we hand-wrote these. See
+`scripts/add-myth-fact.mjs` for the data + source notes.
+
+The 10 cards: qingming, longjing-tea, forbidden-city, sanxingdui,
+xian, dragon-boat, abacus, suzhou-gardens, labrador-retriever,
+qiantang-tide.
+
+## Current route inventory (post-Round 8 + 9)
+
+- 14 page-level routes: `/`, `/series`, `/series/[slug]` (5),
+  `/cards`, `/cards/[slug]` (60), `/create`, `/timeline`, `/map`,
+  `/all`, `/random`, `/search`, `/about`, `/not-found`
+- 1 print namespace: `/print/cards/[slug]` (60 SSG routes)
+- 1 API: `/api/generate`
+- 1 deprecated: `/browse` → 308 redirect to `/cards`
+- 1 edge: `/opengraph-image`
+
+## Card schema (post-Round 9)
+
+```ts
+interface Card {
+  slug, title, kind, series, seriesNo, palette[3],
+  image, image_thumb?, image_full?, score,
+  tags[], tagline, subtitle, description, createdAt,
+  history?: HistoryNode[],        // 60/60
+  coords?: { lat, lng },          // 12/60
+  revisions?: RevisionEntry[],    // 3/60 (samples)
+  quote?: string,                 // 60/60
+  trivia?: string,                // 60/60
+  myth?: string,                  // 10/60 (hand-written)
+  fact?: string,                  // 10/60 (hand-written)
+  sources?: Array<{title, url, type}>,  // 60/60
+}
+```

@@ -287,6 +287,23 @@
     background: hsl(var(--background));
     border: 1px solid hsl(var(--border));
   }
+  /* Popup inner text colors — these come from buildPopupNode in
+     map-view.tsx. Round 18 fix: previously these were hard-coded hex
+     (#2e2a24 / #6f6a5e / #87603f) which crashed on dark mode because
+     the popup wrapper bg flips with theme but the inner text didn't.
+     Now inherits from --foreground / --muted-foreground / --gold-deep. */
+  .atlas-popup .atlas-popup-thumb {
+    background: hsl(var(--muted));
+  }
+  .atlas-popup .atlas-popup-title {
+    color: hsl(var(--foreground));
+  }
+  .atlas-popup .atlas-popup-sub {
+    color: hsl(var(--muted-foreground));
+  }
+  .atlas-popup .atlas-popup-cta {
+    color: hsl(var(--gold-deep));
+  }
   /* Hide the leaflet attribution flag's default right offset so
      the small text doesn't visually compete with our site footer. */
   .leaflet-control-attribution {

@@ -103,7 +103,15 @@ function loadScript(src: string, integrity: string): Promise<void> {
 
 /** Build the popup DOM for a marker. Returns a real HTMLElement so
  *  we can pass it to Leaflet's `bindPopup(node, opts)` and never
- *  touch innerHTML. All text content uses textContent (auto-escaped). */
+ *  touch innerHTML. All text content uses textContent (auto-escaped).
+ *
+ *  Round 18 fix: text colors were hard-coded hex (#2e2a24 / #6f6a5e /
+ *  #87603f). The popup wrapper itself uses hsl(var(--background)) so
+ *  it flips on theme change, but the inner text stayed dark, which
+ *  crashed contrast on dark mode (wrapper became deep charcoal but
+ *  text stayed near-black). Now all text uses `color: inherit` and
+ *  the theme-aware color comes from globals.css `.atlas-popup` rules.
+ *  Class `atlas-popup-content` on the text wrapper is the hook. */
 function buildPopupNode(m: MapMarker): HTMLDivElement {
   const root = document.createElement("div");
   root.style.cssText = "display: flex; gap: 10px; align-items: center; text-decoration: none; color: inherit;";
@@ -114,7 +122,8 @@ function buildPopupNode(m: MapMarker): HTMLDivElement {
 
   // Thumbnail
   const thumb = document.createElement("div");
-  thumb.style.cssText = `position: relative; width: 48px; height: 64px; flex-shrink: 0; border-radius: 4px; overflow: hidden; background: ${escapeAttr(m.image) ? "#f5f0e6" : "transparent"};`;
+  thumb.className = "atlas-popup-thumb";
+  thumb.style.cssText = "position: relative; width: 48px; height: 64px; flex-shrink: 0; border-radius: 4px; overflow: hidden;";
   const img = document.createElement("img");
   img.src = m.image;
   img.alt = m.title; // alt is attribute, NOT innerHTML — safe
@@ -123,15 +132,19 @@ function buildPopupNode(m: MapMarker): HTMLDivElement {
 
   // Text
   const textWrap = document.createElement("div");
+  textWrap.className = "atlas-popup-text";
   textWrap.style.cssText = "min-width: 0;";
   const title = document.createElement("p");
-  title.style.cssText = "font-family: serif; font-weight: 600; font-size: 14px; line-height: 1.2; color: #2e2a24; margin: 0;";
+  title.className = "atlas-popup-title";
+  title.style.cssText = "font-family: serif; font-weight: 600; font-size: 14px; line-height: 1.2; margin: 0;";
   title.textContent = m.title; // textContent auto-escapes
   const sub = document.createElement("p");
-  sub.style.cssText = "text-align: left; font-size: 11px; color: #6f6a5e; margin-top: 2px; margin-bottom: 0;";
+  sub.className = "atlas-popup-sub";
+  sub.style.cssText = "text-align: left; font-size: 11px; margin-top: 2px; margin-bottom: 0;";
   sub.textContent = m.subtitle || "";
   const cta = document.createElement("p");
-  cta.style.cssText = "text-align: left; font-size: 11px; color: #87603f; margin-top: 4px; margin-bottom: 0;";
+  cta.className = "atlas-popup-cta";
+  cta.style.cssText = "text-align: left; font-size: 11px; margin-top: 4px; margin-bottom: 0;";
   cta.textContent = "→ 查看图鉴";
 
   textWrap.appendChild(title);
@@ -141,12 +154,6 @@ function buildPopupNode(m: MapMarker): HTMLDivElement {
   link.appendChild(textWrap);
   root.appendChild(link);
   return root;
-}
-
-function escapeAttr(_s: string): boolean {
-  // Reserved for future filtering. Currently all card images live
-  // on /public/cards/*.webp and are vetted. Kept for symmetry.
-  return true;
 }
 
 export function MapView({ markers }: MapViewProps) {
@@ -163,7 +170,6 @@ export function MapView({ markers }: MapViewProps) {
 
   // Pin -> Leaflet marker handle, so we can show/hide on search.
   const markerHandles = useRef<Map<string, any>>(new Map());
-  const filteredIdsRef = useRef<Set<string> | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -266,17 +272,14 @@ export function MapView({ markers }: MapViewProps) {
           m.addTo(mapRef.current);
         }
       }
-      filteredIdsRef.current = null;
       return;
     }
-    const matched = new Set<string>();
     for (const [slug, m] of markerHandles.current.entries()) {
       const card = markersRef.current.find((x) => x.slug === slug);
       if (!card) continue;
       const hay = `${card.title} ${card.subtitle} ${card.kind}`.toLowerCase();
       const hit = hay.includes(q);
       if (hit) {
-        matched.add(slug);
         if (m.getElement && m.getElement().style.display === "none") {
           m.addTo(mapRef.current);
         }
@@ -284,7 +287,6 @@ export function MapView({ markers }: MapViewProps) {
         if (mapRef.current && m.getElement) m.getElement().style.display = "none";
       }
     }
-    filteredIdsRef.current = matched;
   }, [query, status]);
 
   // 0-card state

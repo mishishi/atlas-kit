@@ -5,6 +5,88 @@
 > side-project cadence. Anti-RPG positioning — no rarity/levels/SSR,
 > only "this card is referenced by these other cards."
 
+## Hard Rules · 不可违反
+
+These rules are **non-negotiable**. Any AI assistant (including me)
+working on this repo MUST follow them. They exist because the user
+has editorial standards that, once violated, can't be undone by
+saying sorry.
+
+### H1. Prompt templates are read verbatim, never rewritten
+
+**The rule** (also stated in `prompt-template/README.md`):
+
+> 生成图片时必须直接使用归档 prompt 文件的完整原文。
+> 不要压缩、摘要、删减、改写、重新组织或临时追加说明。
+> 如果需要改 prompt, 先重新生成并覆盖归档文件, 再用新文件生成图片。
+
+**What this means in practice**:
+
+| Action | Allowed? |
+|---|---|
+| `node scripts/build-prompt.mjs <topic> <kind>` and send stdout to the model | ✅ |
+| Reading `prompt-template/main-template.md` + `categories/<kind>.md` verbatim and concatenating | ✅ |
+| Editing `prompt-template/main-template.md` or any `categories/*.md` to a new (better) version | ✅ (if you also commit the change) |
+| Rewriting the prompt text in code (`buildPrompt()`, `composePrompt()`, etc.) to "improve" it | ❌ |
+| Adding a prefix/suffix at call site (e.g. "请用 9:16 比例:" + the template) | ❌ |
+| Stripping "redundant" sections (e.g. dropping the 防翻车 block) | ❌ |
+| Compressing multiple bullet points into one sentence to save tokens | ❌ |
+| Generating the prompt inline in a chat reply because it's "easier" than reading the file | ❌ |
+
+**Why**: the user spent hours hand-curating these templates for
+specific aesthetic output. A paraphrase might look equivalent but
+produces visibly different images. The whole point of the
+`prompt-template/` archive is that it is the **single source of
+truth** — both the wizard (`/create` → `/api/generate`) and the
+CLI user (`node scripts/build-prompt.mjs 三星堆 history`) read
+from the same file, byte for byte.
+
+**How to change a prompt**:
+
+1. Edit `prompt-template/main-template.md` and/or
+   `prompt-template/categories/<kind>.md` directly. Be deliberate;
+   even a rephrased sentence can shift the image output.
+2. Save the file. The change is now the new source of truth.
+3. (Optional but recommended) Run the wizard or CLI on a sample
+   topic and inspect the image to confirm the change has the
+   intended effect.
+4. Commit. The next wizard invocation picks up the new template
+   automatically — no code change, no rebuild.
+
+**If the script's slot-placeholder detection fires**: the template
+format drifted from what `scripts/build-prompt.mjs` expects
+(e.g. someone added a new `【slot】` placeholder). The script
+**must bail out**, not silently send a half-filled prompt to the
+model. Fix the template and/or the script — never disable the
+guard.
+
+See [§ Round 24](#round-24-build-promptmjs-as-single-source-of-truth-2026-06-16)
+for the full rationale, the v1/v2 versioning, and the wizard
+wiring details.
+
+### H2. Anti-RPG positioning (already in TL;DR, restated for emphasis)
+
+- Never use: 稀有 / 星级 / 史诗 / 传奇 / SSR / 战力 / HP / 攻击力 /
+  防御力 / 雷达图 / 五维属性图
+- Recommended: 高/中/低 labels, comparison bars, geographic
+  distribution, historical timeline, factual quotes.
+- Visual anti-pattern: "快速评分卡" panels, attribute grids, level
+  badges. See `prompt-template/categories/*.md` "防翻车规则"
+  sections for category-specific enforcement.
+
+### H3. Card data is the canonical store of content
+
+- All text (description / tagline / subtitle / quote / trivia /
+  history / sources / myth / fact) lives in `data/cards.json`. Do
+  NOT duplicate this text in components — read from `cards.json`
+  via `src/lib/data.ts` helpers.
+- Image paths (`image`, `image_thumb`, `image_full`) also live in
+  `cards.json`. Components read the path; they do not hard-code
+  filenames.
+- Adding a new card field: update the `Card` interface in
+  `src/lib/types.ts` FIRST, then add data, then update consumers.
+  TypeScript will tell you what breaks.
+
 ## Production deploy checklist (must do before deploy)
 
 - [x] **Rate limit**: `src/lib/rate-limit.ts` has `MAX_REQUESTS = 3`
@@ -600,3 +682,173 @@ interface Card {
   sources?: Array<{title, url, type}>,  // 60/60
 }
 ```
+
+## Round 24: build-prompt.mjs as single source of truth (2026-06-16)
+
+Goal: the wizard (`/create` → `/api/generate`) and the CLI
+(`node scripts/build-prompt.mjs`) must read the **same** prompt
+template. Otherwise the two surfaces drift (one gets edited, the
+other doesn't), and a wizard A/B test against CLI output is
+meaningless.
+
+### What `scripts/build-prompt.mjs` now owns
+
+The script is the single source of truth for prompt assembly.
+It supports two versions via `--version v1|v2` (default `v2`):
+
+- **v1** — inline 243-line hard-coded Chinese prompt, ported
+  verbatim from `src/lib/prompt-templates.ts:buildPrompt()`
+  (Round 24). Used for rollback and A/B comparison.
+- **v2** — reads `prompt-template/main-template.md` +
+  `prompt-template/categories/<kind>.md` verbatim (the curated,
+  file-archived source of truth). Verifies both slot placeholders
+  (`主题：【填写主题】` and the 类型 list) actually got replaced,
+  bails if the template drifts from what the script expects.
+
+### Wizard wiring
+
+`src/app/api/generate/route.ts` now shells out to the script via
+`child_process.execFile`. The `PROMPT_VERSION` env var selects
+v1 vs v2:
+
+- unset / `v2` (default) → file-archived templates
+- `v1` → legacy inline template
+
+The wizard passes `--quiet` so the script's stderr summary
+doesn't leak into Next.js logs.
+
+### Why child_process, not a shared lib
+
+I considered putting `composePrompt(topic, kind)` into a shared
+`src/lib/prompt-composer.mjs` and having both the script and
+`route.ts` import it. Rejected: the script needs to be runnable
+standalone (CLI users pipe it to `> prompt.md`), and Next.js's
+bundler would compile any shared lib into the route bundle. With
+`execFile`, the script stays a black box — `route.ts` only sees
+`stdout`, and the script can be edited/replaced independently.
+
+### `prompt-template/` archive
+
+Added `prompt-template/main-template.md` (~8 KB) and
+`prompt-template/categories/<kind>.md` × 11 files
+(city/animal/pet/plant/person/festival/food/historical-event/
+tech-concept/object/natural-phenomenon). Each category file is
+~1.7-2.2 KB and follows a fixed 7-section shape (强调色 /
+固定 8 模块 / 评分维度 / 观察区逻辑 / 可视化条带 /
+一句话锚定 / 防翻车规则). `prompt-template/README.md` is the
+usage rule: send file content verbatim, do not compress /
+summarize / rewrite / restructure.
+
+### `src/lib/prompt-templates.ts` after Round 24
+
+The module still exports `getPaletteColors()` (used by
+`route.ts` for `cards.json` palette writes). The `buildPrompt()`
+function is **kept but @deprecated** — no longer called by the
+wizard. Marked as reference only; if you edit v1, mirror the
+change in `buildPromptV1()` inside `build-prompt.mjs`.
+
+### Verification
+
+- `node scripts/build-prompt.mjs 拉布拉多 pet` (default v2) →
+  3821 bytes, main-template + pet category ✓
+- `node scripts/build-prompt.mjs 拉布拉多 pet --version v1` →
+  4336 bytes, legacy inline ✓
+- `node scripts/build-prompt.mjs 三星堆 history` (alias
+  resolution history → historical-event) → 3859 bytes ✓
+- Bad kind / bad --version → exit 1 with clear error ✓
+- `tsc --noEmit` clean ✓
+- `child_process.execFile` smoke test (v1 + v2) → bytes match
+  CLI direct invocation ✓
+
+### How to A/B test
+
+Set `PROMPT_VERSION=v1` in `.env.local`, run the wizard, save
+the image. Set back to `v2`, run for the same topic, save the
+image. Compare. The two prompts are intentionally different in
+tone and detail — v1 is older and broader; v2 is the curated
+"百科全书 + DK 百科全书 + 国家地理知识页" framing from the
+archived files.
+
+## Round 26: per-card directory layout (2026-06-17)
+
+Goal: one folder per card → delete a card = delete one folder,
+no orphan `-thumb.webp` left behind. New artifacts (e.g.
+`<slug>-prompt.md`) live next to the generated image.
+
+### Old vs new path shape
+
+| | Old (flat) | New (per-card dir) |
+|---|---|---|
+| image | `/cards/labrador-card.png` | `/cards/pet/labrador-retriever/labrador-retriever-card.png` |
+| image_thumb | `/cards/labrador-thumb.webp` | `/cards/pet/labrador-retriever/labrador-retriever-thumb.webp` |
+| image_full | `/cards/labrador-full.webp` | `/cards/pet/labrador-retriever/labrador-retriever-full.webp` |
+| prompt (new) | — | `/cards/pet/labrador-retriever/labrador-retriever-prompt.md` |
+
+`{kind}` = the 12 CardKind short names (pet/animal/.../history/
+tech), aligned with `cards.json`'s `kind` field directly. No
+alias resolution needed.
+
+### Migration script
+
+`scripts/migrate-card-paths.mjs` (idempotent, dry-run by default):
+
+```bash
+node scripts/migrate-card-paths.mjs         # DRY-RUN, prints plan
+node scripts/migrate-card-paths.mjs --apply # actually moves files
+```
+
+The script:
+1. Reads `data/cards.json`, builds the new path for each of 60 ×
+   3 = 180 image fields.
+2. Validates that every old file actually exists on disk (else
+   exits 1 with the missing filenames).
+3. In `--apply` mode: `mkdir` 60 dirs, `rename` 180 files, rewrite
+   `cards.json` with new paths.
+4. Idempotent: re-running on already-migrated cards is a no-op.
+
+### Redirects (preserve old URLs)
+
+`next.config.mjs` `redirects()` builds 180 × 301 entries at
+config-load time by reading `cards.json` (slug → kind → old path →
+new path). Vercel serves these at the edge; no runtime cost. The
+mapping is rebuilt on every `next build`, so adding a new card
+or changing a slug auto-picks-up the new redirect.
+
+### Wizard writes to new layout
+
+`src/app/api/generate/route.ts` now:
+
+1. `mkdir -p public/cards/<kind>/<slug>/` before writing the card
+   image.
+2. Writes `/cards/<kind>/<slug>/<slug>-card.png` (the actual CDN
+   image).
+3. Writes `/cards/<kind>/<slug>/<slug>-prompt.md` next to it —
+   the verbatim prompt that was sent to the model (H1 rule: this
+   file is exactly `prompt-template/main-template.md` +
+   `categories/<kind>.md` with slots filled, no paraphrase).
+4. Updates `cards.json` `image` field to the new path.
+
+`image_thumb` and `image_full` are intentionally NOT auto-written
+by the wizard — those 3-tier conversions are still done by the
+separate `reencode-full-webp.mjs` + a follow-up sharp resize for
+thumb (see `scripts-reference.md` §5).
+
+### What did NOT change
+
+- `src/lib/data.ts` — reads `cards.json` paths, no hard-coded
+  paths. Works with the new layout unchanged.
+- All React components (`lightbox.tsx`, `card-preview.tsx`,
+  `map-view.tsx`, etc.) — read `c.image` / `c.image_thumb` /
+  `c.image_full` from cards.json, no hard-coded paths.
+- `next/image` sizing logic — width/height are tier-based, not
+  path-based.
+
+### Path compatibility note for `scripts/`
+
+- `reencode-full-webp.mjs` — already idempotent, still works
+  (path extraction is `/cards/`-prefix-stripped, doesn't care
+  about nesting depth). Header comment updated to note the
+  new layout.
+- `resize-cards.mjs` — DEPRECATED, header comment updated.
+- `restore-image-full.mjs` / `rewrite-image-full.mjs` — LEGACY,
+  do not run.

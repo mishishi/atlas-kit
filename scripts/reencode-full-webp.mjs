@@ -19,6 +19,15 @@
 // Updates data/cards.json image_full from *.png → *.webp so the
 // lightbox pulls the new path. PNGs are deleted to keep the bundle
 // under cap.
+//
+// Round 26 (2026-06-17) note: after the per-card directory migration
+// (`public/cards/<kind>/<slug>/<slug>-{card,thumb,full}.{png,webp}`),
+// the path-extraction logic below still works because it operates on
+// `c.image_full` (which is `/cards/...` regardless of nesting depth).
+// The idempotency guard above correctly detects re-runs via
+// `image_full?.endsWith("-full.webp")`. If you ever need to
+// re-encode (quality change, format change), restore the .png
+// source files from git history first.
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";

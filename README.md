@@ -143,6 +143,23 @@ vercel --prod
 - `NEXT_PUBLIC_SITE_URL` — 同 `SITE_URL`,客户端用
 - `NEXT_PUBLIC_SITE_AUTHOR_EMAIL` — 「发现错误?告诉我们」邮件链接
 
+## 文档导航
+
+`docs/` 目录下的所有设计稿、部署说明、运维文档都在这里:
+
+| 文档 | 用途 |
+|---|---|
+| [`docs/vercel-deploy.md`](./docs/vercel-deploy.md) | Vercel 部署 5 步走(含 Cloudflare Tunnel 思路) |
+| [`docs/design-audit-2026-06-16.md`](./docs/design-audit-2026-06-16.md) | Round 8 design taste-skill + ui-ux-pro-max 全站审查(20 项发现 + 评分) |
+| [`docs/design-review-2026-06-14.md`](./docs/design-review-2026-06-14.md) | Round 8 之前的初版审查(touch target / em-dash / hero 节律) |
+| [`docs/scripts-reference.md`](./docs/scripts-reference.md) | **16 个 `scripts/*.mjs` 的完整使用文档**(上手顺序 / 幂等性 / 参数 / troubleshooting) |
+| [`docs/pr-encyclopedia-roadmap.md`](./docs/pr-encyclopedia-roadmap.md) | 6 项百科化升级 PR 描述(知识图谱 / 历史沿革 / 地图 / 修订记录 / 随机浏览 / 参考来源) |
+| [`docs/blog-2026-06-intro.md`](./docs/blog-2026-06-intro.md) | 项目介绍博文 v4(真相版, 约 1900 字) |
+| [`docs/blog-2026-06-intro.html`](./docs/blog-2026-06-intro.html) | 博文 HTML 渲染版(品牌样式 + 真实卡片缩略图) |
+| [`docs/blog-2026-06-intro.v1.md`](./docs/blog-2026-06-intro.v1.md) | 博文 v1(草稿,已废弃) |
+
+想改脚本流程 / 跑 AI 草稿 / 压图:从 [`docs/scripts-reference.md`](./docs/scripts-reference.md) 开始。
+
 ## 贡献
 
 个人 side project,**当前不接外部投稿**。但欢迎:

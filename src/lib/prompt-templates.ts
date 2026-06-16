@@ -1,6 +1,24 @@
 import type { CardKind } from "./types";
 import { THEME_TYPE_MAP } from "./theme-types";
 
+/**
+ * Prompt templates live in `scripts/build-prompt.mjs` since
+ * Round 24 (2026-06-16). The wizard (`src/app/api/generate/route.ts`)
+ * shells out to that script — see PROMPT_VERSION env var in route.ts
+ * for the v1 (legacy inline) / v2 (file-archived) switch.
+ *
+ * This module now only owns `getPaletteColors()`. The `buildPrompt()`
+ * function below is KEPT for reference / direct imports but is no
+ * longer called by the wizard. If you need the v1 template, prefer:
+ *
+ *   node scripts/build-prompt.mjs <topic> <kind> --version v1
+ *
+ * (the script version is the source of truth; if you edit the
+ * template text here, also mirror it in buildPromptV1() inside
+ * the script — they're intentionally duplicated so the wizard
+ * can swap versions without a Next.js rebuild).
+ */
+
 export interface GenerateInput {
   topic: string;
   kind: CardKind;
@@ -17,6 +35,9 @@ const PALETTE_HEX: Record<string, [string, string, string]> = {
 };
 
 /**
+ * @deprecated Use `node scripts/build-prompt.mjs` instead. Kept as
+ * reference / for direct imports. The wizard no longer calls this.
+ *
  * Build the pure-Chinese prompt for image generation.
  *
  * Two variables, both sourced from the wizard → theme-types.ts:

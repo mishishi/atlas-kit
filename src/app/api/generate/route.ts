@@ -1,12 +1,52 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
+import { execFile } from "child_process";
+import { promisify } from "util";
 import { rateLimit, getClientIp } from "@/lib/rate-limit";
-import { buildPrompt, getPaletteColors } from "@/lib/prompt-templates";
+import { getPaletteColors } from "@/lib/prompt-templates";
 import { CardKind } from "@/lib/types";
 import { THEME_TYPES } from "@/lib/theme-types";
 import { SERIES_TYPES, getDefaultSeriesSlugForKind, SERIES_TYPE_MAP } from "@/lib/series-types";
 import cardsData from "../../../../data/cards.json";
+
+const execFileAsync = promisify(execFile);
+
+/**
+ * Prompt template switch.
+ *
+ * The wizard and CLI share ONE source of truth: scripts/build-prompt.mjs.
+ * That script accepts --version v1|v2 (default v2):
+ *
+ *   v1 — inline 243-line hard-coded Chinese prompt (the original,
+ *        kept for rollback / A/B comparison)
+ *   v2 — reads prompt-template/main-template.md + categories/<kind>.md
+ *        verbatim (the curated, file-archived source of truth)
+ *
+ * Selector for the wizard: PROMPT_VERSION env var.
+ *   - unset / "v2"  → v2 (preferred default — matches the archived
+ *                     templates and the CLI script)
+ *   - "v1"          → v1 (legacy inline, for rollback / A/B)
+ *
+ * Why child_process: keeps the wizard and CLI on the EXACT same code
+ * path. Editing the script's logic (e.g. adding a new kind) flows
+ * to both surfaces automatically. The script is small, fast
+ * (~50ms), and reads only local files.
+ */
+const PROMPT_VERSION = process.env.PROMPT_VERSION === "v1" ? "v1" : "v2";
+
+async function buildPromptViaScript(topic: string, kind: CardKind): Promise<string> {
+  const scriptPath = path.join(process.cwd(), "scripts", "build-prompt.mjs");
+  const { stdout, stderr } = await execFileAsync(
+    "node",
+    [scriptPath, topic, kind, "--version", PROMPT_VERSION, "--quiet"],
+    { timeout: 10_000, maxBuffer: 1024 * 1024 },
+  );
+  if (stderr && !stdout) {
+    throw new Error(`build-prompt.mjs failed: ${stderr.trim()}`);
+  }
+  return stdout.trimEnd() + "\n";
+}
 
 interface RequestBody {
   topic: string;
@@ -112,8 +152,10 @@ export async function POST(req: Request) {
   // updates its image only (preserves hand-written content).
   const existing = cards.find((c) => c.slug === slug);
 
-  // 4. Build prompt
-  const prompt = buildPrompt({ topic: trimmedTopic, kind, palette });
+  // 4. Build prompt — delegated to scripts/build-prompt.mjs (single
+  //    source of truth shared with the CLI). See header comment for
+  //    PROMPT_VERSION semantics.
+  const prompt = await buildPromptViaScript(trimmedTopic, kind);
   const requestJson = {
     requests: [{ prompt, aspect_ratio: "9:16", resolution: "2K" }],
   };
@@ -205,16 +247,21 @@ export async function POST(req: Request) {
     );
   }
 
-  // 7. Download image to public/cards/
-  // Filename: `<slug>.png` — directly matches the cards.json `image`
-  // field, which we set to `/cards/<slug>.png` for the 60 placeholder
-  // cards. Slugs are English (labrador-retriever, hangzhou, etc.) so
-  // the filename is also English — URL-safe, no encodeURIComponent
-  // needed. Re-running the wizard for an existing card overwrites the
-  // previous image, which is the desired behavior.
-  const imageFilename = `${slug}.png`;
-  const localPath = path.join(process.cwd(), "public", "cards", imageFilename);
+  // 7. Download image to public/cards/<kind>/<slug>/<slug>-card.png
+  // Round 26 (2026-06-17): per-card directory layout. One folder per
+  // card → delete a card = delete one folder, no orphan -thumb.webp
+  // left behind. New artifacts (e.g. <slug>-prompt.md) live next
+  // to the generated image.
+  //
+  // Re-running the wizard for an existing card overwrites the
+  // previous image, which is the desired behavior. Slugs are English
+  // (labrador-retriever, hangzhou, etc.) so the filename is also
+  // English — URL-safe, no encodeURIComponent needed.
+  const cardFilename = `${slug}-card.png`;
+  const cardDir = path.join(process.cwd(), "public", "cards", kind, slug);
+  const localPath = path.join(cardDir, cardFilename);
   try {
+    await fs.mkdir(cardDir, { recursive: true });
     const res = await fetch(cdnUrl);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const buffer = Buffer.from(await res.arrayBuffer());
@@ -226,9 +273,26 @@ export async function POST(req: Request) {
     );
   }
 
+  // 7b. Save the prompt that generated this card next to the image
+  // (H1 rule: prompt is a verbatim read from prompt-template/, NOT
+  //  paraphrased or summarized — the file is exactly what was sent
+  //  to the model, for traceability / re-generation / debugging).
+  try {
+    const promptPath = path.join(cardDir, `${slug}-prompt.md`);
+    // We re-run build-prompt.mjs here to get the exact prompt text
+    // (one-shot script invocation, not a long-lived import — same
+    // H1 discipline as the wizard generation above).
+    const prompt = await buildPromptViaScript(trimmedTopic, kind);
+    await fs.writeFile(promptPath, prompt, "utf8");
+  } catch (e: any) {
+    // Non-fatal: image is the primary deliverable. If we can't save
+    // the prompt, log but continue.
+    console.error(`[generate] failed to save prompt.md for ${slug}: ${e.message}`);
+  }
+
   // 8. Persist to cards.json
   const paletteColors = getPaletteColors(palette);
-  const imagePath = `/cards/${imageFilename}`;
+  const imagePath = `/cards/${kind}/${slug}/${cardFilename}`;
   let resultSlug: string;
   if (existing) {
     // Re-run for an existing card: only update the image. Keep the

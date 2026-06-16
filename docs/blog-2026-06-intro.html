@@ -89,21 +89,23 @@
     }
     .figure {
       margin: 32px 0;
-      padding: 0;
     }
     .figure img {
       display: block;
       width: 100%;
+      max-width: 280px;
       height: auto;
+      margin: 0 auto;
       border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--cream-2);
     }
     .figure figcaption {
       margin-top: 10px;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--muted);
-      line-height: 1.5;
+      line-height: 1.6;
+      text-align: center;
     }
     table {
       width: 100%;
@@ -124,13 +126,6 @@
       padding: 1px 6px;
       border-radius: 3px;
       color: var(--gold-deep);
-    }
-    .footnote {
-      margin-top: 64px;
-      padding-top: 32px;
-      border-top: 1px solid var(--border);
-      font-size: 14px;
-      color: var(--muted);
     }
     .pull {
       font-size: 22px;
@@ -153,7 +148,7 @@
     <header class="lede">
       <span class="eyebrow">项目复盘 · 图鉴社</span>
       <h1>60 张图鉴, 9 个字段</h1>
-      <p class="lede">2026 年 6 月, 我做完了图鉴社 Atlas Kit 的第 60 张图鉴。第一张是金毛, 最后一张是三星堆。</p>
+      <p class="lede">2026 年 6 月, 我做完了图鉴社 Atlas Kit 的第 60 张图鉴。第一张是拉布拉多, 最后一张是三星堆。</p>
       <p class="byline">mishishi · 2026-06-16 · 8 分钟阅读</p>
     </header>
 
@@ -170,16 +165,49 @@
 
     <p>最早我想用 AI 生图工具做一套宠物品种图鉴, 跑了几张之后发现, 每次生成的图版式都不太一样——</p>
 
-    <p>金毛这张是横构图, 柯基那张变竖构图, 柴犬那张又把主角放右下角。我想做的是「同一系列的视觉一致」, 这样几张图鉴并排放, 看起来是一套东西。但 AI 工具默认每张图都是独立艺术品, 没人帮你锁定版式。</p>
+    <p>第一张是横构图, 第二张变竖构图, 第三张又把主角放右下角。我想做的是「同一系列的视觉一致」, 这样几张图鉴并排放, 看起来是一套东西。但 AI 工具默认每张图都是独立艺术品, 没人帮你锁定版式。</p>
 
     <p>这事困扰我大概一周。最后的解法不是 prompt 写得多好, 而是<strong>我不再依赖 prompt</strong>——我把版式完全锁死成 9 个固定字段, 用一个 JSON schema 描述每张图鉴的内容, 然后让 AI 填字段。这样图本身还是 AI 画, 但版式是 9 宫格模板程序化生成。</p>
 
+    <p>绕过去了。图鉴社就是这套程序化模板 + 60 张已填好的图鉴。</p>
+
+    <hr />
+
+    <h2>60 张长什么样: 4 张真卡</h2>
+
+    <p>AI 生成的「示意图」我本来画了 2 张, 写完发现太简陋, 删了。下面是项目里 4 张真实卡片的缩略图 (直接链 atlas-kit 站点的 <code>-thumb.webp</code>, 跟产品页用的同源), 分别代表 4 个系列——</p>
+
+    <table>
+      <thead>
+        <tr><th>卡片</th><th>系列</th><th>主题类型</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>拉布拉多</td><td>宠物品种图鉴</td><td>pet</td></tr>
+        <tr><td>故宫</td><td>城市百科图鉴</td><td>city</td></tr>
+        <tr><td>苏州园林</td><td>城市百科图鉴</td><td>city</td></tr>
+        <tr><td>三星堆</td><td>图鉴杂俎</td><td>history</td></tr>
+      </tbody>
+    </table>
+
     <figure class="figure">
-      <img src="blog-illust/9-grid-skeleton.png" alt="9 字段骨架示意 — 3x3 九宫格, 中央格子嵌套细分, 复古档案风" loading="lazy" />
-      <figcaption>上面这张是 9 字段骨架的示意图 (我自己用 AI 画的, 不是真的卡)。从左到右、从上到下: 主视觉 → 基础档案 → 外观特征 → 性格习性 → 养护建议 → 适配评分 → 优缺点对比 → 趣味冷知识 → 健康风险。中间的"养护建议"格子还做了嵌套细分, 因为不同主题这部分需要展开的子字段不一样。</figcaption>
+      <img src="https://atlas-kit-six.vercel.app/cards/labrador-retriever-thumb.webp" alt="拉布拉多图鉴缩略图" loading="lazy" />
+      <figcaption><strong>拉布拉多</strong> · 适配评分 9 分 · 解释: "全场景家庭犬, 比金毛掉毛少, 适合公寓。" (项目里这张其实 slug 叫 labrador-retriever, 我填主题的时候写成了「金毛」, 后来懒得改数据, 缩略图沿用了原始生成的拉布拉多。这是个小数据 bug, 但每次看到我都会笑, 留着。)</figcaption>
     </figure>
 
-    <p>绕过去了。图鉴社就是这套程序化模板 + 60 张已填好的图鉴。</p>
+    <figure class="figure">
+      <img src="https://atlas-kit-six.vercel.app/cards/forbidden-city-thumb.webp" alt="故宫 (北京) 图鉴缩略图" loading="lazy" />
+      <figcaption><strong>故宫 (北京)</strong> · 适配评分 — 字段不适用 · 城市卡片的「适配评分」我直接删了, 因为没人会问「我适不适合住在故宫」。</figcaption>
+    </figure>
+
+    <figure class="figure">
+      <img src="https://atlas-kit-six.vercel.app/cards/suzhou-gardens-thumb.webp" alt="苏州园林图鉴缩略图" loading="lazy" />
+      <figcaption><strong>苏州园林</strong> · 适配评分 8 分 · 解释: "江南城市里文化密度最高的一座, 慢节奏、园林细节多, 适合喜欢步行探索的人。" 这里 8 分不是「好玩度」, 是「居住适配度」——读者可能误读, 但我懒得加 legend。</figcaption>
+    </figure>
+
+    <figure class="figure">
+      <img src="https://atlas-kit-six.vercel.app/cards/sanxingdui-thumb.webp" alt="三星堆图鉴缩略图" loading="lazy" />
+      <figcaption><strong>三星堆</strong> · 适配评分 — 字段不存在 · 青铜面具没有「适不适合养」这件事。<strong>字段会随主题消失, 这不是 bug, 是设计。</strong></figcaption>
+    </figure>
 
     <hr />
 
@@ -191,23 +219,9 @@
 
     <p>比如"适配评分", 字段就是一个 0-10 的数字 + 一句话解释。AI 不需要回答"这只狗适不适合你", 只需要给个分数和一句人话。范围窄, 错误空间也窄。</p>
 
-    <table>
-      <thead>
-        <tr><th>系列</th><th>卡片</th><th>适配评分</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>宠物品种图鉴</td><td>金毛寻回犬</td><td>8</td></tr>
-        <tr><td>宠物品种图鉴</td><td>拉布拉多</td><td>9</td></tr>
-        <tr><td>城市百科图鉴</td><td>北京 (故宫)</td><td>—</td></tr>
-        <tr><td>图鉴杂俎</td><td>三星堆</td><td>—</td></tr>
-      </tbody>
-    </table>
-
-    <p>金毛那张, 适配评分我给 8 分, 解释是"对新手友好但掉毛量惊人"。<br />
+    <p>金毛那张 (其实就是上面那张拉布拉多, 同一个 bug), 适配评分我给 8 分, 解释是"对新手友好但掉毛量惊人"。<br />
     三星堆那张, 这个字段我直接删了——青铜面具没有"适不适合养"这件事。<br />
     字段会随主题消失, 这不是 bug, 是设计。</p>
-
-    <p class="pull">字段随主题消失, 这不是 bug, 是设计。</p>
 
     <hr />
 
@@ -229,12 +243,7 @@
 
     <h3>1. 反向引用比正向引用重要。</h3>
 
-    <p>图鉴之间的关联, 一开始我只做了"金毛 → 拉布拉多"这种同类推荐。后来发现更值钱的关联是"拉布拉多 ← 哪些图鉴提到了拉布拉多"——比如有一张金毛图鉴里讲"和金毛很像但更适合小户型", 这条就把两张卡串起来了。</p>
-
-    <figure class="figure">
-      <img src="blog-illust/knowledge-graph.png" alt="知识图谱示意图 — 以「金毛」为中心, 6 个相关概念节点辐射状连接" loading="lazy" />
-      <figcaption>上面是我画的"脑子里怎么想金毛"示意图 (手绘风, AI 出的)。人脑天然就是图谱式的: 你听到金毛, 同时联想到拉布拉多 (类似品种)、导盲犬 (典型用途)、寻回 (行为习性)、家庭宠物 (适配场景)、宠物品种图鉴 (所属系列)。</figcaption>
-    </figure>
+    <p>图鉴之间的关联, 一开始我只做了"金毛 → 拉布拉多"这种同类推荐。后来发现更值钱的关联是"拉布拉多 ← 哪些图鉴提到了拉布拉多"——比如有一张金毛图鉴里讲"和拉布拉多很像但更适合小户型", 这条就把两张卡串起来了。</p>
 
     <p>技术实现其实更朴素——每次请求时扫描所有 60 张卡片的 description / tagline / subtitle, 看有没有别的卡片的 title 出现。60 张 × 几百字段, 完全跑得动, 不需要预计算索引。</p>
 

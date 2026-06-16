@@ -287,6 +287,44 @@ Commit `bcfa9cd`. 5 fixes from a single-page impeccable audit
 trips a permission gate on classifier unavailable). Build-pass +
 manual diff read is the practical verification path.
 
+## Round 14: /series tab + /about em-dash (2026-06-16)
+
+Commit `cc921f4`. Two minor audits back-to-back:
+
+- **`/series` tabs touch target**: `px-4 py-2` measured ~36px tall,
+  below WCAG 2.5.5 44px minimum. Bumped to `min-h-[44px] py-3` in
+  `series-detail-tabs.tsx`. Same a11y pattern as Round 8's chip fix.
+- **`/about` em-dash**: line 17 "主视觉、…、健康风险 — 9 个模块"
+  replaced " — " with comma + new sentence. Project's Round 8
+  I1 fix already dropped the eyebrow, this just polishes the body.
+
+No new audit findings beyond these two — `/series` and `/about`
+both pass the 5-dimension scan (A11y / Theming / Responsive /
+Anti-pattern / Performance).
+
+## Round 15: /changelog milestone entries (2026-06-16)
+
+Commit `e8a2367`. The page used to only show per-card created /
+revised events (63 total), which made the project look stagnant
+between mass card days. Added 5 hand-curated site-wide milestones
+to tell the project's actual story (5 days from MVP to polished
+atlas):
+
+- 2026-06-12: MVP 上线
+- 2026-06-13: 图鉴扩到 60 张
+- 2026-06-14: 首轮设计 review
+- 2026-06-16: 百科化升级 (6 项 roadmap 完成)
+- 2026-06-16: 连续 4 轮设计 audit
+
+New `type: "milestone"` entry shape (in addition to "created" /
+"revised"). Visual: gold-bordered card with `Sparkles` icon,
+gradient `from-cream to-card` background, links to `/about` instead
+of a card detail (milestones are project-level, not card-level).
+
+Data lives in `SITE_MILESTONES` const at the top of the file.
+Hardcoded because milestones are project-meta, not auto-derivable
+from card data. Add more by appending to that array.
+
 ## Round 8: design audit (2026-06-16)
 
 `docs/design-audit-2026-06-16.md` is the full taste-skill +

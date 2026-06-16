@@ -66,11 +66,18 @@ export default function Home({ searchParams }: HomeProps) {
             {/* Right: hero collage — 1 featured card (medium-large, 280×498)
                 center-front + 4 supporting thumbs fanned out behind it. The
                 5 cards come from different series so the spread feels like
-                a curated library shelf rather than one series. */}
-            <div
-              aria-hidden="true"
-              className="relative h-[440px] lg:h-[500px] hidden lg:block"
-            >
+                a curated library shelf rather than one series.
+
+                Round 16 a11y fix: removed `aria-hidden` from the wrapping
+                div and `alt=""` from each Image. SR users were previously
+                unable to discover any of the 5 hero links — the visible
+                collage is the homepage's primary CTA for sighted users,
+                so it must be navigable for keyboard/SR users too. Each
+                Link now carries the card title in its accessible name;
+                the inner Image uses an empty alt because the parent
+                Link already names the destination (decorative image
+                pattern from Round 12). */}
+            <div className="relative h-[440px] lg:h-[500px] hidden lg:block">
               {/* Background fan: 4 thumbs positioned at the corners, each
                   tilted differently. Rendered first so the center card
                   sits on top.
@@ -88,7 +95,8 @@ export default function Home({ searchParams }: HomeProps) {
                   <Link
                     key={c.slug}
                     href={`/cards/${c.slug}`}
-                    className={`absolute w-[110px] aspect-[9/16] rounded-md overflow-hidden border shadow-card ring-1 ring-black/5 transition-transform duration-300 hover:scale-110 hover:z-50 ${positions[i]}`}
+                    aria-label={`${c.title} · 精选`}
+                    className={`absolute w-[110px] aspect-[9/16] rounded-md overflow-hidden border shadow-card ring-1 ring-black/5 transition-transform duration-300 hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${positions[i]}`}
                     style={{ backgroundColor: c.palette[0], borderColor: c.palette[1] }}
                   >
                     <Image
@@ -110,7 +118,8 @@ export default function Home({ searchParams }: HomeProps) {
               {heroCards[0] && (
                 <Link
                   href={`/cards/${heroCards[0].slug}`}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] aspect-[9/16] rounded-xl overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 z-40"
+                  aria-label={`${heroCards[0].title} · 精选`}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] aspect-[9/16] rounded-xl overflow-hidden border-2 shadow-card-hover ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 z-40"
                   style={{ backgroundColor: heroCards[0].palette[0], borderColor: heroCards[0].palette[1] }}
                 >
                   <Image

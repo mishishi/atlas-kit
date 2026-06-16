@@ -411,6 +411,38 @@ since Round 12 and 2 stragglers + a placeholder survived. The
 trigger — without curling prod, these wouldn't have surfaced
 in a code review alone.
 
+## Round 21: ShareActions / SeriesDetailTabs (2026-06-16)
+
+Commit `2779bd9`. Last 2 shared components on the audit list.
+Found:
+
+- **P2 ShareActions copy-link timer leak**: `handleCopyLink`
+  fires `setTimeout(() => setCopied(false), 2000)`. If the user
+  clicks copy then immediately navigates away (route change,
+  back button), the 2s timer still fires setState on an
+  unmounted component. React 18 silent no-op but logs a warning.
+  Same pattern as Round 19 Lightbox onLoad guard. Fixed with
+  a `mountedRef` set in `useEffect` and cleared in cleanup.
+- **P2 ShareActions PDF link missing `noreferrer`**: outer-link
+  to `/print/cards/[slug]` had `rel="noopener"` only; footer's
+  outer-link uses `rel="noopener noreferrer"`. The `noreferrer`
+  half suppresses the `Referer` header — for a same-origin link
+  the practical impact is zero, but consistency matters and
+  `noopener noreferrer` is the safer default. Fixed.
+- **P3 SeriesDetailTabs dead `slug` prop + `displayLabel` import**:
+  the `slug` prop was declared in the component interface but
+  never used inside the component body. Parent
+  (`app/series/[slug]/page.tsx`) was passing it nonetheless. Dropped
+  the prop from both sides. The `displayLabel` import was also
+  unused — dropped.
+
+Round 21 closes the shared-component audit pass (R17 + R18 +
+R19 + R20 + R21, 5 components). Every remaining component in
+`src/components/` has now been reviewed on the same 5-dimension
++ manual code health + cross-round consistency lenses. The audit
+list is now: 14 page surfaces ✓ · 1 API ✓ · 5 SSG families ✓ ·
+9 shared components ✓.
+
 ## Round 16: untested-pages audit (2026-06-16)
 
 Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier

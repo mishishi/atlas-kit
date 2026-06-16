@@ -40,7 +40,7 @@ export default function Home({ searchParams }: HomeProps) {
             <div>
               <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 animate-fade-in">
                 知识整理 · 模块信息 · <br className="hidden md:block" />
-                <span className="text-gold-deep italic">图鉴式展示</span>
+                <span className="text-gold-deep">图鉴式展示</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
                 9 个固定模块 · 任意主题 · 像翻一页百科书的图鉴卡片。

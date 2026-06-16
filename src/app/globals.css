@@ -327,7 +327,8 @@
     footer,
     .site-footer,
     .site-header,
-    [data-print="hide"] {
+    [data-print="hide"],
+    .no-print {
       display: none !important;
     }
     /* Page margins — Chrome respects these via the print dialog

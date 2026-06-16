@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Sparkles, Compass, Layers, Zap } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export const metadata = {
   title: "关于 · 图鉴社",
@@ -17,10 +17,7 @@ export default function AboutPage() {
           每一张图鉴都像翻一页百科书: 主视觉、基础档案、外观特征、性格习性、养护建议、适配评分、优缺点对比、趣味冷知识、健康风险 — 9 个模块完整呈现一个主题。
         </p>
 
-        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4 flex items-center gap-2">
-          <Sparkles className="h-5 w-5 text-gold-deep" />
-          为什么做这个
-        </h2>
+        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4">为什么做这个</h2>
         <p>
           看到一张漂亮的图鉴卡片,大家通常的反应是"想要更多"或者"想要这样的图"。但市面上的 AI 生图工具,每次都给你一张"自由发挥"的图,版式飘忽不定、字段重复、文字乱码 — 没法系列化,没法收藏。
         </p>
@@ -28,10 +25,7 @@ export default function AboutPage() {
           图鉴社解决的就是这个问题: <strong>固定的 9 模块骨架 + 任意主题 = 可系列化、可收藏、可复用</strong> 的中文科普图鉴。
         </p>
 
-        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4 flex items-center gap-2">
-          <Layers className="h-5 w-5 text-gold-deep" />
-          设计原则
-        </h2>
+        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4">设计原则</h2>
         <ul className="list-disc list-inside space-y-2">
           <li><strong>模块化</strong>: 每张图鉴都是 9 个固定模块的组合,而不是 AI 随机排版</li>
           <li><strong>字段槽位约束</strong>: 每个模块有明确的字段数量,避免重复/缺失</li>
@@ -40,10 +34,7 @@ export default function AboutPage() {
           <li><strong>轻阴影 + 圆角 + 衬线标题</strong>: 区别于普通商业 SaaS 的冷感</li>
         </ul>
 
-        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4 flex items-center gap-2">
-          <Zap className="h-5 w-5 text-gold-deep" />
-          技术栈
-        </h2>
+        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4">技术栈</h2>
         <ul className="list-disc list-inside space-y-2">
           <li><strong>Next.js 14</strong> App Router · React Server Components</li>
           <li><strong>Tailwind CSS</strong> + 设计 token 主题切换</li>
@@ -52,10 +43,7 @@ export default function AboutPage() {
           <li><strong>数据存储</strong> · MVP 阶段使用本地 JSON</li>
         </ul>
 
-        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4 flex items-center gap-2">
-          <Compass className="h-5 w-5 text-gold-deep" />
-          开始探索
-        </h2>
+        <h2 className="font-serif text-2xl font-semibold mt-10 mb-4">开始探索</h2>
         <div className="flex flex-wrap gap-3 not-prose">
           <Link
             href="/"

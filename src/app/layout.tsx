@@ -81,6 +81,18 @@ export default function RootLayout({
             blends instead of having a stark white bar. */}
         <meta name="theme-color" content="#f7f2e8" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)" />
+        {/* Theme bootstrap — runs synchronously in <head> BEFORE React
+            paints, so users with stored "light"/"dark" never see a
+            light→dark or dark→light flash. Mirrors the next-themes
+            inline-script pattern. Reads from localStorage "theme"
+            (the key ThemeProvider writes in src/components/theme-provider.tsx);
+            falls back to prefers-color-scheme for "system".
+            Idempotent: re-applies on every load. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||((t==='system'||!t)&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();`,
+          }}
+        />
       </head>
       <body className="min-h-dvh antialiased font-sans">
         <ThemeProvider defaultTheme="light">

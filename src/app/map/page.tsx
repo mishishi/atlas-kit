@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MapPin } from "lucide-react";
 import { getAllCards } from "@/lib/data";
 import { MapView } from "@/components/map-view";
 
@@ -27,7 +28,7 @@ export default function MapPage() {
     <div className="container py-12 md:py-16">
       <header className="mb-6 max-w-2xl">
         <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gold-deep mb-3">
-          <span aria-hidden="true">📍</span>
+          <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
           <span>地图</span>
         </div>
         <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3">

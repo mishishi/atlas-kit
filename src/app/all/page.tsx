@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getAllCards } from "@/lib/data";
-import { Card as CardType, KIND_LABELS } from "@/lib/types";
+import { Card as CardType, KIND_LABELS, THEME_TYPES } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { ListOrdered, Hash, Layers } from "lucide-react";
 
@@ -10,21 +10,24 @@ export const metadata = {
 };
 
 /**
- * /index — alternative navigational surface for users who want
+ * /all — alternative navigational surface for users who want
  * to scan rather than browse. Three views:
  *
  * 1. 按字数: cards ordered by description length (longest = most
  *    detailed). Useful for "I want the deepest dive on a topic".
+ *    Layout: numbered list with description-length column.
  * 2. 按系列: grouped by the 5 series. Useful for "I want to read
  *    all 5 city-encyclopedia cards in order".
- * 3. 按类型: same grouping as /browse but here for users who
- *    land on /index and want to drill by taxonomy.
+ *    Layout: bento-style card tiles (different shape from #1).
+ * 3. 按类型: same grouping as /cards?kind= but here for users who
+ *    land on /all and want to drill by taxonomy.
+ *    Layout: 2x chip grid (different from #1 list and #2 cards).
  *
- * The page is server-rendered (zero JS), the three views render
- * as side-by-side <section>s so a single page-load gives the
- * user all three.
+ * Three different layout families in a row — design-taste-frontend
+ * §4.7 "no 3× identical layout" rule satisfied. Each view now uses
+ * a distinct visual treatment.
  */
-export default function IndexPage() {
+export default function AllPage() {
   const allCards = getAllCards();
 
   // View 1: by length (longest description first)
@@ -49,6 +52,7 @@ export default function IndexPage() {
     if (!byKind.has(c.kind)) byKind.set(c.kind, []);
     byKind.get(c.kind)!.push(c);
   }
+  const orderedKinds = THEME_TYPES.map((t) => t.key as string).filter((k) => byKind.has(k));
 
   return (
     <div className="container py-12 md:py-16">
@@ -64,7 +68,7 @@ export default function IndexPage() {
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        {/* View 1: by length */}
+        {/* View 1: by length — numbered list */}
         <section>
           <h2 className="font-serif text-xl font-bold mb-4 flex items-center gap-2">
             <Hash className="h-4 w-4 text-gold-deep" aria-hidden="true" />
@@ -93,62 +97,86 @@ export default function IndexPage() {
           </ol>
         </section>
 
-        {/* View 2: by series */}
+        {/* View 2: by series — bento card tiles. Each series gets a
+            larger card with its accent color, count badge, and a
+            compact preview row of the 3 newest entries. Distinct from
+            the numbered list in #1 and the chip grid in #3. */}
         <section>
           <h2 className="font-serif text-xl font-bold mb-4 flex items-center gap-2">
             <Layers className="h-4 w-4 text-gold-deep" aria-hidden="true" />
             按系列
           </h2>
           <p className="text-sm text-muted-foreground mb-4">5 个系列, 按收录号排序</p>
-          <div className="space-y-5">
-            {[...bySeries.entries()].map(([seriesSlug, cards]) => {
+          <div className="space-y-3">
+            {Array.from(bySeries.entries()).map(([seriesSlug, cards]) => {
               const seriesName = SERIES_TYPE_MAP[seriesSlug]?.name ?? seriesSlug;
+              const accent = SERIES_TYPE_MAP[seriesSlug]?.palette?.[1] ?? "#87603f";
+              const bg = SERIES_TYPE_MAP[seriesSlug]?.palette?.[0] ?? "#f5f0e6";
               return (
-                <div key={seriesSlug}>
-                  <h3 className="font-serif text-sm font-semibold mb-1.5 text-gold-deep">
-                    {seriesName}
-                    <span className="text-[10px] text-muted-foreground tabular-nums ml-1.5">({cards.length})</span>
-                  </h3>
-                  <ol className="space-y-1 list-none p-0">
-                    {cards.map((c) => (
-                      <li key={c.slug}>
-                        <Link
-                          href={`/cards/${c.slug}`}
-                          className="group flex items-baseline gap-2 text-sm text-foreground hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
-                        >
-                          <span className="font-mono text-[10px] tabular-nums text-muted-foreground/70">No.{c.seriesNo}</span>
-                          <span className="truncate">{c.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
+                <Link
+                  key={seriesSlug}
+                  href={`/series/${seriesSlug}`}
+                  className="group block rounded-lg border border-border bg-card p-3 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
+                  style={{ borderLeftWidth: "3px", borderLeftColor: accent }}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h3
+                      className="font-serif text-sm font-semibold truncate group-hover:opacity-80 transition-opacity"
+                      style={{ color: accent }}
+                      title={seriesName}
+                    >
+                      {seriesName}
+                    </h3>
+                    <span
+                      className="font-mono text-[10px] tabular-nums px-1.5 py-0.5 rounded-full shrink-0"
+                      style={{ backgroundColor: bg, color: accent }}
+                    >
+                      {cards.length} 张
+                    </span>
+                  </div>
+                  <p className="text-[10px] text-muted-foreground leading-snug line-clamp-2">
+                    {cards.slice(0, 3).map((c) => c.title).join(" · ")}
+                    {cards.length > 3 ? " · …" : ""}
+                  </p>
+                </Link>
               );
             })}
           </div>
         </section>
 
-        {/* View 3: by kind */}
+        {/* View 3: by kind — 2-col chip grid. Visually different from
+            #1 (list) and #2 (cards). Each kind is a pill that links
+            to /cards?kind= with the count. */}
         <section>
           <h2 className="font-serif text-xl font-bold mb-4 flex items-center gap-2">
-            <span className="h-4 w-4 rounded bg-gold-deep inline-block" aria-hidden="true" />
+            <span
+              className="h-4 w-4 rounded bg-gold-deep inline-block"
+              aria-hidden="true"
+            />
             按类型
           </h2>
           <p className="text-sm text-muted-foreground mb-4">12 个分类</p>
-          <div className="space-y-2.5">
-            {[...byKind.entries()].map(([kind, cards]) => (
-              <Link
-                key={kind}
-                href={`/browse?kind=${kind}`}
-                className="group flex items-baseline justify-between gap-2 rounded-md px-2 py-1.5 hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
-              >
-                <span className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">
-                  {KIND_LABELS[kind as keyof typeof KIND_LABELS] ?? kind}
-                </span>
-                <span className="text-[10px] tabular-nums text-muted-foreground/70">{cards.length} 张</span>
-              </Link>
-            ))}
-          </div>
+          <ul className="grid grid-cols-2 gap-2 list-none p-0">
+            {orderedKinds.map((kind) => {
+              const count = byKind.get(kind)!.length;
+              const label = KIND_LABELS[kind as keyof typeof KIND_LABELS] ?? kind;
+              return (
+                <li key={kind}>
+                  <Link
+                    href={`/cards?kind=${kind}`}
+                    className="group flex min-h-[44px] items-center justify-between gap-2 rounded-md border border-border bg-card px-3 py-2 hover:border-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                  >
+                    <span className="font-serif text-xs font-medium group-hover:text-gold-deep transition-colors">
+                      {label}
+                    </span>
+                    <span className="font-mono text-[10px] tabular-nums text-muted-foreground/70 shrink-0">
+                      {count}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </section>
       </div>
     </div>

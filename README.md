@@ -159,4 +159,4 @@ MIT.
 ---
 
 项目内部知识(完整 schema、脚本、dev quirks)在 [AGENTS.md](./AGENTS.md)。
-更新历史在 [`/changelog`](https://atlas-kit-six.vercel.app/changelog) 站点页。
+更新历史在 [`CHANGELOG.md`](./CHANGELOG.md) 和 [`/changelog`](https://atlas-kit-six.vercel.app/changelog) 站点页。

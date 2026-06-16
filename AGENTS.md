@@ -302,6 +302,37 @@ No new audit findings beyond these two — `/series` and `/about`
 both pass the 5-dimension scan (A11y / Theming / Responsive /
 Anti-pattern / Performance).
 
+## Round 16: untested-pages audit (2026-06-16)
+
+Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier
+rounds didn't touch: `/random`, `/` (home), `/search`, `/create`.
+Scored each on the 5-dimension scan (A11y / Theming / Responsive /
+Anti-pattern / Performance):
+
+| Page | Score | Action |
+|---|---|---|
+| `/random` | n/a | skip (302 redirect only, no UI surface) |
+| `/` (home) | 17/20 | 1 P2 fixed (hero collage a11y) |
+| `/search` | 19/20 | clean |
+| `/create` | 18/20 | clean |
+
+**Home fix**: removed `aria-hidden="true"` from the hero collage
+wrapping div and `alt=""` from each of the 5 collage Images. SR users
+were previously unable to discover any of the 5 hero cards — the
+collage is the home page's primary CTA for sighted users, so it
+must be navigable by keyboard/SR. Each Link now carries
+`aria-label="{title} · 精选"`; the inner Image stays decorative
+(empty alt) because the parent Link already names the destination.
+
+**Wins from this audit pass** (worth replicating in future pages):
+
+- `/create` wizard's `aria-busy`, `aria-pressed`, `role="alert"` for
+  generation errors, and `aria-labelledby` on step groups all work
+  correctly — copy this pattern for any multi-step form.
+- `/search` `aria-live="polite"` on result count keeps SR users in
+  sync without announcing on every keystroke (it's only in the DOM
+  when there's a query).
+
 ## Round 15: /changelog milestone entries (2026-06-16)
 
 Commit `e8a2367`. The page used to only show per-card created /

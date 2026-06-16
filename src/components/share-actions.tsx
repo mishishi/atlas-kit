@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Copy, Check, Link as LinkIcon, Download, FileText } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
@@ -14,6 +14,17 @@ interface ShareActionsProps {
 
 export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsProps) {
   const [copied, setCopied] = useState(false);
+  // Round 21 fix: track mount state so the post-copy setTimeout can't
+  // fire setState after the user navigates away (same pattern as
+  // Round 19's Lightbox onLoad guard — React 18 silent no-ops but
+  // logs a console warning, which pollutes dev experience).
+  const mountedRef = useRef(true);
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+    };
+  }, []);
 
   const handleCopyLink = async () => {
     if (typeof window === "undefined") return;
@@ -21,7 +32,9 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
       await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
       toast.success("链接已复制", { description: "可粘贴到小红书 / 微信 / X" });
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => {
+        if (mountedRef.current) setCopied(false);
+      }, 2000);
     } catch {
       toast.error("复制失败", { description: "请手动从地址栏复制" });
     }
@@ -48,7 +61,7 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
       <Link
         href={`/print/cards/${imageFilename}`}
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         className={cn(
           "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md border border-border bg-card px-2 py-2.5 text-xs sm:text-sm font-medium",
           "hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",

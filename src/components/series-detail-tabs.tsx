@@ -3,12 +3,11 @@
 import { useCallback } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { CardPreview } from "./card-preview";
-import { Card as CardType, displayLabel } from "@/lib/types";
+import { Card as CardType } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface SeriesDetailTabsProps {
   cards: CardType[];
-  slug: string;
 }
 
 type Tab = "all" | "newest" | "top";

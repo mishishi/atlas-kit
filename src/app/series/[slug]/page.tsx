@@ -147,7 +147,7 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
       </header>
 
       {/* Tabs + grid */}
-      <SeriesDetailTabs cards={series.cards} slug={series.slug} />
+      <SeriesDetailTabs cards={series.cards} />
     </div>
   );
 }

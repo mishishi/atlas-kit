@@ -63,7 +63,7 @@ export default function AllPage() {
         </div>
         <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3">多种视角看图鉴</h1>
         <p className="text-muted-foreground leading-relaxed">
-          三种索引帮你从不同角度切入 — 按篇幅、按系列、按类型。
+          三种索引帮你从不同角度切入：按篇幅、按系列、按类型。
         </p>
       </header>
 
@@ -75,12 +75,12 @@ export default function AllPage() {
             按字数 (深度优先)
           </h2>
           <p className="text-sm text-muted-foreground mb-4">最详尽的 {byLength.length} 张</p>
-          <ol className="space-y-2 list-none p-0">
+          <ol className="space-y-1 list-none p-0">
             {byLength.map((c, i) => (
               <li key={c.slug}>
                 <Link
                   href={`/cards/${c.slug}`}
-                  className="group flex items-baseline gap-3 rounded-md px-2 py-1.5 hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                  className="group flex min-h-[44px] items-baseline gap-3 rounded-md px-3 py-2 hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
                 >
                   <span className="font-mono text-xs tabular-nums text-muted-foreground/70 w-6 shrink-0">
                     {String(i + 1).padStart(2, "0")}
@@ -98,9 +98,20 @@ export default function AllPage() {
         </section>
 
         {/* View 2: by series — bento card tiles. Each series gets a
-            larger card with its accent color, count badge, and a
-            compact preview row of the 3 newest entries. Distinct from
-            the numbered list in #1 and the chip grid in #3. */}
+            larger card with its accent dot + name (text accent color
+            inherits contrast in both light/dark mode), count badge, and
+            a compact preview row of the 3 newest entries. Distinct
+            from the numbered list in #1 and the chip grid in #3.
+
+            Audit fix (Round 13): removed the 3px colored border-left
+            stripe (impeccable ban: side-stripe borders > 1px as colored
+            accent on cards) and the inline cream-bg badge (broke in
+            dark mode). The series identity now lives in a single 8px
+            accent dot + accent-colored h3 text. The dot+text combo
+            reads identically in both themes because hex #C97064 / #6B8294
+            / #8C7F6E / #B8956A are mid-saturation; the badge bg uses
+            the theme-aware `bg-muted` token instead of the hard-coded
+            palette[0]. */}
         <section>
           <h2 className="font-serif text-xl font-bold mb-4 flex items-center gap-2">
             <Layers className="h-4 w-4 text-gold-deep" aria-hidden="true" />
@@ -111,25 +122,30 @@ export default function AllPage() {
             {Array.from(bySeries.entries()).map(([seriesSlug, cards]) => {
               const seriesName = SERIES_TYPE_MAP[seriesSlug]?.name ?? seriesSlug;
               const accent = SERIES_TYPE_MAP[seriesSlug]?.palette?.[1] ?? "#87603f";
-              const bg = SERIES_TYPE_MAP[seriesSlug]?.palette?.[0] ?? "#f5f0e6";
               return (
                 <Link
                   key={seriesSlug}
                   href={`/series/${seriesSlug}`}
                   className="group block rounded-lg border border-border bg-card p-3 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
-                  style={{ borderLeftWidth: "3px", borderLeftColor: accent }}
                 >
-                  <div className="flex items-center justify-between mb-2">
-                    <h3
-                      className="font-serif text-sm font-semibold truncate group-hover:opacity-80 transition-opacity"
-                      style={{ color: accent }}
-                      title={seriesName}
-                    >
-                      {seriesName}
-                    </h3>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span
+                        className="h-2 w-2 rounded-full shrink-0"
+                        style={{ backgroundColor: accent }}
+                        aria-hidden="true"
+                      />
+                      <h3
+                        className="font-serif text-sm font-semibold truncate transition-opacity group-hover:opacity-80"
+                        style={{ color: accent }}
+                        title={seriesName}
+                      >
+                        {seriesName}
+                      </h3>
+                    </div>
                     <span
-                      className="font-mono text-[10px] tabular-nums px-1.5 py-0.5 rounded-full shrink-0"
-                      style={{ backgroundColor: bg, color: accent }}
+                      className="font-mono text-[10px] tabular-nums px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground shrink-0"
+                      aria-label={`${cards.length} 张图鉴`}
                     >
                       {cards.length} 张
                     </span>

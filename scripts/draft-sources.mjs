@@ -74,10 +74,14 @@ for (let i = 0; i < todo.length; i++) {
     // Validate: need title + url (or at least title + type)
     const valid = arr
       .filter((s) => s && typeof s.title === "string" && typeof s.type === "string")
+      // Round 23 fix: drop sources with missing/empty url instead of
+      // writing "" into cards.json — that previously caused broken-link
+      // rows to render in the /cards/[slug] 参考来源 section.
+      .filter((s) => typeof s.url === "string" && s.url.startsWith("https://"))
       .slice(0, 5)
       .map((s) => ({
         title: String(s.title).trim().slice(0, 60),
-        url: typeof s.url === "string" ? s.url : "",
+        url: s.url.trim(),
         type: String(s.type).trim(),
       }));
     if (valid.length < 2) {

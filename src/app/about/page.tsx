@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="prose prose-stone dark:prose-invert max-w-none space-y-6 text-foreground/90 leading-relaxed">
         <p className="text-lg">
           <strong>图鉴社 (Atlas Kit)</strong> 是一个系列化中文科普图鉴卡片集。
-          每一张图鉴都像翻一页百科书: 主视觉、基础档案、外观特征、性格习性、养护建议、适配评分、优缺点对比、趣味冷知识、健康风险 — 9 个模块完整呈现一个主题。
+          每一张图鉴都像翻一页百科书,9 个模块完整呈现一个主题: 主视觉、基础档案、外观特征、性格习性、养护建议、适配评分、优缺点对比、趣味冷知识、健康风险。
         </p>
 
         <h2 className="font-serif text-2xl font-semibold mt-10 mb-4">为什么做这个</h2>

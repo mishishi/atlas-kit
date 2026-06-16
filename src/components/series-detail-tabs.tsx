@@ -79,7 +79,10 @@ export function SeriesDetailTabs({ cards }: SeriesDetailTabsProps) {
             onClick={() => setTab(t.key)}
             aria-current={tab === t.key ? "true" : undefined}
             className={cn(
-              "relative px-4 py-2 text-sm transition-colors",
+              // py-3 + min-h-[44px] for WCAG AA 2.5.5 touch target.
+              // The previous py-2 measured ~36px tall, which fails on
+              // touch devices. Round 14 audit.
+              "relative min-h-[44px] px-4 py-3 text-sm transition-colors",
               tab === t.key
                 ? "text-foreground font-medium"
                 : "text-muted-foreground hover:text-foreground",

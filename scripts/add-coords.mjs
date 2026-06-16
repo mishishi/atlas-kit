@@ -25,13 +25,27 @@ const COORDS = {
 };
 
 let updated = 0;
+const seenSlugs = new Set();
 for (const c of cards) {
   if (COORDS[c.slug]) {
     c.coords = COORDS[c.slug];
     updated++;
+    seenSlugs.add(c.slug);
   }
 }
+
+// Drift detection: any hard-coded slug that no longer exists in
+// cards.json. Round 23 fix — same pattern as add-myth-fact.mjs /
+// handwrite-history.mjs. Catches renames / deletions.
+const missingFromCards = Object.keys(COORDS).filter(
+  (slug) => !seenSlugs.has(slug),
+);
 
 fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
 console.log(`Added coords to ${updated}/60 cards.`);
 console.log(`Cards still without coords: ${cards.filter((c) => !c.coords).length}/60.`);
+if (missingFromCards.length > 0) {
+  console.warn(
+    `⚠️  ${missingFromCards.length} hard-coded coord slug(s) not found in cards.json: ${missingFromCards.join(", ")}`,
+  );
+}

@@ -68,6 +68,10 @@ export interface Card {
   quote?: string;
   /** 1 句有趣小知识. AI 草拟 + 人工校对. */
   trivia?: string;
+  /** 常见误解 (hand-written, 非 AI). 详情页"误解/事实"小卡片. */
+  myth?: string;
+  /** 与 myth 对应的事实. 同样 hand-written. */
+  fact?: string;
   /** 地理坐标 (用于 /map 视图). 仅 12 张地理图鉴有. */
   coords?: { lat: number; lng: number };
   /** 修订记录. scripts/log-revision.mjs 维护. */

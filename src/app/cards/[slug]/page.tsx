@@ -188,6 +188,36 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             </p>
           )}
 
+          {/* 误解 / 事实 — hand-written myth-buster pair, only for
+              cards that have one. We don't render any UI when
+              either field is missing so the data layer (cards.json)
+              controls availability. Visually pairs with 轶事 above
+              but uses a 2-row layout (myth in red/terracotta tint,
+              fact in gold/positive tint) to make the "common
+              misconception vs. reality" framing obvious. */}
+          {(card.myth || card.fact) && (
+            <div className="rounded-md border border-border/60 bg-muted/30 px-3.5 py-3 text-xs leading-relaxed space-y-2">
+              {card.myth && (
+                <p className="text-foreground/85">
+                  <span className="font-serif font-semibold text-terracotta not-italic">
+                    常见误解
+                  </span>
+                  <span className="mx-1.5 text-border">·</span>
+                  {card.myth}
+                </p>
+              )}
+              {card.fact && (
+                <p className="text-foreground/85">
+                  <span className="font-serif font-semibold text-gold-deep not-italic">
+                    事实
+                  </span>
+                  <span className="mx-1.5 text-border">·</span>
+                  {card.fact}
+                </p>
+              )}
+            </div>
+          )}
+
           {/* Meta table — 5 rows: 类型 / 系列 / 评分 / 收录 / 标签数.
               The old 学名/English rows are gone (Chinese-only editorial tone).
               Hairline dividers between rows give the sidebar a sense

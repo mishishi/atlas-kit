@@ -302,6 +302,28 @@ No new audit findings beyond these two — `/series` and `/about`
 both pass the 5-dimension scan (A11y / Theming / Responsive /
 Anti-pattern / Performance).
 
+## Round 17: CardPreview "新收录" hydration (2026-06-16)
+
+Commit `c1267a4`. After all 14 page-level surfaces passed audit, I
+started auditing the shared components (the 4 used in 60+ places:
+`CardPreview`, `Lightbox`, `HeroWithLightbox`, `Tag`). First pass
+on `CardPreview` caught one P3: the "新收录" badge uses
+`Date.now() - new Date(card.createdAt).getTime() < 86400000`. This
+runs once at SSR (server clock) and again at hydration (client
+clock), and the two can drift — silently flipping the badge on/off
+across the boundary, with no React warning to catch it.
+
+Fix: `suppressHydrationWarning` on the badge span. We accept the
+rare flash (when the boundary lands within the 24h window AND
+server/client time has drifted) as the cost of keeping
+`CardPreview` a server component. Moving the badge to a client
+sub-component would re-hydrate all 60 cards on the grid pages,
+which is a much bigger cost than a once-per-page badge flicker.
+
+Verified: build clean, no size regression. Pushed to master.
+PR #1 branch left stale (`1297617`) since the PR is already
+MERGED — branch ref is informational only.
+
 ## Round 16: untested-pages audit (2026-06-16)
 
 Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier

@@ -1,12 +1,13 @@
 #!/usr/bin/env node
-// Add 3 new editorial fields to each card:
+// Add 2 new editorial fields to each card:
 //   - quote: 1-2 sentence authoritative citation
-//   - myth: short statement of a common misconception
-//   - fact: the accurate correction
 //   - trivia: 1 sentence interesting fact
 //
-// AI-drafted via mmx text chat, ~$0.50 total.
-// Skips cards that already have all 4 fields.
+// myth/fact are handled by add-myth-fact.mjs (Round 9 — hand-written,
+// not AI-drafted, because M2.7 was unreliable on structured pair output).
+//
+// AI-drafted via mmx text chat, ~$0.15 total for quote+trivia batch.
+// Skips cards that already have both fields.
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";

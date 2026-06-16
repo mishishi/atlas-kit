@@ -324,6 +324,34 @@ Verified: build clean, no size regression. Pushed to master.
 PR #1 branch left stale (`1297617`) since the PR is already
 MERGED — branch ref is informational only.
 
+## Round 18: MapView popup theme + dead code (2026-06-16)
+
+Commit `9a120e8`. Continuing the shared-component audit, second pass
+on `MapView` (12 markers, Leaflet via CDN). Found:
+
+- **P2 dark-mode popup text contrast**: `buildPopupNode` set
+  inline `color: #2e2a24` / `#6f6a5e` / `#87603f` on the popup
+  content. The popup wrapper bg uses `hsl(var(--background))` and
+  flips on theme change (light cream ↔ deep charcoal), but the
+  inner text stayed near-black, crashing contrast in dark mode.
+  Fix: dropped inline colors, added className hooks
+  (`atlas-popup-thumb` / `-title` / `-sub` / `-cta`), added CSS
+  in `globals.css` that uses `--foreground` / `--muted-foreground`
+  / `--gold-deep` so the popup text follows the theme.
+- **P2 dead code `escapeAttr`**: always returned `true`, called in
+  a single ternary in `buildPopupNode`. Deleted along with the
+  dead `: transparent` branch.
+- **P3 dead state `filteredIdsRef`**: assigned in two places, never
+  read. Deleted.
+
+This is the **third audit lens** I've used (impeccable 5-dim,
+design-taste-frontend slop test, manual code review). Pattern:
+each new lens catches what the others miss. The previous rounds
+focused on UI/UX; this round's manual review caught a state-machine
+dead code path. Lesson: when the visible polish looks done, switch
+to a "code health" lens (dead code, unused state, type-narrowing,
+etc.) — different category of issues.
+
 ## Round 16: untested-pages audit (2026-06-16)
 
 Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier

@@ -77,14 +77,27 @@ const HAND_WRITTEN = {
 };
 
 let updated = 0;
+const writtenSlugs = new Set();
 for (const c of cards) {
-  if (HAND_WRITTEN[c.slug]) {
-    c.history = HAND_WRITTEN[c.slug];
+  const handWritten = HAND_WRITTEN[c.slug];
+  if (handWritten) {
+    c.history = handWritten;
     updated++;
+    writtenSlugs.add(c.slug);
   }
 }
 
+// Detect drift: any hard-coded slug that no longer exists in
+// cards.json. Catches renames / deletions early instead of
+// silently leaving history orphaned.
+const missingFromCards = Object.keys(HAND_WRITTEN).filter(
+  (slug) => !writtenSlugs.has(slug),
+);
+
 fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
 console.log(`Hand-wrote history for ${updated} cards.`);
-const withH = cards.filter((c) => Array.isArray(c.history) && c.history.length > 0);
-console.log(`Total cards with history: ${withH.length} / 60`);
+if (missingFromCards.length > 0) {
+  console.warn(
+    `⚠️  ${missingFromCards.length} hand-written slug(s) not found in cards.json: ${missingFromCards.join(", ")}`,
+  );
+}

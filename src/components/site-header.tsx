@@ -2,14 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookMarked, Compass, Sparkles, Clock, Map, Filter } from "lucide-react";
+import { BookMarked, Compass, Sparkles, Clock, Map, LayoutGrid } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 
+// 6 nav items, capped per "5±2 mobile-nav" rule. /cards is the
+// canonical "all 60" entry — the old /browse now 308-redirects here.
 const navItems = [
   { href: "/", label: "首页", icon: BookMarked },
   { href: "/series", label: "系列", icon: Compass },
-  { href: "/browse", label: "分类", icon: Filter },
+  { href: "/cards", label: "全部", icon: LayoutGrid },
   { href: "/map", label: "地图", icon: Map },
   { href: "/timeline", label: "时间线", icon: Clock },
   { href: "/create", label: "生成图鉴", icon: Sparkles, accent: true },

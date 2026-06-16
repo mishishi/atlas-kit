@@ -188,14 +188,16 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             </p>
           )}
 
-          {/* Meta table — 4 rows: 类型 / 系列 / 收录 / 标签. The old
-              学名/English rows are gone (Chinese-only editorial tone). */}
-          <dl className="rounded-lg border border-border bg-card p-4 space-y-2.5 text-sm">
-            <div className="flex justify-between gap-4">
+          {/* Meta table — 5 rows: 类型 / 系列 / 评分 / 收录 / 标签数.
+              The old 学名/English rows are gone (Chinese-only editorial tone).
+              Hairline dividers between rows give the sidebar a sense
+              of structure that pure space-y can't (N6 polish). */}
+          <dl className="rounded-lg border border-border bg-card text-sm">
+            <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">类型</dt>
               <dd>{displayLabel(card.kind)}</dd>
             </div>
-            <div className="flex justify-between gap-4">
+            <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">所属系列</dt>
               <dd>
                 <Link
@@ -209,20 +211,20 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
                 </span>
               </dd>
             </div>
-            <div className="flex justify-between gap-4">
+            <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">评分</dt>
               <dd className="font-serif font-bold text-gold-deep tabular-nums">
                 {card.score.toFixed(1)} / 10
               </dd>
             </div>
-            <div className="flex justify-between gap-4">
+            <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">
                 <Calendar className="inline h-3 w-3 mr-1" aria-hidden="true" />
                 收录
               </dt>
               <dd>{formatDate(card.createdAt)}</dd>
             </div>
-            <div className="flex justify-between gap-4">
+            <div className="flex justify-between gap-4 p-3.5">
               <dt className="text-muted-foreground">标签数</dt>
               <dd className="tabular-nums">
                 {card.tags.length} 个

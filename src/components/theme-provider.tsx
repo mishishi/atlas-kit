@@ -21,15 +21,22 @@ export function ThemeProvider({
   children: React.ReactNode;
   defaultTheme?: Theme;
 }) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
-  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("light");
-
-  useEffect(() => {
-    const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-    if (stored === "light" || stored === "dark" || stored === "system") {
-      setTheme(stored);
-    }
-  }, []);
+  // Read the localStorage value DURING the initial state setter so
+  // the first React render uses the correct theme. This is the
+  // standard SSR-safe pattern for "no FOUC + no hydration mismatch":
+  // the inline <script> in layout.tsx already applied the .dark class
+  // to <html> before paint, so the visual is correct; we just need
+  // React state to agree.
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return defaultTheme;
+    const stored = window.localStorage.getItem("theme");
+    if (stored === "light" || stored === "dark" || stored === "system") return stored;
+    return defaultTheme;
+  });
+  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">(() => {
+    if (typeof window === "undefined") return "light";
+    return document.documentElement.classList.contains("dark") ? "dark" : "light";
+  });
 
   useEffect(() => {
     const root = document.documentElement;

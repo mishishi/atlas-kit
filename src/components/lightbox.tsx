@@ -48,19 +48,30 @@ interface LightboxProps {
  *  or 100% natural pixel size (overflows, user can pan). */
 type DisplayMode = "fit" | "natural";
 
-/** Source-of-truth dimensions for the -full.webp tier. The matrix
- *  image generator returns 1536w; resize-cards.mjs was supposed to
- *  scale down to 1024w but `withoutEnlargement: true` was wrong
- *  (1536 < 2048 source → no-op, files stayed 1536w). The 1024w tier
- *  was finally realized by scripts/reencode-full-webp.mjs (2026-06-16)
- *  which also re-encoded PNG → WebP (334 MB → 19 MB, fits Vercel
- *  Hobby 100 MB static upload cap). */
-const NATURAL_W = 1024;
-const NATURAL_H = 1835;
+/** Default size for the -full.webp tier. The matrix image generator
+ *  returns 1536w; resize-cards.mjs was supposed to scale down to
+ *  1024w but `withoutEnlargement: true` was wrong (1536 < 2048
+ *  source → no-op, files stayed 1536w). The 1024w tier was finally
+ *  realized by scripts/reencode-full-webp.mjs (2026-06-16) which
+ *  also re-encoded PNG → WebP (334 MB → 19 MB, fits Vercel Hobby
+ *  100 MB static upload cap).
+ *
+ *  We pass these as `width` / `height` to next/image as a layout
+ *  hint to prevent CLS while the image loads. Once loaded, we read
+ *  the real `naturalWidth` / `naturalHeight` so the 'natural' mode
+ *  renders at the actual aspect ratio (some cards are 1024×1820,
+ *  others 1024×1835, etc). */
+const DEFAULT_W = 1024;
+const DEFAULT_H = 1835;
 
 export function Lightbox({ open, onClose, src, alt, filename, caption }: LightboxProps) {
   const closeBtnRef = useRef<HTMLButtonElement>(null);
   const [mode, setMode] = useState<DisplayMode>("fit");
+  // N7 fix: read the real image dimensions onLoad so the 'natural'
+  // mode renders at the correct aspect ratio for each card (the
+  // hardcoded 1024×1835 was a 9/16 guess; some cards are slightly
+  // taller or shorter).
+  const [naturalDims, setNaturalDims] = useState<{ w: number; h: number } | null>(null);
 
   // Lock body scroll while open
   useEffect(() => {
@@ -164,12 +175,18 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
           <Image
             src={src}
             alt={alt}
-            width={NATURAL_W}
-            height={NATURAL_H}
+            width={naturalDims?.w ?? DEFAULT_W}
+            height={naturalDims?.h ?? DEFAULT_H}
             sizes="(max-width: 1024px) 100vw, 1024px"
             quality={95}
             priority
             draggable={false}
+            onLoad={(e) => {
+              const img = e.currentTarget as HTMLImageElement;
+              if (img.naturalWidth && img.naturalHeight) {
+                setNaturalDims({ w: img.naturalWidth, h: img.naturalHeight });
+              }
+            }}
             className={cn(
               "block select-none",
               mode === "fit"

@@ -261,9 +261,27 @@ export function GenerationWizard() {
     [],
   );
 
-  // When kind changes, re-default the series (and pre-highlight the best match for current topic)
+  // When kind changes, re-default the series ONLY IF the current
+  // seriesSlug is the kind's old default (i.e. the user never picked
+  // a series, the wizard picked it for them). This avoids the
+  // earlier bug where a deep-link like ?series=atlas-miscellany&kind=pet
+  // would be silently clobbered to pet-breed-guide on mount.
+  // Concrete logic: if the current seriesSlug is the default-for-old-kind,
+  // we update to the default-for-new-kind. Otherwise we leave it alone
+  // (the user made an explicit choice, even via a share-link).
+  const prevKindRef = useRef<Kind>(initialKind);
   useEffect(() => {
-    setSeriesSlug(getDefaultSeriesSlugForKind(kind));
+    if (prevKindRef.current === kind) return;
+    const oldDefault = getDefaultSeriesSlugForKind(prevKindRef.current);
+    if (seriesSlug === oldDefault) {
+      setSeriesSlug(getDefaultSeriesSlugForKind(kind));
+    }
+    prevKindRef.current = kind;
+    // We intentionally exclude `seriesSlug` from deps so this doesn't
+    // re-fire when the user picks a series in step 2 (we read the
+    // current value at the time the kind changes, not on every
+    // seriesSlug update).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [kind]);
 
   // Mirror step changes into the URL so the back button + shareable links work
@@ -338,7 +356,7 @@ export function GenerationWizard() {
           breadcrumb AND a dot row, which was redundant UI noise. */}
       <div
         role="group"
-        aria-label={`生成图鉴流程,当前第 ${step} 步,共 5 步`}
+        aria-label={`生成图鉴流程,当前第 ${step} 步,共 4 步`}
         className="mb-8"
       >
         <div className="flex items-center justify-center gap-2 mb-2">

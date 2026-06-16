@@ -44,6 +44,38 @@ function formatMonthShort(month: string): string {
 
 export default function TimelinePage() {
   const allCards = getAllCards(); // already sorted by createdAt desc
+
+  // Empty state (N3 fix): if the dataset is empty, the math below
+  // would render "NaN 天". Show a friendly empty state instead.
+  if (allCards.length === 0) {
+    return (
+      <div className="container py-12 md:py-16">
+        <header className="mb-10 max-w-2xl">
+          <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gold-deep mb-3">
+            <Clock className="h-3.5 w-3.5" aria-hidden="true" />
+            <span>收录时间线</span>
+          </div>
+          <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3">
+            还没有图鉴收录
+          </h1>
+          <p className="text-muted-foreground leading-relaxed">
+            时间线按月倒序排列, 每月内按收录日倒序。第一张图鉴收录后, 这里就会出现它.
+          </p>
+        </header>
+        <div className="rounded-lg border border-dashed border-border bg-card p-12 text-center">
+          <p className="text-muted-foreground">
+            <Link
+              href="/create"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md bg-gold-deep px-5 py-2.5 text-sm font-medium text-cream hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            >
+              去生成第一张 →
+            </Link>
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   const groups = groupByMonth(allCards);
   const firstCard = allCards[allCards.length - 1];
   const lastCard = allCards[0];
@@ -120,7 +152,7 @@ export default function TimelinePage() {
                         >
                           <Image
                             src={c.image_thumb ?? c.image}
-                            alt={c.subtitle || c.title}
+                            alt={c.title}
                             fill
                             sizes="(max-width: 640px) 100vw, 128px"
                             className="object-cover"

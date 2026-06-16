@@ -118,6 +118,15 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
     if (open) setMode("fit");
   }, [open]);
 
+  // Round 19 fix: `naturalDims` is set inside the Image onLoad handler.
+  // Under React 18 strict mode the component mounts/unmounts/mounts,
+  // and on a fast unmount the image might still resolve the src and fire
+  // onLoad AFTER unmount — calling setState on an unmounted component
+  // is a no-op in React 18 but logs a warning. Track open state and
+  // skip the setState if we already closed.
+  const openRef = useRef(open);
+  openRef.current = open;
+
   const toggleMode = useCallback(() => {
     setMode((m) => (m === "fit" ? "natural" : "fit"));
   }, []);
@@ -182,6 +191,9 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
             priority
             draggable={false}
             onLoad={(e) => {
+              // Skip if lightbox closed while the image was loading
+              // (race against the open→close transition).
+              if (!openRef.current) return;
               const img = e.currentTarget as HTMLImageElement;
               if (img.naturalWidth && img.naturalHeight) {
                 setNaturalDims({ w: img.naturalWidth, h: img.naturalHeight });
@@ -224,7 +236,11 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
                 disabled={mode === "fit"}
                 aria-label="适应窗口"
                 className={cn(
-                  "grid h-8 w-8 min-h-[32px] min-w-[32px] place-items-center rounded text-foreground",
+                  // Round 19 fix: bumped min-h/min-w from 32px to 44px to
+                  // satisfy WCAG 2.5.5 touch target on the 3 mode-toggle
+                  // buttons. The other 2 buttons (close, download) were
+                  // already 44px; these slipped through Round 14's audit.
+                  "grid h-10 w-10 min-h-[44px] min-w-[44px] place-items-center rounded text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   "disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent",
                   "transition-colors",
@@ -238,7 +254,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
                 disabled={mode === "fit"}
                 aria-label="重置为适应窗口"
                 className={cn(
-                  "min-h-[32px] min-w-[52px] rounded px-1.5 text-xs font-medium tabular-nums text-foreground",
+                  "min-h-[44px] min-w-[60px] rounded px-2 text-xs font-medium tabular-nums text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   "disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent",
                   "transition-colors",
@@ -259,7 +275,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
                 disabled={mode === "natural"}
                 aria-label="原始 100% 尺寸"
                 className={cn(
-                  "grid h-8 w-8 min-h-[32px] min-w-[32px] place-items-center rounded text-foreground",
+                  "grid h-10 w-10 min-h-[44px] min-w-[44px] place-items-center rounded text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   "disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent",
                   "transition-colors",

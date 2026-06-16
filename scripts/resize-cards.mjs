@@ -1,8 +1,17 @@
 // Resize all cards in public/cards/<slug>.png to 3 sizes:
-//   -thumb  (200 wide, list view, ~30KB)
-//   -card   (600 wide, detail view, ~150KB)
-//   -full   (1024 wide, "view original" link, ~600KB)
-// Original -1024 files are kept as -full to preserve quality.
+//   -thumb  (384 wide WebP, list view, ~50KB)
+//   -card   (600 wide PNG, detail view, ~340KB)
+//   -full   (1024 wide PNG, "view original" link, ~5.5MB originally,
+//            re-encoded to 1024w WebP q90 ~310KB by reencode-full-webp.mjs)
+//
+// ⚠️  DEPRECATED — use scripts/reencode-full-webp.mjs instead.
+// This script has a known bug: `withoutEnlargement: true` together
+// with the original 1536w source causes sharp to skip the 1536→1024
+// downscale (it only downscales when source > target width AND
+// withoutEnlargement doesn't block downscale, but combined with
+// null height there's an edge case that left files at 1536w).
+// See MEMORY entry "sharp batch resize: silent file-write races".
+// Run only if you know what you're doing.
 //
 // cards.json image field is updated to -card (detail default).
 // image_thumb / image_full are added for explicit references.

@@ -28,6 +28,22 @@ const CARDS_JSON = path.resolve("data/cards.json");
 
 const cards = JSON.parse(fs.readFileSync(CARDS_JSON, "utf8"));
 
+// Idempotency check (Round 23): if any card already points to a
+// .webp file, the script has been run before. Bail out instead of
+// silently no-op'ing (or worse, re-encoding and unlinking the
+// already-encoded files).
+const alreadyWebp = cards.some(
+  (c) => c.image_full?.endsWith("-full.webp"),
+);
+if (alreadyWebp) {
+  console.error(
+    "⚠️  image_full already points to .webp — this script has already been run.\n" +
+      "    Re-running it is a no-op (the .png source files have been deleted).\n" +
+      "    If you need to re-encode (e.g. quality change), restore the .png files first.",
+  );
+  process.exit(1);
+}
+
 let resized = 0, failed = 0;
 let totalIn = 0, totalOut = 0;
 

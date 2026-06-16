@@ -443,6 +443,63 @@ R19 + R20 + R21, 5 components). Every remaining component in
 list is now: 14 page surfaces ✓ · 1 API ✓ · 5 SSG families ✓ ·
 9 shared components ✓.
 
+## Round 22: handwrite-history.mjs drift detection (2026-06-16)
+
+Commit `b68b901`. Started auditing the 15 `scripts/` files.
+First pass on `handwrite-history.mjs` (10.9 KB, the largest script).
+Found:
+
+- **P3 no drift detection on hard-coded slugs**: the script
+  hard-codes 9 card slugs and history nodes. If a slug is renamed
+  or deleted from `data/cards.json`, the `for (const c of cards)`
+  loop silently skips it — no warning. Fixed: track
+  `writtenSlugs` Set and `console.warn` any hard-coded slug not
+  found in cards.json.
+
+This is a **7th audit lens**: drift detection on hard-coded
+constants. The same pattern (Object.keys(map).filter not in seen
+Set) is now applied to `add-myth-fact.mjs` (R23a),
+`add-coords.mjs` (R23g), and the backdate-timeline idempotency
+check (R23f) catches the inverse case (script already run).
+
+## Round 23: scripts audit pass (2026-06-16)
+
+8 commits covering 8 of 15 scripts. The remaining 7 are
+either already audited (log-revision.mjs, enrich-mentions.mjs),
+or are LEGACY / superseded per AGENTS.md (rewrite-image-full.mjs,
+restore-image-full.mjs).
+
+| Script | Sub-round | Fix |
+|---|---|---|
+| `add-myth-fact.mjs` | 23a | Drift detection (warn on missing slugs) + skip counter |
+| `draft-history.mjs` | 23b | `--limit` arg validation (reject 0/negative) |
+| `add-cross-tags.mjs` | — | already has drift detection, 0 changes |
+| `draft-extras.mjs` | 23c | Header comment fix (was "3 fields, ~$0.50", actually 2 fields, ~$0.15; myth/fact is hand-written) |
+| `enrich-mentions.mjs` | — | already idempotent via `text.includes` dedup, 0 changes |
+| `draft-sources.mjs` | 23d | Drop sources with missing/non-https URL (avoid broken-link rows) |
+| `fix-descriptions.mjs` | 23e | Add success/fail counters |
+| `backdate-timeline.mjs` | 23f | Idempotency guard (refuse re-run without `--force`) |
+| `add-coords.mjs` | 23g | Drift detection (12 hard-coded coords) |
+| `log-revision.mjs` | — | simple CLI, 0 changes |
+| `resize-cards.mjs` | 23h | Header comment DEPRECATED warning + link to `reencode-full-webp.mjs` |
+| `reencode-full-webp.mjs` | 23h | Idempotency guard (refuse re-run when image_full already .webp) |
+
+3 categories of fixes:
+
+1. **Drift detection** (3 scripts): warn if hard-coded slugs
+   not in cards.json. Catches future renames / deletions.
+2. **Idempotency guards** (2 scripts): refuse to re-run if the
+   output state already matches. Backdate and reencode-full-webp
+   are both destructive (mutate dates / delete source files) so
+   silent re-runs are worse than hard errors.
+3. **Input validation** (1 script): `--limit` parse was loose
+   (`parseInt("foo", 10)` → NaN → silently Infinity). Now
+   validates and rejects with a clear error.
+
+Plus minor: stale header comments (draft-extras, resize-cards),
+broken-link prevention (draft-sources), success/fail counters
+(fix-descriptions).
+
 ## Round 16: untested-pages audit (2026-06-16)
 
 Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier

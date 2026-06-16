@@ -10,7 +10,7 @@ ship breaking changes).
 
 ## [Unreleased] — post-v0.1.0 polish
 
-### Fixed (audit rounds 13–21, 2026-06-16)
+### Fixed (audit rounds 13–23, 2026-06-16)
 
 #### Round 13 — `/all` view 2 series bento
 - Removed 3px `border-left` colored stripe (impeccable ban: side-stripe
@@ -96,7 +96,7 @@ ship breaking changes).
 - `README.md`: rewrote the create-next-app placeholder into a real
   project intro with 60s 上手, 14-route table, image tier
   conventions, and a placeholder for the 公众号 section.
-- `AGENTS.md`: appended Round 8 → Round 21 summaries, current
+- `AGENTS.md`: appended Round 8 → Round 23 summaries, current
   route inventory, post-Round-9 Card schema (25 fields).
 - `docs/blog-2026-06-intro.md`: project retrospective blog post
   (~1900 字), based on actual git log / cards.json / AGENTS.md
@@ -104,6 +104,31 @@ ship breaking changes).
   `.html`.
 - `docs/pr-body-round-9.md`: PR description refresh for the
   merged PR #1.
+- `CHANGELOG.md`: new file, Keep-a-Changelog format.
+
+#### Round 22 — `scripts/handwrite-history.mjs` drift detection
+- 9 hard-coded card slugs. If a slug is renamed / deleted in
+  `cards.json`, the loop silently skips it. Added `writtenSlugs`
+  Set + `console.warn` for any hard-coded slug not found.
+
+#### Round 23 — scripts audit pass
+- `add-myth-fact.mjs`: drift detection + skip counter.
+- `draft-history.mjs`: `--limit` arg validation (reject 0 / negative).
+- `draft-extras.mjs`: header comment fix (was "3 fields, ~$0.50",
+  actually 2 fields, ~$0.15; myth/fact is hand-written in
+  `add-myth-fact.mjs`).
+- `draft-sources.mjs`: drop sources with missing / non-https URL
+  (avoid broken-link rows on the detail page).
+- `fix-descriptions.mjs`: success / fail counters.
+- `backdate-timeline.mjs`: idempotency guard (refuse re-run without
+  `--force` — would otherwise re-distribute dates and shift
+  timeline).
+- `add-coords.mjs`: drift detection on 12 hard-coded coords.
+- `resize-cards.mjs`: DEPRECATED warning in header (replaced by
+  `reencode-full-webp.mjs`).
+- `reencode-full-webp.mjs`: idempotency guard (refuse re-run when
+  `image_full` already points to `.webp` — `.png` sources have
+  been deleted).
 
 ## [v0.1.0] — 2026-06-16 — "5-round audit done"
 

@@ -12,11 +12,12 @@ export default function NotFound() {
   // surface the right "go back" entry point.
   const isCardPath = pathname.startsWith("/cards/");
   const isSeriesPath = pathname.startsWith("/series/");
-  // 4 featured cards from across kinds — gives the user a real
+  // 6 featured cards from across kinds — gives the user a real
   // "what to look at instead" anchor instead of just navigation
   // buttons. (Diverse 12-kind mix prevents the section from
-  // looking like an ad for one series.)
-  const featured = getDiverseFeatured(4);
+  // looking like an ad for one series. Up from 4 in Round 8 to
+  // give the 404 page more visual weight as a "recovery surface".)
+  const featured = getDiverseFeatured(6);
 
   return (
     <div className="container py-section min-h-[60vh]">
@@ -98,7 +99,25 @@ export default function NotFound() {
         >
           或者看看这些
         </h2>
-        <CardGrid cards={featured} cols="lg:grid-cols-4" />
+        <CardGrid cards={featured} cols="lg:grid-cols-3 xl:grid-cols-6" />
+
+        {/* Quick "explore a topic" links — 6 popular Chinese tags
+            surfaced as tag pills, giving users a 1-click way to
+            find related content without using the search input. */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
+          <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground/70">
+            热门话题
+          </span>
+          {["中国", "古代", "江南", "城市", "植物", "美食"].map((tag) => (
+            <Link
+              key={tag}
+              href={`/cards?tag=${encodeURIComponent(tag)}`}
+              className="inline-flex min-h-[44px] items-center rounded-full border border-border bg-card px-3.5 py-1.5 text-sm text-muted-foreground hover:text-foreground hover:border-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            >
+              #{tag}
+            </Link>
+          ))}
+        </div>
       </section>
     </div>
   );

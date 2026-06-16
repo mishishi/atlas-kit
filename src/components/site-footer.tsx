@@ -79,6 +79,14 @@ export function SiteFooter() {
                   搜索图鉴
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/changelog"
+                  className="inline-flex min-h-[44px] items-center rounded-sm hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  更新日志
+                </Link>
+              </li>
             </ul>
           </div>
 

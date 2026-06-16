@@ -379,6 +379,38 @@ lightbox one is the most subtle because the buttons look small
 even at 44px due to their 1-line layout — easy to miss without a
 deliberate scan.
 
+## Round 20: SiteHeader / SiteFooter / OG sync (2026-06-16)
+
+Commit `bd9963f`. Audit pass on the two site-wide chrome components
+plus a stray bug from Round 12. Found:
+
+- **P2 mobile nav active state weaker than desktop**: in
+  `site-header.tsx` the desktop nav active item got `bg-muted`
+  background but the mobile nav only got `text-foreground
+  font-medium` — against 5 inactive siblings, mobile active
+  barely stood out. Added the same `bg-muted` to mobile.
+- **P2 footer GitHub link is a placeholder**: `href="https://github.com/"`
+  pointed to the GitHub root instead of the actual repo. Fixed
+  to `https://github.com/mishishi/atlas-kit`. (Vercel-deployed
+  build had been serving the placeholder; confirmed by curl-ing
+  /sitemap.xml earlier in this session.)
+- **P2 footer mailto doesn't read env var**: hard-coded
+  `hello@atlas-kit.example` (a `.example` reserved TLD that
+  never delivers) and didn't match the per-card errata link
+  which reads `NEXT_PUBLIC_SITE_AUTHOR_EMAIL`. Fixed to read the
+  same env var with the same fallback (`atlas-kit@example.com`).
+- **P2 tagline "模块信息" still in 2 places after Round 12 fix**:
+  Round 12 changed "模块信息" → "信息归档" in `app/page.tsx`
+  (home hero) but missed 2 stragglers:
+  `components/site-footer.tsx:157` and `app/opengraph-image.tsx:86`.
+  Both still said "模块信息". Fixed.
+
+The 4th pattern: **stale values**. The codebase has accumulated
+since Round 12 and 2 stragglers + a placeholder survived. The
+"Vercel deploy shows placeholder" symptom earlier was the audit
+trigger — without curling prod, these wouldn't have surfaced
+in a code review alone.
+
 ## Round 16: untested-pages audit (2026-06-16)
 
 Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier

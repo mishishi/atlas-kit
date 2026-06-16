@@ -35,6 +35,7 @@ function callMmx(prompt) {
 const targets = cards.filter((c) => !c.description || c.description.trim().length < 20);
 console.log(`Will rewrite descriptions for ${targets.length} cards.`);
 
+let success = 0, fail = 0;
 for (let i = 0; i < targets.length; i++) {
   const c = targets[i];
   const prompt = `为「${c.title}」(类型:${c.kind}, 副标题:${c.subtitle||""}, 标签:${c.tags.join(",")}) 写一段图鉴社的卡片简介.
@@ -50,14 +51,17 @@ for (let i = 0; i < targets.length; i++) {
       .trim();
     if (body.length < 30) {
       console.log("FAIL: too short");
+      fail++;
       continue;
     }
     c.description = body;
+    success++;
     fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
     console.log(`OK (${body.length} chars)`);
   } catch (e) {
+    fail++;
     console.log(`ERR: ${e.message?.slice(0, 80) ?? e}`);
   }
 }
 
-console.log(`\nDone.`);
+console.log(`\nDone. success=${success} fail=${fail}.`);

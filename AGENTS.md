@@ -352,6 +352,33 @@ dead code path. Lesson: when the visible polish looks done, switch
 to a "code health" lens (dead code, unused state, type-narrowing,
 etc.) — different category of issues.
 
+## Round 19: Lightbox 44px touch + unmount guard (2026-06-16)
+
+Commit `9961af0`. Third component audit pass on `Lightbox` (60
+detail pages, every hero click). Found:
+
+- **P2 mode-toggle buttons under 44px**: the 3 buttons in the
+  显示模式 group (zoom-out / 重置 / zoom-in) were `min-h-[32px] /
+  min-w-[32px]`, below WCAG 2.5.5 touch target. Bumped to 44px /
+  44px (zoom-out/zoom-in) and 44px / 60px (reset button which
+  carries the "适应" label). Same pattern as Round 14's series-tab
+  fix — these slipped through that audit because the buttons are
+  inside a lightbox, not a regular page.
+- **P2 onLoad setState after unmount**: `Image.onLoad` calls
+  `setNaturalDims` to read the real pixel dimensions for the
+  'natural' zoom mode. Under React 18 strict mode (which the
+  project uses in `next.config.mjs`) the component mounts /
+  unmounts / mounts, and a fast unmount can fire onLoad on a
+  dead instance. React 18 silently no-ops setState on unmounted
+  components but logs a warning. Fix: added `openRef` tracking
+  the latest `open` value, skip setState if we already closed.
+
+The 44px fix is the third occurrence of this specific pattern
+(Round 8 chips → Round 14 series tabs → Round 19 lightbox). The
+lightbox one is the most subtle because the buttons look small
+even at 44px due to their 1-line layout — easy to miss without a
+deliberate scan.
+
 ## Round 16: untested-pages audit (2026-06-16)
 
 Commit `f75e2cb`. Audited the 4 page-level surfaces that earlier

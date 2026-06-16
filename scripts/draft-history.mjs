@@ -14,7 +14,18 @@ import { execFileSync } from "node:child_process";
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const limitIdx = args.indexOf("--limit");
-const limit = limitIdx >= 0 ? parseInt(args[limitIdx + 1], 10) : Infinity;
+let limit = Infinity;
+if (limitIdx >= 0) {
+  const limitRaw = args[limitIdx + 1];
+  const parsed = parseInt(limitRaw, 10);
+  // Round 23 fix: validate --limit so `0` or `-3` doesn't silently
+  // produce "Done. success=0 fail=0" with no explanation.
+  if (!Number.isFinite(parsed) || parsed <= 0) {
+    console.error(`Invalid --limit value: "${limitRaw}". Must be a positive integer.`);
+    process.exit(1);
+  }
+  limit = parsed;
+}
 
 const cardsPath = path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));

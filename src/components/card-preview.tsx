@@ -48,9 +48,17 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
             fresh content on repeat visits. Static dot (no infinite pulse) per
             the design review — MOTION_INTENSITY=4 doesn't justify a perpetual
             animation in a list of 60 cards. Round 12 fix: drop the duplicate
-            aria-label; the visible "新收录" text is the SR-accessible name. */}
+            aria-label; the visible "新收录" text is the SR-accessible name.
+
+            Round 17 fix: `Date.now()` runs at SSR time (server clock) but
+            again at hydration time (client clock) — the two can drift by
+            seconds-to-minutes and silently flip the badge on/off across the
+            boundary. suppressHydrationWarning tells React not to warn; we
+            accept the very rare flash as the cost of keeping this a server
+            component (moving it client-side would re-hydrate all 60 cards). */}
         {Date.now() - new Date(card.createdAt).getTime() < 86400000 && (
           <span
+            suppressHydrationWarning
             className="absolute top-2 left-2 inline-flex items-center gap-1 rounded-full bg-success px-2 py-0.5 text-[10px] font-medium text-success-foreground shadow-card"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-cream" aria-hidden="true" />

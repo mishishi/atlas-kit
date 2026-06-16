@@ -39,11 +39,11 @@ export default function Home({ searchParams }: HomeProps) {
           <div className="grid gap-10 lg:gap-16 lg:grid-cols-[1.1fr_1fr] items-center">
             <div>
               <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 animate-fade-in">
-                知识整理 · 模块信息 · <br className="hidden md:block" />
+                知识整理 · 信息归档 · <br className="hidden md:block" />
                 <span className="text-gold-deep">图鉴式展示</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-                9 个固定模块 · 任意主题 · 像翻一页百科书的图鉴卡片。
+                60 张中文图鉴 · 12 个主题类型 · 像翻一页百科书的卡片集。
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link

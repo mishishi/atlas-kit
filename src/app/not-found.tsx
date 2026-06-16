@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Compass, Search, Home, Sparkles, ArrowLeft } from "lucide-react";
 import { CardGrid } from "@/components/card-grid";
-import { getDiverseFeatured } from "@/lib/data";
+import { getDiverseFeatured, getTopTags } from "@/lib/data";
 
 export default function NotFound() {
   const pathname = usePathname() ?? "";
@@ -18,6 +18,9 @@ export default function NotFound() {
   // looking like an ad for one series. Up from 4 in Round 8 to
   // give the 404 page more visual weight as a "recovery surface".)
   const featured = getDiverseFeatured(6);
+  // Top 6 tags, computed from the data (Round 12 fix — was hardcoded).
+  // /cards supports ?tag= (verified during the audit).
+  const topTags = getTopTags(6).map((t) => t.tag);
 
   return (
     <div className="container py-section min-h-[60vh]">
@@ -108,7 +111,7 @@ export default function NotFound() {
           <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground/70">
             热门话题
           </span>
-          {["中国", "古代", "江南", "城市", "植物", "美食"].map((tag) => (
+          {topTags.map((tag) => (
             <Link
               key={tag}
               href={`/cards?tag=${encodeURIComponent(tag)}`}

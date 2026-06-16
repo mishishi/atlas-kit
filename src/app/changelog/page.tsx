@@ -67,10 +67,19 @@ function getAllEntries(): ChangelogEntry[] {
 export default function ChangelogPage() {
   const entries = getAllEntries();
 
-  // Group by YYYY-MM
+  // Group by YYYY-MM in Asia/Shanghai (Round 12 fix — `toISOString()` is
+  // UTC, so entries created near midnight BJT would file into the wrong
+  // month group and show the wrong date to Chinese users).
+  const shanghaiFmt = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
   const groups = new Map<string, ChangelogEntry[]>();
   for (const e of entries) {
-    const ym = e.date.toISOString().slice(0, 7);
+    // en-CA emits YYYY-MM-DD, slice(0, 7) gives YYYY-MM
+    const ym = shanghaiFmt.format(e.date).slice(0, 7);
     if (!groups.has(ym)) groups.set(ym, []);
     groups.get(ym)!.push(e);
   }
@@ -142,14 +151,14 @@ export default function ChangelogPage() {
                           </div>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-muted-foreground/70 mb-1">
-                              <span className="font-medium text-foreground/80 tabular-nums">
-                                {entry.date.toISOString().slice(0, 10)}
-                              </span>
-                              <span>·</span>
-                              <span>
-                                {entry.type === "revised" ? "修订" : "收录"}
-                              </span>
-                            </div>
+                          <span className="font-medium text-foreground/80 tabular-nums">
+                            {shanghaiFmt.format(entry.date)}
+                          </span>
+                          <span>·</span>
+                          <span>
+                            {entry.type === "revised" ? "修订" : "收录"}
+                          </span>
+                        </div>
                             <p className="font-serif text-sm font-medium leading-snug group-hover:text-gold-deep transition-colors">
                               {entry.summary}
                             </p>

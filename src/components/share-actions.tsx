@@ -28,7 +28,7 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
   };
 
   return (
-    <div className="grid grid-cols-3 gap-2">
+    <div role="group" aria-label={`分享 ${title}`} className="grid grid-cols-3 gap-2">
       <a
         href={imageUrl}
         download={`${imageFilename}.webp`}
@@ -81,7 +81,6 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
           </>
         )}
       </button>
-      <span className="sr-only">分享 {title}</span>
     </div>
   );
 }

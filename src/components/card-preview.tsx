@@ -16,9 +16,14 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
   return (
     <Link
       href={`/cards/${card.slug}`}
+      aria-label={`${card.title} — ${card.subtitle || "图鉴卡片"}`}
       className={cn(
         "group block overflow-hidden rounded-lg border border-border bg-card shadow-card",
         "transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-card-hover",
+        // Round 12 a11y fix: explicit focus-visible ring + offset for
+        // keyboard users. Without this, sighted-mouse users see the
+        // hover lift, but Tab users get no focus indicator at all.
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         className,
       )}
     >
@@ -30,8 +35,9 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
           // haven't been resized yet.
           src={card.image_thumb ?? card.image}
           // Alt describes the IMAGE's content (card.subtitle), not the card itself.
-          // Avoids SR users hearing "金毛寻回犬 科普图鉴" twice when the parent link
-          // already announces the title via aria-label.
+          // The link's aria-label (title + subtitle) is the SR-accessible
+          // name; image alt is just the picture content. Round 12 fix: also
+          // drop the duplicate aria-label on the "新收录" badge below.
           alt={card.subtitle || card.title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -41,11 +47,11 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
         {/* "New" badge: surfaces cards added in the last 24h so users notice
             fresh content on repeat visits. Static dot (no infinite pulse) per
             the design review — MOTION_INTENSITY=4 doesn't justify a perpetual
-            animation in a list of 60 cards. */}
+            animation in a list of 60 cards. Round 12 fix: drop the duplicate
+            aria-label; the visible "新收录" text is the SR-accessible name. */}
         {Date.now() - new Date(card.createdAt).getTime() < 86400000 && (
           <span
             className="absolute top-2 left-2 inline-flex items-center gap-1 rounded-full bg-success px-2 py-0.5 text-[10px] font-medium text-success-foreground shadow-card"
-            aria-label="24 小时内新收录"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-cream" aria-hidden="true" />
             新收录

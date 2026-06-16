@@ -55,19 +55,33 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
   }
   const orderedKinds = THEME_TYPES.map((t) => t.key as CardKind).filter((k) => byKind.has(k));
 
-  // Filtered view: cards of the active kind, optionally with tag filter
+  // Filtered view: cards of the active kind, optionally with tag filter.
+  // Round 12 fix: when `?tag=` is set WITHOUT `?kind=`, the user expects
+  // "all cards tagged X" across kinds, not the default per-kind preview
+  // that silently ignores the tag. So:
+  //   - ?kind=X  → cards of that kind (optionally + ?tag= filter)
+  //   - ?tag=X  (no kind) → all cards tagged X, any kind
+  //   - both    → cards of that kind, filtered by tag
+  //   - neither → per-kind preview (the default)
   const filteredCards = (() => {
-    if (!activeKind) return [];
-    const byKindCards = byKind.get(activeKind) ?? [];
-    return activeTag ? byKindCards.filter((c) => c.tags.includes(activeTag)) : byKindCards;
+    if (activeKind) {
+      const byKindCards = byKind.get(activeKind) ?? [];
+      return activeTag ? byKindCards.filter((c) => c.tags.includes(activeTag)) : byKindCards;
+    }
+    if (activeTag) {
+      return allCards.filter((c) => c.tags.includes(activeTag));
+    }
+    return [];
   })();
   const kindLabel = activeKind ? KIND_LABELS[activeKind] : null;
-  // Top tags from the post-kind-filter set
+  // Top tags from the post-kind-filter set (or global if no kind filter)
   const topTags = activeKind
     ? getTopTags(20).filter(
         (t) => t.tag === activeTag || (byKind.get(activeKind) ?? []).some((c) => c.tags.includes(t.tag)),
       )
-    : [];
+    : activeTag
+      ? getTopTags(20) // any tag with at least 1 card
+      : [];
 
   return (
     <div className="container py-12 md:py-16">

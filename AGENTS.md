@@ -261,6 +261,32 @@ AI drafting cost: **~$0.45 total** via `mmx text chat` (MiniMax M2.7).
    `node scripts/log-revision.mjs <slug> "summary"` to record
    the change
 
+## Round 13: /all view 2 polish (2026-06-16)
+
+Commit `bcfa9cd`. 5 fixes from a single-page impeccable audit
+(Health Score 14/20 → addressed 3 P1 + 2 minor):
+
+- **A1 border-stripe ban**: removed `border-left: 3px` colored accent
+  on series bento cards (impeccable: "never intentional on cards").
+  Replaced with 8px accent dot + accent-colored h3 text.
+- **A2 dark-mode palette hardcoding**: `bg = palette[0]` (#FAF3E9 cream)
+  was invisible in dark mode. Now uses theme-aware `bg-muted` token;
+  accent hex (#C97064 / #6B8294 / etc.) is mid-saturation so it reads
+  in both modes.
+- **A3 touch target**: View 1 list links went from ~32px to `min-h-[44px]`.
+  Round 8 already fixed chip targets, but list-style links slipped.
+- **B1 aria-label**: count badge now `aria-label="{n} 张图鉴"` so SR
+  reads "3 张图鉴" instead of ambiguous "3 张".
+- **C1 em-dash**: "按篇幅、按系列、按类型" replaced " — " with "：".
+
+1 finding deferred (P2, mobile weight imbalance View 2 vs View 1+3 —
+  cosmetic only, doesn't fail any audit dimension).
+
+**Smoke-test note**: Windows Bash tool timeout kills backgrounded
+`next start` (even with `Start-Process -WindowStyle Hidden` which
+trips a permission gate on classifier unavailable). Build-pass +
+manual diff read is the practical verification path.
+
 ## Round 8: design audit (2026-06-16)
 
 `docs/design-audit-2026-06-16.md` is the full taste-skill +

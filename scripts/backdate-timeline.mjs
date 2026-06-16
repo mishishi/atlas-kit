@@ -4,11 +4,35 @@
 // which makes the timeline look like a single vertical line.
 // Distribute ~half across May + early June 2026 for a real "图鉴
 // 社 over 6 weeks" feel.
+//
+// IMPORTANT: this script is ONE-SHOT. Running it a second time will
+// re-distribute the now-oldest 30 cards (which include some already-
+// backdated cards) and shift them to new dates. The output is
+// deterministic by content, but the backdating cascade is not what
+// you want. If you've already run this once, delete the file or pass
+// --force.
 import fs from "node:fs";
 import path from "node:path";
 
+const args = process.argv.slice(2);
+const force = args.includes("--force");
+
 const cardsPath = path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
+
+// Idempotency check: any card with a createdAt in May 2026 means
+// the script has been run before (the original batch was June 11/13).
+// Round 23 fix: bail out with a clear message instead of silently
+// re-running.
+const hasBeenBackdated = cards.some((c) => c.createdAt.startsWith("2026-05"));
+if (hasBeenBackdated && !force) {
+  console.error(
+    "⚠️  This script appears to have already been run (cards with createdAt in May 2026 found).\n" +
+      "    Running it again would re-distribute dates and shift the timeline.\n" +
+      "    If you really mean to re-run (e.g. you want a different spread), pass --force.",
+  );
+  process.exit(1);
+}
 
 // Sort by current createdAt asc so the backdating is deterministic.
 cards.sort((a, b) => a.createdAt.localeCompare(b.createdAt));

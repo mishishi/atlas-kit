@@ -64,6 +64,10 @@ export interface Card {
   createdAt: string; // ISO date
   /** 5-8 历史节点, 详情页底部"历史沿革"区使用. 草拟 by AI + 人工校对. */
   history?: HistoryNode[];
+  /** 1-2 句权威引文, 标注来源 (苏轼/维基百科/...). AI 草拟 + 人工校对. */
+  quote?: string;
+  /** 1 句有趣小知识. AI 草拟 + 人工校对. */
+  trivia?: string;
   /** 地理坐标 (用于 /map 视图). 仅 12 张地理图鉴有. */
   coords?: { lat: number; lng: number };
   /** 修订记录. scripts/log-revision.mjs 维护. */

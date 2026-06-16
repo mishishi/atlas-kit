@@ -167,6 +167,27 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             <LinkedText text={card.description} titleToSlug={mentionMap} />
           </p>
 
+          {/* 引文 — pull-quote style. 1-2 句权威引文, 标注来源.
+              Goes right after the description as a visual breath,
+              so users see "this is what experts say" before
+              scrolling to the technical meta. */}
+          {card.quote && (
+            <blockquote className="border-l-2 border-gold-deep pl-4 font-serif text-sm italic text-foreground/85">
+              {card.quote}
+            </blockquote>
+          )}
+
+          {/* 轶事 — small inline note. Visual contrast with the
+              pull-quote (no left border, smaller, lighter) so the
+              two don't visually compete. */}
+          {card.trivia && (
+            <p className="rounded-md bg-muted/40 px-3.5 py-2.5 text-xs leading-relaxed text-muted-foreground">
+              <span className="font-serif font-semibold text-gold-deep not-italic">小知识</span>
+              <span className="mx-1.5 text-border">·</span>
+              {card.trivia}
+            </p>
+          )}
+
           {/* Meta table — 4 rows: 类型 / 系列 / 收录 / 标签. The old
               学名/English rows are gone (Chinese-only editorial tone). */}
           <dl className="rounded-lg border border-border bg-card p-4 space-y-2.5 text-sm">

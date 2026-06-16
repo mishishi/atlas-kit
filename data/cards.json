@@ -23,7 +23,7 @@
     ],
     "tagline": "比利时警犬主力",
     "subtitle": "机警 · 强健 · 工作犬 · 黑色",
-    "description": "",
+    "description": "马犬，全称马林诺犬，是比利时牧羊犬四大变种之一，因其短毛和流畅的线条而备受青睐。作为全球最优秀的工作犬品种之一，马犬体型匀称、肌肉发达，拥有极高的警觉性和服从性。凭借聪明且易于训练的特性，马犬广泛应用于警犬、军犬、搜救犬及护卫等领域，被誉为工作犬中的多面手。",
     "createdAt": "2026-05-01T08:12:00.000Z",
     "image_thumb": "/cards/belgian-malinois-thumb.webp",
     "image_full": "/cards/belgian-malinois-full.webp",
@@ -80,7 +80,9 @@
         "url": "https://www.czs.ioz.cas.cn",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "马士提夫犬（英语：Mastiff）是一种体型巨大的犬种，属于獒犬类，原产于英国。——维基百科",
+    "trivia": "马犬的体重可超过100公斤，是世界上体重最大的犬种之一。"
   },
   {
     "slug": "shanghai",
@@ -107,7 +109,7 @@
     ],
     "tagline": "魔都百年风云",
     "subtitle": "海派 · 摩登 · 金融 · 弄堂",
-    "description": "（参见：西湖龙井、梅花）",
+    "description": "上海是中国最大的经济中心城市，位于长江入海口南岸，前枕黄浦江，是中国重要的金融、贸易、航运和科技创新中心。近代开埠后，上海逐渐形成以“海派文化”为代表的多元包容城市品格，中西合璧的石库门弄堂与陆家嘴金融城的摩天大楼共存，展现出独特的城市景观与人文气质。",
     "createdAt": "2026-05-02T08:12:00.000Z",
     "image_thumb": "/cards/shanghai-thumb.webp",
     "image_full": "/cards/shanghai-full.webp",
@@ -182,7 +184,9 @@
         "url": "https://www.thepaper.cn/",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "上海是中国重要的经济中心，位于长江入海口的东岸。（维基百科）",
+    "trivia": "上海的城隍庙小吃以小笼包最为著名。"
   },
   {
     "slug": "hangzhou",
@@ -207,7 +211,7 @@
     ],
     "tagline": "上有天堂, 下有苏杭",
     "subtitle": "西湖 · 江南 · 茶都 · 宋韵",
-    "description": "（参见：西湖龙井、梅花）",
+    "description": "杭州，简称“杭”，浙江省省会，位于中国东南沿海、钱塘江下游，是长三角城市群中心城市之一。杭州以“上有天堂，下有苏杭”闻名，拥有西湖世界文化遗产，以西湖风光、江南园林、龙井茶香和南宋文化底蕴著称，是中国重要的历史文化名城和数字经济高地。",
     "createdAt": "2026-05-03T08:12:00.000Z",
     "image_thumb": "/cards/hangzhou-thumb.webp",
     "image_full": "/cards/hangzhou-full.webp",
@@ -268,7 +272,9 @@
         "url": "https://www.guangdianhangzhou.com",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "水光潋滟晴方好，山色空蒙雨亦奇。欲把西湖比西子，淡妆浓抹总相宜。——苏轼《饮湖上初晴后雨》",
+    "trivia": "人民币20元背面图案是西湖的三潭印月"
   },
   {
     "slug": "suzhou",
@@ -294,7 +300,7 @@
     ],
     "tagline": "一座园林半城诗",
     "subtitle": "园林 · 江南 · 昆曲 · 经济强市",
-    "description": "（参见：梅花、苏州园林）",
+    "description": "苏州位于江苏省东南部，东临上海，是长江三角洲重要的中心城市。这座历史文化名城以精美典雅的古典园林著称，拙政园、留园等九座园林被列入《世界遗产名录》，同时也是昆曲的发源地，承载着深厚的江南水乡文化底蕴。作为经济强市，苏州在保持传统文化的同时展现出强劲的综合实力，是中国最具竞争力的地级市之一。",
     "createdAt": "2026-05-04T08:12:00.000Z",
     "image_thumb": "/cards/suzhou-thumb.webp",
     "image_full": "/cards/suzhou-full.webp",
@@ -365,7 +371,9 @@
         "url": "https://kns.cnki.net/kns8/defaultresult/index",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "苏州，古称吴中，位于长江三角洲，是首批国家历史文化名城之一。——维基百科",
+    "trivia": "苏州的园林数量超过100座，拙政园、留园等被列入世界文化遗产。"
   },
   {
     "slug": "xian",
@@ -392,7 +400,7 @@
     ],
     "tagline": "十三朝古都",
     "subtitle": "古都 · 长安 · 兵马俑 · 丝路",
-    "description": "（参见：敦煌莫高窟、李白）",
+    "description": "西安，简称“镐”，古称长安，位于关中平原中部，是陕西省省会、西北地区重要的中心城市。它与罗马、雅典、开罗并称为世界四大古都，历史上曾是西周、秦、西汉、隋、唐等十三个王朝的都城，是中华文明的重要发祥地之一。著名的秦始皇陵兵马俑、世界文化遗产城墙、大雁塔等众多遗迹，以及古代丝绸之路起点的历史地位，使其成为享誉中外的历史文化名城。",
     "createdAt": "2026-05-05T08:12:00.000Z",
     "image_thumb": "/cards/xian-thumb.webp",
     "image_full": "/cards/xian-full.webp",
@@ -463,7 +471,9 @@
         "url": "https://www.cssn.cn",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "西安，古称长安，位于关中平原中部，是中华文明的重要发源地之一。（来源：维基百科）",
+    "trivia": "西安拥有全球最大的秦始皇兵马俑博物馆。"
   },
   {
     "slug": "winter-solstice",
@@ -490,7 +500,7 @@
     ],
     "tagline": "一年之中夜最长",
     "subtitle": "饺子 · 汤圆 · 数九 · 阳生",
-    "description": "（参见：苏州、西湖龙井）",
+    "description": "冬至是中国传统二十四节气之一，也是民间重要的传统节日，通常在每年公历12月21日至23日之间。冬至这天太阳直射南回归线，是北半球白昼最短、黑夜最长的一天，民间素有\"冬至大如年\"的说法。在饮食上，北方有吃饺子的习俗，南方则盛行吃汤圆，同时还有\"数九\"消寒和\"阳生\"养生等传统习俗，体现了中华民族对天文历法与节气文化的独特理解。",
     "createdAt": "2026-05-06T08:12:00.000Z",
     "image_thumb": "/cards/winter-solstice-thumb.webp",
     "image_full": "/cards/winter-solstice-full.webp",
@@ -547,7 +557,9 @@
         "url": "https://www.cssn.cn/",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "冬至，又称冬节，是二十四节气之一，时间在公历12月21日或22日。（来源：维基百科）",
+    "trivia": "北方有‘冬至不端饺子碗，冻耳朵’的说法。"
   },
   {
     "slug": "agate",
@@ -573,7 +585,7 @@
     ],
     "tagline": "千变的玉石",
     "subtitle": "玉髓 · 纹理 · 七彩 · 佛教七宝",
-    "description": "",
+    "description": "玛瑙是一种玉髓矿物，主要化学成分为二氧化硅（SiO₂），常见于全球各地的火山岩和沉积岩中。其最大特征是带有条纹、斑点或云彩状纹理，颜色丰富多样，包括红、白、绿、紫等，甚至出现罕见的七彩玛瑙。质地细腻坚硬，莫氏硬度约6.5-7，玻璃光泽，常被加工成珠子、雕件、印章等工艺品。在佛教文化中，玛瑙与砗磲、珊瑚、琥珀等并列为七种珍宝之一，象征坚定与吉祥。全球主要产地有巴西、印度、马达加斯加和中国（主要为逊克、凉山等）。",
     "createdAt": "2026-05-07T08:12:00.000Z",
     "image_thumb": "/cards/agate-thumb.webp",
     "image_full": "/cards/agate-full.webp",
@@ -630,7 +642,9 @@
         "url": "https://baike.baidu.com/item/%E7%8E%9B%E7%91%99",
         "type": "百科"
       }
-    ]
+    ],
+    "quote": "“玛瑙是一种隐晶质石英，主要化学成分为二氧化硅，常呈带状或斑点状的颜色。”（维基百科）",
+    "trivia": "古代罗马人曾把玛瑙磨成粉末用作防腐剂。"
   },
   {
     "slug": "labrador-retriever",
@@ -713,7 +727,9 @@
         "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=Y&SearchWord=%E6%8B%89%E5%B8%83%E6%8B%89%E5%A4%9A%E7%8A%AC&korder=desc",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "拉布拉多寻回犬是一种中大型犬类，性格友善、聪明，常被用于导盲和搜救。（维基百科）",
+    "trivia": "拉布拉多的英文名‘Labrador’来源于加拿大拉布拉多地区。"
   },
   {
     "slug": "ragdoll",
@@ -801,7 +817,9 @@
         "url": "https://www.ioz.cas.cn/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "布偶猫（英文：Ragdoll）是一种原产于美国的猫品种，以其亲人、温顺的性格和柔软的被毛著称。（维基百科）",
+    "trivia": "布偶猫因其放松时会像布娃娃一样软绵绵而得名。"
   },
   {
     "slug": "cockatiel",
@@ -884,7 +902,9 @@
         "url": "https://www.ioz.ac.cn",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "玄凤鹦鹉（Cockatiel, Nymphicus hollandicus）是最小的凤头鹦鹉之一，分布于澳大利亚。（维基百科）",
+    "trivia": "玄凤鹦鹉能够学会吹口哨，甚至能模仿简单的旋律。"
   },
   {
     "slug": "corn-snake",
@@ -972,7 +992,9 @@
         "url": "http://www.zssw.org/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "玉米蛇因体色似玉米而得名，主要分布于美国东南部的草原和林地。——维基百科",
+    "trivia": "玉米蛇在受惊时会抖动尾部，模仿响尾蛇的警告声。"
   },
   {
     "slug": "tibetan-antelope",
@@ -1066,7 +1088,9 @@
         "url": "http://www.forestry.gov.cn/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "藏羚羊（学名：Pantholops hodgsonii）是偶蹄目牛科的一个种。 ——维基百科",
+    "trivia": "藏羚羊的绒毛是制作高档羊绒围巾的原料之一。"
   },
   {
     "slug": "giant-panda",
@@ -1149,7 +1173,9 @@
         "url": "https://www.panda.org.cn",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "大熊猫是中国的国宝，数量稀少，受到重点保护。（维基百科）",
+    "trivia": "大熊猫每天吃掉的竹子重量相当于自身体重的约30%。"
   },
   {
     "slug": "snow-leopard",
@@ -1237,7 +1263,9 @@
         "url": "https://www.cnki.net",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "雪豹是体型中等、体毛灰白且有黑色斑点的猫科动物，生活在海拔3000至5000米的高山地区。——维基百科",
+    "trivia": "雪豹的尾巴非常长，可帮助其在悬崖上保持平衡。"
   },
   {
     "slug": "siberian-tiger",
@@ -1325,7 +1353,9 @@
         "url": "https://www.forestry.gov.cn",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "东北虎是体型最大的虎亚种，曾广泛分布于中国东北及俄罗斯远东。（维基百科）",
+    "trivia": "东北虎的舌头上有倒刺，能轻松剥离猎物的皮毛。"
   },
   {
     "slug": "crested-ibis",
@@ -1408,7 +1438,9 @@
         "url": "https://www.ioz.cas.cn/朱鹮研究",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "朱鹮为国家一级保护动物，现已实现人工繁育，数量从危机恢复至千只以上。/维基百科",
+    "trivia": "每只朱鹮每天可吃掉约200只害虫。"
   },
   {
     "slug": "longjing-tea",
@@ -1491,7 +1523,9 @@
         "url": "https://www.teamuseum.cn/",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "西湖龙井茶是中国浙江省杭州市西湖周边的特产，属于绿茶类。",
+    "trivia": "龙井茶在冲泡时会呈现出豆香和栗香两种主要香气。"
   },
   {
     "slug": "ginkgo",
@@ -1568,7 +1602,9 @@
         "url": "https://www.dpm.org.cn",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "银杏，亦名白果，树高数十丈，叶扇形，性平味甘。——《本草纲目》",
+    "trivia": "银杏是活化石，存在于约2.7亿年前的二叠纪。"
   },
   {
     "slug": "plum-blossom",
@@ -1652,7 +1688,9 @@
         "url": "https://www.dpm.org.cn/collection/qijin/232642.html",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "墙角数枝梅，凌寒独自开；遥知不是雪，为有暗香来。（王安石《梅花》）",
+    "trivia": "梅花的花瓣可入药，古代常用于治疗感冒和咳嗽。"
   },
   {
     "slug": "orchid",
@@ -1745,7 +1783,9 @@
         "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=WA0453_306&txt=%E5%85%B0%E8%8A%B1",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "《中国植物志》记载：兰花为多年生草本植物，花形优美，色彩丰富。",
+    "trivia": "兰花的种子细小如尘，依赖真菌共生才能萌发。"
   },
   {
     "slug": "bamboo",
@@ -1833,7 +1873,9 @@
         "url": "https://www.dpm.org.cn/",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "宁可食无肉，不可居无竹。无肉令人瘦，无竹令人俗。人瘦尚可肥，士俗不可医。（苏轼《於潜僧绿筠轩》）",
+    "trivia": "竹子不是树，而是禾本科的草本植物。"
   },
   {
     "slug": "beijing",
@@ -1921,7 +1963,9 @@
         "url": "https://www.gov.cn/shenghuo/quanguo/beijing.htm",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "北京是中华人民共和国的首都，位于华北平原北部，毗邻渤海湾。",
+    "trivia": "北京故宫是世界上现存规模最大、保存最完整的木质结构古建筑群。"
   },
   {
     "slug": "li-bai",
@@ -2010,7 +2054,9 @@
         "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8L5351A&txt=李白",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "天生我材必有用，千金散尽还复来。人生得意须尽欢，莫使金樽空对月。——李白《将进酒》",
+    "trivia": "李白被誉为“诗仙”，与杜甫并称为“李杜”。"
   },
   {
     "slug": "du-fu",
@@ -2090,7 +2136,9 @@
         "url": "https://www.cddfxt.com",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "国破山河在，城春草木深。感时花溅泪，恨别鸟惊心。",
+    "trivia": "杜甫的诗被称为‘诗史’，因其记录历史现实。"
   },
   {
     "slug": "su-shi",
@@ -2185,7 +2233,9 @@
         "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8PTB0GJ&txt苏轼",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "水光潋滟晴方好，山色空蒙雨亦奇。欲把西湖比西子，淡妆浓抹总相宜。——苏轼《饮湖上初晴后雨》",
+    "trivia": "苏轼在黄州时自号‘东坡居士’，并发明了‘东坡肉’。"
   },
   {
     "slug": "cai-lun",
@@ -2269,7 +2319,9 @@
         "url": "https://www.cas.cn",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "蔡伦（？—141年），东汉时期的官员、发明家，发明了造纸术，对人类文明产生了深远影响。（维基百科）",
+    "trivia": "传说蔡伦在改进造纸时，曾用破布、树皮等废弃物作原料。"
   },
   {
     "slug": "zhang-heng",
@@ -2358,7 +2410,9 @@
         "url": "https://www.dpm.org.cn/collection/instrument/23456.html",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "张衡研制浑天仪、地动仪，并系统观测天体运行。",
+    "trivia": "张衡发明了地动仪，是世界上最早预测地震的仪器之一。"
   },
   {
     "slug": "spring-festival",
@@ -2442,7 +2496,9 @@
         "url": "https://www.cnki.net/",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "\"爆竹声中一岁除, 春风送暖入屠苏。千门万户曈曈日, 总把新桃换旧符。\\u201d——王安石《元日》",
+    "trivia": "春节的庆祝活动从腊月二十三的小年一直持续到正月十五的元宵节, 跨度近一个月, 是中国历时最长的传统节日。"
   },
   {
     "slug": "qingming",
@@ -2529,7 +2585,9 @@
         "url": "https://news.cctv.com/special/24jq/index.shtml",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "清明时节雨纷纷，路上行人欲断魂。借问酒家何处有，牧童遥指杏花村。——杜牧《清明》",
+    "trivia": "清明节是中国传统节日中唯一以节气命名的法定假日。"
   },
   {
     "slug": "dragon-boat",
@@ -2613,7 +2671,9 @@
         "url": "https://www.gmw.cn/",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "端午节，又称龙舟节，是中国的传统节日，流行于汉、壮、苗等民族。/ 维基百科",
+    "trivia": "部分地区在端午节会挂艾草驱邪，寓意健康平安。"
   },
   {
     "slug": "mid-autumn",
@@ -2702,7 +2762,9 @@
         "url": "https://www.cnki.net",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "但愿人长久，千里共婵娟。——苏轼《水调歌头·明月几时有》",
+    "trivia": "月饼最早出现于唐代，是一种圆形点心"
   },
   {
     "slug": "peking-duck",
@@ -2796,7 +2858,9 @@
         "url": "https://www.dpm.org.cn",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "北京烤鸭是北京最具代表性的菜肴之一，以其皮脆肉嫩、香味浓郁而闻名。",
+    "trivia": "传统吃法是将鸭肉卷入薄饼，配以甜面酱和葱丝。"
   },
   {
     "slug": "lamian",
@@ -2885,7 +2949,9 @@
         "url": "https://kns.cnki.net/kns8/defaultresult/index",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "维基百科：“兰州拉面是甘肃省兰州市的传统面食，以清汤、牛肉、手工拉面为特色。”",
+    "trivia": "传统上，兰州拉面的面条要在拉制过程中折叠七次，以形成独特的筋道口感。"
   },
   {
     "slug": "rougamo",
@@ -2974,7 +3040,9 @@
         "url": "https://www.sxhm.com/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "肉夹馍是陕西传统小吃，以炖烂猪肉夹于烤制白吉馍中。（维基百科）",
+    "trivia": "肉夹馍的‘夹’字本义是‘把东西夹住’。"
   },
   {
     "slug": "yum-cha",
@@ -3064,7 +3132,9 @@
         "url": "https://www.gdmuseum.com",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "广式早茶是一种以饮茶为主、配以各式点心的传统餐饮习俗。——维基百科",
+    "trivia": "在香港，茶楼常备有“点心车”，服务员推车穿梭送点心。"
   },
   {
     "slug": "chongqing-hotpot",
@@ -3153,7 +3223,9 @@
         "url": "https://www.ccas.com.cn/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "重庆火锅是中国四川省重庆市的特色火锅，以麻辣著称。（来源：维基百科）",
+    "trivia": "重庆人吃火锅时常用油碟蘸料来降低辣度。"
   },
   {
     "slug": "plum-rain",
@@ -3241,7 +3313,9 @@
         "url": "https://www.cas.cn",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "梅雨，指在中国江淮流域及其以南地区，5月至7月间出现的连续阴雨天气。（维基百科）",
+    "trivia": "江淮地区梅雨期间的降雨量约占全年降雨量的30%。"
   },
   {
     "slug": "aurora",
@@ -3324,7 +3398,9 @@
         "url": "https://www.bao.ac.cn/xkpx/2019/09/20190918100013.html",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "极光是由太阳风粒子与地球磁场相互作用，在大气层中产生的光辉现象。——维基百科",
+    "trivia": "极光还能在木星和土星的极区出现，甚至比地球更亮。"
   },
   {
     "slug": "qiantang-tide",
@@ -3422,7 +3498,9 @@
         "url": "https://www.zmnh.com",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "钱塘江大潮是世界上最壮观的潮汐之一。（来源：维基百科）",
+    "trivia": "潮汐最快时速可达30公里/时，冲击力足以掀翻小船。"
   },
   {
     "slug": "tide",
@@ -3511,7 +3589,9 @@
         "url": "https://www.cas.cn",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "潮汐是因天体（月球、太阳）对地球的引力差，使海面产生周期性涨落的现象。——维基百科",
+    "trivia": "潮汐的周期约为12小时25分钟，约为月球绕地周期的四分之一。"
   },
   {
     "slug": "el-nino",
@@ -3594,7 +3674,9 @@
         "url": "https://www.cma.gov.cn/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "厄尔尼诺是太平洋赤道东部海表温度异常升高的气候现象。（维基百科）",
+    "trivia": "厄尔尼诺的名字源自西班牙语，意为‘小男孩’。"
   },
   {
     "slug": "silk-road",
@@ -3682,7 +3764,9 @@
         "url": "https://www.xinhuanet.com",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "《大唐西域记》记载：“商胡贩客，日趋而至”。",
+    "trivia": "丝绸之路全长约7000公里，横跨欧亚大陆。"
   },
   {
     "slug": "reign-of-zhenguan",
@@ -3761,7 +3845,9 @@
         "url": "https://www.cnki.net/",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "贞观之治，百度咸熙——《旧唐书·太宗纪上》/维基百科",
+    "trivia": "魏徵敢于直谏，曾被太宗称为‘真乃良臣’。"
   },
   {
     "slug": "an-shi-rebellion",
@@ -3845,7 +3931,9 @@
         "url": "https://www.cssn.cn/",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "安史之乱是中国唐代一次大规模的内战，由安禄山、史思明发动，持续约八年。",
+    "trivia": "安史之乱期间，安禄山曾自称‘大燕皇帝’，改元天宝。"
   },
   {
     "slug": "hundred-days-reform",
@@ -3933,7 +4021,9 @@
         "url": "https://www.cnki.net",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "1898年，光绪帝在康有为、梁启超等人的推动下，实行戊戌变法。——维基百科",
+    "trivia": "变法仅维持103天，便因慈禧政变而宣告失败。"
   },
   {
     "slug": "xian-incident",
@@ -4016,7 +4106,9 @@
         "url": "https://history.people.com.cn/GB/205396/205470/index.html",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "西安事变，又称双十二事变，是指1936年12月12日张学良、杨虎城在西安扣留蒋介石，要求停止内战、联合抗日的事件。",
+    "trivia": "事变期间，张学良的东北军与杨虎城的西北军曾短暂对峙。"
   },
   {
     "slug": "jade-bi",
@@ -4100,7 +4192,9 @@
         "url": "https://www.cssn.cn/",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "\"苍璧以荐神明。\\u201d——《周礼·春官·典瑞》",
+    "trivia": "玉璧中央的穿孔在古代不仅是装饰, 也用于穿绳系挂。良渚文化的玉璧孔径常在 4-6 厘米之间, 是当时礼仪器具的典型尺寸。"
   },
   {
     "slug": "lacquerware",
@@ -4195,7 +4289,9 @@
         "url": "https://www.wenwu.cn/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "漆器是以漆（一种天然树脂）为主要原料，经过多道工序制成的器物。——维基百科",
+    "trivia": "世界上最古老的漆器出土于中国浙江省，距今约9000年。"
   },
   {
     "slug": "blue-white-porcelain",
@@ -4275,7 +4371,9 @@
         "url": "https://www.chnmuseum.cn",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "青花瓷起源于唐代，至元代在景德镇大量烧制，成为中国陶瓷史上的里程碑。（维基百科）",
+    "trivia": "在现代，青花瓷纹样常被用于时装设计，甚至成为奢侈品牌的灵感来源。"
   },
   {
     "slug": "abacus",
@@ -4364,7 +4462,9 @@
         "url": "https://www.ihchina.cn/",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "算盘是一种利用珠子进行计算的中国传统工具。——维基百科",
+    "trivia": "算盘珠子数通常为七横五竖，象征北斗七星。"
   },
   {
     "slug": "5g",
@@ -4458,7 +4558,9 @@
         "url": "https://www.cnii.com.cn",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "5G是第五代移动通信技术的简称，旨在提供更高的数据速率、更低的时延和更大的连接容量。——维基百科",
+    "trivia": "5G毫米波频段信号穿透力弱，需密集部署基站。"
   },
   {
     "slug": "artificial-intelligence",
@@ -4552,7 +4654,9 @@
         "url": "https://www.tsinghua.edu.cn/",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "人工智能是研究用计算机来模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的科学。——维基百科",
+    "trivia": "人工智能一词于1956年在美国达特茅斯会议上首次被提出。"
   },
   {
     "slug": "quantum-computing",
@@ -4647,7 +4751,9 @@
         "url": "https://www.gov.cn/fuwu/zt/quantum/index.htm",
         "type": "新闻"
       }
-    ]
+    ],
+    "quote": "量子计算是一种利用量子叠加和量子纠缠等量子力学原理进行信息处理的计算方式。",
+    "trivia": "量子计算机的硬件必须在接近绝对零度的环境下运行。"
   },
   {
     "slug": "blockchain",
@@ -4736,7 +4842,9 @@
         "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=WZGLZTBDQB05",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "区块链是一种去中心化的分布式账本技术，具备不可篡改、可追溯的特性 / 维基百科",
+    "trivia": "比特币于2009年诞生，是区块链技术的首个实际应用"
   },
   {
     "slug": "space-station",
@@ -4820,7 +4928,9 @@
         "url": "https://baike.baidu.com/item/%E7%A9%BA%E9%97%B4%E7%AB%AD",
         "type": "百科"
       }
-    ]
+    ],
+    "quote": "空间站（英语：Space station）是一种在地球轨道上运行，供人类长期居住并进行科学实验的航天器。",
+    "trivia": "国际空间站每90分钟绕地球一圈。"
   },
   {
     "slug": "forbidden-city",
@@ -4919,7 +5029,9 @@
         "url": "https://www.cnki.net",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "维基百科：故宫是明清两代的皇家宫殿，位于北京中轴线上。",
+    "trivia": "每年约有1600万人次参观故宫，成为全球访客最多的博物馆之一。"
   },
   {
     "slug": "mogao-caves",
@@ -5004,7 +5116,9 @@
         "url": "https://www.xinhuanet.com/fortune/c_117006547.htm",
         "type": "媒体"
       }
-    ]
+    ],
+    "quote": "莫高窟是世界上现存规模最大、内容最丰富的佛教艺术地。——维基百科",
+    "trivia": "莫高窟共有735个洞窟，壁画面积约4.5万平方米，彩塑2000余尊。"
   },
   {
     "slug": "suzhou-gardens",
@@ -5091,7 +5205,9 @@
         "url": "https://www.garden.suzhou.gov.cn",
         "type": "机构"
       }
-    ]
+    ],
+    "quote": "苏州园林以其精巧的布局和独特的意境，被列为世界文化遗产。来源：维基百科",
+    "trivia": "苏州园林中，拙政园的水池形状酷似古代官帽。"
   },
   {
     "slug": "three-body",
@@ -5164,7 +5280,9 @@
         "url": "https://kns.cnki.net/kns8/defaultresult/index",
         "type": "学术"
       }
-    ]
+    ],
+    "quote": "《三体》获2015年雨果奖最佳长篇，标志中国科幻首次获此殊荣（维基百科）",
+    "trivia": "《三体》中的“黑暗森林法则”已成为科幻界的经典概念。"
   },
   {
     "slug": "sanxingdui",
@@ -5257,6 +5375,8 @@
         "url": "https://www.chnmuseum.cn/zl",
         "type": "博物馆"
       }
-    ]
+    ],
+    "quote": "三星堆遗址是中国西南地区最重要的青铜时代遗址之一，出土的文物具有极高的考古价值。/维基百科",
+    "trivia": "三星堆出土的青铜神树高达3.6米，至今仍为世界上最高的青铜器之一。"
   }
 ]

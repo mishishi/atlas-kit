@@ -5,14 +5,17 @@ import { Copy, Check, Link as LinkIcon, Download, FileText } from "lucide-react"
 import Link from "next/link";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import type { Card } from "@/lib/types";
+import { ShareCardButton } from "@/components/share-card-button";
 
 interface ShareActionsProps {
   imageUrl: string;
   imageFilename: string;
   title: string;
+  card: Card; // R38: 分享为图片 (1-click PNG with title + QR + brand)
 }
 
-export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsProps) {
+export function ShareActions({ imageUrl, imageFilename, title, card }: ShareActionsProps) {
   const [copied, setCopied] = useState(false);
   // Round 21 fix: track mount state so the post-copy setTimeout can't
   // fire setState after the user navigates away (same pattern as
@@ -41,7 +44,7 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
   };
 
   return (
-    <div role="group" aria-label={`分享 ${title}`} className="grid grid-cols-3 gap-2">
+    <div role="group" aria-label={`分享 ${title}`} className="grid grid-cols-2 sm:grid-cols-4 gap-2">
       <a
         href={imageUrl}
         download={`${imageFilename}.webp`}
@@ -55,6 +58,8 @@ export function ShareActions({ imageUrl, imageFilename, title }: ShareActionsPro
         <span className="hidden sm:inline">下载原图</span>
         <span className="sm:hidden">图</span>
       </a>
+      {/* R38: 分享为图片 (1-click PNG with title + QR + brand overlay) */}
+      <ShareCardButton card={card} />
       {/* PDF 导出 = Cmd+P 路径. 跳到 /print/cards/[slug], 那个页面会自动
           触发 window.print(), 用户的浏览器 "保存为 PDF" 就是最终产物.
           比 Puppeteer / jsPDF 之类的服务端方案轻 100x. */}

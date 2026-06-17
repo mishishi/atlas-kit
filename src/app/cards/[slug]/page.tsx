@@ -392,6 +392,7 @@ export default function CardDetail({
             imageUrl={card.image_full ?? card.image}
             imageFilename={card.slug}
             title={card.title}
+            card={card}
           />
 
           {/* 勘误 — single small link, not a CTA. The user can report

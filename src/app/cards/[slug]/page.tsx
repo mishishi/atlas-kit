@@ -36,6 +36,31 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${card.title} · 图鉴社`,
     description: card.tagline,
+    // Round 27 (2026-06-17): per-card OpenGraph image. Without this,
+    // sharing /cards/sanxingdui to WeChat/Twitter falls back to the
+    // generic /opengraph-image (the all-cards collage), which kills
+    // click-through. Now each share surfaces a 1024w WebP preview
+    // of the actual card.
+    openGraph: {
+      title: `${card.title} · 图鉴社`,
+      description: card.tagline,
+      type: "article",
+      locale: "zh_CN",
+      // image_full is the 1024w WebP (post-reencode, ~310 KB).
+      // Absolute URL required by WeChat / Twitter crawlers — they're
+      // server-side fetchers that don't follow the SPA's own base URL.
+      images: card.image_full
+        ? [{ url: `${process.env.SITE_URL ?? ""}${card.image_full}` }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${card.title} · 图鉴社`,
+      description: card.tagline,
+      images: card.image_full
+        ? [`${process.env.SITE_URL ?? ""}${card.image_full}`]
+        : undefined,
+    },
   };
 }
 
@@ -241,12 +266,10 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
                 </span>
               </dd>
             </div>
-            <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
-              <dt className="text-muted-foreground">评分</dt>
-              <dd className="font-serif font-bold text-gold-deep tabular-nums">
-                {card.score.toFixed(1)} / 10
-              </dd>
-            </div>
+            {/* Round 27 (2026-06-17): 评分 row removed.
+                Anti-RPG positioning: no per-card rating on the detail
+                page. The `score` field stays in cards.json for future
+                sort use, but is no longer surfaced to users. */}
             <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">
                 <Calendar className="inline h-3 w-3 mr-1" aria-hidden="true" />

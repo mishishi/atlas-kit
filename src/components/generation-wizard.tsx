@@ -329,9 +329,18 @@ export function GenerationWizard() {
       setTopicHistory(pushTopicHistory(topic));
       const seriesName = SERIES_TYPES.find((s) => s.slug === seriesSlug)?.name ?? seriesSlug;
       const seriesNo = data.image.match(/-(\w+)\.png$/)?.[1] ?? "?";
+      // Round 27 (2026-06-17): the detail route is SSG with
+      // `dynamicParams = false`, so a brand-new card returns 404 in
+      // dev mode until the next `next build`. Toast tells the user
+      // that the image is saved + warns about the dev limitation so
+      // they don't think the generation failed.
       toast.success(`已收录到「${seriesName}」`, {
-        description: `${data.title} · No.${seriesNo}`,
-        duration: 4000,
+        description:
+          `${data.title} · No.${seriesNo}` +
+          (process.env.NODE_ENV !== "production"
+            ? " · 本地 dev 需 next build 后访问, 生产 Vercel 自动"
+            : ""),
+        duration: 6000,
       });
       router.push(`/cards/${data.slug}`);
     } catch (e: any) {

@@ -567,7 +567,7 @@
     "slug": "agate",
     "title": "玛瑙",
     "kind": "object",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "026",
     "palette": [
       "#F5F0E6",
@@ -1450,7 +1450,7 @@
     "slug": "longjing-tea",
     "title": "西湖龙井",
     "kind": "plant",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "001",
     "palette": [
       "#F5F0E6",
@@ -1537,7 +1537,7 @@
     "slug": "ginkgo",
     "title": "银杏",
     "kind": "plant",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "002",
     "palette": [
       "#F5F0E6",
@@ -1616,7 +1616,7 @@
     "slug": "plum-blossom",
     "title": "梅花",
     "kind": "plant",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "003",
     "palette": [
       "#F5F0E6",
@@ -1702,7 +1702,7 @@
     "slug": "orchid",
     "title": "兰花",
     "kind": "plant",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "004",
     "palette": [
       "#F5F0E6",
@@ -1797,7 +1797,7 @@
     "slug": "bamboo",
     "title": "竹子",
     "kind": "plant",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "005",
     "palette": [
       "#F5F0E6",
@@ -1977,7 +1977,7 @@
     "slug": "li-bai",
     "title": "李白",
     "kind": "person",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "006",
     "palette": [
       "#F5F0E6",
@@ -2068,7 +2068,7 @@
     "slug": "du-fu",
     "title": "杜甫",
     "kind": "person",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "007",
     "palette": [
       "#F5F0E6",
@@ -2150,7 +2150,7 @@
     "slug": "su-shi",
     "title": "苏轼",
     "kind": "person",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "008",
     "palette": [
       "#F5F0E6",
@@ -2247,7 +2247,7 @@
     "slug": "cai-lun",
     "title": "蔡伦",
     "kind": "person",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "009",
     "palette": [
       "#F5F0E6",
@@ -2333,7 +2333,7 @@
     "slug": "zhang-heng",
     "title": "张衡",
     "kind": "person",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "010",
     "palette": [
       "#F5F0E6",
@@ -2780,7 +2780,7 @@
     "slug": "peking-duck",
     "title": "北京烤鸭",
     "kind": "food",
-    "series": "atlas-miscellany",
+    "series": "culinary-corner",
     "seriesNo": "011",
     "palette": [
       "#F5F0E6",
@@ -2876,7 +2876,7 @@
     "slug": "lamian",
     "title": "兰州拉面",
     "kind": "food",
-    "series": "atlas-miscellany",
+    "series": "culinary-corner",
     "seriesNo": "012",
     "palette": [
       "#F5F0E6",
@@ -2967,7 +2967,7 @@
     "slug": "rougamo",
     "title": "肉夹馍",
     "kind": "food",
-    "series": "atlas-miscellany",
+    "series": "culinary-corner",
     "seriesNo": "013",
     "palette": [
       "#F5F0E6",
@@ -3058,7 +3058,7 @@
     "slug": "yum-cha",
     "title": "广式早茶",
     "kind": "food",
-    "series": "atlas-miscellany",
+    "series": "culinary-corner",
     "seriesNo": "014",
     "palette": [
       "#F5F0E6",
@@ -3150,7 +3150,7 @@
     "slug": "chongqing-hotpot",
     "title": "重庆火锅",
     "kind": "food",
-    "series": "atlas-miscellany",
+    "series": "culinary-corner",
     "seriesNo": "015",
     "palette": [
       "#F5F0E6",
@@ -3241,7 +3241,7 @@
     "slug": "plum-rain",
     "title": "梅雨",
     "kind": "phenomenon",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "016",
     "palette": [
       "#F5F0E6",
@@ -3331,7 +3331,7 @@
     "slug": "aurora",
     "title": "极光",
     "kind": "phenomenon",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "017",
     "palette": [
       "#F5F0E6",
@@ -3416,7 +3416,7 @@
     "slug": "qiantang-tide",
     "title": "钱塘江大潮",
     "kind": "phenomenon",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "018",
     "palette": [
       "#F5F0E6",
@@ -3518,7 +3518,7 @@
     "slug": "tide",
     "title": "潮汐",
     "kind": "phenomenon",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "019",
     "palette": [
       "#F5F0E6",
@@ -3609,7 +3609,7 @@
     "slug": "el-nino",
     "title": "厄尔尼诺",
     "kind": "phenomenon",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "020",
     "palette": [
       "#F5F0E6",
@@ -3694,7 +3694,7 @@
     "slug": "silk-road",
     "title": "丝绸之路",
     "kind": "history",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "021",
     "palette": [
       "#F5F0E6",
@@ -3784,7 +3784,7 @@
     "slug": "reign-of-zhenguan",
     "title": "贞观之治",
     "kind": "history",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "022",
     "palette": [
       "#F5F0E6",
@@ -3865,7 +3865,7 @@
     "slug": "an-shi-rebellion",
     "title": "安史之乱",
     "kind": "history",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "023",
     "palette": [
       "#F5F0E6",
@@ -3951,7 +3951,7 @@
     "slug": "hundred-days-reform",
     "title": "戊戌变法",
     "kind": "history",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "024",
     "palette": [
       "#F5F0E6",
@@ -4041,7 +4041,7 @@
     "slug": "xian-incident",
     "title": "西安事变",
     "kind": "history",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "025",
     "palette": [
       "#F5F0E6",
@@ -4126,7 +4126,7 @@
     "slug": "jade-bi",
     "title": "玉璧",
     "kind": "object",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "027",
     "palette": [
       "#F5F0E6",
@@ -4212,7 +4212,7 @@
     "slug": "lacquerware",
     "title": "漆器",
     "kind": "object",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "028",
     "palette": [
       "#F5F0E6",
@@ -4309,7 +4309,7 @@
     "slug": "blue-white-porcelain",
     "title": "青花瓷",
     "kind": "object",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "029",
     "palette": [
       "#F5F0E6",
@@ -4391,7 +4391,7 @@
     "slug": "abacus",
     "title": "算盘",
     "kind": "object",
-    "series": "atlas-miscellany",
+    "series": "craft-and-botanical",
     "seriesNo": "030",
     "palette": [
       "#F5F0E6",
@@ -4484,7 +4484,7 @@
     "slug": "5g",
     "title": "5G",
     "kind": "tech",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "031",
     "palette": [
       "#F5F0E6",
@@ -4580,7 +4580,7 @@
     "slug": "artificial-intelligence",
     "title": "人工智能",
     "kind": "tech",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "032",
     "palette": [
       "#F5F0E6",
@@ -4676,7 +4676,7 @@
     "slug": "quantum-computing",
     "title": "量子计算",
     "kind": "tech",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "033",
     "palette": [
       "#F5F0E6",
@@ -4773,7 +4773,7 @@
     "slug": "blockchain",
     "title": "区块链",
     "kind": "tech",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "034",
     "palette": [
       "#F5F0E6",
@@ -4864,7 +4864,7 @@
     "slug": "space-station",
     "title": "空间站",
     "kind": "tech",
-    "series": "atlas-miscellany",
+    "series": "frontiers-and-wonders",
     "seriesNo": "035",
     "palette": [
       "#F5F0E6",
@@ -4950,7 +4950,7 @@
     "slug": "forbidden-city",
     "title": "故宫",
     "kind": "other",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "036",
     "palette": [
       "#F5F0E6",
@@ -5053,7 +5053,7 @@
     "slug": "mogao-caves",
     "title": "敦煌莫高窟",
     "kind": "other",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "037",
     "palette": [
       "#F5F0E6",
@@ -5140,7 +5140,7 @@
     "slug": "suzhou-gardens",
     "title": "苏州园林",
     "kind": "other",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "038",
     "palette": [
       "#F5F0E6",
@@ -5231,7 +5231,7 @@
     "slug": "three-body",
     "title": "三体",
     "kind": "other",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "039",
     "palette": [
       "#F5F0E6",
@@ -5306,7 +5306,7 @@
     "slug": "sanxingdui",
     "title": "三星堆",
     "kind": "other",
-    "series": "atlas-miscellany",
+    "series": "history-and-figures",
     "seriesNo": "040",
     "palette": [
       "#F5F0E6",

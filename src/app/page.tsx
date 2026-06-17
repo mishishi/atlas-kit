@@ -145,7 +145,7 @@ export default function Home({ searchParams }: HomeProps) {
             </div>
           </div>
 
-          {/* Series strip — 4 stat cells, all same card style for consistency. */}
+          {/* Stat strip — 4 cells, all same card style for consistency. */}
           <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
               <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">{allCards.length}</div>
@@ -156,16 +156,14 @@ export default function Home({ searchParams }: HomeProps) {
               <div className="text-xs text-muted-foreground mt-1">主题系列</div>
             </div>
             <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
-              <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">
-                {(allCards.reduce((a, c) => a + c.score, 0) / allCards.length).toFixed(1)}
-              </div>
-              <div className="text-xs text-muted-foreground mt-1">平均评分</div>
+              <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">{THEME_TYPES.length}</div>
+              <div className="text-xs text-muted-foreground mt-1">主题类型</div>
             </div>
             <div className="rounded-lg border border-border bg-card p-4 paper-grain shadow-card">
               <div className="font-serif text-2xl font-bold text-gold-deep tabular-nums">
-                {THEME_TYPES.length}
+                {allCards.reduce((a, c) => a + (c.history?.length ?? 0), 0)}
               </div>
-              <div className="text-xs text-muted-foreground mt-1">主题类型</div>
+              <div className="text-xs text-muted-foreground mt-1">历史节点</div>
             </div>
           </div>
         </div>

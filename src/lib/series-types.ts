@@ -84,16 +84,52 @@ export const SERIES_TYPES: SeriesType[] = [
     createdAt: "2026-06-12",
   },
   {
-    slug: "atlas-miscellany",
-    name: "图鉴杂俎",
-    tagline: "放不下单一主题的有趣集合",
+    slug: "craft-and-botanical",
+    name: "工艺与草木",
+    tagline: "从一片叶子到一件器物的造物笔记",
     description:
-      "图鉴社里那些不属于任何已有系列，但又值得被整理的主题。可能是某种植物、一件器物、一个科技概念——只要它能讲出有意思的故事，就值得一张图鉴。",
-    palette: ["#F5F0E6", "#B8956A", "#A8B89C"],
-    themeTags: ["plant", "food", "object", "tech", "phenomenon", "history", "person", "other"],
-    keywords: ["植物", "食物", "器物", "科技", "现象", "历史", "人物", "其他"],
-    icon: "BookMarked",
-    createdAt: "2026-06-12",
+      "把植物与器物放在一起看，是因为它们都回答同一个问题：人和自然怎么把「材料」变成「有意义的东西」。龙井、算盘、青花瓷——每张图鉴都讲一个造物故事的来龙去脉。",
+    palette: ["#F5F0E6", "#7A8B6E", "#A8B89C"],
+    themeTags: ["plant", "object"],
+    keywords: ["植物", "草木", "器物", "工艺", "造物", "非遗", "茶", "瓷", "玉"],
+    icon: "Leaf",
+    createdAt: "2026-06-17",
+  },
+  {
+    slug: "culinary-corner",
+    name: "烟火人间",
+    tagline: "把一道菜讲成一个地方",
+    description:
+      "北京烤鸭、兰州拉面、广式早茶——食物从来不只是味道, 是地理、历史、人情世故的容器。这一系列只收录可以讲出「地方+故事」的食单, 不收录单纯的食谱。",
+    palette: ["#FAF3E9", "#C97064", "#D9B48E"],
+    themeTags: ["food"],
+    keywords: ["食物", "美食", "地方", "饮食", "非遗", "文化", "烤鸭", "火锅", "早茶"],
+    icon: "UtensilsCrossed",
+    createdAt: "2026-06-17",
+  },
+  {
+    slug: "history-and-figures",
+    name: "历史与人物",
+    tagline: "把一段历史和一个人并排放在一起",
+    description:
+      "从司马迁到苏东坡, 从贞观之治到安史之乱——历史和人物是同一件事的两面。这一系列关注「为什么这件事 / 这个人重要」, 不收录只罗列年代的流水账。",
+    palette: ["#F5F0E6", "#8C7F6E", "#A8B89C"],
+    themeTags: ["person", "history", "other"],
+    keywords: ["历史", "人物", "古代", "近代", "事件", "朝代", "故宫", "遗址", "考古"],
+    icon: "ScrollText",
+    createdAt: "2026-06-17",
+  },
+  {
+    slug: "frontiers-and-wonders",
+    name: "寰宇惊奇",
+    tagline: "从一片极光到一个算力单位",
+    description:
+      "把「自然的奇迹」和「人造的奇迹」放在一起, 因为它们都在拓展人类认知的边界。极光、潮汐、5G、量子计算——每张图鉴都讲一个「原来世界是这样 / 我们能做到这样」的故事。",
+    palette: ["#F0F4F7", "#6B8294", "#B7C5CE"],
+    themeTags: ["tech", "phenomenon"],
+    keywords: ["科技", "自然", "极光", "潮汐", "现象", "天文", "物理", "AI", "区块链"],
+    icon: "Sparkles",
+    createdAt: "2026-06-17",
   },
 ];
 
@@ -104,14 +140,24 @@ export const SERIES_TYPE_MAP: Record<string, SeriesType> = Object.fromEntries(
 
 /** Get the default series for a kind (used by API when no seriesSlug is provided) */
 export function getDefaultSeriesSlugForKind(kind: string): string {
-  // Map kind → default series
+  // Map kind → default series. Round 27 (2026-06-17): each of the
+  // 8 non-pet/animal/city/festival kinds now has its own curated
+  // series, so no kind falls back to a generic "miscellany" bucket.
   const map: Record<string, string> = {
     pet: "pet-breed-guide",
     animal: "wild-fauna-atlas",
     city: "city-encyclopedia",
     festival: "festival-almanac",
+    plant: "craft-and-botanical",
+    object: "craft-and-botanical",
+    food: "culinary-corner",
+    history: "history-and-figures",
+    person: "history-and-figures",
+    other: "history-and-figures",
+    phenomenon: "frontiers-and-wonders",
+    tech: "frontiers-and-wonders",
   };
-  return map[kind] ?? "atlas-miscellany";
+  return map[kind] ?? "craft-and-botanical";
 }
 
 /**
@@ -145,8 +191,9 @@ export function recommendSeries(
       }
     }
 
-    // 3. fallback boost for atlas-miscellany (always a valid option)
-    if (s.slug === "atlas-miscellany") score += 1;
+    // 3. fallback boost for craft-and-botanical (the most general
+    //    curated series — covers plants + objects which span everything)
+    if (s.slug === "craft-and-botanical") score += 1;
 
     return { series: s, score, reason: reasons.join("；") || "通用兜底系列" };
   });

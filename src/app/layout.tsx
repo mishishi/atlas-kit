@@ -8,7 +8,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { WebVitals } from "@/components/web-vitals";
 
 // Local fonts only — no Google Fonts URL.
-// Files copied from C:\Windows\Fonts into src/app/fonts/.
+// Fonts checked into src/app/fonts/ (committed to git). On Windows the
+// source-of-truth is C:\Windows\Fonts; on macOS / Linux you can grab
+// the same files from Google Fonts (Noto Sans/Serif SC Variable Fonts,
+// OFL licensed). The two extra woff files (Geist Mono / Geist) are
+// the dev-mode fallback monospace.
 // Noto Sans SC (sans) + Noto Serif SC (serif) — both are Variable Fonts so
 // one file covers all weights (100-900).
 const notoSansSC = localFont({

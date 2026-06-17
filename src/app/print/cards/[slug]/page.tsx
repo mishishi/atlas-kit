@@ -115,8 +115,8 @@ export default function PrintCardPage({ params }: { params: { slug: string } }) 
               <dd className="font-medium">{displayLabel(card.kind)}</dd>
               <dt className="text-ink/50">系列</dt>
               <dd className="font-medium">{seriesName} · No.{card.seriesNo}</dd>
-              <dt className="text-ink/50">评分</dt>
-              <dd className="font-serif font-bold tabular-nums">{card.score.toFixed(1)} / 10</dd>
+              {/* Round 27 (2026-06-17): 评分 row removed (anti-RPG).
+                  score field kept in cards.json for future sort use. */}
               <dt className="text-ink/50">收录</dt>
               <dd className="tabular-nums">{formatDate(card.createdAt)}</dd>
             </dl>

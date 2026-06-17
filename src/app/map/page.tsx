@@ -6,6 +6,18 @@ import { MapView } from "@/components/map-view";
 export const metadata: Metadata = {
   title: "地图 · 图鉴社",
   description: "在地图上看图鉴社的地理图鉴 — 12 张有坐标的图鉴分布在中国大地。",
+  // Round 27 (2026-06-17): explicit OG image for /map shares.
+  openGraph: {
+    title: "地图 · 图鉴社",
+    description: "在地图上看图鉴社的地理图鉴。",
+    type: "website",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "地图 · 图鉴社",
+    description: "在地图上看图鉴社的地理图鉴。",
+  },
 };
 
 export default function MapPage() {

@@ -124,14 +124,39 @@ function getFuse() {
 }
 
 /**
+ * Pre-compute the document frequency of every tag across all cards.
+ * Used by relatedScore() for IDF (Inverse Document Frequency) weighting
+ * so that common tags (e.g. "中国" appears on 44/60 cards) contribute
+ * less to the relatedness score than rare tags (e.g. "三星伴月" on 1/60).
+ *
+ * Built once at module load — O(N × avg-tags-per-card) ≈ 60 × 8 = 480 ops.
+ * Without this, recommendations on 中国-themed cards would just be a
+ * list of every other 中国 card (44/60 = 73% of the corpus matches),
+ * which is exactly the Round 27 P1-6 problem.
+ */
+const TAG_DOC_FREQ = new Map<string, number>();
+for (const c of cards) {
+  for (const t of c.tags) {
+    TAG_DOC_FREQ.set(t, (TAG_DOC_FREQ.get(t) ?? 0) + 1);
+  }
+}
+/** log(N / df + 1) — softer than full IDF, prevents zero-division on
+ *  tags that appear on every card. */
+const TAG_IDF = new Map<string, number>();
+const N = cards.length;
+for (const [tag, df] of TAG_DOC_FREQ) {
+  TAG_IDF.set(tag, Math.log(N / (df + 1)) + 1);
+}
+
+/**
  * Score a card against a target card for "你可能也会喜欢" recommendations.
  * Used by getRelatedCards() below. Higher = more related.
  *
  *   +5 same kind (taxonomic similarity)
  *   +3 same series (story similarity — usually already shown in 同系列
  *       siblings block, so caller excludes those before calling this)
- *   +3 per shared tag (up to +9 cap; tags are the strongest thematic
- *       signal in this dataset)
+ *   +Σ IDF(tag) for each shared tag (no cap, no flat weight).
+ *       Rare tags (low df) carry more signal than common ones.
  *
  * Palette similarity was tried in 2026-06 but dropped: the 60-card
  * batch run used only 6 distinct palettes (one per series), so the
@@ -143,8 +168,11 @@ function relatedScore(target: Card, candidate: Card): number {
   let score = 0;
   if (target.kind === candidate.kind) score += 5;
   if (target.series === candidate.series) score += 3;
-  const shared = target.tags.filter((t) => candidate.tags.includes(t)).length;
-  score += Math.min(shared * 3, 9);
+  for (const t of target.tags) {
+    if (candidate.tags.includes(t)) {
+      score += TAG_IDF.get(t) ?? 0;
+    }
+  }
   return score;
 }
 
@@ -156,8 +184,13 @@ function relatedScore(target: Card, candidate: Card): number {
  *   - cards of the same kind already shown in 同类推荐 (the caller
  *     passes those slugs in `excludeSlugs`)
  *
- * Algorithm: score all candidates with relatedScore, sort desc, take
- * top N. Tie-breaker: newer createdAt first.
+ * Algorithm: score all candidates with relatedScore (IDF-weighted),
+ * sort desc, take top N. Tie-breaker: newer createdAt first.
+ *
+ * Round 27 (2026-06-17): added IDF weighting. Before this, the top-5
+ * "related" cards for any 中国-themed card were just the 5 most
+ * recent 中国 cards, which isn't a recommendation. Now rare-tag
+ * matches push the most thematically distinct cards up.
  */
 export function getRelatedCards(
   target: Card,

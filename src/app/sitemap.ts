@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${base}/series`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/cards`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    // Round 27 (2026-06-17): 4 missing static pages added. These
+    // are all SSG so they're as cheap to index as /series and /cards.
+    { url: `${base}/timeline`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${base}/map`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/all`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${base}/changelog`, lastModified: now, changeFrequency: "weekly", priority: 0.5 },
     { url: `${base}/create`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/search`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },

@@ -13,6 +13,20 @@ import { cn } from "@/lib/utils";
 
 export const metadata = {
   title: "搜索 · 图鉴社",
+  description: "在 60 张图鉴里搜索主题、标签、系列。fuse.js 模糊匹配, 支持中文。",
+  // Round 27 (2026-06-17): explicit OG image + twitter card so shared
+  // search URLs don't fall through to the all-cards collage.
+  openGraph: {
+    title: "搜索 · 图鉴社",
+    description: "在 60 张图鉴里搜索主题、标签、系列。",
+    type: "website",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "搜索 · 图鉴社",
+    description: "在 60 张图鉴里搜索主题、标签、系列。",
+  },
 };
 
 interface SearchProps {

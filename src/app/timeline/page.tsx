@@ -9,6 +9,18 @@ import { formatDate } from "@/lib/utils";
 export const metadata = {
   title: "时间线 · 图鉴社",
   description: "60 张图鉴的收录时间线, 按月分组。看看图鉴社是怎么一步步长出来的。",
+  // Round 27 (2026-06-17): explicit OG image for /timeline shares.
+  openGraph: {
+    title: "时间线 · 图鉴社",
+    description: "60 张图鉴的收录时间线, 按月分组。",
+    type: "website",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "时间线 · 图鉴社",
+    description: "60 张图鉴的收录时间线, 按月分组。",
+  },
 };
 
 /**

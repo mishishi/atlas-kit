@@ -4,7 +4,21 @@ import { GenerationWizard } from "@/components/generation-wizard";
 
 export const metadata = {
   title: "生成图鉴 · 图鉴社",
-  description: "输入主题，AI 一键生成高质量中文科普图鉴",
+  description: "输入主题,AI 一键生成高质量中文科普图鉴",
+  // Round 27 (2026-06-17): explicit OG image so shared /create URLs
+  // get a meaningful preview (the all-cards collage fallback was
+  // confusing — invited clicks looked like the site is just an atlas).
+  openGraph: {
+    title: "生成图鉴 · 图鉴社",
+    description: "输入主题,AI 一键生成高质量中文科普图鉴",
+    type: "website",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "生成图鉴 · 图鉴社",
+    description: "输入主题,AI 一键生成高质量中文科普图鉴",
+  },
 };
 
 export default function CreatePage() {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -106,6 +107,11 @@ export default function RootLayout({
             <SiteFooter />
           </div>
         </ThemeProvider>
+        {/* R37 Plan B (2026-06-18): Vercel Analytics. 0-config, just
+            need the env. Gives us: page views, top routes, real-user
+            perf metrics. PM Take 1: ship fast, but you can't ship
+            fast without measuring. */}
+        <Analytics />
         {/* Toast notifications — inherits theme from <html class="dark"> via sonner theme="system" */}
         <Toaster
           position="bottom-center"

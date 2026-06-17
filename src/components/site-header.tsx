@@ -2,16 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookMarked, Compass, Sparkles, Clock, Map, LayoutGrid } from "lucide-react";
+import { BookMarked, Compass, Sparkles, Clock, Map, LayoutGrid, Network } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 
-// 6 nav items, capped per "5±2 mobile-nav" rule. /cards is the
-// canonical "all 60" entry — the old /browse now 308-redirects here.
+// 7 nav items, capped per "5±2 mobile-nav" rule (max 7). R37 Plan 3
+// (2026-06-18): 加 /graph "图谱" 项 — image-first knowledge graph,
+// 维基没有, 我们的 moat.
 const navItems = [
   { href: "/", label: "首页", icon: BookMarked },
   { href: "/series", label: "系列", icon: Compass },
   { href: "/cards", label: "全部", icon: LayoutGrid },
+  { href: "/graph", label: "图谱", icon: Network },
   { href: "/map", label: "地图", icon: Map },
   { href: "/timeline", label: "时间线", icon: Clock },
   { href: "/create", label: "生成图鉴", icon: Sparkles, accent: true },

@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/timeline`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${base}/map`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/all`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    // R37 Plan 3 (2026-06-18): /graph — image-first knowledge graph.
+    // 60 nodes / 250+ edges / 1 page, static. Same shape as /all.
+    { url: `${base}/graph`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/changelog`, lastModified: now, changeFrequency: "weekly", priority: 0.5 },
     { url: `${base}/create`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/search`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },

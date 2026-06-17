@@ -7,6 +7,8 @@ import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
 import { LinkedText } from "@/components/linked-text";
+import { CardNav } from "@/components/card-nav";
+import { getAdjacentInSeries } from "@/lib/data";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { cn, formatDate } from "@/lib/utils";
@@ -87,6 +89,17 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
   const seriesCards = getCardsBySeries(card.series).filter((c) => c.slug !== card.slug);
   const idx = seriesCards.findIndex((c) => c.slug === card.slug) + 1;
 
+  // R34 (2026-06-17): prev/next in same series (wrap-around) for
+  // 翻图录浏览体验. CardNav component renders the bar + handles
+  // ←/→ keyboard nav.
+  const adjacent = getAdjacentInSeries(card.slug);
+  const prevRef = adjacent.prev
+    ? { slug: adjacent.prev.slug, title: adjacent.prev.title, seriesNo: adjacent.prev.seriesNo }
+    : null;
+  const nextRef = adjacent.next
+    ? { slug: adjacent.next.slug, title: adjacent.next.title, seriesNo: adjacent.next.seriesNo }
+    : null;
+
   // Same-kind recommendations: other cards of this kind, excluding
   // the current card AND any series siblings (so the two sections
   // don't show the same cards twice).
@@ -156,6 +169,9 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
         <span className="mx-2" aria-hidden="true">/</span>
         <span className="text-foreground" aria-current="page">{card.title}</span>
       </nav>
+
+      {/* R34: prev/next nav bar + ←/→ keyboard (component handles both) */}
+      <CardNav prev={prevRef} next={nextRef} />
 
       <div className="grid gap-8 lg:grid-cols-[1fr_400px]">
         {/* Image — clickable hero that opens a fullscreen lightbox

@@ -65,6 +65,33 @@ export function getCardsBySeries(seriesSlug: string): Card[] {
   return cards.filter((c) => c.series === seriesSlug);
 }
 
+/**
+ * R34 (2026-06-17): prev/next navigation in same series, sorted by
+ * seriesNo. Returns the cards immediately before and after the given
+ * slug, with wrap-around (last → first, first → last). Used by the
+ * 翻图录浏览体验 (Detail page prev/next + keyboard nav).
+ *
+ * If the slug isn't found, returns {prev: undefined, next: undefined}.
+ * Single-card series returns the same card on both sides.
+ */
+export function getAdjacentInSeries(slug: string): {
+  prev?: Card;
+  next?: Card;
+} {
+  const card = getCardBySlug(slug);
+  if (!card) return { prev: undefined, next: undefined };
+  const series = getCardsBySeries(card.series).sort((a, b) =>
+    a.seriesNo.localeCompare(b.seriesNo, "en", { numeric: true }),
+  );
+  const i = series.findIndex((c) => c.slug === slug);
+  if (i < 0) return { prev: undefined, next: undefined };
+  const n = series.length;
+  return {
+    prev: series[(i - 1 + n) % n],
+    next: series[(i + 1) % n],
+  };
+}
+
 export function getCardsByKind(kind: Card["kind"]): Card[] {
   return cards.filter((c) => c.kind === kind);
 }

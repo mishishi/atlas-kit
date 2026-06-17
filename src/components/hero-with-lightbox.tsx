@@ -22,6 +22,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Maximize2 } from "lucide-react";
 import { Lightbox } from "./lightbox";
+import { Skeleton } from "@/components/skeleton";
 import { cn } from "@/lib/utils";
 
 interface HeroWithLightboxProps {
@@ -40,6 +41,12 @@ interface HeroWithLightboxProps {
 
 export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption }: HeroWithLightboxProps) {
   const [open, setOpen] = useState(false);
+  // R35 (2026-06-17): track image load state. While `loaded === false`
+  // we show a shimmer Skeleton on top of the cream bg (palette[0]) so
+  // the user gets "loading" feedback during slow image fetches. Once
+  // `onLoad` fires (or onError, so the skeleton doesn't stick forever
+  // if the image 404s) we fade the image in and the skeleton out.
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <>
@@ -57,7 +64,19 @@ export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption
             "transition-shadow hover:shadow-dark-card",
           )}
         >
+          {/* Layer 1: card palette[0] base color (visible if image
+              has transparency, or briefly before skeleton paints) */}
           <div className="absolute inset-0" style={{ backgroundColor: bgColor }} aria-hidden="true" />
+          {/* Layer 2: shimmer Skeleton — fades out on image load.
+              pointer-events-none so it never intercepts the click. */}
+          <Skeleton
+            className={cn(
+              "absolute inset-0 rounded-lg transition-opacity duration-500 pointer-events-none",
+              loaded ? "opacity-0" : "opacity-100",
+            )}
+          />
+          {/* Layer 3: image — fades in on load. priority for LCP
+              (hero is the LCP element on /cards/[slug]). */}
           <Image
             src={src}
             alt={alt}
@@ -65,7 +84,13 @@ export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption
             priority
             quality={90}
             sizes="(max-width: 1024px) 100vw, 480px"
-            className="relative object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+            onLoad={() => setLoaded(true)}
+            onError={() => setLoaded(true)}
+            className={cn(
+              "relative object-cover transition-all duration-500",
+              loaded ? "opacity-100" : "opacity-0",
+              "group-hover:scale-[1.02]",
+            )}
           />
           {/* Hover affordance — bottom-right magnifier pill, fades in
               on hover/focus. On touch devices, the whole button is

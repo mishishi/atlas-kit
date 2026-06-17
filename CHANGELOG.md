@@ -130,6 +130,92 @@ ship breaking changes).
   `image_full` already points to `.webp` — `.png` sources have
   been deleted).
 
+#### Round 24 — `build-prompt.mjs` as single source of truth
+- Wizard (`/api/generate`) and CLI now share the same prompt
+  assembly: `route.ts` shells out to `scripts/build-prompt.mjs`
+  via `child_process.execFile`. `PROMPT_VERSION=v1|v2` env var
+  selects legacy inline (rollback) vs file-archived templates
+  (default).
+- v2 reads `prompt-template/main-template.md` +
+  `categories/<kind>.md` verbatim, fills the 2 slots, bails
+  on placeholder drift.
+- v1 = verbatim port of the old `src/lib/prompt-templates.ts:buildPrompt()`
+  (now @deprecated), kept for A/B comparison.
+- New `prompt-template/README.md` codifies the "verbatim,
+  no paraphrase" usage rule.
+
+#### Round 25 + 26 — per-card directory layout
+- New path shape: `public/cards/<kind>/<slug>/<slug>-{card,thumb,full}.{png,webp}`
+  (was flat `public/cards/<slug>-*.{png,webp}`). One folder per
+  card, so deleting a card = deleting one folder, no orphan
+  `-thumb.webp` left behind.
+- `scripts/migrate-card-paths.mjs` (dry-run by default,
+  `--apply` to execute) handled 60 dirs + 180 files +
+  180 cards.json field updates.
+- `next.config.mjs` `redirects()` builds 180 × 301 entries at
+  config-load time from `data/cards.json` (slug → kind →
+  old path → new path). Vercel serves these at the edge.
+- Wizard writes `<slug>-prompt.md` next to the image so the
+  exact prompt that was sent to the model is preserved (H1
+  audit trail).
+- 14 page routes, 60 print routes, 1 API, all verified
+  after migration.
+
+#### Round 27 — product audit fixes
+- P0-1: `@next/bundle-analyzer` version pinned to `^14.2.35`
+  to match `next` (was `^16.2.9` → install failure on clean
+  clones).
+- P0-3: wizard success toast now warns
+  `NODE_ENV !== "production"` that a `next build` is required
+  to see the new image on dev.
+- P1-4: `atlas-miscellany` (40 cards) split into 4 series —
+  `craft-and-botanical` (10), `culinary-corner` (5),
+  `history-and-figures` (15), `frontiers-and-wonders` (10).
+  Total 8 series (5+5+5+5+10+5+10+15 = 60).
+- P1-5: `score` field kept in cards.json (for future sort use)
+  but no longer UI-displayed (anti-RPG). Home stat strip is
+  now 4 cells (was 3 cells in 4-col grid bug).
+- P1-6: `getRelatedCards()` now IDF-weighted
+  (`log(N/(df+1))+1` per shared tag) so rare tags dominate
+  over common ones (`中国` 44/60 was drowning recommendations).
+- P2-7: sitemap added `/timeline`, `/map`, `/all`, `/changelog`
+  (4 missing static pages).
+- P2-10: `/cards/[slug]` `openGraph.images` = per-card 1024w
+  WebP (`SITE_URL + c.image_full`), was the all-cards
+  collage fallback.
+- P2-11: `/create`, `/search`, `/map`, `/timeline` now have
+  explicit openGraph + twitter card metadata.
+- P3-13: `layout.tsx` fonts comment clarified (committed
+  Noto Sans/Serif SC VF, macOS / Linux fetch from Google Fonts).
+
+#### Round 28 — `prompt-template/` archive trim + tech→technology
+- `matrix_generate_image` enforces a 1500-char cap; old v2
+  archive (3821 bytes) and v1 legacy (4336 bytes) both
+  overflowed. User re-wrote all 11 category templates +
+  main template in their own words (918 bytes main, 605-664
+  bytes categories). Composed length now 1279-1446 chars
+  across all 12 kinds — all under cap.
+- `scripts/build-prompt.mjs` accepts both old slot format
+  (`主题：【填写主题】`, Chinese full-width brackets) and new
+  format (`Theme: [主题]`, English half-width brackets) for
+  backward compat with any in-flight archive edits.
+- `tech → technology` alias updated: `tech-concept.md`
+  renamed to `technology.md` (noun pattern consistency);
+  `KIND_DISPLAY["technology"] = "科技概念"` added.
+- New `prompt-template/categories/other.md` (was missing
+  despite 5 cards in `data/cards.json` having
+  `kind: "other"`); accent = "Defined by subject tradition"
+  (same pattern as `festival.md`).
+- v2-lite auto-trim approach **rejected** as H1 violation:
+  silently rewriting the user's curated prompt is exactly
+  what H1 forbids. The right fix is the user's archive
+  trim, not a code-side workaround.
+- R28 verification: 青铜器 + object → 1317 chars under cap
+  → matrix gen success → 405 KB image (kept in
+  `tmp/bronze-pipeline-test/`, NOT shipped to `public/cards/`
+  because Hailuo model has Chinese small-text artifacts —
+  61st-card decision is R29).
+
 ## [v0.1.0] — 2026-06-16 — "5-round audit done"
 
 The first tag on the project. Marks the project as ship-ready after

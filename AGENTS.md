@@ -852,3 +852,121 @@ thumb (see `scripts-reference.md` §5).
 - `resize-cards.mjs` — DEPRECATED, header comment updated.
 - `restore-image-full.mjs` / `rewrite-image-full.mjs` — LEGACY,
   do not run.
+
+## Round 28: prompt-template archive trim + tech→technology rename (2026-06-17)
+
+### What broke
+
+The v2 (file-archived) prompts in `prompt-template/` were
+3821-3859 bytes per compose. The `matrix_generate_image` tool
+enforces a **1500-character cap** on the prompt parameter;
+anything longer fails with `status_code=2013: prompt length must
+be less than 1500`. v1 (the inline 4336-byte legacy) also
+overflows, so A/B rollback is broken until v1 is also trimmed.
+
+The fix is in two parts:
+
+### Part 1 — user-optimized `prompt-template/` archive
+
+User re-wrote all 11 category templates + the main template
+in their own words (not a code-side paraphrase — a fresh
+authoring pass). New shape:
+
+- **main-template.md**: 918 bytes (was ~3.2 KB). English
+  section headers (`Style` / `Layout` / `Header` / `Summary
+  Bar` / `Text` / `Failure Prevention`), Chinese values where
+  Chinese reads naturally. Single accent color rule, no
+  palette slot.
+- **categories/<kind>.md** × 11: 605-664 bytes each (was
+  1.7-2.2 KB). Same 7-section shape (Accent / Identity /
+  Modules / Rating / Insets / Visualization / Failure
+  Prevention) with the verbose explanations compressed to
+  bullet lists.
+
+Composed length after trim:
+
+| Kind | Composed chars | Cap |
+|---|---|---|
+| pet | 1304 | ✓ |
+| animal | 1352 | ✓ |
+| plant | 1326 | ✓ |
+| city | 1296 | ✓ |
+| festival | 1325 | ✓ |
+| food | 1279 | ✓ |
+| phenomenon (natural-phenomenon) | 1343 | ✓ |
+| history (historical-event) | 1322 | ✓ |
+| object | 1317 | ✓ |
+| person | 1320 | ✓ |
+| tech (technology) | 1324 | ✓ |
+| other (new file, was missing) | 1446 | ✓ |
+
+All 12 kinds now compose under the 1500-char cap.
+
+### Part 2 — script-side adaptation
+
+`scripts/build-prompt.mjs` updated in two places to support
+the new archive shape:
+
+- **Slot format dual-support**: the new archive uses
+  `Theme: [主题]` / `Category: [分类]` (English half-width
+  brackets). The previous archive used `主题：【填写主题】`
+  (Chinese full-width brackets). The script's slot detection
+  accepts both formats so it survives archive round-trips
+  (re-rolling a category file to the old shape, or a
+  category file accidentally saved with the old style, won't
+  silently send a half-filled prompt to the model).
+- **`tech → technology` alias update**: the canonical
+  `tech` CardKind is unchanged in `data/cards.json` and
+  `src/lib/types.ts`, but the on-disk category file was
+  renamed from `tech-concept.md` to `technology.md` for
+  consistency with the noun pattern (`historical-event` /
+  `natural-phenomenon` / `technology`). The script's
+  `KIND_ALIASES` map was updated; the long-form key
+  `"technology"` was added to `KIND_DISPLAY` so the slot
+  fill resolves to the correct Chinese display name (科技概念).
+
+### New `other` category template (filling the gap)
+
+`prompt-template/categories/other.md` did not exist in R24-R27
+even though `data/cards.json` has 5 cards with `kind: "other"`.
+If the wizard ever runs on an `other` topic, the script would
+fail with "Category template not found". Added in R28:
+
+- **Accent**: `Defined by subject tradition` (same pattern as
+  `festival.md` — let the topic's own visual identity drive it)
+- **Identity**: `Miscellaneous or hybrid-topic encyclopedia page`
+- **Modules**: 基础档案 / 概念定义 / 核心特征 / 历史脉络 / 应用领域
+  / 文化背景 / 典型案例 / 快速评分卡
+- **Rating**: 学术价值 / 普及程度 / 文化意义 / 时代相关性 / 跨领域影响
+- **Failure prevention**: keep neutrality, don't lean toward
+  specialized category styles
+
+### Why v2-lite was rejected
+
+A first attempt (the v2-lite idea, since reverted) tried to
+auto-compress the v2 archive in code: if the composed prompt
+exceeded 1500 chars, truncate the category section. **This was
+H1 violation** — it would silently change the prompt the
+user curated in the file, defeating the whole "read file
+verbatim" guarantee. The correct fix is the user's archive
+trim (Part 1 above), not a runtime workaround.
+
+### R28 verification
+
+End-to-end test: 青铜器 (object) → `build-prompt.mjs` (1317 chars
+under cap) → `matrix_generate_image` (success) → 405 KB PNG
+downloaded → visual inspection (9:16, ivory paper, museum
+aesthetic, hero + modules). Saved to `tmp/bronze-pipeline-test/`
+(not shipped to `public/cards/` — the 61st card decision is
+R29). See `tmp/bronze-pipeline-test/R28-VERIFICATION.md` for
+the full log and 3 R29 options (iterate prompt / accept / skip).
+
+### Why the test image was kept in `tmp/`, not shipped
+
+The image structure is correct. The Chinese small-text rendered
+with visible character-level artifacts (mixed ink/blank strokes,
+occasional garbled glyphs) — a Hailuo model limitation, not a
+pipeline issue. Shipping a 61st card with garbled Chinese
+text would be a visible downgrade to the public atlas, so
+the test image is in `tmp/` (gitignored) and the 61st-card
+decision is deferred to R29.

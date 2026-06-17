@@ -25,11 +25,11 @@
 //   node scripts/build-prompt.mjs 三星堆 history --out /tmp/prompt.md --quiet
 //
 //   kind values: city, animal, pet, plant, person, festival, food,
-//                historical-event, tech-concept, object,
+//                historical-event, technology, object,
 //                natural-phenomenon
 //
 //   (Aliases: history → historical-event, phenomenon →
-//             natural-phenomenon, tech → tech-concept)
+//             natural-phenomenon, tech → technology)
 //
 // Output:
 //   stdout  — the composed prompt (unless --out is given, in which
@@ -124,10 +124,15 @@ const version = versionRaw ?? "v2";
 // some (history → historical-event, phenomenon → natural-phenomenon,
 // tech → tech-concept). Map both directions.
 
+// R28 (2026-06-17): file `prompt-template/categories/tech-concept.md`
+// was renamed to `technology.md` for consistency with the "noun"
+// naming pattern (historical-event / natural-phenomenon / technology
+// all read as "{category}"). The canonical `tech` CardKind is
+// unchanged — only the on-disk template filename shifted.
 const KIND_ALIASES = {
   history: "historical-event",
   phenomenon: "natural-phenomenon",
-  tech: "tech-concept",
+  tech: "technology",
 };
 
 const KIND_DISPLAY = {
@@ -147,7 +152,7 @@ const KIND_DISPLAY = {
   // resolution (these are NOT listed to the user as canonical).
   "historical-event": "历史事件",
   "natural-phenomenon": "自然现象",
-  "tech-concept": "科技概念",
+  technology: "科技概念",
 };
 
 // Canonical kinds = the 12 CardKind values (matches src/lib/types.ts).
@@ -633,33 +638,54 @@ function buildPromptV2(topic, kind, kindDisplay) {
   let mainTemplate = fs.readFileSync(mainPath, "utf8");
   const categoryTemplate = fs.readFileSync(categoryPath, "utf8");
 
-  // Fill in the two variable slots in main-template.md:
-  //   主题：【填写主题】 → 主题：【<topic>】
-  //   类型：【城市 / 动物 / ...】 → 类型：【<kindDisplay>】
-  const slotTopicFound = mainTemplate.includes("主题：【填写主题】");
-  const slotTypeFound = mainTemplate.includes(
-    "类型：【城市 / 动物 / 宠物 / 植物 / 人物 / 节日 / 食物 / 历史事件 / 科技概念 / 器物 / 自然现象】",
-  );
+  // Fill in the two variable slots in main-template.md.
+  //
+  // Round 28 (2026-06-17): slot format changed. Old archive used
+  // Chinese full-width brackets: 主题：【填写主题】. New
+  // optimized archive (Round 28 user edit) uses English half-width
+  // brackets in slot labels: Theme: [主题] / Category: [分类].
+  // Both formats are accepted here so the script survives archive
+  // round-trips.
+  const OLD_TOPIC_SLOT = "主题：【填写主题】";
+  const OLD_TYPE_SLOT = "类型：【城市 / 动物 / 宠物 / 植物 / 人物 / 节日 / 食物 / 历史事件 / 科技概念 / 器物 / 自然现象】";
+  const NEW_TOPIC_SLOT = "Theme: [主题]";
+  const NEW_TYPE_SLOT = "Category: [分类]";
+
+  const slotTopicFound =
+    mainTemplate.includes(OLD_TOPIC_SLOT) || mainTemplate.includes(NEW_TOPIC_SLOT);
+  const slotTypeFound =
+    mainTemplate.includes(OLD_TYPE_SLOT) || mainTemplate.includes(NEW_TYPE_SLOT);
 
   if (!slotTopicFound || !slotTypeFound) {
     throw new Error(
       `prompt-template/main-template.md slot placeholder(s) not found.\n` +
-        `  topic slot found: ${slotTopicFound}\n` +
-        `  type slot found:  ${slotTypeFound}\n` +
+        `  topic slot found: ${slotTopicFound} (looking for "${OLD_TOPIC_SLOT}" or "${NEW_TOPIC_SLOT}")\n` +
+        `  type slot found:  ${slotTypeFound} (looking for "${OLD_TYPE_SLOT}" or "${NEW_TYPE_SLOT}")\n` +
         `  Update buildPromptV2() to match the new template format.`,
     );
   }
 
-  mainTemplate = mainTemplate
-    .replace(/主题：【填写主题】/, `主题：【${topic}】`)
-    .replace(
-      /类型：【城市 \/ 动物 \/ 宠物 \/ 植物 \/ 人物 \/ 节日 \/ 食物 \/ 历史事件 \/ 科技概念 \/ 器物 \/ 自然现象】/,
-      `类型：【${kindDisplay}】`,
-    );
+  // Replace whichever format is present. Using global regex so any
+  // drift in the literal text still finds a match.
+  if (mainTemplate.includes(OLD_TOPIC_SLOT)) {
+    mainTemplate = mainTemplate.replace(OLD_TOPIC_SLOT, `主题：【${topic}】`);
+  } else {
+    mainTemplate = mainTemplate.replace(NEW_TOPIC_SLOT, `Theme: ${topic}`);
+  }
+  if (mainTemplate.includes(OLD_TYPE_SLOT)) {
+    mainTemplate = mainTemplate.replace(OLD_TYPE_SLOT, `类型：【${kindDisplay}】`);
+  } else {
+    mainTemplate = mainTemplate.replace(NEW_TYPE_SLOT, `Category: ${kindDisplay}`);
+  }
 
   // Belt-and-suspenders: refuse to ship a prompt with placeholders
   // still in it.
-  if (mainTemplate.includes("【填写主题】") || mainTemplate.includes("【城市 / 动物")) {
+  if (
+    mainTemplate.includes("【填写主题】") ||
+    mainTemplate.includes("【城市 / 动物") ||
+    mainTemplate.includes("[主题]") ||
+    mainTemplate.includes("[分类]")
+  ) {
     throw new Error(
       `prompt-template/main-template.md placeholder(s) survived replacement. Bailing out.`,
     );

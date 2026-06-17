@@ -3,17 +3,19 @@
 /**
  * R34 (2026-06-17): 翻图录浏览体验 — prev/next in same series.
  *
- * Day 1 MVP: button bar + keyboard arrow nav. Day 2 will add
- * touch swipe.
+ * Day 1: button bar + keyboard arrow nav.
+ * Day 2: mobile touch swipe (horizontal: prev = right→left, next =
+ *   left→right, matches native iOS/Android swipe-page convention).
  *
- * Server passes prev/next slugs + titles; client renders the bar
- * and listens for arrow keys to navigate. Uses next/navigation's
- * router.push() for client-side transitions (faster than <a>).
+ * Server passes prev/next slugs + titles; client renders the bar,
+ * listens for arrow keys + touch events, and navigates via
+ * router.push(). Touch handler only attaches if pointer is coarse
+ * (mobile) — desktop doesn't get wasted touch listeners.
  */
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -27,13 +29,16 @@ export function CardNav({
   next: AdjacentRef;
 }) {
   const router = useRouter();
+  // Track the start position (x + y) so we can measure horizontal
+  // delta against vertical delta on touchend. Stored in a ref (not
+  // state) so updates don't trigger re-render mid-swipe.
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
 
   // Keyboard: ←/→ navigates prev/next. Disabled when nothing to
-  // navigate to (single-card series). Stops propagation so users
-  // typing in an input don't accidentally trigger navigation.
+  // navigate to (single-card series). Skips when user is typing in
+  // an input/textarea/contenteditable.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      // Skip if user is typing in an input/textarea/contenteditable
       const target = e.target as HTMLElement | null;
       if (target) {
         const tag = target.tagName;
@@ -56,6 +61,50 @@ export function CardNav({
     }
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
+  }, [prev, next, router]);
+
+  // Touch swipe: only attach on coarse-pointer devices (mobile).
+  // Threshold = 50px horizontal delta AND |dx| > |dy| * 1.5 (so a
+  // vertical scroll that happens to have 60px of horizontal jitter
+  // won't accidentally trigger nav). iOS/Android convention:
+  //   swipe left (dx<0) → next card
+  //   swipe right (dx>0) → previous card
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const isCoarse = window.matchMedia?.("(pointer: coarse)")?.matches;
+    if (!isCoarse) return; // desktop: no touch listener needed
+
+    function onTouchStart(e: TouchEvent) {
+      if (e.touches.length !== 1) return;
+      touchStart.current = {
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY,
+      };
+    }
+    function onTouchEnd(e: TouchEvent) {
+      if (touchStart.current == null) return;
+      const start = touchStart.current;
+      touchStart.current = null;
+      const end = e.changedTouches[0];
+      if (end == null) return;
+      const dx = end.clientX - start.x;
+      const dy = end.clientY - start.y;
+      // Need at least 50px horizontal travel AND horizontal must
+      // dominate vertical by 1.5× — otherwise vertical scroll wins.
+      if (Math.abs(dx) < 50) return;
+      if (Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      if (dx > 0 && prev) {
+        router.push(`/cards/${prev.slug}`);
+      } else if (dx < 0 && next) {
+        router.push(`/cards/${next.slug}`);
+      }
+    }
+    document.addEventListener("touchstart", onTouchStart, { passive: true });
+    document.addEventListener("touchend", onTouchEnd, { passive: true });
+    return () => {
+      document.removeEventListener("touchstart", onTouchStart);
+      document.removeEventListener("touchend", onTouchEnd);
+    };
   }, [prev, next, router]);
 
   return (

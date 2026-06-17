@@ -156,6 +156,33 @@ export function getDefaultSeriesSlugForKind(kind: string): string {
     other: "history-and-figures",
     phenomenon: "frontiers-and-wonders",
     tech: "frontiers-and-wonders",
+    // R31 (2026-06-17): 12 new kinds → closest existing series.
+    // Each new kind maps to one of the 8 curated series (no
+    // "atlas-miscellany" fallback — R27 split that out into
+    // history-and-figures / craft-and-botanical / etc).
+    // Mapping rationale:
+    //   - architecture / artwork / vehicle → craft-and-botanical
+    //     (built/made things, 造物 axis)
+    //   - book / disease / movie / mythology / profession →
+    //     history-and-figures (cultural records / human stories)
+    //   - chemical-element / space-object → frontiers-and-wonders
+    //     (natural + manmade boundaries of knowledge)
+    //   - country → city-encyclopedia (closest geographic/political)
+    //   - sport → craft-and-botanical (closest "造物" — sport
+    //     equipment / 体育文化 is the strongest overlap; not perfect
+    //     but no dedicated 体育 series yet)
+    architecture: "craft-and-botanical",
+    artwork: "craft-and-botanical",
+    book: "history-and-figures",
+    "chemical-element": "frontiers-and-wonders",
+    country: "city-encyclopedia",
+    disease: "history-and-figures",
+    movie: "history-and-figures",
+    mythology: "history-and-figures",
+    profession: "history-and-figures",
+    "space-object": "frontiers-and-wonders",
+    sport: "craft-and-botanical",
+    vehicle: "craft-and-botanical",
   };
   return map[kind] ?? "craft-and-botanical";
 }

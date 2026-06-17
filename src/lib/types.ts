@@ -20,7 +20,23 @@ export type CardKind =
   | "history"
   | "object"
   | "tech"
-  | "other";
+  | "other"
+  // R31 (2026-06-17): 12 new kinds added when user expanded
+  // prompt-template/categories/. THEME_TYPES is the single source
+  // of truth; this union must be kept in sync with it (TS can't
+  // infer literal types from runtime arrays).
+  | "architecture"
+  | "artwork"
+  | "book"
+  | "chemical-element"
+  | "country"
+  | "disease"
+  | "movie"
+  | "mythology"
+  | "profession"
+  | "space-object"
+  | "sport"
+  | "vehicle";
 
 /** A historical milestone on the detail page's 历史沿革 timeline. */
 export interface HistoryNode {

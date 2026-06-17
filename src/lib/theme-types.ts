@@ -121,6 +121,109 @@ export const THEME_TYPES: ThemeType[] = [
     promptType: "其他",
     series: "百科图鉴系列",
   },
+  // R31 (2026-06-17): 12 new kinds. User added corresponding
+  // prompt-template/categories/*.md files. Adding entries here
+  // auto-propagates to KIND_LABELS, KIND_ICONS, wizard buttons,
+  // /cards?kind= filter, /all "by kind" view, /api/generate
+  // validation. See scripts/build-prompt.mjs KIND_DISPLAY for the
+  // matching display-name mapping (used to fill the prompt's
+  // "Category: [分类]" slot).
+  {
+    key: "architecture",
+    label: "建筑",
+    emoji: "🏛️",
+    description: "古建 / 现代建筑 / 地标",
+    promptType: "建筑",
+    series: "工艺与造物系列",
+  },
+  {
+    key: "artwork",
+    label: "艺术品",
+    emoji: "🎨",
+    description: "绘画 / 雕塑 / 工艺美术",
+    promptType: "艺术品",
+    series: "工艺与造物系列",
+  },
+  {
+    key: "book",
+    label: "书籍",
+    emoji: "📖",
+    description: "文学作品 / 学术 / 经典",
+    promptType: "书籍",
+    series: "历史与脉络系列",
+  },
+  {
+    key: "chemical-element",
+    label: "化学元素",
+    emoji: "⚛️",
+    description: "化学元素 / 周期表",
+    promptType: "化学元素",
+    series: "寰宇惊奇系列",
+  },
+  {
+    key: "country",
+    label: "国家",
+    emoji: "🏳️",
+    description: "国家档案 / 地理 / 政治",
+    promptType: "国家",
+    series: "城市百科系列",
+  },
+  {
+    key: "disease",
+    label: "疾病",
+    emoji: "🏥",
+    description: "医学 / 病理 / 公共卫生",
+    promptType: "疾病",
+    series: "历史与脉络系列",
+  },
+  {
+    key: "movie",
+    label: "电影",
+    emoji: "🎬",
+    description: "影片 / 导演 / 电影史",
+    promptType: "电影",
+    series: "历史与脉络系列",
+  },
+  {
+    key: "mythology",
+    label: "神话",
+    emoji: "🐉",
+    description: "神话 / 传说 / 民俗",
+    promptType: "神话",
+    series: "历史与脉络系列",
+  },
+  {
+    key: "profession",
+    label: "职业",
+    emoji: "👷",
+    description: "职业 / 工种 / 行业",
+    promptType: "职业",
+    series: "历史与脉络系列",
+  },
+  {
+    key: "space-object",
+    label: "天体",
+    emoji: "🪐",
+    description: "行星 / 恒星 / 星系",
+    promptType: "天体",
+    series: "寰宇惊奇系列",
+  },
+  {
+    key: "sport",
+    label: "体育运动",
+    emoji: "⚽",
+    description: "运动 / 比赛 / 体育史",
+    promptType: "体育运动",
+    series: "工艺与造物系列",
+  },
+  {
+    key: "vehicle",
+    label: "交通工具",
+    emoji: "🚗",
+    description: "汽车 / 船舶 / 飞机 / 火车",
+    promptType: "交通工具",
+    series: "工艺与造物系列",
+  },
 ];
 
 /** Quick lookup by key */

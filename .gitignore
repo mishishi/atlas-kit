@@ -74,3 +74,10 @@ Thumbs.db
 
 # ─── Video projects (HyperFrames) ─────────────────────────
 videos/
+
+# ─── Tesseract OCR training data (auto-downloaded, 30+MB) ───
+# scripts/check-image.mjs uses tesseract.js, which downloads
+# chi_sim.traineddata to the cwd on first run. Don't commit it —
+# subsequent check-image invocations re-use the cached file.
+chi_sim.traineddata
+*.traineddata

@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2 } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
 import { LinkedText } from "@/components/linked-text";
 import { CardNav } from "@/components/card-nav";
+import { CardFlipMode } from "@/components/card-flip-mode";
 import { getAdjacentInSeries } from "@/lib/data";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
@@ -66,9 +67,37 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function CardDetail({ params }: { params: { slug: string } }) {
+export default function CardDetail({
+  params,
+  searchParams,
+}: {
+  params: { slug: string };
+  searchParams: { mode?: string };
+}) {
   const card = getCardBySlug(params.slug);
   if (!card) notFound();
+
+  // R34 Day 3 (2026-06-17): 翻图录 mode — fullscreen image-first
+  // browsing. Triggered by `?mode=flip` on the URL. Renders BEFORE
+  // the rest of the page (SiteHeader/SiteFooter are still mounted
+  // but covered by the fixed overlay z-50 in CardFlipMode).
+  if (searchParams.mode === "flip") {
+    const seriesSorted = getCardsBySeries(card.series).sort((a, b) =>
+      a.seriesNo.localeCompare(b.seriesNo, "en", { numeric: true }),
+    );
+    const adjacent = getAdjacentInSeries(card.slug);
+    const position =
+      seriesSorted.findIndex((c) => c.slug === card.slug) + 1;
+    return (
+      <CardFlipMode
+        card={card}
+        prev={adjacent.prev}
+        next={adjacent.next}
+        position={position}
+        total={seriesSorted.length}
+      />
+    );
+  }
 
   // Map a source's `type` string to an icon. Default to BookOpen
   // for any unrecognized type so the UI never falls back to nothing.
@@ -172,6 +201,25 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
 
       {/* R34: prev/next nav bar + ←/→ keyboard (component handles both) */}
       <CardNav prev={prevRef} next={nextRef} />
+
+      {/* R34 Day 3: enter fullscreen flip-through mode. Centered
+          below the prev/next bar, low-visual-weight so it doesn't
+          compete with the hero. URL is shareable (`?mode=flip`). */}
+      <div className="mb-8 flex justify-center">
+        <Link
+          href={`/cards/${card.slug}?mode=flip`}
+          aria-label="进入翻图录模式 (全屏浏览)"
+          className={cn(
+            "inline-flex items-center gap-1.5 min-h-[44px] px-3 rounded-md text-sm",
+            "text-muted-foreground hover:text-gold-deep hover:bg-muted",
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+            "transition-colors",
+          )}
+        >
+          <Maximize2 className="h-4 w-4" aria-hidden="true" />
+          进入翻图录模式
+        </Link>
+      </div>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_400px]">
         {/* Image — clickable hero that opens a fullscreen lightbox

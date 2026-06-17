@@ -13,11 +13,13 @@ export const metadata = {
     description: "输入主题,AI 一键生成高质量中文科普图鉴",
     type: "website",
     locale: "zh_CN",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: "生成图鉴 · 图鉴社",
     description: "输入主题,AI 一键生成高质量中文科普图鉴",
+    images: ["/opengraph-image"],
   },
 };
 

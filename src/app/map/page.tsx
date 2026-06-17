@@ -12,11 +12,13 @@ export const metadata: Metadata = {
     description: "在地图上看图鉴社的地理图鉴。",
     type: "website",
     locale: "zh_CN",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: "地图 · 图鉴社",
     description: "在地图上看图鉴社的地理图鉴。",
+    images: ["/opengraph-image"],
   },
 };
 

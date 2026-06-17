@@ -15,11 +15,13 @@ export const metadata = {
     description: "60 张图鉴的收录时间线, 按月分组。",
     type: "website",
     locale: "zh_CN",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: "时间线 · 图鉴社",
     description: "60 张图鉴的收录时间线, 按月分组。",
+    images: ["/opengraph-image"],
   },
 };
 

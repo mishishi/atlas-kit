@@ -21,11 +21,13 @@ export const metadata = {
     description: "在 60 张图鉴里搜索主题、标签、系列。",
     type: "website",
     locale: "zh_CN",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: "搜索 · 图鉴社",
     description: "在 60 张图鉴里搜索主题、标签、系列。",
+    images: ["/opengraph-image"],
   },
 };
 

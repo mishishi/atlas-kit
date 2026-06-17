@@ -148,6 +148,20 @@ const KIND_DISPLAY = {
   person: "人物",
   tech: "科技概念",
   other: "其他",
+  // R30: 12 new canonical kinds (user added category templates
+  // 2026-06-17). Slugs are kebab-case to match the file names.
+  architecture: "建筑",
+  artwork: "艺术品",
+  book: "书籍",
+  "chemical-element": "化学元素",
+  country: "国家",
+  disease: "疾病",
+  movie: "电影",
+  mythology: "神话",
+  profession: "职业",
+  "space-object": "天体",
+  sport: "体育运动",
+  vehicle: "交通工具",
   // Alias long-form keys so kindDisplay lookup works after alias
   // resolution (these are NOT listed to the user as canonical).
   "historical-event": "历史事件",

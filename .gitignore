@@ -71,3 +71,6 @@ Thumbs.db
 .cache/
 .eslintcache
 .turbo
+
+# ─── Video projects (HyperFrames) ─────────────────────────
+videos/

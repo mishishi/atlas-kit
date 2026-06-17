@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2 } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2, AlertTriangle } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
@@ -228,6 +228,49 @@ export default function CardDetail({
             a magnifier-pill affordance on hover, plus a secondary
             text button below. Lightbox has ESC + click-outside close,
             a download button in the footer, and locks body scroll. */}
+        {/* R37: 视觉质量分 badge. 8/8 金色, 7 中性, <5 红.
+            undefined 不渲染 (没跑过 check-image). */}
+        {card.visualScore !== undefined && (
+          <div className="mb-3 flex justify-center">
+            {card.visualScore === 8 ? (
+              <div
+                role="status"
+                aria-label={`视觉质量评分 ${card.visualScore} 分, 满分 8 分`}
+                className={cn(
+                  "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium",
+                  "bg-gold/15 text-gold-deep border border-gold/30",
+                )}
+              >
+                <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                视觉 8/8 ✓
+              </div>
+            ) : card.visualScore >= 5 ? (
+              <div
+                role="status"
+                aria-label={`视觉质量评分 ${card.visualScore} 分, 共 8 分`}
+                className={cn(
+                  "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium",
+                  "bg-muted text-muted-foreground border border-border",
+                )}
+              >
+                视觉 {card.visualScore}/8
+              </div>
+            ) : (
+              <div
+                role="status"
+                aria-label={`视觉质量评分 ${card.visualScore} 分, 建议重新生成`}
+                className={cn(
+                  "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium",
+                  "bg-destructive/10 text-destructive border border-destructive/30",
+                )}
+              >
+                <AlertTriangle className="h-3.5 w-3.5" aria-hidden="true" />
+                需要重生成
+              </div>
+            )}
+          </div>
+        )}
+
         <HeroWithLightbox
           src={card.image}
           fullSrc={card.image_full ?? card.image}

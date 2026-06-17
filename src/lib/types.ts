@@ -94,6 +94,13 @@ export interface Card {
   revisions?: RevisionEntry[];
   /** 参考来源 / 引用. 未来添加 (issue 6/6). */
   sources?: Array<{ title: string; url?: string; type?: string }>;
+  /**
+   * R37 (2026-06-17): 视觉质量分 (0-8). 由 scripts/score-all-cards.mjs
+   * 跑 R30 check-image 8 规则后写入. 8 = 完美, < 5 = 需要 regen.
+   * 详情页 hero 旁显示金色 / 灰 / 红 badge. 长城 placeholder
+   * 会是 0/8 (预期, sharp 生成的纯色图, 不跑 OCR 也会挂).
+   */
+  visualScore?: number;
 }
 
 /** Series — collection-level view (slug, name, plus runtime-aggregated fields) */

@@ -221,6 +221,15 @@ export default function CardDetail({
         </Link>
       </div>
 
+      {/* R37-fix (2026-06-18): 显式 grid-column 修 grid 布局 bug.
+          之前 grid-cols-[1fr_400px] 自动布局: badge 太小不填 col 1,
+          HeroWithLightbox 自动跳到 row 1 col 2 (右侧 400px), aside
+          反而被挤到 row 2 col 1. 跟用户截图一致: 左空 hero / 右图
+          / 信息全错位.
+
+          修法: 显式 grid-column-end: 2 让 hero + badge 占 col 1,
+          aside 显式 col-start: 2 占 col 2. 用户报的 "为什么会显示
+          成这样" 就是这个 bug. */}
       <div className="grid gap-8 lg:grid-cols-[1fr_400px]">
         {/* Image — clickable hero that opens a fullscreen lightbox
             (Plan A: 自建 <Lightbox> 组件). Was a static <Image> + a
@@ -231,7 +240,7 @@ export default function CardDetail({
         {/* R37: 视觉质量分 badge. 8/8 金色, 7 中性, <5 红.
             undefined 不渲染 (没跑过 check-image). */}
         {card.visualScore !== undefined && (
-          <div className="mb-3 flex justify-center">
+          <div className="mb-3 col-start-1 col-end-2 flex justify-center">
             {card.visualScore === 8 ? (
               <div
                 role="status"
@@ -271,6 +280,7 @@ export default function CardDetail({
           </div>
         )}
 
+        <div className="col-start-1 col-end-2">
         <HeroWithLightbox
           src={card.image}
           fullSrc={card.image_full ?? card.image}
@@ -279,9 +289,10 @@ export default function CardDetail({
           filename={card.slug}
           caption={card.title}
         />
+        </div>
 
         {/* Info panel */}
-        <aside className="space-y-6">
+        <aside className="col-start-2 col-end-3 space-y-6">
           <div>
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gold-deep mb-3">
               <BookMarked className="h-3 w-3" />

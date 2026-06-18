@@ -11,7 +11,7 @@
 ## Hero Illustration
 
 * Scientific celestial rendering with scale, structure, or orbital context
-* 3–5 small surface, atmosphere, structure, or orbital callouts around the hero illustration
+* 3–5 detached observable or inferred feature panels
 
 ## Information Modules
 
@@ -34,11 +34,9 @@
 
 ## Observation Insets
 
-* 表面
-* 大气
-* 内部
-* 轨道
-* 光谱
+* Select 3–5 scientifically appropriate observable or inferred features
+* Examples: surface, atmosphere, rings, jets, magnetic field, internal structure, orbit, spectrum
+* Do not invent a solid surface or atmosphere
 
 ## Visualization Strip
 

@@ -10,8 +10,9 @@
 
 ## Hero Illustration
 
-* Representative work scene, tools, environment, and workflow
-* 3–5 small task, tool, skill, or workplace callouts around the hero illustration
+* Representative work system showing tasks, tools, environment, and workflow
+* 3–5 detached task, tool, skill, or workplace panels
+* Do not reduce the profession to a heroic portrait
 
 ## Information Modules
 

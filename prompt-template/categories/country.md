@@ -11,7 +11,7 @@
 ## Hero Illustration
 
 * National overview combining terrain, map silhouette, representative landscape, and cultural symbols
-* 3–5 small geographic or cultural callouts around the hero illustration
+* 3–5 detached geographic or cultural detail panels
 
 ## Information Modules
 
@@ -30,7 +30,7 @@
 * 文化影响
 * 经济体量
 * 地理多样性
-* 国际知名度
+* 全球影响
 
 ## Observation Insets
 
@@ -53,4 +53,6 @@
 * No nationalist propaganda
 * No postcard collage
 * No political persuasion
-* Maintain geographic and cultural neutrality
+* Balance physical geography, population, economy, history, and culture
+* Do not let flags or national symbols dominate the page
+* Avoid presenting disputed political claims as uncontested facts

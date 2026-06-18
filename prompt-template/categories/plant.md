@@ -7,8 +7,9 @@
 * Botanical field-guide specimen page
 
 ## Hero Illustration
+
 * Complete botanical specimen with visible structure
-* 3–5 small organ or cross-section callouts around the hero illustration
+* 3–5 detached botanical structure or cross-section panels
 
 ## Information Modules
 * 分类阶元
@@ -28,11 +29,11 @@
 * 生态重要性
 
 ## Observation Insets
-* 叶
-* 花
-* 果实
-* 根
-* 茎
+
+* Select 3–5 distinctive botanical structures appropriate to the plant
+* Examples: leaf, flower, fruit, seed, cone, root, stem, bark, spore
+* Prefer visually different structures
+* Avoid showing organs absent from the subject
 
 ## Visualization Strip
 * 1–2 compact visualizations

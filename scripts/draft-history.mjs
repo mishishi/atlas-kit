@@ -33,13 +33,16 @@ const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 const SYSTEM_PROMPT = `你是图鉴社历史编辑。严格只输出 JSON 数组 [{year, title, body}]。year 用字符串, body 30-60 字。`;
 
 function userPrompt(card) {
-  return `为「${card.title}」(类型:${card.kind}, 副标题:${card.subtitle || ""}, 标签:${card.tags.join(",")}) 写 5-8 条历史节点。
+  // Round 30: 节点数从 5-8 砍到 3-5。M2.7 + thinking 模式会吃光
+  // 4096 tokens,导致 text 字段没输出。3-5 节点足够紧凑,thinking
+  // 也能给 text 留余地。要更多节点时再扩。
+  return `为「${card.title}」(类型:${card.kind}, 副标题:${card.subtitle || ""}, 标签:${card.tags.join(",")}) 写 3-5 条历史节点。
 
 要求:
 - JSON 数组, 每条 {year: 字符串, title: 6-12字, body: 30-60字史实}
 - year 用 "X 年" 或 "前 X 年" 或 "X 世纪" 格式
 - 正序 (古→今)
-- 5-8 条
+- 3-5 条
 - 动物/植物/器物: 写该实体本身的历史/演变/起源, 不要生物学发现史
 - 现代技术 (5G/AI/区块链): 写技术发展节点
 - 神话/传说/节日: 写起源+演变+现代定型
@@ -53,9 +56,13 @@ function callMmx(prompt) {
   // path with the right invocation. PowerShell executes the .ps1
   // directly when given the -File arg.
   //
-  // --output json wraps the response in an envelope: {content, ...}.
-  // We want pure text, so no --output flag (default = text mode).
   // The mmx CLI also doesn't have --system-prompt, it has --system.
+  //
+  // Round 30 fix: don't pass --quiet. M2.7 emits a JSON envelope with
+  // {content:[{type:"thinking",...},{type:"text",...}]}; with --quiet
+  // the CLI silently returns empty string and the process hangs until
+  // our timeout. Without --quiet we get the full JSON envelope, which
+  // we parse below to extract the .text field.
   const isWin = process.platform === "win32";
   const mmxPath = isWin
     ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1"
@@ -64,7 +71,6 @@ function callMmx(prompt) {
     "text",
     "chat",
     "--non-interactive",
-    "--quiet",
     "--message",
     prompt,
     "--system",
@@ -74,14 +80,44 @@ function callMmx(prompt) {
     return execFileSync(
       "powershell.exe",
       ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 90_000 },
+      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 180_000 },
     );
   }
   return execFileSync(mmxPath, args, {
     encoding: "utf8",
     maxBuffer: 50 * 1024 * 1024,
-    timeout: 90_000,
+    timeout: 180_000,
   });
+}
+
+/**
+ * Extract the model's text content from a mmx response.
+ *
+ * M2.7 response format (newer mmx versions):
+ *   {
+ *     "content": [
+ *       { "type": "thinking", "thinking": "..." },
+ *       { "type": "text", "text": "[{...}, ...]" }
+ *     ],
+ *     ...
+ *   }
+ *
+ * Older mmx (or non-thinking models) just returned raw text — we
+ * fall back to that for backward compat.
+ */
+function extractResponseText(raw) {
+  if (!raw) return "";
+  let env = null;
+  try {
+    env = JSON.parse(raw);
+  } catch {
+    return raw; // not JSON envelope, treat as raw text
+  }
+  if (Array.isArray(env?.content)) {
+    const textItem = env.content.find((c) => c && c.type === "text");
+    if (textItem?.text) return textItem.text;
+  }
+  return raw;
 }
 
 function extractJsonArray(text) {
@@ -112,6 +148,24 @@ function extractJsonArray(text) {
   }
 }
 
+/**
+ * Round 30: post-process — M2.7 frequently forgets to fill the `year`
+ * field in the JSON output (the year ends up inside `body` instead).
+ * Pull it out of body so the timeline isn't full of "X" placeholders.
+ *
+ * Priority: 前 N 年 > 公元 N 年 > N 年 (2-4 digits) > N 世纪
+ * Returns null if no year found (caller should drop the node).
+ */
+function extractYearFromBody(body) {
+  if (!body) return null;
+  let m;
+  if ((m = body.match(/前\s*(\d+)\s*年/))) return `前 ${m[1]} 年`;
+  if ((m = body.match(/公元\s*(\d+)\s*年/))) return `${m[1]} 年`;
+  if ((m = body.match(/(\d{2,4})\s*年/))) return `${m[1]} 年`;
+  if ((m = body.match(/(\d+)\s*世纪/))) return `${m[1]} 世纪`;
+  return null;
+}
+
 const todo = cards.filter((c) => !c.history || !Array.isArray(c.history) || c.history.length === 0);
 const targets = todo.slice(0, limit);
 
@@ -128,7 +182,8 @@ for (let i = 0; i < targets.length; i++) {
   process.stdout.write(`[${i + 1}/${targets.length}] ${c.title} ... `);
   try {
     const raw = callMmx(prompt);
-    const arr = extractJsonArray(raw);
+    const text = extractResponseText(raw);
+    const arr = extractJsonArray(text);
     if (!arr || arr.length < 3) {
       console.log("FAIL: parse");
       fail++;
@@ -137,6 +192,9 @@ for (let i = 0; i < targets.length; i++) {
     // Validate each node. Coerce year to string (model sometimes
     // returns numbers or uses "event" instead of "body"). Truncate
     // body if too long to keep the timeline compact.
+    //
+    // Round 30: if the model didn't fill `year`, post-process it out
+    // of `body` (M2.7 commonly embeds the year in the body text).
     const valid = arr
       .map((n) => {
         if (!n || typeof n !== "object") return null;
@@ -144,8 +202,13 @@ for (let i = 0; i < targets.length; i++) {
         const bodyField = n.body ?? n.event ?? n.description ?? n.text;
         if (typeof titleField !== "string" || typeof bodyField !== "string") return null;
         const yearRaw = n.year ?? n.date ?? n.time;
-        if (yearRaw == null) return null;
-        const year = typeof yearRaw === "number" ? `${yearRaw} 年` : String(yearRaw);
+        let year;
+        if (yearRaw == null || yearRaw === "" || yearRaw === "X" || yearRaw === "x") {
+          year = extractYearFromBody(bodyField);
+          if (year == null) return null; // 仍然没 year,丢弃
+        } else {
+          year = typeof yearRaw === "number" ? `${yearRaw} 年` : String(yearRaw);
+        }
         let body = String(bodyField).trim();
         if (body.length > 100) body = body.slice(0, 100) + "…";
         return {

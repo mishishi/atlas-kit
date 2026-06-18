@@ -11,7 +11,7 @@
 ## Hero Illustration
 
 * Symbolic mythological figure, creature, scene, or cosmological diagram
-* 3–5 small attribute or narrative callouts around the hero illustration
+* 3–5 detached attribute or narrative detached detail panels around the hero illustration
 
 ## Information Modules
 
@@ -52,5 +52,7 @@
 * No fantasy game poster
 * No heroic propaganda
 * Do not merge unrelated myth systems
-* Distinguish myth, legend, and later adaptation
+* Prioritize the earliest or culturally established tradition
+* Clearly separate original mythology from later adaptations
+* Do not use modern game or film costume designs as historical canon
 * Maintain cultural neutrality and respect

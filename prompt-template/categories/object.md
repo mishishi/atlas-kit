@@ -8,7 +8,7 @@
 
 ## Hero Illustration
 * Exploded view or cutaway structure
-* 3–5 small component or material callouts around the hero illustration
+* 3–5 detached component or material detached detail panels around the hero illustration
 
 ## Information Modules
 * 器物档案

@@ -8,7 +8,7 @@
 
 ## Hero Illustration
 * Scientific mechanism or formation diagram
-* 3–5 small cause, stage, form, or warning-signal callouts
+* 3–5 detached cause, stage, form, or warning-signal detached detail panels
 
 ## Information Modules
 * 现象档案
@@ -21,7 +21,8 @@
 * 快速评分卡
 
 ## Rating Dimensions
-* 破坏力
+
+* 能量规模
 * 预测难度
 * 发生频率
 * 影响范围

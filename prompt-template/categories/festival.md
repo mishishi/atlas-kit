@@ -8,7 +8,7 @@
 
 ## Hero Illustration
 * Symbolic cultural scene with representative objects, clothing, and rituals
-* 3–5 small custom or symbol callouts around the hero illustration
+* 3–5 detached custom or symbol detached detail panels around the hero illustration
 
 ## Information Modules
 * 节日档案

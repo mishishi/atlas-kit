@@ -11,7 +11,7 @@
 ## Hero Illustration
 
 * Clear athletic action, field layout, equipment, or technical posture
-* 3–5 small movement, equipment, or rule callouts around the hero illustration
+* 3–5 detached movement, equipment, or rule detached detail panels around the hero illustration
 
 ## Information Modules
 
@@ -43,7 +43,7 @@
 ## Visualization Strip
 
 * 1–2 compact visualizations
-* Field diagram
+* Field, course, arena, route, or equipment diagram as appropriate
 * Movement sequence
 * Competition structure
 
@@ -53,4 +53,4 @@
 * No sports-brand advertising
 * No exaggerated action effects
 * Keep rules and equipment accurate
-* Avoid depicting one athlete as the whole sport
+* Do not confuse the sport with a single league, club, or athlete

@@ -11,11 +11,11 @@
 ## Hero Illustration
 
 * Accurate side view, three-quarter view, cutaway, or structural diagram
-* 3–5 small component or performance callouts around the hero illustration
+* 3–5 detached structural or performance detail panels
 
 ## Information Modules
 
-* 车辆档案
+* 载具档案
 * 结构组成
 * 动力系统
 * 性能参数
@@ -34,11 +34,9 @@
 
 ## Observation Insets
 
-* 车身
-* 驾驶舱
-* 动力
-* 底盘
-* 轮组
+* Select 3–5 distinctive structural components appropriate to the vehicle
+* Examples: body, cockpit, cabin, propulsion, chassis, wings, hull, wheels, tracks
+* Do not show components absent from the subject
 
 ## Visualization Strip
 

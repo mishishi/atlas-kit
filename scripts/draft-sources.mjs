@@ -24,17 +24,33 @@ function userPrompt(card) {
 }
 
 function callMmx(prompt) {
+  // Round 30 fix: --quiet causes M2.7 to emit empty output and hang.
+  // Parse the JSON envelope to extract .text. See draft-history.mjs
+  // for full rationale.
   const isWin = process.platform === "win32";
   const mmxPath = isWin ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1" : "mmx";
-  const args = ["text", "chat", "--non-interactive", "--quiet", "--message", prompt, "--system", SYSTEM_PROMPT];
+  const args = ["text", "chat", "--non-interactive", "--message", prompt, "--system", SYSTEM_PROMPT];
   if (isWin) {
     return execFileSync(
       "powershell.exe",
       ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 90_000 },
+      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 180_000 },
     );
   }
-  return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 90_000 });
+  return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 180_000 });
+}
+
+function extractResponseText(raw) {
+  // Same as draft-history.mjs: extract .text from M2.7 envelope,
+  // fall back to raw text if not JSON.
+  if (!raw) return "";
+  let env = null;
+  try { env = JSON.parse(raw); } catch { return raw; }
+  if (Array.isArray(env?.content)) {
+    const textItem = env.content.find((c) => c && c.type === "text");
+    if (textItem?.text) return textItem.text;
+  }
+  return raw;
 }
 
 function extractJsonArray(text) {
@@ -65,7 +81,8 @@ for (let i = 0; i < todo.length; i++) {
   process.stdout.write(`[${i + 1}/${todo.length}] ${c.title} ... `);
   try {
     const raw = callMmx(userPrompt(c));
-    const arr = extractJsonArray(raw);
+    const text = extractResponseText(raw);
+    const arr = extractJsonArray(text);
     if (!arr || arr.length < 2) {
       console.log("FAIL: parse");
       fail++;

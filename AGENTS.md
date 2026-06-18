@@ -970,3 +970,76 @@ pipeline issue. Shipping a 61st card with garbled Chinese
 text would be a visible downgrade to the public atlas, so
 the test image is in `tmp/` (gitignored) and the 61st-card
 decision is deferred to R29.
+
+## Round 30: end-to-end pipeline automation (2026-06-18)
+
+Goal: 让一张新卡从 0 到 100% 完整一条命令搞定,wizard 之外的
+CLI 路径打通。详细笔记见 `docs/round-30-pipeline-automation.md`,
+这里只列 API 表面。
+
+### 4 new scripts (the pipeline)
+
+| Script | Role | 调用方式 |
+|---|---|---|
+| `scripts/plan-new-cards.mjs` | 24-kind 候选池 + 缺口扫描 → `tmp/new-cards-plan.json` | `--kind X` `--count N` `--include-empty` `--dry-run` |
+| `scripts/regen-3tier.mjs` | `-card.png` → `-thumb.webp` (384w) + `-full.webp` (1024w q90) | `--kind X --slug Y` 或 `--all` `--force` |
+| `scripts/generate-card.mjs` | 串联 build-prompt → matrix (retry 3) → 落盘 PNG/MD → 3-tier → cards.json + log-revision | `--topic X --kind Y --slug Z [--series S --seriesNo N --palette "#hex,#hex,#hex"] [--resolution 1K\|2K]` 或 `--from-plan <json>` `--dry-run` |
+| `scripts/finish-card.mjs` | 内容补全串联:阶段 1 per-card (mmx) + 阶段 2 bulk (deterministic) | `--slug X` (阶段 1) `--bulk` (阶段 2) `--all` (1+2) `--limit N` `--no-score` `--verbose` |
+
+### 4 source scripts modified
+
+- `scripts/draft-history.mjs`: mmx envelope 解析 + year post-process
+  (从 body regex 提取 `前 N 年` / `公元 N 年` / `N 年` / `N 世纪`)
+  + 节点数 5-8 → 3-5 (避开 M2.7 thinking 阶段 4096-token 截断)
+- `scripts/draft-sources.mjs`: 同样 mmx envelope 解析
+- `scripts/add-cross-tags.mjs`: `CROSS_TAGS` dict 补 `great-wall` +
+  `potala-palace` 两条(之前 WARN 跳过)
+- `scripts/generate-card.mjs`: 加 `--series` / `--seriesNo` / `--palette`
+  CLI 标志(单卡模式不再 fallback 到 seriesNo="001")
+
+### Wizard vs CLI 同源
+
+```
+       ┌─────────────────────────┐
+       │ scripts/build-prompt.mjs │  ← single source of truth
+       └─────────────────────────┘
+              ▲                ▲
+              │ execFile       │ execFile
+              │                │
+   ┌──────────┴──────┐  ┌──────┴─────────────────┐
+   │ /api/generate   │  │ generate-card.mjs       │
+   │ (wizard)        │  │ (CLI, no rate limit)    │
+   │ 3 req / 5 min   │  │ N cards, batchable      │
+   └─────────────────┘  └────────────────────────┘
+       browser              terminal / batch
+```
+
+两个入口都调同一个 `build-prompt.mjs` (H1 强约束),所以 prompt
+永远只有一份 source of truth。
+
+### End-to-end PoC: 布达拉宫 (62nd card)
+
+完整状态(经过 plan → generate → finish-card):
+
+```yaml
+slug:        potala-palace
+title:       布达拉宫
+kind:        architecture
+series:      craft-and-botanical
+seriesNo:    012
+score:       8.7  (visualScore 7/8)
+tags (8):    建筑 | 宫殿 | 西藏 | 世界遗产 | 唐朝 | 清初 | 中国 | 古代
+description: 270 字
+history:     5 nodes (631/1645/1648/1959/1994 年)
+sources:     3 条权威中文 (中国大百科/维基中文/知网)
+```
+
+### R31 候选(未做)
+
+- `scripts/batch-generate.mjs` orchestrator: 4 张 architecture 剩
+  下 3 张(应县木塔 / 赵州桥 / 黄鹤楼)能一键并发 + 死信
+- `categories/architecture.md` 模板防翻车补丁:"建筑档案" + "地理
+  位置" 在布达拉宫图里各出现 2 次,模板没禁止 8 module 严格
+- 长城 visualScore 4/8,可能 1K 图质量差,2K 重跑可改善
+- score-all-cards 跑全 62 张(完整 visualScore sweep, 当前只跑了
+  前 28 张 + 布达拉宫 1 张)

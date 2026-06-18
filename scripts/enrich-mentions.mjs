@@ -27,6 +27,24 @@ const SKIP_SLUGS = new Set(); // editorial: cards you don't want cross-refs on
 const cardsPath = path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
+// R33: --only-kind / --only-slug flags — restrict the outer loop to a
+// subset so batch-generate.mjs can run enrich for just the new cards
+// without sweeping all 70+ cards every time (N^2/2 cross-tag scoring
+// gets slow at 60+ cards × 60+ cards).
+//
+// Note: candidates are STILL drawn from the full cards set — only the
+// targets (cards that get a "（参见：X, Y）" appended to description)
+// are restricted.
+const args = process.argv.slice(2);
+const onlyKind = (args.includes("--only-kind") ? args[args.indexOf("--only-kind") + 1] : null);
+const onlySlug = (args.includes("--only-slug") ? args[args.indexOf("--only-slug") + 1] : null);
+
+const targets = onlySlug
+  ? cards.filter((c) => c.slug === onlySlug)
+  : onlyKind
+    ? cards.filter((c) => c.kind === onlyKind)
+    : cards;
+
 function sharedCrossTagCount(a, b) {
   // Only count "cross-cutting" tags — these are 2-char concepts
   // (中国 / 古代 / 现代 / 江南 / etc) not the per-card descriptive
@@ -48,7 +66,7 @@ function sharedCrossTagCount(a, b) {
 }
 
 let updated = 0;
-for (const target of cards) {
+for (const target of targets) {
   if (SKIP_SLUGS.has(target.slug)) continue;
   const text = (target.description || "") + " " + (target.tagline || "") + " " + (target.subtitle || "");
   // Find candidates not already mentioned and not in the same
@@ -69,7 +87,13 @@ for (const target of cards) {
 }
 
 fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
-console.log(`Enriched ${updated}/60 cards with cross-references.`);
+
+const scopeLabel = onlySlug
+  ? `slug=${onlySlug}`
+  : onlyKind
+    ? `kind=${onlyKind} (${targets.length} cards)`
+    : `all (${targets.length} cards)`;
+console.log(`Enriched ${updated}/${targets.length} target(s) [${scopeLabel}] with cross-references.`);
 const newCounts = new Map();
 for (const c of cards) {
   const text = (c.description || "") + " " + (c.tagline || "") + " " + (c.subtitle || "");
@@ -80,6 +104,6 @@ for (const c of cards) {
   }
   if (n > 0) newCounts.set(c.title, n);
 }
-console.log(`\nNow ${newCounts.size}/60 cards have at least 1 cross-mention.`);
+console.log(`\nNow ${newCounts.size}/${cards.length} cards have at least 1 cross-mention.`);
 console.log("Top forward-mentioners (who mention the most others):");
 [...newCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).forEach(([t, n]) => console.log("  " + n + " " + t));

@@ -9,7 +9,7 @@
 ## Hero Illustration
 * Core principle diagram or system structure
 * Not a product render
-* 3–5 small module, input, output, or application callouts
+* 3–5 detached module, input, output, or application detached detail panels
 
 ## Information Modules
 * 概念档案

@@ -698,3 +698,116 @@ CLI 用户跟 wizard **共用同一条线** — `node build-prompt.mjs 三星堆
 | Header | `resize-cards` | 加 DEPRECATED 注释 + 替代方案链接 |
 
 这些 fix 的设计思路写进 [AGENTS.md §Round 23](../AGENTS.md#round-23-scripts-audit-pass-2026-06-16) 和 memory。
+
+---
+
+## Appendix D: R30 Pipeline Automation (2026-06-18)
+
+R30 把"wizard 之外也能批量跑图鉴"这条路打通。详细笔记见
+[docs/round-30-pipeline-automation.md](./round-30-pipeline-automation.md)
+和 [AGENTS.md §Round 30](../AGENTS.md#round-30-end-to-end-pipeline-automation-2026-06-18)。
+
+### 4 个新 scripts (the pipeline)
+
+| Script | 角色 | 关键调用 |
+|---|---|---|
+| `scripts/plan-new-cards.mjs` | 24-kind 候选池 + 缺口扫描 → `tmp/new-cards-plan.json` | `node scripts/plan-new-cards.mjs` 或 `--include-empty` 或 `--kind X --count N` |
+| `scripts/regen-3tier.mjs` | `-card.png` → `-thumb.webp` (384w) + `-full.webp` (1024w q90) | `node scripts/regen-3tier.mjs --kind X --slug Y` 或 `--all` `--force` |
+| `scripts/generate-card.mjs` | 串联 build-prompt → matrix (retry 3) → 落盘 PNG/MD → 3-tier → cards.json + log-revision | `node scripts/generate-card.mjs --topic X --kind Y --slug Z [--series S --seriesNo N --palette "#hex,#hex,#hex"]` 或 `--from-plan <json>` |
+| `scripts/finish-card.mjs` | 内容补全: 阶段 1 per-card (mmx) + 阶段 2 bulk (deterministic) | `node scripts/finish-card.mjs --slug X` 或 `--bulk` 或 `--all` |
+
+### 端到端跑一张卡(典型流程)
+
+```bash
+# 1. 选主题
+node scripts/plan-new-cards.mjs                                # 写 tmp/new-cards-plan.json
+# 或者单卡跑,跳过 plan 步骤:
+node scripts/generate-card.mjs --topic 布达拉宫 --kind architecture --slug potala-palace
+
+# 2. (per-card) 内容补全
+node scripts/finish-card.mjs --slug potala-palace              # 阶段 1: mmx (history + sources)
+node scripts/finish-card.mjs --slug potala-palace --bulk       # 阶段 2: cross-tags + mentions + myth + score
+
+# 3. (bulk) 全部卡补全,新加完 N 张后跑一次
+node scripts/add-cross-tags.mjs                                # 已经是幂等的
+node scripts/enrich-mentions.mjs
+node scripts/score-all-cards.mjs --write                       # visualScore, 62 张要 3-5 min
+
+# 4. (批量,R31 候选) 把 4 张 architecture 跑完
+# node scripts/batch-generate.mjs tmp/new-cards-plan.json --concurrency 2
+```
+
+### Wizard vs CLI 同源
+
+```
+   ┌─────────────────────────┐
+   │ scripts/build-prompt.mjs │  ← single source of truth
+   └─────────────────────────┘
+        ▲                ▲
+        │ execFile       │ execFile
+        │                │
+ ┌──────┴──────┐  ┌──────┴─────────────────┐
+ │ /api/generate│  │ generate-card.mjs       │
+ │ (wizard)     │  │ (CLI, no rate limit)    │
+ │ 3 req/5 min  │  │ N cards, batchable      │
+ └──────────────┘  └────────────────────────┘
+     browser            terminal / batch
+```
+
+两个入口都调同一个 `build-prompt.mjs`,所以 prompt 永远只有一份
+source of truth (H1 强约束)。`generate-card.mjs` 同样通过
+`child_process.execFile` 调,绝不 inline prompt。
+
+### R30 修复(4 个源脚本)
+
+- `scripts/draft-history.mjs`: 加 `extractResponseText` 解析 M2.7
+  envelope (`{content:[{type:"thinking"},{type:"text"}]}`), 加
+  `extractYearFromBody` 兜底 M2.7 漏填的 year 字段, 节点数 5-8 → 3-5
+  避开 max_tokens 截断
+- `scripts/draft-sources.mjs`: 同样 envelope 解析
+- `scripts/add-cross-tags.mjs`: `CROSS_TAGS` dict 补 `great-wall` +
+  `potala-palace` 两条
+- `scripts/generate-card.mjs`: 加 `--series` / `--seriesNo` / `--palette`
+  三个 CLI 标志(单卡模式不再 fallback 到 seriesNo="001")
+
+### H1 / Hard Rules 兼容
+
+- 改 prompt 的唯一合法路径仍是编辑 `prompt-template/*.md`
+- `generate-card.mjs` 跟 wizard 一样,每次跑都把 `build-prompt.mjs`
+  输出原样保存为 `<slug>-prompt.md` (R26 H1 要求)
+- 0 个 inline prompt
+- 0 个新依赖 (sharp / mmx / matrix 都已配)
+- 0 个 prompt-template 模板文件被修改 (这次 round 没改模板)
+
+### 已知 bug (R31 候选)
+
+1. **`categories/architecture.md` 没禁止 8 module 严格**: R30 布拉
+   拉宫图里 "建筑档案" + "地理位置" 各出现 2 次。建议模板加
+   "produce exactly 8 distinct module titles" 强约束。
+2. **mmx text chat 在长 prompt 上仍可能慢** (>180s)。已用
+   `node` 节点数 3-5 缓解, 真要 5-8 节点需要分批 / 改 model。
+3. **score-all-cards 全 62 张没跑完** (session 内跑了 28/62 后
+   timeout 截断), 跑完整建议放在 `npm run score` 这种 CI 命令,
+   不在 hot path。
+
+### 推荐工作流(批量生产时)
+
+```bash
+# A. 启动
+node scripts/plan-new-cards.mjs --include-empty
+# 看 tmp/new-cards-plan.json, 删掉你不要的主题
+node scripts/regen-3tier.mjs --all    # 派生 3-tier (idempotent)
+node scripts/add-cross-tags.mjs       # 加 cross-tags
+node scripts/enrich-mentions.mjs      # 加内链
+node scripts/score-all-cards.mjs --write   # visualScore
+node scripts/score-all-cards.mjs --only-fail  # 看哪些 fail
+
+# B. 浏览器看效果
+npm run dev
+# 浏览 /cards/<slug>, /cards?kind=architecture, /series/craft-and-botanical
+# 重点看 lightbox 缩放, 信息模块 8 个是不是齐, OCR 置信度 (visualScore)
+
+# C. 改 template
+# 编辑 prompt-template/categories/architecture.md (或别的), 改完 commit
+# 下次 wizard / generate-card 跑同一主题会自动用新 prompt
+```

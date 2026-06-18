@@ -96,6 +96,38 @@ const CROSS_TAGS = {
   "suzhou-gardens": ["建筑", "中国", "江南", "文化", "世界遗产"],
   "three-body": ["文学", "中国", "现代", "科幻"],
   "sanxingdui": ["历史", "中国", "古代", "西南", "考古"],
+  // R30: architecture kind (great-wall + potala-palace)
+  "great-wall": ["建筑", "中国", "古代", "防御", "世界遗产"],
+  "potala-palace": ["建筑", "中国", "古代", "宫殿", "西藏", "世界遗产"],
+  // R31: architecture kind (3 more, completing 5-card target)
+  "yingxian-wooden-pagoda": ["建筑", "中国", "古代", "木构", "佛教", "世界遗产"],
+  "zhaozhou-bridge": ["建筑", "中国", "古代", "桥梁", "工程", "世界遗产"],
+  "yellow-crane-tower": ["建筑", "中国", "古代", "楼阁", "文学", "江南"],
+  // R33: artwork kind (5 cards, R33 PoC) — R33 review 漏写, R34 补
+  "mona-lisa": ["艺术品", "意大利", "文艺复兴", "肖像"],
+  "starry-night": ["艺术品", "后印象", "夜景", "天文"],
+  "the-last-supper": ["艺术品", "意大利", "文艺复兴", "宗教"],
+  "guernica": ["艺术品", "西班牙", "现代", "战争"],
+  "girl-with-pearl-earring": ["艺术品", "荷兰", "巴洛克", "肖像"],
+  // R34: mythology kind (5 cards, R34 first batch)
+  "norse-mythology": ["神话", "欧洲", "古代", "维京", "宗教"],
+  "greek-mythology": ["神话", "欧洲", "古代", "哲学", "文化"],
+  "hindu-mythology": ["神话", "亚洲", "古代", "宗教", "哲学"],
+  "japanese-mythology": ["神话", "亚洲", "古代", "神道", "宗教"],
+  "egyptian-mythology": ["神话", "非洲", "古代", "宗教", "文化"],
+  // R34: movie kind (5 cards, R34 second batch)
+  "the-godfather": ["电影", "美国", "20世纪", "黑帮", "经典"],
+  "seven-samurai": ["电影", "日本", "20世纪", "武士", "经典"],
+  "citizen-kane": ["电影", "美国", "20世纪", "剧情", "经典"],
+  "farewell-my-concubine": ["电影", "中国", "20世纪", "戏曲", "近代"],
+  "spirited-away": ["电影", "日本", "21世纪", "动画", "奇幻"],
+  // R34: book kind (staging cards, 2 of 5 generated so far — full 5 in R34 next batch)
+  "dream-of-the-red-chamber": ["文学", "中国", "古代", "小说", "经典"],
+  "war-and-peace": ["文学", "俄罗斯", "19世纪", "小说", "经典"],
+  // R34: book kind (3 more, completing 5-card target)
+  "ulysses": ["文学", "爱尔兰", "20世纪", "现代主义", "经典"],
+  "one-hundred-years-of-solitude": ["文学", "拉美", "20世纪", "魔幻现实主义", "经典"],
+  "in-search-of-lost-time": ["文学", "法国", "20世纪", "现代主义", "经典"],
 };
 
 let updated = 0;

@@ -8,7 +8,7 @@
 
 ## Hero Illustration
 * Engraving, sketch, or archival portrait
-* 3–5 small symbolic callouts around the portrait
+* 3–5 detached symbolic detached detail panels around the portrait
 
 ## Information Modules
 * 基本档案

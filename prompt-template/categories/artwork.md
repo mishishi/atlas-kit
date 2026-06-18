@@ -10,8 +10,10 @@
 
 ## Hero Illustration
 
-* Faithful artwork reproduction or museum-style visual study
-* 3–5 small composition, technique, or detail callouts around the hero illustration
+* One faithful full reproduction of the artwork
+* Preserve the original composition, proportions, orientation, and dominant palette
+* Do not reinterpret, rearrange, simplify, or add elements
+* Compact museum-catalogue presentation
 
 ## Information Modules
 
@@ -34,23 +36,24 @@
 
 ## Observation Insets
 
-* 构图
-* 色彩
-* 笔触
-* 材料
-* 细节
+* 3–5 detached close-up crops taken directly from the artwork
+* Show genuine details from different regions of the original composition
+* Prefer visually distinct details
+* Do not invent alternative versions or unrelated symbolic illustrations
+* Short labels only
 
 ## Visualization Strip
 
-* 1–2 compact visualizations
-* Composition diagram
-* Color palette
-* Provenance timeline
+* 1–2 compact analytical visualizations
+* Prefer composition diagram, restrained color palette, or provenance timeline
+* No more than 4–5 timeline points
+* Minimal labels only
 
 ## Failure Prevention
 
-* No auction advertising
-* No gallery promotion
+* No reinterpretation of the original artwork
+* No invented visual elements
 * No decorative poster treatment
-* Do not invent provenance or dimensions
-* Preserve the artwork’s visual character
+* No auction or exhibition advertising
+* No oversized infographic icons
+* Do not invent provenance, dimensions, or quotations

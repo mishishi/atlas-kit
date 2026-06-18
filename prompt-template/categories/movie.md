@@ -10,8 +10,9 @@
 
 ## Hero Illustration
 
-* Symbolic film composition, storyboard-style scene, or archival poster study
-* 3–5 small cinematic element callouts around the hero illustration
+* Representative cinematic composition, storyboard analysis, or visual-language study
+* Present the film as an encyclopedia subject, not a promotional poster
+* 3–5 detached cinematic analysis panels
 
 ## Information Modules
 
@@ -34,11 +35,9 @@
 
 ## Observation Insets
 
-* 人物
-* 场景
-* 道具
-* 镜头
-* 符号
+* Select 3–5 distinct visual elements
+* Examples: composition, lighting, costume, prop, setting, recurring motif
+* Avoid repeating similar character portraits
 
 ## Visualization Strip
 

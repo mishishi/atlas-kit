@@ -7,8 +7,9 @@
 * Encyclopedia city profile page
 
 ## Hero Illustration
+
 * City overview showing geography, skyline, urban texture, and historical character
-* 3–5 small city-element callouts around the hero illustration
+* 3–5 detached analytical city-element panels
 
 ## Information Modules
 * 基础档案
@@ -41,7 +42,9 @@
 * Landmark silhouettes
 
 ## Failure Prevention
+
 * No tourism advertising
 * No travel-guide aesthetics
 * No postcard collage
 * No recommendation language
+* Prefer geography, urban structure, street texture, and historical fabric

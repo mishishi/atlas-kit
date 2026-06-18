@@ -8,7 +8,7 @@
 
 ## Hero Illustration
 * Archival composition of map, artifact, people, and key scene
-* 3–5 small historical-symbol or event-node callouts
+* 3–5 detached historical-symbol or event-node detached detail panels
 
 ## Information Modules
 * 事件档案
@@ -21,7 +21,8 @@
 * 快速评分卡
 
 ## Rating Dimensions
-* 规模烈度
+
+* 影响规模
 * 持续时长
 * 波及范围
 * 历史转折性

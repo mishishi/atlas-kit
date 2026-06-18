@@ -10,16 +10,16 @@
 
 ## Hero Illustration
 
-* Clinical anatomy, pathogen, mechanism, or symptom-distribution diagram
-* 3–5 small mechanism, organ, symptom, or diagnostic callouts around the hero illustration
+* Clinical anatomy, mechanism, affected-system, or symptom-distribution diagram
+* 3–5 detached medically relevant detail panels
 
 ## Information Modules
 
 * 疾病档案
 * 病因机制
-* 主要症状
-* 传播途径
+* 主要表现
 * 风险因素
+* 影响系统
 * 诊断方式
 * 预防治疗
 * 快速评分卡
@@ -34,11 +34,9 @@
 
 ## Observation Insets
 
-* 病原
-* 器官
-* 症状
-* 机制
-* 检测
+* Select 3–5 medically relevant features
+* Examples: affected organ, cellular mechanism, symptom pattern, diagnostic sign, pathogen when applicable
+* Do not imply an infectious cause unless applicable
 
 ## Visualization Strip
 

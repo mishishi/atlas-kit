@@ -7,8 +7,9 @@
 * Natural-history species profile page
 
 ## Hero Illustration
+
 * Scientific full-body species illustration
-* 3–5 small anatomical callouts around the hero illustration
+* 3–5 detached anatomical close-up panels around the hero illustration
 
 ## Information Modules
 * 分类阶元
@@ -28,11 +29,12 @@
 * 人类熟悉度
 
 ## Observation Insets
-* Head, beak, eyes, limbs, feathers, skin, scales, teeth, tail
-* Select 3–5 distinctive anatomical features
+
+* Select 3–5 distinctive anatomical features appropriate to the species
 * Prefer visually different features
 * Avoid duplicate or near-duplicate close-ups
-* Short labels only
+* Examples: head, eyes, beak, teeth, limbs, wings, fur, feathers, scales, tail
+* Do not show features absent from the species
 
 ## Visualization Strip
 * 1–2 compact visualizations

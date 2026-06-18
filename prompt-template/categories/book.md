@@ -10,8 +10,8 @@
 
 ## Hero Illustration
 
-* Book cover, manuscript, symbolic scene, or archival publication composition
-* 3–5 small work-related callouts around the hero illustration
+* Book cover, manuscript, symbolic motif, or archival publication composition
+* 3–5 detached publication, manuscript, typography, or narrative-detail panels
 
 ## Information Modules
 
@@ -34,11 +34,9 @@
 
 ## Observation Insets
 
-* 封面
-* 手稿
-* 人物
-* 场景
-* 象征
+* Select 3–5 distinct publication or narrative-analysis details
+* Prefer cover, manuscript, typography, motif, structure, or edition history
+* Do not turn the page into a film poster
 
 ## Visualization Strip
 
@@ -52,5 +50,6 @@
 * No commercial book advertising
 * No bestseller promotion
 * No fabricated quotations
+* No invented edition details
 * Avoid excessive plot spoilers
 * Maintain neutral literary analysis

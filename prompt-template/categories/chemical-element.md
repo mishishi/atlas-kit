@@ -11,7 +11,7 @@
 ## Hero Illustration
 
 * Atomic structure, sample appearance, spectral line, or material-use composition
-* 3–5 small atomic, physical, or application callouts around the hero illustration
+* 3–5 detached atomic, physical, or application detached detail panels around the hero illustration
 
 ## Information Modules
 

@@ -8,7 +8,7 @@
 
 ## Hero Illustration
 * Diagrammatic food specimen or cutaway view
-* 3–5 small ingredient, cross-section, or process callouts
+* 3–5 detached ingredient, cross-section, or process detached detail panels
 
 ## Information Modules
 * 食物档案

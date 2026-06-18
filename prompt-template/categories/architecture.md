@@ -11,7 +11,7 @@
 ## Hero Illustration
 
 * Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 small structural or decorative callouts around the hero illustration
+* 3–5 detached structural, material, or decorative detail panels
 
 ## Information Modules
 
@@ -34,11 +34,9 @@
 
 ## Observation Insets
 
-* 立面
-* 穹顶
-* 柱式
-* 门窗
-* 纹饰
+* Select 3–5 distinctive architectural details
+* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
+* Do not impose classical elements on unrelated architecture
 
 ## Visualization Strip
 

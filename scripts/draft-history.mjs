@@ -27,6 +27,26 @@ if (limitIdx >= 0) {
   limit = parsed;
 }
 
+// Round 34+ fix: internal retry for non-deterministic mmx responses.
+// M2.7 sometimes returns "X" placeholders, invalid JSON, or partial
+// arrays. Each retry sleeps 1.5s (give mmx service cooldown). 3
+// retries x 4 cards = 12 attempts, but in practice 1 retry resolves
+// most cases. CLI override via --max-retries N (1 = old behavior).
+const retriesIdx = args.indexOf("--max-retries");
+let MAX_RETRIES = 3;
+if (retriesIdx >= 0) {
+  const r = parseInt(args[retriesIdx + 1], 10);
+  if (Number.isFinite(r) && r >= 1) MAX_RETRIES = r;
+}
+const RETRY_DELAY_MS = 1500;
+
+/** Sync sleep that doesn't require async/await in main loop. */
+function syncSleep(ms) {
+  const sab = new SharedArrayBuffer(4);
+  const i32 = new Int32Array(sab);
+  Atomics.wait(i32, 0, 0, ms);
+}
+
 const cardsPath = path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
@@ -180,58 +200,86 @@ for (let i = 0; i < targets.length; i++) {
   const c = targets[i];
   const prompt = userPrompt(c);
   process.stdout.write(`[${i + 1}/${targets.length}] ${c.title} ... `);
-  try {
-    const raw = callMmx(prompt);
-    const text = extractResponseText(raw);
-    const arr = extractJsonArray(text);
-    if (!arr || arr.length < 3) {
-      console.log("FAIL: parse");
-      fail++;
-      continue;
-    }
-    // Validate each node. Coerce year to string (model sometimes
-    // returns numbers or uses "event" instead of "body"). Truncate
-    // body if too long to keep the timeline compact.
-    //
-    // Round 30: if the model didn't fill `year`, post-process it out
-    // of `body` (M2.7 commonly embeds the year in the body text).
-    const valid = arr
-      .map((n) => {
-        if (!n || typeof n !== "object") return null;
-        const titleField = n.title ?? n.event ?? n.heading;
-        const bodyField = n.body ?? n.event ?? n.description ?? n.text;
-        if (typeof titleField !== "string" || typeof bodyField !== "string") return null;
-        const yearRaw = n.year ?? n.date ?? n.time;
-        let year;
-        if (yearRaw == null || yearRaw === "" || yearRaw === "X" || yearRaw === "x") {
-          year = extractYearFromBody(bodyField);
-          if (year == null) return null; // 仍然没 year,丢弃
-        } else {
-          year = typeof yearRaw === "number" ? `${yearRaw} 年` : String(yearRaw);
+
+  // Round 34+ internal retry: same card, same prompt, max MAX_RETRIES
+  // attempts with 1.5s sleep between. Persist on first valid ≥3 result.
+  let valid = null;
+  let attempts = 0;
+  let lastErr = null;
+  while (attempts < MAX_RETRIES && !valid) {
+    attempts++;
+    try {
+      const raw = callMmx(prompt);
+      const text = extractResponseText(raw);
+      const arr = extractJsonArray(text);
+      if (!arr || arr.length < 3) {
+        lastErr = "parse";
+        if (attempts < MAX_RETRIES) {
+          syncSleep(RETRY_DELAY_MS);
+          continue;
         }
-        let body = String(bodyField).trim();
-        if (body.length > 100) body = body.slice(0, 100) + "…";
-        return {
-          year: year.trim(),
-          title: String(titleField).trim().slice(0, 16),
-          body,
-        };
-      })
-      .filter((v) => v && v.year && v.title && v.body)
-      .slice(0, 8);
-    if (valid.length < 3) {
-      console.log(`FAIL: too few valid nodes (got ${valid.length})`);
-      fail++;
-      continue;
+        console.log(`FAIL: ${lastErr} after ${attempts} attempt(s)`);
+        break;
+      }
+      // Validate each node. Coerce year to string (model sometimes
+      // returns numbers or uses "event" instead of "body"). Truncate
+      // body if too long to keep the timeline compact.
+      //
+      // Round 30: if the model didn't fill `year`, post-process it out
+      // of `body` (M2.7 commonly embeds the year in the body text).
+      const validated = arr
+        .map((n) => {
+          if (!n || typeof n !== "object") return null;
+          const titleField = n.title ?? n.event ?? n.heading;
+          const bodyField = n.body ?? n.event ?? n.description ?? n.text;
+          if (typeof titleField !== "string" || typeof bodyField !== "string") return null;
+          const yearRaw = n.year ?? n.date ?? n.time;
+          let year;
+          if (yearRaw == null || yearRaw === "" || yearRaw === "X" || yearRaw === "x") {
+            year = extractYearFromBody(bodyField);
+            if (year == null) return null; // 仍然没 year,丢弃
+          } else {
+            year = typeof yearRaw === "number" ? `${yearRaw} 年` : String(yearRaw);
+          }
+          let body = String(bodyField).trim();
+          if (body.length > 100) body = body.slice(0, 100) + "…";
+          return {
+            year: year.trim(),
+            title: String(titleField).trim().slice(0, 16),
+            body,
+          };
+        })
+        .filter((v) => v && v.year && v.title && v.body)
+        .slice(0, 8);
+      if (validated.length < 3) {
+        lastErr = `too few valid nodes (got ${validated.length})`;
+        if (attempts < MAX_RETRIES) {
+          syncSleep(RETRY_DELAY_MS);
+          continue;
+        }
+        console.log(`FAIL: ${lastErr} after ${attempts} attempt(s)`);
+        break;
+      }
+      valid = validated;
+    } catch (e) {
+      lastErr = `ERR: ${e.message?.slice(0, 80) ?? e}`;
+      if (attempts < MAX_RETRIES) {
+        syncSleep(RETRY_DELAY_MS);
+        continue;
+      }
+      console.log(lastErr + ` after ${attempts} attempt(s)`);
     }
+  }
+
+  if (valid) {
     c.history = valid;
     success++;
-    console.log(`OK (${valid.length} nodes)`);
+    const attemptNote = attempts > 1 ? ` (after ${attempts} attempt${attempts > 1 ? "s" : ""})` : "";
+    console.log(`OK (${valid.length} nodes)${attemptNote}`);
     // Persist after every success — so a timeout mid-run doesn't
     // lose the work we've already done. Cheap (60 × a few KB).
     fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
-  } catch (e) {
-    console.log(`ERR: ${e.message?.slice(0, 80) ?? e}`);
+  } else {
     fail++;
   }
 }

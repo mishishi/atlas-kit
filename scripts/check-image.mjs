@@ -18,7 +18,7 @@
 // per user feedback — too strict for legitimate summary-module
 // overlap like "主要食物" echoing "食性行为" in module 4):
 //   1. 严格 9:16 比例
-//   2. 8 个信息模块 (≥ 6 容忍 OCR 噪声)
+//   2. 8 个信息模块 (≥ 6 容忍, sharp 像素分析检测)
 //   3. 标题不能含 "图鉴/档案" 后缀 (品牌是图鉴社)
 //   4. 标注线 / 引线 (边缘密度 ≥ 5%)
 //   5. Summary Bar ≤ 2 行
@@ -152,39 +152,71 @@ export async function checkImage(imagePath) {
     });
   }
 
-  // Rule 2: 8 modules (≥ 6 tolerated)
+  // Rule 2: 8 modules (≥ 6 tolerated) — R35 sharp pixel 2D analysis
+  // Previous OCR-based algorithm had two false-positive bugs:
+  //   1. lowerLines 包了 30%-95% = 中下 65%(原意"下半部分")
+  //   2. OCR line bbox cluster gap 阈值跟视觉模块不对应
+  //      (chef 视觉 8 模块被判 3 个 cluster → false 6/8)
+  // New: sharp crop 下半部分 (50%-95%),按左右两栏分别聚类 dark rows。
+  // Atlas Kit layout 是 2 栏 × N 行,每栏 N 个 module。每栏 ≥ 3 module +
+  // 总 ≥ 6。1D 算法把左右栏 y 同步合并 → 必须分栏聚类。
   {
-    const lines = [];
-    for (const blk of ocr.blocks || []) {
-      for (const p of blk.paragraphs || []) {
-        for (const l of p.lines || []) {
-          if (l.bbox && typeof l.bbox.y0 === "number") lines.push(l.bbox);
+    const croppedBuf = await sharp(imagePath)
+      .extract({
+        left: 0,
+        top: Math.floor(H * 0.50),
+        width: W,
+        height: Math.floor(H * 0.45),
+      })
+      .grayscale()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+
+    const { data, info } = croppedBuf;
+    const Wc = info.width;
+    const Hc = info.height;
+    const darkThreshold = 128;
+    const contentRatioThreshold = 0.04;
+    const midX = Math.floor(Wc / 2);
+
+    function clusterCol(x0, x1) {
+      // 在 [x0, x1) 列宽内,每行 dark pixel 比例
+      const colWidth = x1 - x0;
+      const flags = [];
+      for (let y = 0; y < Hc; y++) {
+        let darkCount = 0;
+        for (let x = x0; x < x1; x++) {
+          if (data[y * Wc + x] < darkThreshold) darkCount++;
+        }
+        flags.push(darkCount / colWidth >= contentRatioThreshold);
+      }
+      // 合并连续 content rows
+      const minH = Math.max(3, Math.floor(H * 0.015));
+      let n = 0;
+      let curStart = -1;
+      for (let y = 0; y < Hc; y++) {
+        if (flags[y]) {
+          if (curStart < 0) curStart = y;
+        } else if (curStart >= 0) {
+          if (y - curStart >= minH) n++;
+          curStart = -1;
         }
       }
-    }
-    const lowerLines = lines.filter((b) => b.y0 >= H * 0.30 && b.y0 < H * 0.95);
-    const midX = W / 2;
-    const countCol = (col) => {
-      if (col.length === 0) return 0;
-      col.sort((a, b) => a.y0 - b.y0);
-      const gap = H * 0.025;
-      let n = 1;
-      for (let i = 1; i < col.length; i++) {
-        if (col[i].y0 - col[i - 1].y1 >= gap) n++;
-      }
+      if (curStart >= 0 && Hc - curStart >= minH) n++;
       return n;
-    };
-    const left = lowerLines.filter((b) => (b.x0 + b.x1) / 2 < midX);
-    const right = lowerLines.filter((b) => (b.x0 + b.x1) / 2 >= midX);
-    const lCount = countCol(left);
-    const rCount = countCol(right);
+    }
+
+    // 排除中线附近 (跨栏的 timeline / pie chart),边界内缩 5%
+    const padX = Math.floor(Wc * 0.05);
+    const lCount = clusterCol(padX, midX - padX);
+    const rCount = clusterCol(midX + padX, Wc - padX);
     const total = lCount + rCount;
     const pass = total >= 6;
     results.push({
       ruleId: 2,
       rule: "8 个信息模块",
       pass,
-      detail: `下半部分 2 栏聚类: 左 ${lCount} + 右 ${rCount} = ${total} (目标 ≥ 6)`,
+      detail: `下半部分 2 栏 dark-row 聚类: 左 ${lCount} + 右 ${rCount} = ${total} (目标 ≥ 6, image ${W}×${H})`,
     });
   }
 

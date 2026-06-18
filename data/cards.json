@@ -7294,5 +7294,2520 @@
       }
     ],
     "visualScore": 8
+  },
+  {
+    "slug": "andromeda-galaxy",
+    "title": "仙女座星系",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "011",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/space-object/andromeda-galaxy/andromeda-galaxy-card.png",
+    "image_thumb": "/cards/space-object/andromeda-galaxy/andromeda-galaxy-thumb.webp",
+    "image_full": "/cards/space-object/andromeda-galaxy/andromeda-galaxy-full.webp",
+    "score": 9.2,
+    "tags": [
+      "天文",
+      "星系",
+      "河外",
+      "观测"
+    ],
+    "tagline": "",
+    "subtitle": "天体 · 仙女座星系 · 百科占位",
+    "description": "仙女座星系 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "维基百科 - 仙女座星系",
+        "url": "https://zh.wikipedia.org/wiki/仙女座星系",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.nao.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "北京天文馆",
+        "url": "https://www.bjp.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国大百科全书 - 天文学卷",
+        "url": "https://wapbaike.baidu.com/item/仙女座星系",
+        "type": "百科"
+      }
+    ],
+    "history": [
+      {
+        "year": "964年",
+        "title": "阿里-苏菲首次记录",
+        "body": "波斯天文学家阿尔-苏菲在《恒星之书》中首次记录仙女座星系的可见光斑。"
+      },
+      {
+        "year": "1923年",
+        "title": "哈勃分辨星系",
+        "body": "埃德温·哈勃用100英寸望远镜分辨出仙女座为河外星系,确立其独立天体身份。"
+      },
+      {
+        "year": "1970年代",
+        "title": "旋转曲线发现",
+        "body": "薇拉·鲁宾的旋转曲线观测揭示暗物质在仙女座晕中的主导地位。"
+      },
+      {
+        "year": "2012年",
+        "title": "NASA完整映射",
+        "body": "NASA核光谱望远镜阵列(NuSTAR)绘制出仙女座的高能X射线图像。"
+      },
+      {
+        "year": "未来约45亿年",
+        "title": "与银河系相撞",
+        "body": "仙女座与银河系预计在约45亿年后碰撞合并,形成银河-仙女星系。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "crab-nebula",
+    "title": "蟹状星云",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "012",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/space-object/crab-nebula/crab-nebula-card.png",
+    "image_thumb": "/cards/space-object/crab-nebula/crab-nebula-thumb.webp",
+    "image_full": "/cards/space-object/crab-nebula/crab-nebula-full.webp",
+    "score": 8.4,
+    "tags": [
+      "天文",
+      "星云",
+      "超新星",
+      "脉冲星"
+    ],
+    "tagline": "",
+    "subtitle": "天体 · 蟹状星云 · 百科占位",
+    "description": "蟹状星云 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1054 年",
+        "title": "古代观测记载",
+        "body": "中国宋代天文学家于1054年记录到一次异常亮星，后被证实为蟹状星云的起源。"
+      },
+      {
+        "year": "1731 年",
+        "title": "首次发现超新星",
+        "body": "1731年，英国天文学家约翰·贝维斯首次将蟹状星云记录为新星，并指出其独特的位置。"
+      },
+      {
+        "year": "1921 年",
+        "title": "确认为星云结构",
+        "body": "1921年，哈勃通过光谱分析确认蟹状星云为超新星残骸，并测定其膨胀速度，推动现代天体物理学研究。"
+      },
+      {
+        "year": "1990 年",
+        "title": "现代观测突破",
+        "body": "1990年代，哈勃太空望远镜对蟹状星云进行高分辨率成像，揭示其细丝结构和脉冲星风云的相互作用。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "蟹状星云",
+        "url": "https://zh.wikipedia.org/wiki/蟹状星云",
+        "type": "百科"
+      },
+      {
+        "title": "蟹状星云",
+        "url": "https://www.britannica.com/place/Crab-Nebula",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.bao.ac.cn/",
+        "type": "机构"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "black-hole",
+    "title": "黑洞",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "013",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/space-object/black-hole/black-hole-card.png",
+    "image_thumb": "/cards/space-object/black-hole/black-hole-thumb.webp",
+    "image_full": "/cards/space-object/black-hole/black-hole-full.webp",
+    "score": 8.7,
+    "tags": [
+      "天文",
+      "天体",
+      "广义相对论",
+      "极端"
+    ],
+    "tagline": "",
+    "subtitle": "天体 · 黑洞 · 百科占位",
+    "description": "黑洞 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1915",
+        "title": "相对论预言黑洞",
+        "body": "爱因斯坦在广义相对论场方程中暗示了时空极度弯曲可形成不可逃逸区域，为黑洞概念奠定数学基础。"
+      },
+      {
+        "year": "1965",
+        "title": "克尔解描述旋转黑洞",
+        "body": "新西兰数学家罗伊·克尔求得的旋转黑洞精确解，描述了有角动量的黑洞时空结构。"
+      },
+      {
+        "year": "1974",
+        "title": "霍金提出黑洞辐射",
+        "body": "斯蒂芬·霍金提出黑洞可通过量子效应发射热辐射，颠覆了黑洞不辐射的传统认知。"
+      },
+      {
+        "year": "2015",
+        "title": "LIGO探测引力波",
+        "body": "美国激光干涉引力波天文台LIGO首次直接探测到双黑洞并合产生的引力波信号，验证了黑洞存在。"
+      },
+      {
+        "year": "2019",
+        "title": "首张黑洞直接图像",
+        "body": "事件视界望远镜合作组织发布室女座星系团中心黑洞M87*的首张直接影像，直观展示了黑洞轮廓。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 黑洞",
+        "url": "https://zh.wikipedia.org/wiki/黑洞",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.nao.cas.cn",
+        "type": "机构"
+      },
+      {
+        "title": "知网 - 黑洞相关学术论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "mars",
+    "title": "火星",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/space-object/mars/mars-card.png",
+    "image_thumb": "/cards/space-object/mars/mars-thumb.webp",
+    "image_full": "/cards/space-object/mars/mars-full.webp",
+    "score": 8.5,
+    "tags": [
+      "天文",
+      "行星",
+      "太阳系",
+      "探测"
+    ],
+    "tagline": "",
+    "subtitle": "天体 · 火星 · 百科占位",
+    "description": "火星 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书（第三版）网络版 - 火星",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 火星",
+        "url": "https://zh.wikipedia.org/wiki/火星",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院紫金山天文台",
+        "url": "https://www.pmo.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 火星相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "前1650年",
+        "title": "古埃及天文记录",
+        "body": "古埃及天文学家最早系统记录火星逆行运动,称其为「红色之星」。"
+      },
+      {
+        "year": "1610年",
+        "title": "伽利略望远镜观测",
+        "body": "伽利略用望远镜观测火星,记录相位变化,确认其天体属性。"
+      },
+      {
+        "year": "1877年",
+        "title": "斯基帕雷利发现「运河」",
+        "body": "意大利天文学家乔瓦尼·斯基帕雷利声称观测到火星表面「运河」,引发全球想象。"
+      },
+      {
+        "year": "1965年",
+        "title": "水手4号首次飞掠",
+        "body": "美国水手4号探测器首次成功飞掠火星,传回首张近距离照片。"
+      },
+      {
+        "year": "2021年",
+        "title": "祝融号与毅力号着陆",
+        "body": "中国祝融号与NASA毅力号火星车同年成功着陆,开启火星地表巡视新纪元。"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "europa",
+    "title": "木卫二",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "015",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/space-object/europa/europa-card.png",
+    "image_thumb": "/cards/space-object/europa/europa-thumb.webp",
+    "image_full": "/cards/space-object/europa/europa-full.webp",
+    "score": 8.3,
+    "tags": [
+      "天文",
+      "卫星",
+      "木星",
+      "冰下海洋"
+    ],
+    "tagline": "",
+    "subtitle": "天体 · 木卫二 · 百科占位",
+    "description": "木卫二 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1610 年",
+        "title": "伽利略首次观测",
+        "body": "1610年伽利略使用自制望远镜观测木星发现四颗卫星其中第二颗即后来的木卫二欧罗巴"
+      },
+      {
+        "year": "1979 年",
+        "title": "航海家号首次拍摄",
+        "body": "1979年航海家1号掠过木卫二首次传回高分辨率影像揭示其光滑表面与裂纹纹理"
+      },
+      {
+        "year": "2003 年",
+        "title": "伽利略号确认海洋",
+        "body": "1995-2003年伽利略号多次飞越木卫二磁场数据暗示冰壳下有咸水海洋"
+      },
+      {
+        "year": "2012 年",
+        "title": "哈勃观测到水羽",
+        "body": "2012年哈勃太空望远镜捕捉到木卫二表面喷射的水汽羽状物暗示其仍有活跃的水循环"
+      },
+      {
+        "year": "2022 年",
+        "title": "欧罗巴计划探潜",
+        "body": "2022年后NASA与ESA计划发射欧罗巴快船等探测器意图直接采样并寻找潜在宜居环境"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 木卫二",
+        "url": "https://zh.wikipedia.org/wiki/木卫二",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 木卫二",
+        "url": "https://baike.baidu.com/item/木卫二",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.nao.cas.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 木卫二相关学术论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "football",
+    "title": "足球",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "016",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/sport/football/football-card.png",
+    "image_thumb": "/cards/sport/football/football-thumb.webp",
+    "image_full": "/cards/sport/football/football-full.webp",
+    "score": 8.6,
+    "tags": [
+      "体育",
+      "球类",
+      "全球",
+      "团队"
+    ],
+    "tagline": "",
+    "subtitle": "体育运动 · 足球 · 百科占位",
+    "description": "足球 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1863",
+        "title": "英格兰足总成立",
+        "body": "1863年，英格兰足球协会在伦敦成立，制定了首套统一的足球规则，标志着现代足球的诞生。"
+      },
+      {
+        "year": "1900",
+        "title": "足球进入奥运",
+        "body": "1900年，足球首次作为表演项目出现在巴黎奥运会，虽非正式比赛，却打开了足球国际化的序幕。"
+      },
+      {
+        "year": "1930",
+        "title": "首届世界杯举行",
+        "body": "1930年，乌拉圭承办首届FIFA世界杯，13支球队参赛，最终乌拉圭队夺冠，开启了四年一届的全球足球盛宴。"
+      },
+      {
+        "year": "1992",
+        "title": "英超联赛创立",
+        "body": "1992年，英格兰顶级联赛改制为英格兰足球超级联赛（英超），吸引全球资本与明星，提升了比赛商业化与竞技水平。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 足球",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B6%B3%E7%90%83",
+        "type": "百科"
+      },
+      {
+        "title": "中国足球协会官方网站",
+        "url": "https://www.thecfa.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 足球研究学术文献",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=YAZH0A&txt=&searchword=%E8%B6%B3%E7%90%83",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "basketball",
+    "title": "篮球",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "017",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/sport/basketball/basketball-card.png",
+    "image_thumb": "/cards/sport/basketball/basketball-thumb.webp",
+    "image_full": "/cards/sport/basketball/basketball-full.webp",
+    "score": 8.4,
+    "tags": [
+      "体育",
+      "球类",
+      "美国",
+      "团队"
+    ],
+    "tagline": "",
+    "subtitle": "体育运动 · 篮球 · 百科占位",
+    "description": "篮球 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "维基百科中文版 - 篮球",
+        "url": "https://zh.wikipedia.org/wiki/篮球",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 篮球",
+        "url": "https://baike.baidu.com/item/篮球/31712",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 篮球运动研究",
+        "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=Y&kword=%E7%AF%AE%E7%90%83&kf=subject",
+        "type": "学术"
+      },
+      {
+        "title": "中国篮球协会官网",
+        "url": "https://www.cba.net.cn",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "1891",
+        "title": "篮球正式诞生",
+        "body": "詹姆斯·奈史密斯在马萨诸塞州春田市发明篮球，最初使用桃筐作为篮筐，目标是将球投进筐中。"
+      },
+      {
+        "year": "1936",
+        "title": "篮球首登奥运",
+        "body": "篮球首次列为奥运会正式比赛项目，在柏林举办的第十一届夏季奥运会中亮相。"
+      },
+      {
+        "year": "1992",
+        "title": "梦之队闪耀奥运",
+        "body": "美国职业篮球选手首次以“梦之队”身份参加巴塞罗那奥运会，展示了NBA的全球影响力。"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "go",
+    "title": "围棋",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/sport/go/go-card.png",
+    "image_thumb": "/cards/sport/go/go-thumb.webp",
+    "image_full": "/cards/sport/go/go-full.webp",
+    "score": 9.1,
+    "tags": [
+      "体育",
+      "棋类",
+      "亚洲",
+      "智力"
+    ],
+    "tagline": "",
+    "subtitle": "体育运动 · 围棋 · 百科占位",
+    "description": "围棋 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书（围棋条目）",
+        "url": "https://www.ecph.com.cn",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版（围棋）",
+        "url": "https://zh.wikipedia.org/wiki/围棋",
+        "type": "百科"
+      },
+      {
+        "title": "中国围棋协会",
+        "url": "https://www.cgoc.com.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国体育报（围棋专题）",
+        "url": "https://www.sports.gov.cn",
+        "type": "新闻"
+      }
+    ],
+    "history": [
+      {
+        "year": "先秦时期",
+        "title": "围棋起源之谜",
+        "body": "据《左传》记载，围棋的雏形‘弈’在先秦时期已有雏形，为后世围棋奠定基础。"
+      },
+      {
+        "year": "西汉",
+        "title": "围棋制度化历程",
+        "body": "汉代刘向《说文解字》首次对围棋进行系统解释，官府设立‘棋博士’，围棋遂成官学。"
+      },
+      {
+        "year": "唐代",
+        "title": "围棋东渡扶桑",
+        "body": "唐代围棋传入日本，成为‘囲碁’，并形成独特的打挂、置石等技法，后逐渐风靡东亚。"
+      },
+      {
+        "year": "20世纪",
+        "title": "围棋迈向世界化",
+        "body": "1900年代，围棋随西方传教士和商人传入欧美，1929年日本棋院组织首次国际对局，围棋正式迈向世界舞台。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "marathon",
+    "title": "马拉松",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/sport/marathon/marathon-card.png",
+    "image_thumb": "/cards/sport/marathon/marathon-thumb.webp",
+    "image_full": "/cards/sport/marathon/marathon-full.webp",
+    "score": 8.5,
+    "tags": [
+      "体育",
+      "田径",
+      "全球",
+      "耐力"
+    ],
+    "tagline": "",
+    "subtitle": "体育运动 · 马拉松 · 百科占位",
+    "description": "马拉松 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "前 490 年",
+        "title": "菲迪皮德斯传信",
+        "body": "公元前490年，雅典士兵菲迪皮德斯从马拉松战场奔向雅典报告胜利，传说约40公里。"
+      },
+      {
+        "year": "1896 年",
+        "title": "首届现代马拉松",
+        "body": "1896年雅典奥运会首次设立马拉松项目，赛程约40公里，标志着现代马拉松的诞生。"
+      },
+      {
+        "year": "1908 年",
+        "title": "赛程距离标准化",
+        "body": "1908年伦敦奥运会将马拉松赛程定为26英里385码，即42.195公里，后成为国际标准。"
+      },
+      {
+        "year": "1984 年",
+        "title": "女子马拉松入奥",
+        "body": "1984年洛杉矶奥运会首次列入女子马拉松项目，推动女性参与长跑运动。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-马拉松",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-马拉松",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%8B%89%E6%9D%BE",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网-马拉松相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "中国田径协会",
+        "url": "https://www.athletics.org.cn/",
+        "type": "机构"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "table-tennis",
+    "title": "乒乓球",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/sport/table-tennis/table-tennis-card.png",
+    "image_thumb": "/cards/sport/table-tennis/table-tennis-thumb.webp",
+    "image_full": "/cards/sport/table-tennis/table-tennis-full.webp",
+    "score": 9,
+    "tags": [
+      "体育",
+      "球类",
+      "亚洲",
+      "技巧"
+    ],
+    "tagline": "",
+    "subtitle": "体育运动 · 乒乓球 · 百科占位",
+    "description": "乒乓球 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1926",
+        "title": "国际乒联成立",
+        "body": "1926年，国际乒乓球联合会在柏林成立，标志着乒乓球正式成为国际竞技项目。"
+      },
+      {
+        "year": "1952",
+        "title": "女子世锦赛首办",
+        "body": "1952年，首届世界乒乓球女子锦标赛在孟买举行，推动女子乒乓球运动快速发展。"
+      },
+      {
+        "year": "1988",
+        "title": "乒乓球首次入奥",
+        "body": "1988年，乒乓球首次列入汉城奥运会正式比赛项目，提升了运动的全球影响力。"
+      },
+      {
+        "year": "2005",
+        "title": "40mm新球改革",
+        "body": "2005年，国际乒联将比赛用球直径从38mm改为40mm，以降低旋转并提升比赛的观赏性。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（第三版）",
+        "url": "https://www.zgbk.com",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org",
+        "type": "百科"
+      },
+      {
+        "title": "中国乒乓球协会官方网站",
+        "url": "https://www.ctta.cn",
+        "type": "机构"
+      },
+      {
+        "title": "新华网体育频道",
+        "url": "https://www.xinhuanet.com/sports/",
+        "type": "新闻"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "france",
+    "title": "法国",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "016",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/country/france/france-card.png",
+    "image_thumb": "/cards/country/france/france-thumb.webp",
+    "image_full": "/cards/country/france/france-full.webp",
+    "score": 9.2,
+    "tags": [
+      "国家",
+      "欧洲",
+      "西方",
+      "文化"
+    ],
+    "tagline": "",
+    "subtitle": "国家 · 法国 · 百科占位",
+    "description": "法国 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。（参见：希腊神话）",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书·法国",
+        "url": "https://www.baike.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·法国",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%95%E5%9B%BD",
+        "type": "百科"
+      },
+      {
+        "title": "中国社会科学院欧洲研究所",
+        "url": "https://euro.cssn.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "新华社·法国",
+        "url": "https://www.xinhuanet.com/world/france/",
+        "type": "新闻"
+      }
+    ],
+    "history": [
+      {
+        "year": "1789 年",
+        "title": "法兰西共和建立",
+        "body": "1789年法国大革命后，1792年宣告成立法兰西第一共和国，标志封建王权的结束。"
+      },
+      {
+        "year": "18 世纪",
+        "title": "启蒙思想萌芽",
+        "body": "18世纪法国启蒙思想家如伏尔泰、卢梭等倡导理性与自由，影响后世政治与社会改革。"
+      },
+      {
+        "year": "1789 年",
+        "title": "法国大革命爆发",
+        "body": "1789年巴士底监狱被攻占，标志法国大革命全面展开，掀起推翻君主制的浪潮。"
+      },
+      {
+        "year": "1804 年",
+        "title": "拿破仑帝国建立",
+        "body": "1804年拿破仑自立为皇帝，建立法兰西第一帝国，推动民法典与军事改革，短暂统一欧洲大陆。"
+      },
+      {
+        "year": "1957 年",
+        "title": "法国加入欧盟",
+        "body": "1957年法国签署《罗马条约》，成为欧洲经济共同体创始成员国，后随欧盟演变而参与更深入的一体化进程。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "egypt",
+    "title": "埃及",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "017",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/country/egypt/egypt-card.png",
+    "image_thumb": "/cards/country/egypt/egypt-thumb.webp",
+    "image_full": "/cards/country/egypt/egypt-full.webp",
+    "score": 8.6,
+    "tags": [
+      "国家",
+      "非洲",
+      "古代",
+      "文明"
+    ],
+    "tagline": "",
+    "subtitle": "国家 · 埃及 · 百科占位",
+    "description": "埃及 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。（参见：埃及神话）",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "百度百科 - 埃及",
+        "url": "https://baike.baidu.com/item/%E5%9F%83%E5%8F%8A",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 埃及",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9F%83%E5%8F%8A",
+        "type": "百科"
+      },
+      {
+        "title": "中国社会科学院西亚非洲研究所",
+        "url": "https://iwaas.cass.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国国家博物馆",
+        "url": "https://www.chnmuseum.cn",
+        "type": "博物馆"
+      }
+    ],
+    "history": [
+      {
+        "year": "公元前3100年",
+        "title": "统一上下埃及",
+        "body": "约公元前3100年，美尼斯统一上下埃及，建立第一王朝，开创古埃及文明。"
+      },
+      {
+        "year": "公元前332年",
+        "title": "亚历山大征服埃及",
+        "body": "公元前332年，亚历山大率军征服埃及，兴建亚历山大城，引入希腊文化。"
+      },
+      {
+        "year": "公元前30年",
+        "title": "罗马吞并埃及",
+        "body": "公元前30年，罗马军队击败托勒密王朝，埃及成为罗马帝国的一个省份，结束古埃及独立。"
+      },
+      {
+        "year": "公元640年",
+        "title": "伊斯兰征服埃及",
+        "body": "公元640年，阿拉伯将领阿穆尔率军占领埃及，推广伊斯兰教，建立阿拉伯统治。"
+      },
+      {
+        "year": "1952年",
+        "title": "七月革命建国",
+        "body": "1952年，纳赛尔等人发动七月革命，推翻法鲁克国王，建立埃及共和国，开启现代政治新篇。"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "brazil",
+    "title": "巴西",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/country/brazil/brazil-card.png",
+    "image_thumb": "/cards/country/brazil/brazil-thumb.webp",
+    "image_full": "/cards/country/brazil/brazil-full.webp",
+    "score": 8.5,
+    "tags": [
+      "国家",
+      "南美",
+      "热带",
+      "多元"
+    ],
+    "tagline": "",
+    "subtitle": "国家 · 巴西 · 百科占位",
+    "description": "巴西 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1500",
+        "title": "葡萄牙殖民开启",
+        "body": "1500年，葡萄牙航海家佩德罗·阿尔瓦雷斯·卡布拉尔抵达巴西海岸，开启殖民时代。"
+      },
+      {
+        "year": "1822",
+        "title": "独立建国宣布",
+        "body": "1822年9月7日，佩德罗亲王在里约热内卢宣布巴西脱离葡萄牙独立，建立巴西帝国。"
+      },
+      {
+        "year": "1889",
+        "title": "巴西共和国成立",
+        "body": "1889年11月15日，军队发动政变推翻帝制，宣布成立巴西联邦共和国，开启共和时代。"
+      },
+      {
+        "year": "1964",
+        "title": "军政府执政时期",
+        "body": "1964年军事政变后，巴西进入长达21年的军政府统治时期，直到1985年才恢复民主制度。"
+      },
+      {
+        "year": "1994",
+        "title": "雷亚尔计划实施",
+        "body": "1994年巴西推出雷亚尔计划，成功稳定通胀并实现经济复苏，美元化政策提升民众生活水平。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 巴西",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B7%B4%E8%A5%BF",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 巴西联邦共和国",
+        "url": "https://baike.baidu.com/item/%E5%B7%B4%E8%A5%BF",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 巴西",
+        "url": "https://www.zgbk.com/docsearch/search?s=巴西&channel=encyclopedia",
+        "type": "百科"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "iceland",
+    "title": "冰岛",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/country/iceland/iceland-card.png",
+    "image_thumb": "/cards/country/iceland/iceland-thumb.webp",
+    "image_full": "/cards/country/iceland/iceland-full.webp",
+    "score": 9,
+    "tags": [
+      "国家",
+      "欧洲",
+      "极地",
+      "自然"
+    ],
+    "tagline": "",
+    "subtitle": "国家 · 冰岛 · 百科占位",
+    "description": "冰岛 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "百度百科 - 冰岛",
+        "url": "https://baike.baidu.com/item/%E5%86%B0%E5%B2%9B",
+        "type": "百科"
+      },
+      {
+        "title": "中华人民共和国外交部 - 冰岛国家概况",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1329_679530/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版 - 冰岛",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%B0%E5%B2%9B",
+        "type": "百科"
+      },
+      {
+        "title": "新华网 - 冰岛专题",
+        "url": "https://www.xinhuanet.com/world/iceland/",
+        "type": "新闻"
+      }
+    ],
+    "history": [
+      {
+        "year": "874",
+        "title": "首批北欧定居者",
+        "body": "公元874年，诺尔斯航海家因戈尔夫·阿尔纳松率部在雷克雅未克地区建立永久居点，开启冰岛历史。"
+      },
+      {
+        "year": "1262",
+        "title": "古约归于挪威",
+        "body": "1262年，冰岛与挪威签订《古约》，正式成为挪威王国领土，开启了外部统治时期。"
+      },
+      {
+        "year": "1944",
+        "title": "冰岛共和国成立",
+        "body": "1944年6月17日，冰岛正式宣布脱离丹麦统治，成立冰岛共和国，开启国家独立新时代。"
+      },
+      {
+        "year": "1970",
+        "title": "加入欧洲自由贸易联盟",
+        "body": "1970年，冰岛加入欧洲自由贸易联盟（EFTA），加强与西欧国家的经济合作，推动贸易自由化。"
+      },
+      {
+        "year": "2010",
+        "title": "艾亚菲亚德拉冰火山喷发",
+        "body": "2010年4月，艾亚菲亚德拉冰火山喷发，产生大量火山灰，导致欧洲航空大面积停飞，成为全球关注的自然灾害事件。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "kenya",
+    "title": "肯尼亚",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/country/kenya/kenya-card.png",
+    "image_thumb": "/cards/country/kenya/kenya-thumb.webp",
+    "image_full": "/cards/country/kenya/kenya-full.webp",
+    "score": 9.1,
+    "tags": [
+      "国家",
+      "非洲",
+      "草原",
+      "野生动物"
+    ],
+    "tagline": "",
+    "subtitle": "国家 · 肯尼亚 · 百科占位",
+    "description": "肯尼亚 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1963 年",
+        "title": "肯尼亚宣布独立",
+        "body": "1963年12月12日，肯尼亚正式宣布独立，脱离英国殖民统治，成为英联邦成员国。"
+      },
+      {
+        "year": "1895 年",
+        "title": "英国殖民统治",
+        "body": "1895年，英国在肯尼亚设立东非保护地，后逐步扩展为殖民地，并建立行政体系。"
+      },
+      {
+        "year": "1920 年",
+        "title": "蒙巴萨港开放",
+        "body": "1920年代，蒙巴萨港成为东非最重要的贸易港口，推动了肯尼亚的经济起飞。"
+      },
+      {
+        "year": "1963 年",
+        "title": "内罗毕首都设立",
+        "body": "1963年12月12日，肯尼亚宣布独立，随后设立内罗毕为首任首都。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/肯尼亚",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/肯尼亚/133624",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "carbon",
+    "title": "碳",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/chemical-element/carbon/carbon-card.png",
+    "image_thumb": "/cards/chemical-element/carbon/carbon-thumb.webp",
+    "image_full": "/cards/chemical-element/carbon/carbon-full.webp",
+    "score": 9,
+    "tags": [
+      "化学",
+      "非金属",
+      "基础",
+      "有机"
+    ],
+    "tagline": "",
+    "subtitle": "化学元素 · 碳 · 百科占位",
+    "description": "碳 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书 - 碳",
+        "url": "https://www.zgbk.com/docchannels/1798",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 碳",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A2%B3",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院化学研究所 - 化学元素介绍",
+        "url": "https://www.iccas.cas.cn/kxcb/xxjys",
+        "type": "学术"
+      },
+      {
+        "title": "中国化学会 - 元素周期表",
+        "url": "https://www.chemsoc.org.cn/element/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "1789 年",
+        "title": "拉瓦锡确认元素",
+        "body": "1789年，安托万·拉瓦锡通过实验证明碳是一种不可分解的单质，并将其列入元素表。"
+      },
+      {
+        "year": "1912 年",
+        "title": "金刚石结构阐明",
+        "body": "1912年，使用X射线晶体学方法，首次阐明金刚石的正四面体原子排列，奠定现代晶体学基础。"
+      },
+      {
+        "year": "1960 年",
+        "title": "放射性碳定年",
+        "body": "1960年代，放射性碳-14测年技术成熟，使考古学家能够精确推断古代有机样本的年代。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "gold",
+    "title": "金",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/chemical-element/gold/gold-card.png",
+    "image_thumb": "/cards/chemical-element/gold/gold-thumb.webp",
+    "image_full": "/cards/chemical-element/gold/gold-full.webp",
+    "score": 9.2,
+    "tags": [
+      "化学",
+      "金属",
+      "贵金属",
+      "文化"
+    ],
+    "tagline": "",
+    "subtitle": "化学元素 · 金 · 百科占位",
+    "description": "金 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "5000 BC",
+        "title": "黄金的早期使用",
+        "body": "约公元前5000年，人类在新石器时代遗址中首次发现天然黄金，用于装饰和仪式。"
+      },
+      {
+        "year": "3000 BC",
+        "title": "古埃及金饰文化",
+        "body": "古埃及王朝在公元前3000年左右广泛使用黄金制作法老王冠和珠宝，象征永恒与权力。"
+      },
+      {
+        "year": "600 BC",
+        "title": "吕底亚首铸金币",
+        "body": "公元前600年左右，吕底亚王国首次铸造标准化金币，开创金属货币流通的先河。"
+      },
+      {
+        "year": "1792",
+        "title": "美国采用金本位",
+        "body": "1792年美国国会通过《铸币法案》，正式采用金本位制，以黄金支撑美元价值。"
+      },
+      {
+        "year": "1971",
+        "title": "尼克松结束金本位",
+        "body": "1971年尼克松总统宣布关闭黄金窗口，结束布雷顿森林体系的金本位制度，全球进入浮动汇率时代。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（化学卷）",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国科学院化学研究所",
+        "url": "https://www.ic.cas.cn/",
+        "type": "机构"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "oxygen",
+    "title": "氧",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/chemical-element/oxygen/oxygen-card.png",
+    "image_thumb": "/cards/chemical-element/oxygen/oxygen-thumb.webp",
+    "image_full": "/cards/chemical-element/oxygen/oxygen-full.webp",
+    "score": 8.4,
+    "tags": [
+      "化学",
+      "非金属",
+      "生命",
+      "大气"
+    ],
+    "tagline": "",
+    "subtitle": "化学元素 · 氧 · 百科占位",
+    "description": "氧 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1774",
+        "title": "普里斯特莱发现氧气",
+        "body": "约瑟夫·普里斯特莱在实验中加热氧化汞，释放出一种能使蜡烛燃烧更旺的气体，他称之为脱燃素空气。"
+      },
+      {
+        "year": "1775",
+        "title": "拉瓦锡命名氧气",
+        "body": "安托万·拉瓦锡提出“氧气”概念，指出该气体是燃烧和呼吸的关键，推翻了燃素说。"
+      },
+      {
+        "year": "1783",
+        "title": "拉瓦锡《化学基础》出版",
+        "body": "拉瓦锡发表《化学基础》，系统阐述氧气在燃烧、呼吸及酸形成中的作用，奠定现代化学基础。"
+      },
+      {
+        "year": "1800",
+        "title": "氧气在医学与工业应用",
+        "body": "19世纪初，氧气开始用于呼吸治疗和钢铁冶炼，标志着氧气在医学与工业领域的广泛使用。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书——氧",
+        "url": "https://www.baike.com/wiki/氧",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版——氧",
+        "url": "https://zh.wikipedia.org/wiki/氧",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院化学研究所",
+        "url": "https://www.iccas.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国数字科技馆——化学元素",
+        "url": "https://www.cdstm.cn",
+        "type": "博物馆"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "iron",
+    "title": "铁",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/chemical-element/iron/iron-card.png",
+    "image_thumb": "/cards/chemical-element/iron/iron-thumb.webp",
+    "image_full": "/cards/chemical-element/iron/iron-full.webp",
+    "score": 8.9,
+    "tags": [
+      "化学",
+      "金属",
+      "工业",
+      "基础"
+    ],
+    "tagline": "",
+    "subtitle": "化学元素 · 铁 · 百科占位",
+    "description": "铁 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "约公元前3000年",
+        "title": "最早使用铁器",
+        "body": "约公元前3000年，西亚地区的人类首次利用天然铁块制作工具，开启了铁器使用的序幕。"
+      },
+      {
+        "year": "约公元前1500年",
+        "title": "青铜时代衰落",
+        "body": "约公元前1500年，随着高温炼铁技术的成熟，铁器逐步取代青铜，成为战争与农业的主要装备。"
+      },
+      {
+        "year": "约公元前8世纪",
+        "title": "铁器时代来临",
+        "body": "约公元前8世纪，铁器广泛传播，推动了古希腊、罗马等文明的城市建设与军事扩张。"
+      },
+      {
+        "year": "公元1世纪",
+        "title": "古代炼铁技术",
+        "body": "公元1世纪，中国发明了高炉炼铁法，使铁产量大幅提升，为秦汉帝国的统一奠定物质基础。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-铁（化学元素）",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-铁",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院-化学研究所",
+        "url": "https://www.iccas.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国化学会",
+        "url": "https://www.chemsoc.org.cn/",
+        "type": "机构"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "uranium",
+    "title": "铀",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/chemical-element/uranium/uranium-card.png",
+    "image_thumb": "/cards/chemical-element/uranium/uranium-thumb.webp",
+    "image_full": "/cards/chemical-element/uranium/uranium-full.webp",
+    "score": 9.1,
+    "tags": [
+      "化学",
+      "金属",
+      "放射性",
+      "能源"
+    ],
+    "tagline": "",
+    "subtitle": "化学元素 · 铀 · 百科占位",
+    "description": "铀 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com.cn",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/铀",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院",
+        "url": "https://www.cas.cn",
+        "type": "机构"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/铀",
+        "type": "百科"
+      }
+    ],
+    "history": [
+      {
+        "year": "1789",
+        "title": "铀的首次发现",
+        "body": "1789年，德国化学家马丁·克拉普罗特在沥青铀矿中首次分离出铀的氧化物。"
+      },
+      {
+        "year": "1841",
+        "title": "铀的正式命名",
+        "body": "1841年，马丁·克拉普罗特将新元素正式命名为“uranium”，取自天王星之名，以纪念当时的天文发现。"
+      },
+      {
+        "year": "1934",
+        "title": "核裂变首次发现",
+        "body": "1934年，意大利物理学家恩里科·费米等人在中子轰击铀时观察到异常反应，首次提示核裂变的可能性。"
+      },
+      {
+        "year": "1945",
+        "title": "首枚铀原子弹",
+        "body": "1945年7月16日，美国在新墨西哥州的“三一”试验场成功引爆首枚以铀-235为材料的原子弹，标志着核武器时代的开始。"
+      },
+      {
+        "year": "1954",
+        "title": "首座核电站投运",
+        "body": "1954年，苏联建成的奥布宁斯克核电站首次并网发电，标志着铀能源正式进入民用电力时代。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "physician",
+    "title": "医生",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/profession/physician/physician-card.png",
+    "image_thumb": "/cards/profession/physician/physician-thumb.webp",
+    "image_full": "/cards/profession/physician/physician-full.webp",
+    "score": 8.4,
+    "tags": [
+      "职业",
+      "医疗",
+      "全球",
+      "服务"
+    ],
+    "tagline": "",
+    "subtitle": "职业 · 医生 · 百科占位",
+    "description": "医生 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "9 世纪",
+        "title": "首所医学院创立",
+        "body": "公元9世纪，意大利萨勒诺建立欧洲首所正规医学院，培养专业医师，推动医学教育体系化。"
+      },
+      {
+        "year": "1816 年",
+        "title": "听诊器的发明",
+        "body": "1816年，法国医生雷奈克发明听诊器，实现体表听取心肺声音，革新诊断技术并提升疾病检测准确性。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "细菌理论确立",
+        "body": "19世纪中叶，路易·巴斯德与罗伯特·科赫分别通过实验证明病原菌致病，建立细菌致病理论，奠定现代医学基础。"
+      },
+      {
+        "year": "1928 年",
+        "title": "青霉素的发现",
+        "body": "1928年，亚历山大·弗莱明在实验室发现青霉抑制细菌生长，随后霍华德·弗洛里研发提纯技术，使青霉素成为首个临床抗生素，拯救无数感染患者。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·医生",
+        "url": "https://www.zgbk.com.cn",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·医生",
+        "url": "https://zh.wikipedia.org",
+        "type": "百科"
+      },
+      {
+        "title": "中国医师协会",
+        "url": "https://www.cmda.net",
+        "type": "机构"
+      },
+      {
+        "title": "百度百科·医生",
+        "url": "https://baike.baidu.com",
+        "type": "百科"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "architect",
+    "title": "建筑师",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/profession/architect/architect-card.png",
+    "image_thumb": "/cards/profession/architect/architect-thumb.webp",
+    "image_full": "/cards/profession/architect/architect-full.webp",
+    "score": 8.5,
+    "tags": [
+      "职业",
+      "建筑",
+      "全球",
+      "设计"
+    ],
+    "tagline": "",
+    "subtitle": "职业 · 建筑师 · 百科占位",
+    "description": "建筑师 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "前 2600 年",
+        "title": "古埃及石造建筑",
+        "body": "公元前2600年左右，埃及金字塔的建造标志着石结构技术的成熟，影响后世建筑理念。"
+      },
+      {
+        "year": "5 世纪",
+        "title": "古希腊柱式发展",
+        "body": "公元前5世纪，希腊建筑师完善多立克、爱奥尼亚、科林斯柱式，奠定古典建筑美学。"
+      },
+      {
+        "year": "2 世纪",
+        "title": "罗马混凝土创新",
+        "body": "公元前2世纪，罗马人研发混凝土，实现大跨度穹顶和水道等宏大工程，开创建筑新纪元。"
+      },
+      {
+        "year": "15 世纪",
+        "title": "文艺复兴建筑理论",
+        "body": "15世纪意大利建筑师如阿尔贝蒂提出比例、对称原则，推动建筑从手工技艺向学术转变。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "chef",
+    "title": "厨师",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/profession/chef/chef-card.png",
+    "image_thumb": "/cards/profession/chef/chef-thumb.webp",
+    "image_full": "/cards/profession/chef/chef-full.webp",
+    "score": 7.8,
+    "tags": [
+      "职业",
+      "餐饮",
+      "全球",
+      "文化"
+    ],
+    "tagline": "",
+    "subtitle": "职业 · 厨师 · 百科占位",
+    "description": "厨师 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.baike.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "中国烹饪协会",
+        "url": "https://www.chinafoods.org.cn/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "前 5000 年",
+        "title": "厨师的起源",
+        "body": "约在公元前5000年，人类开始用火烹饪食物，最早的厨师雏形出现于洞穴壁画中。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "现代厨艺学校",
+        "body": "19世纪末法国开设首所厨艺学校，培养系统性烹饪人才，奠定现代厨师教育基础。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "当代星级厨师",
+        "body": "20世纪后半叶，米其林星级评定制度兴起，顶级厨师成为公众明星，推动全球美食文化。"
+      }
+    ],
+    "visualScore": 6
+  },
+  {
+    "slug": "astronaut",
+    "title": "宇航员",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/profession/astronaut/astronaut-card.png",
+    "image_thumb": "/cards/profession/astronaut/astronaut-thumb.webp",
+    "image_full": "/cards/profession/astronaut/astronaut-full.webp",
+    "score": 9.2,
+    "tags": [
+      "职业",
+      "航天",
+      "全球",
+      "科学"
+    ],
+    "tagline": "",
+    "subtitle": "职业 · 宇航员 · 百科占位",
+    "description": "宇航员 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书（专业版）- 航天员",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 宇航员",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%87%E8%88%AA%E5%91%98",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 航天与深空探测",
+        "url": "https://www.cas.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国航天科技集团",
+        "url": "https://www.spacechina.com/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "1961 年",
+        "title": "首次进入太空",
+        "body": "1961年4月12日，苏联宇航员尤里·加加林完成人类首次太空飞行，标志宇航员职业诞生。"
+      },
+      {
+        "year": "1969 年",
+        "title": "美国首次登月",
+        "body": "1969年7月20日，尼尔·阿姆斯特朗作为美国宇航员登上月球，实现人类首次月面行走。"
+      },
+      {
+        "year": "1983 年",
+        "title": "女性宇航员首飞",
+        "body": "1983年6月18日，美国宇航员萨莉·莱德成为首位进入太空的美国女性宇航员。"
+      },
+      {
+        "year": "2003 年",
+        "title": "中国首位航天员",
+        "body": "2003年10月15日，中国宇航员杨利伟乘坐神舟五号完成首次载人航天飞行。"
+      },
+      {
+        "year": "2000 年",
+        "title": "太空站长期驻留",
+        "body": "2000年11月2日，国际空间站首批宇航员入住，开始持续有人驻留的太空实验工作。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "farmer",
+    "title": "农民",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/profession/farmer/farmer-card.png",
+    "image_thumb": "/cards/profession/farmer/farmer-thumb.webp",
+    "image_full": "/cards/profession/farmer/farmer-full.webp",
+    "score": 8.3,
+    "tags": [
+      "职业",
+      "农业",
+      "全球",
+      "基础"
+    ],
+    "tagline": "",
+    "subtitle": "职业 · 农民 · 百科占位",
+    "description": "农民 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "中国大百科全书·农民",
+        "url": "https://www.baike.com/wiki/%E5%86%9C%E6%B0%91/1234567",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·农民",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%9C%E6%B0%91",
+        "type": "百科"
+      },
+      {
+        "title": "中华人民共和国农业农村部",
+        "url": "https://www.moa.gov.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网·农村农民研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "约公元前10000年",
+        "title": "新石器时代农业起源",
+        "body": "人类开始驯化野生谷物和牲畜，从狩猎采集转向定居农耕，这是人类文明最伟大的变革之一。"
+      },
+      {
+        "year": "约公元前5000年",
+        "title": "华夏农耕文明形成",
+        "body": "黄河和长江流域出现原始农业村落，种植粟、稻等作物，农耕成为华夏文明的经济基础。"
+      },
+      {
+        "year": "1950年",
+        "title": "新中国土地改革",
+        "body": "废除封建土地所有制，将地主的土地分配给无地和少地的农民，实现了耕者有其田的目标。"
+      },
+      {
+        "year": "1978年",
+        "title": "家庭联产承包责任制",
+        "body": "小岗村农民首创包产到户模式，打破人民公社的集中劳动模式，极大解放了农村生产力。"
+      },
+      {
+        "year": "21世纪",
+        "title": "现代农业转型",
+        "body": "推进农业机械化和信息化，发展智慧农业和乡村振兴战略，农民职业化水平不断提高。"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "malaria",
+    "title": "疟疾",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/disease/malaria/malaria-card.png",
+    "image_thumb": "/cards/disease/malaria/malaria-thumb.webp",
+    "image_full": "/cards/disease/malaria/malaria-full.webp",
+    "score": 7.9,
+    "tags": [
+      "医学",
+      "传染病",
+      "全球",
+      "蚊媒"
+    ],
+    "tagline": "",
+    "subtitle": "疾病 · 疟疾 · 百科占位",
+    "description": "疟疾 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "19 世纪",
+        "title": "近代病因发现",
+        "body": "19世纪末，英国医生罗斯证实蚊子为疟原虫的传播媒介，打开了疟疾防治的科学突破口。"
+      },
+      {
+        "year": "50 年",
+        "title": "全球根除计划",
+        "body": "20世纪50年代，世界卫生组织发起全球疟疾根除计划，推广DDT喷洒和药物干预，显著降低发病率和死亡率。"
+      },
+      {
+        "year": "1972 年",
+        "title": "新药青蒿素研发",
+        "body": "1972年，中国科学家屠呦呦团队从青蒿中提取青蒿素，成功治疗疟疾患者，成为全球抗疟里程碑。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（第二版）- 疟疾",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "世界卫生组织 - 疟疾",
+        "url": "https://www.who.int/zh/",
+        "type": "机构"
+      },
+      {
+        "title": "中国疾病预防控制中心 - 疟疾防治",
+        "url": "https://www.chinacdc.cn/",
+        "type": "机构"
+      }
+    ],
+    "visualScore": 6
+  },
+  {
+    "slug": "tuberculosis",
+    "title": "肺结核",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/disease/tuberculosis/tuberculosis-card.png",
+    "image_thumb": "/cards/disease/tuberculosis/tuberculosis-thumb.webp",
+    "image_full": "/cards/disease/tuberculosis/tuberculosis-full.webp",
+    "score": 8.4,
+    "tags": [
+      "医学",
+      "传染病",
+      "全球",
+      "细菌"
+    ],
+    "tagline": "",
+    "subtitle": "疾病 · 肺结核 · 百科占位",
+    "description": "肺结核 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1882",
+        "title": "科赫发现结核菌",
+        "body": "1882年罗伯特·科赫首次分离出结核分枝杆菌，开启结核病的细菌学时代，奠定现代防治基础。"
+      },
+      {
+        "year": "1943",
+        "title": "链霉素首治结核",
+        "body": "1943年塞尔斯曼·瓦克斯曼从土壤中分离出链霉素，成为首个有效治疗肺结核的抗生素，显著降低死亡率。"
+      },
+      {
+        "year": "1993",
+        "title": "世卫宣布结核危机",
+        "body": "1993年世界卫生组织宣布结核病为全球公共卫生紧急事件，呼吁各国加强防治投入和监控。"
+      },
+      {
+        "year": "1995",
+        "title": "DOTS策略推广",
+        "body": "1995年WHO推出直接观察治疗短期（DOTS）方案，通过监督服药提升治疗成功率，成为全球结核控制核心。"
+      },
+      {
+        "year": "2020",
+        "title": "新冠冲击结核防治",
+        "body": "2020年新冠疫情导致结核诊疗资源被挤占，病例发现率下降，全球结核死亡人数出现回升，防控形势严峻。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·结核病",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·肺结核",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "中国疾病预防控制中心",
+        "url": "https://www.chinacdc.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网·肺结核相关研究",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "smallpox",
+    "title": "天花",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/disease/smallpox/smallpox-card.png",
+    "image_thumb": "/cards/disease/smallpox/smallpox-thumb.webp",
+    "image_full": "/cards/disease/smallpox/smallpox-full.webp",
+    "score": 8.5,
+    "tags": [
+      "医学",
+      "传染病",
+      "历史",
+      "已消灭"
+    ],
+    "tagline": "",
+    "subtitle": "疾病 · 天花 · 百科占位",
+    "description": "天花 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "前 1157 年",
+        "title": "古埃及时期天花记载",
+        "body": "公元前1157年，埃及法老拉美西斯五世的木乃伊出现天花样皮疹，为已知最早的文字记载天花病例。"
+      },
+      {
+        "year": "前 110 年",
+        "title": "中国最早天花记录",
+        "body": "《后汉书》记载，西汉元鼎六年（公元前110年）出现天花疫情，描述其高热与皮疹症状。"
+      },
+      {
+        "year": "1796 年",
+        "title": "詹纳天花疫苗发明",
+        "body": "1796年，英国医生爱德华·詹纳首次使用牛痘接种，成功预防天花，标志着疫苗学的诞生。"
+      },
+      {
+        "year": "1980 年",
+        "title": "世卫宣布天花根除",
+        "body": "1980年5月8日，世界卫生组织正式宣布天花在全世界范围内被彻底根除，成为人类首次消灭的传染病。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 天花",
+        "url": "https://zh.wikipedia.org/wiki/天花",
+        "type": "百科"
+      },
+      {
+        "title": "中国疾病预防控制中心 - 天花相关防控知识",
+        "url": "https://www.chinacdc.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中华医学百科全书 - 传染病学",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国大百科全书 - 医学卷",
+        "url": "https://www.ecph.cn",
+        "type": "百科"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "diabetes",
+    "title": "糖尿病",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/disease/diabetes/diabetes-card.png",
+    "image_thumb": "/cards/disease/diabetes/diabetes-thumb.webp",
+    "image_full": "/cards/disease/diabetes/diabetes-full.webp",
+    "score": 8.3,
+    "tags": [
+      "医学",
+      "慢性病",
+      "全球",
+      "代谢"
+    ],
+    "tagline": "",
+    "subtitle": "疾病 · 糖尿病 · 百科占位",
+    "description": "糖尿病 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1921 年",
+        "title": "胰岛素首次发现",
+        "body": "1921年，加拿大科学家班廷和麦克莱德成功提取胰岛素，开启糖尿病治疗新纪元。"
+      },
+      {
+        "year": "1950 年",
+        "title": "口服药物研发",
+        "body": "1950年代，首批磺酰脲类药物面世，为2型糖尿病患者提供非注射治疗选择。"
+      },
+      {
+        "year": "1999 年",
+        "title": "连续血糖监测",
+        "body": "1999年，首款连续血糖监测系统上市，实时监控血糖波动，提高患者管理效率。"
+      },
+      {
+        "year": "2010 年",
+        "title": "基因与精准医学",
+        "body": "2010年代，全基因组关联研究揭示多种糖尿病易感基因，推动个体化治疗方案发展。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 糖尿病",
+        "url": "https://baike.baidu.com/item/%E7%B3%96%E5%B0%BF%E7%97%85",
+        "type": "百科"
+      },
+      {
+        "title": "中华医学会糖尿病学分会",
+        "url": "https://www.diab.net.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 糖尿病专题",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index",
+        "type": "学术"
+      },
+      {
+        "title": "中国疾病预防控制中心 - 糖尿病防治",
+        "url": "https://www.chinacdc.cn",
+        "type": "机构"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "alzheimers-disease",
+    "title": "阿尔茨海默症",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/disease/alzheimers-disease/alzheimers-disease-card.png",
+    "image_thumb": "/cards/disease/alzheimers-disease/alzheimers-disease-thumb.webp",
+    "image_full": "/cards/disease/alzheimers-disease/alzheimers-disease-full.webp",
+    "score": 9,
+    "tags": [
+      "医学",
+      "神经退行",
+      "老年",
+      "研究"
+    ],
+    "tagline": "",
+    "subtitle": "疾病 · 阿尔茨海默症 · 百科占位",
+    "description": "阿尔茨海默症 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "history": [
+      {
+        "year": "1906",
+        "title": "首次临床描述",
+        "body": "1906年，德国神经病理学家阿洛伊斯·阿尔茨海默在一名51岁女性患者脑中首次观察到老年斑和神经纤维缠结，开创疾病认识。"
+      },
+      {
+        "year": "1911",
+        "title": "首次病例报告",
+        "body": "1911年，阿尔茨海默在《神经病理学杂志》正式发表首位患者详细病例报告，奠定疾病命名基础。"
+      },
+      {
+        "year": "1976",
+        "title": "胆碱能假说提出",
+        "body": "1976年，研究者提出胆碱能系统功能下降是阿尔茨海默症核心病理机制，开启药物治疗新思路。"
+      },
+      {
+        "year": "1993",
+        "title": "首个基因关联发现",
+        "body": "1993年，研究在家族性阿尔茨海默症患者中首次定位到APP基因突变，证实遗传因素在发病中的关键作用。"
+      },
+      {
+        "year": "2002",
+        "title": "淀粉样斑块靶向治疗",
+        "body": "2002年，首个针对β淀粉样蛋白的免疫疗法进入临床试验，标志着阿尔茨海默症治疗进入分子靶向时代。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 阿尔茨海默病",
+        "url": "https://baike.baidu.com/item/阿尔茨海默病",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 阿尔茨海默氏症",
+        "url": "https://zh.wikipedia.org/wiki/阿尔茨海默氏症",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院脑科学与智能技术卓越创新中心",
+        "url": "https://www.cebs.ac.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 阿尔茨海默病相关学术论文",
+        "url": "https://kns.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "ford-model-t",
+    "title": "福特 T 型车",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/ford-model-t/ford-model-t-card.png",
+    "image_thumb": "/cards/vehicle/ford-model-t/ford-model-t-thumb.webp",
+    "image_full": "/cards/vehicle/ford-model-t/ford-model-t-full.webp",
+    "score": 9.1,
+    "tags": [
+      "交通",
+      "汽车",
+      "美国",
+      "20世纪初"
+    ],
+    "tagline": "",
+    "subtitle": "交通工具 · 福特 T 型车 · 百科占位",
+    "description": "福特 T 型车 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/福特T型车",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/福特T型车",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书（智能百科）",
+        "url": "https://bkzs.bk.zhongyi.sh.cn/encyclopedia/福特T型车",
+        "type": "百科"
+      },
+      {
+        "title": "知网学术论文",
+        "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=Y8Q7664T&kw=福特T型车",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "1908",
+        "title": "T型车首次亮相",
+        "body": "1908年10月1日，福特T型车在美国密歇根州底特律正式发布，成为全球首款大规模量产的平价汽车。"
+      },
+      {
+        "year": "1913",
+        "title": "装配线技术革命",
+        "body": "1913年，福特在海兰帕克工厂引入装配线，将T型车单车生产时间从12小时缩短至约93分钟。"
+      },
+      {
+        "year": "1927",
+        "title": "停产与车型换代",
+        "body": "1927年5月，福特停产T型车，累计生产1500万辆，随后推出A型车以满足市场需求。"
+      },
+      {
+        "year": "1999",
+        "title": "经典车收藏价值",
+        "body": "1999年，T型车被《汽车族》杂志评为“20世纪最具影响力车型”，在全球收藏市场上价格稳步上升。"
+      },
+      {
+        "year": "2008",
+        "title": "百年纪念展览",
+        "body": "2008年，为纪念T型车诞生100周年，福特在全球多地举办展览，展示历史车型与技术演变。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "concorde",
+    "title": "协和飞机",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/concorde/concorde-card.png",
+    "image_thumb": "/cards/vehicle/concorde/concorde-thumb.webp",
+    "image_full": "/cards/vehicle/concorde/concorde-full.webp",
+    "score": 8.5,
+    "tags": [
+      "交通",
+      "飞机",
+      "英法",
+      "20世纪"
+    ],
+    "tagline": "",
+    "subtitle": "交通工具 · 协和飞机 · 百科占位",
+    "description": "协和飞机 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "百度百科 - 协和式客机",
+        "url": "https://baike.baidu.com/item/%E5%8D%8F%E5%92%8C%E5%BC%8F%E5%AE%A2%E6%9C%BA",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 协和飞机",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%8F%E5%92%8C%E9%A3%9E%E6%9C%BA",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 超音速客机技术研究文献",
+        "url": "https://www.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国航空博物馆",
+        "url": "https://www.chinesairmuseum.com",
+        "type": "博物馆"
+      }
+    ],
+    "history": [
+      {
+        "year": "1962",
+        "title": "英法合作研制",
+        "body": "英法两国在1962年签署合作协议，共同研制超音速客机，以实现跨大西洋高速飞行。"
+      },
+      {
+        "year": "1969",
+        "title": "原型机首次试飞",
+        "body": "1969年3月2日，协和原型机001在法国图卢兹完成首飞，飞行约27分钟，标志其进入实际测试阶段。"
+      },
+      {
+        "year": "1976",
+        "title": "正式投入商业运营",
+        "body": "1976年1月21日，英国航空和法国航空同步推出协和客机商业航线，提供伦敦-纽约约3.5小时跨大西洋航班。"
+      },
+      {
+        "year": "2000",
+        "title": "法航4590号失事",
+        "body": "2000年7月25日，法航4590号协和客机在巴黎起飞后坠毁于一家酒店，113人遇难，公众对超音速客机安全性产生质疑。"
+      },
+      {
+        "year": "2003",
+        "title": "正式退役告别蓝天",
+        "body": "2003年10月，协和客机完成最后一次商业飞行后正式退役，结束了近30年的超音速民航时代。"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "ford-mustang",
+    "title": "福特野马",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/ford-mustang/ford-mustang-card.png",
+    "image_thumb": "/cards/vehicle/ford-mustang/ford-mustang-thumb.webp",
+    "image_full": "/cards/vehicle/ford-mustang/ford-mustang-full.webp",
+    "score": 9.2,
+    "tags": [
+      "交通",
+      "汽车",
+      "美国",
+      "肌肉车"
+    ],
+    "tagline": "",
+    "subtitle": "交通工具 · 福特野马 · 百科占位",
+    "description": "福特野马 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "百度百科 - 福特野马",
+        "url": "https://baike.baidu.com/item/福特野马/8037",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 福特野马",
+        "url": "https://zh.wikipedia.org/wiki/福特野马",
+        "type": "百科"
+      },
+      {
+        "title": "汽车之家 - 福特Mustang车型专题",
+        "url": "https://www.autohome.com.cn/beijing/c-4382/",
+        "type": "其它"
+      },
+      {
+        "title": "易车 - 福特Mustang频道",
+        "url": "https://www.yiche.com/brand/mustang/",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1964",
+        "title": "1964年野马全球首发",
+        "body": "1964年4月17日，福特在纽约世博会发布第一代野马，正式开创Pony Car细分市场。"
+      },
+      {
+        "year": "1965",
+        "title": "1965年性能版本登场",
+        "body": "1965年野马Shelby GT350登场，搭载强劲V8发动机，奠定性能传奇基础。"
+      },
+      {
+        "year": "1967",
+        "title": "1967年第二代车型发布",
+        "body": "1967年第二代野马上市，采用更宽车身设计，提供多种动力配置选项。"
+      },
+      {
+        "year": "2005",
+        "title": "2005年第五代正式发布",
+        "body": "2005年第五代野马发布，复兴经典设计语言，搭载现代V8发动机重返巅峰。"
+      },
+      {
+        "year": "2015",
+        "title": "2015年全球同步发售",
+        "body": "2015年第六代野马采用最新设计，首次通过官方渠道进口至中国市场。"
+      }
+    ],
+    "visualScore": 8
+  },
+  {
+    "slug": "f-22-raptor",
+    "title": "F-22 猛禽",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/f-22-raptor/f-22-raptor-card.png",
+    "image_thumb": "/cards/vehicle/f-22-raptor/f-22-raptor-thumb.webp",
+    "image_full": "/cards/vehicle/f-22-raptor/f-22-raptor-full.webp",
+    "score": 8.4,
+    "tags": [
+      "交通",
+      "战斗机",
+      "美国",
+      "隐身"
+    ],
+    "tagline": "",
+    "subtitle": "交通工具 · F-22 猛禽 · 百科占位",
+    "description": "F-22 猛禽 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "维基百科中文版 - F-22猛禽战斗机",
+        "url": "https://zh.wikipedia.org/wiki/F-22%E7%8C%9B%E9%B8%9F%E6%88%98%E9%97%B4",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - F-22猛禽战斗机",
+        "url": "https://baike.baidu.com/item/F-22%E7%8C%9B%E9%B8%9F%E6%88%98%E6%96%97%E6%9C%BA",
+        "type": "百科"
+      },
+      {
+        "title": "网易军事 - F-22猛禽专题",
+        "url": "https://war.163.com/special/f22raptor/",
+        "type": "新闻"
+      },
+      {
+        "title": "中华网军事 - F-22猛禽战斗机介绍",
+        "url": "https://military.china.com/jstd/110769/",
+        "type": "新闻"
+      }
+    ],
+    "history": [
+      {
+        "year": "1981年",
+        "title": "ATF 计划启动",
+        "body": "美国空军启动先进技术战斗机(ATF)招标,要求隐身、超巡、高机动。"
+      },
+      {
+        "year": "1986年",
+        "title": "洛克希德 / 波音 / GD 竞标",
+        "body": "洛克希德/波音团队与通用动力 YF-23 团队进入演示阶段。"
+      },
+      {
+        "year": "1991年",
+        "title": "YF-22 胜出",
+        "body": "YF-22 战胜 YF-23,获 7,500 亿美元量产合同,正式编号 F-22 猛禽。"
+      },
+      {
+        "year": "1997年",
+        "title": "首飞",
+        "body": "首架生产型 F-22A 于 1997 年首飞,2005 年形成初始作战能力。"
+      },
+      {
+        "year": "2011年",
+        "title": "停产 / 出口禁令",
+        "body": "因成本与战略调整,生产线关闭,产量 195 架,国会对出口设严格禁令。"
+      }
+    ],
+    "visualScore": 7
+  },
+  {
+    "slug": "citroen-2cv",
+    "title": "雪铁龙 2CV",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/citroen-2cv/citroen-2cv-card.png",
+    "image_thumb": "/cards/vehicle/citroen-2cv/citroen-2cv-thumb.webp",
+    "image_full": "/cards/vehicle/citroen-2cv/citroen-2cv-full.webp",
+    "score": 9,
+    "tags": [
+      "交通",
+      "汽车",
+      "法国",
+      "国民车"
+    ],
+    "tagline": "",
+    "subtitle": "交通工具 · 雪铁龙 2CV · 百科占位",
+    "description": "雪铁龙 2CV 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-18",
+    "sources": [
+      {
+        "title": "维基百科中文版 - 雪铁龙2CV",
+        "url": "https://zh.wikipedia.org/wiki/雪铁龙2CV",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 雪铁龙2CV",
+        "url": "https://baike.baidu.com/item/雪铁龙2CV",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 雪铁龙2CV设计理念与经典传承研究",
+        "url": "https://kns.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "汽车之家 - 经典车型回顾：雪铁龙2CV历史与技术解析",
+        "url": "https://www.autohome.com.cn",
+        "type": "媒体"
+      }
+    ],
+    "history": [
+      {
+        "year": "1936 年",
+        "title": "项目构想启动",
+        "body": "1936年，雪铁龙委托Pierre‑Jules Boulanger提出‘平民车’概念，目标为低成本、易维修。"
+      },
+      {
+        "year": "1948 年",
+        "title": "1948年正式投产",
+        "body": "1948年，2CV在巴黎车展亮相，随后阿勒斯工厂投产，以简化的水平对置发动机和轻量化车身实现低成本大批量生产。"
+      },
+      {
+        "year": "1990 年",
+        "title": "1990年停产谢幕",
+        "body": "1990年，雪铁龙在法国宣布2CV正式停产，结束长达42年的生产周期，成为法国汽车史上的平民传奇。"
+      }
+    ],
+    "visualScore": 8
   }
 ]

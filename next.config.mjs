@@ -5,6 +5,30 @@ import path from "node:path";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // 2026-06-21: cards.json image paths were migrated from local /cards/
+  // to 微信小程序 CloudBase CDN (https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la).
+  // next/image needs remotePatterns to optimize external URLs — without it,
+  // server SSR (build time) and client hydration disagree on the <img>
+  // markup → "Expected server HTML to contain a matching <path> in <svg>"
+  // hydration errors on the home page (where 5 hero collage <Image> + 5
+  // series cover <Image> + 8 featured <Image> all use CDN URLs).
+  images: {
+    // 2026-06-21: cards.json image paths were migrated to 微信小程序 CloudBase
+    // CDN. unoptimized: true bypasses next/image's optimizer entirely:
+    //   1. CloudBase doesn't return Access-Control-Allow-Origin or
+    //      Cache-Control headers, so the optimizer throws "upstream response
+    //      is invalid" errors at runtime.
+    //   2. CDN already serves the right format + size per tier
+    //      (thumb.webp 384w / card.png 600w / full.webp 1024w).
+    //   3. We save the optimizer's fetch round-trip.
+    //
+    // Trade-off: no responsive resize or auto-format conversion. CDN already
+    // serves correct format, and we use fixed sizes via fill + sizes= attrs.
+    // remotePatterns omitted — unoptimized mode bypasses the loader, so they're
+    // not consulted (and removing them avoids a /_document PageNotFoundError
+    // seen during build when both are set together).
+    unoptimized: true,
+  },
   // Round 26 (2026-06-17): redirect old flat card paths to the new
   // per-card directory layout. Old `/cards/<slug>-{card,thumb,full}.{png,webp}`
   // → `/cards/<kind>/<slug>/<slug>-{card,thumb,full}.{png,webp}`.

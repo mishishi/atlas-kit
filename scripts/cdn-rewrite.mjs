@@ -3,14 +3,17 @@
 //
 // Rewrite cards.json image paths from local /cards/... to a CDN prefix.
 // Default mapping:
-//   /cards/<kind>/<slug>/<slug>-card.png  →  <prefix>/atlas-kit/<kind>/<slug>/<slug>-card.png
-//   /cards/<kind>/<slug>/<slug>-thumb.webp → <prefix>/atlas-kit/<kind>/<slug>/<slug>-thumb.webp
-//   /cards/<kind>/<slug>/<slug>-full.webp  → <prefix>/atlas-kit/<kind>/<slug>/<slug>-full.webp
+//   /cards/<kind>/<slug>/<slug>-card.png  →  <prefix>/cards/<kind>/<slug>/<slug>-card.png
+//   /cards/<kind>/<slug>/<slug>-thumb.webp → <prefix>/cards/<kind>/<slug>/<slug>-thumb.webp
+//   /cards/<kind>/<slug>/<slug>-full.webp  → <prefix>/cards/<kind>/<slug>/<slug>-full.webp
+//
+// (The path mirror is identical to the local layout — the CloudBase
+// bucket just got the public/<kind>/<slug>/ tree uploaded 1:1 under /cards/.
 //
 // Usage:
-//   node scripts/cdn-rewrite.mjs --prefix https://pub-xxx.r2.dev --dry-run
-//   node scripts/cdn-rewrite.mjs --prefix https://pub-xxx.r2.dev --apply
-//   node scripts/cdn-rewrite.mjs --prefix https://pub-xxx.r2.dev --rollback
+//   node scripts/cdn-rewrite.mjs --prefix https://636c-cloud1-...tcb.qcloud.la --dry-run
+//   node scripts/cdn-rewrite.mjs --prefix https://636c-cloud1-...tcb.qcloud.la --apply
+//   node scripts/cdn-rewrite.mjs --rollback
 //
 // Dry-run prints the first 5 changes + stats, doesn't write.
 // Apply rewrites cards.json in-place (atomic via temp file + rename).
@@ -49,10 +52,11 @@ if (rollback) {
 const normalizePrefix = (p) => p.replace(/\/+$/, "") + "/";
 
 function rewritePath(localPath, prefix) {
-  // /cards/<kind>/<slug>/<filename> → <prefix>/atlas-kit/<kind>/<slug>/<filename>
+  // /cards/<kind>/<slug>/<filename> → <prefix>/cards/<kind>/<slug>/<filename>
+  // (Local and CDN paths share the same /cards/ root; only the prefix
+  // changes. The CloudBase bucket was uploaded with this 1:1 mirror.)
   if (!localPath || !localPath.startsWith("/cards/")) return localPath;
-  const rel = localPath.slice("/cards/".length); // <kind>/<slug>/<filename>
-  return normalizePrefix(prefix) + "atlas-kit/" + rel;
+  return normalizePrefix(prefix) + localPath.slice(1); // strip leading "/"
 }
 
 const cards = JSON.parse(fs.readFileSync(CARDS_JSON, "utf8"));

@@ -8,7 +8,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 
-const cardsPath = path.resolve("data/cards.json");
+const args = process.argv.slice(2);
+const cardsPathIdx = args.indexOf("--cards-path");
+const cardsPath = cardsPathIdx >= 0 ? args[cardsPathIdx + 1] : path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
 const SYSTEM_PROMPT = `你是图鉴社 (Atlas Kit) 的编辑, 专门为图鉴社写卡片简介.
@@ -32,7 +34,16 @@ function callMmx(prompt) {
   return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 90_000 });
 }
 
-const targets = cards.filter((c) => !c.description || c.description.trim().length < 20);
+const includeSlugs = (() => {
+  const i = args.indexOf("--include-slug");
+  if (i < 0) return null;
+  return new Set(args[i + 1].split(",").filter(Boolean));
+})();
+
+// R36+ fix: 也覆盖 "百科图鉴占位条目" placeholder (那些 > 20 char 但还是占位)
+const isPlaceholder = (s) => !s || s.trim().length < 20 || s.includes('百科图鉴占位条目');
+let targets = cards.filter((c) => isPlaceholder(c.description));
+if (includeSlugs) targets = targets.filter((c) => includeSlugs.has(c.slug));
 console.log(`Will rewrite descriptions for ${targets.length} cards.`);
 
 let success = 0, fail = 0;

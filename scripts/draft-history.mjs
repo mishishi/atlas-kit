@@ -47,7 +47,8 @@ function syncSleep(ms) {
   Atomics.wait(i32, 0, 0, ms);
 }
 
-const cardsPath = path.resolve("data/cards.json");
+const cardsPathIdx = args.indexOf("--cards-path");
+const cardsPath = cardsPathIdx >= 0 ? args[cardsPathIdx + 1] : path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
 const SYSTEM_PROMPT = `你是图鉴社历史编辑。严格只输出 JSON 数组 [{year, title, body}]。year 用字符串, body 30-60 字。`;
@@ -186,7 +187,14 @@ function extractYearFromBody(body) {
   return null;
 }
 
-const todo = cards.filter((c) => !c.history || !Array.isArray(c.history) || c.history.length === 0);
+const includeSlugs = (() => {
+  const i = args.indexOf("--include-slug");
+  if (i < 0) return null;
+  return new Set(args[i + 1].split(",").filter(Boolean));
+})();
+
+let todo = cards.filter((c) => !c.history || !Array.isArray(c.history) || c.history.length === 0);
+if (includeSlugs) todo = todo.filter((c) => includeSlugs.has(c.slug));
 const targets = todo.slice(0, limit);
 
 console.log(`Will draft history for ${targets.length} cards (${cards.length} total, ${todo.length} missing).`);

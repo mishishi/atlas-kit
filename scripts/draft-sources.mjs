@@ -6,7 +6,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 
-const cardsPath = path.resolve("data/cards.json");
+const args = process.argv.slice(2);
+const cardsPathIdx = args.indexOf("--cards-path");
+const cardsPath = cardsPathIdx >= 0 ? args[cardsPathIdx + 1] : path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
 const SYSTEM_PROMPT = `你是图鉴社编辑, 为每张图鉴挑 2-4 条最权威的中文参考来源. 只输出 JSON 数组.`;
@@ -72,7 +74,14 @@ function extractJsonArray(text) {
   }
 }
 
-const todo = cards.filter((c) => !Array.isArray(c.sources) || c.sources.length === 0);
+const includeSlugs = (() => {
+  const i = args.indexOf("--include-slug");
+  if (i < 0) return null;
+  return new Set(args[i + 1].split(",").filter(Boolean));
+})();
+
+let todo = cards.filter((c) => !Array.isArray(c.sources) || c.sources.length === 0);
+if (includeSlugs) todo = todo.filter((c) => includeSlugs.has(c.slug));
 console.log(`Will draft sources for ${todo.length} cards (${cards.length} total, ${todo.length} missing).`);
 
 let success = 0, fail = 0;

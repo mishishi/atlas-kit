@@ -12,8 +12,16 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 
-const cardsPath = path.resolve("data/cards.json");
+const args = process.argv.slice(2);
+const cardsPathIdx = args.indexOf("--cards-path");
+const cardsPath = cardsPathIdx >= 0 ? args[cardsPathIdx + 1] : path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
+
+const includeSlugs = (() => {
+  const i = args.indexOf("--include-slug");
+  if (i < 0) return null;
+  return new Set(args[i + 1].split(",").filter(Boolean));
+})();
 
 const SYSTEM_PROMPT = "你是图鉴社编辑. 写中文百科条目. 严格按要求输出 JSON, 不解释.";
 
@@ -60,7 +68,8 @@ function extractJsonObject(text) {
   }
 }
 
-const targets = cards.filter((c) => !c.quote || !c.trivia);
+let targets = cards.filter((c) => !c.quote || !c.trivia);
+if (includeSlugs) targets = targets.filter((c) => includeSlugs.has(c.slug));
 console.log("Will draft extras for " + targets.length + " cards (" + cards.length + " total).");
 
 let success = 0, fail = 0;

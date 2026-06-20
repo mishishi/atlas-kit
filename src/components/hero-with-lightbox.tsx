@@ -37,9 +37,15 @@ interface HeroWithLightboxProps {
   filename: string;
   /** Card subtitle shown in the lightbox caption */
   caption: string;
+  /** Optional source-resolution label for the secondary button.
+   *  Round 31: most cards' full.webp is 1024×1835 (2K batch) but
+   *  179 cards (luoyang / 成都 / 大理 / 拉萨 / ...) are 768×1376
+   *  (1K batch). The label should reflect actual dimensions, not
+   *  a hardcoded value. If omitted, defaults to a generic "高清大图". */
+  fullDims?: string;
 }
 
-export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption }: HeroWithLightboxProps) {
+export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption, fullDims }: HeroWithLightboxProps) {
   const [open, setOpen] = useState(false);
   // R35 (2026-06-17): track image load state. While `loaded === false`
   // we show a shimmer Skeleton on top of the cream bg (palette[0]) so
@@ -107,16 +113,17 @@ export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption
           </span>
         </button>
 
-        {/* Secondary text link below the image — opens the 1024w
-            original inside the lightbox. The honest label tells the
-            user the modal will show the 1024w source, not the 600w
-            thumbnail they were just looking at. */}
+        {/* Secondary text link below the image — opens the full.webp
+            inside the lightbox. Round 31: previously hardcoded
+            "1024×1835" but 179 cards are 768×1376 (1K batch), so the
+            label was misleading. Now shows the actual dimensions if
+            passed, else falls back to a generic "高清大图" label. */}
         <button
           type="button"
           onClick={() => setOpen(true)}
           className="mt-2 block w-full text-center text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm transition-colors"
         >
-          查看原图 (1024×1835) ↗
+          查看原图{fullDims ? ` (${fullDims})` : " (高清大图)"} ↗
         </button>
       </div>
 

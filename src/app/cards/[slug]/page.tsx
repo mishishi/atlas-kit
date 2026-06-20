@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2, AlertTriangle } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
+import { getCardFullDims } from "@/lib/server/image-dims";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
@@ -67,7 +68,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function CardDetail({
+export default async function CardDetail({
   params,
   searchParams,
 }: {
@@ -76,6 +77,11 @@ export default function CardDetail({
 }) {
   const card = getCardBySlug(params.slug);
   if (!card) notFound();
+
+  // Round 31: read the actual full.webp pixel dimensions at build /
+  // request time so the "查看原图 (W×H)" label is accurate. SSG
+  // awaits this once per card, then memoizes in data.ts.
+  const fullDims = await getCardFullDims(card.slug);
 
   // R34 Day 3 (2026-06-17): 翻图录 mode — fullscreen image-first
   // browsing. Triggered by `?mode=flip` on the URL. Renders BEFORE
@@ -288,6 +294,7 @@ export default function CardDetail({
           bgColor={card.palette[0]}
           filename={card.slug}
           caption={card.title}
+          fullDims={fullDims ?? undefined}
         />
         </div>
 

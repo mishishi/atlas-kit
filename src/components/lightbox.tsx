@@ -14,22 +14,33 @@
  * - scale-in keyframe (already in tailwind.config) gives a subtle
  *   open animation
  *
- * Zoom model (2026-06-15 fix — was a fake CSS transform: scale()
- * on a 600w PNG, looked pixelated):
- * - Default: `fit` — the 1024w image is rendered at its natural
- *   aspect (9/16) and CSS-scaled down to fit the viewport, with
- *   `object-contain` so the user sees the whole picture.
- * - `100%` (or "原始尺寸") — the image is shown at native 1024×1820
- *   pixels, overflowing the container. The user can scroll inside
- *   the modal to pan around, or use the `+` / `-` keyboard shortcut.
- * - Click on the image toggles `fit` ↔ `100%` (cursor: zoom-in
- *   at fit, zoom-out at 100%).
+ * Zoom model (Round 31 — fix "放大没效果" bug):
+ * - Default: `fit` — the image is rendered at its natural
+ *   aspect (9/16) and CSS-scaled down to fit the viewport.
+ * - `100%` — image is shown at native pixel size (768×1376 for
+ *   recent 1K cards, 1024×1835 for older 2K cards), overflowing
+ *   the container so the user can pan with scroll / wheel.
+ * - `150%` / `200%` — CSS scale on top of 100% (NOT new pixels,
+ *   just pixelated zoom for inspection; clearly labeled as such
+ *   so users don't expect more).
+ * - Click image toggles fit ↔ 100%. + / - keys cycle through
+ *   100% / 150% / 200%. 0 / R resets to fit.
  *
- * Image source is `image_full` (1024w WebP) passed in by the parent.
+ * Why plain <img> instead of next/image (Round 31):
+ * The previous <Image sizes="(max-width: 1024px) 100vw, 1024px">
+ * made the browser pick a smaller srcset entry on small viewports
+ * (e.g. mobile → w=640 → ~390×698 actual bytes). Combined with
+ * Next.js dev-mode optimizer quirks, the loaded image was smaller
+ * than the source file, so 100% "natural" mode rendered at nearly
+ * the same size as fit mode on mobile — making zoom feel broken.
+ * A plain <img src=full.webp> loads the actual file every time,
+ * so 100% mode always shows the real source resolution.
+ *
+ * Image source is `image_full` (WebP, 768×1376 or 1024×1835
+ * depending on generation batch) passed in by the parent.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import { X, Download, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
+import { X, Download, ZoomIn, ZoomOut, RotateCcw, Maximize } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface LightboxProps {
@@ -45,22 +56,21 @@ interface LightboxProps {
 }
 
 /** Display modes: fit-to-viewport (CSS-scaled, whole image visible)
- *  or 100% natural pixel size (overflows, user can pan). */
-type DisplayMode = "fit" | "natural";
+ *  or 100% natural pixel size (overflows, user can pan).
+ *  Round 31: 150% / 200% added as pixelated zoom-in beyond natural,
+ *  for users who want to inspect small details (clearly labeled). */
+type DisplayMode = "fit" | "100%" | "150%" | "200%";
 
-/** Default size for the -full.webp tier. The matrix image generator
- *  returns 1536w; resize-cards.mjs was supposed to scale down to
- *  1024w but `withoutEnlargement: true` was wrong (1536 < 2048
- *  source → no-op, files stayed 1536w). The 1024w tier was finally
- *  realized by scripts/reencode-full-webp.mjs (2026-06-16) which
- *  also re-encoded PNG → WebP (334 MB → 19 MB, fits Vercel Hobby
- *  100 MB static upload cap).
- *
- *  We pass these as `width` / `height` to next/image as a layout
- *  hint to prevent CLS while the image loads. Once loaded, we read
- *  the real `naturalWidth` / `naturalHeight` so the 'natural' mode
- *  renders at the actual aspect ratio (some cards are 1024×1820,
- *  others 1024×1835, etc). */
+/** Zoom multiplier for the rendered image. fit → 100% via the image
+ *  click / "100%" button; 100% → 150% → 200% via repeated zoom-in. */
+const ZOOM_LEVELS: DisplayMode[] = ["100%", "150%", "200%"];
+
+/** Default size for the -full.webp tier. Round 31 note: with the
+ *  per-card directory migration (R26) and 1K vs 2K generation
+ *  batches, files are now a mix of 768×1376 (recent 1K cards like
+ *  luoyang, 成都, 大理, 拉萨, ...) and 1024×1835 (older 2K cards).
+ *  DEFAULT_W/H is just an initial layout hint before the real
+ *  naturalWidth / naturalHeight is read onLoad. */
 const DEFAULT_W = 1024;
 const DEFAULT_H = 1835;
 
@@ -83,7 +93,7 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
     };
   }, [open]);
 
-  // ESC closes; + / - toggles fit ↔ natural; 0 / r resets to fit
+  // ESC closes; + / - cycles through 100% / 150% / 200%; 0 / r resets to fit
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -94,10 +104,19 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
       if (e.key === "+" || e.key === "=") {
         e.preventDefault();
-        setMode("natural");
+        setMode((m) => {
+          if (m === "fit") return ZOOM_LEVELS[0];
+          const idx = ZOOM_LEVELS.indexOf(m);
+          return ZOOM_LEVELS[Math.min(idx + 1, ZOOM_LEVELS.length - 1)];
+        });
       } else if (e.key === "-" || e.key === "_") {
         e.preventDefault();
-        setMode("fit");
+        setMode((m) => {
+          if (m === "fit") return "fit";
+          const idx = ZOOM_LEVELS.indexOf(m);
+          if (idx <= 0) return "fit";
+          return ZOOM_LEVELS[idx - 1];
+        });
       } else if (e.key === "0" || e.key.toLowerCase() === "r") {
         e.preventDefault();
         setMode("fit");
@@ -113,12 +132,13 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
   }, [open]);
 
   // Reset to fit mode on open (otherwise the next open might be
-  // stuck at natural, which overflows the viewport on a smaller screen)
+  // stuck at a zoomed-in state, which overflows the viewport on a
+  // smaller screen)
   useEffect(() => {
     if (open) setMode("fit");
   }, [open]);
 
-  // Round 19 fix: `naturalDims` is set inside the Image onLoad handler.
+  // Round 19 fix: `naturalDims` is set inside the img onLoad handler.
   // Under React 18 strict mode the component mounts/unmounts/mounts,
   // and on a fast unmount the image might still resolve the src and fire
   // onLoad AFTER unmount — calling setState on an unmounted component
@@ -127,9 +147,31 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
   const openRef = useRef(open);
   openRef.current = open;
 
+  // Click on image: fit ↔ 100% (single-toggle for clarity; the
+  // 150% / 200% are reached via the zoom-in button or + key).
   const toggleMode = useCallback(() => {
-    setMode((m) => (m === "fit" ? "natural" : "fit"));
+    setMode((m) => (m === "fit" ? "100%" : "fit"));
   }, []);
+
+  // Zoom-in: 100% → 150% → 200% → 200% (clamp).
+  // Zoom-out: 100% → fit (skipping 150% / 200% on the way back is
+  // intentional — going to fit first feels more natural than stepping
+  // down through every zoom level).
+  const zoomIn = useCallback(() => {
+    setMode((m) => {
+      if (m === "fit") return "100%";
+      const idx = ZOOM_LEVELS.indexOf(m);
+      return ZOOM_LEVELS[Math.min(idx + 1, ZOOM_LEVELS.length - 1)];
+    });
+  }, []);
+  const zoomOut = useCallback(() => {
+    setMode((m) => (m === "fit" ? "fit" : "fit"));
+  }, []);
+
+  // Whether the current mode is "100% or larger" (overflows, can pan)
+  const isPannable = mode !== "fit";
+  // Zoom multiplier (CSS scale on top of natural pixel size)
+  const zoomMul = mode === "fit" ? 1 : mode === "100%" ? 1 : mode === "150%" ? 1.5 : 2;
 
   if (!open) return null;
 
@@ -166,9 +208,9 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
         <div
           className={cn(
             "relative rounded-lg shadow-dark-card ring-1 ring-border/40 scrollbar-editorial",
-            mode === "fit"
-              ? "overflow-hidden cursor-zoom-in"
-              : "overflow-auto cursor-zoom-out",
+            isPannable
+              ? "overflow-auto cursor-grab active:cursor-grabbing"
+              : "overflow-hidden cursor-zoom-in",
           )}
           style={{
             maxHeight: "calc(100vh - 8rem)",
@@ -176,25 +218,33 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
           }}
           onClick={toggleMode}
         >
-          {/* Render at intrinsic 1024×1820. In 'fit' mode, CSS scales
-              the wrapper down to viewport via the outer max-w/max-h
-              + object-contain-style behavior. In 'natural' mode, the
-              image overflows the container (overflow-auto lets the
-              user pan with mouse wheel / scroll). */}
-          <Image
+          {/* Round 31 fix: plain <img> instead of next/image. The
+              previous <Image sizes="(max-width: 1024px) 100vw, 1024px">
+              made the browser pick a smaller srcset entry on small
+              viewports (mobile → w=640 → ~390×698 actual bytes),
+              combined with Next.js dev-mode quirks, the loaded image
+              was smaller than the source file. So 100% "natural" mode
+              rendered at nearly the same size as fit mode on mobile,
+              making zoom feel broken ("放大没效果").
+
+              Plain <img> always loads the full-resolution WebP,
+              so 100% mode shows the actual source resolution.
+              We still use width/height attrs (set from naturalDims
+              onLoad) to prevent CLS during the initial paint. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={src}
             alt={alt}
             width={naturalDims?.w ?? DEFAULT_W}
             height={naturalDims?.h ?? DEFAULT_H}
-            sizes="(max-width: 1024px) 100vw, 1024px"
-            quality={95}
-            priority
             draggable={false}
+            decoding="async"
+            fetchPriority="high"
             onLoad={(e) => {
               // Skip if lightbox closed while the image was loading
               // (race against the open→close transition).
               if (!openRef.current) return;
-              const img = e.currentTarget as HTMLImageElement;
+              const img = e.currentTarget;
               if (img.naturalWidth && img.naturalHeight) {
                 setNaturalDims({ w: img.naturalWidth, h: img.naturalHeight });
               }
@@ -207,8 +257,26 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
                 // the 9/16 aspect via w-auto / h-auto).
                 ? "h-full w-auto max-h-[calc(100vh-8rem)] max-w-full"
                 // Natural pixel size, overflows the container for panning.
-                : "h-auto w-auto",
+                // Tailwind preflight's `img { max-width: 100%; }` would
+                // clamp the image to the container width — we override
+                // with max-w-none so the user actually sees the full
+                // 768×1376 / 1024×1835 source (and can scroll it).
+                : "h-auto w-auto max-w-none",
             )}
+            style={
+              mode !== "fit" && mode !== "100%"
+                ? {
+                    // CSS scale on top of natural pixel size. NOT new
+                    // pixels — pixelated zoom for inspection. We use
+                    // transform (not width/height) so the source
+                    // resolution is preserved for the user to pan
+                    // around at original pixel fidelity, then upscaled
+                    // by the GPU for display.
+                    transform: `scale(${zoomMul})`,
+                    transformOrigin: "top left",
+                  }
+                : undefined
+            }
           />
         </div>
 
@@ -219,12 +287,14 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
           </div>
 
           <div className="flex shrink-0 items-center gap-2">
-            {/* Mode controls — was a fake '100%/150%/200%/300%' CSS
-                transform: scale() (bug fix 2026-06-15: the scale only
-                stretched pixels, no real resolution). Now toggles
-                between 'fit' (whole image, scaled to viewport) and
-                '100%' (native 1024w, overflows + pans). The middle
-                label doubles as a reset to 'fit'. */}
+            {/* Mode controls (Round 31):
+                - "适应" = fit-to-viewport (whole image visible)
+                - "100%" = native pixel size, overflows + pans
+                - "150%" / "200%" = pixelated zoom-in beyond natural
+                  (CSS scale on top of 100%, NOT new resolution)
+                - Left button (ZoomOut) always resets to fit
+                - Middle label shows current mode + doubles as reset
+                - Right button (ZoomIn) cycles 100% → 150% → 200% */}
             <div
               role="group"
               aria-label="显示模式"
@@ -232,9 +302,9 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
             >
               <button
                 type="button"
-                onClick={() => setMode("fit")}
+                onClick={zoomOut}
                 disabled={mode === "fit"}
-                aria-label="适应窗口"
+                aria-label="缩小到适应窗口"
                 className={cn(
                   // Round 19 fix: bumped min-h/min-w from 32px to 44px to
                   // satisfy WCAG 2.5.5 touch target on the 3 mode-toggle
@@ -250,30 +320,38 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
               </button>
               <button
                 type="button"
-                onClick={() => setMode("fit")}
+                onClick={zoomOut}
                 disabled={mode === "fit"}
                 aria-label="重置为适应窗口"
                 className={cn(
-                  "min-h-[44px] min-w-[60px] rounded px-2 text-xs font-medium tabular-nums text-foreground",
+                  "min-h-[44px] min-w-[64px] rounded px-2 text-xs font-medium tabular-nums text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   "disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent",
                   "transition-colors",
                 )}
               >
-                {mode === "natural" ? (
+                {mode === "fit" ? (
+                  <span>适应</span>
+                ) : (
                   <span className="inline-flex items-center gap-1">
                     <RotateCcw className="h-3 w-3" aria-hidden="true" />
                     适应
                   </span>
-                ) : (
-                  "适应"
                 )}
               </button>
               <button
                 type="button"
-                onClick={() => setMode("natural")}
-                disabled={mode === "natural"}
-                aria-label="原始 100% 尺寸"
+                onClick={zoomIn}
+                disabled={mode === "200%"}
+                aria-label={
+                  mode === "fit"
+                    ? "放大到原始 100% 尺寸"
+                    : mode === "100%"
+                      ? "放大到 150%"
+                      : mode === "150%"
+                        ? "放大到 200%"
+                        : "已到最大放大"
+                }
                 className={cn(
                   "grid h-10 w-10 min-h-[44px] min-w-[44px] place-items-center rounded text-foreground",
                   "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
@@ -284,6 +362,24 @@ export function Lightbox({ open, onClose, src, alt, filename, caption }: Lightbo
                 <ZoomIn className="h-4 w-4" aria-hidden="true" />
               </button>
             </div>
+
+            {/* Mode indicator pill — shows the current mode label
+                (100% / 150% / 200%) on the right side of the caption.
+                Hidden in fit mode (the "适应" label already covers it). */}
+            {mode !== "fit" && (
+              <span
+                aria-live="polite"
+                className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-1 text-xs font-medium tabular-nums text-foreground"
+              >
+                <Maximize className="h-3 w-3" aria-hidden="true" />
+                {mode}
+                {(mode === "150%" || mode === "200%") && (
+                  <span className="ml-1 text-[10px] font-normal text-muted-foreground">
+                    · 像素放大
+                  </span>
+                )}
+              </span>
+            )}
 
             {filename && (
               <a

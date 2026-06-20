@@ -3,9 +3,23 @@ import { getAllCards } from "@/lib/data";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { EDGE_TOKENS as T } from "@/lib/edge-tokens";
 
-// Edge runtime (next/og) — cannot use CSS vars. EDGE_TOKENS keeps
-// the brand colors in sync with the rest of the design system.
-export const runtime = "edge";
+// 2026-06-21: switched from edge to nodejs runtime.
+// Vercel Edge functions have a 1MB code size limit, and satori + resvg
+// (next/og's renderer) blow past that at ~1MB+ for non-trivial OG
+// images. nodejs serverless functions have a 300MB limit on Hobby.
+// Side benefit: /opengraph-image works in `npm run dev` too (edge
+// runtime in dev mode can't read filesystem during data-collection,
+// returning 502; the env loading + EDGE_TOKENS pattern works fine
+// in node runtime).
+export const runtime = "nodejs";
+// Force on-demand rendering (not static prerender at build time).
+// Without this, next build tries to evaluate ImageResponse during
+// static page generation, which hits a TypeError in @vercel/og's
+// fileURLToPath call (it expects import.meta.url to resolve to a
+// valid path inside the function bundle, which doesn't happen at
+// build time). Setting dynamic to force-dynamic makes next treat
+// this as a per-request serverless function instead.
+export const dynamic = "force-dynamic";
 export const alt = "图鉴社 · Atlas Kit — 系列化中文科普图鉴";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

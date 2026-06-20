@@ -1,0 +1,10 @@
+# 2026-06-21: cards.json image paths were migrated to 微信 CloudBase CDN
+# (https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/...).
+# Skip the 417MB of /public/cards/ from Vercel deploy — the running app
+# fetches every image from CloudBase, never from /public/cards/.
+#
+# Note: the files are still in git (under public/cards/) for local dev
+# (npm run dev serves /public/ directly). Only Vercel's deploy-time
+# upload is excluded here. To re-enable static serving, remove this
+# block.
+public/cards/

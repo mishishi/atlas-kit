@@ -35,6 +35,14 @@ export function ThemeToggle() {
       aria-label={label}
       title={label}
       onClick={advance}
+      // SSR reads defaultTheme="system" (no window); client reads localStorage
+      // which may have "light" or "dark" — the icon swap (Monitor/Sun/Moon)
+      // produces a different <svg><rect></rect></svg> tree on the two sides.
+      // suppressHydrationWarning tells React not to warn; we accept the
+      // tiny icon flash on first paint as the cost of keeping the
+      // client-side persisted theme. Same pattern as Round 17 (CardPreview
+      // "新收录" Date.now() mismatch).
+      suppressHydrationWarning
       className={cn(
         "grid h-11 w-11 min-h-[44px] min-w-[44px] place-items-center rounded-md border border-border bg-card",
         "hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",

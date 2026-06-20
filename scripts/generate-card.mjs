@@ -59,7 +59,8 @@ const dryRun = hasFlag("--dry-run");
 
 const ROOT = process.cwd();
 const CARDS_DIR = path.join(ROOT, "public", "cards");
-const CARDS_JSON = path.join(ROOT, "data", "cards.json");
+const cardsPathIdx = args.indexOf("--cards-path");
+const CARDS_JSON = cardsPathIdx >= 0 ? args[cardsPathIdx + 1] : path.join(ROOT, "data", "cards.json");
 const BUILD_PROMPT = path.join(ROOT, "scripts", "build-prompt.mjs");
 const DAEMON_URL = process.env.MAVIS_DAEMON_URL || "http://127.0.0.1:15321";
 const DAEMON_MCP_PATH = `${DAEMON_URL}/mavis/api/mcp/call`;
@@ -69,7 +70,12 @@ let jobs = [];
 if (fromPlan) {
   const plan = JSON.parse(fs.readFileSync(fromPlan, "utf8"));
   jobs = plan.plan.map((p) => ({
-    topic: p.title,
+    // Accept both `title` (canonical from plan-new-cards) and `topic`
+    // (legacy / parallel-gen-images.mjs sub-plan shape). Without this fallback,
+    // missing `title` silently produces cards with title: undefined, which then
+    // cascades to subtitle / description / metadata fields all mentioning
+    // "undefined" instead of the actual topic.
+    topic: p.title ?? p.topic,
     kind: p.kind,
     slug: p.slug,
     series: p.series,
@@ -97,6 +103,18 @@ if (fromPlan) {
   console.error("  --topic X --kind Y [--slug S]");
   console.error("  --from-plan <path-to-json>");
   process.exit(1);
+}
+
+// Fail-fast: refuse to run with empty topic. Previously, a plan with missing
+// `title` field (e.g. parallel-gen-images.mjs sub-plan shape uses `topic`)
+// silently created cards with title: undefined, then cascaded to description
+// / subtitle / metadata all mentioning "undefined". Catching it here surfaces
+// the plan bug immediately instead of letting it corrupt cards.json.
+for (const job of jobs) {
+  if (!job.topic || !job.topic.trim()) {
+    console.error(`[FAIL] job missing topic (title): ${JSON.stringify(job)}`);
+    process.exit(1);
+  }
 }
 
 function slugify(s) {

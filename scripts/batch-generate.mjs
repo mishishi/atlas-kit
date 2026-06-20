@@ -154,7 +154,9 @@ async function runJob(job) {
   const childArgs = [
     GENERATE_CARD,
     "--topic",
-    job.title,
+    // Accept both `title` (plan-new-cards canonical) and `topic`
+    // (parallel-gen-images.mjs sub-plan shape). See generate-card.mjs comment.
+    job.title ?? job.topic,
     "--kind",
     job.kind,
     "--slug",

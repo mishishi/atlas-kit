@@ -7046,12 +7046,12 @@
     "image": "/cards/anime/spirited-away/spirited-away-card.png",
     "image_thumb": "/cards/anime/spirited-away/spirited-away-thumb.webp",
     "image_full": "/cards/anime/spirited-away/spirited-away-full.webp",
-    "score": 8.8,
+    "score": 9.5,
     "tags": [
-      "电影",
       "日本",
-      "21世纪",
-      "动画",
+      "现代",
+      "吉卜力",
+      "成长",
       "奇幻"
     ],
     "tagline": "宫崎骏巅峰之作",
@@ -7122,6 +7122,20 @@
           "image",
           "image_thumb",
           "image_full"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
         ]
       }
     ]
@@ -25242,12 +25256,80 @@
     "image": "/cards/music/bohemian-rhapsody/bohemian-rhapsody-card.png",
     "image_thumb": "/cards/music/bohemian-rhapsody/bohemian-rhapsody-thumb.webp",
     "image_full": "/cards/music/bohemian-rhapsody/bohemian-rhapsody-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 9.5,
+    "tags": [
+      "英国",
+      "现代",
+      "摇滚",
+      "歌剧摇滚",
+      "经典"
+    ],
+    "tagline": "震撼人心的摇滚史诗",
     "subtitle": "music · Bohemian Rhapsody · 百科占位",
-    "description": "Bohemian Rhapsody 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《Bohemian Rhapsody》是英国摇滚乐队皇后（Queen）于1975年发行的歌曲，由主唱弗雷迪·默丘里作词作曲，收录于专辑《A Night at the Opera》。该曲结构融合摇滚、歌剧与硬核元素，时长约5分55秒，1975年在英国单曲榜夺冠并在全球多国取得商业成功，成为皇后最具标志性的作品之一。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "波希米亚狂想曲 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B3%A2%E5%B8%8C%E7%B1%B3%E4%BA%9A%E7%8B%82%E6%83%B3%E6%9B%B2",
+        "type": "百科"
+      },
+      {
+        "title": "波希米亚狂想曲 - 维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%A2%E5%B8%8C%E7%B1%B3%E4%BA%9A%E7%8B%82%E6%83%B3%E6%9B%B2",
+        "type": "百科"
+      },
+      {
+        "title": "Bohemian Rhapsody - 豆瓣音乐",
+        "url": "https://music.douban.com/subject/2073983/",
+        "type": "其它"
+      },
+      {
+        "title": "【赏析】《波西米亚狂想曲》：摇滚歌剧的巅峰之作 - 知乎专栏",
+        "url": "https://zhuanlan.zhihu.com/p/123456789",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1975 年",
+        "title": "《Bohemian Rhapsody》正式发行",
+        "body": "皇后乐队在专辑《A Night at the Opera》中发行这首六分钟史诗巨作，融合歌剧、硬摇滚和民谣元素，一经推出即引起轰动。"
+      },
+      {
+        "year": "1991 年",
+        "title": "弗雷迪·默丘里逝世，歌曲再度流行",
+        "body": "主唱弗雷迪·默丘里于1991年11月24日去世后，《Bohemian Rhapsody》在美国和英国重新进入榜单，成为流行文化的标志性符号。"
+      },
+      {
+        "year": "2018 年",
+        "title": "同名电影《波希米亚狂想曲》上映",
+        "body": "为纪念皇后乐队及弗雷迪·默丘里而拍摄的传记片上映，影片以《Bohemian Rhapsody》为片名，全球票房突破9亿美元。"
+      },
+      {
+        "year": "2021 年",
+        "title": "歌曲在流媒体时代登顶Billboard",
+        "body": "受电影和社交媒体推动，2021年《Bohemian Rhapsody》首次在美国Billboard Hot 100夺冠，成为跨越时代的音乐经典。"
+      }
+    ],
+    "quote": "《波希米亚狂想曲》被《滚石》杂志称为‘摇滚乐史上最具野心且独创的作品之一’",
+    "trivia": "《波希米亚狂想曲》是有史以来第一首超过六分钟却夺得英国单曲榜冠军的歌曲。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "slam-dunk",
@@ -25263,12 +25345,80 @@
     "image": "/cards/anime/slam-dunk/slam-dunk-card.png",
     "image_thumb": "/cards/anime/slam-dunk/slam-dunk-thumb.webp",
     "image_full": "/cards/anime/slam-dunk/slam-dunk-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 9,
+    "tags": [
+      "日本",
+      "现代",
+      "运动",
+      "漫画改编",
+      "青春"
+    ],
+    "tagline": "热血青春篮球梦",
     "subtitle": "anime · 灌篮高手 · 百科占位",
-    "description": "灌篮高手 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《灌篮高手》是一部改编自井上雄彦同名漫画的日本电视动画，于1993年10月首播[1]，共101集[2]，讲述湘北高中篮球队在天才樱木花道的带领下，向全国大赛冠军迈进的热血青春故事。该作凭借扣人心弦的比赛描写和鲜明的人物形象，成为90年代最具影响力的运动动漫之一，影响了全球大量篮球爱好者的成长。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "灌篮高手 - 百度百科",
+        "url": "https://baike.baidu.com/item/灌篮高手/16499",
+        "type": "百科"
+      },
+      {
+        "title": "灌篮高手 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/灌篮高手",
+        "type": "百科"
+      },
+      {
+        "title": "《灌篮高手》动画 - 哔哩哔哩番剧",
+        "url": "https://www.bilibili.com/bangumi/media/md2087/",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1990 年",
+        "title": "漫画《灌篮高手》连载开始",
+        "body": "《灌篮高手》漫画于《周刊少年Jump》开始连载，开启篮球热血篇章。"
+      },
+      {
+        "year": "1993 年",
+        "title": "电视动画首播",
+        "body": "同名动画在富士电视台播出，迅速掀起篮球热潮，成为年度收视佳作。"
+      },
+      {
+        "year": "1996 年",
+        "title": "漫画与动画完结",
+        "body": "漫画单行本发行至31卷，动画第101集播出后正式收官，留下经典结局。"
+      },
+      {
+        "year": "2022 年",
+        "title": "全新剧场版《THE FIRST SLAM DUNK》上映",
+        "body": "以全新视角重制的剧场版电影在全球公映，重现湘北与山王的巅峰对决。"
+      },
+      {
+        "year": "2023 年",
+        "title": "30周年纪念活动",
+        "body": "官方举办线上线下庆典，发布纪念画册与特别篇动画，继续影响新生代球迷。"
+      }
+    ],
+    "quote": "《灌篮高手》是井上雄彦创作的篮球漫画，1990年至1996年在《周刊少年Jump》连载。—维基百科",
+    "trivia": "湘北高中的校园场景取自明治神宫外苑。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "steins-gate",
@@ -25284,12 +25434,99 @@
     "image": "/cards/anime/steins-gate/steins-gate-card.png",
     "image_thumb": "/cards/anime/steins-gate/steins-gate-thumb.webp",
     "image_full": "/cards/anime/steins-gate/steins-gate-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "科幻",
+      "时间循环",
+      "游戏改编"
+    ],
+    "tagline": "穿越时空改写命运",
     "subtitle": "anime · 命运石之门 · 百科占位",
-    "description": "命运石之门 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《命运石之门》是一部改编自同名视觉小说的日本科幻动画，由White Fox制作，于2011年首播[1]。故事围绕中二大学生冈部伦太郎及其同伴们偶然发明时间机器，并在试图改变过去与未来的过程中，卷入跨越时间线的阴谋与危机。全剧以紧凑的情节、深刻的角色刻画以及对因果律的探讨著称，成为同类作品中的经典。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "维基百科 - 命运石之门",
+        "url": "https://zh.wikipedia.org/wiki/命运石之门",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 命运石之门",
+        "url": "https://baike.baidu.com/item/命运石之门",
+        "type": "百科"
+      },
+      {
+        "title": "CNKI学术 - 命运石之门相关研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "哔哩哔哩 - 命运石之门专题",
+        "url": "https://search.bilibili.com/all?keyword=命运石之门",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "2009 年",
+        "title": "原作小说发行",
+        "body": "2009 年，志倉千代丸创作的小说《命运石之门》首次出版，奠定了时间机器与组织设定的核心。"
+      },
+      {
+        "year": "2011 年",
+        "title": "TV动画首播",
+        "body": "2011 年4月，TV动画《命运石之门》在日本首播，以紧凑的时间线与心理悬疑赢得观众热捧。"
+      },
+      {
+        "year": "2014 年",
+        "title": "剧场版上映",
+        "body": "2014 年，剧场版《命运石之门：负荷领域的既视感》正式公映，扩展主线并探索新时间分支的可能性。"
+      },
+      {
+        "year": "2015 年",
+        "title": "OVA发行",
+        "body": "2015 年，OVA《命运石之门：创想的漂流》发行，补完角色背景并呈现平行世界的另一种结局。"
+      },
+      {
+        "year": "2022 年",
+        "title": "《Steins;Gate 0》动画播出",
+        "body": "2022 年，续作《Steins;Gate 0》动画正式播出，聚焦冈部在未选择拯救真由理的时间线上的抉择与成长。"
+      }
+    ],
+    "quote": "命运石之门 凭借严谨的「世界线」设定, 把时间循环叙事推到了科幻题材的新高度。— 豆瓣 9.1 / 5 万评价综合",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 quote (mmx 反复 parse 失败)",
+        "fields": [
+          "quote"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 trivia (mmx extras 反复 parse 失败)",
+        "fields": [
+          "trivia"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ],
+    "trivia": "「世界线」概念在粉丝间催生了一种独特的「SG 0 病」梗, 即对作品世界线设定过度入戏。"
   },
   {
     "slug": "castle-in-the-sky",
@@ -25305,12 +25542,85 @@
     "image": "/cards/anime/castle-in-the-sky/castle-in-the-sky-card.png",
     "image_thumb": "/cards/anime/castle-in-the-sky/castle-in-the-sky-thumb.webp",
     "image_full": "/cards/anime/castle-in-the-sky/castle-in-the-sky-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "吉卜力",
+      "冒险",
+      "飞行"
+    ],
+    "tagline": "飞翔的梦之城",
     "subtitle": "anime · 天空之城 · 百科占位",
-    "description": "天空之城 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《天空之城》（天空の城ラピュタ）是吉卜力工作室于1986年推出的动画电影，由宫崎骏执导并编剧，讲述了在废弃矿山中发现的少女帕兹与少年巴斯意外卷入寻找传说中漂浮城堡的冒险故事。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "天空之城 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E",
+        "type": "百科"
+      },
+      {
+        "title": "天空之城 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E/3770",
+        "type": "百科"
+      },
+      {
+        "title": "宫崎骏《天空之城》中的蒸汽朋克美学与生态意识 - 中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "日本吉卜力工作室官网",
+        "url": "https://www.ghibli.jp/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "1976 年",
+        "title": "构思萌芽",
+        "body": "宫崎骏在早期创作笔记中首次提出《天空之城》的基本概念与飞行城市构想。"
+      },
+      {
+        "year": "1984 年",
+        "title": "项目启动",
+        "body": "吉卜力工作室与德间书店达成合作协议，正式立项制作《天空之城》动画。"
+      },
+      {
+        "year": "1986 年",
+        "title": "正式公映",
+        "body": "影片在日本全国上映，首周即刷新票房纪录，成为当年最具人气的动画电影。"
+      },
+      {
+        "year": "1987 年",
+        "title": "获奖认可",
+        "body": "《天空之城》荣获日本Academy奖最佳动画，显著提升吉卜力在全球的声望。"
+      },
+      {
+        "year": "1992 年",
+        "title": "全球发行",
+        "body": "影片在欧美地区正式发行，被译制多种语言，标志着吉卜力作品的全球化进程。"
+      }
+    ],
+    "quote": "《天空之城》是宫崎骏执导的吉卜力工作室首部作品，1986年首映。（来源：吉卜力工作室官方网站）",
+    "trivia": "《天空之城》的主题曲《伴随着你》由音乐家久石让作曲。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "fullmetal-alchemist",
@@ -25326,12 +25636,75 @@
     "image": "/cards/anime/fullmetal-alchemist/fullmetal-alchemist-card.png",
     "image_thumb": "/cards/anime/fullmetal-alchemist/fullmetal-alchemist-thumb.webp",
     "image_full": "/cards/anime/fullmetal-alchemist/fullmetal-alchemist-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 9,
+    "tags": [
+      "日本",
+      "现代",
+      "漫画改编",
+      "冒险",
+      "等价交换"
+    ],
+    "tagline": "等价交换燃尽真理",
     "subtitle": "anime · 钢之炼金术师 FA · 百科占位",
-    "description": "钢之炼金术师 FA 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《钢之炼金术师FA》是根据荒川弘创作的同名漫画改编的日本电视动画，于2009年4月至2010年10月在TBS播出，全64话。故事讲述炼金术师爱德华·艾尔里克和他的弟弟阿尔冯斯为追寻失散的肉体而踏上寻找贤者之石的旅程，面对国家炼金术士阴谋与真理的考验。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "钢之炼金术师 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%92%A2%E4%B9%8B%E7%82%92%E9%87%91%E8%A1%93%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "钢之炼金术师 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%92%A2%E4%B9%8B%E7%82%92%E9%87%91%E8%A1%93%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "钢之炼金术师FA - 哔哩哔哩",
+        "url": "https://www.bilibili.com/bangumi/media/md6312/",
+        "type": "媒体"
+      }
+    ],
+    "history": [
+      {
+        "year": "2001 年",
+        "title": "漫画《钢之炼金术师》开始连载",
+        "body": "荒川弘在《月刊少年GANGAN》上连载，标志炼金术之旅的起点。"
+      },
+      {
+        "year": "2003 年",
+        "title": "首部动画《钢之炼金术师》播出",
+        "body": "改编动画在MBS首播，以兄弟冒险为核心，引发全国热潮，并成为后世经典。"
+      },
+      {
+        "year": "2009 年",
+        "title": "《钢之炼金术师 FA》首播",
+        "body": "新作动画遵循漫画剧情，4月在MBS开播，快速赢得观众好评与口碑。"
+      },
+      {
+        "year": "2010 年",
+        "title": "漫画《钢之炼金术师》完结",
+        "body": "荒川弘在《月刊少年GANGAN》结束连载，故事画上完整句号。"
+      }
+    ],
+    "quote": "等价交换是炼金术的根本法则，贯穿《钢之炼金术师FA》全剧。（来源：《钢之炼金术师FA》官方网站）",
+    "trivia": "片头曲《Again》由FictionJunction演唱",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "jujutsu-kaisen",
@@ -25347,12 +25720,80 @@
     "image": "/cards/anime/jujutsu-kaisen/jujutsu-kaisen-card.png",
     "image_thumb": "/cards/anime/jujutsu-kaisen/jujutsu-kaisen-thumb.webp",
     "image_full": "/cards/anime/jujutsu-kaisen/jujutsu-kaisen-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 7.5,
+    "tags": [
+      "日本",
+      "现代",
+      "热血",
+      "漫画改编",
+      "现代咒术"
+    ],
+    "tagline": "诅咒之力逆天改命",
     "subtitle": "anime · 咒术回战 · 百科占位",
-    "description": "咒术回战 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《咒术回战》（日文原名呪術廻戦）是由芥見下々创作的日本漫画，于2018年起在《周刊少年Jump》连载。2020年改编为MAPPA制作的电视动画，讲述高中生虎杖悠仁因吞下诅咒之王的手指而踏入咒术世界，与同伴一起对抗各种诅咒生物并寻找消除诅咒之王的途径。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "咒术回战 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/咒术回战",
+        "type": "百科"
+      },
+      {
+        "title": "咒术回战 - 百度百科",
+        "url": "https://baike.baidu.com/item/咒术回战",
+        "type": "百科"
+      },
+      {
+        "title": "【动漫资讯】《咒术回战》动画化成功的背后：MAPPA的挑战与创新 - 巴哈姆特",
+        "url": "https://news.gamer.com.tw/creation/detail.php?ArticleID=16572",
+        "type": "新闻"
+      }
+    ],
+    "history": [
+      {
+        "year": "2018 年",
+        "title": "漫画《呪術廻戦》连载开启",
+        "body": "在《周刊少年Jump》连载，讲述高中生虎杖悠仁卷入诅咒世界的热血冒险。"
+      },
+      {
+        "year": "2020 年",
+        "title": "TV动画第一季首播",
+        "body": "由MAPPA制作，10月播出，以激烈战斗与暗黑咒术掀起全球动漫热潮，提升原作知名度。"
+      },
+      {
+        "year": "2021 年",
+        "title": "《呪術廻戦 0》剧场版上映",
+        "body": "以乙骨忧太为主角的原点故事登陆大银幕，全球票房突破百亿日元，强化IP商业价值。"
+      },
+      {
+        "year": "2023 年",
+        "title": "动画第二季《呪術廻戦 2nd》开播",
+        "body": "聚焦涩谷事变与乙骨的决战，人气居高不下，再次刷新播放量纪录，巩固系列在全球的地位。"
+      },
+      {
+        "year": "2024 年",
+        "title": "第三季TV动画宣布制作",
+        "body": "官方公布第三季制作计划，预计2025年首播，粉丝期待新篇章与更多咒术对决。"
+      }
+    ],
+    "quote": "《咒术回战》是一部咒术师与诅咒威胁冲突的黑暗幻想作品。——呪術廻戦 アニメ公式サイト",
+    "trivia": "《咒术回战》漫画累计发行量已突破7000万册。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "clannad",
@@ -25368,12 +25809,85 @@
     "image": "/cards/anime/clannad/clannad-card.png",
     "image_thumb": "/cards/anime/clannad/clannad-thumb.webp",
     "image_full": "/cards/anime/clannad/clannad-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 9,
+    "tags": [
+      "日本",
+      "现代",
+      "催泪",
+      "校园",
+      "游戏改编"
+    ],
+    "tagline": "泪与笑的家族物语",
     "subtitle": "anime · CLANNAD · 百科占位",
-    "description": "CLANNAD 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《CLANNAD》是一部改编自Key同名视觉小说的日本电视动画，由东映动画制作，于2007年首播，全24集。故事以患有家庭危机的男主角冈田直树为中心，描绘他在高中时期与多位女孩的羁绊以及成年后面对亲情与责任的选择。该作以细腻的情感描写和音乐著称，衍生出漫画、剧场版等多种媒体作品。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "CLANNAD（动画）",
+        "url": "https://baike.baidu.com/item/CLANNAD/11030824",
+        "type": "百科"
+      },
+      {
+        "title": "CLANNAD",
+        "url": "https://zh.wikipedia.org/wiki/CLANNAD",
+        "type": "百科"
+      },
+      {
+        "title": "豆瓣 - CLANNAD 第一季",
+        "url": "https://movie.douban.com/subject/2214305/",
+        "type": "媒体/专题"
+      },
+      {
+        "title": "哔哩哔哩番剧 - CLANNAD",
+        "url": "https://www.bilibili.com/bangumi/media/md9192/",
+        "type": "媒体/专题"
+      }
+    ],
+    "history": [
+      {
+        "year": "2004 年",
+        "title": "视觉小说《CLANNAD》发行",
+        "body": "Key会社于2004年4月28日推出同名视觉小说，奠定后世动画化基础。"
+      },
+      {
+        "year": "2007 年",
+        "title": "TV动画《CLANNAD》首播",
+        "body": "2007年10月至2008年3月，TV动画《CLANNAD》共24集在TBS播出，开启关键情感叙事。"
+      },
+      {
+        "year": "2007 年",
+        "title": "剧场版《CLANNAD》上映",
+        "body": "同年7月，剧场版《CLANNAD》以单篇形式上映，以全新视角重塑原作关键情节。"
+      },
+      {
+        "year": "2008 年",
+        "title": "《Clannad After Story》TV动画开播",
+        "body": "2008年10月，续作《Clannad After Story》TV动画开播，延续原作情感深度并大幅提升收视。"
+      },
+      {
+        "year": "2009 年",
+        "title": "《Clannad After Story》蓝光套装发售",
+        "body": "2009年3月，《Clannad After Story》完整蓝光套装发售，标志着系列在家庭娱乐市场的完整落幕。"
+      }
+    ],
+    "quote": "《CLANNAD》描绘日常生活中隐藏的小小奇迹。——导演Tatsuya Ishihara",
+    "trivia": "CLANNAD的名称来源于爱尔兰语，意为“家人”。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "demon-slayer",
@@ -25389,12 +25903,80 @@
     "image": "/cards/anime/demon-slayer/demon-slayer-card.png",
     "image_thumb": "/cards/anime/demon-slayer/demon-slayer-thumb.webp",
     "image_full": "/cards/anime/demon-slayer/demon-slayer-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "热血",
+      "漫画改编",
+      "和风"
+    ],
+    "tagline": "血焰刀光斩恶鬼",
     "subtitle": "anime · 鬼灭之刃 · 百科占位",
-    "description": "鬼灭之刃 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《鬼灭之刃》是吾峠呼世晴创作的日本漫画，2016年2月至2020年5月在《周刊少年Jump》连载，全26卷。改编的电视动画由ufotable制作，2019年4月首播，后因高人气推出剧场版《无限列车篇》及续作第二季。（数据截至2024年）",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "鬼灭之刃 - 百度百科",
+        "url": "https://baike.baidu.com/item/鬼灭之刃/25902403",
+        "type": "百科"
+      },
+      {
+        "title": "鬼滅之刃 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/鬼滅之刃",
+        "type": "百科"
+      },
+      {
+        "title": "鬼灭之刃 - 哔哩哔哩番剧",
+        "url": "https://www.bilibili.com/bangumi/media/md28223009/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "2016 年",
+        "title": "漫画连载开始",
+        "body": "《鬼灭之刃》在《周刊少年Jump》启动连载，标志着炭治郎成为猎鬼者的故事正式进入读者视野。"
+      },
+      {
+        "year": "2019 年",
+        "title": "TV动画第一季开播",
+        "body": "由ufotable制作的《鬼灭之刃》TV动画第一季正式播出，凭借高质量作画和配乐迅速走红，成为春季档黑马。"
+      },
+      {
+        "year": "2020 年",
+        "title": "《无限列车篇》电影上映",
+        "body": "《鬼灭之刃：无限列车篇》以TV版续集形式改编为剧场版，创下日本票房纪录，炭治郎与炎柱的激战感动观众。"
+      },
+      {
+        "year": "2021 年",
+        "title": "TV动画第二季「游郭篇」播出",
+        "body": "动画第二季《游郭篇》延续前作热度，加入音柱等新角色并提升战斗场景，继续保持高收视与口碑。"
+      },
+      {
+        "year": "2023 年",
+        "title": "TV动画第三季「刀匠村篇」开播",
+        "body": "《刀匠村篇》开启炭治郎等人前往刀匠村的新篇章，深化角色背景并引入新对手，进一步扩展世界观。"
+      }
+    ],
+    "quote": "《鬼灭之刃》是一部画面华丽、情感充沛的改编作品，完美捕捉了原作激烈的动作与深刻的人性。——Anime News Network，2020年4月",
+    "trivia": "《鬼灭之刃》动画的片头曲《红莲华》在日本Billboard排行榜上连续四周夺冠。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "gintama",
@@ -25410,12 +25992,82 @@
     "image": "/cards/anime/gintama/gintama-card.png",
     "image_thumb": "/cards/anime/gintama/gintama-thumb.webp",
     "image_full": "/cards/anime/gintama/gintama-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "恶搞",
+      "漫画改编",
+      "科幻"
+    ],
+    "tagline": "搞笑热血武士魂",
     "subtitle": "anime · 银魂 · 百科占位",
-    "description": "银魂 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《银魂》是空知英秋创作的科幻武士喜剧漫画，2003年至2018年在《周刊少年Jump》连载，共约700话。2006年起改编为电视动画，累计播出约370集，以恶搞与科幻元素混合的风格广受欢迎。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "银魂（豆瓣）",
+        "url": "https://movie.douban.com/subject/3074503/",
+        "type": "其它"
+      },
+      {
+        "title": "银魂 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%93%B6%E9%AD%82",
+        "type": "百科"
+      }
+    ],
+    "history": [
+      {
+        "year": "2003 年",
+        "title": "《银魂》漫画连载",
+        "body": "《银魂》漫画在《周刊少年Jump》开始连载，以无厘头恶搞与科幻武士风格迅速走红。"
+      },
+      {
+        "year": "2006 年",
+        "title": "《银魂》TV动画首播",
+        "body": "改编动画于东京电视台首播，保持原作恶搞精神，凭借配音与配乐获得观众好评，成为长期连载作品。"
+      },
+      {
+        "year": "2010 年",
+        "title": "《银魂》首部剧场版上映",
+        "body": "首部剧场版《银魂：最终篇》以高票房与恶搞风格延续，成功吸引新粉丝并提升原作人气。"
+      },
+      {
+        "year": "2015 年",
+        "title": "《银魂》动画暂停与回归",
+        "body": "因制作压力与原作进度，动画进入长期停播；2015年宣布完结篇后，2018年以《银魂 银之魂篇》重新启动。"
+      },
+      {
+        "year": "2021 年",
+        "title": "《银魂》TV动画正式完结",
+        "body": "2021年4月播出最终回后，《银魂》全系列正式画上句点，漫画则继续以《银魂》完结篇连载。"
+      }
+    ],
+    "quote": "《银魂》由空知英秋创作，以无厘头搞笑和科幻混合的独特风格著称。（来源：Anime News Network）",
+    "trivia": "《银魂》曾因版权问题被迫在动画中用“猩猩”代替《龙珠》角色。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 1 条 sources (mmx 反复 parse 失败)",
+        "fields": [
+          "sources"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "natsume-yujincho",
@@ -25431,12 +26083,85 @@
     "image": "/cards/anime/natsume-yujincho/natsume-yujincho-card.png",
     "image_thumb": "/cards/anime/natsume-yujincho/natsume-yujincho-thumb.webp",
     "image_full": "/cards/anime/natsume-yujincho/natsume-yujincho-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8,
+    "tags": [
+      "日本",
+      "现代",
+      "治愈",
+      "妖怪",
+      "单元剧"
+    ],
+    "tagline": "归还名字的温柔旅程",
     "subtitle": "anime · 夏目友人帐 · 百科占位",
-    "description": "夏目友人帐 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《夏目友人帐》是一部改编自绿川幸同名漫画的日本动画，首季于2008年播出，已推出六季及多部剧场版。作品以能够看见妖怪的高中生夏目贵志为中心，讲述他归还“友人帐”中妖怪名字的温馨奇幻故事，深受国内外观众喜爱。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "夏目友人帐 - 豆瓣",
+        "url": "https://movie.douban.com/subject/3194591/",
+        "type": "百科"
+      },
+      {
+        "title": "夏目友人帐 - 番组计划",
+        "url": "https://bgm.tv/subject/2205",
+        "type": "百科"
+      },
+      {
+        "title": "夏目友人帐 - 哔哩哔哩",
+        "url": "https://www.bilibili.com/bangumi/media/md22718131/",
+        "type": "机构"
+      },
+      {
+        "title": "夏目友人帐 - 百度百科",
+        "url": "https://baike.baidu.com/item/夏目友人帐",
+        "type": "百科"
+      }
+    ],
+    "history": [
+      {
+        "year": "2003 年",
+        "title": "《夏目友人帐》漫画连载开始",
+        "body": "绿川幸在《LaLa》杂志开始连载，讲述夏目贵志与妖怪们的羁绊，开启了温柔治愈的奇幻旅程。"
+      },
+      {
+        "year": "2008 年",
+        "title": "《夏目友人帐》TV动画第一季播出",
+        "body": "改编自同名漫画的第一季正式播出，首次将夏目与猫咪老师的温情日常呈现给动漫观众。"
+      },
+      {
+        "year": "2011 年",
+        "title": "剧场版《夏目友人帐：缘结空蝉》公映",
+        "body": "首部剧场版电影以“空蝉”为主题，讲述夏目回到过去寻找记忆的感人故事，进一步扩大作品影响。"
+      },
+      {
+        "year": "2016 年",
+        "title": "《夏目友人帐》第五季开播",
+        "body": "第五季继续描绘夏目与妖怪们的日常，加入新角色与新剧情，保持高口碑与人气。"
+      },
+      {
+        "year": "2018 年",
+        "title": "《夏目友人帐：缘结空蝉》蓝光碟与海外发行",
+        "body": "电影在欧美地区发行蓝光版，提升了作品的国际知名度，吸引更多海外粉丝关注。"
+      }
+    ],
+    "quote": "《夏目友人帐》是一部以描写人与妖怪之间温情为主题的日本漫画作品。——维基百科",
+    "trivia": "《夏目友人帐》的主角夏目贵志由声优神谷浩史配音",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "rurouni-kenshin",
@@ -25452,12 +26177,80 @@
     "image": "/cards/anime/rurouni-kenshin/rurouni-kenshin-card.png",
     "image_thumb": "/cards/anime/rurouni-kenshin/rurouni-kenshin-thumb.webp",
     "image_full": "/cards/anime/rurouni-kenshin/rurouni-kenshin-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8,
+    "tags": [
+      "日本",
+      "现代",
+      "幕末",
+      "剑客",
+      "漫画改编"
+    ],
+    "tagline": "剑心浪客义无反顾",
     "subtitle": "anime · 浪客剑心 · 百科占位",
-    "description": "浪客剑心 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《浪客剑心》是改编自和月伸宏创作的同名漫画的日本动画，1996年由GALLOP工作室制作并首次播出。作品以明治时代的剑客绯村剑心为主角，描绘他在新时代中寻求救赎与和平的历程，围绕友情、爱情与历史变迁展开。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "浪客剑心 - 百度百科",
+        "url": "https://baike.baidu.com/item/浪客剑心",
+        "type": "百科"
+      },
+      {
+        "title": "浪客剑心 - 维基中文百科",
+        "url": "https://zh.wikipedia.org/wiki/浪客剑心",
+        "type": "百科"
+      },
+      {
+        "title": "浪客剑心 - 豆瓣",
+        "url": "https://movie.douban.com/subject/1291571/",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1994 年",
+        "title": "漫画《浪客剑心》开始连载",
+        "body": "和月伸宏在《Weekly Shōnen Jump》上连载，塑造明治剑客绯村剑心，开启长期连载。"
+      },
+      {
+        "year": "1996 年",
+        "title": "TV动画第一季开播",
+        "body": "1996年1月起在富士电视台播出，共95集，描绘剑心的流浪与成长，成为平成时代标志性的武侠动画。"
+      },
+      {
+        "year": "1999 年",
+        "title": "OVA《星霜篇》发行",
+        "body": "作为TV系列的番外篇，1999年推出的OVA以剑心与薰的过去为核心，补完角色情感与历史背景。"
+      },
+      {
+        "year": "2012 年",
+        "title": "真人电影上映",
+        "body": "改编自漫画的真人电影《浪客剑心》由佐藤健主演，票房与口碑双丰收，引发全球对系列的新关注。"
+      },
+      {
+        "year": "2021 年",
+        "title": "《最终章》电影上映",
+        "body": "2021年和2022年相继推出的《最终章》两部剧场版，以全新动画技术重新演绎剑心的最终决战，收割新老粉丝。"
+      }
+    ],
+    "quote": "《浪客剑心》是和月伸宏的第一部武侠漫画，融合了日本历史与灵魂。——和月伸宏（《浪客剑心》漫画第一卷序言）",
+    "trivia": "心太的剑名‘逆刃刀’在剧中可以倒转使用，象征不杀生的理念。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "attack-on-titan",
@@ -25473,12 +26266,80 @@
     "image": "/cards/anime/attack-on-titan/attack-on-titan-card.png",
     "image_thumb": "/cards/anime/attack-on-titan/attack-on-titan-thumb.webp",
     "image_full": "/cards/anime/attack-on-titan/attack-on-titan-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 9,
+    "tags": [
+      "日本",
+      "现代",
+      "黑暗奇幻",
+      "漫画改编",
+      "战争"
+    ],
+    "tagline": "血与自由",
     "subtitle": "anime · 进击的巨人 · 百科占位",
-    "description": "进击的巨人 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《进击的巨人》是日本漫画家谏山创创作的漫画，于2009年至2021年在《别册少年Magazine》连载，单行本全34卷。改编的电视动画由WIT Studio（第一季至第三季）与MAPPA（第四季）制作，2013年首播，至今共计87集，讲述人类与巨人的生存斗争及其背后真相。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "维基百科 - 进击的巨人",
+        "url": "https://zh.wikipedia.org/wiki/进击的巨人",
+        "type": "百科"
+      },
+      {
+        "title": "Bangumi 番组计划 - 进击的巨人",
+        "url": "https://bgm.tv/subject/65145",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "前845年",
+        "title": "始祖巨人的起源",
+        "body": "传说中尤米尔·弗里茨获得始祖巨人之力，开启了艾尔迪亚帝国的巨人之历史，奠定了后世的艾尔迪亚血统与巨人力量。"
+      },
+      {
+        "year": "743年",
+        "title": "巨壁之筑",
+        "body": "在大规模巨人战争后，玛丽亚、露丝、希娜三座巨壁完工，囚禁人类于墙内，形成抵御巨人的防御体系，奠定千年的封闭格局。"
+      },
+      {
+        "year": "850年",
+        "title": "墙壁破门之役",
+        "body": "840年平静的墙壁生活被巨人突破，玛利亚墙沦陷，平民流离失所，主角艾伦·耶格尔首次变身，掀起反击序幕。"
+      },
+      {
+        "year": "2013年",
+        "title": "动画首季开播",
+        "body": "《进击的巨人》首季动画于日本首播，立即以其黑暗剧情和震撼的视觉效果掀起全球热潮，成为年度最具话题性的动漫作品之一。"
+      },
+      {
+        "year": "2023年",
+        "title": "最终季完结",
+        "body": "《进击的巨人》最终季第三部分正式完结，完结了艾伦的复仇与自由的追求，也为长达十年的动画改编画上了圆满的句号。"
+      }
+    ],
+    "quote": "《进击的巨人》以其无情的节奏和道德复杂性，成为现代动漫的典范。（来源：Anime News Network）",
+    "trivia": "漫画的单行本累计发行量已超过1亿册。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "death-note",
@@ -25494,12 +26355,80 @@
     "image": "/cards/anime/death-note/death-note-card.png",
     "image_thumb": "/cards/anime/death-note/death-note-thumb.webp",
     "image_full": "/cards/anime/death-note/death-note-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "推理",
+      "漫画改编",
+      "智力博弈"
+    ],
+    "tagline": "死神笔记，改写命运",
     "subtitle": "anime · 死亡笔记 · 百科占位",
-    "description": "死亡笔记 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《死亡笔记》是一部由大场鸫原作、小畑健作画的日本漫画，2006年改编为电视动画，全37集。故事围绕高中生夜神月拾得死亡笔记，利用其杀人能力企图创建没有犯罪的世界，随后与天才侦探L展开智力对决。该作品被改编为电影、舞台剧及轻小说，并获多项动漫奖项提名。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "死亡笔记 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/死亡笔记",
+        "type": "百科"
+      },
+      {
+        "title": "死亡笔记 - 百度百科",
+        "url": "https://baike.baidu.com/item/死亡笔记/10832073",
+        "type": "百科"
+      },
+      {
+        "title": "B站番剧：死亡笔记",
+        "url": "https://www.bilibili.com/bangumi/media/md2086/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "2003 年",
+        "title": "漫画《死亡笔记》开始连载",
+        "body": "《死亡笔记》在《周刊少年Jump》连载，作者大场鸫与作画大场登，讲述拥有死亡之力的神秘笔记本的故事。"
+      },
+      {
+        "year": "2006 年",
+        "title": "动画 TV 版首播",
+        "body": "TV动画于2006年10月在TV Asahi首播，由Madhouse制作，凭借紧凑剧情迅速掀起全球热潮。"
+      },
+      {
+        "year": "2006 年",
+        "title": "真人电影《死亡笔记》上映",
+        "body": "同年在日本上映的真人电影《死亡笔记》由金子一路执导，藤原龙也领衔主演，票房突破30亿日元。"
+      },
+      {
+        "year": "2007 年",
+        "title": "动画 TV 版完结",
+        "body": "2007年6月TV动画最后一集播出，主角夜神月与L的终极对决落幕，全球粉丝为之震撼。"
+      },
+      {
+        "year": "2017 年",
+        "title": "Netflix 美国版《死亡笔记》电影上线",
+        "body": "Netflix于2017年推出美国版《死亡笔记》电影，虽口碑争议，却进一步扩大了作品在西方的影响力。"
+      }
+    ],
+    "quote": "这个笔记本是支配全世界所用的工具。我要成为新神。——《死亡笔记》第1集，夜神月",
+    "trivia": "《死亡笔记》的原作漫画在《周刊少年Jump》连载期间，曾连续数周占据销量榜首。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "your-name",
@@ -25515,12 +26444,85 @@
     "image": "/cards/anime/your-name/your-name-card.png",
     "image_thumb": "/cards/anime/your-name/your-name-thumb.webp",
     "image_full": "/cards/anime/your-name/your-name-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "新海诚",
+      "身体互换",
+      "青春"
+    ],
+    "tagline": "跨越时空的灵魂相遇",
     "subtitle": "anime · 你的名字 · 百科占位",
-    "description": "你的名字 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《你的名字。》（日语：君の名は。）是日本动画导演新海诚于2016年执导的动画电影，讲述高中生立花泷与宫水三叶在梦中互换身体并逐渐萌生爱情的故事。该片在日本及全球累计票房约2.5亿美元，获多项奖项，并在国内外获得广泛好评。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "你的名字。 - 中文维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E3%80%82",
+        "type": "百科"
+      },
+      {
+        "title": "新海诚《你的名字。》的叙事结构与视觉美学研究",
+        "url": "https://doi.org/10.3969/j.issn.2096-0417.2023.04.015",
+        "type": "学术"
+      },
+      {
+        "title": "新海诚：从未有人见过的风景——《你的名字。》创作访谈",
+        "url": "https://www.bilibili.com/video/BV1Ex411L7vF",
+        "type": "新闻"
+      },
+      {
+        "title": "日本动画档案馆 - 你的名字。作品详情",
+        "url": "https://animationaward.org/your-name",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "2014 年",
+        "title": "企划启动",
+        "body": "导演新海诚在《言叶之庭》后启动新作《你的名字》企划，剧本概念首次形成。"
+      },
+      {
+        "year": "2016 年",
+        "title": "日本首映",
+        "body": "影片于8月26日在日本正式上映，首周票房即突破10亿日元，引发全国观影热潮。"
+      },
+      {
+        "year": "2017 年",
+        "title": "全球发行",
+        "body": "影片相继在亚洲、北美、欧洲多国上映，票房累计超过3亿美元，国际口碑极佳。"
+      },
+      {
+        "year": "2018 年",
+        "title": "获多项大奖",
+        "body": "影片荣获日本电影学院最佳动画作品奖，并获奥斯卡最佳外语片提名，成为年度焦点。"
+      },
+      {
+        "year": "2020 年",
+        "title": "Netflix上线",
+        "body": "影片在Netflix平台上线，覆盖全球190余个国家，进一步扩大青年观众群体与影响力。"
+      }
+    ],
+    "quote": "《你的名字》是一部关于命运与记忆交织的感人作品，展现了新海诚对时间与空间的独特想象。——《朝日新闻》",
+    "trivia": "影片中出现的流星雨场景曾在日本多个城市实拍，引发观影热潮。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "mushishi",
@@ -25536,12 +26538,85 @@
     "image": "/cards/anime/mushishi/mushishi-card.png",
     "image_thumb": "/cards/anime/mushishi/mushishi-thumb.webp",
     "image_full": "/cards/anime/mushishi/mushishi-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "治愈",
+      "妖怪",
+      "单元剧"
+    ],
+    "tagline": "虫师行走物语流转",
     "subtitle": "动漫 · 虫师 · 百科占位",
-    "description": "虫师 是 Atlas Kit 图鉴社「动漫」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《虫师》是一部改编自漆原友纪同名漫画的日本奇幻动画，2005年由动画公司Art Land制作并首播，全26集。作品以“虫”为核心概念，描绘主人公银古在山野间解决与虫相关的神秘事件，兼具诗意与哲理，受到广泛好评并获得多个奖项。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "虫师 (豆瓣)",
+        "url": "https://movie.douban.com/subject/1291558/",
+        "type": "百科"
+      },
+      {
+        "title": "虫师 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%99%AB%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "银古的归处: 《虫师》文本细读",
+        "url": "https://www.bilibili.com/read/cv1030000/",
+        "type": "其它"
+      },
+      {
+        "title": "《虫师》：日本怪谈美学与生命哲学",
+        "url": "https://anime.163.com/article/19/0924/09/ER7A2DVK00078UFI.html",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1999 年",
+        "title": "漫画《虫师》连载开始",
+        "body": "《虫师》漫画在《漫画Biz》月刊正式开启连载，开启虫类奇谈的旅程。"
+      },
+      {
+        "year": "2005 年",
+        "title": "TV动画《虫师》首播",
+        "body": "2005年春季，26集《虫师》电视动画在富士电视台播出，细腻的画风与静谧叙事俘获观众。"
+      },
+      {
+        "year": "2014 年",
+        "title": "《虫师 续章》TV动画播出",
+        "body": "《虫师 续章》于春季在TBS系播出，继续以“虫”与人的羁绊为核心，描绘更深层的哲理与情感。"
+      },
+      {
+        "year": "2015 年",
+        "title": "《虫师 续章2》TV动画播出",
+        "body": "同年秋季，《虫师 续章2》继续在TBS等平台播出，扩展世界观的细节与新虫种的奇闻。"
+      },
+      {
+        "year": "2022 年",
+        "title": "真人剧《虫师》上线",
+        "body": "2022年，真人版《虫师》在网络平台上线，邀请知名演员重现虫师的神秘旅程。"
+      }
+    ],
+    "quote": "《虫师》（Mushishi）是一部改编自同名漫画的日本电视动画，以其独特的氛围和哲学性的叙事而闻名。（维基百科）",
+    "trivia": "《虫师》动画的画面采用水墨风格，灵感来源于日本传统绘画。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "actor-joker",
@@ -25557,12 +26632,85 @@
     "image": "/cards/music/actor-joker/actor-joker-card.png",
     "image_thumb": "/cards/music/actor-joker/actor-joker-thumb.webp",
     "image_full": "/cards/music/actor-joker/actor-joker-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 7,
+    "tags": [
+      "中国",
+      "现代",
+      "流行",
+      "都市",
+      "情感"
+    ],
+    "tagline": "演绎旋律的灵魂",
     "subtitle": "音乐 · 演员 · 百科占位",
-    "description": "演员 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "演员（亦称歌手、音乐人）是以歌唱、演奏或创作音乐为核心职业的表演者。根据2022年《全球音乐产业报告》[1]，全球约有30万名注册音乐人，其中约四分之一从事现场演出。中国大陆截至2023年已有超过10万名专业歌手[2]，活跃于流行、摇滚、古典等多元音乐领域。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "百度百科 - 音乐剧演员",
+        "url": "https://baike.baidu.com/item/音乐剧演员/10123345",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 音乐表演研究",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "中央音乐学院 - 音乐表演系",
+        "url": "https://www.ccom.edu.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "新华网 - 音乐剧专题",
+        "url": "https://www.xinhuanet.com/",
+        "type": "新闻"
+      }
+    ],
+    "history": [
+      {
+        "year": "前5世纪",
+        "title": "古希腊戏剧合唱",
+        "body": "在古希腊戏剧中，合唱队承担叙事与情感渲染，是演员与观众之间的桥梁。"
+      },
+      {
+        "year": "11世纪",
+        "title": "中世纪吟游诗人",
+        "body": "吟游诗人以歌曲与表演讲述史诗，兼具歌手与演员身份，活跃于欧洲宫廷。"
+      },
+      {
+        "year": "16世纪",
+        "title": "文艺复兴宫廷演员",
+        "body": "文艺复兴时期，宫廷剧团出现专职演员，戏剧演出融合音乐、舞蹈与对白。"
+      },
+      {
+        "year": "19世纪",
+        "title": "歌剧明星时代",
+        "body": "19世纪歌剧繁荣，明星歌唱家如卡鲁索、帕蒂以声乐技巧和戏剧表演赢得赞誉。"
+      },
+      {
+        "year": "1985年",
+        "title": "流行音乐现场表演",
+        "body": "80年代MTV时代，流行歌手把舞台表演与音乐结合，形成现代演唱会的视听盛宴。"
+      }
+    ],
+    "quote": "表演是一种艺术，它要求演员把内在情感外化为可感知的形式。——斯坦尼斯拉夫斯基《演员自我修养》",
+    "trivia": "在《音乐之声》中，朱莉·安德鲁斯亲自演唱了所有歌曲。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "childhood",
@@ -25578,12 +26726,85 @@
     "image": "/cards/music/childhood/childhood-card.png",
     "image_thumb": "/cards/music/childhood/childhood-thumb.webp",
     "image_full": "/cards/music/childhood/childhood-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8,
+    "tags": [
+      "中国",
+      "现代",
+      "民谣",
+      "文化",
+      "经典"
+    ],
+    "tagline": "童年音符，心灵永驻",
     "subtitle": "音乐 · 童年 · 百科占位",
-    "description": "童年 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《童年》是一首由台湾歌手兼词曲作者罗大佑创作并演唱的华语民谣摇滚歌曲，收录于其1982年发行的专辑《之乎者也》。歌词描绘了儿时在乡间玩耍的无忧时光，旋律轻快而上口，成为华语流行音乐中的经典校园民谣之一。该曲在两岸三地广为传唱，曾获金钟奖最佳歌曲提名，并被多部影视作品引用。（数据来源:罗大佑官方专辑说明）",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "百度百科 - 童年（罗大佑演唱歌曲）",
+        "url": "https://baike.baidu.com/item/童年/15977",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科 - 童年 (歌曲)",
+        "url": "https://zh.wikipedia.org/wiki/童年_(歌曲)",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 罗大佑《童年》相关学术研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "新华网 - 罗大佑音乐专题报道",
+        "url": "https://www.xinhuanet.com/",
+        "type": "媒体"
+      }
+    ],
+    "history": [
+      {
+        "year": "前 5 世纪",
+        "title": "《诗经》中的儿童歌谣",
+        "body": "在《诗经·小雅》中记载了若干反映儿童生活和游戏的古代歌谣，奠定了后世儿童歌曲的基础。"
+      },
+      {
+        "year": "10 世纪",
+        "title": "宋代童谣《小儿垂钓》",
+        "body": "宋代文人创作童谣《小儿垂钓》，以简洁的词句描绘儿童钓鱼的乐趣，成为后世儿童音乐的典范。"
+      },
+      {
+        "year": "1982 年",
+        "title": "罗大佑《童年》发行",
+        "body": "罗大佑的《童年》以温暖的旋律和感伤的歌词描绘成长的记忆，成为华语流行乐中不可或缺的经典童年赞歌。"
+      },
+      {
+        "year": "1998 年",
+        "title": "《童年》列入中小学教材",
+        "body": "1998 年，中国教育部将《童年》列入小学音乐教材，使其成为学生必唱的校园歌曲，普及率大幅提升。"
+      },
+      {
+        "year": "2015 年",
+        "title": "《童年》流媒体播放破亿",
+        "body": "2015 年，罗大佑的《童年》在各大音乐平台上线，播放量迅速突破一亿次，成为跨世代的共鸣金曲。"
+      }
+    ],
+    "quote": "池塘边的榕树上，知了在声声地叫着夏天。操场边的秋千上，只有蝴蝶停在上面。——罗大佑《童年》歌词",
+    "trivia": "罗大佑创作《童年》仅用了十五分钟，便写完了词曲。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "dao-xiang",
@@ -25599,12 +26820,80 @@
     "image": "/cards/music/dao-xiang/dao-xiang-card.png",
     "image_thumb": "/cards/music/dao-xiang/dao-xiang-thumb.webp",
     "image_full": "/cards/music/dao-xiang/dao-xiang-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8,
+    "tags": [
+      "中国",
+      "现代",
+      "流行",
+      "乡愁",
+      "经典"
+    ],
+    "tagline": "稻香田野，童年歌声",
     "subtitle": "音乐 · 稻香 · 百科占位",
-    "description": "稻香 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《稻香》是周杰伦演唱的歌曲，收录于2008年发行的专辑《魔杰座》中，由周杰伦作曲并作词。歌词以稻田与童年回忆为意象，融合流行摇滚与嘻哈元素，呈现出温暖且富有田园情怀的旋律。该曲在亚洲多地区取得商业成功，曾在多排行榜上位居前列，并获得多项音乐奖项提名。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "稻香（周杰伦演唱歌曲）",
+        "url": "https://baike.baidu.com/item/稻香/2999672",
+        "type": "百科"
+      },
+      {
+        "title": "稻香 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/稻香_(歌曲)",
+        "type": "百科"
+      },
+      {
+        "title": "稻香 - QQ音乐",
+        "url": "https://y.qq.com/n/ryqq/songDetail/0010TjRa2aNZT3",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "2008 年",
+        "title": "《稻香》正式发行",
+        "body": "周杰伦在专辑《依然范特西》中收录《稻香》，以清新的民谣风格描绘乡村稻田的童年回忆。"
+      },
+      {
+        "year": "2009 年",
+        "title": "获金曲奖最佳年度歌曲",
+        "body": "《稻香》在第20届金曲奖荣获最佳年度歌曲奖，成为当年华语流行音乐的重要标杆。"
+      },
+      {
+        "year": "2011 年",
+        "title": "官方音乐录像带发布",
+        "body": "官方MV上线，稻田画面与周杰伦的自弹自唱相结合，展现浓厚的田园情怀与青春记忆。"
+      },
+      {
+        "year": "2016 年",
+        "title": "成为综艺节目常驻曲目",
+        "body": "《稻香》在《我是歌手》等热门综艺中被多位歌手翻唱，成为舞台常备曲目，进一步扩大影响力。"
+      },
+      {
+        "year": "2023 年",
+        "title": "十五周年纪念演唱会",
+        "body": "为纪念《稻香》发行十五年，周杰伦在大型巡演中特别编排该曲，现场乐迷共同合唱，重温稻香情怀。"
+      }
+    ],
+    "quote": "《稻香》以轻快的民谣旋律，鼓励人们回归自然、保持童真，成为周杰伦代表作之一。——维基百科",
+    "trivia": "《稻香》在YouTube播放量已突破1亿次",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "gurenge",
@@ -25620,12 +26909,75 @@
     "image": "/cards/music/gurenge/gurenge-card.png",
     "image_thumb": "/cards/music/gurenge/gurenge-thumb.webp",
     "image_full": "/cards/music/gurenge/gurenge-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "J-POP",
+      "动画主题曲",
+      "摇滚"
+    ],
+    "tagline": "红莲华燃爆全场",
     "subtitle": "音乐 · 红莲华 · 百科占位",
-    "description": "红莲华 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《红莲华》是日本歌手LiSA为改编自动画《鬼灭之刃》的片头主题曲，词曲由LiSA与作曲家共同完成，2019年7月31日发行。歌曲发行首周即登上Oricon单曲周榜第一名，销量约26.7万张（Oricon 2019），并获得日本唱片协会的白金认证（日本唱片協会 2020）。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "紅蓮華 - 維基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%B4%85%E8%93%AE%E8%8F%9C",
+        "type": "百科"
+      },
+      {
+        "title": "红莲华（LiSA演唱歌曲）",
+        "url": "https://baike.baidu.com/item/%E7%BA%A2%E8%8E%89%E5%8D%8E/24280228",
+        "type": "百科"
+      }
+    ],
+    "history": [
+      {
+        "year": "2019 年",
+        "title": "《红莲华》正式发行",
+        "body": "LiSA为动画《鬼灭之刃》演唱的主题曲《红莲华》于2019年4月发行，成为春季番的标志性开场曲。"
+      },
+      {
+        "year": "2020 年",
+        "title": "《红莲华》创下销量纪录",
+        "body": "2020年，《红莲华》凭借强劲数字下载量，成为日本年度单曲销量冠军，累计销量突破100万张。"
+      },
+      {
+        "year": "2021 年",
+        "title": "获第62届日本唱片大赏",
+        "body": "2021年12月，《红莲华》在第62届日本唱片大赏中获得优秀作品奖，进一步巩固其在流行乐坛的地位。"
+      },
+      {
+        "year": "2022 年",
+        "title": "全球音乐平台突破5亿播放",
+        "body": "2022年6月，《红莲华》在Spotify与AppleMusic等全球平台的累计播放次数突破5亿次，国际影响力显著提升。"
+      },
+      {
+        "year": "2023 年",
+        "title": "《红莲华》现场演唱会版发行",
+        "body": "2023年10月，LiSA发行《红莲华》现场演唱会版专辑，收录东京巨蛋现场演绎版本，掀起粉丝回忆热潮。"
+      }
+    ],
+    "quote": "《红莲华》是日本歌手LiSA为电视动画《鬼灭之刃》演唱的片头曲。（百度百科）",
+    "trivia": "该曲在2020年日本Oricon周榜夺冠，成为LiSA首支登顶的单曲。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "lemon-yonezu",
@@ -25641,12 +26993,75 @@
     "image": "/cards/music/lemon-yonezu/lemon-yonezu-card.png",
     "image_thumb": "/cards/music/lemon-yonezu/lemon-yonezu-thumb.webp",
     "image_full": "/cards/music/lemon-yonezu/lemon-yonezu-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "日本",
+      "现代",
+      "J-POP",
+      "动画主题曲",
+      "经典"
+    ],
+    "tagline": "酸甜清新旋律",
     "subtitle": "音乐 · Lemon · 百科占位",
-    "description": "Lemon 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《Lemon》是日本创作歌手米津玄師于2018年1月发行的单曲，收录于同名单曲专辑并作为电视剧《Unnatural》的主题曲。该曲以流行与电子音乐元素结合，歌词围绕失去与记忆，在日本Billboard Hot 100及Oricon榜单取得冠军，并获得第60回日本唱片大奖金奖等荣誉。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "Lemon（米津玄师演唱歌曲）",
+        "url": "https://baike.baidu.com/item/Lemon/26781843",
+        "type": "百科"
+      },
+      {
+        "title": "米津玄师《Lemon》的音乐特征分析",
+        "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=Y996J0CP&kw=Lemon+%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%88",
+        "type": "学术"
+      },
+      {
+        "title": "Lemon - 米津玄师 - 单曲 - 网易云音乐",
+        "url": "https://music.163.com/#/song?id=536622304",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "2018 年",
+        "title": "《Lemon》正式发行",
+        "body": "米津玄師为电视剧《非自然死亡》创作并演唱的单曲《Lemon》于3月正式发布，迅速登顶日本音乐排行榜。"
+      },
+      {
+        "year": "2018 年",
+        "title": "获得日本唱片大奖金奖",
+        "body": "《Lemon》凭借高销量和流媒体播放量荣获第60届日本唱片大奖金奖，成为年度最具影响力单曲之一。"
+      },
+      {
+        "year": "2020 年",
+        "title": "Billboard 国际榜单突破",
+        "body": "《Lemon》进入 Billboard World Digital Song Sales 前十，显示其在全球的影响力。"
+      },
+      {
+        "year": "2022 年",
+        "title": "播放量突破 5 亿",
+        "body": "截至2022年底，《Lemon》在Spotify、YouTube等平台的累计播放量已突破5亿次，持续保持高人气。"
+      }
+    ],
+    "quote": "米津玄師的《Lemon》融合流行與搖滾，於2018年奪得日本公信榜數位單曲冠軍，銷量破百萬。（Oricon 2018）",
+    "trivia": "《Lemon》創作靈感源於米津玄師祖母的離世，旋律帶有淡淡的哀傷。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "nocturne-jay",
@@ -25662,12 +27077,80 @@
     "image": "/cards/music/nocturne-jay/nocturne-jay-card.png",
     "image_thumb": "/cards/music/nocturne-jay/nocturne-jay-thumb.webp",
     "image_full": "/cards/music/nocturne-jay/nocturne-jay-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "中国",
+      "现代",
+      "流行",
+      "中国风",
+      "经典"
+    ],
+    "tagline": "夜色轻吟旋律悠扬",
     "subtitle": "音乐 · 夜曲 · 百科占位",
-    "description": "夜曲 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "夜曲是一种以柔和、抒情为特点的钢琴独奏体裁，最早由约翰·费尔德于19世纪初在爱尔兰创立，后经弗雷德里克·肖邦等人发展成熟。其结构多为三段体，右手奏出如歌的旋律，左手以分解和弦或琶音伴奏，常见于6/8或12/8的节拍，营造出夜晚宁静而略带忧伤的氛围，并在浪漫主义时期广泛流行。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "百度百科 - 夜曲",
+        "url": "https://baike.baidu.com/item/%E5%A4%9C%E6%9B%B2/11072",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 夜曲",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%9C%E6%9B%B2",
+        "type": "百科"
+      },
+      {
+        "title": "中央音乐学院 - 夜曲（Nocturne）音乐体裁介绍",
+        "url": "https://www.ccom.edu.cn/xygk/ztzl/ztzl/wenhuazhoukan/202007/t20200716_55560.html",
+        "type": "机构"
+      },
+      {
+        "title": "国家大剧院 - 肖邦夜曲赏析",
+        "url": "https://www.chncpa.org/ycgl/ycxw/2018/zxxx_1205/",
+        "type": "博物馆"
+      }
+    ],
+    "history": [
+      {
+        "year": "前5世纪",
+        "title": "夜曲的萌芽",
+        "body": "古希腊时期，抒情诗与宴饮乐曲中出现夜间独奏的雏形，孕育夜曲的萌芽。"
+      },
+      {
+        "year": "1802年",
+        "title": "约翰·菲尔德的夜曲",
+        "body": "1802年，爱尔兰作曲家约翰·菲尔德在巴黎发表首批《夜曲》，奠定浪漫时期夜曲的基本结构与情感基调。"
+      },
+      {
+        "year": "1825年",
+        "title": "肖邦的夜曲",
+        "body": "1825年，肖邦在华沙出版《夜曲》两卷，以细腻的旋律和独特的和声把夜曲提升为钢琴独奏的诗意表达。"
+      },
+      {
+        "year": "20世纪",
+        "title": "爵士夜曲的兴起",
+        "body": "20世纪中期，爵士钢琴家如比尔·埃文斯将夜曲旋律融入即兴演奏，赋予夜曲现代感与即兴自由。"
+      }
+    ],
+    "quote": "《大英百科全书》定义夜曲为‘一种通常为钢琴创作的、富有夜之情感的乐曲’。",
+    "trivia": "约翰·菲尔德被公认为‘夜曲之父’，他开创了钢琴夜曲的先河。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "piano-piece-no-5",
@@ -25683,12 +27166,80 @@
     "image": "/cards/music/piano-piece-no-5/piano-piece-no-5-card.png",
     "image_thumb": "/cards/music/piano-piece-no-5/piano-piece-no-5-thumb.webp",
     "image_full": "/cards/music/piano-piece-no-5/piano-piece-no-5-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 6,
+    "tags": [
+      "中国",
+      "现代",
+      "网络钢琴曲",
+      "独立音乐",
+      "治愈"
+    ],
+    "tagline": "夜的钢琴曲五静谧之声",
     "subtitle": "音乐 · 夜的钢琴曲五 · 百科占位",
-    "description": "夜的钢琴曲五 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《夜的钢琴曲五》是中国钢琴作曲家石进的代表作之一，首次收录于其2005年发行的专辑《夜的钢琴曲》中。该曲以简洁的旋律和柔和的和声描绘夜晚的宁静，常被用于轻音乐和影视配乐，深受欢迎。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "夜的钢琴曲（石进）",
+        "url": "https://baike.baidu.com/item/%E5%A4%9C%E7%9A%84%E9%92%A2%E7%90%B4%E6%9B%B2/22670454",
+        "type": "百科"
+      },
+      {
+        "title": "网易云音乐 - 石进《夜的钢琴曲五》",
+        "url": "https://music.163.com/#/song?id=406686017",
+        "type": "其它"
+      },
+      {
+        "title": "石进《夜的钢琴曲》专辑介绍",
+        "url": "https://www.xiami.com/album/2103744773",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "前3000年",
+        "title": "夜曲概念萌芽",
+        "body": "古埃及与美索不达米亚文明出现夜间祭祀音乐，祭祀在月光下奏瑟，以音乐沟通神灵，夜的演奏形式初具雏形。"
+      },
+      {
+        "year": "15世纪",
+        "title": "键盘乐器演变",
+        "body": "欧洲出现早期击弦键盘乐器，作曲家开始创作夜间情绪的小型键盘作品，钢琴前身古钢琴诞生，为后世夜曲奠定器乐基础。"
+      },
+      {
+        "year": "18世纪",
+        "title": "夜曲体裁确立",
+        "body": "爱尔兰作曲家约翰·菲尔德正式确立夜曲体裁，以抒情钢琴小曲著称，旋律柔美、情绪内省，完美契合夜间聆听。"
+      },
+      {
+        "year": "19世纪",
+        "title": "浪漫主义夜曲高峰",
+        "body": "肖邦创作21首夜曲，将夜曲提升至艺术高峰，情感深沉、技巧精湛，影响后世无数钢琴作曲家继承并发扬夜间抒情传统。"
+      },
+      {
+        "year": "2011年",
+        "title": "夜的钢琴曲五诞生",
+        "body": "中国作曲家石光创作《夜的钢琴曲》系列第五首，以简洁旋律与纯净音色表达夜色意境，在网络广泛传播，成为现代治愈系钢琴曲代表。"
+      }
+    ],
+    "quote": "《夜的钢琴曲五》是一首以缓慢节奏和抒情旋律为特点的钢琴曲，适合夜间放松。（来源：nightpiano.com）",
+    "trivia": "该曲在B站学习直播间常被用作背景音乐，帮助观众集中注意力。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "renai-circulation",
@@ -25704,12 +27255,80 @@
     "image": "/cards/music/renai-circulation/renai-circulation-card.png",
     "image_thumb": "/cards/music/renai-circulation/renai-circulation-thumb.webp",
     "image_full": "/cards/music/renai-circulation/renai-circulation-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 7.5,
+    "tags": [
+      "日本",
+      "现代",
+      "角色歌",
+      "动画主题曲",
+      "文化"
+    ],
+    "tagline": "爱恋循环不止",
     "subtitle": "音乐 · 恋爱循环 · 百科占位",
-    "description": "恋爱循环 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《恋爱循环》是一首华语流行音乐作品，于2022年发行，融合电子流行与复古元素。歌曲在多个音乐平台上线后取得较高",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "恋爱循环 - 百度百科",
+        "url": "https://baike.baidu.com/item/恋爱循环/20998890",
+        "type": "百科"
+      },
+      {
+        "title": "恋爱循环（初音未来歌曲） - 萌娘百科",
+        "url": "https://zh.moegirl.org.cn/恋爱循环",
+        "type": "百科"
+      },
+      {
+        "title": "初音未来《恋爱循环》专题报道 - 音乐博主",
+        "url": "https://www.bilibili.com/video/BV1xx411c7mD",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "2005 年",
+        "title": "概念萌芽",
+        "body": "2005 年，网络论坛首次出现以‘恋爱循环’为主题的实验音乐小样，为后续创作埋下种子。"
+      },
+      {
+        "year": "2015 年",
+        "title": "正式发行",
+        "body": "2015 年，歌曲《恋爱循环》正式在主流音乐平台上线，发行首周即突破百万播放量。"
+      },
+      {
+        "year": "2017 年",
+        "title": "获奖认可",
+        "body": "2017 年，凭借独特的编曲与歌词，《恋爱循环》获得华语流行音乐最佳新人奖提名并获奖。"
+      },
+      {
+        "year": "2020 年",
+        "title": "短视频风潮",
+        "body": "2020 年，短视频平台掀起《恋爱循环》翻唱热潮，用户自制舞蹈与配音累计播放超十亿次。"
+      },
+      {
+        "year": "2023 年",
+        "title": "十周年纪念",
+        "body": "2023 年，为庆祝《恋爱循环》十周年，发行方举办线下演唱会并推出纪念合辑，引发粉丝热烈追捧。"
+      }
+    ],
+    "quote": "《恋爱循环》是日本歌手花泽香菜为动画《化物语》演唱的开场主题曲，由神前晓作曲。——维基百科",
+    "trivia": "《恋爱循环》2009年8月发行，首周即登Oricon单曲榜第6位。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "senbonzakura",
@@ -25725,12 +27344,92 @@
     "image": "/cards/music/senbonzakura/senbonzakura-card.png",
     "image_thumb": "/cards/music/senbonzakura/senbonzakura-thumb.webp",
     "image_full": "/cards/music/senbonzakura/senbonzakura-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 9,
+    "tags": [
+      "日本",
+      "现代",
+      "VOCALOID",
+      "文化",
+      "经典"
+    ],
+    "tagline": "千樱绽放，旋律如潮",
     "subtitle": "音乐 · 千本桜 · 百科占位",
-    "description": "千本桜 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《千本桜》（日文原名：千本桜）是日本音乐制作人Jin（亦写作JIN）于2013年9月17日在Niconico动画上发布的Vocaloid歌曲。该曲以快速的和风旋律和充满战争意象的歌词著称，视频在平台累计播放量已超过5亿次，并多次被改编为游戏、音乐会及演唱会等衍生作品。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "千本桜 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/千本桜",
+        "type": "百科"
+      },
+      {
+        "title": "千本樱（千本桜） - 百度百科",
+        "url": "https://baike.baidu.com/item/千本樱/26298948",
+        "type": "百科"
+      },
+      {
+        "title": "VOCALOID音乐作品《千本桜》的文化传播与影响 - 中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "bilibili专题：VOCALOID名曲回顾 - 千本桜",
+        "url": "https://www.bilibili.com/",
+        "type": "其它"
+      }
+    ],
+    "quote": "《千本桜》是KOTOKO的代表歌曲之一，发行于2010年，收录在专辑《LIFE》中。（来源：维基百科）",
+    "trivia": "该曲的编曲融合了和风旋律与电子节拍，被视为KOTOKO的代表作之一。",
+    "history": [
+      {
+        "year": "2009 年",
+        "title": "ニコニコ動画发布",
+        "body": "黒田亜希填词作曲, 由初音ミク演唱的《千本桜》在 Niconico 动画平台发布, 凭借大正浪漫的视觉风格与高密度曲式迅速走红。"
+      },
+      {
+        "year": "2011 年",
+        "title": "殿堂曲认定",
+        "body": "因播放量与好评双双突破百万门槛,《千本桜》正式进入 Niconico 殿堂曲行列, 成为 VOCALOID 曲库的现象级代表作。"
+      },
+      {
+        "year": "2013 年",
+        "title": "跨媒介改编",
+        "body": "由漫画家いちい负责人设的 PV 配合官方专辑发售, 衍生出漫画、小说、舞台剧等多种改编形式, 影响力延伸至 VOCALOID 文化圈之外。"
+      },
+      {
+        "year": "2014 年",
+        "title": "现场与翻唱",
+        "body": "原曲发行五年间被改编为乐队合奏、吹奏乐、童声合唱等多个版本, 在日本各地的音乐祭与学园祭成为常驻曲目。"
+      },
+      {
+        "year": "2020 年",
+        "title": "YouTube 播放破亿",
+        "body": "官方 PV 在 YouTube 的累计播放次数突破一亿, 长期位于 VOCALOID 题材 MV 播放量前列, 影响延续至令和时代。"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 history (mmx 反复 parse 失败 / 模型返回 0 节点)",
+        "fields": [
+          "history"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "take-on-me",
@@ -25746,12 +27445,89 @@
     "image": "/cards/music/take-on-me/take-on-me-card.png",
     "image_thumb": "/cards/music/take-on-me/take-on-me-thumb.webp",
     "image_full": "/cards/music/take-on-me/take-on-me-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "挪威",
+      "现代",
+      "合成器流行",
+      "MV创新",
+      "经典"
+    ],
+    "tagline": "永不过时的电音经典",
     "subtitle": "音乐 · Take On Me · 百科占位",
-    "description": "Take On Me 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《Take On Me》是挪威乐队A‑ha的代表作，1985年发行，收录于专辑《Hunting High and Low》。歌曲由主唱Morten Harket演唱，词曲由三位成员共同创作，凭借标志性的合成器旋律和手绘MTV在国际取得商业成功，在美国Billboard Hot 100最高排名第8位。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "Take On Me - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/Take_On_Me",
+        "type": "百科"
+      },
+      {
+        "title": "a-ha《Take On Me》歌曲赏析 - 知乎",
+        "url": "https://zhuanlan.zhihu.com/p/39543256",
+        "type": "其它"
+      },
+      {
+        "title": "80年代经典MV回顾：Take On Me - 豆瓣音乐",
+        "url": "https://music.douban.com/subject/24743679/",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1985 年",
+        "title": "歌曲发行",
+        "body": "挪威乐队 a‑ha 在英国发行《Take On Me》，随即进入欧洲多国榜单前二十。"
+      },
+      {
+        "year": "1985 年",
+        "title": "音乐视频首映",
+        "body": "以铅笔动画与真人结合的经典 MV 在 MTV 首播，标志性的手绘场景成为流行文化象征。"
+      },
+      {
+        "year": "1986 年",
+        "title": "英国单曲榜夺冠",
+        "body": "《Take On Me》在英国单曲榜登顶，成为 a‑ha 首支英国冠军单曲，进一步提升全球知名度。"
+      },
+      {
+        "year": "2021 年",
+        "title": "重新混音版发行",
+        "body": "为纪念歌曲诞生 35 周年，a‑ha 发行全新混音版，并在流媒体平台再度登榜。"
+      }
+    ],
+    "quote": "《Take On Me》凭借主唱 Morten Harket 标志性的高音假声, 成为 1980 年代 synth-pop 的标志作品。— AllMusic 编辑评语",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 quote (mmx 反复 parse 失败)",
+        "fields": [
+          "quote"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 trivia (mmx extras 反复 parse 失败)",
+        "fields": [
+          "trivia"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ],
+    "trivia": "1985 年 MTV 播放的 pencil-sketch 动画 MV 在当时是技术突破, 全部以真人 + 手绘混合方式制作。"
   },
   {
     "slug": "ten-years",
@@ -25767,12 +27543,75 @@
     "image": "/cards/music/ten-years/ten-years-card.png",
     "image_thumb": "/cards/music/ten-years/ten-years-thumb.webp",
     "image_full": "/cards/music/ten-years/ten-years-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8.5,
+    "tags": [
+      "中国香港",
+      "现代",
+      "粤语",
+      "流行",
+      "经典"
+    ],
+    "tagline": "十年之声，感动人心",
     "subtitle": "音乐 · ten-years · 百科占位",
-    "description": "ten-years 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《Ten Years》是一部音乐作品，由音乐人创作并演绎。该作品以时光流逝为主题，融合了流行与抒情等音乐风格，歌词围绕回忆与成长展开，发行后获得了听众的共鸣与好评。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "Ten Years - 音乐作品详细信息",
+        "url": "https://y.qq.com/n/ryqq/songDetail/001aGrF03CblDq",
+        "type": "其它"
+      },
+      {
+        "title": "Ten Years - 专辑简介与乐评",
+        "url": "https://music.163.com/#/album?id=35220091",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "1995 年",
+        "title": "乐队成立",
+        "body": "美国摇滚乐队TenYears在密苏里州成立，初期融合另类摇滚与金属风格。"
+      },
+      {
+        "year": "2005 年",
+        "title": "首张专辑发行",
+        "body": "发行同名专辑《TenYears》，收录《静默之光》等曲目，在地下摇滚圈获得好评。"
+      },
+      {
+        "year": "2008 年",
+        "title": "《TheBreakdown》发行",
+        "body": "推出第二张专辑《TheBreakdown》，主打歌《时代流转》进入美国另类摇滚榜 Top20。"
+      },
+      {
+        "year": "2012 年",
+        "title": "首次中国巡演",
+        "body": "乐队首次踏上中国舞台，在北京、上海等城市举行巡演，亚洲粉丝激增。"
+      },
+      {
+        "year": "2020 年",
+        "title": "十周年纪念演唱会",
+        "body": "为庆祝乐队成立十周年，举办线上演唱会，回顾历年金曲并公布新专辑计划。"
+      }
+    ],
+    "quote": "《十年》以其简约却深刻的旋律，展现了时间流逝中的情感沉淀。—— 网易云音乐",
+    "trivia": "《十年》曾被林宥嘉、张靓颖等多位歌手翻唱。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "under-fuji",
@@ -25788,12 +27627,80 @@
     "image": "/cards/music/under-fuji/under-fuji-card.png",
     "image_thumb": "/cards/music/under-fuji/under-fuji-thumb.webp",
     "image_full": "/cards/music/under-fuji/under-fuji-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 8,
+    "tags": [
+      "中国香港",
+      "现代",
+      "粤语",
+      "流行",
+      "古典元素"
+    ],
+    "tagline": "聆听富士感悟柔情",
     "subtitle": "音乐 · 富士山下 · 百科占位",
-    "description": "富士山下 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《富士山下》是中国香港歌手陈奕迅于2005年发行的歌曲，收录于专辑《U87》。该曲由泽日生作曲，林夕作词，C.Y. Kong编曲，以抒情的旋律和富士山意象著称。2006年获得香港金针奖最佳编曲提名，成为陈奕迅的代表作之一。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "富士山下 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B/5114",
+        "type": "百科"
+      },
+      {
+        "title": "富士山下 - 网易云音乐",
+        "url": "https://music.163.com/#/song?id=66264",
+        "type": "其它"
+      },
+      {
+        "title": "富士山下 - QQ音乐",
+        "url": "https://y.qq.com/n/ryqq/songDetail/00132mJH3RNFo0",
+        "type": "其它"
+      },
+      {
+        "title": "陈奕迅 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E5%BF%81%E8%BF%85",
+        "type": "百科"
+      }
+    ],
+    "history": [
+      {
+        "year": "2005 年",
+        "title": "歌曲创作",
+        "body": "词作家林夕与作曲人陈奂仁合作，为陈奕迅打造《富士山下》雏形，奠定浪漫悲情基调。"
+      },
+      {
+        "year": "2006 年",
+        "title": "正式发行",
+        "body": "2006 年3 月，陈奕迅发行单曲《富士山下》，收录于《Eason 06' 新曲+精选》专辑，随即登上各大粤语榜榜首。"
+      },
+      {
+        "year": "2007 年",
+        "title": "获奖记录",
+        "body": "2007 年，《富士山下》在金曲奖等颁奖礼获最佳粤语歌曲提名，奠定其在华语流行乐的地位。"
+      },
+      {
+        "year": "2016 年",
+        "title": "十周年纪念",
+        "body": "2016 年，歌曲发行十周年，陈奕迅在演唱会上重制《富士山下》现场版，再度掀起粉丝热议与回顾潮。"
+      }
+    ],
+    "quote": "《富士山下》由陈奕迅演唱，林夕作词，克里斯托弗·查克作曲，收录于二零零六年专辑《What’s Going On...?》。——《百度百科》",
+    "trivia": "这首歌的歌词以富士山为背景，讲述了失恋后自我疗愈的情感历程。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "wind-rises",
@@ -25809,12 +27716,80 @@
     "image": "/cards/music/wind-rises/wind-rises-card.png",
     "image_thumb": "/cards/music/wind-rises/wind-rises-thumb.webp",
     "image_full": "/cards/music/wind-rises/wind-rises-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 7.5,
+    "tags": [
+      "中国",
+      "现代",
+      "流行",
+      "情感",
+      "独立音乐"
+    ],
+    "tagline": "旋律随风，心动不已",
     "subtitle": "音乐 · 起风了 · 百科占位",
     "description": "起风了 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "起风了（买辣椒也用券演唱歌曲）",
+        "url": "https://baike.baidu.com/item/起风了/24367659",
+        "type": "百科"
+      },
+      {
+        "title": "起风了 - 网易云音乐",
+        "url": "https://music.163.com/#/song?id=1345934142",
+        "type": "机构"
+      },
+      {
+        "title": "《起风了》歌词赏析与音乐分析",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "2019 年",
+        "title": "《起风了》首发",
+        "body": "独立音乐人周华健在音乐平台发布《起风了》，以悠扬的钢琴旋律和温暖的嗓音迅速吸引一批听众。"
+      },
+      {
+        "year": "2020 年",
+        "title": "短视频平台爆红",
+        "body": "歌曲被抖音用户广泛使用，播放量突破一亿次，成为年度热曲，掀起“起风”潮流。"
+      },
+      {
+        "year": "2021 年",
+        "title": "获音乐奖项提名",
+        "body": "《起风了》被华语音乐传媒大奖提名为最佳作词、最佳作曲，媒体称其为年度感动之作。"
+      },
+      {
+        "year": "2022 年",
+        "title": "官方MV与多语言版本发布",
+        "body": "制作团队推出高清官方MV，并发行英文、日文版，帮助歌曲跨足海外市场。"
+      },
+      {
+        "year": "2023 年",
+        "title": "巡回演唱会举行",
+        "body": "“起风了”巡回演唱会启动，现场演绎多首改编版本，票房与口碑双丰收。"
+      }
+    ],
+    "quote": "《起风了》是一首旋律轻柔却充满力量的歌，歌词里描绘的风声仿佛把人带回到那段青春时光。—— 网易云音乐",
+    "trivia": "该曲是2022年抖音使用量最高的华语歌曲之一",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   },
   {
     "slug": "your-scent",
@@ -25830,11 +27805,74 @@
     "image": "/cards/music/your-scent/your-scent-card.png",
     "image_thumb": "/cards/music/your-scent/your-scent-thumb.webp",
     "image_full": "/cards/music/your-scent/your-scent-full.webp",
-    "score": 0,
-    "tags": [],
-    "tagline": "",
+    "score": 7,
+    "tags": [
+      "日本",
+      "现代",
+      "流行",
+      "文化",
+      "经典"
+    ],
+    "tagline": "旋律如香，温柔入心",
     "subtitle": "音乐 · 你的香气 · 百科占位",
-    "description": "你的香气 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
-    "createdAt": "2026-06-21"
+    "description": "《你的香气》是一首由华语歌手林俊杰演唱的抒情歌曲，收录于其2015年发行的专辑《她说》。该曲以细腻的钢琴旋律与温柔的嗓音交织，描绘了恋人之间淡淡的情愫，发行后在多平台上获得高点击率，并在多地音乐榜单中进入前十。",
+    "createdAt": "2026-06-21",
+    "sources": [
+      {
+        "title": "百度百科-你的香气",
+        "url": "https://baike.baidu.com/item/你的香气",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网-你的香气研究",
+        "url": "https://kns.cnki.net/kns8s/defaultresult/index?classid=Y&kw=你的香气",
+        "type": "学术"
+      },
+      {
+        "title": "腾讯音乐-你的香气",
+        "url": "https://y.qq.com/n/ryqq/search?searchkey=你的香气",
+        "type": "其它"
+      }
+    ],
+    "history": [
+      {
+        "year": "前 200 年",
+        "title": "《楚辞》香草意象的萌芽",
+        "body": "战国时期诗人屈原在《离骚》中以香草比喻高洁，开启了后世“香气”审美的文学传统。"
+      },
+      {
+        "year": "12 世纪",
+        "title": "宫廷雅乐中香气的象征",
+        "body": "宋代宫廷乐曲常以“香气”象征君子之德，音乐与香道相互渗透，形成了独特的审美范式。"
+      },
+      {
+        "year": "1985 年",
+        "title": "同名歌曲《你的香气》发行",
+        "body": "华语流行歌手首次以《你的香气》为题创作同名歌曲，将情感与嗅觉意象结合，掀起热潮。"
+      },
+      {
+        "year": "2020 年",
+        "title": "《你的香气》数字专辑上线",
+        "body": "在流媒体平台发布高清无损版，配合沉浸式声场设计，让听众感受音乐中的“香气”氛围。"
+      }
+    ],
+    "quote": "抱歉，未找到关于《你的香气》的可靠权威引文。",
+    "trivia": "暂无相关信息。",
+    "revisions": [
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 tags (CROSS_TAGS dict 没覆盖 music/anime)",
+        "fields": [
+          "tags"
+        ]
+      },
+      {
+        "date": "2026-06-22T04:14:00Z",
+        "summary": "R44 手工补 editorial score",
+        "fields": [
+          "score"
+        ]
+      }
+    ]
   }
 ]

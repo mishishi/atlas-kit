@@ -253,12 +253,25 @@ async function processShard(shard, workerId) {
           }
         }
       } else if (cfg2.field) {
-        // parse() may return a string OR an object like {tagline: "..."}
-        // (for stages that wrap their value to be consistent with extras).
-        const v = (typeof result.value === "object" && result.value !== null)
-          ? result.value[cfg2.field]
-          : result.value;
-        c[cfg2.field] = String(v || "").trim();
+        // parse() returns:
+        //   - a string for descriptions / tagline
+        //   - a JSON array for history / sources
+        //   - an object {tagline: "..."} only for tagline (wrap-in-object
+        //     form for stages that don't have cfg2.fields)
+        // The R43 bug: previous code assumed wrap-in-object for any
+        // object/array value, which silently wrote "" for sources /
+        // history. Fix: only unwrap when cfg2.field is "tagline" AND
+        // the value is a plain object. Arrays and other strings go
+        // through directly.
+        let v;
+        if (cfg2.field === "tagline" && typeof result.value === "object"
+          && result.value !== null && !Array.isArray(result.value)
+          && Object.prototype.hasOwnProperty.call(result.value, "tagline")) {
+          v = result.value.tagline;
+        } else {
+          v = result.value;
+        }
+        c[cfg2.field] = v;
       }
       success++;
     });

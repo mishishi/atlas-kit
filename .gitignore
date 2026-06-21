@@ -72,6 +72,12 @@ Thumbs.db
 .eslintcache
 .turbo
 
+# ─── Mavis daemon session metadata (per-machine, not for git) ──────────
+.mavis/
+
+# ─── CDN rewrite backup (regenerated on --apply, removed on --rollback) ─
+data/cards.cdn-bak.json
+
 # ─── Video projects (HyperFrames) ─────────────────────────
 videos/
 

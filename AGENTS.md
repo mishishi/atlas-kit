@@ -1043,3 +1043,128 @@ sources:     3 条权威中文 (中国大百科/维基中文/知网)
 - 长城 visualScore 4/8,可能 1K 图质量差,2K 重跑可改善
 - score-all-cards 跑全 62 张(完整 visualScore sweep, 当前只跑了
   前 28 张 + 布达拉宫 1 张)
+
+## Round 40: PWA install (2026-06-21)
+
+Commit `4382ed5`. First PWA pass — make the site installable as
+a standalone app on mobile Chrome / iOS Safari / Android.
+
+### What was added
+
+| File | Purpose |
+|---|---|
+| `public/manifest.webmanifest` | name/short_name (图鉴社 / Atlas Kit), 192+512 icons, theme `#C97064`, `display: "standalone"`, lang `zh-CN` |
+| `public/icon-192.png` | Gold gradient + "A" wordmark (sharp SVG-to-PNG, 192×192) |
+| `public/icon-512.png` | Same artwork, 512×512 |
+| `public/sw.js` | Service worker, cache version `atlas-kit-v1` |
+| `src/components/sw-register.tsx` | Client island, registers SW on mount + shows "新版本就绪,点击刷新" pill on `controllerchange` |
+| `src/app/layout.tsx` | `<link rel="manifest">` + `<link rel="apple-touch-icon">` + `<SwRegister />` |
+
+### Service worker cache strategy (3-tier)
+
+| Resource pattern | Strategy | Cache name |
+|---|---|---|
+| `/` HTML navigations | network-first, fallback to cache | `atlas-kit-v1-pages` |
+| `_next/static/*` + `/fonts/*` | cache-first (immutable assets) | `atlas-kit-v1-static` |
+| CloudBase CDN images (`636c-cloud1-*.tcb.qcloud.la`) | stale-while-revalidate | `atlas-kit-v1-images` |
+
+Rationale: HTML is cheap to refresh and changes on every deploy,
+so network-first. Static assets are content-hashed by Next.js
+(`/\_next/static/chunks/117-3f7d29040917b0e8.js` etc.) so once
+cached they never need re-fetching. CDN images are slow but
+immutable per slug — SWR is the right balance (show cached while
+revalidating in background; instant on repeat visits).
+
+### What was NOT added (intentional)
+
+- **No `app/icon-192.png.tsx` route handler** — Next.js 14
+  auto-registers `app/icon.png` (single icon), but doesn't
+  auto-register `app/icon-192.png.tsx` / `app/icon-512.png.tsx`
+  filename conventions. Static `public/icon-{192,512}.png` is
+  the simpler / more predictable path. The legacy
+  `app/icon-192.png.tsx` and `app/icon-512.png.tsx` files were
+  DELETED in R30; the Next.js build was silently ignoring them.
+- **No background sync / push notifications / install prompt
+  override** — these need backend infra (push server) or fight
+  the browser's native install UX. Defer to R42+ if needed.
+
+### Verification (post-deploy)
+
+- DevTools → Application → Manifest shows name, icons, theme
+  color, start_url, display=standalone
+- DevTools → Application → Service Workers shows `sw.js`
+  activated, "Update on reload" toggle works
+- Lighthouse → PWA category: installable + ✓
+- iOS Safari: Share → "添加到主屏幕" shows 图鉴社 icon
+- Android Chrome: install banner appears after ~3s on
+  `/` navigation
+
+## Round 41: keyboard shortcuts (2026-06-21)
+
+Same commit `4382ed5`. Add global keyboard navigation so the site
+feels like an actual encyclopedia app, not just a paginated blog.
+
+### What was added
+
+| File | Purpose |
+|---|---|
+| `src/components/keyboard-shortcuts.tsx` | Global `keydown` listener + help modal (Dialog) |
+| `src/components/card-nav.tsx` | `j` / `k` as vim-style aliases for `ArrowLeft` / `ArrowRight` (prev/next card) |
+| `src/app/search/page.tsx` | `data-search-input` attribute on the search input |
+| `src/components/site-footer.tsx` | "按 ? 查看快捷键" hint pill with `Keyboard` icon |
+
+### Shortcut table
+
+| Key | Action | Scope |
+|---|---|---|
+| `?` | Open help modal | global |
+| `Esc` | Close help modal | when modal is open |
+| `/` | Focus search input (`[data-search-input]`) | global |
+| `g h` | Navigate `/` | global, 1s sequence |
+| `g c` | Navigate `/cards` | global, 1s sequence |
+| `g s` | Navigate `/series` | global, 1s sequence |
+| `g t` | Navigate `/timeline` | global, 1s sequence |
+| `g g` | Navigate `/graph` | global, 1s sequence |
+| `j` / `←` | Previous card | `/cards/[slug]` only (handled by `CardNav`) |
+| `k` / `→` | Next card | `/cards/[slug]` only (handled by `CardNav`) |
+
+### Implementation notes
+
+- **Global listener uses `useRef` for `lastG` timestamp**, not
+  `useState`. This avoids re-attaching the listener on every
+  `g` press (which is what a `useState` approach would do —
+  see `useEffect` dep churn in `useEffect` gotcha). Same
+  pattern applies to `helpOpenRef` — read the latest value
+  in the handler without re-attaching.
+- **`isTypingTarget` guard**: skip the global handler when
+  the user is typing in `INPUT` / `TEXTAREA` / `SELECT` /
+  contentEditable. This is the same pattern as `CardNav`'s
+  existing guard (R34 Day 1) and prevents `/` from nuking
+  in-progress search input.
+- **`j` / `k` only work on `/cards/[slug]`** — `CardNav` is
+  not mounted elsewhere, so the keys are no-op outside card
+  detail pages. The help modal documents this correctly
+  ("上一张 / 下一张 — only on /cards/[slug]").
+- **Help modal** is rendered conditionally (`if (!helpOpen)
+  return null`), so the `useEffect` listener is the only
+  runtime cost when the modal is closed.
+
+### Why a separate component, not extending `CardNav`
+
+The shortcut layer has 3 distinct scopes (global / page-level /
+modal) and the `g x` sequence logic is meaningless for prev/next
+card nav. Keeping `KeyboardShortcuts` separate from `CardNav`
+preserves each component's single responsibility and avoids
+re-rendering the card detail page's `<CardNav>` when the global
+shortcut listener re-attaches.
+
+### Verification (manual)
+
+- Press `?` on `/` → modal opens, shows all shortcuts
+- Press `Esc` → modal closes
+- Press `/` on `/` → no-op (no search input on home)
+- Navigate to `/search` → press `/` → cursor in search input
+- Navigate to `/cards/sanxingdui` → press `j` → 404 or another
+  card (depends on sort order); press `k` → goes back
+- Press `g h` from `/cards/sanxingdui` → navigates to `/`
+- Type `g` in any input → no nav, no listener fire

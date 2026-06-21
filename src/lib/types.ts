@@ -36,7 +36,12 @@ export type CardKind =
   | "profession"
   | "space-object"
   | "sport"
-  | "vehicle";
+  | "vehicle"
+  // R43 (2026-06-21): 2 new kinds — music / anime. User-added
+  // category templates in prompt-template/categories/. Same
+  // single-source-of-truth constraint as R31.
+  | "music"
+  | "anime";
 
 /** A historical milestone on the detail page's 历史沿革 timeline. */
 export interface HistoryNode {

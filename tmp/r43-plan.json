@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-06-21T13:32:00Z",
+  "source": "R43 plan — music 15 + anime 15",
+  "includeEmpty": false,
+  "plan": [
+    {
+      "kind": "music",
+      "title": "你的香气",
+      "slug": "your-scent",
+      "series": "soundtrack-atlas",
+      "seriesNo": "001",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "千本桜",
+      "slug": "senbonzakura",
+      "series": "soundtrack-atlas",
+      "seriesNo": "002",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "夜曲",
+      "slug": "nocturne-jay",
+      "series": "soundtrack-atlas",
+      "seriesNo": "003",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "童年",
+      "slug": "childhood",
+      "series": "soundtrack-atlas",
+      "seriesNo": "004",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "起风了",
+      "slug": "wind-rises",
+      "series": "soundtrack-atlas",
+      "seriesNo": "005",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "稻香",
+      "slug": "dao-xiang",
+      "series": "soundtrack-atlas",
+      "seriesNo": "006",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "演员",
+      "slug": "actor-joker",
+      "series": "soundtrack-atlas",
+      "seriesNo": "007",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "十年",
+      "slug": "ten-years",
+      "series": "soundtrack-atlas",
+      "seriesNo": "008",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "富士山下",
+      "slug": "under-fuji",
+      "series": "soundtrack-atlas",
+      "seriesNo": "009",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "Lemon",
+      "slug": "lemon-yonezu",
+      "series": "soundtrack-atlas",
+      "seriesNo": "010",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "恋爱循环",
+      "slug": "renai-circulation",
+      "series": "soundtrack-atlas",
+      "seriesNo": "011",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "红莲华",
+      "slug": "gurenge",
+      "series": "soundtrack-atlas",
+      "seriesNo": "012",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "Bohemian Rhapsody",
+      "slug": "bohemian-rhapsody",
+      "series": "soundtrack-atlas",
+      "seriesNo": "013",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "Take On Me",
+      "slug": "take-on-me",
+      "series": "soundtrack-atlas",
+      "seriesNo": "014",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "music",
+      "title": "夜的钢琴曲五",
+      "slug": "piano-piece-no-5",
+      "series": "soundtrack-atlas",
+      "seriesNo": "015",
+      "palette": ["#F5F0E6", "#6E628C", "#4A3F66"]
+    },
+    {
+      "kind": "anime",
+      "title": "虫师",
+      "slug": "mushishi",
+      "series": "anime-works-atlas",
+      "seriesNo": "001",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "千与千寻",
+      "slug": "spirited-away",
+      "series": "anime-works-atlas",
+      "seriesNo": "002",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "鬼灭之刃",
+      "slug": "demon-slayer",
+      "series": "anime-works-atlas",
+      "seriesNo": "003",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "进击的巨人",
+      "slug": "attack-on-titan",
+      "series": "anime-works-atlas",
+      "seriesNo": "004",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "灌篮高手",
+      "slug": "slam-dunk",
+      "series": "anime-works-atlas",
+      "seriesNo": "005",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "钢之炼金术师 FA",
+      "slug": "fullmetal-alchemist",
+      "series": "anime-works-atlas",
+      "seriesNo": "006",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "银魂",
+      "slug": "gintama",
+      "series": "anime-works-atlas",
+      "seriesNo": "007",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "死亡笔记",
+      "slug": "death-note",
+      "series": "anime-works-atlas",
+      "seriesNo": "008",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "命运石之门",
+      "slug": "steins-gate",
+      "series": "anime-works-atlas",
+      "seriesNo": "009",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "咒术回战",
+      "slug": "jujutsu-kaisen",
+      "series": "anime-works-atlas",
+      "seriesNo": "010",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "夏目友人帐",
+      "slug": "natsume-yujincho",
+      "series": "anime-works-atlas",
+      "seriesNo": "011",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "你的名字",
+      "slug": "your-name",
+      "series": "anime-works-atlas",
+      "seriesNo": "012",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "天空之城",
+      "slug": "castle-in-the-sky",
+      "series": "anime-works-atlas",
+      "seriesNo": "013",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "CLANNAD",
+      "slug": "clannad",
+      "series": "anime-works-atlas",
+      "seriesNo": "014",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    },
+    {
+      "kind": "anime",
+      "title": "浪客剑心",
+      "slug": "rurouni-kenshin",
+      "series": "anime-works-atlas",
+      "seriesNo": "015",
+      "palette": ["#F5F0E6", "#6E628C", "#2C2438"]
+    }
+  ]
+}

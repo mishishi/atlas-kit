@@ -7035,17 +7035,17 @@
   {
     "slug": "spirited-away",
     "title": "千与千寻",
-    "kind": "movie",
-    "series": "craft-and-botanical",
-    "seriesNo": "032",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "002",
     "palette": [
       "#F5F0E6",
-      "#B88952",
-      "#8C7F6E"
+      "#6E628C",
+      "#2C2438"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-full.webp",
+    "image": "/cards/anime/spirited-away/spirited-away-card.png",
+    "image_thumb": "/cards/anime/spirited-away/spirited-away-thumb.webp",
+    "image_full": "/cards/anime/spirited-away/spirited-away-full.webp",
     "score": 8.8,
     "tags": [
       "电影",
@@ -7109,7 +7109,22 @@
     ],
     "visualScore": 7,
     "quote": "《千与千寻》是一部由宫崎骏执导的动画电影，荣获第75届奥斯卡最佳动画长片。",
-    "trivia": "久石让为《千与千寻》创作配乐，成为其代表作之一。"
+    "trivia": "久石让为《千与千寻》创作配乐，成为其代表作之一。",
+    "revisions": [
+      {
+        "date": "2026-06-21T13:55:00Z",
+        "summary": "R43 转换: movie → anime, 重定系列到 anime-works-atlas",
+        "fields": [
+          "kind",
+          "series",
+          "seriesNo",
+          "palette",
+          "image",
+          "image_thumb",
+          "image_full"
+        ]
+      }
+    ]
   },
   {
     "slug": "ulysses",
@@ -25212,5 +25227,614 @@
         "type": "机构"
       }
     ]
+  },
+  {
+    "slug": "bohemian-rhapsody",
+    "title": "Bohemian Rhapsody",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "013",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/bohemian-rhapsody/bohemian-rhapsody-card.png",
+    "image_thumb": "/cards/music/bohemian-rhapsody/bohemian-rhapsody-thumb.webp",
+    "image_full": "/cards/music/bohemian-rhapsody/bohemian-rhapsody-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "music · Bohemian Rhapsody · 百科占位",
+    "description": "Bohemian Rhapsody 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "slam-dunk",
+    "title": "灌篮高手",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "005",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/slam-dunk/slam-dunk-card.png",
+    "image_thumb": "/cards/anime/slam-dunk/slam-dunk-thumb.webp",
+    "image_full": "/cards/anime/slam-dunk/slam-dunk-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 灌篮高手 · 百科占位",
+    "description": "灌篮高手 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "steins-gate",
+    "title": "命运石之门",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "009",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/steins-gate/steins-gate-card.png",
+    "image_thumb": "/cards/anime/steins-gate/steins-gate-thumb.webp",
+    "image_full": "/cards/anime/steins-gate/steins-gate-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 命运石之门 · 百科占位",
+    "description": "命运石之门 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "castle-in-the-sky",
+    "title": "天空之城",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "013",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/castle-in-the-sky/castle-in-the-sky-card.png",
+    "image_thumb": "/cards/anime/castle-in-the-sky/castle-in-the-sky-thumb.webp",
+    "image_full": "/cards/anime/castle-in-the-sky/castle-in-the-sky-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 天空之城 · 百科占位",
+    "description": "天空之城 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "fullmetal-alchemist",
+    "title": "钢之炼金术师 FA",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/fullmetal-alchemist/fullmetal-alchemist-card.png",
+    "image_thumb": "/cards/anime/fullmetal-alchemist/fullmetal-alchemist-thumb.webp",
+    "image_full": "/cards/anime/fullmetal-alchemist/fullmetal-alchemist-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 钢之炼金术师 FA · 百科占位",
+    "description": "钢之炼金术师 FA 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "jujutsu-kaisen",
+    "title": "咒术回战",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "010",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/jujutsu-kaisen/jujutsu-kaisen-card.png",
+    "image_thumb": "/cards/anime/jujutsu-kaisen/jujutsu-kaisen-thumb.webp",
+    "image_full": "/cards/anime/jujutsu-kaisen/jujutsu-kaisen-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 咒术回战 · 百科占位",
+    "description": "咒术回战 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "clannad",
+    "title": "CLANNAD",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/clannad/clannad-card.png",
+    "image_thumb": "/cards/anime/clannad/clannad-thumb.webp",
+    "image_full": "/cards/anime/clannad/clannad-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · CLANNAD · 百科占位",
+    "description": "CLANNAD 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "demon-slayer",
+    "title": "鬼灭之刃",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "003",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/demon-slayer/demon-slayer-card.png",
+    "image_thumb": "/cards/anime/demon-slayer/demon-slayer-thumb.webp",
+    "image_full": "/cards/anime/demon-slayer/demon-slayer-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 鬼灭之刃 · 百科占位",
+    "description": "鬼灭之刃 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "gintama",
+    "title": "银魂",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "007",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/gintama/gintama-card.png",
+    "image_thumb": "/cards/anime/gintama/gintama-thumb.webp",
+    "image_full": "/cards/anime/gintama/gintama-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 银魂 · 百科占位",
+    "description": "银魂 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "natsume-yujincho",
+    "title": "夏目友人帐",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "011",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/natsume-yujincho/natsume-yujincho-card.png",
+    "image_thumb": "/cards/anime/natsume-yujincho/natsume-yujincho-thumb.webp",
+    "image_full": "/cards/anime/natsume-yujincho/natsume-yujincho-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 夏目友人帐 · 百科占位",
+    "description": "夏目友人帐 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "rurouni-kenshin",
+    "title": "浪客剑心",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "015",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/rurouni-kenshin/rurouni-kenshin-card.png",
+    "image_thumb": "/cards/anime/rurouni-kenshin/rurouni-kenshin-thumb.webp",
+    "image_full": "/cards/anime/rurouni-kenshin/rurouni-kenshin-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 浪客剑心 · 百科占位",
+    "description": "浪客剑心 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "attack-on-titan",
+    "title": "进击的巨人",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "004",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/attack-on-titan/attack-on-titan-card.png",
+    "image_thumb": "/cards/anime/attack-on-titan/attack-on-titan-thumb.webp",
+    "image_full": "/cards/anime/attack-on-titan/attack-on-titan-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 进击的巨人 · 百科占位",
+    "description": "进击的巨人 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "death-note",
+    "title": "死亡笔记",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "008",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/death-note/death-note-card.png",
+    "image_thumb": "/cards/anime/death-note/death-note-thumb.webp",
+    "image_full": "/cards/anime/death-note/death-note-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 死亡笔记 · 百科占位",
+    "description": "死亡笔记 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "your-name",
+    "title": "你的名字",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "012",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/your-name/your-name-card.png",
+    "image_thumb": "/cards/anime/your-name/your-name-thumb.webp",
+    "image_full": "/cards/anime/your-name/your-name-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 你的名字 · 百科占位",
+    "description": "你的名字 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "mushishi",
+    "title": "虫师",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#2C2438"
+    ],
+    "image": "/cards/anime/mushishi/mushishi-card.png",
+    "image_thumb": "/cards/anime/mushishi/mushishi-thumb.webp",
+    "image_full": "/cards/anime/mushishi/mushishi-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "动漫 · 虫师 · 百科占位",
+    "description": "虫师 是 Atlas Kit 图鉴社「动漫」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "actor-joker",
+    "title": "演员",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "007",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/actor-joker/actor-joker-card.png",
+    "image_thumb": "/cards/music/actor-joker/actor-joker-thumb.webp",
+    "image_full": "/cards/music/actor-joker/actor-joker-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 演员 · 百科占位",
+    "description": "演员 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "childhood",
+    "title": "童年",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "004",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/childhood/childhood-card.png",
+    "image_thumb": "/cards/music/childhood/childhood-thumb.webp",
+    "image_full": "/cards/music/childhood/childhood-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 童年 · 百科占位",
+    "description": "童年 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "dao-xiang",
+    "title": "稻香",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/dao-xiang/dao-xiang-card.png",
+    "image_thumb": "/cards/music/dao-xiang/dao-xiang-thumb.webp",
+    "image_full": "/cards/music/dao-xiang/dao-xiang-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 稻香 · 百科占位",
+    "description": "稻香 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "gurenge",
+    "title": "红莲华",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "012",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/gurenge/gurenge-card.png",
+    "image_thumb": "/cards/music/gurenge/gurenge-thumb.webp",
+    "image_full": "/cards/music/gurenge/gurenge-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 红莲华 · 百科占位",
+    "description": "红莲华 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "lemon-yonezu",
+    "title": "Lemon",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "010",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/lemon-yonezu/lemon-yonezu-card.png",
+    "image_thumb": "/cards/music/lemon-yonezu/lemon-yonezu-thumb.webp",
+    "image_full": "/cards/music/lemon-yonezu/lemon-yonezu-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · Lemon · 百科占位",
+    "description": "Lemon 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "nocturne-jay",
+    "title": "夜曲",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "003",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/nocturne-jay/nocturne-jay-card.png",
+    "image_thumb": "/cards/music/nocturne-jay/nocturne-jay-thumb.webp",
+    "image_full": "/cards/music/nocturne-jay/nocturne-jay-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 夜曲 · 百科占位",
+    "description": "夜曲 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "piano-piece-no-5",
+    "title": "夜的钢琴曲五",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "015",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/piano-piece-no-5/piano-piece-no-5-card.png",
+    "image_thumb": "/cards/music/piano-piece-no-5/piano-piece-no-5-thumb.webp",
+    "image_full": "/cards/music/piano-piece-no-5/piano-piece-no-5-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 夜的钢琴曲五 · 百科占位",
+    "description": "夜的钢琴曲五 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "renai-circulation",
+    "title": "恋爱循环",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "011",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/renai-circulation/renai-circulation-card.png",
+    "image_thumb": "/cards/music/renai-circulation/renai-circulation-thumb.webp",
+    "image_full": "/cards/music/renai-circulation/renai-circulation-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 恋爱循环 · 百科占位",
+    "description": "恋爱循环 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "senbonzakura",
+    "title": "千本桜",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "002",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/senbonzakura/senbonzakura-card.png",
+    "image_thumb": "/cards/music/senbonzakura/senbonzakura-thumb.webp",
+    "image_full": "/cards/music/senbonzakura/senbonzakura-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 千本桜 · 百科占位",
+    "description": "千本桜 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "take-on-me",
+    "title": "Take On Me",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/take-on-me/take-on-me-card.png",
+    "image_thumb": "/cards/music/take-on-me/take-on-me-thumb.webp",
+    "image_full": "/cards/music/take-on-me/take-on-me-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · Take On Me · 百科占位",
+    "description": "Take On Me 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "ten-years",
+    "title": "ten-years",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "???",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/ten-years/ten-years-card.png",
+    "image_thumb": "/cards/music/ten-years/ten-years-thumb.webp",
+    "image_full": "/cards/music/ten-years/ten-years-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · ten-years · 百科占位",
+    "description": "ten-years 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "under-fuji",
+    "title": "富士山下",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "009",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/under-fuji/under-fuji-card.png",
+    "image_thumb": "/cards/music/under-fuji/under-fuji-thumb.webp",
+    "image_full": "/cards/music/under-fuji/under-fuji-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 富士山下 · 百科占位",
+    "description": "富士山下 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "wind-rises",
+    "title": "起风了",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "005",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/wind-rises/wind-rises-card.png",
+    "image_thumb": "/cards/music/wind-rises/wind-rises-thumb.webp",
+    "image_full": "/cards/music/wind-rises/wind-rises-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 起风了 · 百科占位",
+    "description": "起风了 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "slug": "your-scent",
+    "title": "你的香气",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "001",
+    "palette": [
+      "#F5F0E6",
+      "#6E628C",
+      "#4A3F66"
+    ],
+    "image": "/cards/music/your-scent/your-scent-card.png",
+    "image_thumb": "/cards/music/your-scent/your-scent-thumb.webp",
+    "image_full": "/cards/music/your-scent/your-scent-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "音乐 · 你的香气 · 百科占位",
+    "description": "你的香气 是 Atlas Kit 图鉴社「音乐」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-21"
   }
 ]

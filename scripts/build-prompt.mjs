@@ -87,12 +87,14 @@ if (positional.length < 2) {
       "  <topic>  the subject to depict (quoted if it contains spaces)\n" +
       "  <kind>   one of: city, animal, pet, plant, person, festival,\n" +
       "            food, historical-event, tech-concept, object,\n" +
-      "            natural-phenomenon\n" +
+      "            natural-phenomenon, music, anime\n" +
       "\n" +
       "Examples:\n" +
       "  node scripts/build-prompt.mjs 拉布拉多 pet\n" +
       "  node scripts/build-prompt.mjs 三星堆 historical-event\n" +
       "  node scripts/build-prompt.mjs 钱塘江大潮 natural-phenomenon\n" +
+      "  node scripts/build-prompt.mjs 你的香气 music\n" +
+      "  node scripts/build-prompt.mjs 虫师 anime\n" +
       "  node scripts/build-prompt.mjs 三星堆 history --version v1    # legacy inline template\n",
   );
   process.exit(1);
@@ -162,6 +164,10 @@ const KIND_DISPLAY = {
   "space-object": "天体",
   sport: "体育运动",
   vehicle: "交通工具",
+  // R43 (2026-06-21): 2 new kinds — music / anime. user added
+  // the corresponding category templates 2026-06-21.
+  music: "音乐",
+  anime: "动漫",
   // Alias long-form keys so kindDisplay lookup works after alias
   // resolution (these are NOT listed to the user as canonical).
   "historical-event": "历史事件",

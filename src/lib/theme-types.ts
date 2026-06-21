@@ -224,6 +224,26 @@ export const THEME_TYPES: ThemeType[] = [
     promptType: "交通工具",
     series: "工艺与造物系列",
   },
+  // R43 (2026-06-21): 2 new kinds. music / anime — for popular
+  // songs and Japanese animation works respectively. User added
+  // the corresponding category templates. Palette is purple
+  // (#6E628C) per the category templates.
+  {
+    key: "music",
+    label: "音乐",
+    emoji: "🎵",
+    description: "流行 / 古典 / 跨地域音乐作品",
+    promptType: "音乐",
+    series: "音乐图鉴系列",
+  },
+  {
+    key: "anime",
+    label: "动漫",
+    emoji: "🎬",
+    description: "日本动画 / 漫画改编 / 经典作品",
+    promptType: "动漫",
+    series: "动漫图鉴系列",
+  },
 ];
 
 /** Quick lookup by key */

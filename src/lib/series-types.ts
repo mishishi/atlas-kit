@@ -131,6 +131,33 @@ export const SERIES_TYPES: SeriesType[] = [
     icon: "Sparkles",
     createdAt: "2026-06-17",
   },
+  // R43 (2026-06-21): 2 new series — soundtrack-atlas / anime-works-atlas.
+  // 音乐 (popular songs) and 动漫 (Japanese animation works) deserve
+  // their own curated series rather than folding into a generic bucket.
+  {
+    slug: "soundtrack-atlas",
+    name: "音律图鉴",
+    tagline: "把一首歌讲成一个时代",
+    description:
+      "从「千本桜」到「夜的钢琴曲五」, 一首歌是创作者、年代、媒介和听众的合谋。这一系列关注流行 / 经典 / 跨地域音乐作品的创作背景、曲式结构、声音语言与传播影响——不收录只罗列榜单的流水卡。",
+    palette: ["#F5F0E6", "#6E628C", "#4A3F66"],
+    themeTags: ["music"],
+    keywords: ["歌曲", "音乐", "作曲", "作词", "编曲", "流行", "J-POP", "VOCALOID", "古典", "民谣"],
+    icon: "Music",
+    createdAt: "2026-06-21",
+  },
+  {
+    slug: "anime-works-atlas",
+    name: "动漫图鉴",
+    tagline: "把一部动画讲成一种美学",
+    description:
+      "从「虫师」到「鬼灭之刃」, 一部动画是监督、原画、分镜、声优和观众的合谋。这一系列关注日本动画 / 漫画改编作品的世界观、角色、美术风格、制作演出与主题表达——不收录只罗列集数的简介卡。",
+    palette: ["#F5F0E6", "#6E628C", "#2C2438"],
+    themeTags: ["anime"],
+    keywords: ["动画", "动漫", "漫画改编", "日本", "新海诚", "宫崎骏", "监督", "声优", "作画"],
+    icon: "Tv",
+    createdAt: "2026-06-21",
+  },
 ];
 
 /** Quick lookup by slug */
@@ -183,6 +210,11 @@ export function getDefaultSeriesSlugForKind(kind: string): string {
     "space-object": "frontiers-and-wonders",
     sport: "craft-and-botanical",
     vehicle: "craft-and-botanical",
+    // R43 (2026-06-21): music + anime have their own dedicated
+    // series (soundtrack-atlas / anime-works-atlas). No fallback
+    // to the generic buckets.
+    music: "soundtrack-atlas",
+    anime: "anime-works-atlas",
   };
   return map[kind] ?? "craft-and-botanical";
 }

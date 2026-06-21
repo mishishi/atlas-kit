@@ -61,21 +61,3 @@
 * Do not mix unrelated characters or franchises
 * Do not merge anime, manga, game, or live-action continuities unless relevant
 * Avoid generic anime faces when the subject has recognizable character designs
-
-## Topic Pool
-
-* 虫师 — 漆原友纪的治愈怪谈
-* 千与千寻 — 宫崎骏的成长寓言
-* 鬼灭之刃 — 吾峠呼世晴的少年热血
-* 进击的巨人 — 谏山创的黑暗史诗
-* 灌篮高手 — 井上雄彦的篮球经典
-* 钢之炼金术师 FA — 荒川弘的等价交换
-* 银魂 — 空知英秋的恶搞与温情
-* 死亡笔记 — 死神笔记本的智力博弈
-* 命运石之门 — 志仓千代丸的时间循环
-* 咒术回战 — 芥见下々的现代咒术
-* 夏目友人帐 — 绿川幸的妖怪日常
-* 你的名字 — 新海诚的身体互换
-* 天空之城 — 宫崎骏的飞行冒险
-* CLANNAD — Key 社的校园催泪
-* 浪客剑心 — 和月伸宏的幕末剑客

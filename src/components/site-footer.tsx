@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, FileText, Rss } from "lucide-react";
+import { Mail, FileText, Rss, Keyboard } from "lucide-react";
 
 /**
  * Inline GitHub mark — uses the official brand path so we don't
@@ -159,7 +159,18 @@ export function SiteFooter() {
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
           <p>© 2026 图鉴社 · Atlas Kit. 保留所有权利。</p>
-          <p className="font-serif italic">知识整理 · 信息归档 · 图鉴式展示</p>
+          <p className="flex items-center gap-1.5 font-serif italic">
+            <span>知识整理 · 信息归档 · 图鉴式展示</span>
+            <span aria-hidden="true">·</span>
+            <span className="inline-flex items-center gap-1">
+              <Keyboard className="h-3 w-3" aria-hidden="true" />
+              按
+              <kbd className="px-1 py-0.5 rounded border border-border bg-muted text-[10px] font-mono not-italic">
+                ?
+              </kbd>
+              查看快捷键
+            </span>
+          </p>
         </div>
       </div>
     </footer>

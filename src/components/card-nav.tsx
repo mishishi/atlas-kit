@@ -34,9 +34,9 @@ export function CardNav({
   // state) so updates don't trigger re-render mid-swipe.
   const touchStart = useRef<{ x: number; y: number } | null>(null);
 
-  // Keyboard: ←/→ navigates prev/next. Disabled when nothing to
-  // navigate to (single-card series). Skips when user is typing in
-  // an input/textarea/contenteditable.
+  // Keyboard: ←/→ + j/k (R41) navigates prev/next. Disabled when
+  // nothing to navigate to (single-card series). Skips when user is
+  // typing in an input/textarea/contenteditable.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       const target = e.target as HTMLElement | null;
@@ -51,10 +51,12 @@ export function CardNav({
           return;
         }
       }
-      if (e.key === "ArrowLeft" && prev) {
+      // R41: j/k are vim-style aliases. CapsLock and shift don't matter
+      // (e.key is already lowercased by the browser for letter keys).
+      if ((e.key === "ArrowLeft" || e.key === "k") && prev) {
         e.preventDefault();
         router.push(`/cards/${prev.slug}`);
-      } else if (e.key === "ArrowRight" && next) {
+      } else if ((e.key === "ArrowRight" || e.key === "j") && next) {
         e.preventDefault();
         router.push(`/cards/${next.slug}`);
       }

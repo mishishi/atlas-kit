@@ -87,6 +87,7 @@ export default function SearchPage({ searchParams }: SearchProps) {
             defaultValue={query}
             inputMode="search"
             autoComplete="off"
+            data-search-input=""
             spellCheck={false}
             aria-describedby="search-hint"
             placeholder="试试 金毛、柯基、普洱茶、夜行..."

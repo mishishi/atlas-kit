@@ -7,6 +7,8 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WebVitals } from "@/components/web-vitals";
+import { SwRegister } from "@/components/sw-register";
+import { KeyboardShortcuts } from "@/components/keyboard-shortcuts";
 
 // Local fonts only — no Google Fonts URL.
 // Fonts checked into src/app/fonts/ (committed to git). On Windows the
@@ -86,6 +88,11 @@ export default function RootLayout({
             blends instead of having a stark white bar. */}
         <meta name="theme-color" content="#f7f2e8" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)" />
+        {/* R40 (2026-06-21): PWA manifest + apple-touch-icon. Lets the
+            site be installed as a standalone app on mobile (Android
+            shows install banner; iOS allows Add to Home Screen). */}
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
         {/* Theme bootstrap — runs synchronously in <head> BEFORE React
             paints, so users with stored "light"/"dark" never see a
             light→dark or dark→light flash. Mirrors the next-themes
@@ -126,6 +133,8 @@ export default function RootLayout({
           }}
         />
         <WebVitals />
+        <SwRegister />
+        <KeyboardShortcuts />
       </body>
     </html>
   );

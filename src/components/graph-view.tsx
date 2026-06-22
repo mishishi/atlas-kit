@@ -46,13 +46,44 @@ const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
 // repaint). Without this, every redraw does a fresh image fetch.
 // `Image` here is the global browser Image (canvas-friendly), NOT
 // next/image — they're different APIs.
+//
+// R55g (2026-06-22) — CloudBase CDN CORS situation.
+// The CloudBase bucket doesn't return `Access-Control-Allow-Origin`
+// headers (verified via curl, see also AGENTS.md CloudBase note).
+// That means:
+//   - With `crossOrigin = "anonymous"`: every image load fails
+//     with a "CORS policy" error in console (and the image is
+//     blocked, naturalWidth=0, drawImage is skipped by our
+//     naturalWidth>0 guard). Graph still renders, but the console
+//     fills with 390 CORS errors.
+//   - Without crossOrigin: image loads fine, no console error, but
+//     the canvas becomes tainted and drawImage throws SecurityError.
+//     We catch the throw in the canvas callback so the colored
+//     circle still renders (graceful degradation — at least users
+//     see the palette[0] disk).
+// Trade-off: either way the image inside the circle is invisible
+// until CloudBase CORS is configured. The "without crossOrigin"
+// path is the calmer one (no console spam).
+//
+// To permanently fix: in CloudBase console → Storage → bucket
+// settings → CORS rules, add:
+//   { "AllowedOrigin": ["https://atlas-kit.vercel.app"],
+//     "AllowedMethod": ["GET"], "AllowedHeader": ["*"] }
+// (or "*" for the origin in dev). Then re-add `crossOrigin =
+// "anonymous"` here.
 const imgCache = new Map<string, HTMLImageElement>();
 function getImage(src: string): HTMLImageElement | null {
   if (!src) return null;
   if (imgCache.has(src)) return imgCache.get(src)!;
   const img = new window.Image();
-  img.crossOrigin = "anonymous";
+  // No crossOrigin: see R55g comment. Image will load but taint the
+  // canvas. drawImage in the render loop is wrapped in try/catch
+  // to absorb the SecurityError so the rest of the graph still
+  // renders.
   img.src = src;
+  // Suppress failed-load console noise. Without this, browsers log
+  // a generic "image load failed" per node (390 errors total).
+  img.onerror = () => {};
   imgCache.set(src, img);
   return img;
 }
@@ -190,7 +221,18 @@ export function GraphView({ data }: { data: GraphData }) {
             let dh = drawSize;
             if (aspect > 1) dh = dw / aspect;
             else dw = dh * aspect;
-            ctx.drawImage(img, n.x - dw / 2, n.y - dh / 2, dw, dh);
+            // R55g: try/catch around drawImage — without
+            // `crossOrigin` the canvas is tainted and drawImage
+            // throws SecurityError. We catch so the surrounding
+            // ctx.save/restore/clip cleanup still runs, and the
+            // colored circle (drawn above) stays visible.
+            try {
+              ctx.drawImage(img, n.x - dw / 2, n.y - dh / 2, dw, dh);
+            } catch {
+              // Canvas tainted — image is not drawable. The circle
+              // we already drew stays visible; the user just
+              // doesn't see the thumbnail inside.
+            }
             ctx.restore();
           }
 

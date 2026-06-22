@@ -114,7 +114,11 @@ function findFiles() {
             slug: s,
             filename: file,
             localPath: path.join(sDir, file),
-            cloudPath: `/cards/${k}/${s}/${file}`,
+            // CloudBase cloudPath MUST NOT start with "/". The public
+            // URL is constructed by the script as `${CDN_DOMAIN}/${cloudPath}`
+            // (also-strip-leading-slash), so storing without the slash
+            // gives us a clean separator either way.
+            cloudPath: `cards/${k}/${s}/${file}`,
           });
         }
       }
@@ -131,7 +135,7 @@ function findFiles() {
         slug,
         filename: file,
         localPath: path.join(sDir, file),
-        cloudPath: `/cards/${kind}/${slug}/${file}`,
+        cloudPath: `cards/${kind}/${slug}/${file}`,
       });
     }
   } else if (kind) {
@@ -149,7 +153,7 @@ function findFiles() {
           slug: s,
           filename: file,
           localPath: path.join(sDir, file),
-          cloudPath: `/cards/${kind}/${s}/${file}`,
+          cloudPath: `cards/${kind}/${s}/${file}`,
         });
       }
     }
@@ -209,7 +213,9 @@ for (const f of files) {
 }
 
 console.log(`\nDone. ${ok} uploaded, ${fail} failed.`);
-console.log(`Public URLs: ${CDN_DOMAIN}/cards/<kind>/<slug>/<filename>`);
+console.log(
+  `Public URLs: ${CDN_DOMAIN}/${files[0]?.cloudPath?.split("/").slice(0, 3).join("/") ?? ""}/<filename>`,
+);
 
 // --- Optional: rewrite cards.json ---
 if (alsoRewrite && ok > 0) {
@@ -217,7 +223,11 @@ if (alsoRewrite && ok > 0) {
   const uploaded = new Map(); // slug → { image, image_thumb, image_full }
   for (const f of files) {
     if (!uploaded.has(f.slug)) uploaded.set(f.slug, {});
-    const url = `${CDN_DOMAIN}${f.cloudPath}`;
+    // cards.json paths are local "/cards/..."; CDN URLs are
+    // "<domain>/cards/...". The cloudPath we stored above is the
+    // <domain>-less form ("cards/<kind>/<slug>/<file>"), so the URL
+    // is `${CDN_DOMAIN}/${cloudPath}`.
+    const url = `${CDN_DOMAIN}/${f.cloudPath}`;
     if (f.filename.endsWith("-card.png")) uploaded.get(f.slug).image = url;
     if (f.filename.endsWith("-thumb.webp")) uploaded.get(f.slug).image_thumb = url;
     if (f.filename.endsWith("-full.webp")) uploaded.get(f.slug).image_full = url;

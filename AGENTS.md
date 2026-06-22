@@ -1168,3 +1168,149 @@ shortcut listener re-attaches.
   card (depends on sort order); press `k` → goes back
 - Press `g h` from `/cards/sanxingdui` → navigates to `/`
 - Type `g` in any input → no nav, no listener fire
+## Round 52: 收藏夹 + /random 增强 + /graph mobile fallback + view toggle (2026-06-22)
+
+Commit `84e41d4`. Three parallel features driven by the "ship a
+discoverability layer + bookmark system" theme.
+
+### A. 收藏夹 (favorites / bookmarks)
+
+localStorage-backed Set of favorited slugs, with cross-tab + cross-
+component sync.
+
+| File | Purpose |
+|---|---|
+| `src/lib/favorites.tsx` | `useFavorites()` hook (Set of slugs + count + toggle/clear) + custom `atlas-kit-favorites-changed` event for same-tab sync + native `storage` event for cross-tab |
+| `src/components/star-button.tsx` | 44px star toggle, 2 sizes (`prominent` for detail hero, `subtle` for CardPreview overlay) |
+| `src/components/favorites-list.tsx` | `/favorites` page client island (list + empty state + clear-all with 3s confirm timeout) |
+| `src/components/favorites-badge.tsx` | Header 右上角 icon-only Star + count badge (sticky to localStorage, icon-only to preserve 7-item nav cap) |
+| `src/app/favorites/page.tsx` | New static route (2.9 kB) |
+
+### Hero overlay slot
+
+`HeroWithLightbox` now accepts `overlay?: ReactNode` (rendered absolute
+top-right inside the hero button, z-10 above the hover "查看原图"
+pill). The detail page passes a `<StarButton>` there. This kept
+HeroWithLightbox API-stable for any future re-use.
+
+### B. /random 增强 (302 redirect → interactive UI)
+
+Old R37 `/random` was a bare 302 redirect. Replaced with a full
+client island:
+
+- `src/components/random-client.tsx` (120+ LOC)
+- `src/app/random/page.tsx` (Suspense wrapper for `useSearchParams()`)
+
+Features:
+- 24-kind chips at top (URL `?kind=X` deep link, browser back works)
+- Hero card preview (image + meta + tagline + 4 action buttons)
+- 4 buttons: 再换一张 (gold-deep primary) / 同系列再抽 (border secondary,
+  disabled when no other cards in same series) / 看详情 (Link) / 收藏夹
+- Space reroll shortcut
+- sessionStorage history (max 20 slugs) — avoids repeating same card
+  within a session; pool resets when exhausted
+- SSR-safe first paint: deterministic first candidate based on
+  URL ?kind
+
+### C. /graph 增强 (TODO mobile fallback + view toggle)
+
+Round 37 TODO ("60 节点在小屏太挤") addressed.
+
+| File | Purpose |
+|---|---|
+| `src/components/graph-list.tsx` | Scrollable list view (thumbnail + name + kind + 邻居 count), 44px touch targets, full keyboard/SR navigable |
+| `src/components/graph-view-toggle.tsx` | Toggle owner: localStorage `atlas-kit-graph-view` (`graph` / `list`), auto-pick `list` on viewport < 768px if no saved preference, CSS-hides inactive view |
+| `src/app/graph/page.tsx` | Wraps both views in `GraphViewToggle` |
+
+Why toggle vs responsive CSS: each view owns its filter UI independently.
+Switching view resets filter intentionally — the two layouts serve
+different mental modes ("explore" vs "scan"), not the same query in
+two skins.
+
+### Keyboard shortcuts added
+
+- `s` — toggle favorite of current card (only on `/cards/[slug]`,
+  conflict-guarded against `g s` sequence by 1s timeout)
+- `g f` — navigate to `/favorites`
+- Help modal gained 2 new rows
+
+### Build verification
+
+`next build` clean: 811 static pages. New routes picked up:
+- `/favorites` (2.9 kB, Static)
+- `/random` (4.76 kB, Static — Suspense-wrapped)
+- `/graph` (5.92 kB, Static)
+
+### Why no Push trigger
+
+Push to origin was attempted but `atlas-kit.vercel.app` resolves to an
+unrelated Storybook demo (the subdomain was claimed by someone else,
+not our Vercel project). Without `vercel` / `gh` CLI on this machine,
+deploy verification was not possible from the agent side. The 4
+commits are pushed to `origin/master` (`d9f069f..84e41d4`) and await
+manual verification by the user via their actual deployment URL.
+
+## Round 53: /all 加 FavoritesCta 横幅 + CardPreview hover polish (2026-06-22)
+
+Commit `28602b0`. Two follow-up polish / discoverability tweaks
+after R52.
+
+### A. /all FavoritesCta banner
+
+New client island `src/components/favorites-cta.tsx` rendered above
+the 3-grid (按字数 / 按系列 / 按类型) on `/all`. 3 states:
+
+- **Pre-hydration**: 68px dashed skeleton (avoids layout shift when
+  count hydrates)
+- **0 favorites**: muted dashed-border banner with "随机逛逛"
+  secondary CTA (links to `/random`)
+- **≥1 favorites**: gold-bordered banner with count + primary
+  "查看收藏夹" button (gold-deep) + secondary "随机一张"
+
+### B. CardPreview hover polish (3 changes)
+
+The 60-card grid's click affordance was too subtle (title color
+shift only). Three additions, scoped tight to avoid visual noise:
+
+1. **Image scale-up on hover**: `group-hover:scale-[1.04]` with
+   `transition-transform duration-500`. Image is `fill` (absolute);
+   Tailwind's default `transform-origin: center` gives the zoom-in
+   feel without clipping.
+2. **"查看图鉴 ↗" overlay pill**: bottom-center, fades in + slides up
+   on `group-hover` / `group-focus-visible`. Mirrors HeroWithLightbox's
+   "查看原图" pattern for visual consistency between detail and
+   grid contexts. Decorative (`aria-hidden`); parent Link still
+   handles click.
+3. **Title underline animation**: 1px gold-deep underline grows from
+   `w-0` → `w-full` in 300ms via child span with `absolute -bottom-0.5`.
+   Only on the title (subtitle + tags don't get it — would feel
+   busy).
+
+### Untouched on purpose
+
+- Card lift (`hover:-translate-y-1`) — already works, kept
+- Star button behavior (subtle variant: opacity-0 until hover or
+  favorited) — discovery tradeoff documented in R52
+- Tag list, subtitle color, image alt text
+
+### Build
+
+`next build` clean (811 pages). No new dependencies.
+
+### Lessons worth saving
+
+- **Server-component shells + thin client islands**: `/all` stayed
+  server-rendered for the 3-grid (SEO benefit, no client JS
+  hydration cost); only the count-dependent CTA is client. Same
+  pattern as `/favorites` page + `/random` page in R52.
+- **Cross-component sync via custom event**: `useFavorites()` writes
+  to localStorage AND dispatches a custom event. The native
+  `storage` event only fires in OTHER tabs by spec, so the custom
+  event is needed for same-tab cross-component sync. The hook also
+  re-reads on `storage` for cross-tab updates.
+- **Image-overlay interaction**: putting `<StarButton>` inside a
+  parent `<Link>` requires `stopPropagation` on the button click,
+  otherwise the Link navigation fires too. Already shipped in R52
+  CardPreview; reaffirmed in R53 (the new overlay pill is
+  `aria-hidden` precisely so it's not focusable, but the star still
+  needs stopPropagation).

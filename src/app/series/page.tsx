@@ -62,10 +62,24 @@ export default function SeriesPage() {
                   >
                     {heroCard ? (
                       <Image
-                        src={heroCard.image_full ?? heroCard.image}
+                        // R55d (2026-06-23) test: try card.png (600w
+                        // lossless PNG) instead of -full.webp (1024w
+                        // lossy WebP q90). User theory: lossless
+                        // preserves text edges better than q90 WebP
+                        // even at lower res, so the visual sharpness
+                        // on small text labels in encyclopedia
+                        // modules might look better. 1K batch cards
+                        // (~179) have the same 768w for both tiers
+                        // so swapping is no regression there. 2K
+                        // batch cards' full.webp is 1024w vs card.png
+                        // 600w — switching is a 2.13x upscale (worse
+                        // for big text, but text edges may be sharper
+                        // via lossless). User will visually compare;
+                        // revert if 2K batch ends up worse.
+                        src={heroCard.image}
                         alt={heroCard.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 100vw"
+                        sizes="(max-width: 768px) 100vw, 1024px"
                         className="object-cover object-top"
                         quality={95}
                         // First row cover is the LCP candidate — eager +

@@ -1313,4 +1313,159 @@ shift only). Three additions, scoped tight to avoid visual noise:
   otherwise the Link navigation fires too. Already shipped in R52
   CardPreview; reaffirmed in R53 (the new overlay pill is
   `aria-hidden` precisely so it's not focusable, but the star still
-  needs stopPropagation).
+  needs stopPropagation).## Round 54: /all 加 FavoritesCta 横幅 + CardPreview hover polish (2026-06-22) — REVISED
+
+(Original R53 round note covered CardPreview polish + FavoritesCta.
+R54 extended this: footer Browse 列 + home page FavoritesPreview 段
+both ship in this round. R53 commit stays as-is, R54 commit is the
+follow-up.)
+
+Commit `10022a0`. Extends R52 favorites system with two more
+discoverability surfaces.
+
+### A. Footer Browse 列加 收藏夹 + 随机一张
+
+`src/components/site-footer.tsx` — 2 new links in the Browse column:
+
+- **收藏夹** (Star icon) → `/favorites`
+- **随机一张** (Dices icon) → `/random`
+
+Both pair with the header badge / keyboard shortcut to give
+favorites + random a 2nd entry point. Icons match the Lucide
+choices used elsewhere (FavoritesBadge uses Star, random page
+uses Dices).
+
+### B. Home page FavoritesPreview 段
+
+New client island `src/components/favorites-preview.tsx` inserted
+between the 5-series preview and the "精选图鉴" cards grid:
+
+- **0 favorites**: returns null. First-time visitors get a clean
+  home (no empty "你还没收藏" placeholder — redundant with hero
+  CTAs).
+- **1-6 favorites**: show all in a 2/3/6 col grid (same
+  CardPreview component used elsewhere).
+- **≥7 favorites**: show top 6 + "查看收藏夹 (N) →" link.
+
+Section styling: gold-bordered eyebrow ("YOUR COLLECTION" with
+Star icon) + serif h2 + count subtitle. Grid uses CardPreview's
+existing component (no duplication).
+
+Why client-only: favorites are localStorage. SSR returns null
+(useFavorites' initial Set is empty), so no hydration flash for
+the absent case.
+
+### Combined R52-R54 discoverability matrix
+
+After R54, /favorites is reachable from 8 surfaces:
+
+1. Header 右上角 Star icon + count badge (all pages)
+2. Detail page hero Star button (prominent)
+3. CardPreview hover Star overlay (subtle)
+4. Keyboard `s` (toggle current card) + `g f` (navigate)
+5. /all page FavoritesCta banner
+6. Home page FavoritesPreview section (if ≥1 favorite)
+7. /random page hero Star + "收藏夹" button
+8. Footer Browse column
+
+## Round 55: CloudBase upload pipeline (2026-06-22)
+
+Commits: `ef85f5e` (script) + `17b5bbd` (test run + 93 cards.json
+fields rewritten to CDN URLs). Closes the new-card CDN gap left
+open since R36 migration — 31 cards added in R43/R46 were still on
+local paths.
+
+### The gap (before R55)
+
+- `generate-card.mjs` writes 3 tier files to local `public/cards/...`
+- cards.json image fields are local paths (`/cards/food/dumplings/...`)
+- The R36 migration (`cdn-rewrite.mjs`) had flipped 1080 fields to
+  CDN URLs, but cards added afterwards (music + anime + pulp-fiction)
+  were local-only
+- New cards generated via pipeline were un-served — if anyone ran
+  `cdn-rewrite.mjs --apply` post-R43 they'd 404
+
+### What R55 adds
+
+| File | Purpose |
+|---|---|
+| `scripts/upload-cdn.mjs` | Upload 3-tier files to CloudBase + optional cards.json rewrite |
+| `scripts/generate-card.mjs` | New `--upload` flag (spawns upload-cdn as subprocess after step 6) |
+| `.env.local.example` | New TENCENT_* env vars documented |
+| `package.json` devDep | `@cloudbase/node-sdk@3.18.3` |
+
+### upload-cdn.mjs CLI surface
+
+```bash
+node --env-file=.env.local scripts/upload-cdn.mjs \
+  --kind food --slug dumplings --also-rewrite   # one card
+node --env-file=.env.local scripts/upload-cdn.mjs \
+  --kind food --also-rewrite                    # one kind
+node --env-file=.env.local scripts/upload-cdn.mjs \
+  --all --also-rewrite                          # all 391 cards (slow)
+```
+
+Flags:
+- `--dry-run` — list files + sizes + cloudPath, no network
+- `--also-rewrite` — after successful upload, point cards.json
+  image / image_thumb / image_full to CDN URL
+- exit code: `0` = success, `2` = partial failure (some files
+  failed but cards.json NOT updated for them — caller can retry)
+
+### Why `--env-file=.env.local`
+
+Node doesn't auto-load .env files (that's Next.js's behavior).
+CLI scripts need either:
+1. `require('dotenv')` (extra dep + async load)
+2. `node --env-file=.env.local script.mjs` (native, Node 20+)
+
+Went with #2 — zero deps, faster cold start.
+
+### Auth model
+
+`@cloudbase/node-sdk` admin mode:
+
+```js
+tcb.init({
+  env: process.env.TENCENT_CLOUDBASE_ENV,  // "cloud1-d9gv1q8ikad5e9721"
+  region: process.env.TENCENT_CLOUDBASE_REGION,  // "ap-shanghai"
+  secretId: process.env.TENCENT_SECRET_ID,  // CAM API key
+  secretKey: process.env.TENCENT_SECRET_KEY,
+})
+```
+
+Why admin (vs anonymous): `node-sdk` doesn't have
+`signInAnonymously` (only `getAuthContext` / `createTicket` /
+`getUserInfo`). For CLI server-side uploads, admin via CAM API
+key is the standard pattern.
+
+### Verification (R55-test)
+
+| Step | Result |
+|---|---|
+| `node --env-file=.env.local scripts/upload-cdn.mjs --kind food --slug peking-duck` | 3/3 uploaded |
+| `webfetch https://636c-cloud1-...tcb.qcloud.la/cards/food/peking-duck/peking-duck-thumb.webp` | returned actual encyclopedia card image ✓ |
+| `--kind music --also-rewrite` | 45/45 uploaded, 45 cards.json fields rewritten |
+| `--kind anime --also-rewrite` | 45/45 uploaded, 42 rewritten (3 already CDN) |
+| `--kind movie --also-rewrite` | 48/48 uploaded, 6 rewritten (15 R36 already CDN, only R46 pulp-fiction was local) |
+| **Total** | **138 files uploaded, 93 cards.json fields rewritten, 0 failures** |
+| Post-upload audit `node -e "const c=require('./data/cards.json');console.log(c.filter(x=>x.image.startsWith('/cards/')).length)"` | `0` (all 391 cards on CDN URLs) |
+
+### 2 gotchas worth saving
+
+1. **`cloudPath` must NOT start with `/`** — `node-sdk` rejects it
+   with "cloud path is invalid". Store as `cards/<kind>/<slug>/<file>`,
+   construct public URL as `${CDN_DOMAIN}/${cloudPath}`.
+2. **`@cloudbase/js-sdk` doesn't run in Node CLI** — depends on
+   `window.navigator`, throws at init. Use `node-sdk` (admin mode) or
+   `@cloudbase/admin-node` (no separate npm package as of 2026-06;
+   admin is built into node-sdk).
+
+Both gotchas are in `agent_memory` (MEMORY.md R55 entry) for
+future sessions.
+
+### R55 + R36 migrations = production CDN parity
+
+Before R55: 360 cards on CDN (R36 migration), 31 on local (R43/R46 adds).
+After R55: all 391 cards on CDN URLs. Next card generated via the
+pipeline will auto-upload + auto-rewrite (with `--upload` flag).

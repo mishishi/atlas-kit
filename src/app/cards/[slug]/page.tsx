@@ -7,6 +7,7 @@ import { getCardFullDims } from "@/lib/server/image-dims";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
+import { StarButton } from "@/components/star-button";
 import { LinkedText } from "@/components/linked-text";
 import { CardNav } from "@/components/card-nav";
 import { CardFlipMode } from "@/components/card-flip-mode";
@@ -295,6 +296,7 @@ export default async function CardDetail({
           filename={card.slug}
           caption={card.title}
           fullDims={fullDims ?? undefined}
+          overlay={<StarButton slug={card.slug} title={card.title} size="prominent" />}
         />
         </div>
 

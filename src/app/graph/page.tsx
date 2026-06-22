@@ -1,19 +1,21 @@
 /**
  * R37 Plan 3 (2026-06-17): /graph — image-first knowledge graph.
+ * R52 (2026-06-22): mobile list fallback + view toggle.
  *
- * Server component: 拿 graph data, 传给 client GraphView.
+ * Server component: 拿 graph data, 传给 client GraphViewToggle.
  *
  * Header: minimal — site header 已经给了导航, 这里只 1 行标题 +
  * 计数 + 关按钮 (回 /cards). 整页是 graph (无 footer/header 全宽).
  *
- * TODO (R38+): mobile 友好版 (60 节点在小屏太挤, 用列表 fallback).
- * 现阶段桌面端是主用例.
+ * R52: GraphViewToggle 在两种视图间切 — 力导向图 (桌面优先) 和
+ * 触屏友好的列表 fallback (60 节点在小屏太挤). 用户选择 sticky
+ * 存 localStorage; 首次访问按视口宽度自动选.
  */
 
 import Link from "next/link";
 import { ArrowLeft, Network } from "lucide-react";
 import { getGraphData, getGraphStats } from "@/lib/graph";
-import { GraphView } from "@/components/graph-view";
+import { GraphViewToggle } from "@/components/graph-view-toggle";
 
 export const metadata = {
   title: "图谱 · 图鉴社",
@@ -50,8 +52,9 @@ export default function GraphPage() {
         </div>
       </div>
 
-      {/* Graph fills the remaining viewport */}
-      <GraphView data={data} />
+      {/* Graph fills the remaining viewport. R52: wraps both views
+          and owns the toggle (see graph-view-toggle.tsx). */}
+      <GraphViewToggle data={data} />
     </main>
   );
 }

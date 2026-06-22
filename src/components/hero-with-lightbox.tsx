@@ -19,7 +19,7 @@
  *                            total, fits Vercel Hobby 100 MB cap)
  */
 import Image from "next/image";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Maximize2 } from "lucide-react";
 import { Lightbox } from "./lightbox";
 import { Skeleton } from "@/components/skeleton";
@@ -43,9 +43,13 @@ interface HeroWithLightboxProps {
    *  (1K batch). The label should reflect actual dimensions, not
    *  a hardcoded value. If omitted, defaults to a generic "高清大图". */
   fullDims?: string;
+  /** R52 (2026-06-22): optional overlay rendered absolute top-right
+   *  of the hero image. Used for the favorite StarButton. z-index 10
+   *  to sit above the hover "查看原图" pill. */
+  overlay?: ReactNode;
 }
 
-export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption, fullDims }: HeroWithLightboxProps) {
+export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption, fullDims, overlay }: HeroWithLightboxProps) {
   const [open, setOpen] = useState(false);
   // R35 (2026-06-17): track image load state. While `loaded === false`
   // we show a shimmer Skeleton on top of the cream bg (palette[0]) so
@@ -111,6 +115,12 @@ export function HeroWithLightbox({ src, fullSrc, alt, bgColor, filename, caption
             <Maximize2 className="h-3.5 w-3.5" />
             查看原图
           </span>
+          {/* Optional R52 overlay — favorite button etc. z-10 so it
+              sits above the hover pill (z = default) and any image
+              layer. */}
+          {overlay && (
+            <div className="absolute top-3 right-3 z-10">{overlay}</div>
+          )}
         </button>
 
         {/* Secondary text link below the image — opens the full.webp

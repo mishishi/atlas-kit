@@ -1,6 +1,8 @@
 "use client";
 
 // R41 (2026-06-21): Global keyboard shortcuts.
+// R52 (2026-06-22): added g f (→ /favorites) + s (toggle favorite on
+// current /cards/[slug]).
 //
 // What it handles:
 //   /         → focus the search input (data-search-input attribute)
@@ -11,6 +13,8 @@
 //   g s       → go /series
 //   g t       → go /timeline
 //   g g       → go /graph
+//   g f       → go /favorites
+//   s         → toggle favorite of current card (only on /cards/[slug])
 //
 // j/k for prev/next card are handled by CardNav itself (alongside
 // ArrowLeft/Right). CardNav is mounted only on /cards/[slug], so the
@@ -18,7 +22,7 @@
 // input/textarea/contenteditable (don't hijack typing).
 
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import type { LucideIcon } from "lucide-react";
 import {
   X,
@@ -31,12 +35,16 @@ import {
   ChevronRight,
   ChevronLeft,
   Lightbulb,
+  Star,
 } from "lucide-react";
+import { useFavorites } from "@/lib/favorites";
 
 const G_PREFIX_MS = 1000;
 
 export function KeyboardShortcuts() {
   const router = useRouter();
+  const pathname = usePathname() ?? "/";
+  const { toggle: toggleFavorite, hydrated: favHydrated } = useFavorites();
   const [helpOpen, setHelpOpen] = useState(false);
   // lastG lives in a ref so updates don't re-attach the listener.
   // We only depend on `helpOpen` in the effect (Escape needs to
@@ -44,6 +52,11 @@ export function KeyboardShortcuts() {
   const lastG = useRef(0);
   const helpOpenRef = useRef(helpOpen);
   helpOpenRef.current = helpOpen;
+
+  // Derive current slug from /cards/[slug] path. Used by `s` shortcut.
+  const currentSlug = pathname.match(/^\/cards\/([\w-]+)\/?$/)
+    ? RegExp.$1
+    : null;
 
   useEffect(() => {
     function isTypingTarget(target: EventTarget | null) {
@@ -86,6 +99,20 @@ export function KeyboardShortcuts() {
         return;
       }
 
+      // R52: `s` toggles favorite of current card. Only on
+      // /cards/[slug]. Skip if `g s` sequence is in progress
+      // (lastG < 1s ago).
+      if (
+        key === "s" &&
+        currentSlug &&
+        favHydrated &&
+        Date.now() - lastG.current > G_PREFIX_MS
+      ) {
+        e.preventDefault();
+        toggleFavorite(currentSlug);
+        return;
+      }
+
       // g + <key> nav (vim-style leader key, 1s timeout).
       if (key === "g") {
         lastG.current = Date.now();
@@ -99,6 +126,7 @@ export function KeyboardShortcuts() {
             s: "/series",
             t: "/timeline",
             g: "/graph",
+            f: "/favorites",
           }[key.toLowerCase()] ?? null;
         if (route) {
           e.preventDefault();
@@ -150,6 +178,7 @@ export function KeyboardShortcuts() {
             <Row icon={ChevronLeft} label="上一张" keys={["j", "←"]} />
             <Row icon={ChevronRight} label="下一张" keys={["k", "→"]} />
             <Row icon={Search} label="搜索" keys={["/"]} />
+            <Row icon={Star} label="收藏当前图鉴" keys={["s"]} hint="仅 /cards/[slug]" />
           </Section>
           <Section title="跳转">
             <Row icon={Home} label="首页" keys={["g", "h"]} />
@@ -157,6 +186,7 @@ export function KeyboardShortcuts() {
             <Row icon={GitBranch} label="系列" keys={["g", "s"]} />
             <Row icon={Calendar} label="时间线" keys={["g", "t"]} />
             <Row icon={Network} label="知识图谱" keys={["g", "g"]} />
+            <Row icon={Star} label="收藏夹" keys={["g", "f"]} />
           </Section>
           <Section title="图鉴">
             <Row icon={X} label="关闭弹窗" keys={["Esc"]} />
@@ -189,18 +219,26 @@ function Row({
   icon: Icon,
   label,
   keys,
+  hint,
 }: {
   icon: LucideIcon;
   label: string;
   keys: string[];
+  /** Optional scope hint shown muted to the right (e.g. "仅 /cards/[slug]"). */
+  hint?: string;
 }) {
   return (
     <div className="flex items-center justify-between gap-2 text-xs">
-      <span className="flex items-center gap-2 text-muted-foreground">
-        <Icon className="h-3.5 w-3.5" aria-hidden={true} />
-        {label}
+      <span className="flex items-center gap-2 text-muted-foreground min-w-0">
+        <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />
+        <span className="truncate">{label}</span>
+        {hint && (
+          <span className="text-[10px] text-muted-foreground/60 truncate hidden sm:inline">
+            ({hint})
+          </span>
+        )}
       </span>
-      <span className="flex items-center gap-1">
+      <span className="flex items-center gap-1 shrink-0">
         {keys.map((k) => (
           <kbd
             key={k}

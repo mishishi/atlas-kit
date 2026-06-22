@@ -4,6 +4,7 @@ import { Card as CardType } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { cn } from "@/lib/utils";
 import { Tag } from "./tag";
+import { StarButton } from "./star-button";
 
 interface CardPreviewProps {
   card: CardType;
@@ -65,6 +66,19 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
             新收录
           </span>
         )}
+        {/* R52 (2026-06-22): favorite star — mirror of 新收录 badge on
+            the top-right. Subtle variant: hidden until card hover
+            (or always visible when favorited) so it doesn't fight the
+            image. `stopPropagation` so clicking the star doesn't also
+            trigger the parent Link's navigation. */}
+        <div className="absolute top-2 right-2">
+          <StarButton
+            slug={card.slug}
+            title={card.title}
+            size="subtle"
+            stopPropagation
+          />
+        </div>
       </div>
 
       <div className="p-4 paper-grain">

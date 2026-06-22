@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookMarked, Compass, Sparkles, Clock, Map, LayoutGrid, Network } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
+import { FavoritesBadge } from "./favorites-badge";
 import { cn } from "@/lib/utils";
 
 // 7 nav items, capped per "5±2 mobile-nav" rule (max 7). R37 Plan 3
@@ -76,6 +77,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-1">
+          <FavoritesBadge />
           <ThemeToggle />
         </div>
       </div>

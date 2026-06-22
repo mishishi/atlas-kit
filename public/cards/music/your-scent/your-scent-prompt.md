@@ -1,6 +1,6 @@
 # Encyclopedia Infographic
 
-Theme: 你的香气
+Theme: 郭静 你的香气
 Category: 音乐
 
 STRICT 9:16 vertical page.

@@ -26,6 +26,7 @@
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
+    "@cloudbase/node-sdk": "^3.18.3",
     "@next/bundle-analyzer": "^14.2.35",
     "@types/node": "^20",
     "@types/react": "^18",

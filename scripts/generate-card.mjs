@@ -29,6 +29,9 @@
 //   --aspect-ratio 9:16  (默认 9:16,匹配 prompt template)
 //   --skip-tier          (不生成 thumb/full)
 //   --skip-cards-json    (不写 cards.json,只落图)
+//   --upload             (R55: 3-tier 落盘后调用 scripts/upload-cdn.mjs
+//                         上传到 CloudBase + 把 cards.json path 改成 CDN URL.
+//                         需要 TENCENT_SECRET_ID/SECRET_KEY in env.)
 //   --dry-run            (--skip-tier + --skip-cards-json + --no-matrix)
 
 import fs from "node:fs";
@@ -309,6 +312,31 @@ for (const job of jobs) {
       }
     }
     console.log(`  -thumb.webp + -full.webp: ok`);
+  }
+
+  // 7. (R55 opt-in) 上传 3-tier 到 CloudBase + 改 cards.json 为 CDN URL
+  // --upload 触发 upload-cdn.mjs 子进程,传 --kind + --slug + --also-rewrite
+  // 上传失败不阻塞本步 (cards.json 仍写本地路径,后续手动重传即可).
+  // 跳过: dry-run / no-matrix / skip-tier (本地没文件没意义传).
+  if (hasFlag("--upload") && !dryRun && !noMatrix && !skipTier) {
+    const { spawn } = await import("node:child_process");
+    const child = spawn(
+      process.execPath,
+      [
+        path.join(ROOT, "scripts", "upload-cdn.mjs"),
+        "--kind", job.kind,
+        "--slug", job.slug,
+        "--also-rewrite",
+      ],
+      { stdio: "inherit", env: process.env },
+    );
+    const code = await new Promise((resolve) => child.on("exit", resolve));
+    if (code !== 0 && code !== 2) {
+      // code 2 = upload-cdn.mjs 故意退出非零 (部分失败); 不算致命
+      console.error(`  WARN upload-cdn exited ${code}; cards.json written with local paths.`);
+    } else if (code === 0) {
+      console.log(`  upload-cdn: ok (cards.json now points at CDN)`);
+    }
   }
 
   // 7. 更新 cards.json

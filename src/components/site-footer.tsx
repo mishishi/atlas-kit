@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, FileText, Rss, Keyboard } from "lucide-react";
+import { Mail, FileText, Rss, Keyboard, Star, Dices } from "lucide-react";
 
 /**
  * Inline GitHub mark — uses the official brand path so we don't
@@ -85,6 +85,32 @@ export function SiteFooter() {
                   className="inline-flex min-h-[44px] items-center rounded-sm hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
                   更新日志
+                </Link>
+              </li>
+              <li>
+                {/* R54 (2026-06-22): favorites discoverability — 2nd entry
+                    point for /favorites besides the header badge. Pairs
+                    with the home page FavoritesPreview section to make
+                    the bookmark surface findable from any page footer. */}
+                <Link
+                  href="/favorites"
+                  className="inline-flex min-h-[44px] items-center gap-1.5 rounded-sm hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  <Star className="h-3 w-3" aria-hidden="true" />
+                  收藏夹
+                </Link>
+              </li>
+              <li>
+                {/* R54 (2026-06-22): footer entry for /random — pairs with
+                    the favorites link above. Both go through the
+                    "discovery" intent ("look at something") which fits
+                    the Browse column. */}
+                <Link
+                  href="/random"
+                  className="inline-flex min-h-[44px] items-center gap-1.5 rounded-sm hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  <Dices className="h-3 w-3" aria-hidden="true" />
+                  随机一张
                 </Link>
               </li>
             </ul>

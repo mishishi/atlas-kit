@@ -5,6 +5,7 @@ import { getAllCards, getAllSeries, getKindCounts } from "@/lib/data";
 import { THEME_TYPES } from "@/lib/theme-types";
 import { CardGrid } from "@/components/card-grid";
 import { KindFilter } from "@/components/kind-filter";
+import { FavoritesPreview } from "@/components/favorites-preview";
 
 interface HomeProps {
   searchParams: { kind?: string };
@@ -249,6 +250,13 @@ export default function Home({ searchParams }: HomeProps) {
           </ul>
         </div>
       </section>
+
+      {/* R54 (2026-06-22): favorites preview. Client island between
+          the curated 5-series block and the public "精选图鉴" grid.
+          Renders null when the user has no favorites (first-time
+          visitors get a clean home; returnees get a personalized
+          section above the public grid). */}
+      <FavoritesPreview allCards={allCards} />
 
       {/* Cards grid */}
       <section className="container py-12 md:py-16">

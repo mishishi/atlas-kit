@@ -57,7 +57,15 @@ export default function SeriesPage() {
               {layoutFamily === 0 && (
                 <div className="flex flex-col">
                   <div
-                    className="relative w-full aspect-[9/16] md:aspect-[16/9]"
+                    // R55c (2026-06-23): cap container width at 5xl
+                    // (1024px) so the hero image matches -full.webp's
+                    // native 1024w source. Without max-w-5xl, the
+                    // desktop container expands to 1280px and the
+                    // browser upscales 1024→1280 (1.25x) → visible
+                    // blur on 16:9 hero strips. Family 1 (280px) and
+                    // Family 2 (200px) are already well below 1024w
+                    // so they're sharp; only Family 0 needs the cap.
+                    className="relative w-full max-w-5xl mx-auto aspect-[9/16] md:aspect-[16/9]"
                     style={{ backgroundColor: s.palette[0] }}
                   >
                     {heroCard ? (
@@ -65,7 +73,7 @@ export default function SeriesPage() {
                         src={heroCard.image_full ?? heroCard.image}
                         alt={heroCard.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 100vw"
+                        sizes="(max-width: 768px) 100vw, 1024px"
                         className="object-cover object-top"
                         quality={95}
                         // First row cover is the LCP candidate — eager +

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Card as CardType } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { cn } from "@/lib/utils";
@@ -43,7 +44,13 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           priority={priority}
-          className="object-cover"
+          // R53 (2026-06-22) hover polish: scale image up 4% on card
+          // hover. The image is `fill` (absolute positioned); Tailwind's
+          // default transform-origin is center which gives the
+          // "zoom-in" feel without clipping. transition-transform only
+          // (not transition-all) so opacity/filter changes elsewhere
+          // don't pay for the same frame budget.
+          className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
         />
         {/* "New" badge: surfaces cards added in the last 24h so users notice
             fresh content on repeat visits. Static dot (no infinite pulse) per
@@ -79,6 +86,27 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
             stopPropagation
           />
         </div>
+        {/* R53 (2026-06-22) hover polish: "查看图鉴 ↗" affordance pill
+            — fades in on card hover/focus, parallel to HeroWithLightbox's
+            "查看原图" pattern. Without this, users on a grid page only
+            see the title-text color shift on hover, which is too subtle
+            for the 60-card grid where every card is clickable. The pill
+            is purely decorative — clicking anywhere on the parent Link
+            still navigates — but it answers "what does this card do?"
+            without the user having to guess from the title text alone. */}
+        <span
+          aria-hidden="true"
+          className={cn(
+            "absolute bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5",
+            "rounded-full bg-card/90 px-3 py-1.5 text-xs font-medium text-foreground",
+            "shadow-card backdrop-blur",
+            "opacity-0 translate-y-1 transition-all duration-200 ease-out",
+            "group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100 group-focus-visible:translate-y-0",
+          )}
+        >
+          查看图鉴
+          <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+        </span>
       </div>
 
       <div className="p-4 paper-grain">
@@ -87,8 +115,18 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
           <span>·</span>
           <span>No.{card.seriesNo}</span>
         </div>
-        <h3 className="font-serif text-lg font-semibold leading-tight mb-1 group-hover:text-gold-deep transition-colors">
+        {/* R53 polish: title gains an animated underline on hover.
+            The underline grows from 0 to full width via
+            `w-0 group-hover:w-full` on a child span — matches the
+            eyebrow tag pattern but stays scoped to just the title
+            (subtitle + tags don't get the treatment, would feel
+            busy). Color stays the same gold-deep it already flips to. */}
+        <h3 className="relative font-serif text-lg font-semibold leading-tight mb-1 text-foreground group-hover:text-gold-deep transition-colors">
           {card.title}
+          <span
+            aria-hidden="true"
+            className="absolute -bottom-0.5 left-0 h-px w-0 bg-gold-deep transition-all duration-300 ease-out group-hover:w-full"
+          />
         </h3>
         <p className="text-xs text-muted-foreground mb-3">{card.subtitle}</p>
         <div className="flex flex-wrap gap-1.5">

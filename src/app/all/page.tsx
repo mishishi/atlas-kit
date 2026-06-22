@@ -3,6 +3,7 @@ import { getAllCards } from "@/lib/data";
 import { Card as CardType, KIND_LABELS, THEME_TYPES } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { ListOrdered, Hash, Layers } from "lucide-react";
+import { FavoritesCta } from "@/components/favorites-cta";
 
 export const metadata = {
   title: "索引 · 图鉴社",
@@ -66,6 +67,11 @@ export default function AllPage() {
           三种索引帮你从不同角度切入：按篇幅、按系列、按类型。
         </p>
       </header>
+
+      {/* R53 (2026-06-22): favorites discovery CTA. Banner sits
+          above the 3-grid so users in "I want to find my favorites"
+          mode get a one-click path without scanning all 3 indexes. */}
+      <FavoritesCta />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* View 1: by length — numbered list */}

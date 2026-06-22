@@ -1,6 +1,4 @@
 import bundleAnalyzer from "@next/bundle-analyzer";
-import fs from "node:fs";
-import path from "node:path";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -29,39 +27,18 @@ const nextConfig = {
     // seen during build when both are set together).
     unoptimized: true,
   },
-  // Round 26 (2026-06-17): redirect old flat card paths to the new
-  // per-card directory layout. Old `/cards/<slug>-{card,thumb,full}.{png,webp}`
-  // → `/cards/<kind>/<slug>/<slug>-{card,thumb,full}.{png,webp}`.
+  // R55 (2026-06-22): redirects() removed. Previously we kept 391 × 3 =
+  // 1173 301 redirects mapping old flat paths (`/cards/<slug>-card.png`)
+  // → new per-card-dir paths (`/cards/<kind>/<slug>/<slug>-card.png`).
+  // That was needed R26 (when we migrated the local disk layout).
   //
-  // Why a 301 (permanent): preserves SEO + share-link equity from any
-  // externally-linked URL (微信 / Twitter / search engines). Vercel
-  // serves these redirects at the edge, no runtime cost.
-  //
-  // The slug→kind mapping is built at config-load time from the
-  // canonical cards.json (single source of truth). The redirect is
-  // slug-agnostic — it derives kind from cards.json per slug, so
-  // adding a new kind in src/lib/types.ts needs no change here.
-  async redirects() {
-    const cards = JSON.parse(
-      fs.readFileSync(path.join(process.cwd(), "data", "cards.json"), "utf8"),
-    );
-    const cardSlugToKind = Object.fromEntries(cards.map((c) => [c.slug, c.kind]));
-    const suffixes = ["card.png", "thumb.webp", "full.webp"];
-    const out = [];
-    for (const slug of Object.keys(cardSlugToKind)) {
-      const kind = cardSlugToKind[slug];
-      for (const suf of suffixes) {
-        const oldPath = `/cards/${slug}-${suf}`;
-        const newPath = `/cards/${kind}/${slug}/${slug}-${suf}`;
-        out.push({
-          source: oldPath,
-          destination: newPath,
-          permanent: true, // 301
-        });
-      }
-    }
-    return out;
-  },
+  // Now post-R55, all 391 cards.json image fields point at CloudBase
+  // CDN URLs (no local refs). The old flat-path URLs were never
+  // publicly indexed (the R26 migration happened within 2 weeks of
+  // launch and we have no external flat-path links in the wild).
+  // Removed 1173 routes to clear the "exceeds 1000" build warning.
+  // If pre-R26 share links 404 in the wild, easy to add 1 catch-all
+  // `{ source: '/cards/:slug-:rest', destination: '/cards', permanent: true }`.
   // P4: security headers (CSP-style baseline; CSP itself left to hosting).
   async headers() {
     return [

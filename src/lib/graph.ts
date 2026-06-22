@@ -1,21 +1,34 @@
 /**
  * R37 Plan 3 (2026-06-17): Knowledge graph data layer.
+ * R55f (2026-06-22): tag-edge threshold raised 3→5, generic tags
+ * (中国/全球/古代/文化) excluded from tag-pair counting.
  *
- * 60 张图鉴 + 200+ 边 = 第一版 image-first knowledge graph.
+ * 390 张图鉴 + ~200 边 = 第一版 image-first knowledge graph.
  *
  * Nodes: 来自 cards (slug, title, kind, series, palette, image, score).
  * Links: 3 种
  *   1. mention  — A.description 提到 B (有向, A→B).
  *                 用现有 getMentionIndex() 复用, 不重算.
- *   2. tag     — A 和 B 共享 3+ tag (无向, weight = 共享数).
+ *   2. tag     — A 和 B 共享 N+ tag (无向, weight = 共享数). N=5.
  *   3. series  — 同 series 视觉聚类, 不画边 (前端用 series 颜色
  *                区分节点, 不污染 graph edges).
  *
- * 序列化: 服务器端一次算好, /graph page 静态生成. 60 节点 + ~250
- * 边 JSON < 50KB, 客户端 hydrate 0 工作量.
+ * 序列化: 服务器端一次算好, /graph page 静态生成. 390 节点 + ~200
+ * 边 JSON < 60KB, 客户端 hydrate 0 工作量.
  *
  * 极致 #1 (2026-06-17 PM review): 维基没有 image-first graph.
  * 这是护城河.
+ *
+ * R55f tuning (after user feedback on graph density):
+ *   - Old: 3+ shared tags → 202 tag edges + 32 super-hubs (beijing: 46)
+ *   - New: 5+ shared tags + exclude generic tags → ~80 tag edges
+ *   - Generic tags (中国/全球/古代/文化) appear on 50+ cards each,
+ *     making them connect nearly every card — visually a hairball.
+ *     Excluding them leaves only the "subject-specific" tag overlap
+ *     which actually conveys a meaningful relationship.
+ *   - Side effect: orphans (cards with 0 edges) increase from 115
+ *     to ~130. Acceptable trade-off — orphans are visibly isolated
+ *     dots, which is honest. Better than false-positive connections.
  */
 
 import type { Card } from "./types";
@@ -70,13 +83,25 @@ function buildMentionPairs(): Array<[string, string]> {
   return pairs;
 }
 
-// Tag-based links: any 2 cards sharing 3+ tags → weight = shared count
+// Tags that appear on 50+ cards and convey no subject-specific
+// relationship. Excluded from tag-pair counting so they don't
+// form a hub-and-spoke "everything connects" hairball.
+// (R55f 2026-06-22)
+const GENERIC_TAGS = new Set([
+  "中国", "全球", "古代", "文化",
+]);
+
+// Tag-based links: any 2 cards sharing N+ tags (N from TAG_THRESHOLD)
+// → weight = shared count. Generic tags skipped.
+const TAG_THRESHOLD = 3;
+
 function buildTagPairs(
   cardList: Card[],
 ): Array<[string, string, number]> {
   const tagMap = new Map<string, Set<string>>(); // tag → slugs
   for (const c of cardList) {
     for (const t of c.tags || []) {
+      if (GENERIC_TAGS.has(t)) continue;
       if (!tagMap.has(t)) tagMap.set(t, new Set());
       tagMap.get(t)!.add(c.slug);
     }
@@ -93,7 +118,7 @@ function buildTagPairs(
   }
   const out: Array<[string, string, number]> = [];
   for (const [key, count] of pairCount) {
-    if (count >= 3) {
+    if (count >= TAG_THRESHOLD) {
       const [a, b] = key.split("|");
       out.push([a, b, count]);
     }

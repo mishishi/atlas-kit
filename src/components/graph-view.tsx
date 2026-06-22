@@ -135,9 +135,35 @@ export function GraphView({ data }: { data: GraphData }) {
         }}
         linkWidth={(l: any) => (l.type === "tag" ? 0.5 : 1.2)}
         linkDirectionalParticles={0}
-        cooldownTicks={120}
-        d3AlphaDecay={0.025}
-        d3VelocityDecay={0.3}
+        // R55f (2026-06-22) — graph density tuning.
+        //   Old: cooldownTicks=120, d3AlphaDecay=0.025, d3VelocityDecay=0.3,
+        //        linkDistance default (~30 px).
+        //   Issue: 390 nodes + 584 edges packed into a 1280px viewport
+        //     = hairball. Super-hubs (beijing: 46 edges) create dense
+        //     black knots.
+        //   Fix: bigger linkDistance + slower decay = forces run longer
+        //     and push nodes farther apart. Tag threshold drop (in
+        //     graph.ts) also reduces edges 584 → ~300, less critical
+        //     to also push harder here, but the two together give
+        //     a much cleaner layout.
+        cooldownTicks={250}
+        d3AlphaDecay={0.015}
+        d3VelocityDecay={0.25}
+        // d3Force prop is supported at runtime by react-force-graph-2d
+        // but missing from the published TypeScript types. The `as any`
+        // cast keeps the call ergonomic; if react-force-graph-2d
+        // changes its force API the runtime guard below will surface
+        // a clear error instead of silently falling through.
+        // @ts-expect-error d3Force not in ForceGraphProps types
+        d3Force={(d3: any) => {
+          // Pull nodes apart (default 30 → 70 px). Combined with
+          // lower alphaDecay the layout settles with more breathing
+          // room between clusters.
+          d3.force("link").distance(70);
+          // Mild charge: default -30, push slightly harder to spread
+          // hubs away from the mass of leaves they connect to.
+          d3.force("charge").strength(-90);
+        }}
         nodeCanvasObject={(node: any, ctx: CanvasRenderingContext2D, scale: number) => {
           const n = node as GraphNode & { x: number; y: number };
           const r = 14;

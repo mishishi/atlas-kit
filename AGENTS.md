@@ -1469,3 +1469,119 @@ future sessions.
 Before R55: 360 cards on CDN (R36 migration), 31 on local (R43/R46 adds).
 After R55: all 391 cards on CDN URLs. Next card generated via the
 pipeline will auto-upload + auto-rewrite (with `--upload` flag).
+
+## Round 55h: ThemeProvider useState SSR-safe init (2026-06-23)
+
+Production hydration error surfaced post-R55g deploy:
+
+```
+Error: Hydration failed because the initial UI does not match what was rendered on the server.
+Expected server HTML to contain a matching <footer> in <div>.
+  <RootLayout>
+    <html>
+      <body>
+        <ThemeProvider>
+          <div>     <-- mismatch reported here
+            <SiteFooter>
+              <footer>  <-- client expected this
+```
+
+`<SiteFooter>` rendered correctly on both sides (verified via local
+`next start` curl). The `<footer>` in the trace was collateral
+damage: the hydration walker bailed at the first divergence it
+noticed and reported the nearest DOM ancestor's missing element.
+
+### Root cause
+
+`src/components/theme-provider.tsx` had the same anti-pattern as R55c
+ThemeToggle: a `useState` initializer that read localStorage on the
+first render. Server returned `defaultTheme`, client read localStorage.
+Even though `<ThemeContext.Provider>` doesn't emit a DOM element, the
+provider's VALUE differs between server and client. React 18 dev
+mode's hydration walker bails on this context value mismatch and
+reports a misleading DOM-level error downstream.
+
+### Fix
+
+Keep `useState` init SSR-safe (always returns `defaultTheme` /
+`"light"` on first render). Move localStorage read into a `useEffect`
+that runs AFTER first paint.
+
+```jsx
+// BEFORE (broken):
+const [theme, setTheme] = useState<Theme>(() => {
+  if (typeof window === "undefined") return defaultTheme;
+  const stored = window.localStorage.getItem("theme");
+  if (stored === "light" || stored === "dark" || stored === "system") return stored;
+  return defaultTheme;
+});
+
+// AFTER (SSR-safe):
+const [theme, setTheme] = useState<Theme>(defaultTheme);
+
+useEffect(() => {
+  if (typeof window === "undefined") return;
+  const stored = window.localStorage.getItem("theme");
+  if (stored === "light" || stored === "dark" || stored === "system") setTheme(stored);
+  setResolvedTheme(
+    document.documentElement.classList.contains("dark") ? "dark" : "light"
+  );
+}, []);
+```
+
+FOUC prevention: the inline `<script>` in layout.tsx already applied
+the `.dark` class to `<html>` before paint. Visual is correct from
+frame 1; React state catches up after mount.
+
+### Why suppression wouldn't have worked
+
+`suppressHydrationWarning` on the layout's `<div>` would only
+suppress text-level mismatches within `<div>` itself. The actual
+divergence was at the React tree level (ThemeProvider's context
+value), not at the `<div>`'s DOM attribute level. Fix has to be at
+the source: make the context value SSR-stable.
+
+## Round 55i: graph-view CloudBase CORS cleanup (2026-06-23)
+
+Post-R55g temporary CORS workaround reverted. CloudBase bucket now
+configured to send `Access-Control-Allow-Origin`, so we can restore
+the proper image-first graph rendering.
+
+### Changes in `src/components/graph-view.tsx`
+
+| Before (R55g workaround) | After (R55i restore) |
+|---|---|
+| `img.crossOrigin` unset (canvas tainted) | `img.crossOrigin = "anonymous"` |
+| `img.onerror = () => {}` (suppress 390 console errors) | removed — let real errors surface |
+| `ctx.drawImage` wrapped in try/catch to absorb SecurityError | direct `ctx.drawImage` — no throw |
+
+### Comment updates
+
+The 25-line R55g comment block explaining the CORS situation has
+been replaced with a 5-line R55i comment that documents the
+reversion. If CORS ever breaks again (e.g. bucket CORS rule gets
+deleted), fall back to the R55g workaround: drop `crossOrigin` +
+re-add `img.onerror` + wrap `drawImage` in try/catch. The
+graceful-degradation colored circle (drawn BEFORE the drawImage
+attempt) still appears either way.
+
+### Verification
+
+`next build` clean. `/graph` route size unchanged (5.96 kB) — the
+change is logic only, no bundle delta. Graph now actually shows
+card thumbnails inside the colored circles (was just colored
+circles pre-R55i, since drawImage was throwing).
+
+### R55 closeout
+
+The R55 series is now complete:
+- **R55**: CloudBase upload pipeline (script + generate-card --upload)
+- **R55b**: delete redirects() — 1173 stale entries
+- **R55c**: ThemeToggle hydration fix
+- **R55f**: graph density tuning
+- **R55g**: graph-view canvas CORS workaround (temporary)
+- **R55h**: ThemeProvider useState SSR-safe init
+- **R55i**: revert R55g workaround now that CORS is fixed
+
+8 commits since R55d (the cards-on-CDN test run). Image bundle
+now renders correctly, hydration is clean, graph density is tuned.

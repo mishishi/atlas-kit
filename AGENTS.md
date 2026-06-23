@@ -1585,3 +1585,57 @@ The R55 series is now complete:
 
 8 commits since R55d (the cards-on-CDN test run). Image bundle
 now renders correctly, hydration is clean, graph density is tuned.
+
+## Round 56: drop OG image card thumbnails — fix /opengraph-image 500 (2026-06-23)
+
+Pre-launch smoke test caught `/opengraph-image` returning **500
+Internal Server Error** on Vercel. Discovered via curl during the
+launch checklist — the build was green but production was broken.
+
+### Root cause
+
+`satori` (next/og's renderer) tried to fetch 4 `c.image` (CloudBase
+CDN URLs) inline as the right-side thumbnail grid. On Vercel's
+node-runtime serverless function, the fetch was failing — either
+network timeout or internal CORS handling. Reproduced **only on
+Vercel**, not on `next start` locally, so the build-time smoke
+test couldn't catch it.
+
+### Fix
+
+Drop the 4-card thumbnail grid. Pure-text OG image — visual upgrade
+with bigger fonts + larger A logo + brand color block + status bar.
+
+| Layer | Content |
+|---|---|
+| Top | 图鉴社 / ATLAS KIT + 88px gold-gradient A logo |
+| Middle | "知识整理 · 信息归档" / "图鉴式展示" (76px headline) + tagline (26px) |
+| Bottom | "391 张图鉴 · 12 个分类 · AI 一键生成" status bar with top border |
+
+### Why not the other options
+
+- **Base64 embed in cards.json** (option B from launch checklist):
+  +30 KB × 391 cards = 12 MB added to data file. Not worth the
+  payload bloat for a launch fix. Defer to R60+ if real user
+  feedback says thumbnail OG is important.
+- **Static `public/og-image.png`** (option C): 0 runtime risk but
+  no dynamic content. The current text-only design still carries
+  the brand + stats, which is enough for Twitter / Slack /
+  iMessage previews.
+
+### Verification
+
+- `next build` clean (811 static pages, /opengraph-image still
+  `ƒ Dynamic`, 0 B bundle — server-only)
+- Curl locally via `next start -p 3103` should return a real PNG
+  (was 500 before this change; expected to be ~50 KB after)
+- Curl Vercel after deploy — expect 200 + image/png + 30-80 KB body
+
+### Lesson
+
+**Always smoke-test deploys via curl, not just `next build`.** The
+local `next start` and Vercel serverless runtime have different
+network access (Vercel can't always reach external CDN hosts from
+inside a serverless function, especially with no Allow headers).
+Build-time validation misses these. Add OG image + sitemap +
+robots + manifest to the deploy checklist.

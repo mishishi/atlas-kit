@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>图鉴社 · Atlas Kit — 系列化中文科普图鉴卡片集</title>
+  <meta name="description" content="391 张图鉴 · 12 个分类 · 反 RPG · 博物馆质感。开源的中文视觉百科。" />
+  <meta property="og:title" content="图鉴社 · Atlas Kit" />
+  <meta property="og:description" content="391 张图鉴 · 12 个分类 · 反 RPG · 博物馆质感" />
+  <meta property="og:image" content="./imgs/hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1A1814" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700;900&family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink: #1A1814;
+      --ink-soft: #3A342B;
+      --ink-mute: #7A7264;
+      --cream: #F5F0E6;
+      --cream-deep: #E5DED0;
+      --gold: #B8956A;
+      --gold-deep: #87603F;
+      --terracotta: #C97064;
+      --forest: #5C7A4F;
+      --font-serif: "Noto Serif SC", "Songti SC", Georgia, serif;
+      --font-sans: "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+      --font-mono: "Geist Mono", ui-monospace, "SF Mono", monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      overflow: hidden;
+      background: var(--ink);
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("./imgs/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.55) saturate(0.85);
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(26, 24, 20, 0.4) 0%,
+        rgba(26, 24, 20, 0.55) 50%,
+        rgba(26, 24, 20, 0.85) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 920px;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 14px;
+      border: 1px solid rgba(184, 149, 106, 0.4);
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(56px, 9vw, 120px);
+      font-weight: 900;
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title-en {
+      font-family: var(--font-mono);
+      font-size: clamp(14px, 1.4vw, 18px);
+      letter-spacing: 0.4em;
+      color: rgba(245, 240, 230, 0.55);
+      margin-bottom: 28px;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-serif);
+      font-size: clamp(18px, 1.8vw, 24px);
+      font-style: italic;
+      font-weight: 400;
+      color: rgba(245, 240, 230, 0.85);
+      margin: 0 0 8px;
+    }
+
+    .hero-subline {
+      font-size: 15px;
+      color: rgba(245, 240, 230, 0.6);
+      max-width: 540px;
+      margin: 24px auto 0;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 56px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      min-height: 48px;
+    }
+
+    .btn-primary {
+      background: var(--gold-deep);
+      color: var(--cream);
+      box-shadow: 0 8px 24px rgba(135, 96, 63, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(184, 149, 106, 0.5);
+    }
+
+    .btn-primary::after {
+      content: "→";
+      transition: transform 0.2s ease;
+    }
+
+    .btn-primary:hover::after {
+      transform: translateX(4px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--cream);
+      border: 1px solid rgba(245, 240, 230, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(245, 240, 230, 0.1);
+      border-color: rgba(245, 240, 230, 0.5);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: rgba(245, 240, 230, 0.5);
+      text-transform: uppercase;
+      animation: pulse-down 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse-down {
+      0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.4; }
+      50% { transform: translateX(-50%) translateY(6px); opacity: 1; }
+    }
+
+    /* ===== Section base ===== */
+    .section {
+      padding: 120px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin: 0 auto 64px;
+      text-align: center;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0 0 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-sub {
+      font-size: 17px;
+      color: var(--ink-mute);
+      margin: 0;
+    }
+
+    /* ===== Stats strip ===== */
+    .stats {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 48px 24px;
+      border-top: 1px solid var(--gold-deep);
+      border-bottom: 1px solid var(--gold-deep);
+    }
+
+    .stats-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: var(--font-serif);
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 230, 0.6);
+      margin-top: 12px;
+    }
+
+    /* ===== Sample cards ===== */
+    .samples-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .sample-card {
+      display: block;
+      background: var(--cream-deep);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .sample-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(26, 24, 20, 0.18);
+    }
+
+    .sample-card .thumb {
+      aspect-ratio: 9 / 12;
+      overflow: hidden;
+      background: var(--ink);
+      position: relative;
+    }
+
+    .sample-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      display: block;
+    }
+
+    .sample-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .sample-card .meta {
+      padding: 16px 18px 18px;
+    }
+
+    .sample-card .kind {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      background: rgba(184, 149, 106, 0.12);
+      padding: 3px 8px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .sample-card .name {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 4px;
+      line-height: 1.2;
+      position: relative;
+      display: inline;
+      background-image: linear-gradient(var(--gold-deep), var(--gold-deep));
+      background-size: 0 1px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.4s ease;
+    }
+
+    .sample-card:hover .name {
+      background-size: 100% 1px;
+    }
+
+    .sample-card .tag {
+      font-size: 13px;
+      color: var(--ink-mute);
+      margin: 4px 0 0;
+    }
+
+    /* ===== Why split ===== */
+    .why {
+      background: var(--cream);
+    }
+
+    .why-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .why-col {
+      padding: 56px 40px;
+      border-radius: 16px;
+      border-top: 4px solid;
+    }
+
+    .why-col-bad {
+      background: rgba(201, 112, 100, 0.05);
+      border-top-color: var(--terracotta);
+    }
+
+    .why-col-good {
+      background: rgba(92, 122, 79, 0.05);
+      border-top-color: var(--forest);
+    }
+
+    .why-col h3 {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .why-col-bad h3 { color: var(--terracotta); }
+    .why-col-good h3 { color: var(--forest); }
+
+    .why-col .sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin: 0 0 32px;
+      opacity: 0.7;
+    }
+
+    .why-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .why-col li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(26, 24, 20, 0.08);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .why-col li:last-child { border-bottom: 0; }
+
+    .why-col li::before {
+      content: "× ";
+      color: var(--terracotta);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .why-col-good li::before {
+      content: "✓ ";
+      color: var(--forest);
+    }
+
+    /* ===== Features ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .feature {
+      padding: 32px 28px;
+      background: var(--cream);
+      border: 1px solid var(--cream-deep);
+      border-radius: 16px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cream);
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: var(--ink-mute);
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    /* ===== Tech strip ===== */
+    .tech {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .tech-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .tech-list {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 16px;
+      font-family: var(--font-mono);
+      font-size: 14px;
+      color: rgba(245, 240, 230, 0.7);
+    }
+
+    .tech-list span:not(:last-child)::after {
+      content: " · ";
+      color: var(--gold-deep);
+      margin-left: 16px;
+    }
+
+    .tech-meta {
+      margin-top: 32px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 230, 0.4);
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      padding: 80px 24px 48px;
+      text-align: center;
+      background: var(--ink);
+      color: var(--cream);
+      border-top: 1px solid var(--gold-deep);
+    }
+
+    .footer-ctas {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .footer-copy {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: rgba(245, 240, 230, 0.4);
+      text-transform: uppercase;
+    }
+
+    .footer-copy a {
+      color: var(--gold);
+      border-bottom: 1px solid rgba(184, 149, 106, 0.4);
+      padding-bottom: 1px;
+    }
+
+    .footer-copy a:hover {
+      color: var(--cream);
+      border-bottom-color: var(--cream);
+    }
+
+    /* ===== Scroll animations ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .scroll-cue { animation: none; }
+      .sample-card:hover img { transform: none; }
+      .sample-card:hover { transform: none; }
+      .feature:hover { transform: none; }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .samples-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 720px) {
+      body { font-size: 16px; }
+      .section { padding: 64px 20px; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 32px 16px; }
+      .samples-grid { grid-template-columns: 1fr; }
+      .why-split { grid-template-columns: 1fr; gap: 16px; }
+      .why-col { padding: 32px 24px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .hero { min-height: 100vh; }
+      .hero-ctas { flex-direction: column; align-items: stretch; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Atlas Kit · 图鉴社</span>
+      <h1 class="hero-title">图鉴社</h1>
+      <div class="hero-title-en">ATLAS KIT</div>
+      <p class="hero-tagline">知识整理 · 信息归档 · 图鉴式展示</p>
+      <p class="hero-subline">391 张图鉴 · 12 个分类 · 反 RPG 定位 · 博物馆质感<br/>一个开源的中文视觉百科</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://atlas-kit-six.vercel.app">进入图鉴社</a>
+        <a class="btn btn-secondary" href="https://github.com/mishishi/atlas-kit">GitHub 源码</a>
+      </div>
+    </div>
+    <div class="scroll-cue">SCROLL</div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats reveal">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-num" data-target="391">0</div>
+        <div class="stat-label">张图鉴</div>
+      </div>
+      <div>
+        <div class="stat-num" data-target="12">0</div>
+        <div class="stat-label">个分类</div>
+      </div>
+      <div>
+        <div class="stat-num" data-target="13">0</div>
+        <div class="stat-label">个系列</div>
+      </div>
+      <div>
+        <div class="stat-num" data-target="9">0</div>
+        <div class="stat-label">模块每张</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAMPLES ===== -->
+  <section class="section reveal" id="samples">
+    <div class="section-header">
+      <span class="section-eyebrow">Sample Cards</span>
+      <h2 class="section-title">翻一页，就是一张图鉴</h2>
+      <p class="section-sub">从宠物到音乐，从古蜀到敦煌。每一个主题，9 个固定模块，1 张主视觉。</p>
+    </div>
+
+    <div class="samples-grid">
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/labrador-retriever">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/labrador-retriever/labrador-retriever-thumb.webp" alt="拉布拉多" loading="lazy" /></div>
+        <div class="meta"><span class="kind">PET</span><h3 class="name">拉布拉多</h3><p class="tag">世界三大无攻击性犬种</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/xian">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/xian/xian-thumb.webp" alt="西安" loading="lazy" /></div>
+        <div class="meta"><span class="kind">CITY</span><h3 class="name">西安</h3><p class="tag">十三朝古都 · 长安</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/dragon-boat">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/dragon-boat/dragon-boat-thumb.webp" alt="端午节" loading="lazy" /></div>
+        <div class="meta"><span class="kind">FESTIVAL</span><h3 class="name">端午节</h3><p class="tag">五月五 · 屈原 · 龙舟</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/peking-duck">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/peking-duck/peking-duck-thumb.webp" alt="北京烤鸭" loading="lazy" /></div>
+        <div class="meta"><span class="kind">FOOD</span><h3 class="name">北京烤鸭</h3><p class="tag">挂炉 · 皮酥 · 配葱白</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/your-scent">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/your-scent/your-scent-thumb.webp" alt="你的香气" loading="lazy" /></div>
+        <div class="meta"><span class="kind">MUSIC</span><h3 class="name">你的香气</h3><p class="tag">郭静 · 2007 台湾流行</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/sanxingdui">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/sanxingdui/sanxingdui-thumb.webp" alt="三星堆" loading="lazy" /></div>
+        <div class="meta"><span class="kind">HISTORY</span><h3 class="name">三星堆</h3><p class="tag">古蜀文明 · 青铜神树</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/gintama">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gintama/gintama-thumb.webp" alt="银魂" loading="lazy" /></div>
+        <div class="meta"><span class="kind">ANIME</span><h3 class="name">银魂</h3><p class="tag">坂田银时 · 歌舞伎町</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/potala-palace">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/potala-palace/potala-palace-thumb.webp" alt="布达拉宫" loading="lazy" /></div>
+        <div class="meta"><span class="kind">ARCH</span><h3 class="name">布达拉宫</h3><p class="tag">拉萨 · 宫殿 · 世界遗产</p></div>
+      </a>
+      <a class="sample-card" href="https://atlas-kit-six.vercel.app/cards/abacus">
+        <div class="thumb"><img src="https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/abacus/abacus-thumb.webp" alt="算盘" loading="lazy" /></div>
+        <div class="meta"><span class="kind">OBJECT</span><h3 class="name">算盘</h3><p class="tag">三下五除二 · 二进制前身</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== WHY ===== -->
+  <section class="section why reveal">
+    <div class="section-header">
+      <span class="section-eyebrow">Positioning</span>
+      <h2 class="section-title">市面 AI 生图 vs. 图鉴社</h2>
+      <p class="section-sub">每张图都好看，但只有"图鉴社"能让你真的想收藏。</p>
+    </div>
+
+    <div class="why-split">
+      <div class="why-col why-col-bad">
+        <h3>市面 AI 生图</h3>
+        <p class="sub">One-off 生成 · 不可收藏</p>
+        <ul>
+          <li>每次输出风格飘忽 — 同一主题不同卡片完全不一致</li>
+          <li>中文小字渲染出错 — 笔画断裂、字形乱码</li>
+          <li>字段全靠 prompt 自由发挥 — 该有的模块经常缺</li>
+          <li>字段重复 — "建筑档案"出现两次，"地理位置"漏了</li>
+          <li>加 gacha 套路 — 稀有度 / 战力 / SSR / 等级</li>
+          <li>没法系列化 — 你收藏不了 1 张就等于没做</li>
+        </ul>
+      </div>
+
+      <div class="why-col why-col-good">
+        <h3>图鉴社</h3>
+        <p class="sub">Series-first · 可收藏</p>
+        <ul>
+          <li>9 模块固定骨架 — 每张图鉴同样形状，可比较</li>
+          <li>字段槽位约束 — 防重复防缺失，模块结构严格</li>
+          <li>博物馆图鉴调性 — 反复强化的视觉锚点</li>
+          <li>纯中文输出（除拉丁学名）— 字体专门优化</li>
+          <li>反 RPG — 博物馆质感，零 gacha 套路</li>
+          <li>391 张已上线 — 全系列收藏，不是孤例</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="section reveal">
+    <div class="section-header">
+      <span class="section-eyebrow">Features</span>
+      <h2 class="section-title">不只是图鉴，是一套工具</h2>
+      <p class="section-sub">每张图鉴背后都有一个完整的浏览 / 收藏 / 探索系统。</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">图</div>
+        <h3>Image-First</h3>
+        <p>每张卡片都有专属主视觉，点开看 1024w 大图。不是 text wall。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">链</div>
+        <h3>知识图谱</h3>
+        <p>391 张图鉴之间的引用 / 标签关系图谱 — 维基没有的图谱视角。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">星</div>
+        <h3>收藏夹</h3>
+        <p>localStorage 收藏，跨 tab 同步，PWA 可装手机离线访问。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">生</div>
+        <h3>AI 一键生成</h3>
+        <p>/create 4 步生成你自己的图鉴。prompt 模板与 CLI 共用 source of truth。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH ===== -->
+  <section class="tech reveal">
+    <div class="tech-eyebrow">Open Source · MIT</div>
+    <div class="tech-list">
+      <span>Next.js 14</span>
+      <span>React Server Components</span>
+      <span>Tailwind</span>
+      <span>CloudBase CDN</span>
+      <span>mavis MCP</span>
+      <span>matrix_generate_image</span>
+      <span>LocalStorage</span>
+      <span>PWA</span>
+    </div>
+    <div class="tech-meta">SOLO · 5 WEEKS · NO TEAM · NO FUNDING</div>
+  </section>
+
+  <!-- ===== FOOTER CTA ===== -->
+  <footer class="footer">
+    <div class="footer-ctas">
+      <a class="btn btn-primary" href="https://atlas-kit-six.vercel.app">进入图鉴社</a>
+      <a class="btn btn-secondary" href="https://github.com/mishishi/atlas-kit">GitHub 源码</a>
+    </div>
+    <p class="footer-copy">© 2026 图鉴社 · ATLAS KIT · <a href="https://github.com/mishishi/atlas-kit/blob/main/LICENSE">MIT LICENSE</a></p>
+  </footer>
+
+  <script>
+    // ===== Scroll reveal =====
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
+    }
+
+    // ===== Stat counters =====
+    const counters = document.querySelectorAll(".stat-num");
+    if ("IntersectionObserver" in window && counters.length) {
+      const cIo = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (!e.isIntersecting) continue;
+            const el = e.target;
+            const target = parseInt(el.dataset.target, 10);
+            const dur = 900;
+            const t0 = performance.now();
+            const tick = (now) => {
+              const t = Math.min(1, (now - t0) / dur);
+              const ease = 1 - Math.pow(1 - t, 3);
+              el.textContent = Math.round(target * ease);
+              if (t < 1) requestAnimationFrame(tick);
+              else el.textContent = target;
+            };
+            if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+              requestAnimationFrame(tick);
+            } else {
+              el.textContent = target;
+            }
+            cIo.unobserve(el);
+          }
+        },
+        { threshold: 0.4 }
+      );
+      counters.forEach((c) => cIo.observe(c));
+    } else {
+      counters.forEach((c) => (c.textContent = c.dataset.target));
+    }
+
+    // ===== Smooth scroll for anchor links =====
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener("click", (e) => {
+        const id = a.getAttribute("href");
+        if (id.length > 1) {
+          const target = document.querySelector(id);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

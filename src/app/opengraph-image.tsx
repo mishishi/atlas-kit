@@ -1,12 +1,10 @@
 import { ImageResponse } from "next/og";
-import { getAllCards } from "@/lib/data";
-import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { EDGE_TOKENS as T } from "@/lib/edge-tokens";
 
 // 2026-06-21: switched from edge to nodejs runtime.
 // Vercel Edge functions have a 1MB code size limit, and satori + resvg
-// (next/og's renderer) blow past that at ~1MB+ for non-trivial OG
-// images. nodejs serverless functions have a 300MB limit on Hobby.
+// (next/og's renderer) blow past that at ~1MB+ for non-trivial OG images.
+// nodejs serverless functions have a 300MB limit on Hobby.
 // Side benefit: /opengraph-image works in `npm run dev` too (edge
 // runtime in dev mode can't read filesystem during data-collection,
 // returning 502; the env loading + EDGE_TOKENS pattern works fine
@@ -29,8 +27,16 @@ export const contentType = "image/png";
 // constant since it doesn't appear elsewhere in the brand.
 const CREAM_DEEP = "#EBE3D2";
 
+// R56 (2026-06-23): Drop the 4-card thumbnail grid. Earlier this
+// version tried to fetch `c.image` (CloudBase CDN URLs) inline via
+// satori, but the Vercel node-runtime function was returning 500
+// on every request — likely the inline fetch was failing (network
+// timeout / CORS from serverless). Pure-text OG is more reliable
+// across hosting changes; if we want thumbnails back, embed as
+// base64 in cards.json (R60+).
+const STATS = "391 张图鉴 · 12 个分类 · AI 一键生成";
+
 export default async function Image() {
-  const cards = getAllCards().slice(0, 4);
   return new ImageResponse(
     (
       <div
@@ -39,146 +45,101 @@ export default async function Image() {
           height: "100%",
           display: "flex",
           background: `linear-gradient(135deg, ${T.cream} 0%, ${CREAM_DEEP} 100%)`,
-          padding: "60px",
+          padding: "80px",
           fontFamily: "serif",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
       >
-        {/* Left: title + tagline */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            flex: 1,
-            paddingRight: "40px",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-            <div
-              style={{
-                width: "64px",
-                height: "64px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: "12px",
-                background: `linear-gradient(135deg, ${T.gold} 0%, ${T.goldDeep} 100%)`,
-                color: T.cream,
-                fontSize: "36px",
-                fontWeight: "bold",
-              }}
-            >
-              A
-            </div>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ fontSize: "32px", fontWeight: 700, color: T.ink }}>
-                图鉴社
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                  color: T.inkSoft,
-                  letterSpacing: "0.2em",
-                  marginTop: "2px",
-                }}
-              >
-                ATLAS KIT
-              </div>
-            </div>
+        {/* Top: brand block */}
+        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <div
+            style={{
+              width: "88px",
+              height: "88px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "16px",
+              background: `linear-gradient(135deg, ${T.gold} 0%, ${T.goldDeep} 100%)`,
+              color: T.cream,
+              fontSize: "52px",
+              fontWeight: "bold",
+              boxShadow: "0 8px 24px rgba(60, 50, 30, 0.15)",
+            }}
+          >
+            A
           </div>
-
-          <div style={{ display: "flex", flexDirection: "column", marginTop: "32px" }}>
-            <div
-              style={{
-                fontSize: "52px",
-                fontWeight: 700,
-                color: T.ink,
-                lineHeight: 1.15,
-                fontStyle: "italic",
-              }}
-            >
-              知识整理 · 信息归档
-            </div>
-            <div
-              style={{
-                fontSize: "52px",
-                fontWeight: 700,
-                color: T.goldDeep,
-                lineHeight: 1.15,
-                marginTop: "8px",
-              }}
-            >
-              图鉴式展示
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ fontSize: "44px", fontWeight: 700, color: T.ink, lineHeight: 1.1 }}>
+              图鉴社
             </div>
             <div
               style={{
                 fontSize: "20px",
                 color: T.inkSoft,
-                marginTop: "24px",
-                lineHeight: 1.4,
+                letterSpacing: "0.25em",
+                marginTop: "4px",
               }}
             >
-              系列化中文科普图鉴卡片集 · 博物馆质感
+              ATLAS KIT
             </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "24px",
-              fontSize: "16px",
-              color: T.inkSoft,
-            }}
-          >
-            <div>{cards.length}+ 张图鉴</div>
-            <div>·</div>
-            <div>{Object.keys(SERIES_TYPE_MAP).length} 个系列</div>
-            <div>·</div>
-            <div>AI 一键生成</div>
           </div>
         </div>
 
-        {/* Right: 4 card thumbnails in 2x2 grid */}
+        {/* Middle: title */}
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
-            width: "440px",
-            height: "510px",
-            gap: "12px",
+            flexDirection: "column",
           }}
         >
-          {cards.map((c) => (
-            <div
-              key={c.slug}
-              style={{
-                position: "relative",
-                width: "214px",
-                height: "249px",
-                borderRadius: "12px",
-                overflow: "hidden",
-                background: c.palette[0],
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                boxShadow: "0 8px 24px rgba(60, 50, 30, 0.15)",
-                border: `2px solid ${c.palette[1]}`,
-              }}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={c.image}
-                alt={c.title}
-                width="214"
-                height="249"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-          ))}
+          <div
+            style={{
+              fontSize: "76px",
+              fontWeight: 700,
+              color: T.ink,
+              lineHeight: 1.1,
+            }}
+          >
+            知识整理 · 信息归档
+          </div>
+          <div
+            style={{
+              fontSize: "76px",
+              fontWeight: 700,
+              color: T.goldDeep,
+              lineHeight: 1.1,
+              marginTop: "12px",
+            }}
+          >
+            图鉴式展示
+          </div>
+          <div
+            style={{
+              fontSize: "26px",
+              color: T.inkSoft,
+              marginTop: "32px",
+              lineHeight: 1.4,
+            }}
+          >
+            系列化中文科普图鉴卡片集 · 博物馆质感
+          </div>
+        </div>
+
+        {/* Bottom: stats */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "16px",
+            fontSize: "22px",
+            color: T.inkSoft,
+            paddingTop: "32px",
+            borderTop: `2px solid ${T.creamDeep}`,
+          }}
+        >
+          <div style={{ fontWeight: 600, color: T.goldDeep }}>{STATS}</div>
         </div>
       </div>
     ),

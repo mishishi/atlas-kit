@@ -15609,7 +15609,8 @@
       }
     ],
     "quote": "凯尔特神话是欧洲古代宗教的重要组成部分，涵盖爱尔兰、苏格兰、威尔士及高卢地区的传说（维基百科）",
-    "trivia": "在凯尔特传说中，独角兽被视为象征纯洁与力量的圣兽。"
+    "trivia": "在凯尔特传说中，独角兽被视为象征纯洁与力量的圣兽。",
+    "subKind": "european-pagan"
   },
   {
     "slug": "chinese-mythology",
@@ -15749,7 +15750,8 @@
       }
     ],
     "quote": "维基百科指出，‘玛雅神话是美洲原住民玛雅人所信仰的一系列神话和传说。’",
-    "trivia": "玛雅人使用可可豆作为货币，甚至可以用它购买奴隶。"
+    "trivia": "玛雅人使用可可豆作为货币，甚至可以用它购买奴隶。",
+    "subKind": "americas"
   },
   {
     "slug": "polynesian-mythology",
@@ -15816,7 +15818,8 @@
       }
     ],
     "quote": "波利尼西亚神话是波利尼西亚土著居民的口头传统，涉及众神、英雄与自然现象。（维基百科）",
-    "trivia": "萨摩亚神话中的造物主Tui Lau据说拥有将石头变成猪的神力。"
+    "trivia": "萨摩亚神话中的造物主Tui Lau据说拥有将石头变成猪的神力。",
+    "subKind": "oceania"
   },
   {
     "slug": "slavic-mythology",
@@ -15888,7 +15891,8 @@
       }
     ],
     "quote": "斯拉夫神话是斯拉夫人在基督教化之前所奉行的多神教宗教的神话层面。《维基百科》",
-    "trivia": "维勒斯是斯拉夫神话中的地下神，掌管亡魂与财富。"
+    "trivia": "维勒斯是斯拉夫神话中的地下神，掌管亡魂与财富。",
+    "subKind": "european-pagan"
   },
   {
     "slug": "comet",
@@ -24088,7 +24092,8 @@
     "quote": "《阿维斯塔》记载：光明之神阿胡拉·马兹达与黑暗之神安格拉·曼纽之战,决定万物命运。",
     "trivia": "波斯神话以二元论著称,与基督教诺斯底派、摩尼教有深远渊源。",
     "history": "[object Object],[object Object],[object Object],[object Object],[object Object]",
-    "title": "波斯神话"
+    "title": "波斯神话",
+    "subKind": "near-eastern"
   },
   {
     "slug": "scientist",
@@ -24625,7 +24630,8 @@
     "quote": "《吉尔伽美什史诗》：他见过众神，见过深壑，他的智慧无人能及。",
     "trivia": "巴比伦神话以《埃努玛·埃利什》创世史诗为最早系统化记录，距今约 4000 年。",
     "history": "[object Object],[object Object],[object Object],[object Object],[object Object]",
-    "title": "巴比伦神话"
+    "title": "巴比伦神话",
+    "subKind": "near-eastern"
   },
   {
     "slug": "musician",
@@ -25032,7 +25038,8 @@
     "quote": "阿兹特克神话中,太阳神维齐洛波奇特利需要鲜血维系宇宙运转。",
     "trivia": "阿兹特克文明相信人类处于第五个太阳纪,前四个均毁于灾变。",
     "history": "[object Object],[object Object],[object Object],[object Object],[object Object]",
-    "title": "阿兹特克神话"
+    "title": "阿兹特克神话",
+    "subKind": "americas"
   },
   {
     "slug": "inca-mythology",
@@ -25078,7 +25085,8 @@
     "quote": "印加神话中,太阳神因蒂是印加王朝的始祖。",
     "trivia": "印加人将马丘比丘视为太阳神因蒂的圣地。",
     "history": "[object Object],[object Object],[object Object],[object Object],[object Object]",
-    "title": "印加神话"
+    "title": "印加神话",
+    "subKind": "americas"
   },
   {
     "slug": "programmer",
@@ -25529,7 +25537,8 @@
         "url": "https://www.baike.com/",
         "type": "百科"
       }
-    ]
+    ],
+    "subKind": "classical-roman"
   },
   {
     "slug": "uranus",

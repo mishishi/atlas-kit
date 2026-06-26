@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "version": 1,
+    "version": 2,
     "createdAt": "2026-06-26",
-    "round": "R58 (subKind taxonomy MVP)",
+    "round": "R58 (subKind taxonomy MVP) + R58b (mythology 5 new buckets)",
     "totalKinds": 26,
-    "totalSubKinds": 142,
+    "totalSubKinds": 147,
     "namingConvention": "kebab-case slugs, 1-3 words. Chinese labels in 2-4 字",
     "howToAdd": "Append a new kind entry or subKind under existing kind. Run `node scripts/backfill-subkinds.mjs` to apply to cards.json.",
     "cardMigrationStrategy": "Run `node scripts/plan-subkind-backfill.mjs` to see a draft assignment per card, hand-tweak, then run backfill-subkinds.mjs --apply"
@@ -160,7 +160,12 @@
         { "slug": "chinese",         "label": "中国神话",      "expected": 3 },
         { "slug": "egyptian",        "label": "埃及神话",      "expected": 2 },
         { "slug": "hindu",           "label": "印度神话",      "expected": 2 },
-        { "slug": "japanese",        "label": "日本神话",      "expected": 1 }
+        { "slug": "japanese",        "label": "日本神话",      "expected": 1 },
+        { "slug": "classical-roman", "label": "罗马/古典",    "expected": 1 },
+        { "slug": "european-pagan",  "label": "欧洲异教",      "expected": 2 },
+        { "slug": "near-eastern",    "label": "近东神话",      "expected": 2 },
+        { "slug": "americas",        "label": "美洲神话",      "expected": 3 },
+        { "slug": "oceania",         "label": "大洋洲神话",    "expected": 1 }
       ]
     },
     "book": {

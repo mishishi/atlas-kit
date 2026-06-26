@@ -33,6 +33,7 @@ import type { Card, CardKind } from "@/lib/types";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { THEME_TYPES } from "@/lib/theme-types";
+import { getSubKindsForKind, getSubKindLabel } from "@/lib/taxonomy";
 import { StarButton } from "./star-button";
 import { cn } from "@/lib/utils";
 
@@ -68,6 +69,7 @@ export function RandomClient({ allCards }: RandomClientProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const kindFilter = searchParams.get("kind") as CardKind | null;
+  const subKindFilter = searchParams.get("subKind");
 
   // All kinds (with count) — used for chips. Includes "all" pseudo.
   const kindOptions = useMemo(() => {
@@ -83,11 +85,33 @@ export function RandomClient({ allCards }: RandomClientProps) {
     ];
   }, [allCards]);
 
-  // Candidate pool (filtered by kind if URL says so).
+  // R58 (2026-06-26): subKind chips for active kind. Only shown when
+  // a kind is selected AND that kind has subKinds in taxonomy.
+  const subKindOptions = useMemo(() => {
+    if (!kindFilter) return [];
+    const list = getSubKindsForKind(kindFilter);
+    return list.map((s) => {
+      const count = allCards.filter(
+        (c) => c.kind === kindFilter && c.subKind === s.slug,
+      ).length;
+      return { slug: s.slug, label: s.label, count };
+    });
+  }, [allCards, kindFilter]);
+
+  // Validate subKind against taxonomy for current kind. Invalid (stale
+  // link, removed taxonomy bucket) → ignore silently.
+  const activeSubKind =
+    kindFilter && subKindFilter && subKindOptions.some((s) => s.slug === subKindFilter)
+      ? subKindFilter
+      : null;
+
+  // Candidate pool (filtered by kind + subKind).
   const pool = useMemo(() => {
     if (!kindFilter) return allCards;
-    return allCards.filter((c) => c.kind === kindFilter);
-  }, [allCards, kindFilter]);
+    let result = allCards.filter((c) => c.kind === kindFilter);
+    if (activeSubKind) result = result.filter((c) => c.subKind === activeSubKind);
+    return result;
+  }, [allCards, kindFilter, activeSubKind]);
 
   // The currently-displayed slug. SSR + first client render agree on
   // the deterministic pick below (no flash on hydration).
@@ -130,15 +154,15 @@ export function RandomClient({ allCards }: RandomClientProps) {
     [pool, slug],
   );
 
-  // When the kind filter changes (e.g. chip click), reset displayed slug
-  // to a deterministic first candidate of the new pool so the UI
-  // doesn't show "stale" card from a different kind.
+  // When the kind or subKind filter changes (e.g. chip click), reset
+  // displayed slug to a deterministic first candidate of the new pool
+  // so the UI doesn't show "stale" card from a different kind/subKind.
   useEffect(() => {
     if (pool.length > 0 && (!slug || !pool.find((c) => c.slug === slug))) {
       setSlug(pool[0].slug);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [kindFilter]);
+  }, [kindFilter, activeSubKind]);
 
   // Spacebar to reroll (when not focused in input).
   useEffect(() => {
@@ -164,6 +188,17 @@ export function RandomClient({ allCards }: RandomClientProps) {
     const params = new URLSearchParams(Array.from(searchParams.entries()));
     if (next) params.set("kind", next);
     else params.delete("kind");
+    // Switching kind invalidates subKind — drop it from URL so the
+    // candidate pool isn't empty due to stale subKind.
+    params.delete("subKind");
+    const qs = params.toString();
+    router.replace(qs ? `/random?${qs}` : "/random", { scroll: false });
+  }
+
+  function setSubKind(next: string | null) {
+    const params = new URLSearchParams(Array.from(searchParams.entries()));
+    if (next) params.set("subKind", next);
+    else params.delete("subKind");
     const qs = params.toString();
     router.replace(qs ? `/random?${qs}` : "/random", { scroll: false });
   }
@@ -176,7 +211,12 @@ export function RandomClient({ allCards }: RandomClientProps) {
       >
         <Dices className="mx-auto h-10 w-10 text-muted-foreground/40 mb-3" aria-hidden="true" />
         <p className="text-muted-foreground">
-          没有符合 <strong>{kindFilter ? KIND_LABELS[kindFilter] : "当前"}</strong> 的图鉴。
+          没有符合{" "}
+          <strong>
+            {kindFilter ? KIND_LABELS[kindFilter] : "当前"}
+            {activeSubKind && ` · ${getSubKindLabel(kindFilter!, activeSubKind) ?? activeSubKind}`}
+          </strong>{" "}
+          的图鉴。
         </p>
       </div>
     );
@@ -214,6 +254,56 @@ export function RandomClient({ allCards }: RandomClientProps) {
         </div>
       </div>
 
+      {/* R58 (2026-06-26): subKind chips — only when kind selected and
+          that kind has subKinds in taxonomy. */}
+      {kindFilter && subKindOptions.length > 0 && (
+        <div className="space-y-2">
+          <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
+            二级分类
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            <button
+              type="button"
+              onClick={() => setSubKind(null)}
+              aria-pressed={!activeSubKind}
+              className={cn(
+                "inline-flex min-h-[32px] items-center gap-1 rounded-full border px-3 py-1 text-xs transition-colors",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                !activeSubKind
+                  ? "border-gold bg-gold/15 text-gold-deep font-medium"
+                  : "border-border text-muted-foreground hover:text-foreground hover:border-foreground/30",
+              )}
+            >
+              全部
+              <span className="opacity-60 tabular-nums">
+                {allCards.filter((c) => c.kind === kindFilter).length}
+              </span>
+            </button>
+            {subKindOptions.map((opt) => {
+              const active = activeSubKind === opt.slug;
+              return (
+                <button
+                  key={opt.slug}
+                  type="button"
+                  onClick={() => setSubKind(active ? null : opt.slug)}
+                  aria-pressed={active}
+                  className={cn(
+                    "inline-flex min-h-[32px] items-center gap-1 rounded-full border px-3 py-1 text-xs transition-colors",
+                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                    active
+                      ? "border-gold bg-gold/15 text-gold-deep font-medium"
+                      : "border-border text-muted-foreground hover:text-foreground hover:border-foreground/30",
+                  )}
+                >
+                  {opt.label}
+                  <span className="opacity-60 tabular-nums">{opt.count}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Hero card preview */}
       {card && (
         <article
@@ -245,6 +335,12 @@ export function RandomClient({ allCards }: RandomClientProps) {
                 <span>No.{card.seriesNo}</span>
                 <span>·</span>
                 <span>{displayLabel(card.kind)}</span>
+                {card.subKind && (
+                  <>
+                    <span>›</span>
+                    <span>{getSubKindLabel(card.kind, card.subKind) ?? card.subKind}</span>
+                  </>
+                )}
               </p>
               <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight mb-2">
                 {card.title}

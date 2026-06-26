@@ -173,6 +173,7 @@ function loadCategoryIdentity(kind) {
     .trim()
     .split("\n")
     .find((l) => l.trim().startsWith("*"));
+  return first ? first.replace(/^\*\s*/, "").trim() : null;
 }
 
 // R59 (2026-06-26): backoff helper for matrix retries. Exponential
@@ -185,8 +186,6 @@ function computeBackoff(attempt, errText = "") {
   const jitter = base * 0.25 * (Math.random() * 2 - 1); // ±25%
   const looksLikeQuota = /rate|quota|limit|throttl|429/i.test(errText);
   return Math.round((base + jitter) * (looksLikeQuota ? 4 : 1));
-}
-  return first ? first.replace(/^\*\s*/, "").trim() : null;
 }
 
 // 2. 读 cards.json (1 次,所有 jobs 共享)

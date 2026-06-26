@@ -1638,4 +1638,159 @@ local `next start` and Vercel serverless runtime have different
 network access (Vercel can't always reach external CDN hosts from
 inside a serverless function, especially with no Allow headers).
 Build-time validation misses these. Add OG image + sitemap +
-robots + manifest to the deploy checklist.
+robots + manifest to the deploy checklist.## Round 58: subKind taxonomy MVP (2026-06-26)
+
+3-level classification: `kind` (L1, 25 values) → `subKind` (L2, 147 values) → `series` (L3, 10 editorial groups).
+
+### What was added
+
+| File | Purpose |
+|---|---|
+| `data/taxonomy.json` | 25 kinds × 138 subKinds (R58b extended to 147). `_meta` carries version/createdAt/totalKinds/totalSubKinds/namingConvention/howToAdd/cardMigrationStrategy |
+| `src/lib/taxonomy.ts` | `loadTaxonomy()` cached loader + `getSubKindLabel(kind, subKind)` returns null on miss + `assertValidSubKind()` throws + `getSubKindsForKind()` + `getAllSubKindPairs()` |
+| `scripts/backfill-subkinds.mjs` | mmx-driven migration: per-kind batched calls (25 × ~30s ≈ 12 min), validates every suggestion against taxonomy before writing draft, `--apply` writes to cards.json. Flags: `--slug X` (single), `--kind X` (single kind), `--apply` (write mode), `--verbose` |
+| `scripts/apply-subkinds.cjs` (tmp/) | One-shot helper: read draft, validate against taxonomy, write to cards.json (later superseded by `backfill --apply`) |
+| `scripts/handfill-subkinds.cjs` (tmp/) | Manual fill for 62 cards in anime/music/tech/vehicle where mmx returned bad slug format |
+| `src/lib/types.ts` | Added `subKind?: string` to Card interface |
+
+### Three UI surfaces ship with R58
+
+1. **`/cards` 2-level chip filter** (`src/app/cards/page.tsx`): kind chips top + subKind chips below when kind selected. URL `?kind=X&subKind=Y`. SubKind chips with 0 cards auto-hidden.
+2. **`/cards/[slug]` meta row** (`src/app/cards/[slug]/page.tsx`): "类型: 城市 › 古都" inline, both kind and subKind are clickable links.
+3. **`/random` subKind filter** (`src/components/random-client.tsx`): full L2 filtering, switching kind auto-drops stale subKind, SSR-safe first paint.
+
+### SubKind coverage
+
+R58 first pass: 277/400 cards covered (mmx auto + 1 manual silicon).
+- plant (16 cards) missing entirely from taxonomy → R58b fixed.
+- anime/music/tech/vehicle batched mmx calls returned bad slugs (slug format drift, mmx put title in slug field) → 62 hand-filled.
+- 9 mythology cards had no taxonomy match → R58b extended taxonomy.
+- 16 cities ETIMEDOUT + 15 countries JSON parse → retry pass added 36.
+- Final coverage after R58 + R58b: **400/400 (100%)**.
+
+### Lessons saved to agent memory
+
+- **mmx backfill bad-suggs vs no-suggs**: `→ 0 ok / 0 empty / N bad` for kinds like anime/music/tech/vehicle means mmx returned wrong-format slugs (`item.slug` is title or hallucinated, not the actual slug). Script's `targets.find((c) => c.slug === item.slug)` fails, `bad++; continue;` runs WITHOUT pushing to `out`, so those cards are silently dropped from draft. Fix: validate `item.slug` against `targets.map(c => c.slug)` BEFORE incrementing bad counter; warn + push entry with reason "mmx 返回的 slug 无法匹配任何目标 card" so they at least appear in draft.
+- **subtitle 占位符污染**: 294 cards had " · 百科占位" at end of subtitle (script generated "类型 · 名称 · 百科占位" when it didn't know what to fill). Strip pattern: regex `·\s*百科占位\s*$`. Next time: subtitle 永远不要塞占位符, 留空字符串比塞占位符安全。
+
+## Round 58b: mythology +5 buckets / 400 全覆盖 + /random subKind (2026-06-26)
+
+Commit `9353fcc`. Extended taxonomy.mythology with 5 new buckets to fill the 9 orphan mythologies that had no taxonomy match:
+
+- `classical-roman` (1: roman-mythology) — 罗马/古典
+- `european-pagan` (2: celtic + slavic) — 欧洲异教
+- `near-eastern` (2: persian + babylonian) — 近东
+- `americas` (3: maya + aztec + inca) — 美洲
+- `oceania` (1: polynesian) — 大洋洲
+
+Hand-filled 9 mythology cards. `_meta` version 1 → 2, totalSubKinds 142 → 147.
+
+`/random` (commit `9353fcc`) extended with subKind 二级过滤 — `?kind=X&subKind=Y` 双轴, kind 切换时自动清空 subKind (避免 stale subKind 让 pool 空).
+
+## Round 58c: 清理 subtitle 百科占位 + 46 张英文 title 翻译中文 (2026-06-26)
+
+Commit `a8c2bfb`. User found data pollution on /cards page (R58 ship screenshot review).
+
+Two issues fixed:
+
+1. **294 张 subtitle 末尾 " · 百科占位" 占位符**: pattern `类型 · 名称 · 百科占位` 是 fix-descriptions / draft-extras 等生成脚本不知道填什么就塞的占位符。Strip regex: `·\s*百科占位\s*$`, 保留 `类型 · 名称` 部分。
+
+2. **50 张英文 title**: cold-food / cloisonne / jade / porcelain / 3idiots / rashomon / the-matrix / titanic / bohemian-rhapsody 等。翻译了 46 张中文版（寒食节 / 景泰蓝 / 玉器 / 罗生门 / 黑客帝国 / 泰坦尼克号 / 波西米亚狂想曲 等）。保留 4 张英文（5G / CLANNAD / Lemon / Radiohead — 官方品牌名）。
+
+3. **顺手修 /cards metadata**: 还是写死 "60 张图鉴", 改成动态 "400 张 · 26 个分类 · 10 大系列; 支持二级 subKind 过滤"。
+
+## Round 58d-g: subKind UI 增量 (2026-06-26)
+
+Commit `3085325`. 5 个 UI 改动让 subKind 维度铺到所有浏览入口。
+
+### R58d: /graph 节点按 subKind 上色
+
+- `src/lib/graph.ts`: GraphNode 加 `subKind?: string` 字段
+- `src/lib/subkind-color.ts` (new): 浏览器安全版 (无 node:fs 依赖), 每个 (kind, subKind) pair 一个 deterministic HSL color via golden-ratio stepping (137.508° apart). 138 subKinds land on visually distinct colors without collision-prone hashes. 维护顺序: 跟 taxonomy.json walk order 同步; 加新 subKind 时 append。
+- `src/components/graph-view.tsx`: `nodeCanvasObject` 改用 `subKindColor(kind, subKind)` 替换 `palette?.[0]/[1]`, 节点背景 + 描边都按 subKind 上色
+
+效果: 同 subKind 节点同色, 分类簇一眼可见 (e.g. 古都簇 vs 江南水乡簇不同色块)。
+
+### R58e: 你可能也会喜欢 subKind 权重
+
+`src/lib/data.ts` `relatedScore()`:
+- +5 同 kind
+- +3 同 series
+- **+4 同 subKind** (新) — 排在 kind (+5) 和 series (+3) 之间, IDF tag 权重不变
+- L3 信号 ("罗马 → 希腊" / "古都 → 古都") 能浮上来, 跨 kind 同 subKind 也算
+
+### R58f: 详情页顶部 subKind 大 chip
+
+`src/app/cards/[slug]/page.tsx`: subtitle 下面加金色边框 chip `▸ 古都`, 点 chip 跳到 `/cards?kind=X&subKind=Y`。meta 行 (R58) 是小字 inline, 这里是大 chip 让 L3 维度更显眼。
+
+### R58g: /timeline 加 kind + subKind 过滤
+
+`src/app/timeline/page.tsx`:
+- URL `?kind=X&subKind=Y` 双轴
+- 标题加 "(筛选后 N)" 计数
+- subKind chips 自动隐藏 0 张的 (不显示空桶)
+- Empty state 文案加 subKind-aware
+
+### R58h: /search 加 subKind 细化
+
+`src/app/search/page.tsx`:
+- 搜索结果页加 kind chips, 然后是 subKind chips
+- chips 只显示 results 里有的 kind/subKind, 避免点出 0 结果
+- URL 保持 `q` + `kind` + `subKind` 三参数 deep-link 共享
+
+### Why subKindColor is browser-safe separate file
+
+`taxonomy.ts` 用 `node:fs` 读 taxonomy.json, 不能从 client component (`graph-view` is `"use client"`) import。Color resolution 是纯函数 (input → output), 没 IO, 所以单独成文件 `subkind-color.ts` 用纯枚举 map 实现。
+
+## Round 59: 100 张新主题 pipeline (2026-06-26)
+
+112 张新主题 via `scripts/generate-card.mjs --from-plan tmp/plan-100-cards.json --resolution 1K`。
+
+### 缺口驱动设计
+
+基于 `taxonomy._meta` 的 `expected` 字段 vs `cards.json` 实际计数, 找最大的 subKind 缺口:
+- movie/animation -5, anime/shoujo -4, anime/mecha -4 (最大)
+- festival/solar-term -3, history/ming-qing -3, other/intangible-heritage -3, artwork/ceramic -3, mythology/greek -3
+- book/science -3, music/chinese-pop -3, music/chinese-rock -3, music/japanese -3, music/western-classic -3
+- anime/seinen -3, anime/isekai -3, movie/chinese -3, movie/european -3
+- pet/small-mammal -2, animal/insect -2, festival/ethnic-minority -2
+
+按缺口优先级 + 题材平衡设计 112 张 (略超 100 目标, 接近)。
+
+### Plan JSON shape
+
+```json
+{
+  "_meta": { "round": "R59", "goal": "...", "strategy": "..." },
+  "cards": [
+    {"slug": "...", "title": "...", "kind": "...", "subKind": "...", "series": "...", "seriesNo": "..."},
+    ...
+  ]
+}
+```
+
+`scripts/generate-card.mjs --from-plan <path>` reads + processes serially.
+
+### 分布 (按 kind)
+
+music 12 / tech 11 / movie 8 / anime 8 / person 7 / festival 6 / history 6 / mythology 6 / book 6 / artwork 6 / sport 6 / other 4 / object 4 / food 4 / city 4 / architecture 4 / animal 3 / phenomenon 3 / pet 2 / space-object 2 = 112 张.
+
+### Pipeline
+
+1. `node scripts/generate-card.mjs --from-plan tmp/plan-100-cards.json --resolution 1K` (background)
+2. → 落盘 PNG + 3-tier + cards.json placeholder
+3. → `node --env-file=.env.local scripts/upload-cdn.mjs --all --also-rewrite` (upload + rewrite cards.json image fields)
+4. → `node scripts/draft-history.mjs` (mmx per-card 3-5 history nodes)
+5. → `node scripts/draft-sources.mjs` (mmx per-card 2-4 sources)
+6. → `node scripts/fix-descriptions.mjs` (optional, polish)
+7. → AGENTS.md + commit
+
+ETA: 112 × 30s mmx + 112 × 10s upload = ~1.5h
+
+### Self-reminder cron
+
+Set `r59-pipeline-monitor` every 15min to check progress and trigger upload-cdn once generate is done.
+
+### Decision: 1K vs 2K
+
+1K 默认。R31 经验: 2K 仅 visualScore 低的卡值得重跑; 默认 1K + post-batch audit 决定是否 2K。

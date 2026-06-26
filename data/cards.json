@@ -29157,5 +29157,236 @@
       }
     ],
     "subKind": "geological"
+  },
+  {
+    "slug": "toy-story",
+    "title": "玩具总动员",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "011",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/toy-story/toy-story-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/toy-story/toy-story-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/toy-story/toy-story-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 玩具总动员 · 百科占位",
+    "description": "玩具总动员 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "finding-nemo",
+    "title": "海底总动员",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "012",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/finding-nemo/finding-nemo-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/finding-nemo/finding-nemo-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/finding-nemo/finding-nemo-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 海底总动员 · 百科占位",
+    "description": "海底总动员 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "wall-e",
+    "title": "机器人总动员",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e/wall-e-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e/wall-e-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e/wall-e-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 机器人总动员 · 百科占位",
+    "description": "机器人总动员 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "spider-man-verse",
+    "title": "蜘蛛侠：平行宇宙",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "015",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spider-man-verse/spider-man-verse-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spider-man-verse/spider-man-verse-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spider-man-verse/spider-man-verse-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 蜘蛛侠：平行宇宙 · 百科占位",
+    "description": "蜘蛛侠：平行宇宙 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "harry-potter",
+    "title": "哈利·波特",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "016",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/harry-potter/harry-potter-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/harry-potter/harry-potter-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/harry-potter/harry-potter-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 哈利·波特 · 百科占位",
+    "description": "哈利·波特 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "amelie",
+    "title": "天使爱美丽",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "017",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie/amelie-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie/amelie-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie/amelie-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 天使爱美丽 · 百科占位",
+    "description": "天使爱美丽 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "spirited-away-mv",
+    "title": "千与千寻",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away-mv/spirited-away-mv-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away-mv/spirited-away-mv-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away-mv/spirited-away-mv-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "电影 · 千与千寻 · 百科占位",
+    "description": "千与千寻 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "sailor-moon",
+    "title": "美少女战士",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "017",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/sailor-moon/sailor-moon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/sailor-moon/sailor-moon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/sailor-moon/sailor-moon-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 美少女战士 · 百科占位",
+    "description": "美少女战士 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "cardcaptor-sakura",
+    "title": "魔卡少女樱",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/cardcaptor-sakura/cardcaptor-sakura-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/cardcaptor-sakura/cardcaptor-sakura-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/cardcaptor-sakura/cardcaptor-sakura-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 魔卡少女樱 · 百科占位",
+    "description": "魔卡少女樱 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "fruits-basket",
+    "title": "水果篮子",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/fruits-basket/fruits-basket-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/fruits-basket/fruits-basket-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/fruits-basket/fruits-basket-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 水果篮子 · 百科占位",
+    "description": "水果篮子 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "slug": "gundam",
+    "title": "高达",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam/gundam-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam/gundam-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam/gundam-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "anime · 高达 · 百科占位",
+    "description": "高达 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-26"
   }
 ]

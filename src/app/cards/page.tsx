@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, BookMarked } from "lucide-react";
 import { getAllCards, getTopTags } from "@/lib/data";
 import { CardKind, KIND_LABELS, THEME_TYPES } from "@/lib/types";
+import { getSubKindsForKind } from "@/lib/taxonomy";
 import { TagFilter } from "@/components/tag-filter";
 import { CardGrid } from "@/components/card-grid";
 import { CardPreview } from "@/components/card-preview";
@@ -29,7 +30,7 @@ export const metadata = {
  */
 
 interface CardsPageProps {
-  searchParams: { kind?: string; tag?: string };
+  searchParams: { kind?: string; tag?: string; subKind?: string };
 }
 
 const PREVIEW_PER_KIND = 4;
@@ -45,6 +46,16 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
     : null;
   const activeKind = validKind;
   const activeTag = searchParams.tag;
+  // R58 (2026-06-26): subKind filter — L3 taxonomy within kind.
+  // Validate: subKind must be in taxonomy for activeKind. Invalid → silently
+  // ignore (don't 404 the user — they might have a stale link).
+  const subKindList = activeKind ? getSubKindsForKind(activeKind) : [];
+  const requestedSubKind = searchParams.subKind ?? "";
+  const validSubKind =
+    activeKind && subKindList.some((s) => s.slug === requestedSubKind)
+      ? requestedSubKind
+      : null;
+  const activeSubKind = validSubKind;
 
   // Group cards by kind, preserving the THEME_TYPES order (editorial,
   // not alphabetical)
@@ -65,8 +76,10 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
   //   - neither → per-kind preview (the default)
   const filteredCards = (() => {
     if (activeKind) {
-      const byKindCards = byKind.get(activeKind) ?? [];
-      return activeTag ? byKindCards.filter((c) => c.tags.includes(activeTag)) : byKindCards;
+      let result = byKind.get(activeKind) ?? [];
+      if (activeSubKind) result = result.filter((c) => c.subKind === activeSubKind);
+      if (activeTag) result = result.filter((c) => c.tags.includes(activeTag));
+      return result;
     }
     if (activeTag) {
       return allCards.filter((c) => c.tags.includes(activeTag));
@@ -74,10 +87,12 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
     return [];
   })();
   const kindLabel = activeKind ? KIND_LABELS[activeKind] : null;
-  // Top tags from the post-kind-filter set (or global if no kind filter)
+  // Top tags from the post-kind+subKind-filter set (or global if no kind filter)
   const topTags = activeKind
     ? getTopTags(20).filter(
-        (t) => t.tag === activeTag || (byKind.get(activeKind) ?? []).some((c) => c.tags.includes(t.tag)),
+        (t) =>
+          t.tag === activeTag ||
+          filteredCards.some((c) => c.tags.includes(t.tag)),
       )
     : activeTag
       ? getTopTags(20) // any tag with at least 1 card
@@ -105,6 +120,15 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
                   <span className="font-medium text-foreground mx-1">{kindLabel}</span>
                 </>
               )}
+              {activeSubKind && (() => {
+                const sk = subKindList.find((s) => s.slug === activeSubKind);
+                return sk ? (
+                  <>
+                    {" > "}
+                    <span className="font-medium text-foreground mx-1">{sk.label}</span>
+                  </>
+                ) : null;
+              })()}
               {activeTag && (
                 <>
                   · 标签
@@ -167,6 +191,59 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
         </ul>
       </nav>
 
+      {/* SubKind filter chips (R58, 2026-06-26) — L3 axis within a kind.
+          Only shown when a kind is selected AND that kind has subKinds
+          defined in taxonomy.json. Click to set ?subKind=X; click "全部"
+          to clear (preserves kind + tag). */}
+      {activeKind && subKindList.length > 0 && (
+        <nav
+          aria-label="按二级分类筛选"
+          className="mb-4 -mx-4 px-4 sm:mx-0 sm:px-0"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-xs uppercase tracking-[0.15em] text-muted-foreground shrink-0">
+              二级
+            </span>
+            <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+              <li>
+                <Link
+                  href={`/cards?kind=${activeKind}${activeTag ? `&tag=${encodeURIComponent(activeTag)}` : ""}`}
+                  aria-current={!activeSubKind ? "page" : undefined}
+                  className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                    !activeSubKind
+                      ? "border-gold bg-cream text-gold-deep font-medium"
+                      : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                  }`}
+                >
+                  全部
+                </Link>
+              </li>
+              {subKindList.map((s) => {
+                const subCount = (byKind.get(activeKind) ?? []).filter(
+                  (c) => c.subKind === s.slug,
+                ).length;
+                const subActive = activeSubKind === s.slug;
+                return (
+                  <li key={s.slug}>
+                    <Link
+                      href={`/cards?kind=${activeKind}&subKind=${encodeURIComponent(s.slug)}${activeTag ? `&tag=${encodeURIComponent(activeTag)}` : ""}`}
+                      aria-current={subActive ? "page" : undefined}
+                      className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                        subActive
+                          ? "border-gold bg-cream text-gold-deep font-medium"
+                          : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                      }`}
+                    >
+                      {s.label} <span className="text-[10px] tabular-nums opacity-70">({subCount})</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </nav>
+      )}
+
       {/* Tag filter row — only in filtered view, only when tags exist */}
       {activeKind && topTags.length > 0 && (
         <div className="mb-6">
@@ -179,9 +256,13 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
         filteredCards.length === 0 ? (
           <div className="rounded-lg border border-dashed border-border bg-card p-12 text-center">
             <p className="text-muted-foreground">
-              {activeTag
-                ? `没有找到标签 #${activeTag} 下的「${kindLabel}」图鉴。`
-                : `「${kindLabel}」分类下还没有图鉴。`}
+              {activeSubKind && activeTag
+                ? `没有找到「${kindLabel} · ${subKindList.find((s) => s.slug === activeSubKind)?.label ?? activeSubKind}」下标签 #${activeTag} 的图鉴。`
+                : activeSubKind
+                  ? `「${kindLabel} · ${subKindList.find((s) => s.slug === activeSubKind)?.label ?? activeSubKind}」下还没有图鉴。`
+                  : activeTag
+                    ? `没有找到标签 #${activeTag} 下的「${kindLabel}」图鉴。`
+                    : `「${kindLabel}」分类下还没有图鉴。`}
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               {activeTag && (

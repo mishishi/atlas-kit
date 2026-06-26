@@ -3,8 +3,8 @@
     "version": 1,
     "createdAt": "2026-06-26",
     "round": "R58 (subKind taxonomy MVP)",
-    "totalKinds": 25,
-    "totalSubKinds": 138,
+    "totalKinds": 26,
+    "totalSubKinds": 142,
     "namingConvention": "kebab-case slugs, 1-3 words. Chinese labels in 2-4 字",
     "howToAdd": "Append a new kind entry or subKind under existing kind. Run `node scripts/backfill-subkinds.mjs` to apply to cards.json.",
     "cardMigrationStrategy": "Run `node scripts/plan-subkind-backfill.mjs` to see a draft assignment per card, hand-tweak, then run backfill-subkinds.mjs --apply"
@@ -110,6 +110,15 @@
         { "slug": "ancient-scientist", "label": "古代科学家",    "expected": 3 },
         { "slug": "modern-figure",     "label": "近代人物",      "expected": 3 },
         { "slug": "literary-character","label": "文学角色",      "expected": 2 }
+      ]
+    },
+    "plant": {
+      "label": "植物",
+      "subKinds": [
+        { "slug": "flower",          "label": "花卉",          "expected": 9 },
+        { "slug": "tree",            "label": "乔木",          "expected": 4 },
+        { "slug": "tea",             "label": "茶植物",        "expected": 2 },
+        { "slug": "grass",           "label": "草本",          "expected": 1 }
       ]
     },
     "other": {

@@ -14,6 +14,7 @@ import { CardFlipMode } from "@/components/card-flip-mode";
 import { getAdjacentInSeries } from "@/lib/data";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
+import { getSubKindLabel } from "@/lib/taxonomy";
 import { cn, formatDate } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -377,7 +378,25 @@ export default async function CardDetail({
           <dl className="rounded-lg border border-border bg-card text-sm">
             <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">类型</dt>
-              <dd>{displayLabel(card.kind)}</dd>
+              <dd>
+                <Link
+                  href={`/cards?kind=${card.kind}`}
+                  className="hover:text-gold-deep underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+                >
+                  {displayLabel(card.kind)}
+                </Link>
+                {card.subKind && (
+                  <>
+                    <span className="text-muted-foreground mx-1">›</span>
+                    <Link
+                      href={`/cards?kind=${card.kind}&subKind=${encodeURIComponent(card.subKind)}`}
+                      className="text-muted-foreground hover:text-gold-deep underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+                    >
+                      {getSubKindLabel(card.kind, card.subKind) ?? card.subKind}
+                    </Link>
+                  </>
+                )}
+              </dd>
             </div>
             <div className="flex justify-between gap-4 p-3.5 border-b border-border/40 last:border-b-0">
               <dt className="text-muted-foreground">所属系列</dt>

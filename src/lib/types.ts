@@ -67,6 +67,15 @@ export interface Card {
   slug: string;
   title: string;
   kind: CardKind;
+  /**
+   * R58 (2026-06-26): L3 taxonomy — within-kind sub-category. Independent
+   *  of `kind` (taxonomic) and `series` (editorial grouping). Must be a
+   *  valid slug from data/taxonomy.json for the card's `kind`. If unset,
+   *  UI gracefully shows no sub-kind label. Loaded via
+   *  src/lib/taxonomy.ts → assertValidSubKind() at parse time.
+   *  Examples: "ancient-capital" (city), "dog-breed" (pet), "shonen" (anime).
+   */
+  subKind?: string;
   /** Series slug — points to SERIES_TYPES[].slug. Decoupled from kind (a card's
    *  series is editorial/story-level, while kind is taxonomic/category-level). */
   series: string;

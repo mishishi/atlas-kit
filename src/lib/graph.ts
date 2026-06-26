@@ -38,6 +38,9 @@ export interface GraphNode {
   id: string; // slug
   name: string; // title (zh-CN)
   kind: string;
+  /** R58 (2026-06-26) — subKind L3 taxonomy bucket. Used by graph-view
+   *  to color nodes by their subKind cluster instead of card.palette. */
+  subKind?: string;
   series: string;
   seriesNo: string;
   palette: [string, string, string];
@@ -138,6 +141,7 @@ export function getGraphData(): GraphData {
     id: c.slug,
     name: c.title,
     kind: c.kind,
+    subKind: c.subKind,
     series: c.series,
     seriesNo: c.seriesNo,
     palette: c.palette,

@@ -25,6 +25,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import NextImage from "next/image";
 import { Search, X, ArrowRight } from "lucide-react";
 import type { GraphData, GraphLink, GraphNode } from "@/lib/graph";
+import { subKindColor } from "@/lib/subkind-color";
 import { Skeleton } from "@/components/skeleton";
 import { cn } from "@/lib/utils";
 
@@ -182,10 +183,14 @@ export function GraphView({ data }: { data: GraphData }) {
 
           ctx.beginPath();
           ctx.arc(n.x, n.y, r, 0, 2 * Math.PI);
-          ctx.fillStyle = n.palette?.[0] || "#f5f0e6";
+          // R58d (2026-06-26): color by subKind cluster (golden-ratio HSL)
+          // instead of per-card palette. Same-subKind nodes share color,
+          // making taxonomy structure visible at a glance.
+          const subColor = subKindColor(n.kind as any, n.subKind);
+          ctx.fillStyle = subColor.fill;
           ctx.fill();
           ctx.lineWidth = 2 / scale;
-          ctx.strokeStyle = n.palette?.[1] || "#b88952";
+          ctx.strokeStyle = subColor.stroke;
           ctx.stroke();
 
           const img = n.image ? getImage(n.image) : null;

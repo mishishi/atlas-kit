@@ -4,15 +4,16 @@ import { Clock, Sparkles } from "lucide-react";
 import { getAllCards } from "@/lib/data";
 import { Card as CardType, KIND_LABELS } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
+import { THEME_TYPES } from "@/lib/theme-types";
+import { getSubKindsForKind, getSubKindLabel } from "@/lib/taxonomy";
 import { formatDate } from "@/lib/utils";
 
 export const metadata = {
   title: "时间线 · 图鉴社",
-  description: "60 张图鉴的收录时间线, 按月分组。看看图鉴社是怎么一步步长出来的。",
-  // Round 27 (2026-06-17): explicit OG image for /timeline shares.
+  description: "按月倒序的图鉴收录时间线, 支持类型 + 二级分类过滤。",
   openGraph: {
     title: "时间线 · 图鉴社",
-    description: "60 张图鉴的收录时间线, 按月分组。",
+    description: "按月倒序的图鉴收录时间线。",
     type: "website",
     locale: "zh_CN",
     images: ["/opengraph-image"],
@@ -20,10 +21,14 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "时间线 · 图鉴社",
-    description: "60 张图鉴的收录时间线, 按月分组。",
+    description: "按月倒序的图鉴收录时间线。",
     images: ["/opengraph-image"],
   },
 };
+
+interface TimelinePageProps {
+  searchParams: { kind?: string; subKind?: string };
+}
 
 /**
  * Group cards by YYYY-MM. Returns a chronologically-sorted list of
@@ -56,8 +61,22 @@ function formatMonthShort(month: string): string {
   return `${parseInt(m, 10)}月`;
 }
 
-export default function TimelinePage() {
+export default function TimelinePage({ searchParams }: TimelinePageProps) {
   const allCards = getAllCards(); // already sorted by createdAt desc
+
+  // R58g (2026-06-26): kind + subKind filter via URL params.
+  const requestedKind = searchParams.kind ?? "";
+  const validKind = THEME_TYPES.some((t) => t.key === requestedKind)
+    ? (requestedKind as CardType["kind"])
+    : null;
+  const activeKind = validKind;
+  const subKindList = activeKind ? getSubKindsForKind(activeKind) : [];
+  const requestedSubKind = searchParams.subKind ?? "";
+  const validSubKind =
+    activeKind && subKindList.some((s) => s.slug === requestedSubKind)
+      ? requestedSubKind
+      : null;
+  const activeSubKind = validSubKind;
 
   // Empty state (N3 fix): if the dataset is empty, the math below
   // would render "NaN 天". Show a friendly empty state instead.
@@ -91,6 +110,14 @@ export default function TimelinePage() {
   }
 
   const groups = groupByMonth(allCards);
+  // Apply kind + subKind filter
+  const visibleCards = (() => {
+    let result = allCards;
+    if (activeKind) result = result.filter((c) => c.kind === activeKind);
+    if (activeSubKind) result = result.filter((c) => c.subKind === activeSubKind);
+    return result;
+  })();
+  const filteredGroups = groupByMonth(visibleCards);
   const firstCard = allCards[allCards.length - 1];
   const lastCard = allCards[0];
   const totalSpan = Math.ceil(
@@ -108,6 +135,11 @@ export default function TimelinePage() {
         </div>
         <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3">
           {totalSpan} 天里, 慢慢长出了 {allCards.length} 张图鉴
+          {visibleCards.length < allCards.length && (
+            <span className="text-muted-foreground text-2xl ml-2">
+              (筛选后 {visibleCards.length})
+            </span>
+          )}
         </h1>
         <p className="text-muted-foreground leading-relaxed">
           从 {formatDate(firstCard.createdAt)} 的第一张「{firstCard.title}」, 到{" "}
@@ -115,6 +147,91 @@ export default function TimelinePage() {
           时间线按月倒序排列, 每月内按收录日倒序。
         </p>
       </header>
+
+      {/* R58g (2026-06-26): kind + subKind filter chips. Same UX as
+          /cards. Click kind chip to filter; subKind chip appears when
+          a kind is selected. URL deep-links preserved. */}
+      <nav aria-label="按类型筛选" className="mb-6 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+          <li>
+            <Link
+              href="/timeline"
+              aria-current={!activeKind ? "page" : undefined}
+              className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-full border px-4 text-sm whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                !activeKind
+                  ? "border-gold-deep bg-gold-deep text-cream"
+                  : "border-border bg-card text-foreground hover:border-gold"
+              }`}
+            >
+              全部 <span className="text-[10px] tabular-nums opacity-70">({allCards.length})</span>
+            </Link>
+          </li>
+          {THEME_TYPES.map((t) => {
+            const k = t.key as CardType["kind"];
+            const count = allCards.filter((c) => c.kind === k).length;
+            if (count === 0) return null;
+            const active = activeKind === k;
+            return (
+              <li key={k}>
+                <Link
+                  href={`/timeline?kind=${k}`}
+                  aria-current={active ? "page" : undefined}
+                  className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-full border px-4 text-sm whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                    active
+                      ? "border-gold-deep bg-gold-deep text-cream"
+                      : "border-border bg-card text-foreground hover:border-gold"
+                  }`}
+                >
+                  {t.label} <span className="text-[10px] tabular-nums opacity-70">({count})</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+
+      {/* subKind chips (R58g) — only when kind is selected */}
+      {activeKind && subKindList.length > 0 && (
+        <nav aria-label="按二级分类筛选" className="mb-10 -mx-4 px-4 sm:mx-0 sm:px-0">
+          <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+            <li>
+              <Link
+                href={`/timeline?kind=${activeKind}`}
+                aria-current={!activeSubKind ? "page" : undefined}
+                className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                  !activeSubKind
+                    ? "border-gold bg-cream text-gold-deep font-medium"
+                    : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                }`}
+              >
+                全部
+              </Link>
+            </li>
+            {subKindList.map((s) => {
+              const subCount = allCards.filter(
+                (c) => c.kind === activeKind && c.subKind === s.slug,
+              ).length;
+              if (subCount === 0) return null;
+              const subActive = activeSubKind === s.slug;
+              return (
+                <li key={s.slug}>
+                  <Link
+                    href={`/timeline?kind=${activeKind}&subKind=${encodeURIComponent(s.slug)}`}
+                    aria-current={subActive ? "page" : undefined}
+                    className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                      subActive
+                        ? "border-gold bg-cream text-gold-deep font-medium"
+                        : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                    }`}
+                  >
+                    {s.label} <span className="text-[10px] tabular-nums opacity-70">({subCount})</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      )}
 
       {/* Timeline — vertical rail on the left (md+), with the date
           label inside a circle. Each card row is full-width on mobile
@@ -126,8 +243,21 @@ export default function TimelinePage() {
           className="hidden md:block absolute top-0 bottom-0 left-[7.25rem] w-px bg-gradient-to-b from-border via-border to-transparent"
         />
 
+        {filteredGroups.length === 0 && (
+          <div className="rounded-lg border border-dashed border-border bg-card p-12 text-center">
+            <p className="text-muted-foreground">
+              没有符合{" "}
+              <strong>
+                {activeKind ? KIND_LABELS[activeKind] : "当前"}
+                {activeSubKind && ` · ${getSubKindLabel(activeKind!, activeSubKind) ?? activeSubKind}`}
+              </strong>{" "}
+              的图鉴。
+            </p>
+          </div>
+        )}
+
         <ol className="space-y-12 list-none p-0">
-          {groups.map(({ month, cards }) => (
+          {filteredGroups.map(({ month, cards }) => (
             <li key={month}>
               {/* Month label — sticky-ish feel: large date stamp on
                   the left (desktop), top (mobile) */}

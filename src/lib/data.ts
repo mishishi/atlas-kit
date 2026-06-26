@@ -182,6 +182,10 @@ for (const [tag, df] of TAG_DOC_FREQ) {
  *   +5 same kind (taxonomic similarity)
  *   +3 same series (story similarity — usually already shown in 同系列
  *       siblings block, so caller excludes those before calling this)
+ *   +4 same subKind (R58e, 2026-06-26: L3 taxonomy. Picks up the
+ *       "罗马神话 → 希腊神话" / "古都 → 古都" type signal that
+ *       same-kind alone misses. SubKind is more specific than kind
+ *       so it should rank above tag IDF but below same-series.)
  *   +Σ IDF(tag) for each shared tag (no cap, no flat weight).
  *       Rare tags (low df) carry more signal than common ones.
  *
@@ -195,6 +199,16 @@ function relatedScore(target: Card, candidate: Card): number {
   let score = 0;
   if (target.kind === candidate.kind) score += 5;
   if (target.series === candidate.series) score += 3;
+  // R58e: subKind match. 4 pts sits between series (+3) and kind (+5)
+  // — subKind is more specific than kind but spans series, so it
+  // should rank above series-only and below kind+series combo.
+  if (
+    target.subKind &&
+    candidate.subKind &&
+    target.subKind === candidate.subKind
+  ) {
+    score += 4;
+  }
   for (const t of target.tags) {
     if (candidate.tags.includes(t)) {
       score += TAG_IDF.get(t) ?? 0;

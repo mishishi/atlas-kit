@@ -10,15 +10,18 @@ import {
 import { Search as SearchIcon, Hash, Clock, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { getSubKindsForKind, getSubKindLabel } from "@/lib/taxonomy";
+import { THEME_TYPES } from "@/lib/theme-types";
+import type { CardKind } from "@/lib/types";
 
 export const metadata = {
   title: "搜索 · 图鉴社",
-  description: "在 60 张图鉴里搜索主题、标签、系列。fuse.js 模糊匹配, 支持中文。",
+  description: "在图鉴社里搜索主题、标签、系列。fuse.js 模糊匹配, 支持中文;支持二级 subKind 过滤。",
   // Round 27 (2026-06-17): explicit OG image + twitter card so shared
   // search URLs don't fall through to the all-cards collage.
   openGraph: {
     title: "搜索 · 图鉴社",
-    description: "在 60 张图鉴里搜索主题、标签、系列。",
+    description: "在图鉴社里搜索主题、标签、系列。",
     type: "website",
     locale: "zh_CN",
     images: ["/opengraph-image"],
@@ -26,13 +29,13 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "搜索 · 图鉴社",
-    description: "在 60 张图鉴里搜索主题、标签、系列。",
+    description: "在图鉴社里搜索主题、标签、系列。",
     images: ["/opengraph-image"],
   },
 };
 
 interface SearchProps {
-  searchParams: { q?: string };
+  searchParams: { q?: string; kind?: string; subKind?: string };
 }
 
 // When the user's query yields no results, suggest 4 alternative searches
@@ -62,8 +65,29 @@ function buildNoResultSuggestions(allCards: ReturnType<typeof getAllCards>) {
 
 export default function SearchPage({ searchParams }: SearchProps) {
   const query = searchParams.q ?? "";
-  const results = query ? searchCards(query) : [];
+  // R58h (2026-06-26): kind + subKind refinement filters. Both
+  // applied on top of the free-text `q` results. Defaults to null when
+  // not in URL.
+  const requestedKind = searchParams.kind ?? "";
+  const requestedSubKind = searchParams.subKind ?? "";
   const allCards = getAllCards();
+  // Validate kind against the theme-types list (canonical kind set).
+  const validKind =
+    requestedKind && THEME_TYPES.some((t) => t.key === requestedKind)
+      ? (requestedKind as CardKind)
+      : null;
+  const activeKind = validKind;
+  const subKindList = activeKind ? getSubKindsForKind(activeKind) : [];
+  const activeSubKind =
+    activeKind && requestedSubKind && subKindList.some((s) => s.slug === requestedSubKind)
+      ? requestedSubKind
+      : null;
+  const baseResults = query ? searchCards(query) : [];
+  const results = baseResults.filter((c) => {
+    if (activeKind && c.kind !== activeKind) return false;
+    if (activeSubKind && c.subKind !== activeSubKind) return false;
+    return true;
+  });
   const popularSuggestions = getDiverseFeatured(4);
   const recentCards = getRecentCards(6);
   const topTags = getTopTags(12);
@@ -106,10 +130,111 @@ export default function SearchPage({ searchParams }: SearchProps) {
         </div>
       )}
 
+      {/* R58h (2026-06-26): kind + subKind refinement chips. Shown
+          only when results exist (otherwise no point narrowing). Click
+          kind chip to narrow; subKind chip appears when a kind is
+          selected. URL keeps q + kind + subKind together so deep-link
+          share works. */}
+      {query && baseResults.length > 0 && (
+        <>
+          <nav aria-label="按类型细化" className="mb-3 -mx-4 px-4 sm:mx-0 sm:px-0">
+            <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+              <li>
+                <Link
+                  href={`/search?q=${encodeURIComponent(query)}`}
+                  aria-current={!activeKind ? "page" : undefined}
+                  className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                    !activeKind
+                      ? "border-gold bg-cream text-gold-deep font-medium"
+                      : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                  }`}
+                >
+                  全部类型
+                </Link>
+              </li>
+              {Array.from(new Set(baseResults.map((c) => c.kind))).map((k) => {
+                const kindDef = THEME_TYPES.find((t) => t.key === k);
+                const label = kindDef?.label ?? k;
+                const count = baseResults.filter((c) => c.kind === k).length;
+                const active = activeKind === k;
+                const href = activeSubKind
+                  ? `/search?q=${encodeURIComponent(query)}&kind=${k}`
+                  : `/search?q=${encodeURIComponent(query)}&kind=${k}`;
+                return (
+                  <li key={k}>
+                    <Link
+                      href={href}
+                      aria-current={active ? "page" : undefined}
+                      className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                        active
+                          ? "border-gold bg-cream text-gold-deep font-medium"
+                          : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                      }`}
+                    >
+                      {label} <span className="text-[10px] tabular-nums opacity-70">({count})</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+
+          {/* subKind chips — only when a kind is selected and that kind
+              has subKinds AND at least one result has a subKind. */}
+          {activeKind && subKindList.length > 0 && (
+            <nav aria-label="按二级分类细化" className="mb-6 -mx-4 px-4 sm:mx-0 sm:px-0">
+              <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+                <li>
+                  <Link
+                    href={`/search?q=${encodeURIComponent(query)}&kind=${activeKind}`}
+                    aria-current={!activeSubKind ? "page" : undefined}
+                    className={`inline-flex min-h-[32px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                      !activeSubKind
+                        ? "border-gold bg-cream text-gold-deep font-medium"
+                        : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                    }`}
+                  >
+                    全部
+                  </Link>
+                </li>
+                {subKindList.map((s) => {
+                  const subCount = baseResults.filter(
+                    (c) => c.kind === activeKind && c.subKind === s.slug,
+                  ).length;
+                  if (subCount === 0) return null;
+                  const subActive = activeSubKind === s.slug;
+                  return (
+                    <li key={s.slug}>
+                      <Link
+                        href={`/search?q=${encodeURIComponent(query)}&kind=${activeKind}&subKind=${encodeURIComponent(s.slug)}`}
+                        aria-current={subActive ? "page" : undefined}
+                        className={`inline-flex min-h-[32px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                          subActive
+                            ? "border-gold bg-cream text-gold-deep font-medium"
+                            : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                        }`}
+                      >
+                        {s.label} <span className="text-[10px] tabular-nums opacity-70">({subCount})</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          )}
+        </>
+      )}
+
       {query ? (
         <CardGrid
           cards={results}
-          emptyMessage={`没有找到关于 “${query}” 的图鉴, 换个词试试?`}
+          emptyMessage={
+            activeSubKind
+              ? `没有找到关于 “${query}” 的 ${activeKind ? "" : ""}${getSubKindLabel(activeKind!, activeSubKind) ?? activeSubKind} 图鉴。`
+              : activeKind
+                ? `没有找到关于 “${query}” 的 ${THEME_TYPES.find((t) => t.key === activeKind)?.label ?? activeKind} 图鉴。`
+                : `没有找到关于 “${query}” 的图鉴, 换个词试试?`
+          }
           emptyTitle="暂无匹配结果"
           suggestions={noResultSuggestions}
         />

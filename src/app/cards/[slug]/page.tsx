@@ -314,6 +314,19 @@ export default async function CardDetail({
               {card.title}
             </h1>
             <p className="font-serif text-lg text-gold-deep mb-4">{card.subtitle}</p>
+            {/* R58f (2026-06-26): subKind eyebrow chip. Sits below subtitle,
+                gold-bordered with subKind label + click-through to
+                /cards?kind=X&subKind=Y. Visual matches the page-eyebrow
+                style but bigger so the L3 dimension is discoverable. */}
+            {card.subKind && (
+              <Link
+                href={`/cards?kind=${card.kind}&subKind=${encodeURIComponent(card.subKind)}`}
+                className="inline-flex items-center gap-1.5 mb-5 rounded-full border border-gold bg-gold/10 px-3 py-1 text-xs text-gold-deep font-medium hover:bg-gold/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              >
+                <span aria-hidden="true">▸</span>
+                <span>{getSubKindLabel(card.kind, card.subKind) ?? card.subKind}</span>
+              </Link>
+            )}
           </div>
 
           <p className="text-base leading-relaxed text-foreground/90">

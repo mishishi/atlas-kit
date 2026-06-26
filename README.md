@@ -1,14 +1,14 @@
 # 图鉴社 · Atlas Kit
 
-> **391 张视觉图鉴组成的中文百科**，跨时间、空间、分类三个维度。AI 辅助内容、人工校订。Anti-RPG 定位：不卖萌、不站台、不喊口号，只把每个主题的真相讲清楚。
+> **400 张视觉图鉴组成的中文百科**，跨时间、空间、分类三个维度。AI 辅助内容、人工校订。Anti-RPG 定位：不卖萌、不站台、不喊口号，只把每个主题的真相讲清楚。
 
-[![live](https://img.shields.io/badge/live-atlas--kit--six.vercel.app-blue)](https://atlas-kit-six.vercel.app) [![next](https://img.shields.io/badge/Next.js-14.2-black)](https://nextjs.org) [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![cards](https://img.shields.io/badge/cards-391%2F391-gold)](https://atlas-kit-six.vercel.app/cards) [![pwa](https://img.shields.io/badge/PWA-installable-success)](https://atlas-kit-six.vercel.app/launch)
+[![live](https://img.shields.io/badge/live-atlas--kit--six.vercel.app-blue)](https://atlas-kit-six.vercel.app) [![next](https://img.shields.io/badge/Next.js-14.2-black)](https://nextjs.org) [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![cards](https://img.shields.io/badge/cards-400%2F400-gold)](https://atlas-kit-six.vercel.app/cards) [![pwa](https://img.shields.io/badge/PWA-installable-success)](https://atlas-kit-six.vercel.app/launch)
 
 ---
 
 ## 🎉 1.0 Launch
 
-**图鉴社 v1.0 上线** —— 391 张图鉴，13 个系列，12 个分类。
+**图鉴社 v1.0 上线** —— 400 张图鉴，10 个系列，26 个分类。
 
 👉 **[**`/launch` — Launch Page**](https://atlas-kit-six.vercel.app/launch)** — 完整项目介绍 + 视觉 showcase
 👉 **[**GitHub 仓库**](https://github.com/mishishi/atlas-kit)** — 源码 + 路线图 + Issue / Discussion
@@ -28,7 +28,7 @@
 
 整套不写"稀有度 / 星级 / SSR"，是给真心想了解一个主题的人准备的，不是给抽卡用户准备的。
 
-## 391 张图鉴 · 12 类型 · 13 系列
+## 400 张图鉴 · 26 类型 · 10 系列
 
 | 系列 | 张数 | 主题类型 |
 |---|---|---|
@@ -70,10 +70,10 @@ cp .env.local.example .env.local       # 按需改 SITE_URL / IMAGE_PROVIDER
 npm run dev
 ```
 
-打开 <http://localhost:3000>。391 张图鉴 + 16 个页面路由 + 391 张打印 PDF 路由都已预渲染，纯静态访问，无需任何外部服务（图片走 CloudBase CDN）。
+打开 <http://localhost:3000>。400 张图鉴 + 16 个页面路由 + 400 张打印 PDF 路由都已预渲染，纯静态访问，无需任何外部服务（图片走 CloudBase CDN）。
 
 ### 不需要 AI 也能跑
-如果只想看 391 张已有的图鉴，**完全不需要配置 IMAGE_PROVIDER**。生成新图鉴（`/create` 向导）才需要。如果暂时不配：
+如果只想看 400 张已有的图鉴，**完全不需要配置 IMAGE_PROVIDER**。生成新图鉴（`/create` 向导）才需要。如果暂时不配：
 - `/create` 步骤 4 会显示"图生成服务未配置"错误，但其它 16 个页面全部正常
 - 生产部署可以干脆把 `/create` 路由 disable
 
@@ -81,31 +81,31 @@ npm run dev
 需要 [mavis daemon](https://github.com/) 跑在 `http://127.0.0.1:15321`，
 详见 `.env.local.example`。
 
-## 路由概览（16 page + 391 print + 1 API）
+## 路由概览（16 page + 400 print + 1 API）
 
 | 路由 | 作用 |
 |---|---|
 | `/` | 首页：hero collage + 5 系列 + 同类 + 热门 |
-| `/cards` | 391 张图鉴总览（支持 `?kind=` `?tag=` 过滤） |
+| `/cards` | 400 张图鉴总览（支持 `?kind=` `?tag=` 过滤） |
 | `/cards/[slug]` | 图鉴详情（10 个段落：hero / 引文 / 轶事 / 历史 / 同类 / 同系列 / 反向引用 / 修订 / 来源 / 延伸阅读） |
-| `/series` / `/series/[slug]` | 13 个系列列表 + 详情（3 种 layout family 旋转） |
+| `/series` / `/series/[slug]` | 10 个系列列表 + 详情（3 种 layout family 旋转） |
 | `/map` | 地理坐标图鉴的 Leaflet 地图 |
 | `/timeline` | 按月倒序排列的收录时间线 |
 | `/all` | 3 轴索引：按字数 / 按系列 / 按类型 |
 | `/search` | fuse.js 模糊搜索（title 3x / tag 1x 加权） |
 | `/random` | 随机一张 + 同系列再抽 + 24-kind 过滤 |
-| `/graph` | 知识图谱（image-first，673 条边，391 个节点） |
+| `/graph` | 知识图谱（image-first，673 条边，400 个节点） |
 | `/favorites` | localStorage 收藏夹（跨 tab 同步） |
 | `/about` | 项目介绍 + 设计原则 + 技术栈 |
 | `/changelog` | 收录 / 修订 / 站点里程碑 三类事件流 |
 | `/launch` | **v1.0 launch 页面**（独立 marketing surface） |
 | `/not-found` | 404：6 张推荐图鉴 + 6 个热门标签 |
-| `/print/cards/[slug]` | 391 张 A4 打印视图（`Cmd+P` → "Save as PDF"） |
+| `/print/cards/[slug]` | 400 张 A4 打印视图（`Cmd+P` → "Save as PDF"） |
 | `/api/generate` | 向导后端：调用 mavis daemon MCP `matrix_generate_image` |
 
 ## 技术栈
 
-- **Next.js 14.2** App Router + React Server Components（391 张图鉴纯静态 SSG）
+- **Next.js 14.2** App Router + React Server Components（400 张图鉴纯静态 SSG）
 - **Tailwind CSS** + 设计 token + 主题切换（light / dark / system）
 - **shadcn/ui 风格** 原生组件，无重型 UI 库
 - **Lucide Icons**（零 emoji）
@@ -114,11 +114,11 @@ npm run dev
 - **CloudBase CDN**（图片 100% CDN 化，public/ 不超 5MB）
 - **PWA**（手机可装，离线可用，service worker 缓存）
 - **AI 生图**：`matrix_generate_image` via mavis MCP
-- **数据存储**：`data/cards.json`（单文件，391 条 × 25 字段，类型安全）
+- **数据存储**：`data/cards.json`（单文件，400 条 × 25 字段，类型安全）
 
 ## 数据
 
-所有图鉴数据在 [`data/cards.json`](./data/cards.json)（391 条 × 25 字段），类型定义在 [`src/lib/types.ts`](./src/lib/types.ts)。字段包括历史节点、参考来源、地理坐标、修订记录、误解/事实对照等。
+所有图鉴数据在 [`data/cards.json`](./data/cards.json)（400 条 × 25 字段），类型定义在 [`src/lib/types.ts`](./src/lib/types.ts)。字段包括历史节点、参考来源、地理坐标、修订记录、误解/事实对照等。
 
 新增图鉴可以直接编辑 `data/cards.json`，或者走 `/create` 向导 AI 生成。
 

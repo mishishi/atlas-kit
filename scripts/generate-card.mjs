@@ -173,6 +173,19 @@ function loadCategoryIdentity(kind) {
     .trim()
     .split("\n")
     .find((l) => l.trim().startsWith("*"));
+}
+
+// R59 (2026-06-26): backoff helper for matrix retries. Exponential
+// (5s → 10s → 20s → 40s base) with ±25% jitter to spread concurrent
+// retries; multiplies by 4x when the error text looks like a rate-
+// limit / quota / 429 condition (those are minute-scale cooldowns).
+// Returns milliseconds to wait BEFORE the next attempt.
+function computeBackoff(attempt, errText = "") {
+  const base = 5000 * Math.pow(2, attempt - 1); // 5 / 10 / 20 / 40 s
+  const jitter = base * 0.25 * (Math.random() * 2 - 1); // ±25%
+  const looksLikeQuota = /rate|quota|limit|throttl|429/i.test(errText);
+  return Math.round((base + jitter) * (looksLikeQuota ? 4 : 1));
+}
   return first ? first.replace(/^\*\s*/, "").trim() : null;
 }
 
@@ -201,14 +214,23 @@ for (const job of jobs) {
     continue;
   }
 
-  // 2b. matrix call (retry up to 3 times, exponential backoff)
+  // 2b. matrix call (retry up to 5 times, exponential backoff + jitter)
+  // R59 (2026-06-26): the original 3-attempt / 2-4-0s backoff couldn't
+  // ride out matrix rate-limit / cold-cache bursts that produced
+  // "no output_url in matrix response" on ~90% of a 112-card batch
+  // (R59 first pass: 11/112 success). Increased to 5 attempts with
+  // 5/10/20/40s waits + ±25% jitter, plus 180s per-attempt timeout.
+  // Errors mentioning "rate" / "quota" / "limit" / "429" get a flat
+  // 60s wait (multiplier on the exponential) since those are usually
+  // minute-scale cooldowns.
   let cdnUrl = null;
   if (noMatrix) {
     console.log(`  matrix: SKIPPED (--no-matrix)`);
     cdnUrl = null;
   } else {
     let lastErr = null;
-    for (let attempt = 1; attempt <= 3; attempt++) {
+    const MAX_ATTEMPTS = 5;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
       try {
         const res = await fetch(DAEMON_MCP_PATH, {
           method: "POST",
@@ -220,14 +242,14 @@ for (const job of jobs) {
               requests: [{ prompt: promptText, aspect_ratio: aspectRatio, resolution }],
             },
           }),
-          signal: AbortSignal.timeout(120_000),
+          signal: AbortSignal.timeout(180_000),
         });
         const text = await res.text();
         if (!res.ok) {
           lastErr = new Error(`daemon HTTP ${res.status}: ${text.slice(0, 200)}`);
-          if (attempt < 3) {
-            const wait = 2000 * attempt;
-            console.log(`  matrix: attempt ${attempt} failed, retry in ${wait}ms`);
+          if (attempt < MAX_ATTEMPTS) {
+            const wait = computeBackoff(attempt, text);
+            console.log(`  matrix: attempt ${attempt} HTTP ${res.status}, retry in ${wait}ms`);
             await new Promise((r) => setTimeout(r, wait));
             continue;
           }
@@ -242,8 +264,8 @@ for (const job of jobs) {
         break;
       } catch (e) {
         lastErr = e;
-        if (attempt < 3) {
-          const wait = 2000 * attempt;
+        if (attempt < MAX_ATTEMPTS) {
+          const wait = computeBackoff(attempt, e?.message ?? "");
           console.log(`  matrix: attempt ${attempt} threw, retry in ${wait}ms (${e.message})`);
           await new Promise((r) => setTimeout(r, wait));
         }

@@ -10,7 +10,7 @@ import { Tag } from "@/components/tag";
 
 export const metadata = {
   title: "全部图鉴 · 图鉴社",
-  description: "按分类浏览图鉴社的全部 60 张图鉴 — 宠物、动物、植物、城市、人物、节日、食物、现象、历史、器物、科技、其他。",
+  description: "按分类浏览图鉴社的全部 400 张图鉴 — 26 个分类、10 大系列;支持二级 subKind 过滤。",
 };
 
 /**

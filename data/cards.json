@@ -25746,7 +25746,28 @@
     ],
     "quote": "阿兹特克神话中,太阳神维齐洛波奇特利需要鲜血维系宇宙运转。",
     "trivia": "阿兹特克文明相信人类处于第五个太阳纪,前四个均毁于灾变。",
-    "history": "[object Object],[object Object],[object Object],[object Object],[object Object]",
+    "history": [
+      {
+        "year": "1325",
+        "title": "特诺奇蒂特兰建城",
+        "body": "公元1325年，阿兹特克部落在湖中岛建立特诺奇蒂特兰城，成为后来的首都。"
+      },
+      {
+        "year": "1428",
+        "title": "三王联盟形成",
+        "body": "1428年，伊斯科瓦特尔联合特斯科科与特拉科潘成立三王联盟，奠定阿兹特克帝国的政治格局。"
+      },
+      {
+        "year": "1502",
+        "title": "蒙特祖马二世登基",
+        "body": "1502年，蒙特祖马二世继位，推行中央集权与祭祀改革，推动帝国经济与军事扩张。"
+      },
+      {
+        "year": "1521",
+        "title": "特诺奇蒂特兰沦陷",
+        "body": "1521年，西班牙殖民者在科尔特斯率领下围攻特诺奇蒂特兰，城陷导致阿兹特克帝国终结。"
+      }
+    ],
     "title": "阿兹特克神话",
     "subKind": "americas"
   },
@@ -37260,6 +37281,941 @@
         "year": "现代",
         "title": "全球军事与商业经典",
         "body": "20 世纪以来《孙子兵法》译本超过 30 种语言, 西点军校、海湾战争美军将领、20 世纪 80 年代日本企业家均引为经典, 「不战而屈人之兵」为现代战略思想基础。"
+      }
+    ]
+  },
+  {
+    "slug": "china",
+    "title": "中国",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/china/china-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/china/china-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/china/china-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 中国 · 百科占位",
+    "description": "中国，全称中华人民共和国，是位于东亚、太平洋西岸的社会主义国家。历史悠久，是世界四大文明古国之一，拥有五千余年连续不断的文明史。现为联合国安理会常任理事国，在国际事务中具有重要影响力。",
+    "createdAt": "2026-06-27",
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国科学院",
+        "url": "https://www.cas.cn/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "前 2070 年",
+        "title": "夏朝建立",
+        "body": "据传世史书, 禹之子启建立夏朝, 标志中国从原始部落联盟进入王朝时代, 河南二里头遗址被部分学者认为是夏代都城。"
+      },
+      {
+        "year": "前 221 年",
+        "title": "秦统一六国",
+        "body": "秦始皇嬴政于前 221 年灭齐, 完成春秋战国 500 余年分裂, 建立中国第一个中央集权的多民族国家, 书同文、车同轨、行郡县。"
+      },
+      {
+        "year": "公元 755-763 年",
+        "title": "安史之乱",
+        "body": "唐玄宗天宝年间节度使安禄山、史思明先后叛乱, 唐朝由盛转衰, 北方人口大量南迁, 经济文化重心开始南移。"
+      },
+      {
+        "year": "1840 年",
+        "title": "鸦片战争",
+        "body": "1840 年英国发动鸦片战争, 清政府战败签订《南京条约》, 中国进入百年屈辱近代史, 随后洋务运动、戊戌变法、辛亥革命接连而起。"
+      },
+      {
+        "year": "1949 年",
+        "title": "中华人民共和国成立",
+        "body": "1949 年 10 月 1 日毛泽东在北京天安门城楼宣告中华人民共和国成立, 中国大陆进入社会主义建设时期, 1978 年改革开放开启经济起飞。"
+      }
+    ]
+  },
+  {
+    "slug": "vietnam",
+    "title": "越南",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/vietnam/vietnam-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/vietnam/vietnam-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/vietnam/vietnam-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 越南 · 百科占位",
+    "description": "越南是位于东南亚中南半岛东部的社会主义国家，北邻中国，西接老挝和柬埔寨，东濒南海。首都为河内，人口约一亿。历史上曾长期受中国统治，后沦为法国殖民地，20世纪后半叶经历统一与改革开放，近年经济保持较快发展。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "938年",
+        "title": "吴朝建立标志独立",
+        "body": "公元938年，吴权在越南建立吴朝，标志着越南脱离中国统治的开始。"
+      },
+      {
+        "year": "1407年",
+        "title": "明朝占领越南",
+        "body": "1407年，明朝军队占领越南，设立交趾布政使司，开始直接统治。"
+      },
+      {
+        "year": "1802年",
+        "title": "阮朝建立称帝",
+        "body": "1802年，阮福映在顺化称帝，建立阮朝，标志着越南最后一个封建王朝的诞生。"
+      },
+      {
+        "year": "1945年",
+        "title": "八月革命宣告独立",
+        "body": "1945年，胡志明领导的越南独立同盟在河内宣布成立越南民主共和国，实现国家独立。"
+      },
+      {
+        "year": "1975年",
+        "title": "南北统一战争结束",
+        "body": "1975年，北越军队攻占西贡，越南战争结束，国家实现南北统一。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "故宫博物院",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "argentina",
+    "title": "阿根廷",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/argentina/argentina-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/argentina/argentina-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/argentina/argentina-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 阿根廷 · 百科占位",
+    "description": "阿根廷是南美洲东南部的国家，东临大西洋，面积居拉美第二。它以潘帕斯草原、冰川湖泊和丰富文化传统著称，探戈与足球是其最具代表性的文化符号。首都布宜诺斯艾利斯是政治、经济与文化中心。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1526 年",
+        "title": "西班牙殖民统治",
+        "body": "1526年，西班牙探险家首次登陆拉普拉塔河口，随后设立殖民据点，开启对该地区的统治。"
+      },
+      {
+        "year": "1816 年",
+        "title": "阿根廷独立宣言",
+        "body": "1816年7月9日，布宜诺斯艾利斯议会正式宣布独立，制定宪法，脱离西班牙殖民统治，建立共和国。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "大规模欧洲移民",
+        "body": "19世纪末至20世纪初，来自意大利、德国和西班牙的移民大量涌入，带来农业技术与城市发展，塑造多元文化社会。"
+      },
+      {
+        "year": "1976 年",
+        "title": "政治动荡与军政府",
+        "body": "1976年军政府发动政变，随后实施高压统治，导致数千人失踪；1983年恢复民主，开启新一轮政治改革。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 阿根廷",
+        "url": "https://zh.wikipedia.org/wiki/%E9%98%BF%E6%A0%B9%E5%BB%B7",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 阿根廷",
+        "url": "https://baike.baidu.com/item/%E9%98%BF%E6%A0%B9%E5%BB%B7",
+        "type": "百科"
+      },
+      {
+        "title": "中华人民共和国外交部 - 阿根廷国家概况",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/ozi_678528/1206_679528/",
+        "type": "机构"
+      },
+      {
+        "title": "新华网 - 阿根廷专题",
+        "url": "https://www.xinhuanet.com/world/am/",
+        "type": "新闻"
+      }
+    ]
+  },
+  {
+    "slug": "potassium",
+    "title": "钾",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/potassium/potassium-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/potassium/potassium-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/potassium/potassium-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 钾 · 百科占位",
+    "description": "钾是化学元素周期表第19号元素，化学符号K，位于第一族碱金属。钾为银白色金属，质地柔软易切割，在空气中极易氧化，须保存于液体石蜡中。钾在自然界中以化合物形态广泛存在于海水、矿物与土壤中，是生物体维持生命活动所必需的元素之一。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1807",
+        "title": "戴维首次分离钾",
+        "body": "1807年，英国化学家汉弗里·戴维通过电解氢氧化钾成功分离出金属钾，开启了碱金属研究的新纪元。"
+      },
+      {
+        "year": "1811",
+        "title": "钾的拉丁名来源",
+        "body": "1811年，戴维正式确定钾的化学符号为K，取自拉丁语‘Kalium’，意为碱土，标志着钾在全球化学体系中的正式命名。"
+      },
+      {
+        "year": "1928",
+        "title": "大规模工业化生产",
+        "body": "1928年，美国道氏公司采用电解氯化钾法实现钾的大规模工业化生产，满足了农业对高效钾肥的迫切需求。"
+      },
+      {
+        "year": "1859",
+        "title": "光谱线鉴定技术",
+        "body": "1859年，德国物理学家基尔霍夫与本生利用光谱分析首次观测到钾的紫色发射线，为钾的快速检测奠定基础。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·化学卷-钾",
+        "url": "https://www.zgbk.com/ec/enter?nodeid=23655",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-钾",
+        "url": "https://zh.wikipedia.org/wiki/%E9%92%9B",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院-化学元素周期表",
+        "url": "https://www.cas.cn/kxcb/kpng/201511/t20151120_4607083.shtml",
+        "type": "机构"
+      },
+      {
+        "title": "百度百科-钾",
+        "url": "https://baike.baidu.com/item/%E9%92%9B/107829",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "xenon",
+    "title": "氙",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "052",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/xenon/xenon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/xenon/xenon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/xenon/xenon-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 氙 · 百科占位",
+    "description": "氙（符号Xe，原子序数54）是一种无色无味的惰性气体，属于第VIII族元素，在大气中以痕量存在。1898年由英国化学家拉姆齐和特拉弗斯在分馏液态空气时首次发现。氙在放电时能发出明亮的蓝白色光，广泛应用于闪光灯、激光器、麻醉剂及离子推进器等领域，且是少数能形成稳定化合物的惰性气体之一。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1898",
+        "title": "拉姆齐首次分离出氙气",
+        "body": "英国化学家拉姆齐与特鲁兹在液化空气中经光谱分析首次发现惰性气体氙。"
+      },
+      {
+        "year": "1930",
+        "title": "氙气首次用于闪光灯",
+        "body": "科学家利用氙气在高压下可发出强烈闪光的特点，发明了氙气闪光灯。"
+      },
+      {
+        "year": "1962",
+        "title": "首次合成氙的化合物",
+        "body": "加拿大化学家巴特利特成功合成氟化氙，颠覆惰性气体完全惰性的传统认知。"
+      },
+      {
+        "year": "1990",
+        "title": "氙气麻醉研究获突破",
+        "body": "研究发现氙气具有麻醉效果且对人体无明显副作用，开始应用于临床麻醉。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 氙",
+        "url": "https://zh.wikipedia.org/wiki/氙",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 氙",
+        "url": "https://baike.baidu.com/item/氙",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院化学研究所",
+        "url": "https://www.ic.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国大百科全书 - 稀有气体",
+        "url": "https://www.ecpedu.com",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "aluminum",
+    "title": "铝",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/aluminum/aluminum-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/aluminum/aluminum-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/aluminum/aluminum-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 铝 · 百科占位",
+    "description": "铝是一种银白色的贫金属，元素符号Al，原子序数13。它是地壳中含量最多的金属元素，广泛分布于岩石和土壤中。铝具有轻质、易加工、耐腐蚀等优良特性，是现代工业中应用最广泛的金属之一。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1807 年",
+        "title": "首次发现铝元素",
+        "body": "1807年，英国化学家戴维通过电解氧化铝首次提出铝的存在概念，开启了铝的探索之路。"
+      },
+      {
+        "year": "1825 年",
+        "title": "奥斯特制备铝",
+        "body": "1825年，丹麦物理学家奥斯特在实验中首次成功制备出少量金属铝，开启了铝的实验研究。"
+      },
+      {
+        "year": "1886 年",
+        "title": "电解制铝工艺",
+        "body": "1886年，美国工程师霍尔与法国工程师埃鲁共同发明电解还原氧化铝的工艺，大幅降低铝的生产成本，实现工业化。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "航空轻量化应用",
+        "body": "20世纪初，铝材因其轻质高强被广泛用于飞机机身与结构，推动航空工业飞速发展，奠定现代航空材料基础。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（第二版）- 铝",
+        "url": "https://www.zgbk.com/doc",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 铝",
+        "url": "https://zh.wikipedia.org/wiki/%E9%93%9D",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院化学研究所",
+        "url": "https://www.ic.cas.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国数字科技馆 - 化学元素",
+        "url": "https://www.cdstm.cn",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "nurse",
+    "title": "护士",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/nurse/nurse-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/nurse/nurse-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/nurse/nurse-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 护士 · 百科占位",
+    "description": "护士是从事临床护理工作的卫生技术人员，主要职责是协助患者康复、执行医疗计划、提供健康教育等。他们广泛分布于医院、社区卫生服务中心等医疗机构，是医疗团队中不可或缺的成员。护士需具备专业的医学知识和临床技能，同时应具备高度的责任心与同理心。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1854",
+        "title": "南丁格尔护理先驱",
+        "body": "弗洛伦斯·南丁格尔在克里米亚战争中组织护理工作，奠定现代护理理念。"
+      },
+      {
+        "year": "1860",
+        "title": "首所护理学校",
+        "body": "1860年，南丁格尔在伦敦圣托马斯医院创办首所正规护理学校，推动护理教育制度化。"
+      },
+      {
+        "year": "1881",
+        "title": "红十字护士培训",
+        "body": "1881年，克拉克·巴顿在美国创立红十字会，随后开展系统化护士培训项目。"
+      },
+      {
+        "year": "1910",
+        "title": "中国护理教育起步",
+        "body": "1910年，上海圣公会医院设立中国首批护理培训班，开启中国现代护理教育。"
+      },
+      {
+        "year": "1965",
+        "title": "世卫强调护士角色",
+        "body": "1965年，世界卫生组织通过《阿拉木图宣言》，强调护士在初级卫生保健中的核心作用。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "护士（职业） - 百度百科",
+        "url": "https://baike.baidu.com/item/护士",
+        "type": "百科"
+      },
+      {
+        "title": "护士 - 维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/护士",
+        "type": "百科"
+      },
+      {
+        "title": "护士职业概述 - 中国知网",
+        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&action=scholar&searchword=%E6%8A%A4%E5%A3%AB",
+        "type": "学术"
+      },
+      {
+        "title": "护士职业信息 - 国家卫生健康委员会",
+        "url": "https://www.nhc.gov.cn",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "engineer",
+    "title": "工程师",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "052",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/engineer/engineer-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/engineer/engineer-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/engineer/engineer-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 工程师 · 百科占位",
+    "description": "工程师」是运用科学、数学与技术知识，设计、开发并解决实际问题的专业人员。他们广泛分布于建筑、机械、电子、计算机等各行业，负责产品研发、系统构建与技术改进等工作。现代社会中，工程师以专业技术和创新实践推动着各领域的进步与发展。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "18 世纪",
+        "title": "机械工程兴起",
+        "body": "18世纪蒸汽机的发明催生机械工程，使工厂生产从手工转向机器化，大幅提升效率。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "电气工程革命",
+        "body": "19世纪末电磁理论成熟，电灯、电话等发明推动电气工程广泛进入家庭与工业，改变人类生活。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "信息技术崛起",
+        "body": "20世纪后半叶，计算机与互联网的出现标志信息时代到来，软件与硬件工程师成为推动全球化的关键力量。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "绿色工程理念",
+        "body": "21世纪，面对能源危机与环境挑战，绿色工程倡导低碳、可持续的设计与施工，推动新能源与循环经济的发展。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·工程师",
+        "url": "https://www.baike.com/wiki/工程师",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 工程师",
+        "url": "https://zh.wikipedia.org/wiki/工程师",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 工程师",
+        "url": "https://baike.baidu.com/item/工程师",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 工程师职业发展研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "professor",
+    "title": "教授",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/professor/professor-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/professor/professor-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/professor/professor-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 教授 · 百科占位",
+    "description": "教授是高等教育机构中的最高学术职称，主要承担教学与科研任务。他们通常拥有博士学位，在大学或研究机构从事学术研究，指导硕博研究生，参与学科建设与学术交流。作为学术带头人，教授需具备深厚的专业知识与创新研究能力，推动学科发展与知识传播。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "前 387 年",
+        "title": "古希腊学园兴起",
+        "body": "公元前387年，柏拉图在雅典创立学院，导师向学生传授哲学，开启学术导师的教授职能。"
+      },
+      {
+        "year": "1088 年",
+        "title": "中世纪大学设立",
+        "body": "1088年，博洛尼亚大学成立，首批专职教授获授学术讲席，标志职业教授制度雏形。"
+      },
+      {
+        "year": "1810 年",
+        "title": "德国研究型大学模式",
+        "body": "1810年，柏林大学引入‘科研合一’理念，教授兼负教学与创新研究，形成现代学术职业。"
+      },
+      {
+        "year": "1905 年",
+        "title": "中国现代教授制度",
+        "body": "1905年，清政府颁布《京师大学堂章程》，正式设立教授职位，推动高等教育现代化。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/",
+        "type": "百科"
+      },
+      {
+        "title": "中华人民共和国教育部",
+        "url": "https://www.moe.gov.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "leukemia",
+    "title": "白血病",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/leukemia/leukemia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/leukemia/leukemia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/leukemia/leukemia-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 白血病 · 百科占位",
+    "description": "白血病是造血系统的恶性肿瘤，其特征为造血细胞异常增殖导致正常血细胞功能受损，主要表现为贫血、出血倾向和感染风险升高。根据病程和细胞类型，可分为急性和慢性两大类，治疗方法包括化疗、放疗、靶向治疗及造血干细胞移植等。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1845",
+        "title": "白血病首次命名",
+        "body": "1845年，鲁道夫·维尔啸与约翰·贝内特分别在德国和英国首次描述白血症，奠定疾病概念基础。"
+      },
+      {
+        "year": "1900",
+        "title": "X射线治疗白血病",
+        "body": "1900年，放射学家首次使用X射线照射血液，尝试抑制白血球异常增殖，开创放射治疗先河。"
+      },
+      {
+        "year": "1948",
+        "title": "氨基嘌呤首获疗效",
+        "body": "1948年，西德尼·法伯研发氨基嘌呤，对儿童急性淋巴细胞白血病取得首次临床缓解，开创化疗时代。"
+      },
+      {
+        "year": "1960",
+        "title": "费城染色体发现",
+        "body": "1960年，诺埃尔与亨格福德在慢性粒细胞白血病中发现费城染色体，首次关联特定基因异常与癌症。"
+      },
+      {
+        "year": "2001",
+        "title": "伊马替尼获批上市",
+        "body": "2001年，靶向BCR-ABL的伊马替尼通过FDA批准，标志着慢性粒细胞白血病进入精准靶向治疗时代。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-白血病",
+        "url": "https://www.zgbk.com/doc/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-白血病",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%BD%E8%A1%80%E7%97%85",
+        "type": "百科"
+      },
+      {
+        "title": "中华医学会血液学分会",
+        "url": "https://www.cshp.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网-白血病相关研究",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "sickle-cell",
+    "title": "镰状细胞贫血",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "062",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/sickle-cell/sickle-cell-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/sickle-cell/sickle-cell-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/sickle-cell/sickle-cell-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 镰状细胞贫血 · 百科占位",
+    "description": "镰状细胞贫血是一种遗传性血红蛋白病，因β珠蛋白基因突变导致异常血红蛋白S使红细胞呈镰刀状而得名。该病高发于非洲、地中海沿岸等地区，患者常出现慢性贫血、血管阻塞危象和组织缺氧等症状，严重时可损害器官功能。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1910",
+        "title": "首次临床描述",
+        "body": "美国医生James Herrick在《美国医学杂志》报告首例镰状细胞贫血病例。"
+      },
+      {
+        "year": "1927",
+        "title": "血红蛋白S发现",
+        "body": "德国医学家Morse确认患者血红蛋白结构异常，提出血红蛋白S为致病因子。"
+      },
+      {
+        "year": "1949",
+        "title": "遗传机制阐明",
+        "body": "Linus Pauling等证实镰状细胞突变导致血红蛋白聚合，奠定分子病理基础。"
+      },
+      {
+        "year": "1994",
+        "title": "新生儿筛查推广",
+        "body": "美国CDC启动全美新生儿镰状细胞病筛查，早期干预显著降低死亡率。"
+      },
+      {
+        "year": "2017",
+        "title": "基因治疗获批",
+        "body": "FDA批准基于CRISPR的基因编辑疗法临床试验，开启镰状细胞贫血根治新纪元。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%95%BF%E7%8A%81%E7%BB%86%E8%B4%9F%E8%80%85%E5%B0%8F%E7%90%83%E8%B4%A8%E6%80%A7%E8%B4%AB%E8%A1%80",
+        "type": "百科"
+      },
+      {
+        "title": "中文百科",
+        "url": "https://www.zwbk.org/LemmaShow.aspx?lid=235456",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "anxiety-disorder",
+    "title": "焦虑症",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "063",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/anxiety-disorder/anxiety-disorder-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/anxiety-disorder/anxiety-disorder-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/anxiety-disorder/anxiety-disorder-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 焦虑症 · 百科占位",
+    "description": "焦虑症是一种常见的精神障碍，主要表现为持续或反复发作的过度担忧和恐惧，常伴随心悸、出汗、肌肉紧张等躯体症状。其发病与遗传、神经生物学及心理社会因素等多方面相关，在不同人群中有一定的患病比例，具体数据因地区和诊断标准而异。焦虑症可通过药物治疗、心理治疗及生活方式调整等方式进行干预管理。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1895",
+        "title": "弗洛伊德命名焦虑症",
+        "body": "弗洛伊德在《焦虑神经症》中系统阐述焦虑的生理与心理机制，认为潜意识冲突是根本。"
+      },
+      {
+        "year": "1960",
+        "title": "苯二氮卓类药物问世",
+        "body": "1960年代，苯二氮卓类药物如利眠宁和安定首次上市，为焦虑症提供快速镇静治疗，开启药物治疗时代。"
+      },
+      {
+        "year": "1970",
+        "title": "认知行为疗法体系化",
+        "body": "1970年代，贝克等人将认知重构和行为暴露技术整合为认知行为疗法，为焦虑症提供循证短期干预方案。"
+      },
+      {
+        "year": "1980",
+        "title": "DSM首次纳入焦虑障碍",
+        "body": "1980年，《精神障碍诊断与统计手册》第三版首次将焦虑障碍列为独立诊断分类，促进临床标准化和研究统一。"
+      },
+      {
+        "year": "1990",
+        "title": "SSRIs获批用于焦虑症",
+        "body": "1990年代，选择性5-羟色胺再摄取抑制剂如帕罗西汀获批用于广泛性焦虑障碍，标志着抗抑郁药在焦虑治疗中的扩展。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科-焦虑症",
+        "url": "https://baike.baidu.com/item/焦虑症",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院心理研究所",
+        "url": "https://www.psych.ac.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国疾病预防控制中心精神卫生中心",
+        "url": "https://www.chinacdc.cn",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版-焦虑症",
+        "url": "https://zh.wikipedia.org/wiki/焦虑症",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "rocket",
+    "title": "火箭",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "186",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/rocket/rocket-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/rocket/rocket-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/rocket/rocket-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "交通工具 · 火箭 · 百科占位",
+    "description": "火箭（Rocket）是一种依靠自身携带的推进剂产生反作用力前进的飞行器，主要由箭体结构、推进系统、制导系统等部分组成。火箭可在稠密大气层外的高空甚至太空中飞行，根据用途可分为运载火箭、探空火箭和火箭弹等多种类型。作为人类进入太空的主要交通工具，火箭推动了航天技术的发展，是现代航空航天事业的核心装备。",
+    "createdAt": "2026-06-27",
+    "sources": [
+      {
+        "title": "中国大百科全书（航空航天卷）",
+        "url": "https://www.baike.com/wiki/%E7%81%AB%E7%AE%AD",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院力学研究所",
+        "url": "https://www.imech.cas.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "国家航天局",
+        "url": "https://www.cnsa.gov.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国航天博物馆",
+        "url": "https://www.caltm.cn/",
+        "type": "博物馆"
+      }
+    ],
+    "history": [
+      {
+        "year": "13 世纪",
+        "title": "中国火药火箭",
+        "body": "中国宋朝发明火药后, 13 世纪已使用火药箭 (即原始火箭) 用于军事, 后经丝绸之路传入阿拉伯世界与欧洲, 成为现代火箭技术起源之一。"
+      },
+      {
+        "year": "1926 年",
+        "title": "戈达德首飞液体火箭",
+        "body": "美国物理学家罗伯特·戈达德于 1926 年 3 月 16 日在马萨诸塞州发射了世界第一枚液体燃料火箭, 飞行 2.5 秒, 高度 12.5 米, 现代航天时代开启。"
+      },
+      {
+        "year": "1957 年",
+        "title": "苏联 Sputnik 1",
+        "body": "1957 年 10 月 4 日苏联用 R-7 火箭将人类首颗人造卫星 Sputnik 1 送入轨道, 开启太空竞赛, 火箭技术从军事走向民用航天。"
+      },
+      {
+        "year": "1969 年",
+        "title": "阿波罗 11 号登月",
+        "body": "1969 年 7 月 16 日美国土星五号火箭将阿波罗 11 号送入月球轨道, 阿姆斯特朗成为首个登月的人类, 大推力运载火箭技术达到顶峰。"
+      },
+      {
+        "year": "2020 年代",
+        "title": "可重复使用火箭",
+        "body": "SpaceX 猎鹰 9 号、星际飞船等可重复使用火箭降低发射成本 10 倍以上, 中国长征八号甲、朱雀三号等亦跟进研发, 商业航天时代开启。"
+      }
+    ]
+  },
+  {
+    "slug": "satellite",
+    "title": "人造卫星",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "187",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/satellite/satellite-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/satellite/satellite-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/satellite/satellite-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "交通工具 · 人造卫星 · 百科占位",
+    "description": "人造卫星是人类为通讯、导航、气象观测、科学研究等目的，发射至地球轨道或其他天体轨道上的人造航天器。人造卫星通常由平台结构和有效载荷组成，能在轨道运行数月至数十年，通过太阳能电池板或电池供电，是人类探索与利用太空的重要工具。",
+    "createdAt": "2026-06-27",
+    "history": [
+      {
+        "year": "1957",
+        "title": "第一颗人造卫星",
+        "body": "苏联于1957年10月4日成功发射人造卫星斯普特尼克1号，标志着人类进入太空时代。"
+      },
+      {
+        "year": "1958",
+        "title": "美国首次卫星",
+        "body": "1958年1月31日，美国发射探险者1号卫星，标志美国正式进入卫星时代，开展科学实验。"
+      },
+      {
+        "year": "1960",
+        "title": "首颗气象卫星",
+        "body": "1960年8月12日，美国发射TIROS-1，实现全球云图观测，开创卫星气象服务新纪元。"
+      },
+      {
+        "year": "1972",
+        "title": "首颗地球观测卫星",
+        "body": "1972年7月9日，美国发射Landsat-1，开启长期对地观测，获取首幅多光谱地球影像，推动遥感技术飞跃。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院",
+        "url": "https://www.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/",
+        "type": "百科"
       }
     ]
   }

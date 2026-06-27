@@ -35809,5 +35809,194 @@
         "type": "学术"
       }
     ]
+  },
+  {
+    "slug": "colosseum",
+    "title": "罗马斗兽场",
+    "kind": "architecture",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/colosseum/colosseum-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/colosseum/colosseum-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/colosseum/colosseum-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "建筑 · 罗马斗兽场 · 百科占位",
+    "description": "罗马斗兽场 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "taj-mahal",
+    "title": "泰姬陵",
+    "kind": "architecture",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/taj-mahal/taj-mahal-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/taj-mahal/taj-mahal-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/taj-mahal/taj-mahal-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "建筑 · 泰姬陵 · 百科占位",
+    "description": "泰姬陵 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "pisa-tower",
+    "title": "比萨斜塔",
+    "kind": "architecture",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/pisa-tower/pisa-tower-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/pisa-tower/pisa-tower-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/pisa-tower/pisa-tower-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "建筑 · 比萨斜塔 · 百科占位",
+    "description": "比萨斜塔 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "van-gogh-self",
+    "title": "梵高自画像",
+    "kind": "artwork",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/van-gogh-self/van-gogh-self-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/van-gogh-self/van-gogh-self-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/van-gogh-self/van-gogh-self-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 梵高自画像 · 百科占位",
+    "description": "梵高自画像 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "water-lilies",
+    "title": "睡莲",
+    "kind": "artwork",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/water-lilies/water-lilies-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/water-lilies/water-lilies-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/water-lilies/water-lilies-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 睡莲 · 百科占位",
+    "description": "睡莲 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "rodin-thinker",
+    "title": "思想者",
+    "kind": "artwork",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/rodin-thinker/rodin-thinker-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/rodin-thinker/rodin-thinker-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/rodin-thinker/rodin-thinker-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 思想者 · 百科占位",
+    "description": "思想者 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "i-ching",
+    "title": "易经",
+    "kind": "book",
+    "series": "culinary-corner",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/i-ching/i-ching-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/i-ching/i-ching-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/i-ching/i-ching-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "书籍 · 易经 · 百科占位",
+    "description": "易经 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "analects",
+    "title": "论语",
+    "kind": "book",
+    "series": "culinary-corner",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/analects/analects-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/analects/analects-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/analects/analects-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "书籍 · 论语 · 百科占位",
+    "description": "论语 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "slug": "art-of-war",
+    "title": "孙子兵法",
+    "kind": "book",
+    "series": "culinary-corner",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/art-of-war/art-of-war-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/art-of-war/art-of-war-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/art-of-war/art-of-war-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "书籍 · 孙子兵法 · 百科占位",
+    "description": "孙子兵法 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-27"
   }
 ]

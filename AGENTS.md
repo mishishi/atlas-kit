@@ -1794,3 +1794,44 @@ Set `r59-pipeline-monitor` every 15min to check progress and trigger upload-cdn 
 ### Decision: 1K vs 2K
 
 1K 默认。R31 经验: 2K 仅 visualScore 低的卡值得重跑; 默认 1K + post-batch audit 决定是否 2K。
+
+## Round 59c: 49 张新卡 (444 → 498) + 历史/来源 AI 补全 (2026-06-27)
+
+Commit `d43b084`. 把 R59 那 100 张 plan 真正 end-to-end 跑通 — generate → upload → history → sources,堵上 2026-06-26 user feedback「以后都用pipeline自动化啊」。
+
+### Pipeline 跑完的 4 阶段
+
+1. `node scripts/generate-card.mjs --from-plan tmp/plan-100-cards.json --resolution 1K` (background, PID 3408 之前 retry 那一轮)。`--upload` 自动调 upload-cdn,但 R59 用的 --from-plan 是从 plan-100-cards.json 一次性跑,没传 --upload,所以落盘到 `public/cards/<kind>/<slug>/` 但没上 CDN。
+2. `node --env-file=.env.local scripts/upload-cdn.mjs --kind X --also-rewrite` 走 `run-batch3-cdn.ps1` 一键 15 kinds 顺序跑:15 × ~55 files = 822 files 0 fail,cards.json 129 fields 改 CDN URL。
+3. `node scripts/draft-history.mjs` (mmx, 109/144 success, 35 fail 留给手写)。
+4. `node scripts/draft-sources.mjs` (mmx, 93/99 success, 6 fail 留给手写)。
+
+### 49 张新卡覆盖
+
+animal/insect (firefly / ladybug / monarch-bfly), architecture/european (hagia-sophia), artwork/ceramic (longquan-celadon / ming-vase / qing-porcelain), book/science (a-brief-history-of-time), city/natural-scenery (guilin / lijiang / qufu / yellow-mountain), food/global (hummus / ramen-iekei / tacos / tonkatsu), history/china-ancient (han-dynasty / qin-empire), history/modern (moon-landing), mythology/* (athena / odin / isis), object/ceramic (celadon / iron-pillar), object/traditional (bronze-mirror / guqin), other/intangible-heritage (kungfu / papercut / shadow-puppet), person/world (ho-chi-minh / lincoln / mandela), pet/small-mammal (hedgehog / sugar-glider), phenomenon/ecology (amazon-rainforest / andes / great-barrier-reef), space-object/galaxy (milky-way-cnt), sport/team (all-blacks / arsenal / nba-warriors), sport/extreme (parkour / piano-fight), tech/invention (lab-on-a-chip / mrna-vaccine / tesla-coil)。
+
+### 关键决策
+
+- **matrix API 90% 失败率没解决**:1K 跑 53 张里 4 张没救回来,3 张 dead-lettered。R59b 的 5x 退避重试把首次 11/112 拉到 44/97,但 90% fail 还是常态。
+- **mmx 高变异 (parse fail / too few nodes) 是另一个独立问题**:3 次重试 + 2s 间隔能挽回大部分,但有 24 history / 6 sources 真救不回,要 handwrite-history.mjs 兜底。
+- **run-batch3-cdn.ps1 留作下次工具**:per-kind sequential upload + 5x 重试 + --also-rewrite,re-runnable / idempotent。
+
+### 当前 catalog 状态
+
+- **498 张** (444 + 49 + 5 之前 R57 漏的), **26 kinds** / **10 series**
+- 24 张没 history (mmx 失败,需 handwrite-history.mjs 补)
+- 6 张没 sources (mmx 失败,需 handwrite-sources.mjs 补 — 这个脚本还没写,见 R59 候选)
+- 100% 图片在 CDN 上
+
+### Lessons worth saving
+
+- **Pipeline automation 4 阶段必须一次跑完**:生成完不上传 = 卡在 local,上传完不补 history = 详情页空,补 history 不补 sources = 「参考来源」段空。
+- **per-kind upload --also-rewrite 比 --all 块 + 容易回滚**:`--all` 一次扫 1300+ files,single kind 50-80 files 出错好定位。
+- **mmx 1K 比 2K 友好**:1K prompt 短,mmx variance 影响小;2K 偶尔返回 1536x3072,需要额外 reencode。
+
+## Round 60: 候选项
+
+- handwrite-sources.mjs (给 mmx 失败的 6 张手写 sources) 优先
+- handwrite-history.mjs 已存在,需要给 mmx 失败的 24 张手写 (那 35 fail 中,11 张是 handwrite-history 之前手写过的)
+- Vercel push (atlas-kit-six.vercel.app,需要用户在 Vercel dashboard 点 deploy) 优先
+- AGENTS.md subKind coverage 数字从 400/400 改成 498/498 + 更新「current catalog」段

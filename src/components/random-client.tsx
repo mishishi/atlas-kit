@@ -33,7 +33,7 @@ import type { Card, CardKind } from "@/lib/types";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { THEME_TYPES } from "@/lib/theme-types";
-import { getSubKindsForKind, getSubKindLabel } from "@/lib/taxonomy";
+import { getSubKindsForKind, getSubKindLabel } from "@/lib/taxonomy-browser";
 import { StarButton } from "./star-button";
 import { cn } from "@/lib/utils";
 

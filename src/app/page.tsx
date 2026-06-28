@@ -6,6 +6,7 @@ import { THEME_TYPES } from "@/lib/theme-types";
 import { CardGrid } from "@/components/card-grid";
 import { KindFilter } from "@/components/kind-filter";
 import { FavoritesPreview } from "@/components/favorites-preview";
+import { TodayCard } from "@/components/today-card";
 
 interface HomeProps {
   searchParams: { kind?: string };
@@ -169,6 +170,12 @@ export default function Home({ searchParams }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* R60: 今日图鉴 — daily deterministic pick, between hero and series
+          strip. Section is server-rendered (no "use client") so the daily
+          card is the same for everyone on the same UTC day and there's
+          no hydration flash. */}
+      <TodayCard />
 
       {/* 5 series preview — each series gets a row with its own cover
           card + tagline + 1 'see all' CTA. Sits between the stat strip

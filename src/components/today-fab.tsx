@@ -115,7 +115,7 @@ export function TodayFab({ card }: TodayFabProps) {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative flex max-h-[90vh] w-full max-w-[540px] flex-col overflow-hidden rounded-2xl bg-card shadow-2xl"
+            className="relative flex max-h-[90vh] w-full max-w-[360px] flex-col overflow-hidden rounded-2xl bg-card shadow-2xl"
           >
             {/* Eyebrow bar — sticky top of modal */}
             <div className="flex items-center justify-between border-b border-border bg-card/95 px-5 py-3 backdrop-blur-sm">
@@ -136,22 +136,23 @@ export function TodayFab({ card }: TodayFabProps) {
               </button>
             </div>
 
-            {/* Image — full 9:16 visible, no crop, palette[0] background fill */}
+            {/* Image — full 9:16 visible, no crop, no side margins.
+                Container height = 60vh, width = 60vh × 9/16 = auto-fitted
+                to the image, modal follows. */}
             <div
-              className="relative flex w-full items-center justify-center overflow-auto"
-              style={{ backgroundColor: card.palette[0] }}
+              className="relative mx-auto w-fit"
+              style={{ maxHeight: "60vh", aspectRatio: "9 / 16" }}
             >
-              {/* Use intrinsic aspect ratio: width = container, height = auto */}
-              <div className="relative w-full" style={{ aspectRatio: "9 / 16", maxHeight: "55vh" }}>
-                <Image
-                  src={card.image_full ?? card.image}
-                  alt={card.title}
-                  fill
-                  sizes="(max-width: 540px) 100vw, 540px"
-                  priority
-                  className="object-contain"
-                />
-              </div>
+              <Image
+                src={card.image_full ?? card.image}
+                alt={card.title}
+                width={540}
+                height={960}
+                sizes="(max-width: 540px) 60vh, 540px"
+                priority
+                className="block h-auto max-h-[60vh] w-auto object-contain"
+                style={{ aspectRatio: "9 / 16" }}
+              />
             </div>
 
             {/* Text block — below the image, not overlaid */}

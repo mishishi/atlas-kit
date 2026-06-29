@@ -24910,7 +24910,28 @@
     ],
     "quote": "《棋经》云：‘棋者，天地之经纬，阴阳之变也。’",
     "trivia": "围棋棋盘共有361个交叉点，等于一年天数。",
-    "history": "[object Object],[object Object],[object Object],[object Object],[object Object]",
+    "history": [
+      {
+        "year": "公元前500年左右",
+        "title": "围棋的萌芽期",
+        "body": "《左传》记载春秋时期已有‘弈’之戏，围棋雏形出现于诸侯宫廷与文人雅集。"
+      },
+      {
+        "year": "公元502年",
+        "title": "梁武帝编围棋经",
+        "body": "梁武帝于502年主持编纂《围棋经》，系统阐述布局、死活与官子，标志围棋理论成形。"
+      },
+      {
+        "year": "北宋·1040年",
+        "title": "贾宪刻印《围棋谱》",
+        "body": "北宋贾宪于1040年刻印《围棋谱》，为现存最早的围棋专著，记载棋局、技巧与死活判断。"
+      },
+      {
+        "year": "明朝·16世纪",
+        "title": "围棋走向世界",
+        "body": "明代中期，围棋随海上贸易传入日本、朝鲜，并在江户时代形成独特流派与棋谱体系。"
+      }
+    ],
     "subKind": "tradition"
   },
   {
@@ -37327,7 +37348,7 @@
     ],
     "tagline": "",
     "subtitle": "人物 · 曼德拉 · 百科占位",
-    "description": "**人物 · 曼德拉 · 百科占位**\n\n纳尔逊·曼德拉是南非著名的反种族隔离革命家、政治家，一生致力于废除南非种族隔离制度。他曾因投身反种族隔离运动在狱中度过数十年，后成为南非首位黑人总统，推动国家走向种族和解与民主转型。其和平抗争精神与领袖风范使他在国际社会享有崇高声望，被尊称为“南非国父”。",
+    "description": "纳尔逊·曼德拉是南非著名的反种族隔离革命家、政治家，一生致力于废除南非种族隔离制度。他曾因投身反种族隔离运动在狱中度过数十年，后成为南非首位黑人总统，推动国家走向种族和解与民主转型。其和平抗争精神与领袖风范使他在国际社会享有崇高声望，被尊称为“南非国父”。",
     "createdAt": "2026-06-27",
     "history": [
       {
@@ -43438,6 +43459,2166 @@
       {
         "title": "中国知网",
         "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "sage",
+    "title": "鼠尾草",
+    "kind": "plant",
+    "series": "craft-and-botanical",
+    "seriesNo": "151",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/sage/sage-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/sage/sage-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/sage/sage-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "植物 · 鼠尾草 · 百科占位",
+    "description": "鼠尾草是唇形科鼠尾草属植物的统称，原产于欧洲、北美及亚洲部分地区。植株通常为草本或亚灌木，叶片多呈羽状复叶，花序呈穗状或圆锥状，花色以蓝、紫为主，部分种类可入药或用于调味。该属包含约1000余种，广泛分布于温带及热带地区，部分品种常栽培为观赏植物或香草植物。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "古希腊时期",
+        "title": "药用传统",
+        "body": "古希腊医家迪奥斯科里德斯在《药物志》中记载鼠尾草 (Salvia officinalis) 用于止血与咽喉炎症, 拉丁名 salvia 源自 salvere (治愈), 是欧洲四大药用植物之一。"
+      },
+      {
+        "year": "中世纪",
+        "title": "修道院药园",
+        "body": "中世纪修道院将鼠尾草种于药园核心位置, 称其为「庭院之母」, 相信能驱邪延寿; 查理曼大帝 812 年颁布敕令要求每座庄园种植。"
+      },
+      {
+        "year": "清代",
+        "title": "入华变种",
+        "body": "18 世纪欧洲传入中国后, 与本土丹参 (Salvia miltiorrhiza) 近缘种嫁接改良, 形成岭南鼠尾草变种, 用于凉茶与烹饪。"
+      },
+      {
+        "year": "现代",
+        "title": "芳香与药理",
+        "body": "现代研究证实鼠尾草含鼠尾草酸、桉叶素, 有抗菌、抗氧化作用, 主产巴尔干半岛, 2020 年全球精油贸易额约 1.2 亿美元。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国植物志 - 鼠尾草属",
+        "url": "https://www.iplant.cn/info/Salvia",
+        "type": "学术"
+      },
+      {
+        "title": "维基百科中文版 - 鼠尾草",
+        "url": "https://zh.wikipedia.org/wiki/鼠尾草",
+        "type": "百科"
+      },
+      {
+        "title": "PubMed - Sage Bioactive Compounds",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=salvia+officinalis",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "polaris",
+    "title": "北极星",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "076",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/polaris/polaris-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/polaris/polaris-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/polaris/polaris-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 北极星 · 百科占位",
+    "description": "北极星，指的是目前最接近北天极的恒星——勾陈一（小熊座α星），位于小熊座，距地球约四百光年。它是一颗造父变星，亮度周期性变化。自古以来，北极星因指向正北的特性，被广泛用于导航和星象观测，在人类历史上具有重要地位。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "古埃及",
+        "title": "天狼伴星",
+        "body": "古埃及天文学家在公元前 3000 年已识别北极星, 因夜空几乎不动, 用于墓室定向 (吉萨大金字塔北通道 4.5 度仰角精确指向北极星)。"
+      },
+      {
+        "year": "汉代",
+        "title": "紫微恒",
+        "body": "中国汉代《史记·天官书》称北极星为「紫微恒」, 视为天帝居所, 紫微斗数据此推演, 北极五星体系延续两千年。"
+      },
+      {
+        "year": "大航海时代",
+        "title": "航海坐标",
+        "body": "15 世纪欧洲航海依赖北极星定位纬度, 北半球海员「看北极星定北」的谚语流传至今, 罗盘磁偏角校正亦以北极星为参考。"
+      },
+      {
+        "year": "现代",
+        "title": "小熊座 α",
+        "body": "现代天文学确认北极星是小熊座 α (Polaris), 是颗三合星系统, 主星距地球 433 光年, 视星等 1.98, 因地球岁差 2100 年前后将最接近北天极。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 北极星",
+        "url": "https://zh.wikipedia.org/wiki/北极星",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.nao.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国古代天文学 (陈遵妫)",
+        "url": "https://www.book.douban.com/subject/1195394/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "altair",
+    "title": "牛郎星",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "077",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/altair/altair-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/altair/altair-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/altair/altair-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 牛郎星 · 百科占位",
+    "description": "牛郎星，学名河鼓二，是天鹰座中最明亮的恒星，位于银河系内，距离地球约16光年。作为夏季夜空中最显著的恒星之一，它与织女星、天津四共同构成著名的“夏季大三角”。在中国传统文化中，牛郎星因七夕传说而广为人知，象征着忠贞不渝的爱情。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1838 年",
+        "title": "近代距离测定",
+        "body": "1838年，德国天文学家贝塞尔首次利用视差法测定牛郎星距离约为16光年。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "现代光谱分析",
+        "body": "20世纪后半叶，红外和射电望远镜揭示牛郎星表面存在强烈的对流活动，磁场强度约0.15特斯拉。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "现代流行文化",
+        "body": "21世纪，牛郎星常被用于文学作品与音乐中出现，借喻爱情与星辰的浪漫意象。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 牛郎星",
+        "url": "https://zh.wikipedia.org/wiki/牛郎星",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台 - 牛郎织女",
+        "url": "https://www.nao.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国古代星座文化",
+        "url": "https://www.book.douban.com/subject/3026800/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "fomalhaut",
+    "title": "北落师门",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "078",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/fomalhaut/fomalhaut-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/fomalhaut/fomalhaut-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/fomalhaut/fomalhaut-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 北落师门 · 百科占位",
+    "description": "# 北落师门\n\n北落师门是南鱼座α星，是一颗蓝白色的A型主序星，距地球约25光年，亮度为全天第十七亮。它年龄仅约2-3亿年，是相对年轻的恒星，周围拥有显著尘埃盘结构，并已确认存在行星系统。作为古波斯天文学中「四大王星」之一，北落师门在航海与占星史上具有重要地位，秋季星空中易于辨认。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "约公元前3000年",
+        "title": "古代观测记录",
+        "body": "古埃及与巴比伦的天文文献中首次记载北落师门，视为重要星象之一。"
+      },
+      {
+        "year": "公元1671年",
+        "title": "精确位置测定",
+        "body": "约翰·弗拉姆斯蒂德在《天文星表》中首次精确测定北落师门的赤经赤纬，奠定现代星表基础。"
+      },
+      {
+        "year": "1997年",
+        "title": "依巴谷卫星测距",
+        "body": "欧洲航天局依巴谷卫星精确测量北落师门的视差，确定距离约为25光年，提升星体研究精度。"
+      },
+      {
+        "year": "2008年",
+        "title": "直接成像发现行星",
+        "body": "哈勃空间望远镜在北落师门周围拍摄到一颗伴随行星Fomalhaut b，实现首次对系外行星的直接成像观测。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 北落师门",
+        "url": "https://zh.wikipedia.org/wiki/北落师门",
+        "type": "百科"
+      },
+      {
+        "title": "NASA 行星系统档案",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/",
+        "type": "机构"
+      },
+      {
+        "title": "中国古代天文 - 南鱼座",
+        "url": "https://www.book.douban.com/subject/3026800/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "antares",
+    "title": "心宿二",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "079",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/antares/antares-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/antares/antares-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/antares/antares-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 心宿二 · 百科占位",
+    "description": "心宿二（天蝎座α星）是一颗位于天蝎座的红色超巨星，也是夜空中最明亮的恒星之一。其表面温度较低，呈现出独特的红色光芒，在古代中国被列为东方苍龙七宿之心宿。由于体积巨大且光度极高，心宿二在夏季夜空中极易辨认，是天文爱好者和专业观测的重要目标。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "古巴比伦",
+        "title": "心宿之名",
+        "body": "古巴比伦天文学家在公元前 2000 年的泥板星表中已记录心宿二 (Antares), 命名源自希腊语 anti + Ares (火星的对手), 因其红色与火星相似。"
+      },
+      {
+        "year": "中国古代",
+        "title": "大火之精",
+        "body": "中国《史记·天官书》称心宿二为「大火」, 是东方苍龙七宿之心, 主帝王与朝廷, 观心宿二以定季节, 七月流火指其西沉。"
+      },
+      {
+        "year": "波斯",
+        "title": "观星术",
+        "body": "古波斯观星术 (astrology) 将心宿二列为皇家之星, 称 Satevis, 与光明与战争相关, 拜火教经典《登卡尔》多次提及。"
+      },
+      {
+        "year": "现代",
+        "title": "红超巨星",
+        "body": "现代天文确认心宿二是颗 M1.5 Iab 红超巨星, 直径约太阳 700 倍, 距地球 550 光年, 已进入生命末期, 预计百万年内可能超新星爆发。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 心宿二",
+        "url": "https://zh.wikipedia.org/wiki/心宿二",
+        "type": "百科"
+      },
+      {
+        "title": "中国古代天文 - 大火与苍龙七宿",
+        "url": "https://www.book.douban.com/subject/3026800/",
+        "type": "学术"
+      },
+      {
+        "title": "SIMBAD 天体数据库 - Antares",
+        "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=Antares",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "guinea-pig",
+    "title": "豚鼠",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/guinea-pig/guinea-pig-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/guinea-pig/guinea-pig-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/guinea-pig/guinea-pig-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 豚鼠 · 百科占位",
+    "description": "豚鼠（学名：Cavia porcellus）是一种小型哺乳动物，原产于南美洲安第斯山脉地区，属于啮齿目豚鼠科。其体型圆润、四肢短小，毛色丰富多样，性格温顺安静，因呆萌的外形和温驯的习性而深受人们喜爱。作为群居性草食动物，豚鼠通常需要同伴陪伴饲养，寿命约为4-8年，是常见的家庭宠物之一。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "前 3000 年",
+        "title": "安第斯山原始驯化",
+        "body": "约公元前3000年，安第斯地区居民将野生豚鼠驯化为食物与祭祀用途。"
+      },
+      {
+        "year": "1519 年",
+        "title": "欧洲首次引入",
+        "body": "1519年，西班牙探险家将豚鼠带回欧洲，随后在欧洲贵族间作为新奇宠物流行。"
+      },
+      {
+        "year": "1760 年",
+        "title": "品种标准形成",
+        "body": "1760年代，英国动物学家开始系统化选育，培育出英国短毛、秘鲁长毛等主流品种。"
+      },
+      {
+        "year": "1920 年",
+        "title": "宠物与实验模型",
+        "body": "1920年代起，豚鼠因其温顺易养成为家庭宠物，同时在医学实验中广泛用于维生素C研究。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 豚鼠",
+        "url": "https://zh.wikipedia.org/wiki/豚鼠",
+        "type": "百科"
+      },
+      {
+        "title": "中国农业大学动物医学院",
+        "url": "https://vet.cau.edu.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "秘鲁国家文化遗产 - 安第斯豚鼠节",
+        "url": "https://www.cultura.gob.pe/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "rabbit",
+    "title": "兔子",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/rabbit/rabbit-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/rabbit/rabbit-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/rabbit/rabbit-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 兔子 · 百科占位",
+    "description": "兔子是哺乳动物，兔形目兔科动物的总称，以其长耳朵和强健的后腿为主要特征。作为草食性动物，兔子的主食包括干草、蔬菜和专用兔粮，性格通常温顺亲人，经过适当驯化后可成为受欢迎的宠物。饲养兔子需要提供干燥清洁的生活环境、定期运动时间及适量的陪伴互动。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "6 世纪",
+        "title": "野生兔被驯化为宠物",
+        "body": "约公元6世纪，欧洲最早将野生穴兔驯养为家畜，随后逐步进入家庭作为宠物。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "现代宠物兔品种多样化",
+        "body": "19世纪至20世纪，人们通过选择性繁殖，培育出安哥拉、荷兰矮兔等数十种适合室内饲养的宠物兔。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "全球宠物兔市场快速增长",
+        "body": "进入21世纪后，全球宠物兔市场规模以年均10%的速度增长，成为新兴的宠物细分市场。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 家兔",
+        "url": "https://zh.wikipedia.org/wiki/家兔",
+        "type": "百科"
+      },
+      {
+        "title": "中国家兔遗传资源志",
+        "url": "https://www.book.douban.com/subject/2584943/",
+        "type": "学术"
+      },
+      {
+        "title": "中国畜牧业协会兔业分会",
+        "url": "http://www.caaa.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "canary",
+    "title": "金丝雀",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/canary/canary-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/canary/canary-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/canary/canary-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 金丝雀 · 百科占位",
+    "description": "金丝雀是雀形目燕雀科丝雀属鸟类，原产于大西洋上的亚速尔群岛、马德拉群岛及加那利群岛。作为世界最著名的宠物鸟之一，金丝雀因其婉转动人的鸣唱声和绚丽的羽色而备受人们喜爱。金丝雀体型小巧，体长约12-14厘米，饲养历史可追溯至15世纪，经过长期品种改良，现已培育出多种羽色和鸣唱品系，是广受欢迎的观赏与听鸣宠物。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "15 世纪",
+        "title": "金丝雀传入欧洲",
+        "body": "15世纪，西班牙航海家把野生金丝雀从加那利群岛带回欧洲，开启贵族笼养时代。"
+      },
+      {
+        "year": "18 世纪",
+        "title": "英伦养雀风潮",
+        "body": "18世纪，英国兴起金丝雀育种俱乐部，培育出白、黄、红等多种颜色，一时风靡贵族与中产。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "金丝雀充当警报",
+        "body": "19世纪末，金丝雀被广泛用于矿井和潜水舱的气体检测，因其对有毒气体极度敏感，被称为活体警报。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "金丝雀走进家庭",
+        "body": "20世纪中叶，宠物市场繁荣，金丝雀凭借悦耳歌声与绚丽羽色走进千家万户，成为常见观赏鸟。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 金丝雀",
+        "url": "https://zh.wikipedia.org/wiki/金丝雀",
+        "type": "百科"
+      },
+      {
+        "title": "中国鸟类学会",
+        "url": "http://www.chinaornithologicalsociety.org/",
+        "type": "机构"
+      },
+      {
+        "title": "煤矿安全史 - 金丝雀与瓦斯检测",
+        "url": "https://www.book.douban.com/subject/3537149/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "gecko",
+    "title": "守宫",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 守宫 · 百科占位",
+    "description": "守宫是对壁虎科守宫属动物的统称，常见作为宠物饲养的包括大壁虎及豹纹守宫等品种。它们主要分布于亚洲热带及亚热带地区，因外形独特、性格相对温顺、饲养难度适中，近年来成为受欢迎的爬行动物宠物之一。守宫属于夜行性动物，以昆虫等小型无脊椎动物为食，人工饲养条件下寿命可达十数年。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1758",
+        "title": "壁虎首次命名",
+        "body": "瑞典生物学家林奈正式为壁虎命名,将其归入守宫属Gekko,首次在科学体系中确立其分类地位。"
+      },
+      {
+        "year": "1820",
+        "title": "壁虎足趾发现",
+        "body": "科学家发现壁虎足趾密布百万级刚毛,能产生范德华力吸附,解释其天花板倒挂的惊人能力。"
+      },
+      {
+        "year": "1934",
+        "title": "中国壁虎药材记载",
+        "body": "《中国动物志》记载守宫可入药,传统中医用其治疗中风癫痫,在民间医药中具有悠久历史。"
+      },
+      {
+        "year": "2000",
+        "title": "仿壁虎粘合剂诞生",
+        "body": "美国科学家仿照壁虎刚毛结构,研发出可重复使用的干性粘合材料,开启生物启发工程新方向。"
+      },
+      {
+        "year": "2014",
+        "title": "守宫基因组破译",
+        "body": "科学家完成守宫全基因组测序,揭示其断尾再生和夜间视觉的基因机制,深化对爬行动物演化认知。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 壁虎",
+        "url": "https://zh.wikipedia.org/wiki/壁虎",
+        "type": "百科"
+      },
+      {
+        "title": "中国爬行动物学会",
+        "url": "http://www.csrcd.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "壁虎脚趾黏附机理研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=gecko+adhesion",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "malaysia",
+    "title": "马来西亚",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "063",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/malaysia/malaysia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/malaysia/malaysia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/malaysia/malaysia-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 马来西亚 · 百科占位",
+    "description": "马来西亚」是位于东南亚的君主立宪联邦制国家，由马来半岛南部及加里曼丹岛北部的沙捞越、沙巴两州组成，首都为吉隆坡。以伊斯兰教为国教，马来语为官方语言，社会呈现马来、华族、印度等多元民族融合的独特面貌。经济以棕榈油、橡胶、电子制造业及旅游业为支柱，属热带雨林气候，自然资源丰富。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1402 年",
+        "title": "马六甲苏丹国建立",
+        "body": "1402年，马六甲苏丹国在马来半岛建立，成为东南亚重要的海上贸易中心。"
+      },
+      {
+        "year": "1511 年",
+        "title": "葡萄牙占领马六甲",
+        "body": "1511年，葡萄牙军队攻占马六甲，开启欧洲殖民者在马来群岛的统治。"
+      },
+      {
+        "year": "1786 年",
+        "title": "英国在槟城设殖民地",
+        "body": "1786年，英国在槟城设立殖民地，奠定其在马来亚的经济与政治影响力。"
+      },
+      {
+        "year": "1957 年",
+        "title": "马来亚宣告独立",
+        "body": "1957年8月31日，马来亚联合邦宣告独立，结束英国殖民统治。"
+      },
+      {
+        "year": "1963 年",
+        "title": "马来西亚成立",
+        "body": "1963年9月16日，马来西亚正式成立，包含马来亚、沙巴、砂拉越及新加坡（后于1965年退出）。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 马来西亚",
+        "url": "https://zh.wikipedia.org/wiki/马来西亚",
+        "type": "百科"
+      },
+      {
+        "title": "中国外交部 - 马来西亚概况",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_676908/",
+        "type": "机构"
+      },
+      {
+        "title": "马来西亚国家档案馆",
+        "url": "https://www.arkib.gov.my/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "philippines",
+    "title": "菲律宾",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "064",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/philippines/philippines-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/philippines/philippines-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/philippines/philippines-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 菲律宾 · 百科占位",
+    "description": "菲律宾，全称菲律宾共和国，是位于东南亚的一个群岛国家，坐落于西太平洋，由七千余个岛屿组成，主要分为吕宋岛、棉兰老岛、维萨亚群岛三大岛群。该国首都为马尼拉，以其热带气候、丰富的生物多样性、绵长的海岸线及多元的文化传统著称，融合了马来、西班牙、美国等多元文化元素。作为东南亚重要经济体之一，菲律宾在亚太地区具有重要的地缘战略地位。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1521",
+        "title": "麦哲伦登陆菲律宾",
+        "body": "1521年，葡萄牙航海家麦哲伦率西班牙舰队抵达宿务，开启欧洲人对菲律宾的首次接触。"
+      },
+      {
+        "year": "1565",
+        "title": "西班牙殖民统治",
+        "body": "1565年，黎牙实比率领的西班牙军队在宿务建立殖民据点，开启长达三百余年的西班牙统治。"
+      },
+      {
+        "year": "1896",
+        "title": "菲律宾独立运动",
+        "body": "1896年，卡蒂普南发起革命号召，菲律宾人民掀起武装反抗，要求摆脱西班牙殖民统治，争取独立。"
+      },
+      {
+        "year": "1946",
+        "title": "菲律宾独立宣言",
+        "body": "1946年7月4日，菲律宾正式宣布独立，结束美国统治，建立菲律宾共和国，成为二战后首批获得主权的亚洲国家。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 菲律宾",
+        "url": "https://zh.wikipedia.org/wiki/菲律宾",
+        "type": "百科"
+      },
+      {
+        "title": "中国外交部 - 菲律宾概况",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_676882/",
+        "type": "机构"
+      },
+      {
+        "title": "东南亚研究 (厦门大学)",
+        "url": "https://nanyang.xmu.edu.cn/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "germanium",
+    "title": "锗",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "059",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/germanium/germanium-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/germanium/germanium-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/germanium/germanium-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 锗 · 百科占位",
+    "description": "锗是一种准金属元素，化学符号为Ge，原子序数32，位于元素周期表第14族。它是一种重要的半导体材料，在电子工业、光纤通信和红外光学等领域有广泛应用。自然界中锗多以硫化物形式存在于矿物中，独立矿物较少。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1886",
+        "title": "温克勒发现锗",
+        "body": "1886年，温克勒在矿石中发现新元素，命名为锗，奠定半导体研究基础。"
+      },
+      {
+        "year": "1863",
+        "title": "门捷列夫预言",
+        "body": "1863年，门捷列夫预言‘eka‑硅’，后证实为锗，验证周期律。"
+      },
+      {
+        "year": "1948",
+        "title": "首颗锗晶体管",
+        "body": "1948年，巴丁和布拉顿发明基于锗的晶体管，开启固体电子学时代。"
+      },
+      {
+        "year": "1960",
+        "title": "光纤通信应用",
+        "body": "1960年代，锗因高折射率被用于光纤通信，大幅提升光信号传输效率。"
+      },
+      {
+        "year": "2000",
+        "title": "红外光学材料",
+        "body": "21世纪，锗的优良红外透过性，使其广泛用于红外热像仪和光学透镜。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 锗",
+        "url": "https://zh.wikipedia.org/wiki/锗",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 锗元素",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "USGS 锗矿年报",
+        "url": "https://www.usgs.gov/centers/national-minerals-information-center/germanium-statistics-and-information",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "bismuth",
+    "title": "铋",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "060",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/bismuth/bismuth-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/bismuth/bismuth-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/bismuth/bismuth-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 铋 · 百科占位",
+    "description": "铋是一种银白色的金属元素，化学符号Bi，原子序数83，位于元素周期表第VA族。它是最不活泼的金属之一，具有相对密度较大、熔点较低的特点，常温下呈固态。铋在自然界中多以化合物形式存在于矿物中，如辉铋矿和铋华等，因其低毒性和化学稳定性，广泛应用于医药、化妆品及低熔点合金制造等领域。此外，铋的晶体在特定条件下可形成独特的几何形状，外观美观，具有一定的观赏价值。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "中世纪",
+        "title": "欧洲误认",
+        "body": "15 世纪欧洲炼金术士误将铋 (Bi, 第 83 号) 视为铅的变种, 因两者密度相近, 用作锡的廉价替代品印刷铅字, 直到 1753 年法国化学家 Geoffroy 才确认其为独立元素。"
+      },
+      {
+        "year": "1546 年",
+        "title": "首次命名",
+        "body": "德国冶金学家 Agricola 在《论矿物的性质》中首次使用 bismutum 一词, 描述萨克森矿区产出的一种易熔金属。"
+      },
+      {
+        "year": "1839 年",
+        "title": "确认原子量",
+        "body": "瑞典化学家 Berzelius 1839 年精确测定铋原子量为 208, 列于当时已知 54 种元素表, 确立其周期表位置 (第 VA 族, 与氮磷砷锑同族)。"
+      },
+      {
+        "year": "现代",
+        "title": "医药与合金",
+        "body": "现代铋主要用于低熔点合金 (Wood 合金含铋 50%)、化妆品珠光剂、胃药 (次水杨酸铋, 治疗旅行者腹泻), 中国 2022 年铋产量占全球 80%。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 铋",
+        "url": "https://zh.wikipedia.org/wiki/铋",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 铋",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "USGS Bismuth Statistics",
+        "url": "https://www.usgs.gov/centers/national-minerals-information-center/bismuth-statistics-and-information",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "gaucher",
+    "title": "戈谢病",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "069",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/gaucher/gaucher-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/gaucher/gaucher-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/gaucher/gaucher-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 戈谢病 · 百科占位",
+    "description": "戈谢病是一种罕见的常染色体隐性遗传性代谢病，属于溶酶体贮积症。由于体内缺乏葡萄糖脑苷脂酶，葡萄糖脑苷脂在巨噬细胞内异常贮积，主要累及肝脏、脾脏、骨髓等器官系统。该病是最常见的溶酶体贮积症之一，根据临床特点可分为不同类型，各地区发病率存在差异。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1882",
+        "title": "首次描述戈谢病",
+        "body": "1882年，菲利普·戈谢在法国首次描述了一种以肝脾肿大和骨骼异常为特征的疾病，后被称为戈谢病。"
+      },
+      {
+        "year": "1934",
+        "title": "酶缺乏理论提出",
+        "body": "1934年，研究者推测戈谢病可能与酶缺乏有关，为后续酶学机制的研究奠定理论基础。"
+      },
+      {
+        "year": "1965",
+        "title": "酶活性测定方法建立",
+        "body": "1965年，Brady等科学家成功测定戈谢病细胞中β-葡萄糖脑苷脂酶活性低下，确认酶缺乏为致病关键。"
+      },
+      {
+        "year": "1991",
+        "title": "酶替代疗法获批",
+        "body": "1991年，美国FDA批准首个酶替代疗法药物伊米苷酶用于治疗戈谢病，开启靶向治疗新时代。"
+      },
+      {
+        "year": "2015",
+        "title": "基因治疗进入临床",
+        "body": "2015年，首例基于慢病毒载体的基因治疗在临床试验中显示出对戈谢病患者的长期疗效，推动新型治疗研究。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 戈谢病",
+        "url": "https://zh.wikipedia.org/wiki/戈谢病",
+        "type": "百科"
+      },
+      {
+        "title": "中国罕见病联盟 - 戈谢病",
+        "url": "https://www.chard.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "PubMed - Gaucher Disease",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=gaucher+disease",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "microscope",
+    "title": "显微镜",
+    "kind": "object",
+    "series": "craft-and-botanical",
+    "seriesNo": "192",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/microscope/microscope-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/microscope/microscope-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/microscope/microscope-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "器物 · 显微镜 · 百科占位",
+    "description": "显微镜是一种用于放大微小物体以便观察的光学仪器，主要由物镜、目镜和载物台等部件组成。它通过折射或反射原理，将肉眼无法直接看清的细微结构放大数十倍至上千倍，广泛应用于生物学、医学、材料科学等领域的研究与检测。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1590 年",
+        "title": "荷兰起源",
+        "body": "1590 年荷兰眼镜匠 Zacharias Janssen 与父亲 Hans 制作了第一台复合显微镜, 放大率 9-10 倍, 是现代显微镜的雏形, 当时主要用作放大镜辅助的奢侈品。"
+      },
+      {
+        "year": "1665 年",
+        "title": "细胞发现",
+        "body": "英国博物学家 Robert Hooke 用改进的复合显微镜观察软木切片, 在《显微图谱》(Micrographia) 中首次使用「cell」(细胞) 一词, 命名源自拉丁文 cellula (小房间)。"
+      },
+      {
+        "year": "1674 年",
+        "title": "微生物观察",
+        "body": "荷兰商人 Antonie van Leeuwenhoek 用自磨的单透镜显微镜 (放大率 270 倍) 首次观察到细菌、原生动物和精子, 被称为「微生物学之父」, 1683 年他向皇家学会描述口腔细菌。"
+      },
+      {
+        "year": "1931 年",
+        "title": "电子显微镜",
+        "body": "1931 年德国物理学家 Ernst Ruska 和 Max Knoll 发明透射电子显微镜 (TEM), 突破光学极限, 放大率达 100 万倍, 1986 年 Ruska 因此获诺贝尔物理学奖。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 显微镜",
+        "url": "https://zh.wikipedia.org/wiki/显微镜",
+        "type": "百科"
+      },
+      {
+        "title": "中国生物物理学会",
+        "url": "http://www.bsc.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "诺贝尔奖官方档案 - 1986 Ruska",
+        "url": "https://www.nobelprize.org/prizes/physics/1986/ruska/facts/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "coral-bleaching",
+    "title": "珊瑚白化",
+    "kind": "phenomenon",
+    "series": "craft-and-botanical",
+    "seriesNo": "178",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/coral-bleaching/coral-bleaching-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/coral-bleaching/coral-bleaching-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/coral-bleaching/coral-bleaching-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "自然现象 · 珊瑚白化 · 百科占位",
+    "description": "珊瑚白化是珊瑚礁生态系统中的一种现象，当海水温度升高至不适于虫黄藻生存时，珊瑚会主动排出共生的藻类，失去主要营养来源和鲜艳色泽，导致组织逐渐变白。若环境压力持续，珊瑚将因饥饿和疾病而死亡，严重时可能引发整个礁体的崩溃，对海洋生物多样性造成深远影响。作为海洋生态健康的敏感指标，珊瑚白化的频率与程度被视为全球气候变化的重要信号。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1998",
+        "title": "1998年首次大白化",
+        "body": "1998年，厄尔尼诺导致全球海域异常升温，澳大利亚大堡礁及加勒比海出现首次大规模珊瑚白化事件，标志全球珊瑚危机起点。"
+      },
+      {
+        "year": "2005",
+        "title": "2005年大堡礁白化",
+        "body": "2005年，澳大利亚大堡礁经历严重白化，约50%的珊瑚受到影响，科学家首次记录到白化后死亡率显著上升。"
+      },
+      {
+        "year": "2010",
+        "title": "2010年墨西哥湾白化",
+        "body": "2010年夏季，墨西哥湾海水温度创新高，导致佛罗里达群岛和墨西哥海岸线约30%的珊瑚出现白化，渔业受冲击。"
+      },
+      {
+        "year": "2016",
+        "title": "2016年厄尔尼诺白化",
+        "body": "2016年，强厄尔尼诺现象使全球海温升高，导致大堡礁出现前所未有的白化，约22%的珊瑚死亡，引发国际关注。"
+      },
+      {
+        "year": "2022",
+        "title": "2022年全球白化危机",
+        "body": "2022年，全球多地海域连续高温，导致珊瑚白化蔓延至西太平洋、加勒比海及红海，生态恢复难度加大，呼吁紧急减排。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 珊瑚白化",
+        "url": "https://zh.wikipedia.org/wiki/珊瑚白化",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院南海海洋研究所",
+        "url": "http://www.scsio.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "NOAA 珊瑚礁监测 (Coral Reef Watch)",
+        "url": "https://coralreefwatch.noaa.gov/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "npc",
+    "title": "国家大剧院",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "163",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/npc/npc-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/npc/npc-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/npc/npc-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "建筑 · 国家大剧院 · 百科占位",
+    "description": "国家大剧院位于北京市西长安街西端，是一座综合性的国家级表演艺术中心。建筑主体为椭圆形穹顶，外覆钛金属板与玻璃幕墙，整体造型如同一颗静卧水中的明珠。内部设有歌剧院、音乐厅、戏剧场三大主场馆，是国内规模最大的艺术演出场所之一。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1998",
+        "title": "国家大剧院方案获批",
+        "body": "1998年12月，国务院批准了国家大剧院的建筑设计方案，标志着项目正式启动。"
+      },
+      {
+        "year": "2005",
+        "title": "主体结构完工",
+        "body": "2005年12月，剧院外部钛合金与玻璃壳体完成吊装，主体结构正式落成。"
+      },
+      {
+        "year": "2007",
+        "title": "正式对外开放",
+        "body": "2007年12月27日，国家大剧院正式对外开放，首场演出为歌剧《升起的太阳》与京剧《白毛女》联袂。"
+      },
+      {
+        "year": "2008",
+        "title": "奥运文化舞台",
+        "body": "2008年北京奥运会期间，大剧院承办多场文化演出，成为奥运文化展示的重要舞台。"
+      },
+      {
+        "year": "2009",
+        "title": "国际巡演启动",
+        "body": "2009年，大剧院首次组织国际巡演，携中国歌剧《红灯记》赴欧洲多国演出，提升国际影响力。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 国家大剧院",
+        "url": "https://zh.wikipedia.org/wiki/国家大剧院_(北京)",
+        "type": "百科"
+      },
+      {
+        "title": "国家大剧院官网",
+        "url": "https://www.chncpa.org/",
+        "type": "机构"
+      },
+      {
+        "title": "保罗·安德鲁建筑作品集",
+        "url": "https://www.paulandreu.com/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "dragonfly",
+    "title": "蜻蜓",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/dragonfly/dragonfly-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/dragonfly/dragonfly-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/dragonfly/dragonfly-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "动物 · 蜻蜓 · 百科占位",
+    "description": "蜻蜓是昆虫纲蜻蜓目的肉食性昆虫，以其两对透明膜质翅和硕大的复眼而著称。广泛分布于全球，多栖息于淡水水域附近，稚虫阶段完全水生。成虫具有卓越的飞行能力，能够空中悬停及高速机动，主要以蚊、蝇等小型昆虫为食，在生态系统中具有重要的捕食者地位。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "约3.5亿年前",
+        "title": "古生代化石发现",
+        "body": "约三亿五千万年前石炭纪的蜻蜓化石在德国出土，展示其宽阔翅膀的飞行姿态，为古生代空中生态研究提供关键证据。"
+      },
+      {
+        "year": "公元前4世纪",
+        "title": "亚里士多德首次记载",
+        "body": "亚里士多德在《动物史》中记录蜻蜓的形态与行为，奠定西方对昆虫的早期科学认识。"
+      },
+      {
+        "year": "1758年",
+        "title": "十八世纪分类学",
+        "body": "一七五八年林奈在《自然系统》第十版中将蜻蜓归入昆虫纲，标志着现代动物分类学的起点。"
+      },
+      {
+        "year": "1960年代",
+        "title": "近代仿生学研究",
+        "body": "20世纪60年代，科学家受蜻蜓翅膀微结构启发，研发出轻质高强度的仿生材料，应用于航空领域。"
+      },
+      {
+        "year": "2001年",
+        "title": "现代生态指示",
+        "body": "21世纪初，蜻蜓被广泛用于水域生态指示，其种群变化能够快速反映水体污染程度。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 蜻蜓",
+        "url": "https://zh.wikipedia.org/wiki/蜻蜓",
+        "type": "百科"
+      },
+      {
+        "title": "中国昆虫学会",
+        "url": "http://www.entsoc.org.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "蜻蜓飞行力学研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=dragonfly+flight",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "tiramisu",
+    "title": "提拉米苏",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tiramisu/tiramisu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tiramisu/tiramisu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tiramisu/tiramisu-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "食物 · 提拉米苏 · 百科占位",
+    "description": "提拉米苏（Tiramisu）是一款源自意大利北部的经典甜点，以手指饼干蘸取浓缩咖啡与马萨彭咖啡酒铺底，叠加上以马斯卡彭奶酪、蛋黄及糖打发的奶酪糊，层层交替冷冻而成。其名称源自意大利语「Tiramisù」，意为「拾起我」，现已成为全球最具知名度的甜点之一，口感绵密、咖啡香与奶香交织，备受食客推崇。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1960年代",
+        "title": "意大利北部起源",
+        "body": "1960年代，意大利北部的厨师用咖啡浸湿手指饼干，铺上马斯卡彭奶酪，奠定了提拉米苏的基础。"
+      },
+      {
+        "year": "1970年代",
+        "title": "餐厅化的改良",
+        "body": "1970年代，威尼托地区的餐厅加入鸡蛋黄与糖的混合酱，使提拉米苏口感更绵密，逐渐从家庭甜点进入菜单。"
+      },
+      {
+        "year": "1980年代",
+        "title": "走向国际舞台",
+        "body": "1980年代，随着意大利餐厅在欧美扩张，提拉米苏作为意式甜点代表被广泛介绍，迅速获得全球食客喜爱。"
+      },
+      {
+        "year": "1990年代",
+        "title": "成为全球流行",
+        "body": "1990年代，甜品店与咖啡馆纷纷推出提拉米苏，配料中加入可可粉或巧克力酱，成为甜点菜单常客。"
+      },
+      {
+        "year": "2000年代",
+        "title": "创新口味迭出",
+        "body": "2000年代后，厨师们将提拉米苏与水果、酒精或植物基奶油结合，推出低糖、无乳等变体，满足多元饮食需求。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 提拉米苏",
+        "url": "https://zh.wikipedia.org/wiki/提拉米苏",
+        "type": "百科"
+      },
+      {
+        "title": "意大利 Treviso 提拉米苏协会",
+        "url": "https://www.trevisotiramisu.it/",
+        "type": "机构"
+      },
+      {
+        "title": "意大利美食文化志",
+        "url": "https://www.book.douban.com/subject/2045119/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "matcha-latte",
+    "title": "抹茶拿铁",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha-latte/matcha-latte-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha-latte/matcha-latte-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha-latte/matcha-latte-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "食物 · 抹茶拿铁 · 百科占位",
+    "description": "抹茶拿铁是一种以抹茶粉与牛奶为主要原料的饮品，兼具抹茶的清香微苦与牛奶的醇厚口感。该饮品起源于日本，随后随着茶饮文化在全球的传播，成为许多咖啡馆和茶饮店的常见选项。其制作通常将抹茶粉以热水调开后，再加入打发或加热后的牛奶，也可根据个人喜好添加糖浆调味。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1990 年",
+        "title": "咖啡连锁推广",
+        "body": "1990年代，星巴克等咖啡连锁在亚洲推出抹茶拿铁，将传统茶饮与现代咖啡文化相结合。"
+      },
+      {
+        "year": "2000 年",
+        "title": "台湾茶饮创新",
+        "body": "2000年代，台湾手摇茶店将抹茶粉与牛奶混合，创造出柔滑的抹茶拿铁，受年轻人热捧。"
+      },
+      {
+        "year": "2010 年",
+        "title": "全球茶饮流行",
+        "body": "2010年后，抹茶拿铁进入欧美咖啡店菜单，成为跨文化的健康饮品，吸引众多抹茶爱好者。"
+      },
+      {
+        "year": "2020 年",
+        "title": "植物奶饮新篇",
+        "body": "2020年代，杏仁奶、燕麦奶等植物奶与抹茶结合，推出低脂低糖的抹茶拿铁，满足多元饮食需求。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 抹茶",
+        "url": "https://zh.wikipedia.org/wiki/抹茶",
+        "type": "百科"
+      },
+      {
+        "title": "中国茶叶学会",
+        "url": "http://www.chinatss.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "日本茶道里千家",
+        "url": "https://www.urasenke.or.jp/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "kangxi-emp",
+    "title": "康熙帝",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "060",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/kangxi-emp/kangxi-emp-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/kangxi-emp/kangxi-emp-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/kangxi-emp/kangxi-emp-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "历史事件 · 康熙帝 · 百科占位",
+    "description": "康熙帝（爱新觉罗·玄烨）是清朝第四位皇帝，八岁登基，在位约六十一年，是中国历史上在位时间最长的帝王之一。他擒鳌拜、平三藩、收复台湾、抗击沙俄并平定准噶尔，开创了“康乾盛世”的开端，为清代疆域奠定重要基础。康熙帝在位期间重视汉文化、推行励精图治的政策，对中国历史产生深远影响。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1661 年",
+        "title": "玄烨即位成为康熙帝",
+        "body": "1661年，八岁的皇太子玄烨在父亲顺治帝逝世后即位，成为清朝第五位皇帝，年号康熙，开启长达六十一年的统治。"
+      },
+      {
+        "year": "1674 年",
+        "title": "康熙帝平定三藩之乱",
+        "body": "1674年至1681年，康熙帝先后平定吴三桂、耿精忠、尚可喜三位藩王的叛乱，巩固中央集权，奠定国家统一基础。"
+      },
+      {
+        "year": "1716 年",
+        "title": "康熙字典编纂",
+        "body": "1716年，康熙帝主持编纂《康熙字典》，收录汉字四万余字，是古代最大规模的字典，对后世语言学产生深远影响。"
+      },
+      {
+        "year": "1689 年",
+        "title": "尼布楚条约签订",
+        "body": "1689年，清朝与俄罗斯签订《尼布楚条约》，划定东北边界，确认外东北为中国领土，标志着清朝对外关系的重要突破。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 康熙帝",
+        "url": "https://zh.wikipedia.org/wiki/康熙帝",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 清圣祖",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 康熙朝档案",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "清史稿 (中华书局)",
+        "url": "https://www.book.douban.com/subject/2045119/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "zisha-pot",
+    "title": "紫砂壶",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/zisha-pot/zisha-pot-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/zisha-pot/zisha-pot-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/zisha-pot/zisha-pot-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 紫砂壶 · 百科占位",
+    "description": "紫砂壶 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "北宋",
+        "title": "紫砂壶起源与萌芽",
+        "body": "北宋时期，宜兴地区陶工开始使用当地特有的紫泥烧制小型茶具，紫砂壶雏形初现。"
+      },
+      {
+        "year": "明代",
+        "title": "紫砂壶工艺成熟",
+        "body": "明代中期，宜兴紫砂壶因泥料配比精细、造型多样、透气性好，被文人雅士广泛赞誉并成为茶道重要器具。"
+      },
+      {
+        "year": "清代",
+        "title": "紫砂壶成为宫廷贡品",
+        "body": "清代乾隆年间，紫砂壶被列入宫廷御用，皇室对壶形、釉色进行严格挑选，促成了工艺的进一步提升。"
+      },
+      {
+        "year": "近现代",
+        "title": "紫砂壶进入国际市场",
+        "body": "20世纪初，紫砂壶通过上海、广州等港口出口到欧美，成为中国工艺美术的象征之一，国际收藏热潮随之兴起。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 紫砂壶",
+        "url": "https://zh.wikipedia.org/wiki/紫砂壶",
+        "type": "百科"
+      },
+      {
+        "title": "宜兴陶瓷行业协会",
+        "url": "http://www.yixing.gov.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国工艺美术志 - 紫砂",
+        "url": "https://www.book.douban.com/subject/3026800/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "lantingxu",
+    "title": "兰亭序",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/lantingxu/lantingxu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/lantingxu/lantingxu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/lantingxu/lantingxu-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 兰亭序 · 百科占位",
+    "description": "《兰亭序》是东晋书法家王羲之于永和九年（353年）在会稽山阴兰亭修禊时所作的书法作品，被誉为“天下第一行书”。全文共三百余字，用笔遒媚飘逸，结构变化万千，被历代书法家奉为圭臬。唐代真迹据传已殉葬昭陵，现存均为摹本，其中以冯承素所摹神龙本最为著名。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "353",
+        "title": "三五三年兰亭雅集",
+        "body": "东晋永和九年，王羲之在会稽山阴兰亭主持修禊，执笔写下《兰亭序》，开创行书新境。"
+      },
+      {
+        "year": "672",
+        "title": "六七二年碑刻立石",
+        "body": "唐高宗下诏，以王羲之《兰亭序》真迹为底本，命工部刻石碑，置于长安大慈恩寺，成为书法摹本的范本。"
+      },
+      {
+        "year": "1735",
+        "title": "乾隆年间金石重刊",
+        "body": "清乾隆帝命官员搜集历代《兰亭序》拓本，选出佳作重新刻制，金石印刷广泛流传，奠定其在书法史上的至高地位。"
+      },
+      {
+        "year": "1912",
+        "title": "近代印刷复制流传",
+        "body": "民国时期，商务印书馆等机构利用石印技术复制《兰亭序》，使之名作进入大众阅读，推动书法教育普及。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 兰亭集序",
+        "url": "https://zh.wikipedia.org/wiki/兰亭集序",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 兰亭序书画档案",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国书法史 (华人德)",
+        "url": "https://www.book.douban.com/subject/2045119/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "yunjin",
+    "title": "云锦",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/yunjin/yunjin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/yunjin/yunjin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/yunjin/yunjin-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 云锦 · 百科占位",
+    "description": "云锦是中国南京地区传统丝织工艺的杰出代表，因织品色彩绚丽、灿若云霞而得名。其采用真丝与金银线、孔雀羽等珍贵材料交织，图案多为龙凤、花鸟等吉祥纹样，工艺精湛，具有很高的艺术与历史价值。云锦与成都蜀锦、苏州宋锦并称“中国三大名锦”，被誉为“锦中之冠”。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "东晋",
+        "title": "工艺雏形",
+        "body": "东晋时期 (4 世纪) 建康 (今南京) 已出现「织成」工艺, 运用金线与小梭挖花, 被视为南京云锦的早期形态, 1972 年新疆出土北朝织锦证实中原织造技术西传。"
+      },
+      {
+        "year": "元代",
+        "title": "官办织造",
+        "body": "1270 年元世祖忽必烈在南京设立「东织染局」, 专织金缕与彩丝织物供宫廷, 蒙古族对金线的偏爱推动云锦大量使用真金线 (金箔捻丝), 工艺达顶峰。"
+      },
+      {
+        "year": "明清",
+        "title": "江宁织造",
+        "body": "明清两代设江宁织造局 (曹雪芹家族曾任织造), 云锦成为皇室龙袍专用面料, 清朝云锦产量占全国官营丝织 1/3, 织机日产 2 寸, 一件龙袍需织工 2 年。"
+      },
+      {
+        "year": "2009 年",
+        "title": "人类非遗",
+        "body": "2009 年「南京云锦织造技艺」入选《人类非物质文化遗产代表作名录》, 传承至今仍用大花楼木织机 (需 2 人配合), 2020 年起云锦与时尚品牌合作, 国际时装周亮相。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 南京云锦",
+        "url": "https://zh.wikipedia.org/wiki/南京云锦",
+        "type": "百科"
+      },
+      {
+        "title": "南京云锦研究所",
+        "url": "https://www.yunjin.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国非物质文化遗产网 - 云锦",
+        "url": "https://www.ihchina.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "embroidery",
+    "title": "刺绣",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/embroidery/embroidery-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/embroidery/embroidery-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/embroidery/embroidery-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "艺术品 · 刺绣 · 百科占位",
+    "description": "刺绣是用针线在织物上穿引形成图案的传统手工艺，历史可追溯至先秦时期。它以绣线组织变化来表现图案美感，技法丰富，常见的有平绣、乱针绣、打籽绣等。中国刺绣以苏绣、湘绣、蜀绣、粤绣“四大名绣”著称，各具地方特色。刺绣广泛应用于服饰、生活用品和艺术作品，兼具实用功能与审美价值，是中华优秀传统文化的重要组成部分。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "前 5000 年",
+        "title": "史前缝绣起源",
+        "body": "约公元前5000年左右，人类开始使用骨针和植物纤维在兽皮上进行简单的装饰性刺绣，形成最早的缝绣技艺。"
+      },
+      {
+        "year": "前 3000 年",
+        "title": "古代埃及刺绣",
+        "body": "公元前3000年的埃及墓室壁画中已有彩色线绣的服装，显示刺绣技术在贵族生活中占有重要地位。"
+      },
+      {
+        "year": "12 世纪",
+        "title": "欧洲中世纪绣坊",
+        "body": "12世纪，欧洲修道院设立绣坊，制作圣经封面与祭服，绣线配色与图案受到宗教艺术深刻影响。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "工业革命刺绣机",
+        "body": "19世纪末，首台电动刺绣机出现，使大规模生产刺绣成为可能，传统手工绣艺面临机械化冲击。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 中国刺绣",
+        "url": "https://zh.wikipedia.org/wiki/刺绣",
+        "type": "百科"
+      },
+      {
+        "title": "中国非物质文化遗产网 - 苏绣",
+        "url": "https://www.ihchina.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国工艺美术志 - 四大名绣",
+        "url": "https://www.book.douban.com/subject/3026800/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "hourglass",
+    "title": "沙漏",
+    "kind": "object",
+    "series": "craft-and-botanical",
+    "seriesNo": "193",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/hourglass/hourglass-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/hourglass/hourglass-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/hourglass/hourglass-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "器物 · 沙漏 · 百科占位",
+    "description": "沙漏是一种利用重力驱动细沙流动来计量时间的计时仪器，通常由两个玻璃球和中间狭窄的颈部组成，置于木质或金属框架之上。其历史可追溯至欧洲中世纪，最初广泛用于教堂、航海及日常生活中的短时段测量。因其直观呈现时间流逝的意象，沙漏在后世常被赋予时间与生命的象征意义，并广泛出现于文学、艺术及装饰领域。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "前 1500 年",
+        "title": "古埃及早期沙漏",
+        "body": "约公元前1500年，古埃及出现利用细砂在玻璃瓶中流动计时的装置，被视为沙漏的雏形。"
+      },
+      {
+        "year": "8 世纪",
+        "title": "中世纪教堂计时",
+        "body": "8世纪起，欧洲教堂普遍使用沙漏标记祈祷与布道时间，成为修道院日常仪式的重要时间参照。"
+      },
+      {
+        "year": "16 世纪",
+        "title": "航海导航计时",
+        "body": "15至16世纪的大航海时代，船员使用沙漏测量航速和航程，帮助绘制更精确的海上航线图。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "现代艺术象征",
+        "body": "20世纪起，沙漏被艺术家用于象征时间的流逝和记忆的脆弱，在装置艺术与摄影中频繁出现。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 沙漏",
+        "url": "https://zh.wikipedia.org/wiki/沙漏",
+        "type": "百科"
+      },
+      {
+        "title": "中国古代计时器志",
+        "url": "https://www.book.douban.com/subject/2045119/",
+        "type": "学术"
+      },
+      {
+        "title": "大英博物馆藏品档案",
+        "url": "https://www.britishmuseum.org/collection",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "compass",
+    "title": "罗盘",
+    "kind": "object",
+    "series": "craft-and-botanical",
+    "seriesNo": "194",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/compass/compass-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/compass/compass-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/compass/compass-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "器物 · 罗盘 · 百科占位",
+    "description": "罗盘是一种利用地球磁场特性测定方向的指向仪器，主要由磁针和刻度盘组成，广泛应用于航海、测绘、旅行导航及传统风水堪舆等领域。据传其原型始于古代中国，历经数千年发展，形制由简入繁，功能也日趋多样。作为人类历史上重要的发明之一，罗盘在推动文明交流与探索未知方面发挥了关键作用。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "前4世纪",
+        "title": "磁石指向特性发现",
+        "body": "中国先民发现磁石具有吸铁和指向的特性,这一发现为后世指南针的发明奠定了理论基础。"
+      },
+      {
+        "year": "东汉",
+        "title": "司南勺出现",
+        "body": "出现以天然磁石磨制的司南勺,是世界上最早的磁性指向器,但灵敏度和准确性仍有不足。"
+      },
+      {
+        "year": "北宋",
+        "title": "水浮法指南针",
+        "body": "沈括在《梦溪笔谈》中详细记载水浮法指南针的制造方法,指南针开始广泛应用于航海导航。"
+      },
+      {
+        "year": "12世纪",
+        "title": "指南针西传欧洲",
+        "body": "指南针经阿拉伯商人传入欧洲,推动了欧洲航海技术的发展,为大航海时代的到来奠定基础。"
+      },
+      {
+        "year": "13世纪",
+        "title": "旱罗盘发明使用",
+        "body": "意大利人发明了使用支轴支撑的旱罗盘,克服了水罗盘的局限性,使导航工具更加便携可靠。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 罗盘",
+        "url": "https://zh.wikipedia.org/wiki/罗盘",
+        "type": "百科"
+      },
+      {
+        "title": "中国国家博物馆 - 司南",
+        "url": "https://www.chnmuseum.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国古代四大发明研究",
+        "url": "https://www.book.douban.com/subject/1061295/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "eiffel",
+    "title": "埃菲尔铁塔",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "164",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel/eiffel-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel/eiffel-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel/eiffel-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "建筑 · 埃菲尔铁塔 · 百科占位",
+    "description": "埃菲尔铁塔是位于法国巴黎战神广场的铁质镂空塔，为庆祝法国大革命100周年和1889年世博会而建。塔高约300米，由古斯塔夫·埃菲尔设计，历时两年建成，曾是世界上最高的人工建筑。其独特的铁结构和优雅的线条成为巴黎乃至法国的象征，也是全球最著名的地标之一。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1887",
+        "title": "铁塔奠基开工",
+        "body": "1887年1月28日，工程师古斯塔夫·埃菲尔主持铁塔奠基仪式，正式开始基础施工。"
+      },
+      {
+        "year": "1889",
+        "title": "铁塔竣工开放",
+        "body": "1889年3月31日，埃菲尔铁塔在巴黎世博会上正式对外开放，成为当时世界最高建筑。"
+      },
+      {
+        "year": "1900",
+        "title": "铁塔续存争议",
+        "body": "1900年，世博会结束后，政府曾计划拆除铁塔，因其结构和观赏价值，最终决定保留并转为科研用途。"
+      },
+      {
+        "year": "1914",
+        "title": "战争中的通讯站",
+        "body": "第一次世界大战期间，铁塔安装了无线电发射装置，协助盟军传递信息。"
+      },
+      {
+        "year": "2000",
+        "title": "新灯光系统亮相",
+        "body": "2000年，埃菲尔铁塔安装了全新灯光秀系统，在每个夜晚呈现出绚丽的灯光表演。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 埃菲尔铁塔",
+        "url": "https://zh.wikipedia.org/wiki/埃菲尔铁塔",
+        "type": "百科"
+      },
+      {
+        "title": "法国官方埃菲尔铁塔官网",
+        "url": "https://www.toureiffel.paris/zh",
+        "type": "机构"
+      },
+      {
+        "title": "巴黎建筑志",
+        "url": "https://www.book.douban.com/subject/2045119/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "barcelona",
+    "title": "巴塞罗那",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/barcelona/barcelona-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/barcelona/barcelona-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/barcelona/barcelona-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "城市 · 巴塞罗那 · 百科占位",
+    "description": "巴塞罗那是西班牙加泰罗尼亚自治区的首府，位于伊比利亚半岛东北部，濒临地中海。作为西班牙重要的港口城市和经济文化中心，它以独特的城市布局、丰富的建筑遗产和活跃的都市生活著称。其中安东尼·高迪设计的建筑群尤为著名，已被列入世界遗产名录。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "公元前15年",
+        "title": "罗马殖民建城",
+        "body": "约公元前15年，罗马人在贝索斯河畔建立殖民城“巴埃诺”，奠定城市雏形。"
+      },
+      {
+        "year": "10至13世纪",
+        "title": "中世纪繁荣期",
+        "body": "10至13世纪，卡斯蒂利亚王国重视巴塞罗那的海上贸易，使其成为地中海重要港口，经济与文化进入鼎盛。"
+      },
+      {
+        "year": "1992",
+        "title": "1992年奥运会",
+        "body": "1992年，巴塞罗那成功举办第25届夏季奥运会，提升城市国际形象，带动基建、旅游与文化繁荣。"
+      },
+      {
+        "year": "21世纪",
+        "title": "现代创新枢纽",
+        "body": "21世纪，巴塞罗那打造创新枢纽，举办世界移动通讯大会，吸引科技企业，推动数字经济与建筑设计创新。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 巴塞罗那",
+        "url": "https://zh.wikipedia.org/wiki/巴塞罗那",
+        "type": "百科"
+      },
+      {
+        "title": "巴塞罗那市议会官网",
+        "url": "https://www.barcelona.cat/",
+        "type": "机构"
+      },
+      {
+        "title": "高迪建筑研究 (西班牙)",
+        "url": "https://www.arquitecturaviva.com/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "whale-shark",
+    "title": "鲸鲨",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/whale-shark/whale-shark-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/whale-shark/whale-shark-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/whale-shark/whale-shark-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "动物 · 鲸鲨 · 百科占位",
+    "description": "鲸鲨（Rhincodon typus）是世界上最大的鱼类，主要分布于热带和温带海域的表层水域。它们身体呈灰蓝色并布满白色斑点，拥有宽大的口裂，以过滤浮游生物和小型鱼类为食。尽管体型庞大，鲸鲨性情温和，是潜水活动中深受欢迎的海洋生物，目前已被列为濒危物种。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1828",
+        "title": "首次科学描述鲸鲨",
+        "body": "1828年，英国博物学家贝内特在南非捕获巨型鲸鲨，首次进行正式科学描述并命名为Rhincodon typus。"
+      },
+      {
+        "year": "1845",
+        "title": "鲸鲨在日本文献出现",
+        "body": "1845年，日本渔民在九州海域记录到体长约十米的鲸鲨，被写进当时的渔业日志，成为东亚最早的文字记载。"
+      },
+      {
+        "year": "1994",
+        "title": "鲸鲨聚集地首次发现",
+        "body": "1994年，科学家在澳大利亚宁格鲁礁发现大量鲸鲨季节性聚集，开启了对该物种迁徙与行为研究的全新阶段。"
+      },
+      {
+        "year": "2008",
+        "title": "首例卫星追踪成功",
+        "body": "2008年，研究团队为墨西哥湾的鲸鲨装上卫星追踪器，成功记录其跨大西洋迁徙路径，为全球海洋保护提供关键数据。"
+      },
+      {
+        "year": "2021",
+        "title": "鲸鲨被列为濒危物种",
+        "body": "2021年，IUCN将鲸鲨的受威胁等级提升至濒危，随后多个国家加强对其捕捞与贸易的管控，以遏制种群下降趋势。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 鲸鲨",
+        "url": "https://zh.wikipedia.org/wiki/鲸鲨",
+        "type": "百科"
+      },
+      {
+        "title": "中国海洋大学海洋生命学院",
+        "url": "https://lifescience.ouc.edu.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "IUCN 鲸鲨保护评估",
+        "url": "https://www.iucnredlist.org/species/19488/2365291",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "dandan-noodles",
+    "title": "担担面",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/dandan-noodles/dandan-noodles-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/dandan-noodles/dandan-noodles-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/dandan-noodles/dandan-noodles-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "食物 · 担担面 · 百科占位",
+    "description": "担担面是中国四川省及重庆地区的传统面食，因早期小贩挑担走街叫卖而得名。面条细薄柔滑，汤汁浓稠且用量较少，以麻辣鲜香为主要特色，常用花椒、芝麻酱、酱油、蒜泥、葱花和肉末等调制。凭借独特的风味与便捷的食用方式，担担面已成为川菜中极具代表性的面食之一。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1840年代",
+        "title": "担担面起源",
+        "body": "据传，清代中期，成都街头小贩将花生酱、辣椒油和肉末拌入面条，形成最初的担担面。"
+      },
+      {
+        "year": "1890年代",
+        "title": "担担面传入京城",
+        "body": "19世纪末，随着川籍移民北上，担担面进入北京餐馆，逐渐加入甜面酱，融合北方口味。"
+      },
+      {
+        "year": "1910年代",
+        "title": "民国时期普及",
+        "body": "民国初年，担担面在川菜馆和街头摊位广为流行，成为大众快餐，价格亲民。"
+      },
+      {
+        "year": "1950年代",
+        "title": "新中国标准化",
+        "body": "新中国成立后，四川省饮食公司对担担面配方进行标准化，加入芝麻酱、花椒粉，使口感更丰富。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 担担面",
+        "url": "https://zh.wikipedia.org/wiki/担担面",
+        "type": "百科"
+      },
+      {
+        "title": "成都饮食文化志",
+        "url": "http://www.cdta.gov.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国饮食文化大辞典",
+        "url": "https://www.book.douban.com/subject/1195394/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "self-strengthening",
+    "title": "洋务运动",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/self-strengthening/self-strengthening-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/self-strengthening/self-strengthening-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/self-strengthening/self-strengthening-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "历史事件 · 洋务运动 · 百科占位",
+    "description": "洋务运动是19世纪60至90年代清朝洋务派以“师夷长技以自强”为口号开展的自强改革运动。洋务派在中央以恭亲王奕訢为首，地方上则有曾国藩、李鸿章、左宗棠、张之洞等人推动，内容涵盖引进西方军事装备与机器生产、创办近代军工民用企业、建立新式海陆军及派遣留学生等。甲午战争的失败最终宣告这场维新尝试未能挽救清朝统治。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "1861",
+        "title": "设立总理衙门",
+        "body": "咸丰帝批准设立总理衙门，专司对外事务，标志洋务运动正式起步，并开启引进西方技术的大门。"
+      },
+      {
+        "year": "1865",
+        "title": "江南制造局成立",
+        "body": "江南制造局在上海创办，聚集国内外工匠，制造枪炮舰船，成为洋务运动重要的军工基地。"
+      },
+      {
+        "year": "1872",
+        "title": "首批留学生赴美",
+        "body": "曾国藩、李鸿章等人推动，首批三十名幼童赴美留学，学习自然科学与工程技术，开启中国近代留学潮。"
+      },
+      {
+        "year": "1885",
+        "title": "北洋水师成立",
+        "body": "光绪帝批准成立北洋水师，集合蒸汽舰船与西式训练，意图提升海防力量，推动近代海军建设。"
+      },
+      {
+        "year": "1894",
+        "title": "甲午战争爆发",
+        "body": "甲午战争爆发，清军在海陆两线惨败，北洋水师覆灭，标志洋务运动的军事自强梦想破灭。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 洋务运动",
+        "url": "https://zh.wikipedia.org/wiki/洋务运动",
+        "type": "百科"
+      },
+      {
+        "title": "中国近代史 (茅海建)",
+        "url": "https://www.book.douban.com/subject/1061295/",
+        "type": "学术"
+      },
+      {
+        "title": "中国国家博物馆 - 洋务运动档案",
+        "url": "https://www.chnmuseum.cn/",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "chinese-chess",
+    "title": "象棋",
+    "kind": "sport",
+    "series": "craft-and-botanical",
+    "seriesNo": "192",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/chinese-chess/chinese-chess-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/chinese-chess/chinese-chess-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/chinese-chess/chinese-chess-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "体育运动 · 象棋 · 百科占位",
+    "description": "象棋是中国传统二人对弈的策略棋类游戏，历史悠久，深受大众喜爱。棋盘由九条横线与十条竖线交叉构成，划分为红方与黑方，双方各有将/帅、士、象/相、车、马、炮、兵/卒七种棋子，以将对方将（帅）围困至“将死”为胜。象棋是中国文化的重要组成部分，蕴含丰富的策略智慧与博弈精神。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "秦汉",
+        "title": "象棋雏形出现",
+        "body": "据史记记载秦汉时期已有类似象棋的棋戏称为六博被视为象棋的雏形后逐步演化为今制"
+      },
+      {
+        "year": "唐",
+        "title": "唐代象棋制度化",
+        "body": "唐代时期象棋规则趋于统一，棋盘改为九横十纵，车马相仕等子力固定，奠定现代象棋基本格局"
+      },
+      {
+        "year": "宋",
+        "title": "宋代象棋广泛流行",
+        "body": "宋代文献记载象棋在宫廷与民间广泛流行，棋谱大量出现，出现了象棋谱等专著，推动棋艺发展"
+      },
+      {
+        "year": "明清",
+        "title": "明清象棋技艺深化",
+        "body": "明清时期象棋理论系统化，棋谱编纂完善，出现了梅花谱桔中秘等名作，奠定了现代象棋的布局与残局体系"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 中国象棋",
+        "url": "https://zh.wikipedia.org/wiki/中国象棋",
+        "type": "百科"
+      },
+      {
+        "title": "中国象棋协会",
+        "url": "https://www.cxs.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国古代博弈文化研究",
+        "url": "https://www.book.douban.com/subject/2045119/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "ice-skating",
+    "title": "滑冰",
+    "kind": "sport",
+    "series": "craft-and-botanical",
+    "seriesNo": "193",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/ice-skating/ice-skating-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/ice-skating/ice-skating-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/ice-skating/ice-skating-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "体育运动 · 滑冰 · 百科占位",
+    "description": "滑冰是一项在冰面上利用冰刀进行滑行的体育运动，起源于古代北欧和中国的冬季活动。现代滑冰主要分为速度滑冰与花样滑冰两大类，前者以竞速为目的，后者则融合艺术表现与技巧难度。滑冰兼具竞技性与观赏性，不仅是冬奥会等国际赛事的重要项目，也作为大众健身和休闲娱乐活动在全球范围内广泛开展。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "约1000年",
+        "title": "滑冰运动起源",
+        "body": "斯堪的纳维亚和中国的史料中均有关于滑冰活动的记载，最初用于冬季出行和狩猎。"
+      },
+      {
+        "year": "1742年",
+        "title": "首个滑冰俱乐部成立",
+        "body": "爱丁堡溜冰俱乐部在苏格兰成立，成为世界上第一个滑冰运动组织，推动了滑冰运动的发展。"
+      },
+      {
+        "year": "1860年",
+        "title": "滑冰传入中国",
+        "body": "滑冰运动随通商贸易传入中国，在北方地区逐渐流行，成为冬季传统运动项目之一。"
+      },
+      {
+        "year": "1924年",
+        "title": "列入冬奥会项目",
+        "body": "首届冬奥会在法国夏蒙尼举办，设立花样滑冰和速度滑冰项目，滑冰正式成为国际竞技运动。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 滑冰",
+        "url": "https://zh.wikipedia.org/wiki/滑冰",
+        "type": "百科"
+      },
+      {
+        "title": "中国滑冰协会",
+        "url": "https://www.chinaskating.org/",
+        "type": "机构"
+      },
+      {
+        "title": "国际滑冰联盟 ISU",
+        "url": "https://www.isu.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "wang-wei",
+    "title": "王维",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "059",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/wang-wei/wang-wei-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/wang-wei/wang-wei-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/wang-wei/wang-wei-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "人物 · 王维 · 百科占位",
+    "description": "王维（约699—761），字摩诘，唐代著名诗人、画家，苏轼称其「诗中有画，画中有诗」。其诗作以山水田园题材见长，多描写自然景致与隐逸生活，意境深远，风格清淡幽远，与孟浩然并称「王孟」，为后世山水诗派奠定重要基础。",
+    "createdAt": "2026-06-29",
+    "history": [
+      {
+        "year": "701",
+        "title": "王维生于蒲州",
+        "body": "王维生于蒲州（今山西永济），字摩诘，号摩诘居士，唐代著名诗人、画家，后世称其为\"诗佛\"。"
+      },
+      {
+        "year": "721",
+        "title": "王维进士及第",
+        "body": "王维于开元九年进士及第，初授大乐丞，负责音乐事务。后因伶人舞黄狮子事被贬济州司仓参军。"
+      },
+      {
+        "year": "735",
+        "title": "张九龄引荐王维",
+        "body": "张九龄任中书令后，引荐王维为右拾遗，王维得以返回长安，开始在朝廷任职，诗名日盛。"
+      },
+      {
+        "year": "756",
+        "title": "安史乱中被俘受职",
+        "body": "安禄山攻陷长安，王维被俘，被迫接受安禄山的伪职。乱平后因《凝碧池》诗获宥，仅被降职。"
+      },
+      {
+        "year": "761",
+        "title": "王维逝世辋川别业",
+        "body": "王维于上元二年病逝于辋川别业，享年六十一岁。临终时索笔写书告别亲友，舍笔而化。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 王维",
+        "url": "https://zh.wikipedia.org/wiki/王维",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 王维",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "全唐诗电子档案",
+        "url": "http://www.ziyexing.com/tangshi/",
         "type": "学术"
       }
     ]

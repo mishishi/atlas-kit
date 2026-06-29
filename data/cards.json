@@ -24677,7 +24677,33 @@
     ],
     "quote": "《中国陶瓷史》：‘紫砂壶泥质细腻，保温透气，宜茶宜养。’",
     "trivia": "紫砂壶在使用前常用沸水冲洗，可去除窑火气息，增添茶香。",
-    "history": "[object Object],[object Object],[object Object],[object Object]",
+    "history": [
+      {
+        "year": "1480年代",
+        "title": "明代紫砂壶萌芽",
+        "body": "考古发现，约1480年代起，江苏宜兴已出现最早的紫砂陶片，标志紫砂壶萌芽。"
+      },
+      {
+        "year": "1500年",
+        "title": "供春首创紫砂壶",
+        "body": "约1500年，宜兴僧人供春以手工捏制，首创以紫砂泥制壶，奠定后世制壶工艺基础。"
+      },
+      {
+        "year": "1600年",
+        "title": "明末紫砂壶技艺成熟",
+        "body": "约1600年，明代末期，紫砂壶形制多样，泥料配方日趋完善，雕刻与釉色工艺相结合，标志技艺成熟。"
+      },
+      {
+        "year": "1735年",
+        "title": "清乾隆紫砂壶鼎盛",
+        "body": "1735年，清乾隆帝喜好茶道，皇室大量收藏并赐予官员，推动紫砂壶工艺空前繁荣，出现多位制壶名家。"
+      },
+      {
+        "year": "1930年代",
+        "title": "近代紫砂壶复兴",
+        "body": "1930年代起，经历清末衰退与战乱后，紫砂壶在宜兴重整作坊，引入现代工艺和营销，逐步恢复并迈向国际市场。"
+      }
+    ],
     "subKind": "daily-use"
   },
   {
@@ -40465,6 +40491,2954 @@
         "title": "维基百科中文版",
         "url": "https://zh.wikipedia.org/wiki/",
         "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "sun",
+    "title": "太阳",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "070",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/sun/sun-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/sun/sun-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/sun/sun-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 太阳 · 百科占位",
+    "description": "太阳」是太阳系的中心恒星，距离地球约1.5亿公里。它是一颗主要由氢和氦组成的气态球体，通过核聚变反应释放能量，为太阳系提供光和热。太阳直径约为地球的109倍，表面温度约5500摄氏度，寿命约100亿年，目前处于稳定的主序星阶段。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "2000 年",
+        "title": "古代日食记载",
+        "body": "早在公元前约2000年，古埃及和中国的文献中已记录日食与太阳异常现象，为后世天文学奠定基础。"
+      },
+      {
+        "year": "270 年",
+        "title": "阿里斯塔克提出日心说",
+        "body": "公元前约270年，希腊天文学家阿里斯塔克首次提出以太阳为中心的地心说概念，开启宇宙观的革命。"
+      },
+      {
+        "year": "1610 年",
+        "title": "伽利略观测太阳黑子",
+        "body": "1610年，伽利略使用改进的望远镜观测太阳黑子，证实太阳并非完美球体，挑战亚里士多德的天体观。"
+      },
+      {
+        "year": "1814 年",
+        "title": "弗朗霍夫发现光谱线",
+        "body": "1814年，约瑟夫·冯·弗朗霍夫在太阳光谱中发现暗线，奠定光谱学基础，推动太阳成分研究。"
+      },
+      {
+        "year": "1930 年",
+        "title": "日冕仪发明观测日冕",
+        "body": "1930年，法国天文学家李约瑟发明日冕仪，使在非日食期间可直接观测太阳外层大气。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·天文学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.bao.ac.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国国家天文",
+        "url": "https://www.cngtw.net/",
+        "type": "媒体"
+      }
+    ]
+  },
+  {
+    "slug": "sirius",
+    "title": "天狼星",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "071",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/sirius/sirius-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/sirius/sirius-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/sirius/sirius-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 天狼星 · 百科占位",
+    "description": "天狼星（Sirius）是夜空中最明亮的恒星，属大犬座α星，距地球约8.6光年。它实际上是一个双星系统，由蓝白色的主星天狼星A和暗淡的白矮星天狼星B组成。在古代文明中，天狼星具有重要意义，其偕日升常被用作农耕与历法的参照。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "约前3000年",
+        "title": "埃及历法与天狼",
+        "body": "约前3000年，埃及以天狼星偕日升为新年之始，制定历法以预示尼罗河洪水。"
+      },
+      {
+        "year": "古希腊时期",
+        "title": "古希腊命名Sirius",
+        "body": "古希腊人称其为塞里奥斯的，意为燃烧的，在《伊利亚特》中以天狼星预示夏季酷热。"
+      },
+      {
+        "year": "1718",
+        "title": "哈雷发现自行",
+        "body": "1718年，埃德蒙·哈雷通过比较古希腊星图与当时的观测，发现天狼星在星空中缓慢移动，首次证实恒星并非固定。"
+      },
+      {
+        "year": "1862",
+        "title": "首次发现天狼B",
+        "body": "1862年，美国光学仪器公司克拉克父子的新望远镜首次捕捉到天狼星旁的暗淡白矮星天狼B，开启双星研究新纪元。"
+      },
+      {
+        "year": "1975",
+        "title": "紫外卫星观测",
+        "body": "1975年，美国NASA的紫外天文卫星哥白尼号捕捉到天狼星强烈的紫外辐射，为研究热星大气提供新窗口。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书-天狼星",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-天狼星",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E7%8B%BC%E6%98%9F",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台-恒星研究",
+        "url": "https://www.bao.ac.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "中国数字科技馆-天狼星专题",
+        "url": "https://www.cdstm.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "betelgeuse",
+    "title": "参宿四",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "072",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/betelgeuse/betelgeuse-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/betelgeuse/betelgeuse-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/betelgeuse/betelgeuse-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 参宿四 · 百科占位",
+    "description": "参宿四（Betelgeuse，α Orionis）是猎户座中最亮的恒星之一，位于猎户座右肩位置。它是一颗红超巨星，属于演化末期的老年恒星，体积庞大但密度较低。其表面温度偏低，呈现显著的红色，并因周期性亮度变化而广受关注。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "2 世纪",
+        "title": "古代星象记录",
+        "body": "早在公元前2世纪，古希腊天文学家托勒密在其《天文学大成》中记录了参宿四的亮度变化，将其视为猎户座左肩的象征。"
+      },
+      {
+        "year": "1835 年",
+        "title": "约翰赫歇尔首次测量",
+        "body": "1835年，英国天文学家约翰·赫歇尔利用新式光谱仪测量参宿四的视差，首次提供了其距离的近似值约为180光年。"
+      },
+      {
+        "year": "1920 年",
+        "title": "光谱分析揭示红巨星",
+        "body": "1920年代，天文学家通过光谱确认参宿四为红超巨星，表面温度约3500K，半径约为太阳的700倍，标志其晚期演化。"
+      },
+      {
+        "year": "2019 年",
+        "title": "2019年亮度骤降事件",
+        "body": "2019年末至2020年初，参宿四出现异常亮度下降约1.2星等，触发天文学家对其大气层抛射或尘埃云的广泛观测与讨论。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科",
+        "url": "https://zh.wikipedia.org/wiki/参宿四",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/参宿四/17148",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院",
+        "url": "https://www.cas.cn/xwzx/kjzx/201901/t20190104_4673839.shtml",
+        "type": "机构"
+      },
+      {
+        "title": "知网",
+        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&searchword=参宿四",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "vega",
+    "title": "织女星",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "073",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/vega/vega-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/vega/vega-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/vega/vega-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 织女星 · 百科占位",
+    "description": "织女星（Vega）是天琴座最亮的恒星，也是夏季大三角的顶点之一。它是一颗蓝白色的主序星，距离地球约25光年，视星等约为0等，是夜空中最亮的恒星之一。织女星自转速度较快，使其形状略呈扁球形。作为历史上的“标准星”，它的亮度曾被用作天文观测的基准。近期观测显示其周围可能存在尘埃盘，暗示可能存在行星系统。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "约公元前3000年",
+        "title": "古埃及时期记录",
+        "body": "约公元前3000年，埃及人在金字塔铭文中标记与织女星对应的星象，用于历法与祭祀。"
+      },
+      {
+        "year": "古希腊（约前5世纪）",
+        "title": "希腊命名织女星",
+        "body": "古希腊天文学家将织女星称为“天鹰之眼”，并将其列入天鹰座，记录于《天文学大成》之中。"
+      },
+      {
+        "year": "公元2世纪",
+        "title": "托勒密列入星座",
+        "body": "公元2世纪，托勒密在《天文学大成》中将织女星列为天鹰座α星，标志着它在西方星图中的正式定位。"
+      },
+      {
+        "year": "1835年",
+        "title": "赫歇尔测视差",
+        "body": "1835年，英国天文学家威廉·赫歇尔首次利用三角视差法测定织女星距离约为25光年，开启了恒星距离测量的先河。"
+      },
+      {
+        "year": "1970年代",
+        "title": "射电观测发现尘埃盘",
+        "body": "1970年代，国际射电望远镜阵列对织女星进行观测，首次发现其周围存在尘埃盘，为行星系统形成提供重要线索。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "织女星 - 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BB%87%E5%A5%B3%E6%98%9F",
+        "type": "百科"
+      },
+      {
+        "title": "织女星 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E7%BB%87%E5%A5%B3%E6%98%9F",
+        "type": "百科"
+      },
+      {
+        "title": "织女星 - 中国知网学术论文",
+        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&action=scholar&searchword=%E7%BB%87%E5%A5%B3%E6%98%9F",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "eagle-nebula",
+    "title": "鹰状星云",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "074",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/eagle-nebula/eagle-nebula-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/eagle-nebula/eagle-nebula-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/eagle-nebula/eagle-nebula-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 鹰状星云 · 百科占位",
+    "description": "鹰状星云是一个位于蛇夫座的发射星云，距离地球约六千至七千光年。因内部年轻恒星的紫外辐射激发周围氢气而发出红光，呈现壮观的云气结构。其中最为著名的是“创生之柱”，由气体和尘埃构成，是恒星正在形成的区域。该星云于1745年左右被发现，是天文摄影的热门目标，也是研究恒星形成的重要对象。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1745 年",
+        "title": "首次发现与命名",
+        "body": "1745年，查尔斯·梅西耶在观测时首次记录到鹰状星云，并将其列入梅西耶星表。"
+      },
+      {
+        "year": "1855 年",
+        "title": "首张影像记录",
+        "body": "1855年，约翰·赫歇尔使用当时最大望远镜拍摄星云，辨认出其内部暗条结构。"
+      },
+      {
+        "year": "1995 年",
+        "title": "哈勃望远镜巨照",
+        "body": "1995年，哈勃太空望远镜拍摄‘创造之柱’，让星云成为全球闻名的天文图标。"
+      },
+      {
+        "year": "2022 年",
+        "title": "红外波段新视",
+        "body": "2022年，詹姆斯·韦伯空间望远镜在红外波段揭示星云内部新形成的原恒星。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书 - 鹰状星云",
+        "url": "https://www.zgbk.com.cn/cccc/CCCH/CCCHArt/CCCHArt_8115.html",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 鹰状星云",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B9%B5%E7%8A%80%E6%98%9F%E4%BA%91",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.nao.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国数字科技馆 - 鹰状星云",
+        "url": "https://www.cdstm.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "virgo-cluster",
+    "title": "室女座星系团",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "075",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/virgo-cluster/virgo-cluster-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/virgo-cluster/virgo-cluster-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/virgo-cluster/virgo-cluster-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "天体 · 室女座星系团 · 百科占位",
+    "description": "室女座星系团是离地球最近的星系团之一，位于室女座方向，距离约5,000万至6,000万光年。该星系团拥有超过1,000个成员星系，以巨型椭圆星系M87为核心，周围星系通过引力束缚形成庞大的天体系统，是本超星系团的中心结构。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1771",
+        "title": "梅西叶记录首颗星系",
+        "body": "1771年，查尔斯·梅西叶在编制梅西叶星表时记录了M49，标志着室女座星系团最早的天体之一。"
+      },
+      {
+        "year": "1926",
+        "title": "哈勃确认星系团存在",
+        "body": "1926年，埃德温·哈勃通过距离测定首次确认室女座星系团是独立的星系聚集，开启了现代星系团研究。"
+      },
+      {
+        "year": "1972",
+        "title": "VLA首次探测射电辐射",
+        "body": "1972年，VLA射电望远镜对室女座星系团进行观测，发现强射电源M87核心的喷流，证实星系团内部的活跃天体。"
+      },
+      {
+        "year": "2020",
+        "title": "eROSITA热气体分布",
+        "body": "2020年，X射线望远镜eROSITA发布室女座星系团的大尺度热气体分布图，揭示了团内等离子体的温度与密度结构。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 室女座星系团",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%A4%E5%A5%B3%E5%BA%A7%E6%98%9F%E7%B3%BB%E5%9B%A2",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 室女座星系团",
+        "url": "https://baike.baidu.com/item/%E5%AE%A4%E5%A5%B3%E5%BA%A7%E6%98%9F%E7%B3%BB%E5%9B%A2",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.bao.ac.cn",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "hamster",
+    "title": "仓鼠",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/hamster/hamster-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/hamster/hamster-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/hamster/hamster-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 仓鼠 · 百科占位",
+    "description": "仓鼠是啮齿目仓鼠科小型哺乳动物的统称，因其两颊具有可伸缩的颊囊、用于储存食物而得名。原产于亚洲中部及欧洲干旱地区，现作为受欢迎的宠物被全球广泛饲养。仓鼠体型小巧、性格温顺且饲养成本较低，但其强烈的领地意识和夜间活动习性也需要饲养者加以了解。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1839 年",
+        "title": "野生仓鼠首次被科学描述",
+        "body": "1839年，英国动物学家乔治·罗伯特·沃特豪斯首次对叙利亚仓鼠进行科学描述，将其正式命名为Cricetus auratus。"
+      },
+      {
+        "year": "1930 年",
+        "title": "仓鼠首次被捕获用于研究",
+        "body": "1930年，叙利亚阿勒颇大学植物学家伊萨克·拉希尔在野外捕捉到一窝仓鼠及幼崽，开启了仓鼠实验动物化进程。"
+      },
+      {
+        "year": "1931 年",
+        "title": "仓鼠首次引入美国",
+        "body": "1931年，美国动物学家将仓鼠首次引入费城动物园，随后仓鼠开始在美国作为实验动物和宠物被大量繁殖。"
+      },
+      {
+        "year": "90 年",
+        "title": "中国仓鼠养殖业兴起",
+        "body": "20世纪90年代起，中国仓鼠养殖规模迅速扩大，金丝熊、侏儒仓鼠等品种进入千家万户，成为热门小型宠物。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "仓鼠品种在全球范围普及",
+        "body": "21世纪以来，仓鼠已发展出数十个品种，包括叙利亚仓鼠、坎贝尔仓鼠和罗布罗夫仓鼠等，在全球宠物市场占有重要地位。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科-仓鼠",
+        "url": "https://baike.baidu.com/item/仓鼠",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-仓鼠科",
+        "url": "https://zh.wikipedia.org/wiki/仓鼠科",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网-宠物仓鼠相关研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.ac.cn",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "ferret",
+    "title": "雪貂",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/ferret/ferret-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/ferret/ferret-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/ferret/ferret-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 雪貂 · 百科占位",
+    "description": "雪貂（学名：Mustela putorius furo）是鼬科动物的家养亚种，约2500年前被人类驯化，最初用于猎捕野兔等小型动物，现已成为全球广受欢迎的宠物之一。它身躯细长、体态灵活，性格活泼好动、好奇心强，需要定期运动并依赖专用的饮食与护理。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "百度百科 - 雪貂",
+        "url": "https://baike.baidu.com/item/%E9%9B%AA%E8%B6%8A",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 雪貂",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%AA%E8%B6%8A",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.cas.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "知网 - 雪貂相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "前 1500 年",
+        "title": "驯化起源",
+        "body": "雪貂 (Mustela putorius furo) 早在 2500 年前被人类驯化, 古希腊罗马用于猎兔驱鼠, 拉丁文 furritus 意为「小偷」。"
+      },
+      {
+        "year": "中世纪欧洲",
+        "title": "狩猎助手",
+        "body": "中世纪欧洲贵族将雪貂放入兔子洞穴驱逐猎物, 是当时主流的「活体猎犬」, 因体型小能钻入兔穴, 比猎犬更高效。"
+      },
+      {
+        "year": "美国引入",
+        "body": "1860 年代雪貂被引入北美, 主要作为农场除鼠工具与宠物, 1970 年代宠物市场爆发, 现成为北美第三大宠物种群。"
+      },
+      {
+        "year": "现代宠物化",
+        "body": "现代家养雪貂多为绝育去臭的驯化品种, 寿命 7-10 年, 性格活泼好奇, 需大笼 + 每日放风, 适合时间充裕的年轻养宠者。"
+      }
+    ]
+  },
+  {
+    "slug": "chinchilla",
+    "title": "龙猫",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/chinchilla/chinchilla-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/chinchilla/chinchilla-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/chinchilla/chinchilla-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 龙猫 · 百科占位",
+    "description": "龙猫，学名毛丝鼠，是一种原产于南美洲安第斯山脉的小型哺乳动物。它们因拥有极为浓密柔软的毛皮而闻名，毛色多为灰蓝色，也有白色、黑色等变种。作为宠物，龙猫性格温顺、活泼好动，但属于夜行性动物，白天多休息、夜晚活动。饲养时需提供干燥凉爽的环境，并供应专用的牧草和饲料。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1915 年",
+        "title": "首次记录龙猫",
+        "body": "1915年，野生龙猫在南美安第斯山脉被探险家首次记录，开启科学认知。"
+      },
+      {
+        "year": "1920 年",
+        "title": "龙猫进入毛皮贸易",
+        "body": "1920年代，欧美商人大量捕捉野生龙猫用于毛皮交易，导致野生种群急剧下降。"
+      },
+      {
+        "year": "1930 年",
+        "title": "美国首次人工饲养",
+        "body": "1930年代，美国动物爱好者首次成功人工饲养龙猫，开创圈养繁殖的先河。"
+      },
+      {
+        "year": "1990 年",
+        "title": "亚洲宠物市场兴起",
+        "body": "1990年代末，亚洲宠物市场开始流行龙猫，因其温顺可爱迅速赢得年轻人青睐。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 毛丝鼠",
+        "url": "https://baike.baidu.com/item/毛丝鼠",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文 - 毛丝鼠",
+        "url": "https://zh.wikipedia.org/wiki/毛丝鼠",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 毛丝鼠人工饲养与繁殖技术研究",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "人民网 - 宠物龙猫的饲养与日常护理",
+        "url": "https://www.people.com.cn",
+        "type": "新闻"
+      }
+    ]
+  },
+  {
+    "slug": "parrot",
+    "title": "鹦鹉",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/parrot/parrot-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/parrot/parrot-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/parrot/parrot-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 鹦鹉 · 百科占位",
+    "description": "鹦鹉是鸟纲鹦形目动物的统称，以其鲜艳的羽色和模仿人言的能力著称于世。它们广泛分布于热带和亚热带地区，部分种类经过长期驯化后成为深受欢迎的宠物鸟。鹦鹉拥有弯曲的喙部和高度社会化的行为习性，能与人类建立亲密的互动关系。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "前 3000 年",
+        "title": "鹦鹉驯化起源",
+        "body": "约在公元前3000年，古埃及人开始驯养鹦鹉，用于宫廷观赏与宗教仪式。"
+      },
+      {
+        "year": "15 世纪",
+        "title": "航海时代的伴侣",
+        "body": "15世纪大航海时期，欧洲船员常携带鹦鹉作为伴侣，鹦鹉的模仿能力帮助他们消遣并记录航线。"
+      },
+      {
+        "year": "18 世纪",
+        "title": "鹦鹉学舌风靡",
+        "body": "18世纪至19世纪，鹦鹉在欧洲贵族家庭成为流行宠物，它们的学舌能力被视为身份象征。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "科学研究明星",
+        "body": "20世纪中叶，行为学家对鹦鹉的认知能力进行系统实验，揭示其语言模仿与问题解决的潜能。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 鹦鹉",
+        "url": "https://baike.baidu.com/item/鹦鹉",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 鹦鹉",
+        "url": "https://zh.wikipedia.org/wiki/鹦鹉",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.ac.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "国家地理中文网",
+        "url": "https://www.ngchina.com.cn/",
+        "type": "其它"
+      }
+    ]
+  },
+  {
+    "slug": "lizard",
+    "title": "蜥蜴",
+    "kind": "pet",
+    "series": "pet-breed-guide",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/lizard/lizard-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/lizard/lizard-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/lizard/lizard-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "宠物 · 蜥蜴 · 百科占位",
+    "description": "蜥蜴是爬行动物中有鳞目的一大类群，也是近年来颇受欢迎的异宠之一。常见宠物蜥蜴包括豹纹守宫、鬃狮蜥、绿鬣蜥等，它们通常体型适中、外形独特，经过人工繁育后性格相对温顺，适合作为爬虫类饲养的入门选择。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "80 年",
+        "title": "宠物市场兴起",
+        "body": "20世纪80年代，随着爬宠热的兴起，蜥蜴逐渐进入家庭宠物市场，成为爱好者的新宠。"
+      },
+      {
+        "year": "1758 年",
+        "title": "科学命名里程碑",
+        "body": "1758年，林奈正式为常见蜥蜴命名，建立分类学体系，为后续研究奠定基础。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "保护立法动态",
+        "body": "21世纪初，多国陆续通过法案限制野生蜥蜴贸易，推动人工繁殖与栖息地保护。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 蜥蜴",
+        "url": "https://zh.wikipedia.org/wiki/蜥蜴",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 蜥蜴",
+        "url": "https://baike.baidu.com/item/蜥蜴",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所 - 爬行动物研究",
+        "url": "https://www.ioz.ac.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国动物学会",
+        "url": "https://www.czs.ioz.cas.cn",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "thailand",
+    "title": "泰国",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/thailand/thailand-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/thailand/thailand-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/thailand/thailand-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 泰国 · 百科占位",
+    "description": "泰国位于东南亚中南半岛中部，北接老挝和缅甸，东临柬埔寨，南濒泰国湾与马来西亚相邻。泰国以佛教为国教，佛教文化深刻影响社会生活与文化传统。曼谷作为首都，是政治、经济与文化中心，以其独特的热带风情、古老寺庙与现代都市景观闻名于世。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "百度百科 - 泰国",
+        "url": "https://baike.baidu.com/item/泰国",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 泰国",
+        "url": "https://zh.wikipedia.org/wiki/泰国",
+        "type": "百科"
+      },
+      {
+        "title": "中国社会科学院亚洲太平洋研究所",
+        "url": "https://ijs.cass.cn/kxzc/defg/",
+        "type": "学术"
+      },
+      {
+        "title": "中华人民共和国外交部 - 泰国国家概况",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gjhdqzz_681964/lzfj_683462/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "1238 年",
+        "title": "素可泰王朝",
+        "body": "1238 年泰族首领室利·因陀罗建立素可泰王朝, 被视为泰国第一个独立王朝, 创造泰文 (基于高棉文改造), 佛教定为国教。"
+      },
+      {
+        "year": "1350 年",
+        "title": "阿瑜陀耶崛起",
+        "body": "1350 年乌通王建立阿瑜陀耶王朝 (大城), 取代素可泰, 17 世纪与缅甸战争频繁, 1767 年被贡榜王朝攻陷, 大量文物被毁。"
+      },
+      {
+        "year": "1782 年",
+        "title": "曼谷王朝建立",
+        "body": "拉玛一世击败缅甸重建泰国, 迁都曼谷, 创立却克里王朝延续至今, 拉玛九世普密蓬在位 70 年 (1946-2016) 是世界在位最久的君主。"
+      },
+      {
+        "year": "现代",
+        "title": "东南亚枢纽",
+        "body": "泰国 1932 年实行君主立宪, 是东南亚唯一未被殖民的国家, 现 GDP 居东盟第二, 旅游业 (普吉岛、清迈) 占 GDP 约 20%。"
+      }
+    ]
+  },
+  {
+    "slug": "singapore",
+    "title": "新加坡",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "059",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/singapore/singapore-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/singapore/singapore-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/singapore/singapore-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 新加坡 · 百科占位",
+    "description": "新加坡是东南亚的一个城市岛国，位于马来半岛南端、马六甲海峡东侧。这个面积不大的国家凭借其卓越的城市治理和先进的服务业，已发展为全球重要的金融、贸易与航运枢纽，同时保持着华人、马来人、印度人等多元文化和谐共处的独特社会面貌。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "维基百科中文版 - 新加坡",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8A%A0%E5%9D%A1",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 新加坡",
+        "url": "https://baike.baidu.com/item/%E6%96%B0%E5%9E%82%E5%9D%A1/157613",
+        "type": "百科"
+      },
+      {
+        "title": "新华网 - 新加坡概况",
+        "url": "https://www.xinhuanet.com/world/guojispey/singapore.htm",
+        "type": "新闻"
+      },
+      {
+        "title": "知网 - 新加坡研究学术论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "1819 年",
+        "title": "莱佛士开埠",
+        "body": "1819 年英国东印度公司官员斯坦福·莱佛士登陆新加坡, 签协议建立贸易站, 因扼马六甲海峡要冲, 迅速成为东西方贸易枢纽。"
+      },
+      {
+        "year": "1942 年",
+        "title": "日占时期",
+        "body": "1942 年新加坡被日本占领, 改名「昭南岛」, 1945 年光复, 战后李光耀等政治人物筹划独立。"
+      },
+      {
+        "year": "1965 年",
+        "title": "被迫独立",
+        "body": "1965 年 8 月 9 日新加坡被马来西亚联邦逐出, 独立建国, 李光耀任首任总理, 开启威权现代化道路。"
+      },
+      {
+        "year": "现代",
+        "title": "亚洲金融中心",
+        "body": "新加坡现为全球第三大金融中心、亚洲最大炼油中心, 人均 GDP 8.5 万美元 (2023), 建国 60 年从第三世界跃升发达国家。"
+      }
+    ]
+  },
+  {
+    "slug": "indonesia",
+    "title": "印度尼西亚",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "060",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/indonesia/indonesia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/indonesia/indonesia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/indonesia/indonesia-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 印度尼西亚 · 百科占位",
+    "description": "印度尼西亚，全称印度尼西亚共和国，是位于东南亚与大洋洲之间的群岛国家，由众多岛屿组成，是世界最大的群岛国家。首都为雅加达，人口众多，民族、语言和宗教多元。印度尼西亚自然资源丰富，经济以农业、矿业和渔业为主，在东南亚地区具有重要影响力。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "7 世纪",
+        "title": "室利佛逝王朝兴起",
+        "body": "7世纪，室利佛逝在苏门答腊崛起，控制海上贸易，成为东南亚早期强权，并传播佛教至邻邦。"
+      },
+      {
+        "year": "16 世纪",
+        "title": "满者伯夷帝国鼎盛",
+        "body": "13至16世纪，满者伯夷帝国在爪哇兴起，疆域涵盖大巽他群岛，文艺繁荣，成为印尼历史上最鼎盛的封建王朝。"
+      },
+      {
+        "year": "1602 年",
+        "title": "荷兰东印度公司设立",
+        "body": "1602年，荷兰东印度公司成立，获得政府授权在东南亚开展贸易与殖民，开启印尼近三百年的殖民统治。"
+      },
+      {
+        "year": "1945 年",
+        "title": "印尼宣布独立",
+        "body": "1945年8月17日，苏加诺在雅加达宣读《独立宣言》，正式宣告印度尼西亚脱离荷兰殖民统治，开启独立新时代。"
+      },
+      {
+        "year": "1998 年",
+        "title": "改革时代开启",
+        "body": "1998年5月，苏哈托因亚洲金融危机辞职，印尼进入政治改革时期，结束三十余年的威权统治，开启民主化进程。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·智慧藏",
+        "url": "https://doi.org/10.1007/s11813-024-00001-x",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/印度尼西亚",
+        "type": "百科"
+      },
+      {
+        "title": "中华人民共和国外交部",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_676836/1206x0_676838/",
+        "type": "机构"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/印度尼西亚",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "south-korea",
+    "title": "韩国",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/south-korea/south-korea-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/south-korea/south-korea-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/south-korea/south-korea-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 韩国 · 百科占位",
+    "description": "# 韩国\n\n大韩民国，简称韩国，是位于东亚朝鲜半岛南部的国家，三面濒临黄海、东海与日本海，隔朝鲜半岛与日本相望。韩国是发达的资本主义国家，制造业与服务业发达，钢铁、汽车、电子产品享誉国际，并以韩流文化闻名全球。首都为首尔，政治体制为总统共和制。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1948",
+        "title": "大韩民国成立",
+        "body": "1948年8月15日，大韩民国在朝鲜半岛南部正式成立，结束日本殖民统治，标志着现代韩国的诞生。"
+      },
+      {
+        "year": "1950",
+        "title": "朝鲜战争爆发",
+        "body": "1950年6月25日，朝鲜军队越过三八线进攻南方，引发三年朝鲜战争，导致大量伤亡与破坏。"
+      },
+      {
+        "year": "1961",
+        "title": "朴正熙发动政变",
+        "body": "1961年5月16日，朴正熙发动军事政变，建立军政府，推动了韩国的经济高速增长。"
+      },
+      {
+        "year": "1988",
+        "title": "首尔举办奥运会",
+        "body": "1988年9月17日至10月2日，首尔成功举办第24届夏季奥运会，提升了韩国的国际形象与经济实力。"
+      },
+      {
+        "year": "1997",
+        "title": "亚洲金融危机",
+        "body": "1997年亚洲金融危机波及韩国，韩元大幅贬值，外汇储备枯竭，最终在IMF紧急援助下度过危机。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 韩国",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9F%A9%E5%9B%BD",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 韩国",
+        "url": "https://baike.baidu.com/item/%E9%9F%A9%E5%9B%BD",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 韩国研究学术论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "人民网 - 韩国频道",
+        "url": "https://world.people.com.cn/GB/157278/index.html",
+        "type": "新闻"
+      }
+    ]
+  },
+  {
+    "slug": "mexico",
+    "title": "墨西哥",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "062",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/mexico/mexico-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/mexico/mexico-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/mexico/mexico-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "国家 · 墨西哥 · 百科占位",
+    "description": "墨西哥，全称墨西哥合众国，位于北美洲南部，濒临太平洋和墨西哥湾，北与美国接壤。墨西哥是美洲古文明的发祥地之一，玛雅和阿兹特克文明曾在此繁荣兴盛，遗留丰富的文化遗产。其文化兼具西班牙殖民传统与原住民特色，美食、音乐与艺术均自成一格。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1521",
+        "title": "西班牙征服阿兹特克",
+        "body": "1521年，西班牙殖民者在埃尔南·科尔特斯率领下攻陷特诺奇提特兰城，结束阿兹特克帝国，开启殖民统治。"
+      },
+      {
+        "year": "1810",
+        "title": "独立运动爆发",
+        "body": "1810年，米格尔·伊达尔戈在多洛雷斯镇敲响钟声，号召起义，墨西哥独立战争正式开始。"
+      },
+      {
+        "year": "1821",
+        "title": "墨西哥独立建国",
+        "body": "1821年，伊图尔维德将军签署《科尔多瓦条约》，宣告墨西哥独立，建立第一帝国。"
+      },
+      {
+        "year": "1910",
+        "title": "墨西哥革命爆发",
+        "body": "1910年，弗朗西斯科·马德罗发动选举抗议，点燃墨西哥革命，引发十年内战和政治动荡。"
+      },
+      {
+        "year": "1917",
+        "title": "新宪法正式颁布",
+        "body": "1917年，墨西哥颁布新宪法，确立土地改革、劳工法与政教分离原则，成为现代墨西哥法律基础。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 墨西哥",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E8%A5%BF%E5%93%A5",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 墨西哥",
+        "url": "https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5",
+        "type": "百科"
+      },
+      {
+        "title": "中国社会科学院拉丁美洲研究所",
+        "url": "https://ilas.cass.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 墨西哥研究学术论文",
+        "url": "https://navi.cnki.net/knavi",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "tin",
+    "title": "锡",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/tin/tin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/tin/tin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/tin/tin-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 锡 · 百科占位",
+    "description": "锡是一种化学元素，符号Sn，原子序数50，属第四族金属。锡的质地柔软，熔点较低，外观呈银白色，具有良好的延展性和抗腐蚀性。锡在地壳中含量不多，常以锡石的形式存在，人类早在古代便开始开采并利用它制造合金和镀层。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "前 3000 年",
+        "title": "青铜时代出现",
+        "body": "约公元前3000年左右，人类首次将锡与铜合金制成青铜，标志着金属时代的开启。"
+      },
+      {
+        "year": "前 2000 年",
+        "title": "古埃及使用锡",
+        "body": "公元前2000年左右，古埃及墓葬中出土含锡青铜器，证实锡在古代的广泛使用。"
+      },
+      {
+        "year": "1 世纪",
+        "title": "罗马帝国锡矿",
+        "body": "公元1世纪，罗马帝国在小亚细亚和伊比利亚半岛开采锡矿，推动贸易网络发展。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "锡纸与罐头出现",
+        "body": "19世纪中期，随着食品保鲜需求增加，镀锡钢板制成的罐头和锡纸广泛普及。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "锡 - 维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%A1",
+        "type": "百科"
+      },
+      {
+        "title": "锡 - 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%94%A1/16067",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 化学元素锡",
+        "url": "https://www.zgbk.com/document/subject/subject-5-4-1",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 锡器文物",
+        "url": "https://www.dpm.org.cn/collection/tin",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "lead",
+    "title": "铅",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/lead/lead-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/lead/lead-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/lead/lead-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 铅 · 百科占位",
+    "description": "铅是一种化学元素，化学符号Pb，原子序数82，属于IVA族。铅质地柔软、密度较大、熔点较低，具有良好的延展性和抗腐蚀性，但同时具有毒性，人类使用铅的历史可追溯至古代，曾广泛用于建筑、管道及书写工具等领域。现代工业中铅主要应用于蓄电池、辐射屏蔽材料及焊料等。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "前 3000 年",
+        "title": "古代铅的使用",
+        "body": "约公元前3000年，人类在美索不达米亚首次熔炼铅，用于制作装饰品和容器。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "19世纪的铅中毒",
+        "body": "19世纪工业化导致大量铅暴露，引发职业病与环境健康危机，引发公共卫生关注。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "现代铅的回收",
+        "body": "20世纪后期，各国实施铅回收与使用限制，推动无害化处理与环保技术发展。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书 - 铅",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 铅",
+        "url": "https://zh.wikipedia.org/wiki/%E9%90%B5",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 化学研究所",
+        "url": "https://www.ic.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国地质博物馆",
+        "url": "https://www.museumngmc.org.cn/",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "zinc",
+    "title": "锌",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/zinc/zinc-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/zinc/zinc-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/zinc/zinc-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 锌 · 百科占位",
+    "description": "锌（Zn）是化学元素，原子序数30，属第12族过渡金属。它呈蓝白色光泽，在地壳中含量丰富，常以闪锌矿（硫化锌）等矿物形式存在。锌具有良好的防腐性和延展性，广泛用于钢铁镀锌、黄铜合金制造等领域，同时也是生物体必需的微量营养元素，在人体内参与多种酶的合成与免疫调节。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1746 年",
+        "title": "锌的发现与命名",
+        "body": "在古代文明如印度和中国的文献中已有锌的记载，1746年德国化学家马尔格拉夫首次分离出纯锌。"
+      },
+      {
+        "year": "前 1400 年",
+        "title": "古代锌合金应用",
+        "body": "早在公元前1400年左右，印度河流域已使用含锌的黄铜，考古发现的黄铜器证实了早期锌的利用。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "锌的工业化生产",
+        "body": "19世纪中叶，欧洲国家开始大规模提炼锌，用于防腐镀锌和电池材料，推动了锌工业的快速发展。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（第三版）- 锌",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 锌",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%99",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 锌",
+        "url": "https://baike.baidu.com/item/%E9%94%99/308409",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 化学研究所",
+        "url": "https://www.ic.cas.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "cesium",
+    "title": "铯",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/cesium/cesium-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/cesium/cesium-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/cesium/cesium-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 铯 · 百科占位",
+    "description": "铯（符号Cs，原子序数55）是碱金属族元素，在自然界中不以单质形式存在。它是最活泼的碱金属之一，呈银白色金属光泽，化学性质极为活泼，能与水剧烈反应。铯在原子钟等精密仪器中有重要应用，其原子跃迁频率被用作秒的定义标准。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1860",
+        "title": "光谱法首度发现铯",
+        "body": "1860年，本生与基尔霍夫利用火焰光谱技术，从矿泉光谱中辨认出铯的紫线，开创元素光谱发现先河。"
+      },
+      {
+        "year": "1882",
+        "title": "首块金属铯制备",
+        "body": "1882年，瑞典化学家塞特伯格通过电解氢氧化物成功提取出纯金属铯，标志着该元素的首块金属化。"
+      },
+      {
+        "year": "1955",
+        "title": "首台铯原子钟诞生",
+        "body": "1955年，英国国家物理实验室的路易斯·埃森建造了首台实用铯原子钟，以其精确的微波振荡定义了时间基准。"
+      },
+      {
+        "year": "1967",
+        "title": "秒定义基于铯频率",
+        "body": "1967年，国际计量大会基于铯-133的超精细跃迁频率，将秒的定义固定为9192631770次振荡。"
+      },
+      {
+        "year": "1995",
+        "title": "铯喷泉钟提升精度",
+        "body": "1995年，原子钟技术进一步演化为铯喷泉钟，实现误差低于10^-15，显著提升全球时间同步精度。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科（中文）",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%9F",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%94%9F",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "krypton",
+    "title": "氪",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/krypton/krypton-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/krypton/krypton-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/krypton/krypton-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "化学元素 · 氪 · 百科占位",
+    "description": "氪是一种化学元素，符号Kr，原子序36，属惰性气体族。其化学性质稳定，不易与其他物质发生反应，主要存在于大气中，含量极低。1898年由英国化学家拉姆齐和特拉弗斯在液态空气中首次分离发现。氪在电光源工业中应用广泛，常用于制作氪灯和闪光灯，其放电时产生的白光亮度较高。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1898",
+        "title": "氪的首次发现",
+        "body": "1898年，英国科学家拉姆齐与特拉弗斯在液化了空气中首次分离出氪气，证实其为惰性元素。"
+      },
+      {
+        "year": "1910",
+        "title": "氪的放电实验",
+        "body": "1910年，科学家首次在氪气管中施加高压，成功观测到氪气的放电光谱，为后续光谱分析奠定基础。"
+      },
+      {
+        "year": "1960",
+        "title": "氪灯照明应用",
+        "body": "1960年代，氪气被用于高强度闪光灯，显著提升快门速度与曝光控制，成为摄影领域的重要光源。"
+      },
+      {
+        "year": "1980",
+        "title": "氟化氪激光研发",
+        "body": "1980年代初，科学家成功研制出氪氟化物激光器，实现紫外波段高功率输出，被广泛用于激光核聚变和材料加工研究。"
+      },
+      {
+        "year": "1995",
+        "title": "氪离子推进技术",
+        "body": "1995年，NASA在国际空间站测试中使用氪离子推进器，验证其高效能和长寿命，为深空探测任务提供新动力方案。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（条目：氪）",
+        "url": "https://www.zgbk.com/doc",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版（氪）",
+        "url": "https://zh.wikipedia.org/wiki/氪",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科（氪）",
+        "url": "https://baike.baidu.com/item/氪",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "veterinarian",
+    "title": "兽医",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/veterinarian/veterinarian-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/veterinarian/veterinarian-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/veterinarian/veterinarian-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 兽医 · 百科占位",
+    "description": "兽医是专门从事动物疾病诊断、治疗和预防的医学专业人员，工作范围涵盖宠物、牲畜、野生动物及实验动物等。兽医需经过系统的专业教育和临床实习，并通过相关资格考试取得执业资格。随着宠物经济的快速发展和畜牧业对动物健康管理需求的提升，兽医行业的社会认可度和职业价值持续提高。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "公元前4000年左右",
+        "title": "古代兽医的起源",
+        "body": "约公元前4000年，古埃及与美索不达米亚出现专门治疗家畜的巫师与祭司，形成最早的兽医雏形。"
+      },
+      {
+        "year": "1761年",
+        "title": "兽医教育制度建立",
+        "body": "1761年，法国兽医师布尔热拉创立里昂兽医学院，开创系统化兽医教育，对欧洲及全球兽医发展产生深远影响。"
+      },
+      {
+        "year": "19世纪中叶",
+        "title": "现代兽医学科形成",
+        "body": "19世纪中叶，细菌学和外科技术进步推动兽医学科独立，出现专门期刊与学术组织，标志现代兽医体系正式形成。"
+      },
+      {
+        "year": "1949年后",
+        "title": "中国现代兽医制度",
+        "body": "1949年后，新中国设立兽医局，颁布《动物防疫法》，建立省市县三级兽医防疫体系，显著提升畜牧业健康水平。"
+      },
+      {
+        "year": "21世纪",
+        "title": "数字化精准医疗",
+        "body": "21世纪，数字技术和大数据推动兽医进入精准诊疗时代，远程诊断、基因编辑和AI辅助手术显著提高动物健康水平。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科-兽医",
+        "url": "https://baike.baidu.com/item/兽医/16696",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版-兽医",
+        "url": "https://zh.wikipedia.org/wiki/兽医",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "tcm-doctor",
+    "title": "中医",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/tcm-doctor/tcm-doctor-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/tcm-doctor/tcm-doctor-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/tcm-doctor/tcm-doctor-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 中医 · 百科占位",
+    "description": "中医是中国传统医学体系，涵盖中药、针灸、推拿、气功等多种治疗手段。中医以阴阳五行、脏腑经络等理论为基础，通过望闻问切四诊合参进行辨证论治，拥有数千年临床实践积累，是中国文化的重要组成部分，至今仍在全球范围内广泛应用。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "战国至西汉",
+        "title": "《黄帝内经》编纂完成",
+        "body": "战国至西汉时期，《黄帝内经》编纂完成，奠定中医理论基础，确立阴阳五行、脏腑经络等核心理论体系。"
+      },
+      {
+        "year": "东汉末年",
+        "title": "张仲景确立辨证论治",
+        "body": "东汉末年医家张仲景总结临床经验，著《伤寒杂病论》，确立辨证论治原则，被后世尊为“医圣”。"
+      },
+      {
+        "year": "唐代",
+        "title": "中医教育制度化",
+        "body": "唐代官方设立太医署，培养医学人才，制定医学考试制度，中医逐渐成为规范化职业。"
+      },
+      {
+        "year": "明代",
+        "title": "李时珍《本草纲目》成书",
+        "body": "明代李时珍历时二十七年编纂《本草纲目》，收载药物一千八百余种，纠正前人谬误，集中药学之大成。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·中医",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网·中医药文献",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "国家中医药管理局",
+        "url": "https://www.natcm.gov.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "middle-school-teacher",
+    "title": "中学教师",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/middle-school-teacher/middle-school-teacher-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/middle-school-teacher/middle-school-teacher-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/middle-school-teacher/middle-school-teacher-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 中学教师 · 百科占位",
+    "description": "中学教师是从事初中和高中阶段教育教学工作的专业人员，主要在各类中学承担学科教学、学生管理与教育研究等职责。他们根据国家课程标准与学校教学安排，向学生传授知识与技能，同时关注学生的思想品德与综合发展。在中国，中学教师需具备相应教师资格，并通过持续的专业学习提升教学能力。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1902 年",
+        "title": "中学教师制度形成",
+        "body": "清末1902年《学制》正式设立中学，中学教师资格制度随之萌芽，标志着教师职业化的开端。"
+      },
+      {
+        "year": "1912 年",
+        "title": "教师资格认证体系",
+        "body": "1912年中华民国颁布《教员资格条例》，首次对中学教师进行统一的资格考核与证书制度。"
+      },
+      {
+        "year": "1950 年",
+        "title": "新中国教师培训制度",
+        "body": "1950年代起，中国在新学制下设立师范学院，专门培养中学教师，形成系统的师范教育体系。"
+      },
+      {
+        "year": "1994 年",
+        "title": "教师法正式实施",
+        "body": "1994年《中华人民共和国教师法》正式实施，明确中学教师的权利、义务与职业保障。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "新课程改革与教师发展",
+        "body": "21世纪初，新课程改革强调教师专业发展，推动中学教师继续教育和教学研究，提升教学质量。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 中学教师",
+        "url": "https://baike.baidu.com/item/中学教师",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科 - 中学教师",
+        "url": "https://zh.wikipedia.org/wiki/中学教师",
+        "type": "百科"
+      },
+      {
+        "title": "CNKI学术搜索 - 中学教师",
+        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&searchword=%E4%B8%AD%E5%AD%A6%E6%95%99%E5%B8%88",
+        "type": "学术"
+      },
+      {
+        "title": "教育部 - 中学教师专业标准（2015）",
+        "url": "https://www.moe.gov.cn/srcsite/A10/s7002/201511/t20151113_238818.html",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "civil-engineer",
+    "title": "土木工程师",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/civil-engineer/civil-engineer-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/civil-engineer/civil-engineer-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/civil-engineer/civil-engineer-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 土木工程师 · 百科占位",
+    "description": "土木工程师是负责设计、建造与管理各类基础设施的专业技术人员。其工作范围涵盖房屋建筑、桥梁隧道、道路交通、水利水电等工程领域，主要职责包括结构设计、施工监督、质量管理及项目规划等。土木工程师通常受雇于建筑设计院、施工企业或政府建设管理部门，是保障社会生产生活正常运转的重要技术力量。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1768",
+        "title": "康熙《工程图说》",
+        "body": "康熙年间，清政府组织编写《工程图说》，系统记载桥梁、堤坝设计原则，为土木工程奠定理论雏形。"
+      },
+      {
+        "year": "1825",
+        "title": "蒸汽机驱动搅拌机",
+        "body": "1825年，英国发明家威廉·詹姆斯成功研发蒸汽驱动的混凝土搅拌机，提高施工效率，开启机械化施工时代。"
+      },
+      {
+        "year": "1900",
+        "title": "钢筋混凝土结构",
+        "body": "1900年，法国工程师弗朗索瓦·埃内比克提出钢筋混凝土概念，实现建筑抗拉与抗压双重性能，奠定现代结构工程基础。"
+      },
+      {
+        "year": "1964",
+        "title": "计算机辅助设计",
+        "body": "1964年，IBM推出首款土木工程用的计算机辅助设计系统，标志着设计从手工绘图向数字化转型，大幅提升精度与效率。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科：土木工程师",
+        "url": "https://zh.wikipedia.org/wiki/土木工程师",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科：土木工程师",
+        "url": "https://baike.baidu.com/item/土木工程师",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书：土木工程",
+        "url": "https://www.zgbk.com/item/土木工程",
+        "type": "百科"
+      },
+      {
+        "title": "知网：土木工程师学术论文",
+        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&action=scholar&searchword=%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B%E5%B8%88",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "accountant",
+    "title": "会计",
+    "kind": "profession",
+    "series": "history-and-figures",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/accountant/accountant-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/accountant/accountant-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/accountant/accountant-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "职业 · 会计 · 百科占位",
+    "description": "会计是从事财务核算、账务管理和财务报表编制的专业人员，广泛分布于企业、会计师事务所、政府机构和各类组织中。其核心职责包括日常记账、税务申报、成本控制及财务分析，为管理层和利益相关方提供决策支持的财务信息。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "前 3000 年",
+        "title": "会计的古代萌芽",
+        "body": "早在公元前3000年，埃及和美索不达米亚已有记录收支的簿记制度，为会计雏形。"
+      },
+      {
+        "year": "1494 年",
+        "title": "复式记账法的诞生",
+        "body": "1494年，意大利数学家卢卡·帕乔利在其著作中系统阐述复式记账法，奠定现代会计理论基础。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "英国公司法与审计",
+        "body": "19世纪末，英国《公司法》首次要求公司保存账簿并接受审计，推动会计职业化和标准化。"
+      },
+      {
+        "year": "1973 年",
+        "title": "国际会计准则统一",
+        "body": "1973年，国际会计准则委员会成立，致力于制定全球统一的会计准则，提高财务信息的可比性与透明度。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "信息技术渗透会计",
+        "body": "21世纪初，企业资源规划系统和云计算技术渗透会计工作，实现实时财务分析与自动化记账，提升效率。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AE%A1",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BC%9A%E8%AE%A1/2261490",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      },
+      {
+        "title": "中国注册会计师协会",
+        "url": "https://www.cicpa.org.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "down-syndrome",
+    "title": "唐氏综合征",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "064",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/down-syndrome/down-syndrome-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/down-syndrome/down-syndrome-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/down-syndrome/down-syndrome-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 唐氏综合征 · 百科占位",
+    "description": "唐氏综合征是一种因第21号染色体多出一条而导致的染色体异常疾病，又称21-三体综合征，是最常见的染色体疾病之一。患者常表现出智力障碍、特殊面容、生长发育迟缓等症状，并可能伴有先天性心脏病、消化道畸形等并发症。该病在活产婴儿中的发生率随母亲年龄增加而升高，目前尚无根治方法，但可通过早期干预、教育训练和医学管理改善患者生活质量。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1866 年",
+        "title": "首次发现病例",
+        "body": "1866年英国医生约翰·朗敦首次在医学文献中描述唐氏综合征的临床表现。"
+      },
+      {
+        "year": "1959 年",
+        "title": "染色体异常确认",
+        "body": "1959年法国遗传学家热尔曼·勒琼证实唐氏综合征患者多出一条21号染色体。"
+      },
+      {
+        "year": "1970 年",
+        "title": "产前筛查普及",
+        "body": "1970年代起，母血清标志物筛查和超声测量被广泛用于产前检测唐氏综合征。"
+      },
+      {
+        "year": "2000 年",
+        "title": "基因检测技术突破",
+        "body": "2000年代高通量测序技术提升，使得非侵入性产前基因检测（NIPT）得以商业化应用。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 唐氏综合征",
+        "url": "https://zh.wikipedia.org/wiki/唐氏综合征",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 唐氏综合征",
+        "url": "https://www.zgbk.com/ecph/words",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院遗传与发育生物学研究所",
+        "url": "https://www.genetics.ac.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中华医学遗传学杂志",
+        "url": "https://www.yixianyichuan.com",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "cystic-fibrosis",
+    "title": "囊性纤维化",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "065",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/cystic-fibrosis/cystic-fibrosis-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/cystic-fibrosis/cystic-fibrosis-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/cystic-fibrosis/cystic-fibrosis-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 囊性纤维化 · 百科占位",
+    "description": "囊性纤维化是一种常染色体隐性遗传病，主要由CFTR基因突变引起，导致外分泌腺分泌异常。该病主要累及肺部和消化系统，患者常出现反复呼吸道感染和胰腺功能不全等症状。白种人群发病率相对较高，但全球各地区均有病例报告。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%8A%E6%80%A7%E7%BA%A4%E7%BB%B4%E5%8C%96",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书第三版",
+        "url": "https://www.zgbk.com/",
+        "type": "百科"
+      },
+      {
+        "title": "丁香园",
+        "url": "https://www.dxy.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "中国罕见病注册登记系统",
+        "url": "https://www.nrdrs.org.cn/",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "1938 年",
+        "title": "首次命名",
+        "body": "美国病理学家 Dorothy Andersen 1938 年首次描述「胰腺囊性纤维化」, 区分于乳糜泻, 当时儿童多在 1 岁内死亡。"
+      },
+      {
+        "year": "1989 年",
+        "title": "CFTR 基因发现",
+        "body": "1989 年 Francis Collins 团队定位 CFTR 基因 (7q31.2), 1990 年 Jack Riordan 团队克隆成功, 是人类遗传学里程碑。"
+      },
+      {
+        "year": "2012 年",
+        "title": "靶向药突破",
+        "body": "2012 年 Vertex 制药的 Kalydeco (ivacaftor) 上市, 针对 G551D 突变 (占 CF 4%) 显著改善肺功能, 后续 Trikafta (2019) 覆盖 90% 患者。"
+      },
+      {
+        "year": "现代",
+        "title": "生存率提升",
+        "body": "CF 治疗从「对症支持」进入「基因矫正」, 现代 CF 患者中位生存年龄从 1960 年 10 岁提升到 2020 年代 50+ 岁, 接近正常寿命。"
+      }
+    ]
+  },
+  {
+    "slug": "hemophilia",
+    "title": "血友病",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "066",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hemophilia/hemophilia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hemophilia/hemophilia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hemophilia/hemophilia-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 血友病 · 百科占位",
+    "description": "血友病是一组由于凝血因子缺乏导致的遗传性出血性疾病，主要分为A型（凝血因子VIII缺乏）和B型（凝血因子IX缺乏）。该病属于X连锁隐性遗传，因此男性患者显著多于女性。患者表现为轻微创伤后出血不止或自发性出血，关节和肌肉出血最为常见。目前凝血因子替代疗法是主要的治疗手段，可有效减少出血事件的发生。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1802",
+        "title": "血友病首次系统描述",
+        "body": "1802年，约翰·康斯托克等人在医学文献中首次系统描述血友病的出血倾向与遗传特征，奠定后期研究基础。"
+      },
+      {
+        "year": "1840",
+        "title": "英国皇室血友病",
+        "body": "19世纪中叶，维多利亚女王的多名后代出现血友病，成为著名的‘皇室疾病’，促使对其遗传规律的深入研究。"
+      },
+      {
+        "year": "1904",
+        "title": "血友病基因连锁",
+        "body": "1904年，奥地利医生弗里德里希·卢斯利用血友病家族系谱，首次揭示其与X染色体的隐性遗传关联，为基因研究奠基。"
+      },
+      {
+        "year": "1960",
+        "title": "血友病疗法突破",
+        "body": "1960年代，临床引入冷沉淀和血浆浓缩因子，显著降低出血死亡率，开启血友病替代治疗的现代时代。"
+      },
+      {
+        "year": "1992",
+        "title": "重组因子上市",
+        "body": "1992年，首个重组凝血因子VIII获批，彻底摆脱血浆来源的限制，显著提升血友病患者的治疗安全性。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·血友病",
+        "url": "https://www.baike.com/wikiid/8008372684975407616",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·血友病",
+        "url": "https://zh.wikipedia.org/wiki/血友病",
+        "type": "百科"
+      },
+      {
+        "title": "中国罕见病联盟·血友病诊疗指南",
+        "url": "https://www.chard.org.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中华医学杂志·血友病临床研究",
+        "url": "https://www.cma.org.cn",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "lymphoma",
+    "title": "淋巴瘤",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "067",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lymphoma/lymphoma-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lymphoma/lymphoma-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lymphoma/lymphoma-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 淋巴瘤 · 百科占位",
+    "description": "淋巴瘤是一类起源于淋巴系统的恶性肿瘤，主要发生于淋巴结、脾脏、胸腺等淋巴组织。根据病理特征可分为霍奇金淋巴瘤和非霍奇金淋巴瘤两大类，后者占大多数。患者常见无痛性淋巴结肿大、发热、盗汗等表现，治疗手段包括化疗、放疗及靶向治疗等。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1845",
+        "title": "首次描述淋巴结恶性肿瘤",
+        "body": "1845年，英国医生托马斯·霍奇金首次系统描述了淋巴结的异常肿大并提出可能为恶性肿瘤的概念。"
+      },
+      {
+        "year": "1898",
+        "title": "发现里德斯特恩伯格细胞",
+        "body": "1898年，卡尔·里德和Dorothy Reed在显微镜下观察到特征性的双核细胞，为霍奇金淋巴瘤的诊断奠定基础。"
+      },
+      {
+        "year": "1964",
+        "title": "提出淋巴瘤分类系统",
+        "body": "1964年，世界卫生组织发布首个淋巴瘤分类标准，将淋巴瘤分为霍奇金与非霍奇金两大类，推动临床诊疗统一。"
+      },
+      {
+        "year": "1997",
+        "title": "单克隆抗体疗法问世",
+        "body": "1997年，首个针对CD20的单克隆抗体利妥昔单抗获批，开启淋巴瘤靶向免疫治疗的新纪元。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 淋巴瘤",
+        "url": "https://zh.wikipedia.org/wiki/淋巴瘤",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 淋巴瘤",
+        "url": "https://baike.baidu.com/item/淋巴瘤",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 淋巴瘤相关学术文献",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index",
+        "type": "学术"
+      },
+      {
+        "title": "国家癌症中心",
+        "url": "https://www.ncc.gov.cn",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "bipolar-disorder",
+    "title": "双相情感障碍",
+    "kind": "disease",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "068",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/bipolar-disorder/bipolar-disorder-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/bipolar-disorder/bipolar-disorder-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/bipolar-disorder/bipolar-disorder-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "疾病 · 双相情感障碍 · 百科占位",
+    "description": "双相情感障碍是一种以情绪在躁狂（或轻躁狂）与抑郁两种状态之间剧烈波动为特征的精神疾病。患者在躁狂期表现为情绪高涨、思维奔逸、精力充沛，而在抑郁期则出现情绪低落、兴趣减退等症状。该疾病对患者的工作、学习和人际关系等方面可产生显著影响，通常需要药物与心理干预相结合的综合治疗方案。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1851",
+        "title": "循环性精神病首次描述",
+        "body": "1851年，法尔雷提出‘环形精神病’，描述情绪在狂躁与抑郁之间循环的模式，为双相情感障碍概念奠定基础。"
+      },
+      {
+        "year": "1899",
+        "title": "《精神疾病手册》出版",
+        "body": "1899年，克雷佩林在《精神疾病手册》中系统划分‘躁郁症’，首次将情绪高涨与低落归为同一疾病实体。"
+      },
+      {
+        "year": "1959",
+        "title": "双相情感障碍命名",
+        "body": "1959年，莱昂哈德提出‘双相情感障碍’概念，以区别单相抑郁症与情绪在两极波动的患者。"
+      },
+      {
+        "year": "1970",
+        "title": "锂盐治疗获批",
+        "body": "1970年，FDA批准锂盐用于双相情感障碍的躁狂期，标志着首个情绪稳定剂进入临床常规。"
+      },
+      {
+        "year": "1980",
+        "title": "DSM‑III正式分类",
+        "body": "1980年，DSM‑III将双相情感障碍列为独立诊断类别，明确诊断标准，推动全球对该病的认识与研究。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/双相情感障碍",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/双相情感障碍",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国科学院心理研究所",
+        "url": "https://www.psych.ac.cn",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "lavender",
+    "title": "薰衣草",
+    "kind": "plant",
+    "series": "craft-and-botanical",
+    "seriesNo": "146",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/lavender/lavender-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/lavender/lavender-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/lavender/lavender-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "植物 · 薰衣草 · 百科占位",
+    "description": "薰衣草是唇形科薰衣草属的多年生草本或小灌木，原产于地中海沿岸地区，现已广泛引种至世界各地温带气候区。其叶片细长灰绿，花序呈穗状排列，花色以紫色为主，全株因含芳香油而具有独特香气，花期通常在夏季。薰衣草兼具观赏价值与实用价值，除作为园艺植物广泛种植外，亦常用于提取精油或作为烹饪香料使用。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "前 1500 年",
+        "title": "古埃及早期使用",
+        "body": "约公元前1500年，古埃及人已将薰衣草用于香料和防腐，制作木乃伊时常用其精油。"
+      },
+      {
+        "year": "4 世纪",
+        "title": "希腊罗马传播",
+        "body": "公元前4世纪，希腊医师希波克拉底记录薰衣草的药用价值，随后罗马人在公共浴场和医疗中广泛使用。"
+      },
+      {
+        "year": "6 世纪",
+        "title": "中世纪修道院",
+        "body": "6世纪至12世纪，欧洲修道院将薰衣草种植于草药园，用于调制草药膏和净化空气，帮助修士保持健康。"
+      },
+      {
+        "year": "18 世纪",
+        "title": "法国普罗旺斯",
+        "body": "18世纪末，法国普罗旺斯地区开始大规模商业种植薰衣草，建立蒸馏厂提取精油，使其成为当地重要出口商品。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科·薰衣草",
+        "url": "https://zh.wikipedia.org/wiki/薰衣草",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科·薰衣草",
+        "url": "https://baike.baidu.com/item/薰衣草",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院植物研究所·植物智",
+        "url": "https://www.iplant.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "mint",
+    "title": "薄荷",
+    "kind": "plant",
+    "series": "craft-and-botanical",
+    "seriesNo": "147",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/mint/mint-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/mint/mint-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/mint/mint-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "植物 · 薄荷 · 百科占位",
+    "description": "薄荷是唇形科薄荷属的多年生草本植物，原产于欧洲及亚洲部分地区，现已广泛栽培于世界温带地区。茎直立，叶片边缘有锯齿，搓揉后散发出清凉的香气。薄荷全草可入药，具有疏散风热、清利头目等功效，其提取的薄荷脑也广泛用于食品、医药和日化产品中。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "前 3000 年",
+        "title": "薄荷古代起源",
+        "body": "早在公元前3000年，古埃及人已使用薄荷作草药和防腐剂，并将其用于祭祀仪式。"
+      },
+      {
+        "year": "4 世纪",
+        "title": "薄荷传入欧洲",
+        "body": "公元前4世纪，亚历山大大帝的军队将薄荷带回希腊，随后传入罗马，成为贵族常用的香料与药材。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "薄荷近现代应用",
+        "body": "19世纪起，薄荷被提取成薄荷脑，广泛用于牙膏、口香糖与药品，20世纪后更进入食品工业和化妆品领域。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 薄荷",
+        "url": "https://baike.baidu.com/item/薄荷",
+        "type": "百科"
+      },
+      {
+        "title": "中国大百科全书 - 薄荷",
+        "url": "https://www.baike.com/wiki/薄荷",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 薄荷属",
+        "url": "https://zh.wikipedia.org/wiki/薄荷属",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "tea-tree",
+    "title": "茶树",
+    "kind": "plant",
+    "series": "craft-and-botanical",
+    "seriesNo": "148",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tea-tree/tea-tree-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tea-tree/tea-tree-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tea-tree/tea-tree-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "植物 · 茶树 · 百科占位",
+    "description": "茶树是山茶科山茶属的常绿灌木或小乔木，原产于中国西南地区，现广泛种植于亚洲热带及亚热带多个国家。其嫩叶经不同工艺加工，可制成绿茶、红茶、乌龙茶、白茶等各类茶叶，是世界三大无酒精饮料之一。茶树喜温喜湿，适宜在酸性土壤中生长，人工栽培时常通过修剪控制植株高度。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "公元前2737年",
+        "title": "神农氏发现茶",
+        "body": "据传说，神农氏在品尝草药时意外发现茶树的嫩叶具有提神醒脑的功效。"
+      },
+      {
+        "year": "公元前4世纪",
+        "title": "茶树栽培起源",
+        "body": "战国时期，四川地区开始人工栽培茶树，形成早期茶叶生产雏形，并发展。"
+      },
+      {
+        "year": "公元7世纪",
+        "title": "唐代茶文化繁荣",
+        "body": "唐代茶叶随丝绸之路传入西域，茶道仪式逐步形成，茶具艺术也随之繁荣。"
+      },
+      {
+        "year": "公元12世纪",
+        "title": "宋代茶叶贸易",
+        "body": "宋代茶叶通过海上丝绸之路远销日本、波斯，国内茶叶品种繁多，茶马古道亦成重要通道。"
+      },
+      {
+        "year": "公元19世纪",
+        "title": "茶树现代育种",
+        "body": "19世纪，英国植物学家利用选育技术培育出高产抗病的茶树新品系，推动全球茶叶产量大幅提升。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 茶树",
+        "url": "https://zh.wikipedia.org/wiki/茶树",
+        "type": "百科"
+      },
+      {
+        "title": "中国农业科学院茶叶研究所",
+        "url": "https://www.trissas.cn",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 茶树研究文献",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "百度百科 - 茶树",
+        "url": "https://baike.baidu.com/item/茶树",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "white-tea",
+    "title": "白茶",
+    "kind": "plant",
+    "series": "craft-and-botanical",
+    "seriesNo": "149",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/white-tea/white-tea-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/white-tea/white-tea-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/white-tea/white-tea-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "植物 · 白茶 · 百科占位",
+    "description": "白茶（*Camellia sinensis* var. *sinensis*），山茶科山茶属多年生灌木或小乔木植物，原产于中国福建福鼎一带，现主要分布于闽东、滇西等地。白茶以制作工艺简约著称，采摘后不经杀青或揉捻，仅经萎凋、干燥而成，茶叶表面密披白色茸毛，冲泡后汤色清淡，味甘醇和，属微发酵茶，是中国六大茶类之一。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "中国大百科全书·白茶",
+        "url": "https://www.baike.com/wiki/%E7%99%BD%E8%8C%B6",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·白茶",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%BD%E8%8C%B6",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网·白茶研究文献",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国茶叶博物馆",
+        "url": "https://www.teamuseum.cn",
+        "type": "博物馆"
+      }
+    ],
+    "history": [
+      {
+        "year": "唐代",
+        "title": "白茶雏形",
+        "body": "白茶是中国六大茶类中工艺最简朴的一类, 唐宋时期福建福鼎、政和茶农将茶芽「不炒不揉」自然萎凋, 现代定义为白茶工艺源头。"
+      },
+      {
+        "year": "明清",
+        "title": "白毫银针定型",
+        "body": "清嘉庆年间 (1796-1820), 福建福鼎茶农选大白茶 / 大毫茶单芽, 制白毫银针, 1885 年起出口欧美, 1889 年巴拿马万国博览会获金奖。"
+      },
+      {
+        "year": "1960 年代",
+        "title": "白牡丹诞生",
+        "body": "1968 年福鼎白琳茶厂研制「白牡丹」, 用一芽一二叶原料, 价格低于银针, 推动白茶大众化, 此后寿眉、贡眉品类渐齐。"
+      },
+      {
+        "year": "现代",
+        "title": "老白茶收藏热",
+        "body": "2000 年代起「一年茶三年药七年宝」说法流行, 老白茶 (尤其寿眉) 价格上涨, 2010 年代后白茶年产量翻 5 倍, 主销北方市场。"
+      }
+    ]
+  },
+  {
+    "slug": "cherry-tree",
+    "title": "樱花树",
+    "kind": "plant",
+    "series": "craft-and-botanical",
+    "seriesNo": "150",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cherry-tree/cherry-tree-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cherry-tree/cherry-tree-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cherry-tree/cherry-tree-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "植物 · 樱花树 · 百科占位",
+    "description": "樱花树是蔷薇科樱属落叶乔木的统称，原产于北半球温带地区，广泛分布于日本、中国、朝鲜半岛等地。樱花树以其春季绽放的粉色或白色花朵著称，花期通常在3至4月间，先花后叶，盛开时形成壮丽花海。樱花树在全球范围内都是重要的观赏植物，在日本文化中尤为神圣，常被视为民族象征，其花瓣亦可用于食品加工。全球现存樱花品种达数百种，常见栽培品种包括山樱、吉野樱等。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "先秦时期",
+        "title": "中国古籍记载樱花",
+        "body": "《山海经》与《神农本草经》中首次出现樱树的记载，描述其生长习性与药用价值。"
+      },
+      {
+        "year": "唐代",
+        "title": "樱花随佛教传入日本",
+        "body": "随着佛教从中国传入日本，樱花树苗也被一同带往日本，并在寺庙周边广泛种植，成为日本赏樱文化的起源之一。"
+      },
+      {
+        "year": "平安时代",
+        "title": "樱花成为日本文化象征",
+        "body": "日本平安时代贵族开始广泛种植樱花，赏樱习俗逐渐形成，樱花成为日本文化的重要象征。"
+      },
+      {
+        "year": "近代",
+        "title": "樱花成为中国常见观赏树",
+        "body": "近代以来，中国各地公园和校园广泛种植樱花树，春季赏樱成为流行的休闲活动，樱花文化在中国重新兴起。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国植物志",
+        "url": "https://www.plantlist.org/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 樱花",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A8%9F%E8%8A%B1",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院植物研究所",
+        "url": "https://www.cas.cn/kyct/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "temple-fair",
+    "title": "庙会",
+    "kind": "other",
+    "series": "craft-and-botanical",
+    "seriesNo": "156",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/temple-fair/temple-fair-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/temple-fair/temple-fair-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/temple-fair/temple-fair-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "其他 · 庙会 · 百科占位",
+    "description": "# 庙会\n\n庙会是中国传统民间社会的重要集体活动形式，通常在寺庙及其周边区域举行，集宗教祭祀、物资交流与文艺表演于一体。其历史可追溯至古代的宗教祭祀活动，在漫长发展过程中逐渐融合了民俗信仰、传统戏曲、民间工艺和特色小吃等元素，成为展现地方文化特色的综合性民间盛会。庙会不仅是民众祈福纳祥的重要场所，也承担着丰富社区生活、促进社会交往的文化功能。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "商周时期",
+        "title": "祭祀起源",
+        "body": "商周时期，祭祀天地、祖先的仪式逐渐形成。民众在祭祀后于庙宇附近交易祭品，庙会雏形由此萌生。"
+      },
+      {
+        "year": "汉代",
+        "title": "祭祀与市集结合",
+        "body": "汉代，佛道宗教传入，祭祀活动与民间集市相结合。寺庙周边定期举办贸易活动，庙会初具规模。"
+      },
+      {
+        "year": "唐代",
+        "title": "佛道兴盛",
+        "body": "唐代，佛道两教繁荣，寺庙定期举办庙会。届时，香客云集，进行祭祀、贸易和文化表演，庙会进入兴盛期。"
+      },
+      {
+        "year": "宋代",
+        "title": "娱乐功能增强",
+        "body": "宋代，庙会功能从宗教祭祀转向商业娱乐并重。民间艺人表演戏曲、杂技，小吃摊贩云集，成为综合性民俗盛会。"
+      },
+      {
+        "year": "明清时期",
+        "title": "鼎盛繁荣",
+        "body": "明清时期，庙会遍及城乡各地，形式多样。舞狮、舞龙、花灯等传统项目成为必备节目，庙会发展达到鼎盛。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "庙会 - 维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/庙会",
+        "type": "百科"
+      },
+      {
+        "title": "庙会 - 百度百科",
+        "url": "https://baike.baidu.com/item/庙会",
+        "type": "百科"
+      },
+      {
+        "title": "庙会 - 中国知网学术搜索",
+        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&action=scholar&searchWord=庙会",
+        "type": "学术"
+      },
+      {
+        "title": "故宫博物院官方网站",
+        "url": "https://www.dpm.org.cn",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "dragon-boat-ceremony",
+    "title": "端午祭祀",
+    "kind": "other",
+    "series": "craft-and-botanical",
+    "seriesNo": "157",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/dragon-boat-ceremony/dragon-boat-ceremony-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/dragon-boat-ceremony/dragon-boat-ceremony-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/dragon-boat-ceremony/dragon-boat-ceremony-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "其他 · 端午祭祀 · 百科占位",
+    "description": "端午祭祀是中国传统端午节日的重要仪式活动，主要源于古代驱邪祈福的信仰。祭祀内容涵盖祭拜屈原、龙舟竞渡、悬挂艾草菖蒲等习俗，承载着中华民族对忠烈之士的纪念与对平安健康的祈求。作为国家级非物质文化遗产的重要组成部分，端午祭祀体现了中华文化的传承与发展。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "维基百科中文版 - 端午节",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%AF%E5%8D%81",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 端午祭祀",
+        "url": "https://baike.baidu.com/item/%E7%AB%AF%E5%8D%81%E7%A5%AD%E7%A5%80",
+        "type": "百科"
+      },
+      {
+        "title": "中国民俗学会 - 端午节专题研究",
+        "url": "https://www.china-folklore.org.cn",
+        "type": "学术"
+      },
+      {
+        "title": "中国社会科学院 - 传统节日与祭祀文化研究",
+        "url": "https://www.cssn.cn",
+        "type": "机构"
+      }
+    ],
+    "history": [
+      {
+        "year": "战国",
+        "title": "屈原祭江",
+        "body": "相传战国楚人屈原投汨罗江后, 沿岸百姓划船撒粽救捞, 后演化为每年五月初五「龙舟下水」仪式, 1953 年屈原入世界和平理事会纪念名录后定为端午核心。"
+      },
+      {
+        "year": "唐代",
+        "title": "宫廷龙舟",
+        "body": "唐代宫廷端午龙舟竞渡成定制, 玄宗时雕金龙头, 杨贵妃侍侧观看, 民间则祭祀伍子胥、曹娥等水神, 各有地域版本。"
+      },
+      {
+        "year": "明清",
+        "title": "南北流派",
+        "body": "明清龙舟分南北两派: 南方 (尤其广东、湖南) 龙舟长 10-20 米, 多人桨; 北方龙舟更仪式化, 配神庙祭祀。"
+      },
+      {
+        "year": "2009 年",
+        "title": "申遗成功",
+        "body": "2009 年端午节入选《人类非物质文化遗产代表作名录》, 中国 (湖北秭归) 与中国香港 (大澳) 等地共同申报, 体现屈原与吴越龙舟双重传统。"
+      }
+    ]
+  },
+  {
+    "slug": "tai-chi",
+    "title": "太极拳",
+    "kind": "other",
+    "series": "craft-and-botanical",
+    "seriesNo": "158",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "其他 · 太极拳 · 百科占位",
+    "description": "太极拳是中国传统武术，源于古代导引吐纳之术，以柔克刚、以静制动著称。它融合了中医经络理论与哲学思想，动作舒缓连绵，讲究意气运动。太极拳不仅是一项武术，更发展为全球流行的健身方式，包含多种风格流派。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "约1600",
+        "title": "陈王庭创立太极拳",
+        "body": "陈王庭在明末清初，结合武术、导引与中医理论，创造陈式太极拳，对后世影响深远。"
+      },
+      {
+        "year": "1850",
+        "title": "杨露禅传太极拳",
+        "body": "杨露禅自幼随父学拳，后赴陈式学艺，于北京改良技法，形成柔缓连绵的杨式太极拳，成为后世广泛传播的基础。"
+      },
+      {
+        "year": "1870",
+        "title": "吴鉴泉创吴式",
+        "body": "吴鉴泉在清末民初，以杨式为基础，融入八卦掌等内家功法，形成动作紧凑、柔中带刚的吴式太极拳，对现代竞技太极拳影响显著。"
+      },
+      {
+        "year": "1956",
+        "title": "政府推广太极拳",
+        "body": "二十世纪五十年代起，中国政府将太极拳列为群众体育项目，设立专门机构，推动普及化，并在国际赛事中展示其文化价值。"
+      },
+      {
+        "year": "2020",
+        "title": "列入非遗名录",
+        "body": "2020年，联合国教科文组织将太极拳列入人类非物质文化遗产代表作名录，提升其国际知名度与保护力度。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书 - 太极拳",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 太极拳",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E6%9E%81%E6%8B%B3",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 - 武术与宫廷生活",
+        "url": "https://www.dpm.org.cn/",
+        "type": "博物馆"
+      },
+      {
+        "title": "中国武术协会",
+        "url": "https://www.wushu.com.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "mazu-worship",
+    "title": "妈祖信俗",
+    "kind": "other",
+    "series": "craft-and-botanical",
+    "seriesNo": "159",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/mazu-worship/mazu-worship-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/mazu-worship/mazu-worship-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/mazu-worship/mazu-worship-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "其他 · 妈祖信俗 · 百科占位",
+    "description": "妈祖信俗是以湄洲妈祖祖庙为中心，传播于中国东南沿海及东南亚等地区的民间信仰体系。信俗以妈祖（林默）为崇拜对象，涵盖祭祀仪式、巡游庙会、传说故事等内容，核心为“立德、行善、大爱”精神。2009年被列入联合国教科文组织人类非物质文化遗产。",
+    "createdAt": "2026-06-28",
+    "sources": [
+      {
+        "title": "中国大百科全书 - 妈祖信俗",
+        "url": "https://www.zgbk.com",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 妈祖信俗",
+        "url": "https://zh.wikipedia.org",
+        "type": "百科"
+      },
+      {
+        "title": "中国非物质文化遗产网 - 妈祖信俗",
+        "url": "https://www.ihchina.cn",
+        "type": "机构"
+      },
+      {
+        "title": "莆田学院妈祖文化研究中心",
+        "url": "https://www.ptu.edu.cn",
+        "type": "学术"
+      }
+    ],
+    "history": [
+      {
+        "year": "960 年",
+        "title": "林默降生",
+        "body": "北宋建隆元年 (960) 福建莆田湄洲岛林愿家生女林默, 传说生而异香不啼, 自幼习医术观天象, 28 岁登湄洲峰羽化升天。"
+      },
+      {
+        "year": "1123 年",
+        "title": "官方敕封",
+        "body": "宋徽宗宣和四年 (1122) 朝廷首次赐庙号「顺济」, 此后宋元明清累计赐封 36 次, 封号从「夫人」升至「天后」, 地位远超一般民间神祇。"
+      },
+      {
+        "year": "明清",
+        "title": "远播东亚",
+        "body": "明代郑和下西洋船队供奉妈祖保平安, 福建广东移民将妈祖信仰带至台湾、东南亚, 现全球妈祖庙 5000+ 座, 信众 2 亿+。"
+      },
+      {
+        "year": "2009 年",
+        "title": "人类非遗",
+        "body": "2009 年「妈祖信俗」入选《人类非物质文化遗产代表作名录》, 是中国首个信仰类世界非遗, 莆田湄洲岛祖庙为世界妈祖文化中心。"
+      }
+    ]
+  },
+  {
+    "slug": "mars-rover",
+    "title": "火星探测器",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "188",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/mars-rover/mars-rover-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/mars-rover/mars-rover-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/mars-rover/mars-rover-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "交通工具 · 火星探测器 · 百科占位",
+    "description": "火星探测器是一种在火星表面执行探测任务的无人航天器，主要用于收集火星的地质结构、土壤成分、气候特征等科学数据。它通常配备相机、光谱仪、气象站等多种探测设备，并通过通信系统将信息传回地球，为人类了解这颗红色星球提供重要资料。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1971",
+        "title": "火星2号发射升空",
+        "body": "苏联发射人类首个火星着陆探测器火星2号，可惜在着陆时坠毁，未能传回数据。"
+      },
+      {
+        "year": "1997",
+        "title": "旅居者号探索火星",
+        "body": "美国索杰纳号火星车随探路者号着陆火星，重11公斤，在火星表面行驶约100米。"
+      },
+      {
+        "year": "2004",
+        "title": "勇气与机遇号登陆",
+        "body": "美国NASA双胞胎火星车勇气号和机遇号先后登陆火星，开启长时间探测任务。"
+      },
+      {
+        "year": "2012",
+        "title": "好奇号成功着陆",
+        "body": "NASA好奇号火星车使用创新的天空起重机技术成功着陆，开始探寻火星远古生命迹象。"
+      },
+      {
+        "year": "2021",
+        "title": "毅力号携直升机抵达",
+        "body": "NASA毅力号火星车携直升机机智号登陆耶泽洛陨石坑，将采集火星样本送回地球。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书（智慧果）",
+        "url": "https://www.zhihuihui.com.cn/baike/火星探测器",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/wiki/火星探测器",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院国家天文台",
+        "url": "https://www.bao.ac.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "iss",
+    "title": "国际空间站",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "189",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/iss/iss-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/iss/iss-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/iss/iss-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "交通工具 · 国际空间站 · 百科占位",
+    "description": "国际空间站（International Space Station，简称ISS）是一个在近地轨道运行的大型载人空间设施，由美国、俄罗斯、欧洲、日本、加拿大等国家和地区共同建造与运营。它是目前人类历史上规模最大、参与国家最多的国际太空合作项目，主要用于微重力环境下的科学研究、技术试验以及长期载人航天活动。空间站自1998年开始建造以来，已接待来自多个国家的航天员执行长期驻留任务，成为人类在太空中的重要科研与生活平台。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1998",
+        "title": "曙光号功能舱升空",
+        "body": "1998年11月20日，俄罗斯质子火箭将曙光号功能舱送入轨道，成为ISS首个发射的舱段。"
+      },
+      {
+        "year": "2000",
+        "title": "首次舱段对接",
+        "body": "2000年12月6日，曙光号功能舱与美国团结号节点舱实现对接，形成可居住的舱段。"
+      },
+      {
+        "year": "2000",
+        "title": "首批常驻航天员",
+        "body": "2000年11月2日，三名航天员正式入住ISS，开启长期有人值守的时代。"
+      },
+      {
+        "year": "2007",
+        "title": "太阳翼全面展开",
+        "body": "2007年9月，ISS的两套大型太阳翼完成展开，显著提升发电量，保障后续科研任务。"
+      },
+      {
+        "year": "2011",
+        "title": "完成整体组装",
+        "body": "2011年5月，ISS完成全部舱段的组装，总质量约420吨，成为人类在轨最大科研平台。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 国际空间站",
+        "url": "https://zh.wikipedia.org/wiki/国际空间站",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院 - 国际空间站介绍",
+        "url": "https://www.cas.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "中国航天科技集团",
+        "url": "https://www.spacechina.com/",
+        "type": "机构"
+      },
+      {
+        "title": "中国知网 - 国际空间站相关学术论文",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "steamboat",
+    "title": "蒸汽船",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "190",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/steamboat/steamboat-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/steamboat/steamboat-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/steamboat/steamboat-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "交通工具 · 蒸汽船 · 百科占位",
+    "description": "蒸汽船是一种以蒸汽机为动力来源的船舶，通过燃烧燃料加热水产生蒸汽，驱动活塞或涡轮带动螺旋桨推进。相比依靠风力的帆船，蒸汽船能够在逆风和恶劣海况下保持稳定航行，大幅提升了跨洋运输的效率与可靠性。19世纪至20世纪初，蒸汽船逐渐成为全球远洋交通和货物运输的核心工具，深刻改变了国际航运格局。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1707",
+        "title": "帕潘的首艘蒸汽船",
+        "body": "德国工程师丹尼斯·帕潘制造了首艘实验性蒸汽船，实现了船只动力的突破。"
+      },
+      {
+        "year": "1807",
+        "title": "富尔顿的克勒蒙特",
+        "body": "美国工程师罗伯特·富尔顿的蒸汽船‘克勒蒙特’在哈德逊河实现商业航行，标志着现代蒸汽船时代的开端。"
+      },
+      {
+        "year": "1819",
+        "title": "跨大西洋首航",
+        "body": "英国帆船‘萨凡纳’号装配蒸汽机横渡大西洋，完成首次跨大西洋蒸汽动力航行。"
+      },
+      {
+        "year": "1838",
+        "title": "大西部号跨大西洋",
+        "body": "英国‘大西部’号蒸汽船从布里斯托尔驶往纽约，开通跨大西洋定期蒸汽航线，显著缩短旅行时间。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版 - 蒸汽船",
+        "url": "https://zh.wikipedia.org/wiki/%E8%92%B8%E6%B1%BD%E8%88%B9",
+        "type": "百科"
+      },
+      {
+        "title": "百度百科 - 蒸汽船",
+        "url": "https://baike.baidu.com/item/%E8%92%B8%E6%B1%BD%E8%88%B9/2261495",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 蒸汽船相关学术论文",
+        "url": "https://www.cnki.net",
+        "type": "学术"
+      },
+      {
+        "title": "中国航海博物馆 - 蒸汽船展览或资料",
+        "url": "https://www.csimc.com.cn",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "weather-balloon",
+    "title": "探测气球",
+    "kind": "vehicle",
+    "series": "craft-and-botanical",
+    "seriesNo": "191",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/weather-balloon/weather-balloon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/weather-balloon/weather-balloon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/weather-balloon/weather-balloon-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "交通工具 · 探测气球 · 百科占位",
+    "description": "探测气球是一种利用轻质气体充入气囊携带探测设备升空的航空器，主要用于大气层观测与数据收集。作为一种无人的高空探测平台，它通过携带各类传感器设备，对气温、气压、湿度及大气成分等进行测量记录。探测气球广泛应用于气象预报、科学研究、环境监测等领域，具有成本较低、操作简便、可到达高空大气层等特点。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1783 年",
+        "title": "起源与早期实验",
+        "body": "1783年，法国蒙戈尔菲耶兄弟制造首个热气球，成功进行空中观测实验，随即被军方用于侦查与测绘，开启了探测气球的先河。"
+      },
+      {
+        "year": "19 世纪",
+        "title": "军事侦察扩展",
+        "body": "19世纪中叶，欧洲列强在殖民地战争中大量使用系留式气球进行前线监视和炮兵校正，显著提升战场情报获取效率。"
+      },
+      {
+        "year": "1914 年",
+        "title": "一战中广泛使用",
+        "body": "1914年一战爆发后，英德两国率先在前线部署侦察气球，实时观察敌军动向并校射火炮，有效降低步兵冲锋盲目性。"
+      },
+      {
+        "year": "21 世纪",
+        "title": "现代技术与应用",
+        "body": "进入21世纪，探测气球搭载高精度传感器和摄像机，广泛用于气象观测、环境监测以及灾害预警，推动了对大气层的深入研究。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "百度百科 - 探测气球",
+        "url": "https://baike.baidu.com/item/探测气球",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版 - 气象气球",
+        "url": "https://zh.wikipedia.org/wiki/气象气球",
+        "type": "百科"
+      },
+      {
+        "title": "中国知网 - 探测气球相关学术论文",
+        "url": "https://kns.cnki.net/kns8/defaultresult/index",
+        "type": "学术"
+      },
+      {
+        "title": "中国科学院 - 高空科学气球技术研究",
+        "url": "https://www.cas.cn",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "dugong",
+    "title": "儒艮",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/dugong/dugong-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/dugong/dugong-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/dugong/dugong-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "",
+    "subtitle": "动物 · 儒艮 · 百科占位",
+    "description": "儒艮是分布于印度洋和太平洋西部热带海域的海洋哺乳动物，属儒艮目儒艮科。它们的尾鳍呈独特的叉形，以海草为主食，常在海草床区域活动。儒艮性情温和，雌性个体有怀抱幼崽在水面哺乳的习性，这一特征使其被认为是「美人鱼」传说的动物原型之一。",
+    "createdAt": "2026-06-28",
+    "history": [
+      {
+        "year": "1758 年",
+        "title": "林奈正式命名儒艮",
+        "body": "1758年林奈在《自然系统》中正式为儒艮命名，确立其拉丁学名，标志现代分类学的起点。"
+      },
+      {
+        "year": "20 世纪",
+        "title": "首次印度洋生态调查",
+        "body": "20世纪初，科学家在印度洋开展首次系统生态调查，记录儒艮的食性、繁殖行为及季节性迁徙路线。"
+      },
+      {
+        "year": "1988 年",
+        "title": "世界自然保护联盟易危",
+        "body": "1988年世界自然保护联盟将儒艮列入易危物种，推动沿海国家立法保护，限制捕猎和栖息地破坏。"
+      },
+      {
+        "year": "2005 年",
+        "title": "首次人工繁育成功",
+        "body": "2005年澳大利亚首次成功实现儒艮人工繁育，幼崽健康成活，为野外种群恢复提供关键技术。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·动物学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版",
+        "url": "https://zh.wikipedia.org/",
+        "type": "百科"
+      },
+      {
+        "title": "中国科学院动物研究所",
+        "url": "https://www.ioz.ac.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net/",
+        "type": "学术"
       }
     ]
   }

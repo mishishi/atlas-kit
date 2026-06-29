@@ -104,7 +104,7 @@ export function TodayFab({ card }: TodayFabProps) {
         <span className="sr-only">今日图鉴</span>
       </button>
 
-      {/* Modal */}
+      {/* Modal — R60.2.1: 完整图片不裁切 + 文字块在图下方 (artifact 风) */}
       {open && (
         <div
           role="dialog"
@@ -115,62 +115,63 @@ export function TodayFab({ card }: TodayFabProps) {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-[540px] overflow-hidden rounded-2xl bg-card shadow-2xl"
+            className="relative flex max-h-[90vh] w-full max-w-[540px] flex-col overflow-hidden rounded-2xl bg-card shadow-2xl"
           >
-            {/* Cover image with bottom gradient overlay */}
-            <div className="relative h-[420px] sm:h-[480px] w-full">
-              <Image
-                src={card.image_full ?? card.image}
-                alt=""
-                fill
-                sizes="(max-width: 540px) 100vw, 540px"
-                priority
-                className="object-cover"
-              />
-              {/* Bottom 50% dark gradient for text legibility */}
-              <div
-                className="absolute inset-x-0 bottom-0 h-1/2"
-                style={{
-                  background:
-                    "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.85) 100%)",
-                }}
-              />
-              {/* Top eyebrow: today label + date */}
-              <div className="absolute left-5 right-5 top-5 flex items-center gap-2 text-xs uppercase tracking-wider text-white/85 font-medium">
+            {/* Eyebrow bar — sticky top of modal */}
+            <div className="flex items-center justify-between border-b border-border bg-card/95 px-5 py-3 backdrop-blur-sm">
+              <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-gold-deep font-medium">
                 <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
                 <span>今日图鉴</span>
-                <span className="opacity-50">·</span>
-                <Calendar className="h-3.5 w-3.5 opacity-70" aria-hidden="true" />
-                <span className="opacity-90">{dateLabel}</span>
+                <span className="text-muted-foreground/50">·</span>
+                <Calendar className="h-3.5 w-3.5 text-muted-foreground/70" aria-hidden="true" />
+                <span className="text-muted-foreground">{dateLabel}</span>
               </div>
-              {/* Close X */}
               <button
                 type="button"
                 onClick={() => setOpen(false)}
                 aria-label="关闭"
-                className="absolute right-4 top-4 rounded-full bg-black/30 p-1.5 text-white/90 backdrop-blur-sm hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                className="rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <X className="h-4 w-4" aria-hidden="true" />
               </button>
-              {/* Bottom texth-4 w-4" aria block */}
-              <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                <p className="mb-2 text-xs uppercase tracking-wider text-white/70">
-                  No.{card.seriesNo} · {seriesName}
-                </p>
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold leading-tight mb-3 text-shadow">
-                  {card.title}
-                </h2>
-                <p className="text-sm leading-relaxed text-white/90 mb-5 line-clamp-3 max-w-prose">
-                  {card.description || card.tagline || card.subtitle}
-                </p>
-                <Link
-                  href={`/cards/${card.slug}`}
-                  className="inline-flex items-center gap-2 rounded-full bg-cream px-5 py-2.5 text-sm font-semibold text-gold-deep transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                >
-                  查看完整图鉴
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
+            </div>
+
+            {/* Image — full 9:16 visible, no crop, palette[0] background fill */}
+            <div
+              className="relative flex w-full items-center justify-center overflow-auto"
+              style={{ backgroundColor: card.palette[0] }}
+            >
+              {/* Use intrinsic aspect ratio: width = container, height = auto */}
+              <div className="relative w-full" style={{ aspectRatio: "9 / 16", maxHeight: "55vh" }}>
+                <Image
+                  src={card.image_full ?? card.image}
+                  alt={card.title}
+                  fill
+                  sizes="(max-width: 540px) 100vw, 540px"
+                  priority
+                  className="object-contain"
+                />
               </div>
+            </div>
+
+            {/* Text block — below the image, not overlaid */}
+            <div className="border-t border-border bg-card p-5">
+              <p className="mb-1.5 text-[11px] uppercase tracking-wider text-muted-foreground">
+                No.{card.seriesNo} · {seriesName}
+              </p>
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold leading-tight mb-2">
+                {card.title}
+              </h2>
+              <p className="text-sm leading-relaxed text-muted-foreground mb-4 line-clamp-3">
+                {card.description || card.tagline || card.subtitle}
+              </p>
+              <Link
+                href={`/cards/${card.slug}`}
+                className="inline-flex items-center gap-2 rounded-md bg-gold-deep px-4 py-2 text-sm font-medium text-cream transition-colors hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              >
+                查看完整图鉴
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
             </div>
           </div>
         </div>

@@ -141,10 +141,33 @@ export function GraphView({ data }: { data: GraphData }) {
         nodeRelSize={6}
         nodeId="id"
         linkColor={(l: any) => {
+          // R-I (2026-06-30): link viewport culling — 15k edges all
+          // drawn every frame was the biggest perf hit. Skip edges
+          // where BOTH endpoints are off-screen.
+          const s = typeof l.source === "object" ? l.source : null;
+          const t = typeof l.target === "object" ? l.target : null;
+          if (s && t) {
+            const pad = 40;
+            const onScreen = (n: any) =>
+              n.x >= -pad && n.x <= size.w + pad && n.y >= -pad && n.y <= size.h + pad;
+            if (!onScreen(s) && !onScreen(t)) return "rgba(0,0,0,0)";
+          }
           if (l.type === "tag") return "rgba(140, 127, 110, 0.25)";
           return "rgba(184, 137, 82, 0.55)";
         }}
-        linkWidth={(l: any) => (l.type === "tag" ? 0.5 : 1.2)}
+        linkWidth={(l: any) => {
+          // R-I: also zero out width for off-screen edges so they
+          // don't waste a stroke call.
+          const s = typeof l.source === "object" ? l.source : null;
+          const t = typeof l.target === "object" ? l.target : null;
+          if (s && t) {
+            const pad = 40;
+            const onScreen = (n: any) =>
+              n.x >= -pad && n.x <= size.w + pad && n.y >= -pad && n.y <= size.h + pad;
+            if (!onScreen(s) && !onScreen(t)) return 0;
+          }
+          return l.type === "tag" ? 0.5 : 1.2;
+        }}
         linkDirectionalParticles={0}
         // R55f (2026-06-22) — graph density tuning.
         //   Old: cooldownTicks=120, d3AlphaDecay=0.025, d3VelocityDecay=0.3,
@@ -157,8 +180,13 @@ export function GraphView({ data }: { data: GraphData }) {
         //     graph.ts) also reduces edges 584 → ~300, less critical
         //     to also push harder here, but the two together give
         //     a much cleaner layout.
-        cooldownTicks={250}
-        d3AlphaDecay={0.015}
+        // R-I (2026-06-30): 600 nodes + 15k edges bumped the layout
+        //   compute to 5-8s of blank screen. Drop cooldown 250→150
+        //   + speed up alphaDecay 0.015→0.022 so layout settles
+        //   ~2-3s. Combined with viewport culling (linkColor/Width
+        //   guards), frame rate holds 60fps at any zoom.
+        cooldownTicks={150}
+        d3AlphaDecay={0.022}
         d3VelocityDecay={0.25}
         // d3Force prop is supported at runtime by react-force-graph-2d
         // but missing from the published TypeScript types. The `as any`
@@ -178,6 +206,19 @@ export function GraphView({ data }: { data: GraphData }) {
         nodeCanvasObject={(node: any, ctx: CanvasRenderingContext2D, scale: number) => {
           const n = node as GraphNode & { x: number; y: number };
           const r = 14;
+          // R-I (2026-06-30): viewport culling — skip nodes outside the
+          // visible viewport. With 600 nodes + 15k edges the per-frame
+          // cost was ~16ms (60→30fps on M1) just for node draws. Pad
+          // 60px so nodes scrolling into view don't pop.
+          const pad = 60;
+          if (n.x < -pad || n.x > size.w + pad || n.y < -pad || n.y > size.h + pad) {
+            return;
+          }
+          // R-I: zoom-out culling — at far zoom, drop node images and
+          // labels. Circles still draw (color shows structure) but
+          // image+text are 80% of per-node cost.
+          const drawImages = scale > 0.7;
+          const drawLabels = scale > 0.55 || (neighbors && neighbors.has(n.id));
           const dim = isDim(n);
           ctx.globalAlpha = dim ? 0.2 : 1;
 
@@ -193,33 +234,37 @@ export function GraphView({ data }: { data: GraphData }) {
           ctx.strokeStyle = subColor.stroke;
           ctx.stroke();
 
-          const img = n.image ? getImage(n.image) : null;
-          if (img && img.complete && img.naturalWidth > 0) {
-            ctx.save();
-            ctx.beginPath();
-            ctx.arc(n.x, n.y, r - 2 / scale, 0, 2 * Math.PI);
-            ctx.clip();
-            const aspect = img.naturalWidth / img.naturalHeight;
-            const drawSize = (r - 2 / scale) * 2;
-            let dw = drawSize;
-            let dh = drawSize;
-            if (aspect > 1) dh = dw / aspect;
-            else dw = dh * aspect;
-            // R55i: crossOrigin="anonymous" set on the Image, so
-            // canvas is NOT tainted and drawImage works directly.
-            // (Pre-R55i this was wrapped in try/catch as a CORS
-            // workaround — kept the comment for future reference.)
-            ctx.drawImage(img, n.x - dw / 2, n.y - dh / 2, dw, dh);
-            ctx.restore();
+          if (drawImages) {
+            const img = n.image ? getImage(n.image) : null;
+            if (img && img.complete && img.naturalWidth > 0) {
+              ctx.save();
+              ctx.beginPath();
+              ctx.arc(n.x, n.y, r - 2 / scale, 0, 2 * Math.PI);
+              ctx.clip();
+              const aspect = img.naturalWidth / img.naturalHeight;
+              const drawSize = (r - 2 / scale) * 2;
+              let dw = drawSize;
+              let dh = drawSize;
+              if (aspect > 1) dh = dw / aspect;
+              else dw = dh * aspect;
+              // R55i: crossOrigin="anonymous" set on the Image, so
+              // canvas is NOT tainted and drawImage works directly.
+              // (Pre-R55i this was wrapped in try/catch as a CORS
+              // workaround — kept the comment for future reference.)
+              ctx.drawImage(img, n.x - dw / 2, n.y - dh / 2, dw, dh);
+              ctx.restore();
+            }
           }
 
-          const label = n.name;
-          const fontSize = 11 / scale;
-          ctx.font = `${fontSize}px "Noto Sans SC VF", "PingFang SC", "Microsoft YaHei", sans-serif`;
-          ctx.textAlign = "center";
-          ctx.textBaseline = "top";
-          ctx.fillStyle = dim ? "rgba(60, 50, 40, 0.3)" : "rgba(30, 25, 20, 0.85)";
-          ctx.fillText(label, n.x, n.y + r + 3 / scale);
+          if (drawLabels) {
+            const label = n.name;
+            const fontSize = 11 / scale;
+            ctx.font = `${fontSize}px "Noto Sans SC VF", "PingFang SC", "Microsoft YaHei", sans-serif`;
+            ctx.textAlign = "center";
+            ctx.textBaseline = "top";
+            ctx.fillStyle = dim ? "rgba(60, 50, 40, 0.3)" : "rgba(30, 25, 20, 0.85)";
+            ctx.fillText(label, n.x, n.y + r + 3 / scale);
+          }
           ctx.globalAlpha = 1;
         }}
         nodePointerAreaPaint={(node: any, color: string, ctx: CanvasRenderingContext2D) => {

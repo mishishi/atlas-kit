@@ -126,22 +126,44 @@ export function RandomClient({ allCards }: RandomClientProps) {
   }, []);
 
   // Reroll helper — picks a slug from `pool` avoiding history.
+  // R-G (2026-06-30): added `sameSubKind` mode for subKind-aware reroll.
+  // Now 3 modes:
+  //   - false:           any card in pool
+  //   - sameSeries=true: only same series as current card
+  //   - sameSubKind=true: only same subKind as current card
+  // History exclusion is skipped when the candidate pool is too small
+  // (otherwise tiny pools of 2-3 cards would always re-draw the same
+  // one — user complaint: "再换一张" button is a no-op).
   const reroll = useCallback(
-    (sameSeries = false) => {
+    (sameSeries = false, sameSubKind = false) => {
       if (pool.length === 0) return;
       const history = readHistory();
       let candidates = pool;
-      if (sameSeries && slug) {
+      if (slug) {
         const currentCard = pool.find((c) => c.slug === slug);
         if (currentCard) {
-          const sameSeriesPool = pool.filter(
-            (c) => c.series === currentCard.series && c.slug !== slug,
-          );
-          if (sameSeriesPool.length > 0) candidates = sameSeriesPool;
+          if (sameSeries) {
+            const sameSeriesPool = pool.filter(
+              (c) => c.series === currentCard.series && c.slug !== slug,
+            );
+            if (sameSeriesPool.length > 0) candidates = sameSeriesPool;
+          } else if (sameSubKind) {
+            const sameSubKindPool = pool.filter(
+              (c) =>
+                c.kind === currentCard.kind &&
+                c.subKind === currentCard.subKind &&
+                c.slug !== slug,
+            );
+            if (sameSubKindPool.length > 0) candidates = sameSubKindPool;
+          }
         }
       }
-      // Pick first candidate not in history; if all in history, reset.
-      const fresh = candidates.filter((c) => !history.includes(c.slug));
+      // Pool too small (≤2) — history exclusion would make the reroll
+      // effectively deterministic. Always draw from full candidates.
+      const skipHistory = candidates.length <= 2;
+      const fresh = skipHistory
+        ? candidates
+        : candidates.filter((c) => !history.includes(c.slug));
       const chosen =
         fresh.length > 0
           ? fresh[Math.floor(Math.random() * fresh.length)]
@@ -380,6 +402,30 @@ export function RandomClient({ allCards }: RandomClientProps) {
               >
                 <Shuffle className="h-4 w-4" aria-hidden="true" />
                 同系列再抽
+              </button>
+              {/* R-G (2026-06-30): subKind-aware reroll. Disabled when the
+                  current card has no subKind or the (kind, subKind) bucket
+                  has no other cards. Sits next to "同系列" so user can
+                  choose wider (any in series) vs narrower (same subKind). */}
+              <button
+                type="button"
+                onClick={() => reroll(false, true)}
+                disabled={(() => {
+                  const cur = card;
+                  if (!cur || !cur.subKind) return true;
+                  return (
+                    pool.filter(
+                      (c) =>
+                        c.kind === cur.kind &&
+                        c.subKind === cur.subKind &&
+                        c.slug !== cur.slug,
+                    ).length === 0
+                  );
+                })()}
+                className="inline-flex items-center gap-2 min-h-[44px] rounded-md border border-border bg-card px-5 text-sm transition-colors hover:border-gold hover:text-gold-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-40 disabled:hover:border-border disabled:hover:text-foreground"
+              >
+                <Shuffle className="h-4 w-4" aria-hidden="true" />
+                同分类再抽
               </button>
               <Link
                 href={`/cards/${card.slug}`}

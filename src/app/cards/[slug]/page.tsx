@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2, AlertTriangle } from "lucide-react";
-import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap } from "@/lib/data";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2, AlertTriangle, Palette } from "lucide-react";
+import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap, getSamePaletteCards } from "@/lib/data";
 import { getCardFullDims } from "@/lib/server/image-dims";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
@@ -168,6 +168,11 @@ export default async function CardDetail({
   // Reverse references — cards whose text mentions this card. Part
   // of the "知识网络" upgrade (issue 80bf9e4's roadmap).
   const reverseMentions = getReverseMentions(card.slug, 8);
+  // R (2026-06-30): 同色图鉴 — cards sharing palette[0] (the dominant
+  // background swatch). Color is the "mood" axis independent of
+  // subject, so a beige-card reader may enjoy other beige cards
+  // regardless of kind. Rendered in the same grid as 同类推荐.
+  const samePalette = getSamePaletteCards(card, 4);
   // Title → slug map for the body description — turns "提到了 X"
   // into a real <Link> to X's detail page.
   const mentionMap = getAllCardsForMentionMap(card.slug);
@@ -538,6 +543,62 @@ export default async function CardDetail({
           </a>
         </aside>
       </div>
+
+      {/* R (2026-06-30): 同色图鉴 — same palette[0] neighbors. Visual
+          mood is the recommendation axis, independent of subject
+          (kind/subKind). Sits between the description/errata area
+          and the historical timeline so it functions as "if you
+          like how this one looks, also try..." in the discovery flow. */}
+      {samePalette.length > 0 && (
+        <section className="mt-16" data-section="same-palette">
+          <h2 className="font-serif text-2xl font-bold mb-2 flex items-center gap-2">
+            <Palette className="h-5 w-5 text-gold-deep" aria-hidden="true" />
+            同色图鉴
+          </h2>
+          <p className="text-sm text-muted-foreground mb-6">
+            视觉调性相近 ·{" "}
+            <span
+              className="inline-block h-3 w-6 align-middle rounded-sm border border-border"
+              style={{ backgroundColor: card.palette[0] }}
+              aria-hidden="true"
+            />
+            <span className="ml-1.5 font-mono text-[10px] tabular-nums">
+              {card.palette[0]}
+            </span>
+          </p>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 list-none p-0">
+            {samePalette.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={`/cards/${c.slug}`}
+                  className="group block rounded-lg border border-border bg-card overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
+                >
+                  <div
+                    className="relative aspect-[4/5] w-full"
+                    style={{ backgroundColor: c.palette[0] }}
+                  >
+                    <Image
+                      src={c.image_thumb ?? c.image}
+                      alt={c.subtitle || c.title}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-2.5">
+                    <h3 className="font-serif text-sm font-semibold leading-snug group-hover:text-gold-deep transition-colors line-clamp-1">
+                      {c.title}
+                    </h3>
+                    <p className="text-[10px] text-muted-foreground mt-0.5 line-clamp-1">
+                      {KIND_LABELS[c.kind]}
+                    </p>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {/* 历史沿革 — vertical timeline of 5-8 historical milestones,
           sorted oldest → newest. Each node is {year, title, body}

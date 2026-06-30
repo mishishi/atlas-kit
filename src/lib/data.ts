@@ -358,6 +358,41 @@ export function getCardsByTag(tag: string): Card[] {
   return cards.filter((c) => c.tags.includes(tag));
 }
 
+/**
+ * R (2026-06-30): 同色卡 (same-palette cards).
+ *
+ * Returns up to `limit` cards whose `palette[0]` (background swatch)
+ * matches the target's. The visual color is the "mood" axis of the
+ * card — a beige-card user might enjoy other beige cards regardless
+ * of subject. Falls back to all cards if no exact palette match
+ * (palette is per-card so exact match is rare across 600).
+ *
+ * Excludes the target itself. Tie-breaker: same subKind first
+ * (visual + topical match), then random sample.
+ */
+export function getSamePaletteCards(
+  target: Card,
+  limit = 4,
+): Card[] {
+  const bg = target.palette?.[0]?.toLowerCase();
+  if (!bg) return [];
+  const samePalette = cards.filter(
+    (c) => c.slug !== target.slug && c.palette?.[0]?.toLowerCase() === bg,
+  );
+  if (samePalette.length === 0) return [];
+  // Prefer same subKind for stronger visual + topical match.
+  const sameSubKind = samePalette.filter(
+    (c) => c.subKind && c.subKind === target.subKind,
+  );
+  const rest = samePalette.filter(
+    (c) => !c.subKind || c.subKind !== target.subKind,
+  );
+  // Shuffle `rest` so the same target doesn't always show the same
+  // neighbors. Same subKind is not shuffled (rare, deterministic OK).
+  const shuffledRest = [...rest].sort(() => Math.random() - 0.5);
+  return [...sameSubKind, ...shuffledRest].slice(0, limit);
+}
+
 /** Helper: is a series slug valid? */
 export function isValidSeries(slug: string): boolean {
   return slug in SERIES_TYPE_MAP;

@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Clock, Pencil, ArrowRight, Sparkles } from "lucide-react";
+import { Clock, Pencil, ArrowRight, Sparkles, Rss } from "lucide-react";
 import { getAllCards } from "@/lib/data";
 import { displayLabel } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { CopyLinkButton } from "@/components/copy-link-button";
 
 export const metadata = {
   title: "更新日志 · 图鉴社",
@@ -165,6 +166,20 @@ export default function ChangelogPage() {
           </Link>
           , 每个图鉴页底部都有「勘误」入口。
         </p>
+        {/* L (2026-06-30): RSS / 订阅 pill. Sits at the top of the
+            changelog so visitors who like our update cadence can
+            subscribe without a separate page. Rss icon + label +
+            "复制链接" inline copy. */}
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <a
+            href="/feed.xml"
+            className="inline-flex min-h-[36px] items-center gap-2 rounded-full border border-gold bg-gold/10 px-4 text-sm text-gold-deep hover:bg-gold/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+          >
+            <Rss className="h-3.5 w-3.5" aria-hidden="true" />
+            订阅 RSS
+          </a>
+          <CopyLinkButton />
+        </div>
       </header>
 
       <div className="relative">

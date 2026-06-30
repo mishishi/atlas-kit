@@ -7,6 +7,7 @@ import { TagFilter } from "@/components/tag-filter";
 import { CardGrid } from "@/components/card-grid";
 import { CardPreview } from "@/components/card-preview";
 import { Tag } from "@/components/tag";
+import { SortChips } from "@/components/sort-chips";
 
 export const metadata = {
   title: "全部图鉴 · 图鉴社",
@@ -98,8 +99,8 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
     { key: "score", label: "评分" },
     { key: "seriesNo", label: "系列号" },
   ];
-  const activeSort = SORT_OPTIONS.some((s) => s.key === searchParams.sort)
-    ? searchParams.sort
+  const activeSort: string = SORT_OPTIONS.some((s) => s.key === searchParams.sort)
+    ? (searchParams.sort as string)
     : "newest";
   const sortedCards = [...filteredCards].sort((a, b) => {
     switch (activeSort) {
@@ -274,42 +275,18 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
 
       {/* Sort chips — only in filtered view. R60plus (2026-06-30) */}
       {activeKind && sortedCards.length > 1 && (
-        <nav
-          aria-label="排序方式"
-          className="mb-4 -mx-4 px-4 sm:mx-0 sm:px-0"
-        >
-          <div className="flex items-center gap-3">
-            <span className="text-xs uppercase tracking-[0.15em] text-muted-foreground shrink-0">
-              排序
-            </span>
-            <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
-              {SORT_OPTIONS.map((s) => {
-                const params = new URLSearchParams();
-                if (activeKind) params.set("kind", activeKind);
-                if (activeSubKind) params.set("subKind", activeSubKind);
-                if (activeTag) params.set("tag", activeTag);
-                if (s.key !== "newest") params.set("sort", s.key);
-                const href = `/cards?${params.toString()}`;
-                const isActive = activeSort === s.key;
-                return (
-                  <li key={s.key}>
-                    <Link
-                      href={href}
-                      aria-current={isActive ? "page" : undefined}
-                      className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
-                        isActive
-                          ? "border-gold bg-cream text-gold-deep font-medium"
-                          : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
-                      }`}
-                    >
-                      {s.label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </nav>
+        <SortChips
+          options={SORT_OPTIONS}
+          activeSort={activeSort}
+          buildHref={(key) => {
+            const params = new URLSearchParams();
+            if (activeKind) params.set("kind", activeKind);
+            if (activeSubKind) params.set("subKind", activeSubKind);
+            if (activeTag) params.set("tag", activeTag);
+            if (key !== "newest") params.set("sort", key);
+            return `/cards?${params.toString()}`;
+          }}
+        />
       )}
 
       {/* Tag filter row — only in filtered view, only when tags exist */}

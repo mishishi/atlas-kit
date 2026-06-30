@@ -7,6 +7,7 @@ import { getCardFullDims } from "@/lib/server/image-dims";
 import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
+import { getEditorialNote } from "@/lib/editorial";
 import { StarButton } from "@/components/star-button";
 import { LinkedText } from "@/components/linked-text";
 import { CardNav } from "@/components/card-nav";
@@ -84,6 +85,12 @@ export default async function CardDetail({
   // request time so the "查看原图 (W×H)" label is accurate. SSG
   // awaits this once per card, then memoizes in data.ts.
   const fullDims = await getCardFullDims(card.slug);
+
+  // M (2026-06-30): editor's "为什么收录这条" note. 30/600 cards
+  // have one. Hand-written in data/editorial-notes.json. Renders
+  // between description and quote (above the technical meta blocks)
+  // so it's the first thing readers see after the lede.
+  const editorialNote = getEditorialNote(card.slug);
 
   // R34 Day 3 (2026-06-17): 翻图录 mode — fullscreen image-first
   // browsing. Triggered by `?mode=flip` on the URL. Renders BEFORE
@@ -332,6 +339,30 @@ export default async function CardDetail({
           <p className="text-base leading-relaxed text-foreground/90">
             <LinkedText text={card.description} titleToSlug={mentionMap} />
           </p>
+
+          {/* M (2026-06-30): editor's "为什么收录这条". 30/600 cards
+              carry a 1-2 sentence hand-written note. Visually a
+              cream blockquote with a small "EDITOR" eyebrow, sits
+              between description and quote so it reads as the
+              editor's voice in conversation with the article. */}
+          {editorialNote && (
+            <aside
+              className="my-6 border-l-2 border-gold-deep bg-cream/40 px-4 py-3 rounded-r-md"
+              data-section="editorial-note"
+            >
+              <p className="text-[10px] uppercase tracking-[0.18em] text-gold-deep font-medium mb-1.5">
+                为什么收录这条 · editor
+              </p>
+              <p className="font-serif text-sm text-foreground/85 leading-relaxed">
+                {editorialNote.why}
+              </p>
+              {editorialNote.vibe && (
+                <p className="mt-2 text-xs italic text-muted-foreground">
+                  {editorialNote.vibe}
+                </p>
+              )}
+            </aside>
+          )}
 
           {/* 引文 — pull-quote style. 1-2 句权威引文, 标注来源.
               Goes right after the description as a visual breath,

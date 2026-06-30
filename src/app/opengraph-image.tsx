@@ -34,7 +34,7 @@ const CREAM_DEEP = "#EBE3D2";
 // timeout / CORS from serverless). Pure-text OG is more reliable
 // across hosting changes; if we want thumbnails back, embed as
 // base64 in cards.json (R60+).
-const STATS = "391 张图鉴 · 12 个分类 · AI 一键生成";
+const STATS = "600 张图鉴 · 26 个分类 · AI 一键生成";
 
 export default async function Image() {
   return new ImageResponse(

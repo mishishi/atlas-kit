@@ -7,7 +7,7 @@ import { FavoritesCta } from "@/components/favorites-cta";
 
 export const metadata = {
   title: "索引 · 图鉴社",
-  description: "图鉴社 60 张图鉴的多种索引视图: 按字数、按系列、按类型。",
+  description: "图鉴社 600 张图鉴的多种索引视图: 按字数、按系列、按类型。",
 };
 
 /**
@@ -177,7 +177,7 @@ export default function AllPage() {
             />
             按类型
           </h2>
-          <p className="text-sm text-muted-foreground mb-4">12 个分类</p>
+          <p className="text-sm text-muted-foreground mb-4">{THEME_TYPES.length} 个分类</p>
           <ul className="grid grid-cols-2 gap-2 list-none p-0">
             {orderedKinds.map((kind) => {
               const count = byKind.get(kind)!.length;

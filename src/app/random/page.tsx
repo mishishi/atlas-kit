@@ -20,7 +20,7 @@ import { RandomClient } from "@/components/random-client";
 
 export const metadata: Metadata = {
   title: "随机一张 · 图鉴社",
-  description: "从 60 张图鉴里随机抽一张看看,支持按类型筛选。",
+  description: "从 600 张图鉴里随机抽一张看看,支持按类型筛选。",
 };
 
 export default function RandomPage() {

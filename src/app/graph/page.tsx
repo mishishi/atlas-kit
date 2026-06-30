@@ -19,7 +19,7 @@ import { GraphViewToggle } from "@/components/graph-view-toggle";
 
 export const metadata = {
   title: "图谱 · 图鉴社",
-  description: "60 张图鉴的知识图谱, 边 = 描述互引 + 共享标签. 维基没有的 image-first graph.",
+  description: "600 张图鉴的知识图谱, 边 = 描述互引 + 共享标签. 维基没有的 image-first graph.",
 };
 
 export default function GraphPage() {

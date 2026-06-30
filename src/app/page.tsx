@@ -45,9 +45,9 @@ export default function Home({ searchParams }: HomeProps) {
                 知识整理 · 信息归档 · <br className="hidden md:block" />
                 <span className="text-gold-deep">图鉴式展示</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-                60 张中文图鉴 · 12 个主题类型 · 像翻一页百科书的卡片集。
-            </p>
+<p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
+                {allCards.length} 张中文图鉴 · {THEME_TYPES.length} 个主题类型 · 像翻一页百科书的卡片集。
+              </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/create"

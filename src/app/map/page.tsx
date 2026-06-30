@@ -3,9 +3,12 @@ import { MapPin } from "lucide-react";
 import { getAllCards } from "@/lib/data";
 import { MapView } from "@/components/map-view";
 
+const _cards = getAllCards();
+const _geoCount = _cards.filter((c) => c.coords?.lat && c.coords?.lng).length;
+
 export const metadata: Metadata = {
   title: "地图 · 图鉴社",
-  description: "在地图上看图鉴社的地理图鉴 — 12 张有坐标的图鉴分布在中国大地。",
+  description: `在地图上看图鉴社的地理图鉴 — ${_geoCount} 张有坐标的图鉴分布在中国大地。`,
   // Round 27 (2026-06-17): explicit OG image for /map shares.
   openGraph: {
     title: "地图 · 图鉴社",

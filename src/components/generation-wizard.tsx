@@ -534,6 +534,39 @@ export function GenerationWizard() {
                   })}
                 </div>
               </div>
+
+              {/* N (2026-06-30): AI 一键决定按钮. 仅在 topic + kind
+                  选完时可用. 点了之后: 用 recommendations[0] 填 seriesSlug,
+                  palette 设 'auto', 直接跳到 step 3 (palette). 省 1 步
+                  (palette 也 auto). 总步数 4 → 2 步完成. 不动原 4 步
+                  流程, 给 user 一个 fast path. */}
+              {kind && topic.trim().length > 0 && (
+                <div className="rounded-md border border-dashed border-gold/40 bg-gold/5 p-4 flex items-center justify-between gap-3 flex-wrap">
+                  <div>
+                    <p className="text-sm font-medium text-foreground flex items-center gap-1.5">
+                      <Sparkles className="h-3.5 w-3.5 text-gold-deep" aria-hidden="true" />
+                      AI 帮你决定系列 + 配色
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      跳过手动选系列/配色, 用 AI 推荐直接进入生成
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const top = recommendations[0];
+                      if (top) setSeriesSlug(top.series.slug);
+                      setPalette("auto");
+                      setStep(3);
+                    }}
+                    className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md bg-gold-deep px-5 text-sm font-medium text-cream hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                  >
+                    <Sparkles className="h-4 w-4" aria-hidden="true" />
+                    一键 AI 决定
+                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         )}

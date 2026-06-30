@@ -9,7 +9,13 @@
 // (so the script is idempotent and re-runnable).
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { callMmxSync } from "./mmx-client.mjs";
+
+// draft-history needs the FULL JSON envelope (not --quiet) so it can extract
+// the .text field from the M2.7 response. See extractResponseText below.
+// NOTE: --quiet=false to get the envelope; otherwise M2.7 returns empty string.
+const SYSTEM_PROMPT = `你是图鉴社历史编辑。严格只输出 JSON 数组 [{year, title, body}]。year 用字符串, body 30-60 字。`;
+const callMmx = (prompt) => callMmxSync(prompt, SYSTEM_PROMPT, { quiet: false });
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
@@ -51,8 +57,6 @@ const cardsPathIdx = args.indexOf("--cards-path");
 const cardsPath = cardsPathIdx >= 0 ? args[cardsPathIdx + 1] : path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
-const SYSTEM_PROMPT = `你是图鉴社历史编辑。严格只输出 JSON 数组 [{year, title, body}]。year 用字符串, body 30-60 字。`;
-
 function userPrompt(card) {
   // Round 30: 节点数从 5-8 砍到 3-5。M2.7 + thinking 模式会吃光
   // 4096 tokens,导致 text 字段没输出。3-5 节点足够紧凑,thinking
@@ -71,45 +75,7 @@ function userPrompt(card) {
 - 只输出 JSON 数组, 没有任何其他文字`;
 }
 
-function callMmx(prompt) {
-  // On Windows, mmx is a .ps1 PowerShell shim, not a .exe. Node's
-  // execFile doesn't auto-resolve .ps1 files via PATH. Use the full
-  // path with the right invocation. PowerShell executes the .ps1
-  // directly when given the -File arg.
-  //
-  // The mmx CLI also doesn't have --system-prompt, it has --system.
-  //
-  // Round 30 fix: don't pass --quiet. M2.7 emits a JSON envelope with
-  // {content:[{type:"thinking",...},{type:"text",...}]}; with --quiet
-  // the CLI silently returns empty string and the process hangs until
-  // our timeout. Without --quiet we get the full JSON envelope, which
-  // we parse below to extract the .text field.
-  const isWin = process.platform === "win32";
-  const mmxPath = isWin
-    ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1"
-    : "mmx";
-  const args = [
-    "text",
-    "chat",
-    "--non-interactive",
-    "--message",
-    prompt,
-    "--system",
-    SYSTEM_PROMPT,
-  ];
-  if (isWin) {
-    return execFileSync(
-      "powershell.exe",
-      ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 180_000 },
-    );
-  }
-  return execFileSync(mmxPath, args, {
-    encoding: "utf8",
-    maxBuffer: 50 * 1024 * 1024,
-    timeout: 180_000,
-  });
-}
+function callMmxLegacy() {} // replaced by import above
 
 /**
  * Extract the model's text content from a mmx response.

@@ -5,7 +5,7 @@
 // any card with <2 tags.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { callMmxSync } from "./mmx-client.mjs";
 
 const cardsPath = path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
@@ -18,13 +18,7 @@ const SYSTEM_PROMPT = `你是图鉴社 tag 编辑, 给每张卡片写 4-6 个 cr
 - 跟已有 tag 不要重复, 不要编号, 不要 markdown, 输出 JSON 数组`;
 
 function callMmx(prompt) {
-  const mmxPath = "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1";
-  const args = ["text", "chat", "--non-interactive", "--quiet", "--message", prompt, "--system", SYSTEM_PROMPT];
-  return execFileSync(
-    "powershell.exe",
-    ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-    { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 60_000 },
-  );
+  return callMmxSync(prompt, SYSTEM_PROMPT, { quiet: true });
 }
 
 const targets = cards.filter((c) => !c.tags || c.tags.length < 2);

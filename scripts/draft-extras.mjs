@@ -10,7 +10,7 @@
 // Skips cards that already have both fields.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { callMmxSync } from "./mmx-client.mjs";
 
 const args = process.argv.slice(2);
 const cardsPathIdx = args.indexOf("--cards-path");
@@ -33,17 +33,7 @@ function userPrompt(card) {
 }
 
 function callMmx(prompt) {
-  const isWin = process.platform === "win32";
-  const mmxPath = isWin ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1" : "mmx";
-  const args = ["text", "chat", "--non-interactive", "--quiet", "--message", prompt, "--system", SYSTEM_PROMPT];
-  if (isWin) {
-    return execFileSync(
-      "powershell.exe",
-      ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 90_000 }
-    );
-  }
-  return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 90_000 });
+  return callMmxSync(prompt, SYSTEM_PROMPT, { quiet: true });
 }
 
 function extractJsonObject(text) {

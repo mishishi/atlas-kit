@@ -5,7 +5,7 @@
 // "世界三大无攻击性犬种"). mmx text chat, ~$0.05/卡.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { callMmxSync } from "./mmx-client.mjs";
 
 const args = process.argv.slice(2);
 const includeSlugs = (() => {
@@ -27,17 +27,7 @@ const SYSTEM_PROMPT = `你是图鉴社编辑, 为图鉴写一句 4-12 字中文�
 - 只输出短语本身, 不要 markdown, 不要解释`;
 
 function callMmx(prompt) {
-  const isWin = process.platform === "win32";
-  const mmxPath = isWin ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1" : "mmx";
-  const args = ["text", "chat", "--non-interactive", "--quiet", "--message", prompt, "--system", SYSTEM_PROMPT];
-  if (isWin) {
-    return execFileSync(
-      "powershell.exe",
-      ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 60_000 }
-    );
-  }
-  return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 60_000 });
+  return callMmxSync(prompt, SYSTEM_PROMPT, { quiet: true });
 }
 
 let targets = cards.filter((c) => !c.tagline || !c.tagline.trim());

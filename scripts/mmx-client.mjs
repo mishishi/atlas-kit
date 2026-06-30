@@ -12,20 +12,24 @@
  *     each duplicate their own callMmx() — no shared retry logic, no
  *     shared observability.
  *
- * Usage:
- *   import { callMmx, withRetry, MmxError } from "./mmx-client.mjs";
+ * Usage (async, for new code):
+ *   import { callMmx, callMmxJson, MmxError } from "./mmx-client.mjs";
  *   const text = await callMmx({ message: "...", system: "..." });
+ *
+ * Usage (sync drop-in, for existing scripts):
+ *   // At the top of any old script:
+ *   import { callMmxSync } from "./mmx-client.mjs";
+ *   globalThis.callMmx = (prompt, system) => callMmxSync(prompt, system);
+ *
+ *   // Then existing callMmx(prompt) usages Just Work, with retry+backoff.
  *
  * Env:
  *   MMX_MAX_RETRIES (default 3) — total attempts before giving up
  *   MMX_TIMEOUT_MS (default 90000) — per-call timeout
  *   MMX_BACKOFF_BASE_MS (default 2000) — base backoff for retry
  */
-import { execFile } from "node:child_process";
-import { promisify } from "node:util";
+import { execFile, execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
-
-const execFileP = promisify(execFile);
 
 const MMX_PATH = "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1";
 const MAX_RETRIES = parseInt(process.env.MMX_MAX_RETRIES ?? "3", 10);
@@ -42,65 +46,133 @@ export class MmxError extends Error {
   }
 }
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+function sleepSync(ms) {
+  // Synchronous sleep using Atomics.wait — works in main thread.
+  const sab = new SharedArrayBuffer(4);
+  const view = new Int32Array(sab);
+  Atomics.wait(view, 0, 0, ms);
 }
 
 function computeBackoff(attempt) {
-  // Exponential with jitter: base * 2^attempt + 25% randomness
   const base = BACKOFF_BASE_MS * Math.pow(2, attempt);
   const jitter = base * 0.25 * (Math.random() * 2 - 1);
   return Math.round(base + jitter);
 }
 
 function isTransient(stderr) {
-  // 529 overloaded, ETIMEDOUT, ECONNRESET, ECONNREFUSED, socket hang up
-  // Also: any exit code that's not a client-side validation error.
-  // mmx errors that should NOT be retried: 401/403 (auth), 400 (bad input).
   const transient = /529|overloaded|ETIMEDOUT|ECONNRESET|ECONNREFUSED|socket hang up|timeout|ETIMEOUT|EPIPE|ENOTFOUND|aborted|terminated|killed/i.test(stderr);
   const fatal = /401|403|400|invalid|unauthorized|forbidden|API key|argument|usage/i.test(stderr);
   return transient && !fatal;
 }
 
-/**
- * Call mmx text chat with retry + backoff.
- * Returns the raw stdout string on success.
- * Throws MmxError after MAX_RETRIES exhausted.
- */
-export async function callMmx({ message, system, model, maxTokens = 4096, temperature, quiet = true }) {
-  if (!existsSync(MMX_PATH)) {
-    throw new MmxError(`mmx not found at ${MMX_PATH}`);
-  }
+function buildArgs({ message, system, model, maxTokens, temperature, quiet, format }) {
   const args = ["text", "chat", "--non-interactive"];
   if (quiet) args.push("--quiet");
   if (model) args.push("--model", model);
   if (maxTokens) args.push("--max-tokens", String(maxTokens));
   if (temperature != null) args.push("--temperature", String(temperature));
   if (system) args.push("--system", system);
+  if (format) args.push("--format", format);
   args.push("--message", message);
+  return args;
+}
 
+/**
+ * Synchronous drop-in replacement for old `callMmx(prompt)` / `callMmx(prompt, system)` calls.
+ * Same signature, same return value (raw stdout string), but with retry+backoff.
+ * Returns string on success. Throws on failure after MAX_RETRIES exhausted.
+ *
+ * IMPORTANT: defaults to `quiet: true` for backward compat with scripts that
+ * expect raw text output (fix-descriptions, draft-sources, draft-history).
+ * BUT scripts that parse mmx JSON envelope (draft-history.mjs's extractResponseText)
+ * must pass `quiet: false` to get the full JSON envelope — without it M2.7
+ * emits empty string and the process hangs.
+ *
+ * Use this for migrating legacy batch scripts without converting them to async.
+ */
+export function callMmxSync(prompt, system, options = {}) {
+  if (!existsSync(MMX_PATH)) {
+    throw new MmxError(`mmx not found at ${MMX_PATH}`);
+  }
+  const args = buildArgs({
+    message: prompt,
+    system,
+    quiet: options.quiet ?? true,
+    format: options.format,
+  });
   const start = Date.now();
   let lastError = null;
 
   for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
     try {
-      const { stdout } = await execFileP(
-        "powershell.exe",
-        ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", MMX_PATH, ...args],
-        { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: TIMEOUT_MS },
-      );
+      // Cross-platform: powershell.exe on Windows, mmx directly on Linux/macOS
+      // (mmx.ps1 is a Windows-specific script). Local dev may be either.
+      const isWin = process.platform === "win32";
+      const stdout = isWin
+        ? execFileSync(
+            "powershell.exe",
+            ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", MMX_PATH, ...args],
+            { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: TIMEOUT_MS },
+          )
+        : execFileSync(MMX_PATH.replace(/\.ps1$/, ""), args, {
+            encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: TIMEOUT_MS,
+          });
       return stdout;
     } catch (e) {
       lastError = e;
       const stderr = e.stderr?.toString() ?? e.message ?? "";
       const transient = isTransient(stderr);
-      // Always log retry decision
       console.warn(`[mmx] attempt ${attempt + 1}/${MAX_RETRIES} failed (${e.code ?? e.message?.slice(0, 80) ?? "?"})${transient ? " [transient, will retry]" : " [fatal]"}`);
       if (!transient) break;
       if (attempt < MAX_RETRIES - 1) {
         const wait = computeBackoff(attempt);
         console.warn(`[mmx] backing off ${wait}ms...`);
-        await sleep(wait);
+        sleepSync(wait);
+      }
+    }
+  }
+
+  throw new MmxError(
+    `mmx call failed after ${MAX_RETRIES} attempts: ${lastError?.message?.slice(0, 200) ?? "unknown"}`,
+    { attempts: MAX_RETRIES, lastError, elapsedMs: Date.now() - start },
+  );
+}
+
+/**
+ * Async version — preferred for new code. Returns the raw stdout string.
+ * Throws MmxError after MAX_RETRIES exhausted.
+ */
+export async function callMmx({ message, system, model, maxTokens = 4096, temperature, quiet = true }) {
+  if (!existsSync(MMX_PATH)) {
+    throw new MmxError(`mmx not found at ${MMX_PATH}`);
+  }
+  const args = buildArgs({ message, system, model, maxTokens, temperature, quiet });
+  const start = Date.now();
+  let lastError = null;
+
+  for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+    try {
+      const isWin = process.platform === "win32";
+      const { stdout } = await new Promise((resolve, reject) => {
+        const child = isWin
+          ? execFile("powershell.exe", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", MMX_PATH, ...args],
+              { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: TIMEOUT_MS },
+              (err, stdout) => err ? reject(err) : resolve({ stdout }))
+          : execFile(MMX_PATH.replace(/\.ps1$/, ""), args,
+              { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: TIMEOUT_MS },
+              (err, stdout) => err ? reject(err) : resolve({ stdout }));
+      });
+      return stdout;
+    } catch (e) {
+      lastError = e;
+      const stderr = e.stderr?.toString() ?? e.message ?? "";
+      const transient = isTransient(stderr);
+      console.warn(`[mmx] attempt ${attempt + 1}/${MAX_RETRIES} failed (${e.code ?? e.message?.slice(0, 80) ?? "?"})${transient ? " [transient, will retry]" : " [fatal]"}`);
+      if (!transient) break;
+      if (attempt < MAX_RETRIES - 1) {
+        const wait = computeBackoff(attempt);
+        console.warn(`[mmx] backing off ${wait}ms...`);
+        await new Promise((resolve) => setTimeout(resolve, wait));
       }
     }
   }

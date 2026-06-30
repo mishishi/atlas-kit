@@ -5,7 +5,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { callMmxSync } from "./mmx-client.mjs";
 
 const cardsPath = path.resolve("data/cards.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
@@ -21,17 +21,7 @@ const SYSTEM = `你是图鉴社 (Atlas Kit) 的标签编辑, 专门为图鉴卡�
 - 只输出 JSON 数组, 不要 markdown, 不要解释`;
 
 function callMmx(prompt) {
-  const isWin = process.platform === "win32";
-  const mmxPath = isWin ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1" : "mmx";
-  const args = ["text", "chat", "--non-interactive", "--quiet", "--message", prompt, "--system", SYSTEM];
-  if (isWin) {
-    return execFileSync(
-      "powershell.exe",
-      ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 60_000 },
-    );
-  }
-  return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 60_000 });
+  return callMmxSync(prompt, SYSTEM, { quiet: true });
 }
 
 function extractArray(text) {

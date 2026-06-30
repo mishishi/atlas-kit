@@ -4,7 +4,7 @@
 // have sources. ~$0.20 total via mmx.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { callMmxSync } from "./mmx-client.mjs";
 
 const args = process.argv.slice(2);
 const cardsPathIdx = args.indexOf("--cards-path");
@@ -25,22 +25,9 @@ function userPrompt(card) {
 - 只输出 JSON 数组, 没有任何其他文字`;
 }
 
-function callMmx(prompt) {
-  // Round 30 fix: --quiet causes M2.7 to emit empty output and hang.
-  // Parse the JSON envelope to extract .text. See draft-history.mjs
-  // for full rationale.
-  const isWin = process.platform === "win32";
-  const mmxPath = isWin ? "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1" : "mmx";
-  const args = ["text", "chat", "--non-interactive", "--message", prompt, "--system", SYSTEM_PROMPT];
-  if (isWin) {
-    return execFileSync(
-      "powershell.exe",
-      ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", mmxPath, ...args],
-      { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 180_000 },
-    );
-  }
-  return execFileSync(mmxPath, args, { encoding: "utf8", maxBuffer: 50 * 1024 * 1024, timeout: 180_000 });
-}
+// Round 30 fix: --quiet causes M2.7 to emit empty output and hang.
+// Parse the JSON envelope to extract .text. See draft-history.mjs for rationale.
+const callMmx = (prompt) => callMmxSync(prompt, SYSTEM_PROMPT, { quiet: false });
 
 function extractResponseText(raw) {
   // Same as draft-history.mjs: extract .text from M2.7 envelope,

@@ -35,7 +35,7 @@ export const metadata = {
 };
 
 interface SearchProps {
-  searchParams: { q?: string; kind?: string; subKind?: string };
+  searchParams: { q?: string; kind?: string; subKind?: string; sort?: string };
 }
 
 // When the user's query yields no results, suggest 4 alternative searches
@@ -83,10 +83,36 @@ export default function SearchPage({ searchParams }: SearchProps) {
       ? requestedSubKind
       : null;
   const baseResults = query ? searchCards(query) : [];
-  const results = baseResults.filter((c) => {
+  const filteredResults = baseResults.filter((c) => {
     if (activeKind && c.kind !== activeKind) return false;
     if (activeSubKind && c.subKind !== activeSubKind) return false;
     return true;
+  });
+
+  // R60plus (2026-06-30): sort results. Default 'relevance' for fuzzy
+  // match (Fuse.js returns score-ordered); other options apply
+  // when user wants explicit ordering.
+  const SORT_OPTIONS = [
+    { key: "relevance", label: "相关" },
+    { key: "newest", label: "最新" },
+    { key: "oldest", label: "最早" },
+    { key: "score", label: "评分" },
+  ];
+  const activeSort = SORT_OPTIONS.some((s) => s.key === searchParams.sort)
+    ? searchParams.sort
+    : "relevance";
+  const results = [...filteredResults].sort((a, b) => {
+    switch (activeSort) {
+      case "newest":
+        return b.createdAt.localeCompare(a.createdAt);
+      case "oldest":
+        return a.createdAt.localeCompare(b.createdAt);
+      case "score":
+        return (b.score ?? 0) - (a.score ?? 0);
+      case "relevance":
+      default:
+        return 0; // preserve Fuse.js score order
+    }
   });
   const popularSuggestions = getDiverseFeatured(4);
   const recentCards = getRecentCards(6);
@@ -223,6 +249,46 @@ export default function SearchPage({ searchParams }: SearchProps) {
             </nav>
           )}
         </>
+      )}
+
+      {/* R60plus (2026-06-30): sort chips for search results */}
+      {query && results.length > 1 && (
+        <nav
+          aria-label="排序方式"
+          className="mb-4 -mx-4 px-4 sm:mx-0 sm:px-0"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-xs uppercase tracking-[0.15em] text-muted-foreground shrink-0">
+              排序
+            </span>
+            <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+              {SORT_OPTIONS.map((s) => {
+                const params = new URLSearchParams();
+                params.set("q", query);
+                if (activeKind) params.set("kind", activeKind);
+                if (activeSubKind) params.set("subKind", activeSubKind);
+                if (s.key !== "relevance") params.set("sort", s.key);
+                const href = `/search?${params.toString()}`;
+                const isActive = activeSort === s.key;
+                return (
+                  <li key={s.key}>
+                    <Link
+                      href={href}
+                      aria-current={isActive ? "page" : undefined}
+                      className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                        isActive
+                          ? "border-gold bg-cream text-gold-deep font-medium"
+                          : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                      }`}
+                    >
+                      {s.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </nav>
       )}
 
       {query ? (

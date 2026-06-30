@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/safe-build.mjs",
+    "build:raw": "next build",
     "start": "next start",
     "lint": "next lint",
-    "analyze": "ANALYZE=true next build",
+    "analyze": "node scripts/safe-build.mjs --no-clear && ANALYZE=true next build",
     "check-image": "node scripts/check-image.mjs"
   },
   "dependencies": {

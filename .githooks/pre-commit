@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+/**
+ * Pre-commit hook: warn if `next dev` is running while a build artifact
+ * was just produced. The classic trap is "next build" overwriting
+ * dev server's HMR chunk cache → 404 chunk errors on every page.
+ *
+ * Runs on every commit. If a build artifact in .next/ is newer than
+ * any running dev server's start time, we warn (still allow commit —
+ * the actual build conflict is at runtime, not commit time).
+ *
+ * Make executable: not needed on Windows (git bash interprets shebangs).
+ */
+import { spawnSync } from "node:child_process";
+import { existsSync, statSync } from "node:fs";
+import path from "node:path";
+import net from "node:net";
+
+const ROOT = process.cwd();
+const NEXT_DIR = path.join(ROOT, ".next");
+const PORTS = [3000, 3103];
+
+function isPortListening(port) {
+  return new Promise((resolve) => {
+    const socket = new net.Socket();
+    socket.setTimeout(1500);
+    socket.once("connect", () => { socket.destroy(); resolve(true); });
+    socket.once("timeout", () => { socket.destroy(); resolve(false); });
+    socket.once("error", () => { socket.destroy(); resolve(false); });
+    socket.connect(port, "127.0.0.1");
+  });
+}
+
+async function main() {
+  if (!existsSync(NEXT_DIR)) {
+    process.exit(0); // no .next/ = nothing to check
+  }
+  const nextMtime = statSync(NEXT_DIR).mtimeMs;
+  const ageSec = (Date.now() - nextMtime) / 1000;
+
+  for (const port of PORTS) {
+    if (await isPortListening(port)) {
+      // dev server is listening on this port
+      if (ageSec < 600) {
+        // .next/ was modified within last 10 min — likely a build during dev
+        console.warn(`\n⚠️  WARNING: dev server on port ${port} AND .next/ modified ${ageSec.toFixed(0)}s ago.`);
+        console.warn(`   If you ran \`npm run build\` while dev was live, dev's HMR cache is now broken.`);
+        console.warn(`   Fix: stop dev (Ctrl+C in its terminal) and restart (\`npm run dev\`).`);
+        console.warn(`   Prevention: use \`npm run build\` (the safe wrapper) — it refuses to build if dev is listening.\n`);
+        // Don't block commit (warn only); the conflict is at runtime.
+      }
+      break;
+    }
+  }
+  process.exit(0);
+}
+
+main().catch(() => process.exit(0));

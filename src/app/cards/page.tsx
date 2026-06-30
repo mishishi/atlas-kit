@@ -30,7 +30,7 @@ export const metadata = {
  */
 
 interface CardsPageProps {
-  searchParams: { kind?: string; tag?: string; subKind?: string };
+  searchParams: { kind?: string; tag?: string; subKind?: string; sort?: string };
 }
 
 const PREVIEW_PER_KIND = 4;
@@ -86,6 +86,34 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
     }
     return [];
   })();
+
+  // R60plus (2026-06-30): sort options. Default 'newest' so the most
+  // recently added cards surface first (matters when 600 cards are
+  // added in batches of 35 — users want to see the new ones).
+  // Valid values: 'newest' (default) | 'oldest' | 'score' | 'seriesNo'.
+  // Unknown → 'newest'.
+  const SORT_OPTIONS = [
+    { key: "newest", label: "最新" },
+    { key: "oldest", label: "最早" },
+    { key: "score", label: "评分" },
+    { key: "seriesNo", label: "系列号" },
+  ];
+  const activeSort = SORT_OPTIONS.some((s) => s.key === searchParams.sort)
+    ? searchParams.sort
+    : "newest";
+  const sortedCards = [...filteredCards].sort((a, b) => {
+    switch (activeSort) {
+      case "oldest":
+        return a.createdAt.localeCompare(b.createdAt);
+      case "score":
+        return (b.score ?? 0) - (a.score ?? 0);
+      case "seriesNo":
+        return a.seriesNo.localeCompare(b.seriesNo);
+      case "newest":
+      default:
+        return b.createdAt.localeCompare(a.createdAt);
+    }
+  });
   const kindLabel = activeKind ? KIND_LABELS[activeKind] : null;
   // Top tags from the post-kind+subKind-filter set (or global if no kind filter)
   const topTags = activeKind
@@ -137,7 +165,7 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
               )}
               ，共
               <span className="font-medium text-foreground mx-1 tabular-nums">
-                {filteredCards.length}
+                {sortedCards.length}
               </span>
               张。
             </>
@@ -244,6 +272,46 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
         </nav>
       )}
 
+      {/* Sort chips — only in filtered view. R60plus (2026-06-30) */}
+      {activeKind && sortedCards.length > 1 && (
+        <nav
+          aria-label="排序方式"
+          className="mb-4 -mx-4 px-4 sm:mx-0 sm:px-0"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-xs uppercase tracking-[0.15em] text-muted-foreground shrink-0">
+              排序
+            </span>
+            <ul className="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto sm:overflow-visible list-none p-0 scrollbar-editorial">
+              {SORT_OPTIONS.map((s) => {
+                const params = new URLSearchParams();
+                if (activeKind) params.set("kind", activeKind);
+                if (activeSubKind) params.set("subKind", activeSubKind);
+                if (activeTag) params.set("tag", activeTag);
+                if (s.key !== "newest") params.set("sort", s.key);
+                const href = `/cards?${params.toString()}`;
+                const isActive = activeSort === s.key;
+                return (
+                  <li key={s.key}>
+                    <Link
+                      href={href}
+                      aria-current={isActive ? "page" : undefined}
+                      className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                        isActive
+                          ? "border-gold bg-cream text-gold-deep font-medium"
+                          : "border-border bg-card text-muted-foreground hover:text-foreground hover:border-gold"
+                      }`}
+                    >
+                      {s.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </nav>
+      )}
+
       {/* Tag filter row — only in filtered view, only when tags exist */}
       {activeKind && topTags.length > 0 && (
         <div className="mb-6">
@@ -253,7 +321,7 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
 
       {/* Filtered view (single kind): full grid */}
       {activeKind ? (
-        filteredCards.length === 0 ? (
+        sortedCards.length === 0 ? (
           <div className="rounded-lg border border-dashed border-border bg-card p-12 text-center">
             <p className="text-muted-foreground">
               {activeSubKind && activeTag
@@ -289,7 +357,7 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
           </div>
         ) : (
           <ul className={`grid ${FULL_GRID_COLS} gap-4 list-none p-0`}>
-            {filteredCards.map((c) => (
+            {sortedCards.map((c) => (
               <li key={c.slug} className="h-full">
                 <CardPreview card={c} />
               </li>

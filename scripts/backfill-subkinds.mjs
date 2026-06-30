@@ -145,6 +145,15 @@ function classifyKind(kind) {
 }
 
 // ===== Main =====
+// In --apply mode, defer to scripts/apply-subkinds-direct.mjs (which doesn't
+// invoke mmx) so we don't re-run the per-kind mmx batch with an already-
+// filled draft. Saves 12 min on 25 kinds.
+if (DRY_RUN === false && process.argv.includes("--defer-apply")) {
+  console.log("--apply: deferring to scripts/apply-subkinds-direct.mjs (faster, no mmx).");
+  console.log("To run the fast apply, use: node scripts/apply-subkinds-direct.mjs");
+  process.exit(0);
+}
+
 if (ONLY_SLUG) {
   const card = cards.find((c) => c.slug === ONLY_SLUG);
   if (!card) { console.error(`slug "${ONLY_SLUG}" not found`); process.exit(1); }

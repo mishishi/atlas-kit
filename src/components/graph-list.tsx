@@ -20,10 +20,10 @@
  *   - This list view is fully keyboard-/SR-navigable by default.
  */
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { Search, X } from "lucide-react";
+import { ArrowUp, Search, X } from "lucide-react";
 import type { GraphData, GraphNode } from "@/lib/graph";
 import { cn } from "@/lib/utils";
 
@@ -34,6 +34,43 @@ interface GraphListProps {
 export function GraphList({ data }: GraphListProps) {
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const [seriesFilter, setSeriesFilter] = useState<string | null>(null);
+
+  // R-J (2026-06-30): series chip filter + scroll-to-top FAB. The
+  // graph-list was missing the series filter that graph-view has,
+  // so mobile users could search but not browse-by-series. Adding
+  // a single-row chip strip and a FAB to jump back to top after
+  // scrolling through hundreds of rows.
+
+  // All series with counts, sorted by slug
+  const seriesList = useMemo(() => {
+    const m = new Map<string, number>();
+    for (const n of data.nodes) m.set(n.series, (m.get(n.series) ?? 0) + 1);
+    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  }, [data.nodes]);
+
+  const filtered = useMemo(() => {
+    let result = data.nodes;
+    if (seriesFilter) result = result.filter((n) => n.series === seriesFilter);
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      result = result.filter(
+        (n) =>
+          n.name.toLowerCase().includes(q) || n.id.toLowerCase().includes(q),
+      );
+    }
+    return result;
+  }, [data.nodes, query, seriesFilter]);
+
+  // Scroll-to-top visibility (show after 200px scroll)
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  const listRef = useRef<HTMLUListElement | null>(null);
+  function onScroll(e: React.UIEvent<HTMLUListElement>) {
+    setShowScrollTop(e.currentTarget.scrollTop > 200);
+  }
+  function scrollToTop() {
+    listRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   // Pre-compute neighbor counts once (graph is static after load).
   // Same cast as GraphView: react-force-graph-2d mutates link.source/
@@ -52,18 +89,8 @@ export function GraphList({ data }: GraphListProps) {
     return m;
   }, [data]);
 
-  // Apply search filter.
-  const filtered = useMemo(() => {
-    if (!query.trim()) return data.nodes;
-    const q = query.trim().toLowerCase();
-    return data.nodes.filter(
-      (n) =>
-        n.name.toLowerCase().includes(q) || n.id.toLowerCase().includes(q),
-    );
-  }, [data.nodes, query]);
-
   return (
-    <div className="flex h-[calc(100dvh-4rem)] w-full flex-col bg-background">
+    <div className="relative flex h-[calc(100dvh-4rem)] w-full flex-col bg-background">
       {/* Sticky search bar */}
       <div className="sticky top-0 z-10 border-b border-border bg-background/95 px-4 py-3 backdrop-blur">
         <div className="relative">
@@ -105,11 +132,77 @@ export function GraphList({ data }: GraphListProps) {
         </p>
       </div>
 
+      {/* R-J (2026-06-30): series filter chip strip. Same chip style
+          as graph-view's top-right series filter (gold-deep when
+          active), but horizontal scroll on small screens so the
+          8-12 series don't wrap awkwardly. */}
+      <div
+        className="border-b border-border/60 bg-card/40 px-2 py-2 overflow-x-auto scrollbar-editorial"
+        aria-label="按系列筛选"
+      >
+        <ul className="flex gap-1.5 list-none p-0 min-w-min">
+          <li>
+            <button
+              type="button"
+              onClick={() => setSeriesFilter(null)}
+              aria-pressed={seriesFilter === null}
+              className={cn(
+                "inline-flex min-h-[32px] items-center rounded-full border px-3 py-1 text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                seriesFilter === null
+                  ? "border-gold bg-gold/15 text-gold-deep font-medium"
+                  : "border-border text-muted-foreground hover:text-foreground",
+              )}
+            >
+              全部
+            </button>
+          </li>
+          {seriesList.map(([slug, count]) => {
+            const active = seriesFilter === slug;
+            return (
+              <li key={slug}>
+                <button
+                  type="button"
+                  onClick={() => setSeriesFilter(active ? null : slug)}
+                  aria-pressed={active}
+                  className={cn(
+                    "inline-flex min-h-[32px] items-center gap-1 rounded-full border px-3 py-1 text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 whitespace-nowrap",
+                    active
+                      ? "border-gold bg-gold/15 text-gold-deep font-medium"
+                      : "border-border text-muted-foreground hover:text-foreground",
+                  )}
+                  title={slug}
+                >
+                  {slug.replace(/-/g, " ")}{" "}
+                  <span className="opacity-60 tabular-nums">{count}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
       {/* Scrollable list */}
-      <ul className="flex-1 overflow-y-auto" role="list">
+      <ul
+        ref={listRef}
+        className="flex-1 overflow-y-auto"
+        role="list"
+        onScroll={onScroll}
+      >
         {filtered.length === 0 ? (
           <li className="px-4 py-12 text-center text-sm text-muted-foreground">
             没有匹配「{query}」的图鉴。
+            {seriesFilter && (
+              <>
+                <br />
+                <button
+                  type="button"
+                  onClick={() => setSeriesFilter(null)}
+                  className="mt-3 inline-flex min-h-[36px] items-center rounded-md border border-border px-3 py-1 text-xs hover:border-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  清除系列筛选
+                </button>
+              </>
+            )}
           </li>
         ) : (
           filtered.map((node) => (
@@ -122,6 +215,20 @@ export function GraphList({ data }: GraphListProps) {
           ))
         )}
       </ul>
+
+      {/* R-J (2026-06-30): scroll-to-top FAB. Only visible after
+          200px scroll. 44x44 round, bottom-right, semi-transparent
+          card bg so the list still reads through. */}
+      {showScrollTop && (
+        <button
+          type="button"
+          onClick={scrollToTop}
+          aria-label="回到顶部"
+          className="absolute bottom-6 right-4 z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-card/95 text-foreground shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all"
+        >
+          <ArrowUp className="h-4 w-4" aria-hidden="true" />
+        </button>
+      )}
     </div>
   );
 }

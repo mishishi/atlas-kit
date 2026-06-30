@@ -4,6 +4,7 @@ import { Card as CardType, KIND_LABELS, THEME_TYPES } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
 import { ListOrdered, Hash, Layers } from "lucide-react";
 import { FavoritesCta } from "@/components/favorites-cta";
+import { FlipCard } from "@/components/flip-card";
 
 export const metadata = {
   title: "索引 · 图鉴社",
@@ -80,25 +81,17 @@ export default function AllPage() {
             <Hash className="h-4 w-4 text-gold-deep" aria-hidden="true" />
             按字数 (深度优先)
           </h2>
-          <p className="text-sm text-muted-foreground mb-4">最详尽的 {byLength.length} 张</p>
+          <p className="text-sm text-muted-foreground mb-4">
+            最详尽的 {byLength.length} 张 ·{" "}
+            <span className="text-[10px]">点击行可翻面看描述</span>
+          </p>
+          {/* K (2026-06-30): View 1 now uses FlipCard (CSS rotateY 180deg)
+              instead of direct-link rows. Click to reveal description +
+              CTA without leaving /all. Multi-open supported so users
+              can compare two entries. */}
           <ol className="space-y-1 list-none p-0">
             {byLength.map((c, i) => (
-              <li key={c.slug}>
-                <Link
-                  href={`/cards/${c.slug}`}
-                  className="group flex min-h-[44px] items-baseline gap-3 rounded-md px-3 py-2 hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
-                >
-                  <span className="font-mono text-xs tabular-nums text-muted-foreground/70 w-6 shrink-0">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors truncate">
-                    {c.title}
-                  </span>
-                  <span className="ml-auto text-[10px] tabular-nums text-muted-foreground/70 shrink-0">
-                    {c.description.length} 字
-                  </span>
-                </Link>
-              </li>
+              <FlipCard key={c.slug} card={c} index={i} />
             ))}
           </ol>
         </section>

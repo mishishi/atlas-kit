@@ -72,7 +72,10 @@ async function main() {
   }
 
   console.log("Running: next build\n");
-  const child = spawn("npx.cmd", ["next", "build"], {
+  // Cross-platform: npx on macOS/Linux, npx.cmd on Windows.
+  // Vercel's build environment is Linux (no .cmd), local dev may be either.
+  const npxCmd = process.platform === "win32" ? "npx.cmd" : "npx";
+  const child = spawn(npxCmd, ["next", "build"], {
     stdio: "inherit",
     shell: true,
     cwd: ROOT,

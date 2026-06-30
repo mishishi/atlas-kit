@@ -18,7 +18,7 @@
  *   - sessionStorage / localStorage reads happen after mount only.
  */
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
@@ -28,6 +28,7 @@ import {
   RefreshCw,
   Shuffle,
   Star,
+  Calendar,
 } from "lucide-react";
 import type { Card, CardKind } from "@/lib/types";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
@@ -43,6 +44,46 @@ interface RandomClientProps {
 
 const HISTORY_KEY = "atlas-kit-random-history";
 const HISTORY_MAX = 20; // remember up to last 20 drawn slugs (session-scoped)
+
+/**
+ * R-O (2026-06-30): 今日模式 (mode=today).
+ *
+ * Deterministic daily card: hash(YYYY-MM-DD + TODAY_SALT) →
+ * uniform index over the candidate pool. The same date + same
+ * pool (kind/subKind filters) always returns the same slug, so
+ * users visiting the page on the same day see the same card —
+ * a "今日图鉴" feel. The hash salt is fixed (not per-user) so
+ * it's also stable across devices, mirroring the home page's
+ * FAB 今日图鉴.
+ *
+ * Why a fixed salt: this is editorial content, not a personalized
+ * recommendation. A user can share /random?mode=today on Twitter
+ * and know that everyone clicking the link on the same day lands
+ * on the same card — that's the "same paper" experience.
+ */
+const TODAY_SALT = "atlas-kit-daily-2026-06-30";
+
+function hashString(s: string): number {
+  // FNV-1a 32-bit, deterministic, no crypto needed
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = (h * 0x01000193) >>> 0;
+  }
+  return h;
+}
+
+function todaySlug(pool: Card[], date: Date = new Date()): string | null {
+  if (pool.length === 0) return null;
+  const ymd =
+    date.getFullYear() +
+    "-" +
+    String(date.getMonth() + 1).padStart(2, "0") +
+    "-" +
+    String(date.getDate()).padStart(2, "0");
+  const h = hashString(ymd + ":" + TODAY_SALT);
+  return pool[h % pool.length].slug;
+}
 
 function readHistory(): string[] {
   if (typeof window === "undefined") return [];
@@ -70,6 +111,10 @@ export function RandomClient({ allCards }: RandomClientProps) {
   const searchParams = useSearchParams();
   const kindFilter = searchParams.get("kind") as CardKind | null;
   const subKindFilter = searchParams.get("subKind");
+  // R-O (2026-06-30): mode=today → daily deterministic card; default
+  // "random" → current behavior (Space reroll, history, etc.).
+  const mode = searchParams.get("mode") === "today" ? "today" : "random";
+  const isToday = mode === "today";
 
   // All kinds (with count) — used for chips. Includes "all" pseudo.
   const kindOptions = useMemo(() => {
@@ -115,8 +160,12 @@ export function RandomClient({ allCards }: RandomClientProps) {
 
   // The currently-displayed slug. SSR + first client render agree on
   // the deterministic pick below (no flash on hydration).
+  // R-O: today mode uses YYYY-MM-DD hash → stable across sessions.
+  // Random mode keeps the old pool[0] fallback (consistent with prior
+  // behavior — first card in series appears if SSR fires before JS).
   const [slug, setSlug] = useState<string | null>(() => {
     if (pool.length === 0) return null;
+    if (isToday) return todaySlug(pool);
     return pool[0].slug;
   });
   // Tracks whether we've mounted. Gates any sessionStorage-based logic.
@@ -179,15 +228,31 @@ export function RandomClient({ allCards }: RandomClientProps) {
   // When the kind or subKind filter changes (e.g. chip click), reset
   // displayed slug to a deterministic first candidate of the new pool
   // so the UI doesn't show "stale" card from a different kind/subKind.
+  // R-O: in today mode, recompute via hash so changing filters shows
+  // a different daily card (still deterministic per filter+date).
+  // Also reset on mode switch (random→today or back) so the user
+  // sees the deterministic pick for the new mode, not the slug
+  // left over from the previous mode.
+  const prevFilterKey = useRef("");
   useEffect(() => {
-    if (pool.length > 0 && (!slug || !pool.find((c) => c.slug === slug))) {
-      setSlug(pool[0].slug);
+    if (pool.length === 0) return;
+    const key = `${mode}|${kindFilter ?? ""}|${activeSubKind ?? ""}`;
+    if (key !== prevFilterKey.current) {
+      // Mode or filter changed — re-derive slug deterministically.
+      setSlug(isToday ? todaySlug(pool) : pool[0].slug);
+      prevFilterKey.current = key;
+      return;
+    }
+    if (!slug || !pool.find((c) => c.slug === slug)) {
+      setSlug(isToday ? todaySlug(pool) : pool[0].slug);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [kindFilter, activeSubKind]);
+  }, [mode, kindFilter, activeSubKind, isToday]);
 
-  // Spacebar to reroll (when not focused in input).
+  // Spacebar to reroll (when not focused in input). Skipped in today
+  // mode — the whole point of today is the card is fixed for the day.
   useEffect(() => {
+    if (isToday) return;
     function onKey(e: KeyboardEvent) {
       if (e.key !== " ") return;
       const t = e.target;
@@ -202,7 +267,7 @@ export function RandomClient({ allCards }: RandomClientProps) {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [reroll]);
+  }, [reroll, isToday]);
 
   const card = slug ? allCards.find((c) => c.slug === slug) : null;
 
@@ -221,6 +286,16 @@ export function RandomClient({ allCards }: RandomClientProps) {
     const params = new URLSearchParams(Array.from(searchParams.entries()));
     if (next) params.set("subKind", next);
     else params.delete("subKind");
+    const qs = params.toString();
+    router.replace(qs ? `/random?${qs}` : "/random", { scroll: false });
+  }
+
+  // R-O: mode toggle. Switching modes updates the URL and lets the
+  // useEffect above re-derive the displayed slug.
+  function setMode(next: "today" | "random") {
+    const params = new URLSearchParams(Array.from(searchParams.entries()));
+    if (next === "today") params.set("mode", "today");
+    else params.delete("mode");
     const qs = params.toString();
     router.replace(qs ? `/random?${qs}` : "/random", { scroll: false });
   }
@@ -246,6 +321,50 @@ export function RandomClient({ allCards }: RandomClientProps) {
 
   return (
     <div className="space-y-8">
+      {/* R-O (2026-06-30): mode toggle — 今日固定 vs 随便抽.
+          Sits at the top so the user picks the exploration mode
+          before they pick the topic filter. */}
+      <div className="space-y-2">
+        <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
+          模式
+        </p>
+        <div className="inline-flex rounded-full border border-border bg-card p-0.5">
+          <button
+            type="button"
+            onClick={() => setMode("random")}
+            aria-pressed={!isToday}
+            className={cn(
+              "inline-flex min-h-[36px] items-center gap-1.5 rounded-full px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+              !isToday
+                ? "bg-gold-deep text-cream"
+                : "text-muted-foreground hover:text-foreground",
+            )}
+          >
+            <Dices className="h-3.5 w-3.5" aria-hidden="true" />
+            随便抽
+          </button>
+          <button
+            type="button"
+            onClick={() => setMode("today")}
+            aria-pressed={isToday}
+            className={cn(
+              "inline-flex min-h-[36px] items-center gap-1.5 rounded-full px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+              isToday
+                ? "bg-gold-deep text-cream"
+                : "text-muted-foreground hover:text-foreground",
+            )}
+          >
+            <Calendar className="h-3.5 w-3.5" aria-hidden="true" />
+            今日固定
+          </button>
+        </div>
+        {isToday && (
+          <p className="text-xs text-muted-foreground">
+            同一日同一筛选下, 所有人看到的都是这一张。明天换。
+          </p>
+        )}
+      </div>
+
       {/* Kind chips */}
       <div className="space-y-2">
         <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
@@ -378,13 +497,21 @@ export function RandomClient({ allCards }: RandomClientProps) {
               <button
                 type="button"
                 onClick={() => reroll(false)}
-                className="inline-flex items-center gap-2 min-h-[44px] rounded-md bg-gold-deep px-5 text-sm font-medium text-cream shadow-card transition-transform hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                disabled={isToday}
+                title={isToday ? "今日模式下卡片固定" : "再换一张 (Space)"}
+                className="inline-flex items-center gap-2 min-h-[44px] rounded-md bg-gold-deep px-5 text-sm font-medium text-cream shadow-card transition-transform hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                <RefreshCw className="h-4 w-4" aria-hidden="true" />
-                再换一张
-                <kbd className="ml-1 px-1.5 py-0.5 rounded border border-cream/30 bg-cream/10 text-[10px] font-mono">
-                  Space
-                </kbd>
+                {isToday ? (
+                  <Calendar className="h-4 w-4" aria-hidden="true" />
+                ) : (
+                  <RefreshCw className="h-4 w-4" aria-hidden="true" />
+                )}
+                {isToday ? "今日固定" : "再换一张"}
+                {!isToday && (
+                  <kbd className="ml-1 px-1.5 py-0.5 rounded border border-cream/30 bg-cream/10 text-[10px] font-mono">
+                    Space
+                  </kbd>
+                )}
               </button>
               <button
                 type="button"

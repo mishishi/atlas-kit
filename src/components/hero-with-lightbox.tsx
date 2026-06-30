@@ -10,7 +10,7 @@
  * (it emits JSON-LD from card data at request time). Only the hero
  * needs interactivity, so we hydrate just this subtree.
  *
- * Image tiers (60 cards, all English slugs):
+ * Image tiers (600 cards, all English slugs):
  *   - thumb.webp  (384w)   — list views
  *   - card.png    (600w)   — detail hero (this component)
  *   - full.webp   (1024w)  — lightbox modal (high-res "view original")

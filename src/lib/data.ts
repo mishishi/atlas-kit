@@ -124,7 +124,7 @@ export function searchCards(query: string): Card[] {
 }
 
 // Fuse instance — built once on first search, re-used for subsequent
-// queries. 60 cards is tiny (few KB of memory) so there's no win in
+// queries. 600 cards is tiny (few KB of memory) so there's no win in
 // streaming or rebuild logic.
 let _fuse: import("fuse.js").default<Card> | null = null;
 function getFuse() {
@@ -153,8 +153,8 @@ function getFuse() {
 /**
  * Pre-compute the document frequency of every tag across all cards.
  * Used by relatedScore() for IDF (Inverse Document Frequency) weighting
- * so that common tags (e.g. "中国" appears on 44/60 cards) contribute
- * less to the relatedness score than rare tags (e.g. "三星伴月" on 1/60).
+ * so that common tags (e.g. "中国" appears on ~44% of cards) contribute
+ * less to the relatedness score than rare tags (e.g. "三星伴月" on 1/600).
  *
  * Built once at module load — O(N × avg-tags-per-card) ≈ 60 × 8 = 480 ops.
  * Without this, recommendations on 中国-themed cards would just be a
@@ -189,7 +189,7 @@ for (const [tag, df] of TAG_DOC_FREQ) {
  *   +Σ IDF(tag) for each shared tag (no cap, no flat weight).
  *       Rare tags (low df) carry more signal than common ones.
  *
- * Palette similarity was tried in 2026-06 but dropped: the 60-card
+ * Palette similarity was tried in 2026-06 but dropped: the small-card
  * batch run used only 6 distinct palettes (one per series), so the
  * palette check either matched everything (low threshold) or
  * nothing (high threshold). Tags give us actual content-based
@@ -268,7 +268,7 @@ export function getRecentCards(n: number): Card[] {
  * sets dedupe by definition, and a card mentioning another card
  * twice in its body shouldn't be counted twice downstream.
  *
- * The index is built once per process (60 cards, cheap) and shared.
+ * The index is built once per process (600 cards, cheap) and shared.
  */
 let _mentionIndex: Map<string, Set<string>> | null = null;
 export function getMentionIndex(): Map<string, Set<string>> {

@@ -32,7 +32,7 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
       <div className="relative aspect-[9/16] overflow-hidden bg-muted">
         <Image
           // List/card views use the 200-wide thumb (avg ~42KB) instead of
-          // the 5.7MB full PNG. 60 cards now load as 2.5MB total instead
+          // the 5.7MB full PNG. 600 cards now load as ~25MB total instead
           // of 342MB. Falls back to card.image for placeholder cards that
           // haven't been resized yet.
           src={card.image_thumb ?? card.image}
@@ -55,7 +55,7 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
         {/* "New" badge: surfaces cards added in the last 24h so users notice
             fresh content on repeat visits. Static dot (no infinite pulse) per
             the design review — MOTION_INTENSITY=4 doesn't justify a perpetual
-            animation in a list of 60 cards. Round 12 fix: drop the duplicate
+            animation in a list of 600 cards. Round 12 fix: drop the duplicate
             aria-label; the visible "新收录" text is the SR-accessible name.
 
             Round 17 fix: `Date.now()` runs at SSR time (server clock) but
@@ -63,7 +63,7 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
             seconds-to-minutes and silently flip the badge on/off across the
             boundary. suppressHydrationWarning tells React not to warn; we
             accept the very rare flash as the cost of keeping this a server
-            component (moving it client-side would re-hydrate all 60 cards). */}
+            component (moving it client-side would re-hydrate all 600 cards). */}
         {Date.now() - new Date(card.createdAt).getTime() < 86400000 && (
           <span
             suppressHydrationWarning
@@ -90,7 +90,7 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
             — fades in on card hover/focus, parallel to HeroWithLightbox's
             "查看原图" pattern. Without this, users on a grid page only
             see the title-text color shift on hover, which is too subtle
-            for the 60-card grid where every card is clickable. The pill
+            for the 600-card grid where every card is clickable. The pill
             is purely decorative — clicking anywhere on the parent Link
             still navigates — but it answers "what does this card do?"
             without the user having to guess from the title text alone. */}

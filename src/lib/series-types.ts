@@ -158,6 +158,33 @@ export const SERIES_TYPES: SeriesType[] = [
     icon: "Tv",
     createdAt: "2026-06-21",
   },
+  // R60+35 (2026-06-30): 2 catch-all series from R59 batch. Pulp-fiction
+  // for global popular films; atlas-miscellany for cross-genre items that
+  // don't fit any of the 10 curated series above.
+  {
+    slug: "pulp-fiction",
+    name: "影像档案",
+    tagline: "把一部电影讲成一段共同记忆",
+    description:
+      "从「玩具总动员」到「冰雪奇缘」, 一部电影是票房、奖项、口碑与文化共振的合谋。这一系列收录全球票房与影响力俱佳的流行电影——关注市场表现、视觉风格、文化输出与观众共鸣, 不收录只罗列演员表的卡片。",
+    palette: ["#F0F4F7", "#5C7A8C", "#8FA8B5"],
+    themeTags: ["movie"],
+    keywords: ["电影", "票房", "流行", "好莱坞", "迪士尼", "皮克斯", "梦工厂", "动画长片", "商业大片"],
+    icon: "Film",
+    createdAt: "2026-06-26",
+  },
+  {
+    slug: "atlas-miscellany",
+    name: "寰宇杂谈",
+    tagline: "凡不归他处者, 暂居于此",
+    description:
+      "图鉴社的杂项桶——那些暂时没找到更适合位置的跨类别条目都暂存于此, 等待后续可能拆分为新的专题系列。这不是「不分类」, 而是「待分类」: 内容质量与正式系列一致, 只是归属还在观察。",
+    palette: ["#FAF3E9", "#9B8B6E", "#C4B89A"],
+    themeTags: ["tech", "mythology", "other", "object"],
+    keywords: ["杂项", "待分类", "跨类别"],
+    icon: "PackageOpen",
+    createdAt: "2026-06-26",
+  },
 ];
 
 /** Quick lookup by slug */

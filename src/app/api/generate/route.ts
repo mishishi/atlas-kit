@@ -97,11 +97,11 @@ export async function POST(req: Request) {
     seriesSlug = getDefaultSeriesSlugForKind(kind);
   }
 
-  // 3. Slug — prefer the curated English slug table for the 60
+  // 3. Slug — prefer the curated English slug table for the 600
   //    placeholder topics; fall back to a stable hash-based slug
   //    for any new topic the user might type in.
   //
-  //    Why the table: the 60 cards.json entries all use English slugs
+  //    Why the table: the cards.json entries all use English slugs
   //    (labrador-retriever, hangzhou, peking-duck, ...). If wizard
   //    produced hash slugs (card-abc123), re-running the wizard
   //    for "拉布拉多" would not match "labrador-retriever" in cards.json

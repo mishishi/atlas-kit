@@ -10,7 +10,7 @@ const store = new Map<string, RateLimitEntry>();
 
 const WINDOW_MS = 5 * 60 * 1000; // 5 minutes
 // Production rate limit: 3 generation requests per 5 minutes per IP.
-// The previous value (9999) was for batch-running the 60 placeholder
+// The previous value (9999) was for batch-running the placeholder
 // cards and must not ship to production. The generation wizard calls
 // matrix MCP, which is itself rate-limited; 3/5min keeps a single
 // user from triggering 502 floods when the upstream is throttled.

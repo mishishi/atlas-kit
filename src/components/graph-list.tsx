@@ -14,7 +14,7 @@
  *
  * Why not just responsive-hide the ForceGraph:
  *   - ForceGraph2D is canvas-based; on a 360×640 mobile screen the
- *     60 nodes overlap and the labels clip. Pinch-zoom + pan exist
+ *     600 nodes overlap and the labels clip. Pinch-zoom + pan exist
  *     but the hover side-panel was desktop-first (absolute right
  *     panel covers half the screen on phone).
  *   - This list view is fully keyboard-/SR-navigable by default.

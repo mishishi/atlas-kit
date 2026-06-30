@@ -8,7 +8,7 @@
  * 计数 + 关按钮 (回 /cards). 整页是 graph (无 footer/header 全宽).
  *
  * R52: GraphViewToggle 在两种视图间切 — 力导向图 (桌面优先) 和
- * 触屏友好的列表 fallback (60 节点在小屏太挤). 用户选择 sticky
+ * 触屏友好的列表 fallback (节点在小屏太挤). 用户选择 sticky
  * 存 localStorage; 首次访问按视口宽度自动选.
  */
 

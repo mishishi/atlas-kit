@@ -185,7 +185,7 @@ export default function Home({ searchParams }: HomeProps) {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-gold-deep mb-2">CURATED COLLECTIONS</div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-1">五大系列</h2>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-1">主题系列</h2>
               <p className="text-sm text-muted-foreground">按主题分组的图鉴合集, 每个系列都有自己的故事、视觉规范与收藏价值</p>
             </div>
             <Link
@@ -196,8 +196,8 @@ export default function Home({ searchParams }: HomeProps) {
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 list-none p-0">
-            {allSeries.slice(0, 5).map((s) => (
+          <ul className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 list-none p-0`}>
+            {allSeries.slice(0, 6).map((s) => (
               <li key={s.slug}>
                 <Link
                   href={`/series/${s.slug}`}

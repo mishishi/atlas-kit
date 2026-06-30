@@ -23,7 +23,7 @@
  * tear down the map.
  *
  * Popup safety (2026-06-16 fix — audit C4): previously used
- * `marker.bindPopup(string)` which is an innerHTML sink. The 60
+ * `marker.bindPopup(string)` which is an innerHTML sink. The 600
  * card subtitles are all editorially safe, but a future content
  * edit with `</a><script>` would be RCE. Now we build the popup
  * as a real DOM node and pass it to bindPopup, escaping all

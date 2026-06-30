@@ -2,18 +2,19 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookMarked, Compass, Sparkles, Clock, Map, LayoutGrid, Network } from "lucide-react";
+import { BookMarked, Compass, Sparkles, Clock, Map, Network } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { FavoritesBadge } from "./favorites-badge";
+import { CategoriesDropdown } from "./categories-dropdown";
 import { cn } from "@/lib/utils";
 
-// 7 nav items, capped per "5±2 mobile-nav" rule (max 7). R37 Plan 3
-// (2026-06-18): 加 /graph "图谱" 项 — image-first knowledge graph,
-// 维基没有, 我们的 moat.
+// P (2026-06-30): "全部" (LayoutGrid) 替换为 CategoriesDropdown.
+// 把 6 个直链 + 1 个 dropdown + 1 个生成图鉴 = 7 项, 没超 cap.
+// Dropdown 内含 26 kind chips + 4 个浏览模式, 把 26 种选项从
+// /cards 上的 chip row 复制成可发现的 1-click 入口。
 const navItems = [
   { href: "/", label: "首页", icon: BookMarked },
   { href: "/series", label: "系列", icon: Compass },
-  { href: "/cards", label: "全部", icon: LayoutGrid },
   { href: "/graph", label: "图谱", icon: Network },
   { href: "/map", label: "地图", icon: Map },
   { href: "/timeline", label: "时间线", icon: Clock },
@@ -74,6 +75,10 @@ export function SiteHeader() {
               </Link>
             );
           })}
+          {/* P: 分类 dropdown — desktop only, mobile keeps the 6
+              flat links. Renders 26 kind chips + 4 browse modes in a
+              2-col mega menu. */}
+          <CategoriesDropdown />
         </nav>
 
         <div className="flex items-center gap-1">

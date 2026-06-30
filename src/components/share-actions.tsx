@@ -8,6 +8,7 @@ import {
   FileText,
   X,
   MessageCircle,
+  ChevronDown,
   X as CloseIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -25,20 +26,26 @@ interface ShareActionsProps {
 }
 
 /**
- * R60 (2026-06-28): 6-button share toolbar.
+ * R60+35.1 (2026-06-30): Share toolbar refactor.
  *
- * Row 1 (4 primary, file-oriented):
- *   - 下载原图  Download 1024w WebP
- *   - 分享为图片  1-click PNG with title + QR + brand (R38)
- *   - 保存 PDF  Cmd+P path via /print/cards/[slug]
- *   - 复制链接  navigator.clipboard.writeText
+ * Layout: 3 across, each button gets a full 1/3 row width so 4-char
+ * Chinese labels render horizontally (not the previous 6-grid which
+ * crushed labels into vertical 1-char-per-line).
  *
- * Row 2 (2 social, network-oriented):
- *   - X (Twitter)  https://twitter.com/intent/tweet?url=...&text=...
- *   - 微信扫码  WeChat QR modal (web → WeChat 没法直发, 只能扫)
+ *   [下载原图] [分享为图片] [更多 ▾]
+ *       ↑            ↑           ↑
+ *   gold-deep   secondary    popover holding the 4 secondary actions:
+ *   (primary)   (also has    - 保存 PDF
+ *                its own      - 复制链接
+ *                popover)     - 分享 X
+ *                            - 微信扫码
  *
- * Layout: 6 across desktop (cramped, icon-only labels hidden < sm),
- *         3 across mobile (2 rows × 3 cols). Touch targets 44px.
+ * Why 3, not 6: the 6-grid had 4-char labels in ~60px wide cells;
+ * flex wrapped text into vertical 单字, looked broken. 3-grid gives
+ * each button ~190px (desktop) / ~115px (mobile) — 4-char fits.
+ *
+ * A11y: popover uses role="menu" + role="menuitem", Esc closes,
+ * click-outside closes. Reused ShareCardButton's popover pattern.
  */
 export function ShareActions({
   imageUrl,
@@ -49,6 +56,8 @@ export function ShareActions({
   const [copied, setCopied] = useState(false);
   const [qrOpen, setQrOpen] = useState(false);
   const [qrDataUrl, setQrDataUrl] = useState<string | null>(null);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
 
   // Round 21 fix: track mount state so the post-copy setTimeout can't
   // fire setState after the user navigates away.
@@ -59,6 +68,18 @@ export function ShareActions({
       mountedRef.current = false;
     };
   }, []);
+
+  // Click-outside to close the "更多" popover.
+  useEffect(() => {
+    if (!moreOpen) return;
+    function onClick(e: MouseEvent) {
+      if (moreRef.current && !moreRef.current.contains(e.target as Node)) {
+        setMoreOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onClick);
+    return () => document.removeEventListener("mousedown", onClick);
+  }, [moreOpen]);
 
   const url =
     typeof window !== "undefined" ? window.location.href : `/cards/${card.slug}`;
@@ -74,6 +95,7 @@ export function ShareActions({
       setTimeout(() => {
         if (mountedRef.current) setCopied(false);
       }, 2000);
+      setMoreOpen(false);
     } catch {
       toast.error("复制失败", { description: "请手动从地址栏复制" });
     }
@@ -85,10 +107,12 @@ export function ShareActions({
       text,
     )}&url=${encodeURIComponent(url)}`;
     window.open(intent, "_blank", "noopener,noreferrer,width=550,height=420");
+    setMoreOpen(false);
   };
 
   const handleWeChatOpen = async () => {
     setQrOpen(true);
+    setMoreOpen(false);
     if (qrDataUrl) return;
     try {
       const dataUrl = await QRCode.toDataURL(url, {
@@ -109,90 +133,103 @@ export function ShareActions({
       <div
         role="group"
         aria-label={`分享 ${title}`}
-        className="grid grid-cols-3 sm:grid-cols-6 gap-2"
+        className="grid grid-cols-3 gap-2"
       >
+        {/* 主按钮: 下载原图 (gold-deep, 唯一主操作) */}
         <a
           href={imageUrl}
           download={`${imageFilename}.webp`}
           className={cn(
-            "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md bg-gold-deep px-2 py-2.5 text-xs sm:text-sm font-medium text-cream",
+            "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md bg-gold-deep px-3 py-2.5 text-sm font-medium text-cream",
             "transition-colors hover:bg-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
           )}
           title="下载 1024w 原图 (WebP)"
         >
           <Download className="h-4 w-4" aria-hidden="true" />
-          <span className="hidden sm:inline">下载原图</span>
-          <span className="sm:hidden">图</span>
+          <span>下载原图</span>
         </a>
 
+        {/* 次按钮: 分享为图片 (它本身已是 popover, 弹出 IG 格式选择) */}
         <ShareCardButton card={card} />
 
-        <Link
-          href={`/print/cards/${imageFilename}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={cn(
-            "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md border border-border bg-card px-2 py-2.5 text-xs sm:text-sm font-medium",
-            "hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+        {/* "更多" 按钮 — 折叠剩下的 4 个次要操作 */}
+        <div className="relative" ref={moreRef}>
+          <button
+            type="button"
+            onClick={() => setMoreOpen((o) => !o)}
+            aria-haspopup="menu"
+            aria-expanded={moreOpen}
+            aria-label="更多分享方式"
+            className={cn(
+              "flex w-full min-h-[44px] items-center justify-center gap-1.5 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-medium",
+              "hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+            )}
+          >
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 transition-transform",
+                moreOpen ? "rotate-180" : "",
+              )}
+              aria-hidden="true"
+            />
+            <span>更多</span>
+          </button>
+          {moreOpen && (
+            <div
+              role="menu"
+              aria-label="更多分享方式"
+              className="absolute right-0 z-20 mt-1 min-w-[200px] rounded-md border border-border bg-card p-1 shadow-card-hover"
+            >
+              <Link
+                href={`/print/cards/${imageFilename}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="menuitem"
+                onClick={() => setMoreOpen(false)}
+                className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-sm hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+              >
+                <FileText className="h-4 w-4" aria-hidden="true" />
+                <span>保存 PDF</span>
+              </Link>
+              <button
+                type="button"
+                role="menuitem"
+                onClick={handleCopyLink}
+                className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-sm hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+              >
+                {copied ? (
+                  <>
+                    <Check className="h-4 w-4 text-success" aria-hidden="true" />
+                    <span>已复制</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="h-4 w-4" aria-hidden="true" />
+                    <span>复制链接</span>
+                  </>
+                )}
+              </button>
+              <button
+                type="button"
+                role="menuitem"
+                onClick={handleXShare}
+                className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-sm hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+              >
+                <X className="h-4 w-4" aria-hidden="true" />
+                <span>分享 X</span>
+              </button>
+              <button
+                type="button"
+                role="menuitem"
+                onClick={handleWeChatOpen}
+                className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-sm hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+              >
+                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                <span>微信扫码</span>
+              </button>
+            </div>
           )}
-          title="在打印版页面保存为 PDF"
-        >
-          <FileText className="h-4 w-4" aria-hidden="true" />
-          <span className="hidden sm:inline">保存 PDF</span>
-          <span className="sm:hidden">PDF</span>
-        </Link>
-
-        <button
-          type="button"
-          onClick={handleCopyLink}
-          aria-label={copied ? "链接已复制" : "复制图鉴链接"}
-          className={cn(
-            "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md border border-border bg-card px-2 py-2.5 text-xs sm:text-sm font-medium",
-            "hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-          )}
-        >
-          {copied ? (
-            <>
-              <Check className="h-4 w-4 text-success" aria-hidden="true" />
-              <span className="hidden sm:inline">已复制</span>
-            </>
-          ) : (
-            <>
-              <Copy className="h-4 w-4" aria-hidden="true" />
-              <span className="hidden sm:inline">复制链接</span>
-              <span className="sm:hidden">链接</span>
-            </>
-          )}
-        </button>
-
-        {/* Social row */}
-        <button
-          type="button"
-          onClick={handleXShare}
-          className={cn(
-            "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md border border-border bg-card px-2 py-2.5 text-xs sm:text-sm font-medium",
-            "hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-          )}
-          title="分享到 X (Twitter)"
-        >
-          <X className="h-4 w-4" aria-hidden="true" />
-          <span className="hidden sm:inline">分享 X</span>
-          <span className="sm:hidden">X</span>
-        </button>
-
-        <button
-          type="button"
-          onClick={handleWeChatOpen}
-          className={cn(
-            "flex min-h-[44px] items-center justify-center gap-1.5 rounded-md border border-border bg-card px-2 py-2.5 text-xs sm:text-sm font-medium",
-            "hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-          )}
-          title="用微信扫一扫"
-        >
-          <MessageCircle className="h-4 w-4" aria-hidden="true" />
-          <span className="hidden sm:inline">微信</span>
-          <span className="sm:hidden">微信</span>
-        </button>
+        </div>
       </div>
 
       {qrOpen && (

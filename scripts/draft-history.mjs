@@ -9,7 +9,8 @@
 // (so the script is idempotent and re-runnable).
 import fs from "node:fs";
 import path from "node:path";
-import { callMmxSync } from "./mmx-client.mjs";
+import { callMmxSync, MmxHangError, MmxError } from "./mmx-client.mjs";
+import { fillMissingFields } from "./mmx-fallback.mjs";
 
 // draft-history needs the FULL JSON envelope (not --quiet) so it can extract
 // the .text field from the M2.7 response. See extractResponseText below.
@@ -169,7 +170,7 @@ if (dryRun) {
   process.exit(0);
 }
 
-let success = 0, fail = 0;
+let success = 0, fail = 0, fallbackUsed = 0;
 for (let i = 0; i < targets.length; i++) {
   const c = targets[i];
   const prompt = userPrompt(c);
@@ -177,9 +178,12 @@ for (let i = 0; i < targets.length; i++) {
 
   // Round 34+ internal retry: same card, same prompt, max MAX_RETRIES
   // attempts with 1.5s sleep between. Persist on first valid ≥3 result.
+  // R60+ (2026-06-30): catch MmxHangError / MmxError and fall back to
+  // programmatic derivation. Don't retry mmx when API is hung.
   let valid = null;
   let attempts = 0;
   let lastErr = null;
+  let mmxGaveUp = false;
   while (attempts < MAX_RETRIES && !valid) {
     attempts++;
     try {
@@ -237,6 +241,12 @@ for (let i = 0; i < targets.length; i++) {
       valid = validated;
     } catch (e) {
       lastErr = `ERR: ${e.message?.slice(0, 80) ?? e}`;
+      // R60+: if mmx hung, don't keep retrying — use programmatic fallback.
+      if (e instanceof MmxHangError) {
+        mmxGaveUp = true;
+        console.log(`HANG (${(e.elapsedMs / 1000).toFixed(0)}s) — falling back to programmatic derivation.`);
+        break;
+      }
       if (attempts < MAX_RETRIES) {
         syncSleep(RETRY_DELAY_MS);
         continue;
@@ -254,9 +264,24 @@ for (let i = 0; i < targets.length; i++) {
     // lose the work we've already done. Cheap (60 × a few KB).
     fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
   } else {
-    fail++;
+    // R60+: if mmx failed AND we haven't already filled via fallback,
+    // use programmatic derivation as a last resort.
+    if (mmxGaveUp || lastErr) {
+      const before = c.history?.length || 0;
+      const { applied } = fillMissingFields(c);
+      if (applied.includes("history")) {
+        fallbackUsed++;
+        console.log(`FALLBACK (${c.history.length} nodes, was ${before})`);
+        success++;
+        fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
+      } else {
+        fail++;
+      }
+    } else {
+      fail++;
+    }
   }
 }
 
-console.log(`\nDone. success=${success} fail=${fail}. cards.json updated.`);
+console.log(`\nDone. success=${success} fail=${fail} fallback=${fallbackUsed}. cards.json updated.`);
 console.log("Review the history fields and commit when satisfied.");

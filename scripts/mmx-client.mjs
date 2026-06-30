@@ -1,7 +1,7 @@
 /**
  * mmx-client.mjs — robust wrapper around `mmx.ps1 text chat` for batch
  * scripts. Adds retry with exponential backoff + jitter, request timeout,
- * and per-call stats logging.
+ * hang detection, and per-call stats logging.
  *
  * Why this exists:
  *   - mmx CLI spawns powershell → node → API per call (~800ms cold start)
@@ -12,9 +12,25 @@
  *     each duplicate their own callMmx() — no shared retry logic, no
  *     shared observability.
  *
+ * R60+ hang detection:
+ *   - If a single call exceeds HANG_THRESHOLD_MS (default 2 min), it's
+ *     classified as MmxHangError. NO retry — hanging again would just
+ *     multiply the wasted time.
+ *   - Callers (batch scripts) catch MmxHangError and fall back to
+ *     programmatic derivation (see mmx-fallback.mjs). This way one bad
+ *     card never blocks the whole batch.
+ *
  * Usage (async, for new code):
- *   import { callMmx, callMmxJson, MmxError } from "./mmx-client.mjs";
- *   const text = await callMmx({ message: "...", system: "..." });
+ *   import { callMmx, callMmxJson, MmxError, MmxHangError } from "./mmx-client.mjs";
+ *   try {
+ *     const text = await callMmx({ message: "...", system: "..." });
+ *   } catch (e) {
+ *     if (e instanceof MmxHangError) {
+ *       // use programmatic fallback
+ *     } else {
+ *       throw e;
+ *     }
+ *   }
  *
  * Usage (sync drop-in, for existing scripts):
  *   // At the top of any old script:
@@ -24,17 +40,19 @@
  *   // Then existing callMmx(prompt) usages Just Work, with retry+backoff.
  *
  * Env:
- *   MMX_MAX_RETRIES (default 3) — total attempts before giving up
+ *   MMX_MAX_RETRIES (default 2) — total attempts before giving up
  *   MMX_TIMEOUT_MS (default 90000) — per-call timeout
  *   MMX_BACKOFF_BASE_MS (default 2000) — base backoff for retry
+ *   MMX_HANG_THRESHOLD_MS (default 120000) — beyond this = hang, no retry
  */
 import { execFile, execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 
 const MMX_PATH = "C:\\Users\\zrb03\\AppData\\Roaming\\npm\\mmx.ps1";
-const MAX_RETRIES = parseInt(process.env.MMX_MAX_RETRIES ?? "3", 10);
+const MAX_RETRIES = parseInt(process.env.MMX_MAX_RETRIES ?? "2", 10);
 const TIMEOUT_MS = parseInt(process.env.MMX_TIMEOUT_MS ?? "90000", 10);
 const BACKOFF_BASE_MS = parseInt(process.env.MMX_BACKOFF_BASE_MS ?? "2000", 10);
+const HANG_THRESHOLD_MS = parseInt(process.env.MMX_HANG_THRESHOLD_MS ?? "120000", 10);
 
 export class MmxError extends Error {
   constructor(message, { attempts, lastError, elapsedMs } = {}) {
@@ -43,6 +61,20 @@ export class MmxError extends Error {
     this.attempts = attempts;
     this.lastError = lastError;
     this.elapsedMs = elapsedMs;
+  }
+}
+
+export class MmxHangError extends MmxError {
+  // Subclass that explicitly signals "the call hung past the threshold,
+  // do NOT retry me, use fallback". Distinct from MmxError so batch
+  // scripts can match `instanceof MmxHangError` and route to fallback.
+  constructor({ elapsedMs, attempts = 1, lastError } = {}) {
+    super(`mmx call hung after ${(elapsedMs / 1000).toFixed(0)}s (threshold ${HANG_THRESHOLD_MS / 1000}s)`, {
+      attempts,
+      lastError,
+      elapsedMs,
+    });
+    this.name = "MmxHangError";
   }
 }
 
@@ -104,6 +136,7 @@ export function callMmxSync(prompt, system, options = {}) {
   let lastError = null;
 
   for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+    const attemptStart = Date.now();
     try {
       // Cross-platform: powershell.exe on Windows, mmx directly on Linux/macOS
       // (mmx.ps1 is a Windows-specific script). Local dev may be either.
@@ -121,6 +154,13 @@ export function callMmxSync(prompt, system, options = {}) {
     } catch (e) {
       lastError = e;
       const stderr = e.stderr?.toString() ?? e.message ?? "";
+      const elapsed = Date.now() - attemptStart;
+      // Hang detection: if a single attempt exceeded the threshold,
+      // abort with MmxHangError. NO retry — hanging again multiplies waste.
+      if (elapsed >= HANG_THRESHOLD_MS) {
+        console.warn(`[mmx] HANG detected (${(elapsed / 1000).toFixed(0)}s >= ${HANG_THRESHOLD_MS / 1000}s threshold). Aborting — use programmatic fallback.`);
+        throw new MmxHangError({ elapsedMs: elapsed, attempts: attempt + 1, lastError: e });
+      }
       const transient = isTransient(stderr);
       console.warn(`[mmx] attempt ${attempt + 1}/${MAX_RETRIES} failed (${e.code ?? e.message?.slice(0, 80) ?? "?"})${transient ? " [transient, will retry]" : " [fatal]"}`);
       if (!transient) break;
@@ -166,6 +206,12 @@ export async function callMmx({ message, system, model, maxTokens = 4096, temper
     } catch (e) {
       lastError = e;
       const stderr = e.stderr?.toString() ?? e.message ?? "";
+      const elapsed = Date.now() - start;
+      // Hang detection: if total elapsed >= threshold, abort with MmxHangError.
+      if (elapsed >= HANG_THRESHOLD_MS) {
+        console.warn(`[mmx] HANG detected (${(elapsed / 1000).toFixed(0)}s >= ${HANG_THRESHOLD_MS / 1000}s threshold). Aborting — use programmatic fallback.`);
+        throw new MmxHangError({ elapsedMs: elapsed, attempts: attempt + 1, lastError: e });
+      }
       const transient = isTransient(stderr);
       console.warn(`[mmx] attempt ${attempt + 1}/${MAX_RETRIES} failed (${e.code ?? e.message?.slice(0, 80) ?? "?"})${transient ? " [transient, will retry]" : " [fatal]"}`);
       if (!transient) break;

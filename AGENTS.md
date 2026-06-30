@@ -1829,9 +1829,101 @@ animal/insect (firefly / ladybug / monarch-bfly), architecture/european (hagia-s
 - **per-kind upload --also-rewrite 比 --all 块 + 容易回滚**:`--all` 一次扫 1300+ files,single kind 50-80 files 出错好定位。
 - **mmx 1K 比 2K 友好**:1K prompt 短,mmx variance 影响小;2K 偶尔返回 1536x3072,需要额外 reencode。
 
-## Round 60: 候选项
+## Round 60: 14 张新主题 + 候选项 (2026-06-28)
 
-- handwrite-sources.mjs (给 mmx 失败的 6 张手写 sources) 优先
-- handwrite-history.mjs 已存在,需要给 mmx 失败的 24 张手写 (那 35 fail 中,11 张是 handwrite-history 之前手写过的)
-- Vercel push (atlas-kit-six.vercel.app,需要用户在 Vercel dashboard 点 deploy) 优先
-- AGENTS.md subKind coverage 数字从 400/400 改成 498/498 + 更新「current catalog」段
+Commit `c8992b4`. 14 张新主题补 kind 平衡 + subKind 缺口 (china/vietnam/argentina/potassium/xenon/aluminum/nurse/engineer/professor/leukemia/sickle-cell/anxiety-disorder/rocket/satellite). China + rocket 手写 history, 其余 12 张走 handwrite-r60.mjs. 同时修 src/lib/taxonomy-browser.ts 解决 webpack 编译期 node:fs URI error (R60-build-fix, commit `da1d3f0`).
+
+候选项 (这一批 5/24/26 done):
+- ~~handwrite-sources.mjs (给 mmx 失败的 6 张手写 sources) 优先~~ ✓
+- ~~handwrite-history.mjs 已存在,需要给 mmx 失败的 24 张手写~~ ✓
+- ~~Vercel push (atlas-kit-six.vercel.app,需要用户在 Vercel dashboard 点 deploy) 优先~~ ✓
+- ~~AGENTS.md subKind coverage 数字从 400/400 改成 498/498 + 更新「current catalog」段~~ ✓
+
+## Round 60.2: 今日图鉴 改 FAB + modal (2026-06-29)
+
+R60.1 (commit `3fc2745`): 今日图鉴 改紧凑横向 layout (96px 方形缩略图).
+R60.2 (commit `3cfa32d`): 改右下浮动按钮 + modal — 不再占首屏条带.
+R60.2.1 (commit `00f44a9`): modal 改 artifact 风 — 完整图片不裁切 + 文字块在图下.
+R60.2.2 (commit `e86a4de`): modal 改窄 360px, image 自适应 9:16 无左右留白.
+
+## Round 60+35: 35 张新主题 (565 → 600) (2026-06-30)
+
+Commit `60c58b9`. Pipeline 4 阶段:
+- generate 35/35 ok (matrix 稳定)
+- upload 16 kinds 全 ok (run-batch3-cdn.ps1 per-kind sequential)
+- draft-history 30/36 ok + 6 fail (mmx 解析失败: sage/polaris/antares/bismuth/microscope/yunjin)
+- draft-sources 0/35 (整批 powershell 调用炸, 不是 mmx variance, 是脚本本身坏; 见 R60plus handwrite 兜底)
+- fix-descriptions 35/35 (1 张 mandela strip '百科占位' 前缀)
+- handwrite-r60plus35.mjs 补 6 history + 34 sources (含 kangxi-emp 历史遗留)
+- 最终: 600/600 全完整 (description ≥ 50 字符 + history ≥ 3 节点 + sources ≥ 2 条)
+
+新卡覆盖 (35 张): 鼠尾草/北极星/牛郎星/北落师门/心宿二/豚鼠/兔子/金丝雀/守宫/马来西亚/菲律宾/锗/铋/显微镜/珊瑚白化/蜻蜓/提拉米苏/抹茶拿铁/云锦/沙漏/罗盘/埃菲尔铁塔/巴塞罗那/鲸鲨/担担面/洋务运动/象棋/滑冰/王维/康熙帝/紫砂壶/兰亭序/刺绣/国家大剧院/戈谢病.
+
+## Round 60plus: 50 张新主题 (520 → 565) (2026-06-29)
+
+Commit `04f1ba7`. R58 之后第一次大批量新增, pipeline 4 阶段:
+- generate 50/50
+- upload all
+- history 49/50 (1 张 handwrite-r60plus.mjs 补)
+- sources 46/50 (4 张 handwrite-r60plus.mjs 补)
+- 11 kinds 配平 (kind balance 短板: disease/profession/vehicle 等)
+- 24 张填 subKind 缺口 + 11 张补 kind 平衡
+- subKind 0 缺口全填满
+
+## Round 60.3: 今日图鉴 artifact 风 modal (2026-06-29)
+
+见 R60.2.1 / R60.2.2.
+
+## Round F/E/D/C: 全套修复 (2026-06-30)
+
+Commit `e07eac7` + `6d1b067` + `18882bd` + `2609b40` + `370494a`. 这一批 5 个 commit 串联, 把 R60plus 之后积累的杂事 + 新加的 sort + mmx 健壮性 + dev cache 守卫 + E 占位清理一起推上去.
+
+F: dev cache bug 守卫
+- scripts/safe-build.mjs: 检测 3000/3103 dev server 监听, 有则拒绝 build 并提示; .next/ < 10 min 时清空重 build
+- package.json: 'build' 改 'node scripts/safe-build.mjs', 'build:raw' 保留旧
+- .githooks/pre-commit: commit 时若 .next/ < 10 min 且 dev 在监听则 warn
+- git config core.hooksPath = .githooks (仓库级 hooks)
+- **后续 Vercel deploy fix**: safe-build.mjs 原本硬编码 `npx.cmd`, Vercel Linux 容器报 `npx.cmd: command not found` exit 127. 改用 `process.platform === 'win32' ? 'npx.cmd' : 'npx'` (commit `6d1b067`).
+
+E: mmx-stubborn 卡清理
+- 200 张 subtitle 末尾有 ' · 百科占位' 占位符 (R59 batch mmx fallback 留下的污染, R58c 当时 regex 没匹配上)
+- 2 张 description 开头有 '**xxx**\n\n' mmx 模板前缀 (gene-editing / stroke)
+- scripts/cleanup-mmx-residue.mjs: strip 200 subtitle + 2 desc
+
+D: mmx 健壮性
+- scripts/mmx-client.mjs: 抽出 callMmx + callMmxJson + callMmxSync, retry + exponential backoff + jitter (transient 529/ETIMEDOUT 重试, fatal 401/403/400 不重试)
+- 跨平台: Windows 走 npx.cmd + powershell.exe, Linux/macOS 直接 mmx
+- options.quiet (M2.7 envelope 解析用 quiet=false)
+- options.format (backfill-subkinds 用 --format json)
+- 8 个老脚本迁移: fix-descriptions / draft-history / draft-sources / draft-extras / fill-tagline / backfill-tags-r60 / resume-tags-backfill / backfill-subkinds
+
+C: /cards + /search sort 选项
+- 4 个选项: 最新 (默认) / 最早 / 评分 / 系列号 (/cards); 相关 / 最新 / 最早 / 评分 (/search)
+- 仅在 filtered view + results > 1 时显示
+- /random / /timeline 不加 (随机 / 天然时间序)
+
+C': SortChips 共用组件
+- src/components/sort-chips.tsx: 抽取 sort chip 视觉为共用组件
+- /cards 和 /search 各 30 行 inline 重复 → 1 行 <SortChips />
+
+附加: 全站硬编码 60/12/391/400 数字清理 (commit `026a692`):
+- home hero 副标题 60/12 → 动态
+- /cards /all /graph /random metadata '60 张' → '600 张'
+- opengraph-image.tsx: STATS '391 张图鉴 · 12 个分类' → '600 张 · 26 个分类' (最离谱错值)
+- /map metadata: 12 张有坐标 改动态
+- 跳过 changelog/page.tsx 历史里程碑条目
+
+## 当前 catalog 状态 (R60+35 + R60plus 后)
+
+- **600 张** (R58b 后 subKind 100% 覆盖 + 12 series + 12 kinds)
+- 12 series: pet-breed-guide / wild-fauna-atlas / city-encyclopedia / festival-almanac / craft-and-botanical / culinary-corner / history-and-figures / frontiers-and-wonders / soundtrack-atlas / anime-works-atlas / pulp-fiction / atlas-miscellany
+- 26 kinds / 113 subKinds / 26 series 引用
+- 0 no-subKind, 0 no-tagline, 0 tags<4, 0 no-history<3, 0 no-sources<2
+- 全字段完整, 12 series 显示, subKind 二级过滤覆盖 /cards /random /search /timeline /graph 5 入口
+- 25 fields×600 cards = 15000+ data points, mmx-client wrapper + safe-build + pre-commit hook + cleanup-mmx-residue 4 个新工具守卫数据完整性
+
+## Round 60+ future: mmx 抽风根因 + 安全脚本模式 (2026-06-30 next)
+
+待办:
+- mmx-client hang > 2min 自动 fallback programmatic derivation (避免 5-10min 整批卡)
+- 全 batch scripts 加 max-timeout 保护, 避免单条卡卡死整批

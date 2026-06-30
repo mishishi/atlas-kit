@@ -4,7 +4,8 @@
 // have sources. ~$0.20 total via mmx.
 import fs from "node:fs";
 import path from "node:path";
-import { callMmxSync } from "./mmx-client.mjs";
+import { callMmxSync, MmxHangError, MmxError } from "./mmx-client.mjs";
+import { fillMissingFields } from "./mmx-fallback.mjs";
 
 const args = process.argv.slice(2);
 const cardsPathIdx = args.indexOf("--cards-path");
@@ -71,7 +72,7 @@ let todo = cards.filter((c) => !Array.isArray(c.sources) || c.sources.length ===
 if (includeSlugs) todo = todo.filter((c) => includeSlugs.has(c.slug));
 console.log(`Will draft sources for ${todo.length} cards (${cards.length} total, ${todo.length} missing).`);
 
-let success = 0, fail = 0;
+let success = 0, fail = 0, fallbackUsed = 0;
 for (let i = 0; i < todo.length; i++) {
   const c = todo[i];
   process.stdout.write(`[${i + 1}/${todo.length}] ${c.title} ... `);
@@ -80,6 +81,16 @@ for (let i = 0; i < todo.length; i++) {
     const text = extractResponseText(raw);
     const arr = extractJsonArray(text);
     if (!arr || arr.length < 2) {
+      // R60+: if mmx returned nothing useful, fall back to programmatic
+      // derivation rather than failing the whole card.
+      const { applied } = fillMissingFields(c);
+      if (applied.includes("sources")) {
+        fallbackUsed++;
+        console.log(`FALLBACK (${c.sources.length} sources)`);
+        success++;
+        fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
+        continue;
+      }
       console.log("FAIL: parse");
       fail++;
       continue;
@@ -107,9 +118,19 @@ for (let i = 0; i < todo.length; i++) {
     console.log(`OK (${valid.length} sources)`);
     fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
   } catch (e) {
+    if (e instanceof MmxHangError || e instanceof MmxError) {
+      const { applied } = fillMissingFields(c);
+      if (applied.includes("sources")) {
+        fallbackUsed++;
+        console.log(`FALLBACK (${e.name}) (${c.sources.length} sources)`);
+        success++;
+        fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
+        continue;
+      }
+    }
     console.log(`ERR: ${e.message?.slice(0, 80) ?? e}`);
     fail++;
   }
 }
 
-console.log(`\nDone. success=${success} fail=${fail}.`);
+console.log(`\nDone. success=${success} fail=${fail} fallback=${fallbackUsed}.`);

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Sparkles, ArrowRight } from "lucide-react";
-import { getAllCards, getAllSeries, getKindCounts } from "@/lib/data";
+import { getAllCards, getAllSeries, getKindCounts, getRecentCards } from "@/lib/data";
 import { THEME_TYPES } from "@/lib/theme-types";
 import { CardGrid } from "@/components/card-grid";
 import { KindFilter } from "@/components/kind-filter";
 import { FavoritesPreview } from "@/components/favorites-preview";
 import { TodayFab } from "@/components/today-fab";
+import { RecentCards } from "@/components/recent-cards";
 import { pickDailyCard } from "@/lib/daily-card";
 
 interface HomeProps {
@@ -17,6 +18,13 @@ export default function Home({ searchParams }: HomeProps) {
   const allCards = getAllCards();
   const allSeries = getAllSeries();
   const kindCounts = getKindCounts();
+  // U (2026-06-30): 5 most recent cards for the "最新收录" strip.
+  // getAllCards() is already sorted by createdAt desc so the first
+  // 5 are the newest. We re-sort defensively in case future
+  // refactors of getAllCards break the ordering contract.
+  const recentCards = [...allCards]
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+    .slice(0, 5);
   const activeKind = searchParams.kind;
   const filteredCards = activeKind ? allCards.filter((c) => c.kind === activeKind) : allCards;
   const featuredCards = filteredCards.slice(0, 8);
@@ -263,6 +271,12 @@ export default function Home({ searchParams }: HomeProps) {
           visitors get a clean home; returnees get a personalized
           section above the public grid). */}
       <FavoritesPreview allCards={allCards} />
+
+      {/* U (2026-06-30): 最新收录 — 5 most recent cards in a
+          horizontal-scrolling row. Sits between the personalized
+          favorites strip and the public "精选图鉴" grid so
+          returning visitors see "your stuff → fresh stuff → all". */}
+      <RecentCards cards={recentCards} />
 
       {/* Cards grid */}
       <section className="container py-12 md:py-16">

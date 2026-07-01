@@ -8,6 +8,7 @@ import { Tag } from "@/components/tag";
 import { ShareActions } from "@/components/share-actions";
 import { HeroWithLightbox } from "@/components/hero-with-lightbox";
 import { getEditorialNote } from "@/lib/editorial";
+import { getAiPitch } from "@/lib/ai-pitch";
 import { StarButton } from "@/components/star-button";
 import { LinkedText } from "@/components/linked-text";
 import { CardNav } from "@/components/card-nav";
@@ -91,6 +92,12 @@ export default async function CardDetail({
   // between description and quote (above the technical meta blocks)
   // so it's the first thing readers see after the lede.
   const editorialNote = getEditorialNote(card.slug);
+  // W (2026-07-01): AI 一句话总结 (knowledge-card pitch). 30 cards
+  // ship with a hand-written 30-60 char opening line ("X 是 Y, Z
+  // 关键点"). Renders right after the description, before the
+  // editorial note — different rhetorical voice (objective, dense)
+  // vs editorial (subjective, why-this-matters).
+  const aiPitch = getAiPitch(card.slug);
 
   // R34 Day 3 (2026-06-17): 翻图录 mode — fullscreen image-first
   // browsing. Triggered by `?mode=flip` on the URL. Renders BEFORE
@@ -344,6 +351,27 @@ export default async function CardDetail({
           <p className="text-base leading-relaxed text-foreground/90">
             <LinkedText text={card.description} titleToSlug={mentionMap} />
           </p>
+
+          {/* W (2026-07-01): AI 一句话总结. 30 张精选卡有 30-60 字
+              knowledge-card 开头句. 用更轻的视觉风格 (无 border,
+              灰色 eyebrow) 跟 M 的 editorial 区分 — AI pitch 是
+              客观知识句, M editorial 是主观编辑志. 两者读起来
+              不同: AI 一眼看到'是什么', editorial 一眼看到
+              '我为什么收这张'. 静默 skip 没 pitch 的卡片。 */}
+          {aiPitch && (
+            <aside
+              className="mt-4 rounded-md bg-muted/40 px-4 py-3"
+              data-section="ai-pitch"
+            >
+              <p className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70 font-medium mb-1.5">
+                <Sparkles className="h-3 w-3" aria-hidden="true" />
+                AI 一句话
+              </p>
+              <p className="text-sm text-foreground/85 leading-relaxed">
+                {aiPitch.pitch}
+              </p>
+            </aside>
+          )}
 
           {/* M (2026-06-30): editor's "为什么收录这条". 30/600 cards
               carry a 1-2 sentence hand-written note. Visually a

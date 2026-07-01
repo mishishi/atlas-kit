@@ -7124,9 +7124,9 @@
       "#6E628C",
       "#2C2438"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/spirited-away/spirited-away-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/spirited-away/spirited-away-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/spirited-away/spirited-away-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-full.webp",
     "score": 9.5,
     "tags": [
       "日本",
@@ -48693,6 +48693,1406 @@
       {
         "title": "百度百科",
         "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%BC%8F%E5%A9%9A%E7%A4%BC",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "the-elephant",
+    "title": "大象 (动物)",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/the-elephant/the-elephant-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/the-elephant/the-elephant-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/the-elephant/the-elephant-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "陆地上最大的哺乳动物, 不能跳",
+    "subtitle": "动物 · 大象 (动物) · 百科占位",
+    "description": "大象 (动物) 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "mammal",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「大象 (动物)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「大象 (动物)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「大象 (动物)」并按 mammal 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%B1%A1%20(%E5%8A%A8%E7%89%A9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%A4%A7%E8%B1%A1%20(%E5%8A%A8%E7%89%A9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "oceanic-mythology",
+    "title": "毛伊 (毛利神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "118",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/oceanic-mythology/oceanic-mythology-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/oceanic-mythology/oceanic-mythology-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/oceanic-mythology/oceanic-mythology-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "毛利人传说中钓出北岛的半神",
+    "subtitle": "神话 · 毛伊 (毛利神话) · 百科占位",
+    "description": "毛伊 (毛利神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "oceania",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「毛伊 (毛利神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「毛伊 (毛利神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「毛伊 (毛利神话)」并按 oceania 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E4%BC%8A%20(%E6%AF%9B%E5%88%A9%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%AF%9B%E4%BC%8A%20(%E6%AF%9B%E5%88%A9%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "indra",
+    "title": "因陀罗 (印度神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "119",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/indra/indra-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/indra/indra-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/indra/indra-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "印度神话雷神战神, 梵天之首",
+    "subtitle": "神话 · 因陀罗 (印度神话) · 百科占位",
+    "description": "因陀罗 (印度神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "hindu",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「因陀罗 (印度神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「因陀罗 (印度神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「因陀罗 (印度神话)」并按 hindu 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%A0%E9%99%80%E7%BD%97%20(%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%A0%E9%99%80%E7%BD%97%20(%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "kama",
+    "title": "伽摩 (印度神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "120",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/kama/kama-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/kama/kama-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/kama/kama-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "印度爱欲之神, 甘蔗弓花箭",
+    "subtitle": "神话 · 伽摩 (印度神话) · 百科占位",
+    "description": "伽摩 (印度神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "hindu",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「伽摩 (印度神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「伽摩 (印度神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「伽摩 (印度神话)」并按 hindu 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BC%BD%E6%91%A9%20(%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BC%BD%E6%91%A9%20(%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "apollo-cnt",
+    "title": "阿波罗 (希腊神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "121",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/apollo-cnt/apollo-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/apollo-cnt/apollo-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/apollo-cnt/apollo-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "光明音乐诗艺之神, 德尔菲神谕",
+    "subtitle": "神话 · 阿波罗 (希腊神话) · 百科占位",
+    "description": "阿波罗 (希腊神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "classical-roman",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「阿波罗 (希腊神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「阿波罗 (希腊神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「阿波罗 (希腊神话)」并按 classical-roman 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E7%BD%97%20(%E5%B8%8C%E8%85%8A%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%98%BF%E6%B3%A2%E7%BD%97%20(%E5%B8%8C%E8%85%8A%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "minerva",
+    "title": "密涅瓦 (罗马)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "122",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/minerva/minerva-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/minerva/minerva-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/minerva/minerva-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "罗马智慧女神, 雅典的罗马对应",
+    "subtitle": "神话 · 密涅瓦 (罗马) · 百科占位",
+    "description": "密涅瓦 (罗马) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "classical-roman",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「密涅瓦 (罗马)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「密涅瓦 (罗马)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「密涅瓦 (罗马)」并按 classical-roman 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AF%86%E6%B6%85%E7%93%A6%20(%E7%BD%97%E9%A9%AC)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%AF%86%E6%B6%85%E7%93%A6%20(%E7%BD%97%E9%A9%AC)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "marduk",
+    "title": "马尔杜克 (近东神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "123",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/marduk/marduk-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/marduk/marduk-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/marduk/marduk-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "巴比伦主神, 创世原初混沌之母 Tiamat 的征服者",
+    "subtitle": "神话 · 马尔杜克 (近东神话) · 百科占位",
+    "description": "马尔杜克 (近东神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "near-eastern",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「马尔杜克 (近东神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「马尔杜克 (近东神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「马尔杜克 (近东神话)」并按 near-eastern 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E5%B0%94%E6%9D%9C%E5%85%8B%20(%E8%BF%91%E4%B8%9C%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%A9%AC%E5%B0%94%E6%9D%9C%E5%85%8B%20(%E8%BF%91%E4%B8%9C%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "freyr",
+    "title": "弗雷 (北欧神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "124",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/freyr/freyr-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/freyr/freyr-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/freyr/freyr-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "北欧丰饶之神, 阳光与雨水",
+    "subtitle": "神话 · 弗雷 (北欧神话) · 百科占位",
+    "description": "弗雷 (北欧神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "european-pagan",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「弗雷 (北欧神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「弗雷 (北欧神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「弗雷 (北欧神话)」并按 european-pagan 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%97%E9%9B%B7%20(%E5%8C%97%E6%AC%A7%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%BC%97%E9%9B%B7%20(%E5%8C%97%E6%AC%A7%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "pakistan",
+    "title": "巴基斯坦",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "065",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/pakistan/pakistan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/pakistan/pakistan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/pakistan/pakistan-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "中亚进入印度洋的陆上走廊",
+    "subtitle": "国家 · 巴基斯坦 · 百科占位",
+    "description": "巴基斯坦 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "south-asia",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「巴基斯坦」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「巴基斯坦」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「巴基斯坦」并按 south-asia 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "bangladesh",
+    "title": "孟加拉国",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "066",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/bangladesh/bangladesh-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/bangladesh/bangladesh-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/bangladesh/bangladesh-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "世界人口密度最高的国家之一",
+    "subtitle": "国家 · 孟加拉国 · 百科占位",
+    "description": "孟加拉国 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "south-asia",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「孟加拉国」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「孟加拉国」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「孟加拉国」并按 south-asia 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%9F%E5%8A%A0%E6%8B%89%E5%9B%BD",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%AD%9F%E5%8A%A0%E6%8B%89%E5%9B%BD",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "qatar",
+    "title": "卡塔尔",
+    "kind": "country",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "067",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/qatar/qatar-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/qatar/qatar-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/qatar/qatar-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "人均 GDP 全球第 4, 世界最富之一",
+    "subtitle": "国家 · 卡塔尔 · 百科占位",
+    "description": "卡塔尔 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "south-asia",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「卡塔尔」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「卡塔尔」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「卡塔尔」并按 south-asia 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%A1%94%E5%B0%94",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%8D%A1%E5%A1%94%E5%B0%94",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "lebron-james",
+    "title": "勒布朗·詹姆斯",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/lebron-james/lebron-james-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/lebron-james/lebron-james-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/lebron-james/lebron-james-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "NBA 总得分历史第一, GOAT 争议核心",
+    "subtitle": "体育运动 · 勒布朗·詹姆斯 · 百科占位",
+    "description": "勒布朗·詹姆斯 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "team",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「勒布朗·詹姆斯」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「勒布朗·詹姆斯」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「勒布朗·詹姆斯」并按 team 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "tom-brady",
+    "title": "汤姆·布雷迪",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tom-brady/tom-brady-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tom-brady/tom-brady-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tom-brady/tom-brady-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "7 次超级碗冠军 NFL 史上最伟大四分卫",
+    "subtitle": "体育运动 · 汤姆·布雷迪 · 百科占位",
+    "description": "汤姆·布雷迪 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "team",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「汤姆·布雷迪」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「汤姆·布雷迪」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「汤姆·布雷迪」并按 team 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%A4%E5%A7%86%C2%B7%E5%B8%83%E9%9B%B7%E8%BF%AA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B1%A4%E5%A7%86%C2%B7%E5%B8%83%E9%9B%B7%E8%BF%AA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "michael-phelps",
+    "title": "迈克尔·菲尔普斯",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/michael-phelps/michael-phelps-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/michael-phelps/michael-phelps-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/michael-phelps/michael-phelps-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "23 金奥运史上之最, 游泳技术革命者",
+    "subtitle": "体育运动 · 迈克尔·菲尔普斯 · 百科占位",
+    "description": "迈克尔·菲尔普斯 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "water-sport",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「迈克尔·菲尔普斯」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「迈克尔·菲尔普斯」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「迈克尔·菲尔普斯」并按 water-sport 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E8%8F%B2%E5%B0%94%E6%99%AE%E6%96%AF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E8%8F%B2%E5%B0%94%E6%99%AE%E6%96%AF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "li-ning-athletics",
+    "title": "李宁 (运动员)",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/li-ning-athletics/li-ning-athletics-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/li-ning-athletics/li-ning-athletics-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/li-ning-athletics/li-ning-athletics-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "体操王子, 2008 北京奥运火炬手",
+    "subtitle": "体育运动 · 李宁 (运动员) · 百科占位",
+    "description": "李宁 (运动员) 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "athletics",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「李宁 (运动员)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「李宁 (运动员)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「李宁 (运动员)」并按 athletics 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%AE%81%20(%E8%BF%90%E5%8A%A8%E5%91%98)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%9D%8E%E5%AE%81%20(%E8%BF%90%E5%8A%A8%E5%91%98)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "yuzuru-hanyu",
+    "title": "羽生结弦",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yuzuru-hanyu/yuzuru-hanyu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yuzuru-hanyu/yuzuru-hanyu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yuzuru-hanyu/yuzuru-hanyu-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "66 年来首位奥运男单蝉联冠军",
+    "subtitle": "体育运动 · 羽生结弦 · 百科占位",
+    "description": "羽生结弦 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "winter",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「羽生结弦」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「羽生结弦」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「羽生结弦」并按 winter 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BE%BD%E7%94%9F%E7%BB%93%E5%BC%A6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%BE%BD%E7%94%9F%E7%BB%93%E5%BC%A6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "qunming-festival",
+    "title": "云南泼水节",
+    "kind": "festival",
+    "series": "festival-almanac",
+    "seriesNo": "101",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qunming-festival/qunming-festival-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qunming-festival/qunming-festival-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qunming-festival/qunming-festival-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "傣族新年泼水祝福 3-7 天",
+    "subtitle": "节日 · 云南泼水节 · 百科占位",
+    "description": "云南泼水节 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ethnic-minority",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「云南泼水节」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「云南泼水节」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「云南泼水节」并按 ethnic-minority 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%91%E5%8D%97%E6%B3%BC%E6%B0%B4%E8%8A%82",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BA%91%E5%8D%97%E6%B3%BC%E6%B0%B4%E8%8A%82",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "naadam-cnt",
+    "title": "那达慕大会 (蒙古)",
+    "kind": "festival",
+    "series": "festival-almanac",
+    "seriesNo": "102",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/naadam-cnt/naadam-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/naadam-cnt/naadam-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/naadam-cnt/naadam-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "蒙古男儿三艺: 摔跤赛马射箭",
+    "subtitle": "节日 · 那达慕大会 (蒙古) · 百科占位",
+    "description": "那达慕大会 (蒙古) 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ethnic-minority",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「那达慕大会 (蒙古)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「那达慕大会 (蒙古)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「那达慕大会 (蒙古)」并按 ethnic-minority 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%A3%E8%BE%BE%E6%85%95%E5%A4%A7%E4%BC%9A%20(%E8%92%99%E5%8F%A4)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%82%A3%E8%BE%BE%E6%85%95%E5%A4%A7%E4%BC%9A%20(%E8%92%99%E5%8F%A4)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "diwali",
+    "title": "排灯节",
+    "kind": "festival",
+    "series": "festival-almanac",
+    "seriesNo": "103",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/diwali/diwali-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/diwali/diwali-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/diwali/diwali-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "印度光明节, 光明战胜黑暗",
+    "subtitle": "节日 · 排灯节 · 百科占位",
+    "description": "排灯节 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ethnic-minority",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「排灯节」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「排灯节」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「排灯节」并按 ethnic-minority 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8E%92%E7%81%AF%E8%8A%82",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%8E%92%E7%81%AF%E8%8A%82",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "carbon-composite",
+    "title": "碳纤维复合材料",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "071",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-composite/carbon-composite-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-composite/carbon-composite-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-composite/carbon-composite-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "重量钢的 1/4, 强度钢的 5 倍",
+    "subtitle": "科技概念 · 碳纤维复合材料 · 百科占位",
+    "description": "碳纤维复合材料 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "materials",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「碳纤维复合材料」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「碳纤维复合材料」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「碳纤维复合材料」并按 materials 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A2%B3%E7%BA%A4%E7%BB%B4%E5%A4%8D%E5%90%88%E6%9D%90%E6%96%99",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%A2%B3%E7%BA%A4%E7%BB%B4%E5%A4%8D%E5%90%88%E6%9D%90%E6%96%99",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "aerogel",
+    "title": "气凝胶",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "072",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/aerogel/aerogel-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/aerogel/aerogel-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/aerogel/aerogel-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "世界最轻固体, 99% 是空气",
+    "subtitle": "科技概念 · 气凝胶 · 百科占位",
+    "description": "气凝胶 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "materials",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「气凝胶」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「气凝胶」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「气凝胶」并按 materials 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B0%94%E5%87%9D%E8%83%B6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B0%94%E5%87%9D%E8%83%B6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "carbon-tax",
+    "title": "碳税",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "073",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-tax/carbon-tax-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-tax/carbon-tax-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-tax/carbon-tax-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "把气候变化的外部成本价格化",
+    "subtitle": "科技概念 · 碳税 · 百科占位",
+    "description": "碳税 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "energy",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「碳税」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「碳税」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「碳税」并按 energy 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A2%B3%E7%A8%8E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%A2%B3%E7%A8%8E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "breeder-reactor",
+    "title": "增殖反应堆",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "074",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/breeder-reactor/breeder-reactor-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/breeder-reactor/breeder-reactor-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/breeder-reactor/breeder-reactor-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "增殖新核燃料的核反应堆",
+    "subtitle": "科技概念 · 增殖反应堆 · 百科占位",
+    "description": "增殖反应堆 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "energy",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「增殖反应堆」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「增殖反应堆」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「增殖反应堆」并按 energy 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A2%9E%E6%AE%96%E5%8F%8D%E5%BA%94%E5%A0%86",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%A2%9E%E6%AE%96%E5%8F%8D%E5%BA%94%E5%A0%86",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "cosmic-microwave-bg",
+    "title": "宇宙微波背景辐射",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "080",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/cosmic-microwave-bg/cosmic-microwave-bg-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/cosmic-microwave-bg/cosmic-microwave-bg-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/cosmic-microwave-bg/cosmic-microwave-bg-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "大爆炸 38 万年后释放的光子",
+    "subtitle": "天体 · 宇宙微波背景辐射 · 百科占位",
+    "description": "宇宙微波背景辐射 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "other-cosmic",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「宇宙微波背景辐射」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「宇宙微波背景辐射」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「宇宙微波背景辐射」并按 other-cosmic 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%87%E5%AE%99%E5%BE%AE%E6%B3%A2%E8%83%8C%E6%99%AF%E8%BE%90%E5%B0%84",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%AE%87%E5%AE%99%E5%BE%AE%E6%B3%A2%E8%83%8C%E6%99%AF%E8%BE%90%E5%B0%84",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "io-moon",
+    "title": "木卫一 (艾奥)",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "081",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/io-moon/io-moon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/io-moon/io-moon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/io-moon/io-moon-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "太阳系最活跃的火山天体",
+    "subtitle": "天体 · 木卫一 (艾奥) · 百科占位",
+    "description": "木卫一 (艾奥) 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "moon",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「木卫一 (艾奥)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「木卫一 (艾奥)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「木卫一 (艾奥)」并按 moon 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E5%8D%AB%E4%B8%80%20(%E8%89%BE%E5%A5%A5)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%9C%A8%E5%8D%AB%E4%B8%80%20(%E8%89%BE%E5%A5%A5)",
         "type": "encyclopedia"
       },
       {

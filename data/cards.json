@@ -50101,5 +50101,1405 @@
         "type": "encyclopedia"
       }
     ]
+  },
+  {
+    "slug": "brief-history-of-nearly-everything",
+    "title": "万物简史",
+    "kind": "book",
+    "series": "atlas-miscellany",
+    "seriesNo": "573",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/brief-history-of-nearly-everything/brief-history-of-nearly-everything-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/brief-history-of-nearly-everything/brief-history-of-nearly-everything-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/brief-history-of-nearly-everything/brief-history-of-nearly-everything-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "30 岁成年礼读本",
+    "subtitle": "书籍 · 万物简史 · 百科占位",
+    "description": "万物简史 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "science",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「万物简史」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「万物简史」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「万物简史」并按 science 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%87%E7%89%A9%E7%AE%80%E5%8F%B2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%87%E7%89%A9%E7%AE%80%E5%8F%B2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "cosmos-book",
+    "title": "《宇宙》 (卡尔·萨根)",
+    "kind": "book",
+    "series": "atlas-miscellany",
+    "seriesNo": "574",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/cosmos-book/cosmos-book-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/cosmos-book/cosmos-book-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/cosmos-book/cosmos-book-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "卡尔·萨根 1980 巨著",
+    "subtitle": "书籍 · 《宇宙》 (卡尔·萨根) · 百科占位",
+    "description": "《宇宙》 (卡尔·萨根) 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "science",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「《宇宙》 (卡尔·萨根)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「《宇宙》 (卡尔·萨根)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「《宇宙》 (卡尔·萨根)」并按 science 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E3%80%8A%E5%AE%87%E5%AE%99%E3%80%8B%20(%E5%8D%A1%E5%B0%94%C2%B7%E8%90%A8%E6%A0%B9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E3%80%8A%E5%AE%87%E5%AE%99%E3%80%8B%20(%E5%8D%A1%E5%B0%94%C2%B7%E8%90%A8%E6%A0%B9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "selfish-gene",
+    "title": "自私的基因",
+    "kind": "book",
+    "series": "atlas-miscellany",
+    "seriesNo": "575",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/selfish-gene/selfish-gene-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/selfish-gene/selfish-gene-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/selfish-gene/selfish-gene-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "基因是自然选择的基本单位",
+    "subtitle": "书籍 · 自私的基因 · 百科占位",
+    "description": "自私的基因 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "science",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「自私的基因」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「自私的基因」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「自私的基因」并按 science 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%87%AA%E7%A7%81%E7%9A%84%E5%9F%BA%E5%9B%A0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%87%AA%E7%A7%81%E7%9A%84%E5%9F%BA%E5%9B%A0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "gunpowder",
+    "title": "火药 (历史)",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/gunpowder/gunpowder-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/gunpowder/gunpowder-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/gunpowder/gunpowder-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "9 世纪中国炼丹的意外产物",
+    "subtitle": "历史事件 · 火药 (历史) · 百科占位",
+    "description": "火药 (历史) 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "contemporary",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「火药 (历史)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「火药 (历史)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「火药 (历史)」并按 contemporary 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%81%AB%E8%8D%AF%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%81%AB%E8%8D%AF%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "penicillin",
+    "title": "青霉素",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/penicillin/penicillin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/penicillin/penicillin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/penicillin/penicillin-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1928 偶然发现, 1940 量产",
+    "subtitle": "历史事件 · 青霉素 · 百科占位",
+    "description": "青霉素 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "contemporary",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「青霉素」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「青霉素」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「青霉素」并按 contemporary 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9D%92%E9%9C%89%E7%B4%A0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%9D%92%E9%9C%89%E7%B4%A0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "world-wide-web",
+    "title": "万维网",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/world-wide-web/world-wide-web-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/world-wide-web/world-wide-web-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/world-wide-web/world-wide-web-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1989 CERN 一份提案, 改变全球",
+    "subtitle": "历史事件 · 万维网 · 百科占位",
+    "description": "万维网 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "contemporary",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「万维网」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「万维网」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「万维网」并按 contemporary 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "atomic-bomb-cnt",
+    "title": "原子弹与广岛",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "042",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/atomic-bomb-cnt/atomic-bomb-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/atomic-bomb-cnt/atomic-bomb-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/atomic-bomb-cnt/atomic-bomb-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1945 广岛长崎, 当量 15 千吨",
+    "subtitle": "历史事件 · 原子弹与广岛 · 百科占位",
+    "description": "原子弹与广岛 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "contemporary",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「原子弹与广岛」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「原子弹与广岛」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「原子弹与广岛」并按 contemporary 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%AD%90%E5%BC%B9%E4%B8%8E%E5%B9%BF%E5%B2%9B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%8E%9F%E5%AD%90%E5%BC%B9%E4%B8%8E%E5%B9%BF%E5%B2%9B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "potala-palace-cnt",
+    "title": "布达拉宫 (历史)",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "044",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/potala-palace-cnt/potala-palace-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/potala-palace-cnt/potala-palace-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/potala-palace-cnt/potala-palace-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1645 起重建, 现存建筑主体",
+    "subtitle": "建筑 · 布达拉宫 (历史) · 百科占位",
+    "description": "布达拉宫 (历史) 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ancient-palace",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「布达拉宫 (历史)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「布达拉宫 (历史)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「布达拉宫 (历史)」并按 ancient-palace 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B8%83%E8%BE%BE%E6%8B%89%E5%AE%AB%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%B8%83%E8%BE%BE%E6%8B%89%E5%AE%AB%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "hengshan-temple",
+    "title": "悬空寺",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "045",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/hengshan-temple/hengshan-temple-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/hengshan-temple/hengshan-temple-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/hengshan-temple/hengshan-temple-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "北魏悬空三教寺, 距今 1500 多年",
+    "subtitle": "建筑 · 悬空寺 · 百科占位",
+    "description": "悬空寺 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ancient-palace",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「悬空寺」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「悬空寺」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「悬空寺」并按 ancient-palace 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%82%AC%E7%A9%BA%E5%AF%BA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%82%AC%E7%A9%BA%E5%AF%BA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "shanxi-courtyard",
+    "title": "乔家大院",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/shanxi-courtyard/shanxi-courtyard-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/shanxi-courtyard/shanxi-courtyard-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/shanxi-courtyard/shanxi-courtyard-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "晋商乔致庸家族的 313 间房",
+    "subtitle": "建筑 · 乔家大院 · 百科占位",
+    "description": "乔家大院 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ancient-palace",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「乔家大院」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「乔家大院」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「乔家大院」并按 ancient-palace 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "crab-nebula-cnt",
+    "title": "蟹状星云 M1",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "082",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/crab-nebula-cnt/crab-nebula-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/crab-nebula-cnt/crab-nebula-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/crab-nebula-cnt/crab-nebula-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "宋代 1054 年超新星遗迹",
+    "subtitle": "天体 · 蟹状星云 M1 · 百科占位",
+    "description": "蟹状星云 M1 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "nebula",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「蟹状星云 M1」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「蟹状星云 M1」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「蟹状星云 M1」并按 nebula 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%9F%B9%E7%8A%B6%E6%98%9F%E4%BA%91%20M1",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%9F%B9%E7%8A%B6%E6%98%9F%E4%BA%91%20M1",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "orion-nebula",
+    "title": "猎户座大星云",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "083",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/orion-nebula/orion-nebula-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/orion-nebula/orion-nebula-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/orion-nebula/orion-nebula-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "夜空最亮发射星云, 恒星育婴室",
+    "subtitle": "天体 · 猎户座大星云 · 百科占位",
+    "description": "猎户座大星云 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "nebula",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「猎户座大星云」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「猎户座大星云」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「猎户座大星云」并按 nebula 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8C%8E%E6%88%B7%E5%BA%A7%E5%A4%A7%E6%98%9F%E4%BA%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%8C%8E%E6%88%B7%E5%BA%A7%E5%A4%A7%E6%98%9F%E4%BA%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "great-barrier-reef-cnt",
+    "title": "大堡礁 (地质)",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/great-barrier-reef-cnt/great-barrier-reef-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/great-barrier-reef-cnt/great-barrier-reef-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/great-barrier-reef-cnt/great-barrier-reef-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "珊瑚虫堆积 150 米的钙质巨构",
+    "subtitle": "自然现象 · 大堡礁 (地质) · 百科占位",
+    "description": "大堡礁 (地质) 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "geological",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「大堡礁 (地质)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「大堡礁 (地质)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「大堡礁 (地质)」并按 geological 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%A0%A1%E7%A4%81%20(%E5%9C%B0%E8%B4%A8)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%A0%A1%E7%A4%81%20(%E5%9C%B0%E8%B4%A8)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "danxia-landform",
+    "title": "丹霞地貌",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "042",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/danxia-landform/danxia-landform-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/danxia-landform/danxia-landform-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/danxia-landform/danxia-landform-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "白垩纪红层被流水切成红色陡崖",
+    "subtitle": "自然现象 · 丹霞地貌 · 百科占位",
+    "description": "丹霞地貌 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "geological",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「丹霞地貌」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「丹霞地貌」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「丹霞地貌」并按 geological 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E9%9C%9E%E5%9C%B0%E8%B2%8C",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%B9%E9%9C%9E%E5%9C%B0%E8%B2%8C",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "karst-caves",
+    "title": "喀斯特溶洞",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "043",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/karst-caves/karst-caves-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/karst-caves/karst-caves-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/karst-caves/karst-caves-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "石灰岩被水溶解数万年的洞穴",
+    "subtitle": "自然现象 · 喀斯特溶洞 · 百科占位",
+    "description": "喀斯特溶洞 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "geological",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「喀斯特溶洞」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「喀斯特溶洞」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「喀斯特溶洞」并按 geological 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%96%80%E6%96%AF%E7%89%B9%E6%BA%B6%E6%B4%9E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%96%80%E6%96%AF%E7%89%B9%E6%BA%B6%E6%B4%9E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "ph-geothermal-vent",
+    "title": "海底热泉",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "044",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/ph-geothermal-vent/ph-geothermal-vent-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/ph-geothermal-vent/ph-geothermal-vent-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/ph-geothermal-vent/ph-geothermal-vent-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1977 年 2500 米深海的黑暗食物链",
+    "subtitle": "自然现象 · 海底热泉 · 百科占位",
+    "description": "海底热泉 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ocean",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「海底热泉」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「海底热泉」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「海底热泉」并按 ocean 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B5%B7%E5%BA%95%E7%83%AD%E6%B3%89",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B5%B7%E5%BA%95%E7%83%AD%E6%B3%89",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "migration-of-shad",
+    "title": "鳗鱼迁徙之谜",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "045",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/migration-of-shad/migration-of-shad-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/migration-of-shad/migration-of-shad-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/migration-of-shad/migration-of-shad-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "鳗鱼 6000 公里洄游 5000 年不解",
+    "subtitle": "自然现象 · 鳗鱼迁徙之谜 · 百科占位",
+    "description": "鳗鱼迁徙之谜 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "biological",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「鳗鱼迁徙之谜」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「鳗鱼迁徙之谜」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「鳗鱼迁徙之谜」并按 biological 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B3%97%E9%B1%BC%E8%BF%81%E5%BE%99%E4%B9%8B%E8%B0%9C",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%B3%97%E9%B1%BC%E8%BF%81%E5%BE%99%E4%B9%8B%E8%B0%9C",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "colemans-toad",
+    "title": "科罗拉多蟾蜍",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/colemans-toad/colemans-toad-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/colemans-toad/colemans-toad-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/colemans-toad/colemans-toad-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "科罗拉多沙漠蟾蜍的天然神经剂",
+    "subtitle": "自然现象 · 科罗拉多蟾蜍 · 百科占位",
+    "description": "科罗拉多蟾蜍 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "biological",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「科罗拉多蟾蜍」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「科罗拉多蟾蜍」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「科罗拉多蟾蜍」并按 biological 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%91%E7%BD%97%E6%8B%89%E5%A4%9A%E8%9F%BE%E8%9C%8D",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%A7%91%E7%BD%97%E6%8B%89%E5%A4%9A%E8%9F%BE%E8%9C%8D",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "silk-weaving",
+    "title": "云锦 (丝绸织物)",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "154",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/silk-weaving/silk-weaving-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/silk-weaving/silk-weaving-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/silk-weaving/silk-weaving-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "南京云锦, 织机一寸 24 小时",
+    "subtitle": "艺术品 · 云锦 (丝绸织物) · 百科占位",
+    "description": "云锦 (丝绸织物) 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "textile",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「云锦 (丝绸织物)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「云锦 (丝绸织物)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「云锦 (丝绸织物)」并按 textile 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%91%E9%94%A6%20(%E4%B8%9D%E7%BB%B8%E7%BB%87%E7%89%A9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BA%91%E9%94%A6%20(%E4%B8%9D%E7%BB%B8%E7%BB%87%E7%89%A9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "batik",
+    "title": "蜡染",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "155",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/batik/batik-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/batik/batik-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/batik/batik-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "用蜡绘画的蓝靛染色工艺",
+    "subtitle": "艺术品 · 蜡染 · 百科占位",
+    "description": "蜡染 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "textile",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「蜡染」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「蜡染」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「蜡染」并按 textile 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%9C%A1%E6%9F%93",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%9C%A1%E6%9F%93",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "song-of-the-south",
+    "title": "城南旧事",
+    "kind": "book",
+    "series": "pulp-fiction",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/song-of-the-south/song-of-the-south-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/song-of-the-south/song-of-the-south-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/song-of-the-south/song-of-the-south-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "林海音 1960 北京城南童年",
+    "subtitle": "书籍 · 城南旧事 · 百科占位",
+    "description": "城南旧事 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "children",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「城南旧事」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「城南旧事」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「城南旧事」并按 children 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9F%8E%E5%8D%97%E6%97%A7%E4%BA%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%8D%97%E6%97%A7%E4%BA%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "growing-up",
+    "title": "草房子 (曹文轩)",
+    "kind": "book",
+    "series": "pulp-fiction",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/growing-up/growing-up-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/growing-up/growing-up-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/growing-up/growing-up-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "曹文轩 1997, 60s 中国少年",
+    "subtitle": "书籍 · 草房子 (曹文轩) · 百科占位",
+    "description": "草房子 (曹文轩) 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "children",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「草房子 (曹文轩)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「草房子 (曹文轩)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「草房子 (曹文轩)」并按 children 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8D%89%E6%88%BF%E5%AD%90%20(%E6%9B%B9%E6%96%87%E8%BD%A9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%8D%89%E6%88%BF%E5%AD%90%20(%E6%9B%B9%E6%96%87%E8%BD%A9)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "jingshi-lu",
+    "title": "《经世大典》",
+    "kind": "book",
+    "series": "atlas-miscellany",
+    "seriesNo": "576",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/jingshi-lu/jingshi-lu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/jingshi-lu/jingshi-lu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/jingshi-lu/jingshi-lu-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "元代 1330 年官修政书 880 卷",
+    "subtitle": "书籍 · 《经世大典》 · 百科占位",
+    "description": "《经世大典》 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "reference",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「《经世大典》」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「《经世大典》」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「《经世大典》」并按 reference 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E3%80%8A%E7%BB%8F%E4%B8%96%E5%A4%A7%E5%85%B8%E3%80%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E3%80%8A%E7%BB%8F%E4%B8%96%E5%A4%A7%E5%85%B8%E3%80%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "baidu-baike",
+    "title": "百度百科",
+    "kind": "book",
+    "series": "atlas-miscellany",
+    "seriesNo": "577",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/baidu-baike/baidu-baike-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/baidu-baike/baidu-baike-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/baidu-baike/baidu-baike-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "世界最大中文百科全书",
+    "subtitle": "书籍 · 百度百科 · 百科占位",
+    "description": "百度百科 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "reference",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「百度百科」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「百度百科」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「百度百科」并按 reference 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "du-fu-cnt",
+    "title": "杜甫 (历史)",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "043",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/du-fu-cnt/du-fu-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/du-fu-cnt/du-fu-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/du-fu-cnt/du-fu-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "诗圣, 三吏三别",
+    "subtitle": "历史事件 · 杜甫 (历史) · 百科占位",
+    "description": "杜甫 (历史) 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ming-qing",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「杜甫 (历史)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「杜甫 (历史)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「杜甫 (历史)」并按 ming-qing 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E7%94%AB%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
   }
 ]

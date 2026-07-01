@@ -9,7 +9,7 @@
 //
 // Registered from src/components/sw-register.tsx on first load.
 
-const CACHE_VERSION = "atlas-kit-v1";
+const CACHE_VERSION = "atlas-kit-v2";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const IMAGE_CACHE = `${CACHE_VERSION}-images`;
@@ -19,6 +19,7 @@ const PRECACHE_URLS = [
   "/manifest.webmanifest",
   "/icon-192.png",
   "/icon-512.png",
+  "/offline.html",
 ];
 
 self.addEventListener("install", (event) => {
@@ -110,7 +111,9 @@ self.addEventListener("fetch", (event) => {
         .catch(() =>
           caches
             .match(request)
-            .then((cached) => cached || caches.match("/")),
+            .then(
+              (cached) => cached || caches.match("/offline.html") || caches.match("/"),
+            ),
         ),
     );
   }

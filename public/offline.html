@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FAF3E9" />
+  <title>已离线 · 图鉴社</title>
+  <link rel="icon" href="/icon-192.png" />
+  <style>
+    /* inline styles so the page works even when CSS cache is cold.
+       mirrors home page hero + brand colors to feel continuous. */
+    :root {
+      --cream: #faf3e9;
+      --gold-deep: #87603f;
+      --ink: #3d3833;
+      --muted: #6f6a5e;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Noto Serif SC VF", "PingFang SC", "Microsoft YaHei", serif;
+      min-height: 100vh;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: #fff;
+      border: 1px solid rgba(135, 96, 63, 0.2);
+      border-radius: 14px;
+      padding: 32px 28px;
+      box-shadow: 0 6px 18px rgba(135, 96, 63, 0.08);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      background: rgba(135, 96, 63, 0.08);
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 12px;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 8px;
+      min-height: 44px;
+      line-height: 20px;
+    }
+    .primary {
+      background: var(--gold-deep);
+      color: var(--cream);
+      font-weight: 500;
+    }
+    .secondary {
+      background: transparent;
+      color: var(--gold-deep);
+      border: 1px solid var(--gold-deep);
+    }
+    /* PWA safe-area for iOS notch / Android nav bar */
+    @supports (padding: env(safe-area-inset-top)) {
+      body { padding-top: calc(24px + env(safe-area-inset-top)); padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="status" aria-live="polite">
+    <span class="badge">OFFLINE</span>
+    <h1>看起来没网</h1>
+    <p>
+      图鉴社当前无法访问网络。已下载的内容可以照常浏览,
+      等网络恢复后回到首页继续探索。
+    </p>
+    <div class="actions">
+      <a href="/" class="primary" aria-label="返回首页">返回首页</a>
+      <a href="/favorites" class="secondary" aria-label="看已收藏的图鉴">看收藏夹</a>
+    </div>
+  </main>
+  <script>
+    // When network comes back, the SW fetches / and updates; user can also
+    // just click "返回首页" to retry. No auto-reload loops (annoying).
+    window.addEventListener("online", () => {
+      // show a tiny hint
+      const card = document.querySelector(".card");
+      const hint = document.createElement("p");
+      hint.style.cssText = "margin-top:14px;color:#87603f;font-size:12px;";
+      hint.textContent = "网络已恢复, 刷新页面继续";
+      card.appendChild(hint);
+    });
+  </script>
+</body>
+</html>

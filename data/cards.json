@@ -51501,5 +51501,341 @@
         "type": "encyclopedia"
       }
     ]
+  },
+  {
+    "slug": "calcium-elem",
+    "title": "钙 (化学元素)",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/calcium-elem/calcium-elem-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/calcium-elem/calcium-elem-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/calcium-elem/calcium-elem-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "骨骼牙齿的主元素, 日常 1000mg",
+    "subtitle": "化学元素 · 钙 (化学元素) · 百科占位",
+    "description": "钙 (化学元素) 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "alkaline-earth",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「钙 (化学元素)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「钙 (化学元素)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「钙 (化学元素)」并按 alkaline-earth 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%92%99%20(%E5%8C%96%E5%AD%A6%E5%85%83%E7%B4%A0)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%92%99%20(%E5%8C%96%E5%AD%A6%E5%85%83%E7%B4%A0)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "strontium",
+    "title": "锶",
+    "kind": "chemical-element",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "062",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/strontium/strontium-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/strontium/strontium-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/strontium/strontium-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1787 苏格兰发现的碱土金属",
+    "subtitle": "化学元素 · 锶 · 百科占位",
+    "description": "锶 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "alkaline-earth",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「锶」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「锶」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「锶」并按 alkaline-earth 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%B6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%94%B6",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "vancouver",
+    "title": "温哥华",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "045",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "8 次蝉联世界最宜居城市",
+    "subtitle": "城市 · 温哥华 · 百科占位",
+    "description": "温哥华 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "coastal",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「温哥华」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「温哥华」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「温哥华」并按 coastal 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%A9%E5%93%A5%E5%8D%8E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B8%A9%E5%93%A5%E5%8D%8E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "shantou",
+    "title": "汕头",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/shantou/shantou-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/shantou/shantou-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/shantou/shantou-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1861 五口通商之一, 潮汕文化中心",
+    "subtitle": "城市 · 汕头 · 百科占位",
+    "description": "汕头 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "coastal",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「汕头」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「汕头」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「汕头」并按 coastal 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%95%E5%A4%B4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B1%95%E5%A4%B4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "tsunami-cnt",
+    "title": "2004 印度洋海啸",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/tsunami-cnt/tsunami-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/tsunami-cnt/tsunami-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/tsunami-cnt/tsunami-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2004.12.26 死亡 22.7 万, 催生预警系统",
+    "subtitle": "自然现象 · 2004 印度洋海啸 · 百科占位",
+    "description": "2004 印度洋海啸 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ocean",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「2004 印度洋海啸」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「2004 印度洋海啸」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「2004 印度洋海啸」并按 ocean 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/2004%20%E5%8D%B0%E5%BA%A6%E6%B4%8B%E6%B5%B7%E5%95%B8",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/2004%20%E5%8D%B0%E5%BA%A6%E6%B4%8B%E6%B5%B7%E5%95%B8",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "kuroshio-current",
+    "title": "黑潮 (洋流)",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/kuroshio-current/kuroshio-current-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/kuroshio-current/kuroshio-current-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/kuroshio-current/kuroshio-current-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "世界两大暖流之一, 100 万核反应堆能量",
+    "subtitle": "自然现象 · 黑潮 (洋流) · 百科占位",
+    "description": "黑潮 (洋流) 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "ocean",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「黑潮 (洋流)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「黑潮 (洋流)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「黑潮 (洋流)」并按 ocean 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E6%BD%AE%20(%E6%B4%8B%E6%B5%81)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%BB%91%E6%BD%AE%20(%E6%B4%8B%E6%B5%81)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
   }
 ]

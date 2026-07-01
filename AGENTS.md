@@ -1927,3 +1927,82 @@ C': SortChips 共用组件
 待办:
 - mmx-client hang > 2min 自动 fallback programmatic derivation (避免 5-10min 整批卡)
 - 全 batch scripts 加 max-timeout 保护, 避免单条卡卡死整批
+
+## R61 (2026-06-27) — subKind gap fill 30 张 → 630
+
+`scripts/r61-clean.mjs` + `scripts/r61-taglines.mjs` + `scripts/r61-fallback.mjs` 模式 (后来 amend 删了 fallback 跟 descriptions, 留 clean + taglines):
+- 30 张 subKind 缺口 (isekai/children/reference/modern-holiday/animation/documentary/film-ost/drink/dessert/literary-character/ancient-scientist/calligraphy/egyptian/ceremony)
+- 30/30 generate, 30/30 handwrite description+tagline
+- force-pushed `70f4d84→aad788a` cleanup (Vercel 取消 rebuild)
+- **Lesson**: amend-with-history 模式好用 — 改 R61 commit 走 force-withlease 比开新 commit 干净
+
+## R62 + W (2026-06-27, commit `426aa38`) — 25 张 subKind 稀疏 + 详情页 AI 一句话
+
+- 25 张 subKind 稀疏补充 (630 → 655)
+- `data/ai-pitches.json` 30 张精选 AI 一句话 + `src/lib/ai-pitch.ts` 详情页底部 pitch 段
+- matrix 流量低谷稳定
+
+## R63 + PWA (2026-06-28, commit `e85a755`) — 25 张 + PWA 完善
+
+- 25 张 (655 → 680) 跨 sport/tech/food/city/mythology 平衡
+- PWA 完善 (R40 基础 + R63 增量):
+  - `public/offline.html` 自包含 fallback 页 (cream + gold + safe-area)
+  - `src/components/sw-register.tsx` 加 `beforeinstallprompt` + `appinstalled` + online/offline pills
+  - `public/sw.js` v1→v2 cache name bump
+
+## R64 (2026-06-29, commit `2137b18`) — matrix 抽风 + 6/25 ship
+
+- 25 张里只 6 张真 ship (calcium-elem, strontium, vancouver, shantou, tsunami-cnt, kuroshio-current)
+- 19 张 `e.tags is not iterable` 死信 → 写 `tmp/failed-cards.jsonl`
+- `scripts/r64-cleanup.mjs` 用 `existsSync` 检测 orphans (cards.json entry 但无 image)
+- **Lesson**: matrix API "no output_url" 抽风是真的, 不要 retry 死磕, 写 dead-letter 走下一轮
+
+## R65 (2026-06-29, commit `e9e459f`) — 19 张 dead-letter 救活
+
+- 19 张 R64 dead-letter 一次过 (matrix 恢复), per-kind upload (skip --all)
+- `r65-clean.mjs` 复用 R64-clean COPY
+- catalog 686 → 705
+- **Lesson**: dead-letter pattern 实测有效, R66 同样 7 张 dead-letter 走 R67 retry
+
+## R66 (2026-07-01, commit `6c4321f`) — 18 ship, 7 dead-letter
+
+- 18 张 ship: 雅典卫城, 三鹰吉卜力, 兵马俑, Vespa, 新干线, F-22, 绫小路, 心理测量者, 百变小樱, 高达, 钢铁侠, 天使爱美丽, 盘索里, 间谍过家家, 二郎神, 詹姆斯韦伯, Hyperion, WR-104
+- 7 张 dead-letter: 锦鲤, 倭黑猩猩, 亚洲鲤鱼入侵, 零号病人, 阅读障碍症, LIGO, 侏罗纪公园
+- 4 新 subKind taxonomy: museum (architecture) / scooter + bicycle (vehicle) / korean (music)
+- 关键 bug:
+  - 3 张 subKind 拼错 (memorial/scooter/tradition 都不在 taxonomy) → validate script 抓 3 → 修 taxonomy + cards
+  - lebron/tom-brady 用 `team` (taxonomy 没 team) → 改 `ball-sport`
+
+## R67 (2026-07-01) — 7 dead-letter retry + race condition
+
+- matrix 恢复, 7 张 R66 dead-letter 全 ship
+- **race condition bug**: 5 jobs 并行跑 generate-card.mjs, 5 process 同时 `require('./data/cards.json')` 各 push 1 entry, 各自 `fs.writeFileSync` 写回 — log 全 `success=1` 但只 3/5 entries 真进 cards.json (后写覆盖前写)
+- 修法: 永远 sequential 跑
+- `scripts/r67-rename.mjs`: post-process hash→real slug 合并 (因为 generate-card.mjs `c.push placeholder + --slug` 不传时 auto-generates `card-XXXXX` hash, race + duplicate 双重 bug)
+
+## R66+R67 hotfix (2026-07-01, commits `b5e14a2` / `750883b` / `efa3ba5`)
+
+- `b5e14a2`: 96 cards 补 tags (R59-R67 漏跑 add-cross-tags) + koi-fish file rename (card-q88u→koi-fish). **漏了** data/cards.json commit, **漏了** working tree 的 714 lines diff
+- `750883b`: empty commit 强制 Vercel rebuild (没起作用)
+- `efa3ba5`: 真正 fix, 显式 `git add data/cards.json` + commit
+- **Lesson (critical)**: commit 之前**必须** `git status --short` 看 working tree. 漏 add data/cards.json → 96 cards tags 改 uncommitted, Vercel build 仍用旧 cards.json → 6c4321f 失败 log 持续 30 min 误导
+- **Vercel 平台 bug**: 3 个 commit 推上 master 但 Vercel Hobby 一个 build 都没跑 (sitemap lastmod 永远 6/19), user 必须手动从 dashboard redeploy + clear cache. 没 Vercel CLI 我无法 unblock
+
+## R66+R67 sitemap / dynamic route fix (2026-07-01)
+
+- 详情页 9/9 R66+R67 cards 200 + 标题在 (athena-cnt, ghibli-museum, koi-fish, zero-cnt, dyslexia, laser-interferometer, jurassic-park-cnt, bonobo, introduced-species)
+- **但** sitemap.xml 仍 lastmod 2026-06-19, 不含 R66+R67 25 张
+- 根因: `src/app/sitemap.ts` `export const dynamic = "force-static"` = build-time SSG, Vercel build 一直卡在 6/19 → sitemap 永远 stale
+- 修法: 改 `dynamic = "force-dynamic"` 或加 `export const revalidate = 3600`. 详情页 on-demand SSG 已经正确触发, 只有 sitemap 滞后
+- 留给 R68 一起改
+
+## 当前 catalog 状态 (R66+R67 后, 2026-07-01)
+
+- **712 张** (705 + 7 R67)
+- 12 series (跟 R60+35 一样)
+- 26 kinds / 150 subKinds (R66 加 4: museum/scooter/bicycle/korean)
+- 0 no-subKind, 0 no-tagline, 0 tags<4, 0 no-history<3, 0 no-sources<2
+- 0 missing image on CDN, 0 missing score, 0 missing createdAt
+- 全字段完整
+- 3 新 scripts 归档: `r66-clean.mjs` / `r67-clean.mjs` / `r67-rename.mjs` / `add-tags-batch.mjs` (启发式补 tags)
+- prod: https://atlas-kit-six.vercel.app/ (R66+R67 ship ✓, sitemap lastmod 滞后待修)

@@ -1,7 +1,14 @@
 import type { MetadataRoute } from "next";
 import { getAllCards, getAllSeries } from "@/lib/data";
 
-export const dynamic = "force-static";
+// R66+R67 (2026-07-01): was `force-static` which captures cards.json
+// at build time. With Vercel Hobby build queue sometimes sticky-stuck
+// on a stale build (sitemap lastmod frozen at 6/19 while new cards
+// ship), force-static makes the sitemap wrong. force-dynamic reads
+// cards.json at request time, so sitemap always reflects the current
+// 712+ cards. Edge runtime runs the function per request — sitemap.xml
+// generation is <50ms for 700 cards.
+export const dynamic = "force-dynamic";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.SITE_URL ?? "http://localhost:3000";

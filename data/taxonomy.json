@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "version": 2,
-    "createdAt": "2026-06-26",
-    "round": "R58 (subKind taxonomy MVP) + R58b (mythology 5 new buckets)",
+    "version": 3,
+    "createdAt": "2026-07-01",
+    "round": "R66 (vehicle scooter + bicycle + architecture museum)",
     "totalKinds": 26,
-    "totalSubKinds": 147,
+    "totalSubKinds": 150,
     "namingConvention": "kebab-case slugs, 1-3 words. Chinese labels in 2-4 字",
     "howToAdd": "Append a new kind entry or subKind under existing kind. Run `node scripts/backfill-subkinds.mjs` to apply to cards.json.",
     "cardMigrationStrategy": "Run `node scripts/plan-subkind-backfill.mjs` to see a draft assignment per card, hand-tweak, then run backfill-subkinds.mjs --apply"
@@ -139,7 +139,8 @@
         { "slug": "defensive",       "label": "防御工程",      "expected": 2 },
         { "slug": "garden",          "label": "园林",          "expected": 2 },
         { "slug": "modern",          "label": "现代建筑",      "expected": 2 },
-        { "slug": "ancient-tower",   "label": "古代塔楼",      "expected": 3 }
+        { "slug": "ancient-tower",   "label": "古代塔楼",      "expected": 3 },
+        { "slug": "museum",          "label": "博物馆/美术馆",  "expected": 2 }
       ]
     },
     "artwork": {
@@ -250,7 +251,9 @@
         { "slug": "aircraft",        "label": "飞机",          "expected": 3 },
         { "slug": "ship",            "label": "船舶",          "expected": 3 },
         { "slug": "train",           "label": "铁路",          "expected": 3 },
-        { "slug": "spacecraft",      "label": "航天器",        "expected": 2 }
+        { "slug": "spacecraft",      "label": "航天器",        "expected": 2 },
+        { "slug": "scooter",         "label": "摩托车",        "expected": 2 },
+        { "slug": "bicycle",         "label": "自行车",        "expected": 1 }
       ]
     },
     "music": {
@@ -262,7 +265,8 @@
         { "slug": "western-classic", "label": "西方经典",      "expected": 4 },
         { "slug": "western-modern",  "label": "西方现代",      "expected": 4 },
         { "slug": "anime-ost",       "label": "动漫原声",      "expected": 3 },
-        { "slug": "film-ost",        "label": "电影原声",      "expected": 2 }
+        { "slug": "film-ost",        "label": "电影原声",      "expected": 2 },
+        { "slug": "korean",          "label": "韩国音乐",      "expected": 2 }
       ]
     },
     "anime": {

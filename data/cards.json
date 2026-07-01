@@ -49338,7 +49338,7 @@
     "subtitle": "体育运动 · 勒布朗·詹姆斯 · 百科占位",
     "description": "勒布朗·詹姆斯 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
     "createdAt": "2026-07-01",
-    "subKind": "team",
+    "subKind": "ball-sport",
     "history": [
       {
         "year": "古代",
@@ -49394,7 +49394,7 @@
     "subtitle": "体育运动 · 汤姆·布雷迪 · 百科占位",
     "description": "汤姆·布雷迪 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
     "createdAt": "2026-07-01",
-    "subKind": "team",
+    "subKind": "ball-sport",
     "history": [
       {
         "year": "古代",
@@ -52893,6 +52893,1426 @@
       {
         "title": "百度百科",
         "url": "https://baike.baidu.com/item/%E6%97%A5%E5%BC%8F%E6%8F%92%E8%8A%B1%20(%E6%B1%A0%E5%9D%8A)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "athena-cnt",
+    "title": "雅典卫城",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/athena-cnt/athena-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/athena-cnt/athena-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/athena-cnt/athena-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "公元前 5 世纪雅典黄金时代地标",
+    "subtitle": "建筑 · 雅典卫城 · 百科占位",
+    "description": "雅典卫城 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "defensive",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「雅典卫城」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「雅典卫城」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「雅典卫城」并按 defensive 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%85%E5%85%B8%E5%8D%AB%E5%9F%8E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%9B%85%E5%85%B8%E5%8D%AB%E5%9F%8E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "ghibli-museum",
+    "title": "三鹰吉卜力美术馆",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/ghibli-museum/ghibli-museum-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/ghibli-museum/ghibli-museum-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/ghibli-museum/ghibli-museum-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "宫崎骏 2001 设计, 5 分钟售罄",
+    "subtitle": "建筑 · 三鹰吉卜力美术馆 · 百科占位",
+    "description": "三鹰吉卜力美术馆 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "museum",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「三鹰吉卜力美术馆」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「三鹰吉卜力美术馆」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「三鹰吉卜力美术馆」并按 garden 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%89%E9%B9%B0%E5%90%89%E5%8D%9C%E5%8A%9B%E7%BE%8E%E6%9C%AF%E9%A6%86",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%89%E9%B9%B0%E5%90%89%E5%8D%9C%E5%8A%9B%E7%BE%8E%E6%9C%AF%E9%A6%86",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "terracotta-figures-cnt",
+    "title": "兵马俑",
+    "kind": "artwork",
+    "series": "craft-and-botanical",
+    "seriesNo": "156",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/terracotta-figures-cnt/terracotta-figures-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/terracotta-figures-cnt/terracotta-figures-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/terracotta-figures-cnt/terracotta-figures-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "8000 件陶俑, 千人千面",
+    "subtitle": "艺术品 · 兵马俑 · 百科占位",
+    "description": "兵马俑 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "sculpture",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「兵马俑」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「兵马俑」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「兵马俑」并按 sculpture 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%B5%E9%A9%AC%E4%BF%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%85%B5%E9%A9%AC%E4%BF%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "piaggio-vespa",
+    "title": "Vespa (摩托车)",
+    "kind": "vehicle",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "085",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/piaggio-vespa/piaggio-vespa-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/piaggio-vespa/piaggio-vespa-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/piaggio-vespa/piaggio-vespa-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1946 罗马假日, Audrey Hepburn 同款",
+    "subtitle": "交通工具 · Vespa (摩托车) · 百科占位",
+    "description": "Vespa (摩托车) 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "scooter",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「Vespa (摩托车)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「Vespa (摩托车)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「Vespa (摩托车)」并按 ship 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/Vespa%20(%E6%91%A9%E6%89%98%E8%BD%A6)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/Vespa%20(%E6%91%A9%E6%89%98%E8%BD%A6)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "shinkansen-cnt",
+    "title": "新干线",
+    "kind": "vehicle",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "086",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/shinkansen-cnt/shinkansen-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/shinkansen-cnt/shinkansen-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/shinkansen-cnt/shinkansen-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1964 起 60 年零车内死亡",
+    "subtitle": "交通工具 · 新干线 · 百科占位",
+    "description": "新干线 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "train",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「新干线」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「新干线」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「新干线」并按 train 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%B9%B2%E7%BA%BF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%96%B0%E5%B9%B2%E7%BA%BF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "f-22-raptor-cnt",
+    "title": "F-22 猛禽战斗机",
+    "kind": "vehicle",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "087",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/f-22-raptor-cnt/f-22-raptor-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/f-22-raptor-cnt/f-22-raptor-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/f-22-raptor-cnt/f-22-raptor-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1.5 亿美元单价的隐形战机",
+    "subtitle": "交通工具 · F-22 猛禽战斗机 · 百科占位",
+    "description": "F-22 猛禽战斗机 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "aircraft",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「F-22 猛禽战斗机」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「F-22 猛禽战斗机」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「F-22 猛禽战斗机」并按 aircraft 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/F-22%20%E7%8C%9B%E7%A6%BD%E6%88%98%E6%96%97%E6%9C%BA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/F-22%20%E7%8C%9B%E7%A6%BD%E6%88%98%E6%96%97%E6%9C%BA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "aiyashiro",
+    "title": "绫小路",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "083",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/aiyashiro/aiyashiro-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/aiyashiro/aiyashiro-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/aiyashiro/aiyashiro-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "说唱圈'双重人格'的代名词",
+    "subtitle": "anime · 绫小路 · 百科占位",
+    "description": "绫小路 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "isekai",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「绫小路」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「绫小路」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「绫小路」并按 isekai 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BB%AB%E5%B0%8F%E8%B7%AF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%BB%AB%E5%B0%8F%E8%B7%AF",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "psycho-pass-cnt",
+    "title": "心理测量者",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "084",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/psycho-pass-cnt/psycho-pass-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/psycho-pass-cnt/psycho-pass-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/psycho-pass-cnt/psycho-pass-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2012 西比拉系统 + 算法治理",
+    "subtitle": "anime · 心理测量者 · 百科占位",
+    "description": "心理测量者 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "seinen",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「心理测量者」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「心理测量者」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「心理测量者」并按 seinen 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BF%83%E7%90%86%E6%B5%8B%E9%87%8F%E8%80%85",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%BF%83%E7%90%86%E6%B5%8B%E9%87%8F%E8%80%85",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "card-captor-sakura",
+    "title": "百变小樱",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "085",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/card-captor-sakura/card-captor-sakura-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/card-captor-sakura/card-captor-sakura-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/card-captor-sakura/card-captor-sakura-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1998 CLAMP 魔法少女",
+    "subtitle": "anime · 百变小樱 · 百科占位",
+    "description": "百变小樱 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "shoujo",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「百变小樱」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「百变小樱」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「百变小樱」并按 shoujo 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%BE%E5%8F%98%E5%B0%8F%E6%A8%B1",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%99%BE%E5%8F%98%E5%B0%8F%E6%A8%B1",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "gundam-cnt",
+    "title": "高达",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "086",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam-cnt/gundam-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam-cnt/gundam-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam-cnt/gundam-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1979 富野由悠季, 日本 ACG 第一 IP",
+    "subtitle": "anime · 高达 · 百科占位",
+    "description": "高达 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "mecha",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「高达」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「高达」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「高达」并按 mecha 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E8%BE%BE",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%AB%98%E8%BE%BE",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "iron-man-cnt",
+    "title": "钢铁侠",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/iron-man-cnt/iron-man-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/iron-man-cnt/iron-man-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/iron-man-cnt/iron-man-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "MCU 第 1 部 2008 全球票房 5.85 亿",
+    "subtitle": "电影 · 钢铁侠 · 百科占位",
+    "description": "钢铁侠 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "animation",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「钢铁侠」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「钢铁侠」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「钢铁侠」并按 animation 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%92%A2%E9%93%81%E4%BE%A0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%92%A2%E9%93%81%E4%BE%A0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "amelie-cnt",
+    "title": "天使爱美丽",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "062",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie-cnt/amelie-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie-cnt/amelie-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie-cnt/amelie-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2001 法国浪漫喜剧奥黛丽·塔图主演",
+    "subtitle": "电影 · 天使爱美丽 · 百科占位",
+    "description": "天使爱美丽 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "european",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「天使爱美丽」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「天使爱美丽」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「天使爱美丽」并按 european 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "pansori",
+    "title": "盘索里 (韩国)",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "106",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/pansori/pansori-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/pansori/pansori-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/pansori/pansori-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "韩国 8 小时说唱艺术, UNESCO 非遗",
+    "subtitle": "music · 盘索里 (韩国) · 百科占位",
+    "description": "盘索里 (韩国) 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "korean",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「盘索里 (韩国)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「盘索里 (韩国)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「盘索里 (韩国)」并按 film-ost 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E7%B4%A2%E9%87%8C%20(%E9%9F%A9%E5%9B%BD)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%9B%98%E7%B4%A2%E9%87%8C%20(%E9%9F%A9%E5%9B%BD)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "spy-family-op",
+    "title": "《间谍过家家》OP",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "107",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/spy-family-op/spy-family-op-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/spy-family-op/spy-family-op-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/spy-family-op/spy-family-op-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2022 大热, 漫画 3000 万册",
+    "subtitle": "music · 《间谍过家家》OP · 百科占位",
+    "description": "《间谍过家家》OP 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "anime-ost",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「《间谍过家家》OP」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「《间谍过家家》OP」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「《间谍过家家》OP」并按 anime-ost 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E3%80%8A%E9%97%B4%E8%B0%8D%E8%BF%87%E5%AE%B6%E5%AE%B6%E3%80%8BOP",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E3%80%8A%E9%97%B4%E8%B0%8D%E8%BF%87%E5%AE%B6%E5%AE%B6%E3%80%8BOP",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "erlangshen",
+    "title": "二郎神",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "127",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/erlangshen/erlangshen-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/erlangshen/erlangshen-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/erlangshen/erlangshen-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "因陀罗汉化, 杨戬三眼三尖两刃刀",
+    "subtitle": "神话 · 二郎神 · 百科占位",
+    "description": "二郎神 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "chinese",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「二郎神」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「二郎神」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「二郎神」并按 hindu 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%83%8E%E7%A5%9E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BA%8C%E9%83%8E%E7%A5%9E",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "james-webb",
+    "title": "詹姆斯·韦伯空间望远镜",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "084",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/james-webb/james-webb-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/james-webb/james-webb-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/james-webb/james-webb-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2021 发射 100 亿美金, 130 亿光年视野",
+    "subtitle": "天体 · 詹姆斯·韦伯空间望远镜 · 百科占位",
+    "description": "詹姆斯·韦伯空间望远镜 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "other-cosmic",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「詹姆斯·韦伯空间望远镜」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「詹姆斯·韦伯空间望远镜」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「詹姆斯·韦伯空间望远镜」并按 other-cosmic 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E9%9F%A6%E4%BC%AF%E7%A9%BA%E9%97%B4%E6%9C%9B%E8%BF%9C%E9%95%9C",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E9%9F%A6%E4%BC%AF%E7%A9%BA%E9%97%B4%E6%9C%9B%E8%BF%9C%E9%95%9C",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "hyperion",
+    "title": "亥伯龙 (Hyperion)",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "085",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/hyperion/hyperion-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/hyperion/hyperion-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/hyperion/hyperion-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "土星'汉堡形'卫星, 内部 40% 空洞",
+    "subtitle": "天体 · 亥伯龙 (Hyperion) · 百科占位",
+    "description": "亥伯龙 (Hyperion) 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "other-cosmic",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「亥伯龙 (Hyperion)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「亥伯龙 (Hyperion)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「亥伯龙 (Hyperion)」并按 other-cosmic 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%A5%E4%BC%AF%E9%BE%99%20(Hyperion)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BA%A5%E4%BC%AF%E9%BE%99%20(Hyperion)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "wr-104",
+    "title": "WR 104 (针轮状星云)",
+    "kind": "space-object",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "086",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/wr-104/wr-104-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/wr-104/wr-104-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/wr-104/wr-104-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "针轮星云 + GRB 风险评估",
+    "subtitle": "天体 · WR 104 (针轮状星云) · 百科占位",
+    "description": "WR 104 (针轮状星云) 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "nebula",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「WR 104 (针轮状星云)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「WR 104 (针轮状星云)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「WR 104 (针轮状星云)」并按 nebula 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/WR%20104%20(%E9%92%88%E8%BD%AE%E7%8A%B6%E6%98%9F%E4%BA%91)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/WR%20104%20(%E9%92%88%E8%BD%AE%E7%8A%B6%E6%98%9F%E4%BA%91)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "koi-fish",
+    "title": "锦鲤",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "014",
+    "palette": [
+      "#C97064",
+      "#E8B86C",
+      "#2E4A6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "新泻县名鱼, 单只 2 亿日元",
+    "subtitle": "动物 · 锦鲤 · 百科占位",
+    "description": "锦鲤 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "fish",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「锦鲤」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「锦鲤」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「锦鲤」并按 fish 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%A6%E9%B2%A4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%94%A6%E9%B2%A4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "zero-cnt",
+    "title": "零号病人",
+    "kind": "disease",
+    "subKind": "infectious",
+    "series": "history-and-figures",
+    "seriesNo": "028",
+    "palette": [
+      "#87603F",
+      "#E8B86C",
+      "#2E4A6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/zero-cnt/zero-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/zero-cnt/zero-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/zero-cnt/zero-cnt-full.webp",
+    "revisions": [
+      {
+        "date": "2026-07-01T12:45:30.916Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「零号病人」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「零号病人」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「零号病人」并按 infectious 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%B6%E5%8F%B7%E7%97%85%E4%BA%BA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%9B%B6%E5%8F%B7%E7%97%85%E4%BA%BA",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ],
+    "tagline": "1980s 污名化, 2016 被平反",
+    "description": "零号病人 (Patient Zero) 是流行病学概念, 原指 1980 年代艾滋病 (HIV) 早期研究员对加拿大航空乘务员 Gaétan Dugas 的污名化称呼,'他把 HIV 带进了北美'。2016 年 Nature Genetics 通过 Dugas 1980 年代血液样本基因测序反驳: HIV 早在 1970 年代初就进入北美, 不是 Dugas 单一来源。今天'零号病人'是'超级传播者'的标准代名词, 是 2020 年 COVID 期间高频热词。"
+  },
+  {
+    "slug": "dyslexia",
+    "title": "阅读障碍症",
+    "kind": "disease",
+    "subKind": "mental",
+    "series": "history-and-figures",
+    "seriesNo": "029",
+    "palette": [
+      "#87603F",
+      "#E8B86C",
+      "#2E4A6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/dyslexia/dyslexia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/dyslexia/dyslexia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/dyslexia/dyslexia-full.webp",
+    "revisions": [
+      {
+        "date": "2026-07-01T12:46:40.866Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「阅读障碍症」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「阅读障碍症」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「阅读障碍症」并按 mental 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%98%85%E8%AF%BB%E9%9A%9C%E7%A2%8D%E7%97%87",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%98%85%E8%AF%BB%E9%9A%9C%E7%A2%8D%E7%97%87",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ],
+    "tagline": "5-15% 人群, 智力正常但读字弱",
+    "description": "阅读障碍症 (Dyslexia) 是神经多样性的一种, 患者智力正常但阅读拼写困难, 估计人群 5-15%。现在研究归因于'语音处理能力弱化' (phonological deficit), 与大脑左颞顶叶 + 左侧枕颞区功能性低活跃有关。与'懒'或'教得不好'无关。测试方法包括删字 + 语音假词解码。今天 Wikipedia 创始人 Jimmy Wales + Snapchat 创始人 Evan Spiegel 都是公开的 dyslexia 患者。"
+  },
+  {
+    "slug": "laser-interferometer",
+    "title": "激光干涉引力波天文台",
+    "kind": "tech",
+    "subKind": "energy",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "032",
+    "palette": [
+      "#6B8294",
+      "#E8B86C",
+      "#C97064"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/laser-interferometer/laser-interferometer-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/laser-interferometer/laser-interferometer-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/laser-interferometer/laser-interferometer-full.webp",
+    "revisions": [
+      {
+        "date": "2026-07-01T12:47:58.992Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「激光干涉引力波天文台」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「激光干涉引力波天文台」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「激光干涉引力波天文台」并按 energy 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BF%80%E5%85%89%E5%B9%B2%E6%B6%89%E5%BC%95%E5%8A%9B%E6%B3%A2%E5%A4%A9%E6%96%87%E5%8F%B0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%BF%80%E5%85%89%E5%B9%B2%E6%B6%89%E5%BC%95%E5%8A%9B%E6%B3%A2%E5%A4%A9%E6%96%87%E5%8F%B0",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ],
+    "tagline": "2015 探测到 13 亿光年外引力波",
+    "description": "激光干涉引力波天文台 (LIGO) 是美国 1999 年建成的物理实验装置, 主干涉臂 4 公里, 用分光镜 + 反射镜测量几纳米长度的形变。2015 年 9 月 14 日首次直接探测到双黑洞合并引力波 (GW150914) — 距地球 13 亿光年外, 13 亿太阳质量黑洞合并。证实 100 年前爱因斯坦广义相对论预言。2024 年 KAGRA 日本, Virgo 意大利加入组网。2017 年获诺贝尔物理学奖。"
+  },
+  {
+    "slug": "jurassic-park-cnt",
+    "title": "侏罗纪公园",
+    "kind": "movie",
+    "subKind": "hollywood",
+    "series": "pulp-fiction",
+    "seriesNo": "019",
+    "palette": [
+      "#2E4A6E",
+      "#E8B86C",
+      "#C97064"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/jurassic-park-cnt/jurassic-park-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/jurassic-park-cnt/jurassic-park-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/jurassic-park-cnt/jurassic-park-cnt-full.webp",
+    "revisions": [
+      {
+        "date": "2026-07-01T12:49:31.776Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「侏罗纪公园」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「侏罗纪公园」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「侏罗纪公园」并按 hollywood 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BE%8F%E7%BD%97%E7%BA%AA%E5%85%AC%E5%9B%AD",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BE%8F%E7%BD%97%E7%BA%AA%E5%85%AC%E5%9B%AD",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ],
+    "tagline": "1993 CGI 恐龙 + 商业奇观",
+    "description": "《侏罗纪公园》(Jurassic Park) 是 1993 年斯皮尔伯格导演的恐龙科幻片, 改编自 Michael Crichton 1990 年同名小说。全球票房 9.2 亿美元 (1993 年世界纪录至 1997 年泰坦尼克), 与 1997 年系列第 2 部《失落的世界》一起开启'科幻恐龙'流行文化。CGI 恐龙 + 真人演员 + John Williams 主题音乐是 90 年代商业奇观代表。共 6 部作品, 2022 年第 6 部《统治》全球票房 10 亿美元。"
+  },
+  {
+    "slug": "bonobo",
+    "title": "倭黑猩猩",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "015",
+    "palette": [
+      "#6B8294",
+      "#E8B86C",
+      "#2E4A6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/bonobo/bonobo-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/bonobo/bonobo-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/bonobo/bonobo-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "刚果特有, 与人类共享 98.7% DNA",
+    "subtitle": "动物 · 倭黑猩猩 · 百科占位",
+    "description": "倭黑猩猩 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "mammal",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「倭黑猩猩」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「倭黑猩猩」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「倭黑猩猩」并按 mammal 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%80%AD%E9%BB%91%E7%8C%A9%E7%8C%A9",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%80%AD%E9%BB%91%E7%8C%A9%E7%8C%A9",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "introduced-species",
+    "title": "亚洲鲤鱼入侵",
+    "kind": "phenomenon",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "016",
+    "palette": [
+      "#C97064",
+      "#E8B86C",
+      "#2E4A6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/introduced-species/introduced-species-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/introduced-species/introduced-species-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/introduced-species/introduced-species-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1970s 善意引入, 现入侵五大湖",
+    "subtitle": "自然现象 · 亚洲鲤鱼入侵 · 百科占位",
+    "description": "亚洲鲤鱼入侵 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "biological",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「亚洲鲤鱼入侵」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「亚洲鲤鱼入侵」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「亚洲鲤鱼入侵」并按 biological 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E6%B4%B2%E9%B2%A4%E9%B1%BC%E5%85%A5%E4%BE%B5",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BA%9A%E6%B4%B2%E9%B2%A4%E9%B1%BC%E5%85%A5%E4%BE%B5",
         "type": "encyclopedia"
       },
       {

@@ -48717,7 +48717,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/the-elephant/the-elephant-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/the-elephant/the-elephant-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "animal",
+      "mammal",
+      "现代",
+      "动物",
+      "自然"
+    ],
     "tagline": "陆地上最大的哺乳动物, 不能跳",
     "subtitle": "动物 · 大象 (动物) · 百科占位",
     "description": "大象 (动物) 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -48773,7 +48779,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/oceanic-mythology/oceanic-mythology-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/oceanic-mythology/oceanic-mythology-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "oceania",
+      "现代",
+      "历史",
+      "神话",
+      "宗教"
+    ],
     "tagline": "毛利人传说中钓出北岛的半神",
     "subtitle": "神话 · 毛伊 (毛利神话) · 百科占位",
     "description": "毛伊 (毛利神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -48829,7 +48842,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/indra/indra-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/indra/indra-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "hindu",
+      "现代",
+      "历史",
+      "国际",
+      "神话"
+    ],
     "tagline": "印度神话雷神战神, 梵天之首",
     "subtitle": "神话 · 因陀罗 (印度神话) · 百科占位",
     "description": "因陀罗 (印度神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -48885,7 +48905,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/kama/kama-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/kama/kama-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "hindu",
+      "现代",
+      "历史",
+      "国际",
+      "神话"
+    ],
     "tagline": "印度爱欲之神, 甘蔗弓花箭",
     "subtitle": "神话 · 伽摩 (印度神话) · 百科占位",
     "description": "伽摩 (印度神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -48941,7 +48968,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/apollo-cnt/apollo-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/apollo-cnt/apollo-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "classical-roman",
+      "现代",
+      "历史",
+      "物理学",
+      "神话"
+    ],
     "tagline": "光明音乐诗艺之神, 德尔菲神谕",
     "subtitle": "神话 · 阿波罗 (希腊神话) · 百科占位",
     "description": "阿波罗 (希腊神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -48997,7 +49031,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/minerva/minerva-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/minerva/minerva-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "classical-roman",
+      "现代",
+      "历史",
+      "人物"
+    ],
     "tagline": "罗马智慧女神, 雅典的罗马对应",
     "subtitle": "神话 · 密涅瓦 (罗马) · 百科占位",
     "description": "密涅瓦 (罗马) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49053,7 +49093,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/marduk/marduk-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/marduk/marduk-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "near-eastern",
+      "现代",
+      "历史",
+      "人物",
+      "神话"
+    ],
     "tagline": "巴比伦主神, 创世原初混沌之母 Tiamat 的征服者",
     "subtitle": "神话 · 马尔杜克 (近东神话) · 百科占位",
     "description": "马尔杜克 (近东神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49109,7 +49156,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/freyr/freyr-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/freyr/freyr-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "european-pagan",
+      "现代",
+      "历史",
+      "神话",
+      "宗教"
+    ],
     "tagline": "北欧丰饶之神, 阳光与雨水",
     "subtitle": "神话 · 弗雷 (北欧神话) · 百科占位",
     "description": "弗雷 (北欧神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49165,7 +49219,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/pakistan/pakistan-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/pakistan/pakistan-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "country",
+      "south-asia",
+      "现代",
+      "人物"
+    ],
     "tagline": "中亚进入印度洋的陆上走廊",
     "subtitle": "国家 · 巴基斯坦 · 百科占位",
     "description": "巴基斯坦 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49221,7 +49280,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/bangladesh/bangladesh-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/bangladesh/bangladesh-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "country",
+      "south-asia",
+      "现代",
+      "历史",
+      "古代"
+    ],
     "tagline": "世界人口密度最高的国家之一",
     "subtitle": "国家 · 孟加拉国 · 百科占位",
     "description": "孟加拉国 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49277,7 +49342,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/qatar/qatar-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/qatar/qatar-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "country",
+      "south-asia",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "人均 GDP 全球第 4, 世界最富之一",
     "subtitle": "国家 · 卡塔尔 · 百科占位",
     "description": "卡塔尔 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49333,7 +49404,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/lebron-james/lebron-james-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/lebron-james/lebron-james-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "ball-sport",
+      "现代",
+      "历史",
+      "人物"
+    ],
     "tagline": "NBA 总得分历史第一, GOAT 争议核心",
     "subtitle": "体育运动 · 勒布朗·詹姆斯 · 百科占位",
     "description": "勒布朗·詹姆斯 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49389,7 +49466,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tom-brady/tom-brady-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tom-brady/tom-brady-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "ball-sport",
+      "现代",
+      "历史",
+      "美食",
+      "饮食"
+    ],
     "tagline": "7 次超级碗冠军 NFL 史上最伟大四分卫",
     "subtitle": "体育运动 · 汤姆·布雷迪 · 百科占位",
     "description": "汤姆·布雷迪 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49445,7 +49529,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/michael-phelps/michael-phelps-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/michael-phelps/michael-phelps-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "water-sport",
+      "现代",
+      "历史",
+      "人物"
+    ],
     "tagline": "23 金奥运史上之最, 游泳技术革命者",
     "subtitle": "体育运动 · 迈克尔·菲尔普斯 · 百科占位",
     "description": "迈克尔·菲尔普斯 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49501,7 +49591,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/li-ning-athletics/li-ning-athletics-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/li-ning-athletics/li-ning-athletics-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "athletics",
+      "现代",
+      "历史",
+      "人物"
+    ],
     "tagline": "体操王子, 2008 北京奥运火炬手",
     "subtitle": "体育运动 · 李宁 (运动员) · 百科占位",
     "description": "李宁 (运动员) 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49557,7 +49653,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yuzuru-hanyu/yuzuru-hanyu-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yuzuru-hanyu/yuzuru-hanyu-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "winter",
+      "现代",
+      "历史"
+    ],
     "tagline": "66 年来首位奥运男单蝉联冠军",
     "subtitle": "体育运动 · 羽生结弦 · 百科占位",
     "description": "羽生结弦 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49613,7 +49714,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qunming-festival/qunming-festival-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qunming-festival/qunming-festival-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "festival",
+      "ethnic-minority",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "傣族新年泼水祝福 3-7 天",
     "subtitle": "节日 · 云南泼水节 · 百科占位",
     "description": "云南泼水节 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49669,7 +49776,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/naadam-cnt/naadam-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/naadam-cnt/naadam-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "festival",
+      "ethnic-minority",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "蒙古男儿三艺: 摔跤赛马射箭",
     "subtitle": "节日 · 那达慕大会 (蒙古) · 百科占位",
     "description": "那达慕大会 (蒙古) 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49725,7 +49838,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/diwali/diwali-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/diwali/diwali-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "festival",
+      "ethnic-minority",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "印度光明节, 光明战胜黑暗",
     "subtitle": "节日 · 排灯节 · 百科占位",
     "description": "排灯节 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49781,7 +49900,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-composite/carbon-composite-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-composite/carbon-composite-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "tech",
+      "materials",
+      "现代",
+      "化学"
+    ],
     "tagline": "重量钢的 1/4, 强度钢的 5 倍",
     "subtitle": "科技概念 · 碳纤维复合材料 · 百科占位",
     "description": "碳纤维复合材料 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49837,7 +49961,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/aerogel/aerogel-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/aerogel/aerogel-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "tech",
+      "materials",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "世界最轻固体, 99% 是空气",
     "subtitle": "科技概念 · 气凝胶 · 百科占位",
     "description": "气凝胶 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49893,7 +50023,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-tax/carbon-tax-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/carbon-tax/carbon-tax-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "tech",
+      "energy",
+      "现代",
+      "化学"
+    ],
     "tagline": "把气候变化的外部成本价格化",
     "subtitle": "科技概念 · 碳税 · 百科占位",
     "description": "碳税 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -49949,7 +50084,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/breeder-reactor/breeder-reactor-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/breeder-reactor/breeder-reactor-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "tech",
+      "energy",
+      "现代",
+      "化学"
+    ],
     "tagline": "增殖新核燃料的核反应堆",
     "subtitle": "科技概念 · 增殖反应堆 · 百科占位",
     "description": "增殖反应堆 是 Atlas Kit 图鉴社「科技概念」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50005,7 +50145,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/cosmic-microwave-bg/cosmic-microwave-bg-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/cosmic-microwave-bg/cosmic-microwave-bg-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "other-cosmic",
+      "现代",
+      "物理学",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "大爆炸 38 万年后释放的光子",
     "subtitle": "天体 · 宇宙微波背景辐射 · 百科占位",
     "description": "宇宙微波背景辐射 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50061,7 +50208,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/io-moon/io-moon-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/io-moon/io-moon-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "moon",
+      "现代",
+      "人物"
+    ],
     "tagline": "太阳系最活跃的火山天体",
     "subtitle": "天体 · 木卫一 (艾奥) · 百科占位",
     "description": "木卫一 (艾奥) 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50117,7 +50269,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/brief-history-of-nearly-everything/brief-history-of-nearly-everything-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/brief-history-of-nearly-everything/brief-history-of-nearly-everything-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "science",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "30 岁成年礼读本",
     "subtitle": "书籍 · 万物简史 · 百科占位",
     "description": "万物简史 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50173,7 +50331,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/cosmos-book/cosmos-book-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/cosmos-book/cosmos-book-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "science",
+      "现代",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "卡尔·萨根 1980 巨著",
     "subtitle": "书籍 · 《宇宙》 (卡尔·萨根) · 百科占位",
     "description": "《宇宙》 (卡尔·萨根) 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50229,7 +50393,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/selfish-gene/selfish-gene-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/selfish-gene/selfish-gene-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "science",
+      "现代",
+      "生物"
+    ],
     "tagline": "基因是自然选择的基本单位",
     "subtitle": "书籍 · 自私的基因 · 百科占位",
     "description": "自私的基因 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50285,7 +50454,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/gunpowder/gunpowder-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/gunpowder/gunpowder-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "history",
+      "contemporary",
+      "现代",
+      "历史"
+    ],
     "tagline": "9 世纪中国炼丹的意外产物",
     "subtitle": "历史事件 · 火药 (历史) · 百科占位",
     "description": "火药 (历史) 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50341,7 +50515,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/penicillin/penicillin-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/penicillin/penicillin-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "history",
+      "contemporary",
+      "现代",
+      "历史"
+    ],
     "tagline": "1928 偶然发现, 1940 量产",
     "subtitle": "历史事件 · 青霉素 · 百科占位",
     "description": "青霉素 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50397,7 +50576,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/world-wide-web/world-wide-web-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/world-wide-web/world-wide-web-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "history",
+      "contemporary",
+      "现代",
+      "历史"
+    ],
     "tagline": "1989 CERN 一份提案, 改变全球",
     "subtitle": "历史事件 · 万维网 · 百科占位",
     "description": "万维网 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50453,7 +50637,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/atomic-bomb-cnt/atomic-bomb-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/atomic-bomb-cnt/atomic-bomb-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "history",
+      "contemporary",
+      "现代",
+      "历史",
+      "地理",
+      "地点"
+    ],
     "tagline": "1945 广岛长崎, 当量 15 千吨",
     "subtitle": "历史事件 · 原子弹与广岛 · 百科占位",
     "description": "原子弹与广岛 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50509,7 +50700,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/potala-palace-cnt/potala-palace-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/potala-palace-cnt/potala-palace-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "architecture",
+      "ancient-palace",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "1645 起重建, 现存建筑主体",
     "subtitle": "建筑 · 布达拉宫 (历史) · 百科占位",
     "description": "布达拉宫 (历史) 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50565,7 +50762,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/hengshan-temple/hengshan-temple-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/hengshan-temple/hengshan-temple-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "architecture",
+      "ancient-palace",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "北魏悬空三教寺, 距今 1500 多年",
     "subtitle": "建筑 · 悬空寺 · 百科占位",
     "description": "悬空寺 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50621,7 +50824,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/shanxi-courtyard/shanxi-courtyard-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/shanxi-courtyard/shanxi-courtyard-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "architecture",
+      "ancient-palace",
+      "现代",
+      "人物"
+    ],
     "tagline": "晋商乔致庸家族的 313 间房",
     "subtitle": "建筑 · 乔家大院 · 百科占位",
     "description": "乔家大院 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50677,7 +50885,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/crab-nebula-cnt/crab-nebula-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/crab-nebula-cnt/crab-nebula-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "nebula",
+      "现代",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "宋代 1054 年超新星遗迹",
     "subtitle": "天体 · 蟹状星云 M1 · 百科占位",
     "description": "蟹状星云 M1 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50733,7 +50947,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/orion-nebula/orion-nebula-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/orion-nebula/orion-nebula-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "nebula",
+      "现代",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "夜空最亮发射星云, 恒星育婴室",
     "subtitle": "天体 · 猎户座大星云 · 百科占位",
     "description": "猎户座大星云 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50789,7 +51009,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/great-barrier-reef-cnt/great-barrier-reef-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/great-barrier-reef-cnt/great-barrier-reef-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "geological",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "珊瑚虫堆积 150 米的钙质巨构",
     "subtitle": "自然现象 · 大堡礁 (地质) · 百科占位",
     "description": "大堡礁 (地质) 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50845,7 +51071,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/danxia-landform/danxia-landform-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/danxia-landform/danxia-landform-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "geological",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "白垩纪红层被流水切成红色陡崖",
     "subtitle": "自然现象 · 丹霞地貌 · 百科占位",
     "description": "丹霞地貌 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50901,7 +51133,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/karst-caves/karst-caves-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/karst-caves/karst-caves-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "geological",
+      "现代",
+      "人物"
+    ],
     "tagline": "石灰岩被水溶解数万年的洞穴",
     "subtitle": "自然现象 · 喀斯特溶洞 · 百科占位",
     "description": "喀斯特溶洞 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -50957,7 +51194,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/ph-geothermal-vent/ph-geothermal-vent-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/ph-geothermal-vent/ph-geothermal-vent-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "ocean",
+      "现代",
+      "地理",
+      "地点"
+    ],
     "tagline": "1977 年 2500 米深海的黑暗食物链",
     "subtitle": "自然现象 · 海底热泉 · 百科占位",
     "description": "海底热泉 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51013,7 +51256,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/migration-of-shad/migration-of-shad-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/migration-of-shad/migration-of-shad-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "biological",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "鳗鱼 6000 公里洄游 5000 年不解",
     "subtitle": "自然现象 · 鳗鱼迁徙之谜 · 百科占位",
     "description": "鳗鱼迁徙之谜 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51069,7 +51318,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/colemans-toad/colemans-toad-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/colemans-toad/colemans-toad-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "biological",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "科罗拉多沙漠蟾蜍的天然神经剂",
     "subtitle": "自然现象 · 科罗拉多蟾蜍 · 百科占位",
     "description": "科罗拉多蟾蜍 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51125,7 +51380,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/silk-weaving/silk-weaving-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/silk-weaving/silk-weaving-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "artwork",
+      "textile",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "南京云锦, 织机一寸 24 小时",
     "subtitle": "艺术品 · 云锦 (丝绸织物) · 百科占位",
     "description": "云锦 (丝绸织物) 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51181,7 +51442,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/batik/batik-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/batik/batik-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "artwork",
+      "textile",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "用蜡绘画的蓝靛染色工艺",
     "subtitle": "艺术品 · 蜡染 · 百科占位",
     "description": "蜡染 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51237,7 +51504,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/song-of-the-south/song-of-the-south-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/song-of-the-south/song-of-the-south-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "children",
+      "现代",
+      "地理",
+      "地点"
+    ],
     "tagline": "林海音 1960 北京城南童年",
     "subtitle": "书籍 · 城南旧事 · 百科占位",
     "description": "城南旧事 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51293,7 +51566,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/growing-up/growing-up-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/growing-up/growing-up-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "children",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "曹文轩 1997, 60s 中国少年",
     "subtitle": "书籍 · 草房子 (曹文轩) · 百科占位",
     "description": "草房子 (曹文轩) 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51349,7 +51628,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/jingshi-lu/jingshi-lu-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/jingshi-lu/jingshi-lu-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "reference",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "元代 1330 年官修政书 880 卷",
     "subtitle": "书籍 · 《经世大典》 · 百科占位",
     "description": "《经世大典》 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51405,7 +51690,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/baidu-baike/baidu-baike-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/baidu-baike/baidu-baike-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "book",
+      "reference",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "世界最大中文百科全书",
     "subtitle": "书籍 · 百度百科 · 百科占位",
     "description": "百度百科 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51461,7 +51752,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/du-fu-cnt/du-fu-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/du-fu-cnt/du-fu-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "history",
+      "ming-qing",
+      "现代",
+      "历史"
+    ],
     "tagline": "诗圣, 三吏三别",
     "subtitle": "历史事件 · 杜甫 (历史) · 百科占位",
     "description": "杜甫 (历史) 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51517,7 +51813,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/calcium-elem/calcium-elem-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/calcium-elem/calcium-elem-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "chemical-element",
+      "alkaline-earth",
+      "现代",
+      "化学"
+    ],
     "tagline": "骨骼牙齿的主元素, 日常 1000mg",
     "subtitle": "化学元素 · 钙 (化学元素) · 百科占位",
     "description": "钙 (化学元素) 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51573,7 +51874,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/strontium/strontium-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/strontium/strontium-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "chemical-element",
+      "alkaline-earth",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "1787 苏格兰发现的碱土金属",
     "subtitle": "化学元素 · 锶 · 百科占位",
     "description": "锶 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51629,7 +51936,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "city",
+      "coastal",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "8 次蝉联世界最宜居城市",
     "subtitle": "城市 · 温哥华 · 百科占位",
     "description": "温哥华 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51685,7 +51998,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/shantou/shantou-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/shantou/shantou-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "city",
+      "coastal",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "1861 五口通商之一, 潮汕文化中心",
     "subtitle": "城市 · 汕头 · 百科占位",
     "description": "汕头 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51741,7 +52060,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/tsunami-cnt/tsunami-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/tsunami-cnt/tsunami-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "ocean",
+      "现代",
+      "地理",
+      "地点",
+      "国际"
+    ],
     "tagline": "2004.12.26 死亡 22.7 万, 催生预警系统",
     "subtitle": "自然现象 · 2004 印度洋海啸 · 百科占位",
     "description": "2004 印度洋海啸 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51797,7 +52123,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/kuroshio-current/kuroshio-current-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/kuroshio-current/kuroshio-current-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "ocean",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "世界两大暖流之一, 100 万核反应堆能量",
     "subtitle": "自然现象 · 黑潮 (洋流) · 百科占位",
     "description": "黑潮 (洋流) 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51853,7 +52185,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/jiaxing/jiaxing-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/jiaxing/jiaxing-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "city",
+      "jiangnan-water-town",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "1921 中共诞生地, 嘉兴粽子",
     "subtitle": "城市 · 嘉兴 · 百科占位",
     "description": "嘉兴 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51909,7 +52247,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/lao-tang-tian-pin/lao-tang-tian-pin-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/lao-tang-tian-pin/lao-tang-tian-pin-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "food",
+      "northern",
+      "现代",
+      "美食",
+      "饮食"
+    ],
     "tagline": "江浙老汤泡米一锅用 50 年的味道",
     "subtitle": "食物 · 老汤头粳米 · 百科占位",
     "description": "老汤头粳米 是 Atlas Kit 图鉴社「食物」分类下的百科图鉴占位条目 (category identity: Culinary encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -51965,7 +52309,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hot-dry-noodles/hot-dry-noodles-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hot-dry-noodles/hot-dry-noodles-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "food",
+      "northern",
+      "现代",
+      "美食",
+      "饮食"
+    ],
     "tagline": "武汉码头早餐, 5 分钟 2000 碗",
     "subtitle": "食物 · 热干面 · 百科占位",
     "description": "热干面 是 Atlas Kit 图鉴社「食物」分类下的百科图鉴占位条目 (category identity: Culinary encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52021,7 +52371,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/yakitori/yakitori-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/yakitori/yakitori-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "food",
+      "northern",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "江户时代 17 世纪的串鸟",
     "subtitle": "食物 · 日式烤鸡肉串 · 百科占位",
     "description": "日式烤鸡肉串 是 Atlas Kit 图鉴社「食物」分类下的百科图鉴占位条目 (category identity: Culinary encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52077,7 +52433,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/inside-out-cnt/inside-out-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/inside-out-cnt/inside-out-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "movie",
+      "animation",
+      "现代",
+      "人物"
+    ],
     "tagline": "皮克斯 2015, 忧忧拯救 Riley",
     "subtitle": "电影 · 《头脑特工队》 · 百科占位",
     "description": "《头脑特工队》 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52133,7 +52494,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e-mv/wall-e-mv-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e-mv/wall-e-mv-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "movie",
+      "animation",
+      "现代",
+      "交通工具"
+    ],
     "tagline": "700 年孤独清理垃圾, 30 分钟无对白",
     "subtitle": "电影 · 《机器人瓦力》 · 百科占位",
     "description": "《机器人瓦力》 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52189,7 +52555,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/blue-planet/blue-planet-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/blue-planet/blue-planet-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "movie",
+      "documentary",
+      "现代",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "BBC 海洋纪录片, 第 2 季 6 亿观众",
     "subtitle": "电影 · 蓝色星球 · 百科占位",
     "description": "蓝色星球 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52245,7 +52617,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/our-planet/our-planet-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/our-planet/our-planet-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "movie",
+      "documentary",
+      "现代",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "Netflix 2019, 8 集栖息地视角",
     "subtitle": "电影 · 我们的星球 · 百科占位",
     "description": "我们的星球 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52301,7 +52679,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/tfboys-music/tfboys-music-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/tfboys-music/tfboys-music-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "music",
+      "chinese-rock",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "2013 出道, 13 岁 MV 5 亿播放",
     "subtitle": "music · TFBOYS · 百科占位",
     "description": "TFBOYS 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52357,7 +52741,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/beyond-music/beyond-music-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/beyond-music/beyond-music-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "music",
+      "chinese-rock",
+      "现代",
+      "音乐"
+    ],
     "tagline": "黄家驹 海阔天空 1993",
     "subtitle": "music · Beyond (乐队) · 百科占位",
     "description": "Beyond (乐队) 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52413,7 +52802,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/melody-of-jade/melody-of-jade-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/melody-of-jade/melody-of-jade-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "music",
+      "film-ost",
+      "现代",
+      "音乐",
+      "影视",
+      "物理学"
+    ],
     "tagline": "2001 中日合拍, 菅野作 OST",
     "subtitle": "music · 《玉碎》电影配乐 · 百科占位",
     "description": "《玉碎》电影配乐 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52469,7 +52865,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/thor-cnt/thor-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/thor-cnt/thor-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "norse",
+      "现代",
+      "历史",
+      "神话",
+      "宗教"
+    ],
     "tagline": "雷神托尔, 锤子 Mjolnir",
     "subtitle": "神话 · 雷神 (北欧神话) · 百科占位",
     "description": "雷神 (北欧神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52525,7 +52928,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/fafu-cnt/fafu-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/fafu-cnt/fafu-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "oceania",
+      "现代",
+      "历史",
+      "神话",
+      "宗教"
+    ],
     "tagline": "波利尼西亚丰饶 + 航海者之父",
     "subtitle": "神话 · 法夫 (大洋洲神话) · 百科占位",
     "description": "法夫 (大洋洲神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52581,7 +52991,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "combat",
+      "现代",
+      "历史"
+    ],
     "tagline": "日本国技, 横纲是最高阶",
     "subtitle": "体育运动 · 相扑 · 百科占位",
     "description": "相扑 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52637,7 +53052,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/karate/karate-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/karate/karate-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "sport",
+      "combat",
+      "现代",
+      "历史",
+      "神话",
+      "宗教"
+    ],
     "tagline": "2020 东京奥运项目, 4 大流派",
     "subtitle": "体育运动 · 空手道 · 百科占位",
     "description": "空手道 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52693,7 +53115,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/liu-bang-cnt/liu-bang-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/liu-bang-cnt/liu-bang-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "history",
+      "han",
+      "现代",
+      "历史",
+      "人物"
+    ],
     "tagline": "汉朝开国皇帝, 汉族命名者",
     "subtitle": "历史事件 · 刘邦 (历史) · 百科占位",
     "description": "刘邦 (历史) 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52749,7 +53177,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/medicine-buddha/medicine-buddha-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/medicine-buddha/medicine-buddha-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "object",
+      "scientific",
+      "现代",
+      "神话",
+      "宗教"
+    ],
     "tagline": "东方净琉璃世界, 医治众生",
     "subtitle": "器物 · 药师佛 · 百科占位",
     "description": "药师佛 是 Atlas Kit 图鉴社「器物」分类下的百科图鉴占位条目 (category identity: Object and industrial-design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52805,7 +53239,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/feng-shui-cnt/feng-shui-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/feng-shui-cnt/feng-shui-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "other",
+      "craft-and-botanical-mix",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "中国传统环境学, 海外华人购房必备",
     "subtitle": "其他 · 风水 · 百科占位",
     "description": "风水 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52861,7 +53301,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "other",
+      "craft-and-botanical-mix",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "6 世纪佛前插花, 日本三雅道之一",
     "subtitle": "其他 · 日式插花 (池坊) · 百科占位",
     "description": "日式插花 (池坊) 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52917,7 +53363,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/athena-cnt/athena-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/athena-cnt/athena-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "architecture",
+      "defensive",
+      "现代",
+      "地理",
+      "地点"
+    ],
     "tagline": "公元前 5 世纪雅典黄金时代地标",
     "subtitle": "建筑 · 雅典卫城 · 百科占位",
     "description": "雅典卫城 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -52973,7 +53425,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/ghibli-museum/ghibli-museum-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/ghibli-museum/ghibli-museum-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "architecture",
+      "museum",
+      "现代",
+      "宫崎骏",
+      "日本动漫"
+    ],
     "tagline": "宫崎骏 2001 设计, 5 分钟售罄",
     "subtitle": "建筑 · 三鹰吉卜力美术馆 · 百科占位",
     "description": "三鹰吉卜力美术馆 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53029,7 +53487,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/terracotta-figures-cnt/terracotta-figures-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/terracotta-figures-cnt/terracotta-figures-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "artwork",
+      "sculpture",
+      "现代",
+      "人物"
+    ],
     "tagline": "8000 件陶俑, 千人千面",
     "subtitle": "艺术品 · 兵马俑 · 百科占位",
     "description": "兵马俑 是 Atlas Kit 图鉴社「艺术品」分类下的百科图鉴占位条目 (category identity: Art-history encyclopedia artwork profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53085,7 +53548,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/piaggio-vespa/piaggio-vespa-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/piaggio-vespa/piaggio-vespa-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "vehicle",
+      "scooter",
+      "现代",
+      "交通工具"
+    ],
     "tagline": "1946 罗马假日, Audrey Hepburn 同款",
     "subtitle": "交通工具 · Vespa (摩托车) · 百科占位",
     "description": "Vespa (摩托车) 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53141,7 +53609,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/shinkansen-cnt/shinkansen-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/shinkansen-cnt/shinkansen-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "vehicle",
+      "train",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "1964 起 60 年零车内死亡",
     "subtitle": "交通工具 · 新干线 · 百科占位",
     "description": "新干线 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53197,7 +53671,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/f-22-raptor-cnt/f-22-raptor-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/f-22-raptor-cnt/f-22-raptor-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "vehicle",
+      "aircraft",
+      "现代",
+      "历史",
+      "古代",
+      "交通工具"
+    ],
     "tagline": "1.5 亿美元单价的隐形战机",
     "subtitle": "交通工具 · F-22 猛禽战斗机 · 百科占位",
     "description": "F-22 猛禽战斗机 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53253,7 +53734,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/aiyashiro/aiyashiro-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/aiyashiro/aiyashiro-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "anime",
+      "isekai",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "说唱圈'双重人格'的代名词",
     "subtitle": "anime · 绫小路 · 百科占位",
     "description": "绫小路 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53309,7 +53796,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/psycho-pass-cnt/psycho-pass-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/psycho-pass-cnt/psycho-pass-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "anime",
+      "seinen",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "2012 西比拉系统 + 算法治理",
     "subtitle": "anime · 心理测量者 · 百科占位",
     "description": "心理测量者 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53365,7 +53858,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/card-captor-sakura/card-captor-sakura-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/card-captor-sakura/card-captor-sakura-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "anime",
+      "shoujo",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "1998 CLAMP 魔法少女",
     "subtitle": "anime · 百变小樱 · 百科占位",
     "description": "百变小樱 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53421,7 +53920,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam-cnt/gundam-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/gundam-cnt/gundam-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "anime",
+      "mecha",
+      "现代",
+      "高达",
+      "机甲",
+      "人物"
+    ],
     "tagline": "1979 富野由悠季, 日本 ACG 第一 IP",
     "subtitle": "anime · 高达 · 百科占位",
     "description": "高达 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53477,7 +53983,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/iron-man-cnt/iron-man-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/iron-man-cnt/iron-man-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "movie",
+      "animation",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "MCU 第 1 部 2008 全球票房 5.85 亿",
     "subtitle": "电影 · 钢铁侠 · 百科占位",
     "description": "钢铁侠 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53533,7 +54045,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie-cnt/amelie-cnt-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/amelie-cnt/amelie-cnt-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "movie",
+      "european",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "2001 法国浪漫喜剧奥黛丽·塔图主演",
     "subtitle": "电影 · 天使爱美丽 · 百科占位",
     "description": "天使爱美丽 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53589,7 +54107,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/pansori/pansori-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/pansori/pansori-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "music",
+      "korean",
+      "现代",
+      "国际",
+      "历史",
+      "古代"
+    ],
     "tagline": "韩国 8 小时说唱艺术, UNESCO 非遗",
     "subtitle": "music · 盘索里 (韩国) · 百科占位",
     "description": "盘索里 (韩国) 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53645,7 +54170,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/spy-family-op/spy-family-op-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/spy-family-op/spy-family-op-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "music",
+      "anime-ost",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "2022 大热, 漫画 3000 万册",
     "subtitle": "music · 《间谍过家家》OP · 百科占位",
     "description": "《间谍过家家》OP 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53701,7 +54232,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/erlangshen/erlangshen-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/erlangshen/erlangshen-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "mythology",
+      "chinese",
+      "现代",
+      "历史",
+      "神话",
+      "宗教"
+    ],
     "tagline": "因陀罗汉化, 杨戬三眼三尖两刃刀",
     "subtitle": "神话 · 二郎神 · 百科占位",
     "description": "二郎神 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53757,7 +54295,12 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/james-webb/james-webb-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/james-webb/james-webb-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "other-cosmic",
+      "现代",
+      "人物"
+    ],
     "tagline": "2021 发射 100 亿美金, 130 亿光年视野",
     "subtitle": "天体 · 詹姆斯·韦伯空间望远镜 · 百科占位",
     "description": "詹姆斯·韦伯空间望远镜 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53813,7 +54356,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/hyperion/hyperion-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/hyperion/hyperion-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "other-cosmic",
+      "现代",
+      "百科",
+      "图鉴社"
+    ],
     "tagline": "土星'汉堡形'卫星, 内部 40% 空洞",
     "subtitle": "天体 · 亥伯龙 (Hyperion) · 百科占位",
     "description": "亥伯龙 (Hyperion) 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53869,7 +54418,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/wr-104/wr-104-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/wr-104/wr-104-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "space-object",
+      "nebula",
+      "现代",
+      "天文",
+      "宇宙"
+    ],
     "tagline": "针轮星云 + GRB 风险评估",
     "subtitle": "天体 · WR 104 (针轮状星云) · 百科占位",
     "description": "WR 104 (针轮状星云) 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -53925,7 +54480,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "animal",
+      "fish",
+      "现代",
+      "动物",
+      "自然"
+    ],
     "tagline": "新泻县名鱼, 单只 2 亿日元",
     "subtitle": "动物 · 锦鲤 · 百科占位",
     "description": "锦鲤 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -54025,7 +54586,17 @@
       }
     ],
     "tagline": "1980s 污名化, 2016 被平反",
-    "description": "零号病人 (Patient Zero) 是流行病学概念, 原指 1980 年代艾滋病 (HIV) 早期研究员对加拿大航空乘务员 Gaétan Dugas 的污名化称呼,'他把 HIV 带进了北美'。2016 年 Nature Genetics 通过 Dugas 1980 年代血液样本基因测序反驳: HIV 早在 1970 年代初就进入北美, 不是 Dugas 单一来源。今天'零号病人'是'超级传播者'的标准代名词, 是 2020 年 COVID 期间高频热词。"
+    "description": "零号病人 (Patient Zero) 是流行病学概念, 原指 1980 年代艾滋病 (HIV) 早期研究员对加拿大航空乘务员 Gaétan Dugas 的污名化称呼,'他把 HIV 带进了北美'。2016 年 Nature Genetics 通过 Dugas 1980 年代血液样本基因测序反驳: HIV 早在 1970 年代初就进入北美, 不是 Dugas 单一来源。今天'零号病人'是'超级传播者'的标准代名词, 是 2020 年 COVID 期间高频热词。",
+    "tags": [
+      "流行病学",
+      "污名化",
+      "疾病起源",
+      "科学史",
+      "现代",
+      "全球"
+    ],
+    "score": 8,
+    "createdAt": "2026-07-01"
   },
   {
     "slug": "dyslexia",
@@ -54086,7 +54657,17 @@
       }
     ],
     "tagline": "5-15% 人群, 智力正常但读字弱",
-    "description": "阅读障碍症 (Dyslexia) 是神经多样性的一种, 患者智力正常但阅读拼写困难, 估计人群 5-15%。现在研究归因于'语音处理能力弱化' (phonological deficit), 与大脑左颞顶叶 + 左侧枕颞区功能性低活跃有关。与'懒'或'教得不好'无关。测试方法包括删字 + 语音假词解码。今天 Wikipedia 创始人 Jimmy Wales + Snapchat 创始人 Evan Spiegel 都是公开的 dyslexia 患者。"
+    "description": "阅读障碍症 (Dyslexia) 是神经多样性的一种, 患者智力正常但阅读拼写困难, 估计人群 5-15%。现在研究归因于'语音处理能力弱化' (phonological deficit), 与大脑左颞顶叶 + 左侧枕颞区功能性低活跃有关。与'懒'或'教得不好'无关。测试方法包括删字 + 语音假词解码。今天 Wikipedia 创始人 Jimmy Wales + Snapchat 创始人 Evan Spiegel 都是公开的 dyslexia 患者。",
+    "tags": [
+      "神经多样性",
+      "阅读障碍",
+      "健康",
+      "科学",
+      "现代",
+      "全球"
+    ],
+    "score": 8,
+    "createdAt": "2026-07-01"
   },
   {
     "slug": "laser-interferometer",
@@ -54147,7 +54728,17 @@
       }
     ],
     "tagline": "2015 探测到 13 亿光年外引力波",
-    "description": "激光干涉引力波天文台 (LIGO) 是美国 1999 年建成的物理实验装置, 主干涉臂 4 公里, 用分光镜 + 反射镜测量几纳米长度的形变。2015 年 9 月 14 日首次直接探测到双黑洞合并引力波 (GW150914) — 距地球 13 亿光年外, 13 亿太阳质量黑洞合并。证实 100 年前爱因斯坦广义相对论预言。2024 年 KAGRA 日本, Virgo 意大利加入组网。2017 年获诺贝尔物理学奖。"
+    "description": "激光干涉引力波天文台 (LIGO) 是美国 1999 年建成的物理实验装置, 主干涉臂 4 公里, 用分光镜 + 反射镜测量几纳米长度的形变。2015 年 9 月 14 日首次直接探测到双黑洞合并引力波 (GW150914) — 距地球 13 亿光年外, 13 亿太阳质量黑洞合并。证实 100 年前爱因斯坦广义相对论预言。2024 年 KAGRA 日本, Virgo 意大利加入组网。2017 年获诺贝尔物理学奖。",
+    "tags": [
+      "物理学",
+      "引力波",
+      "诺贝尔奖",
+      "科学",
+      "现代",
+      "全球"
+    ],
+    "score": 8,
+    "createdAt": "2026-07-01"
   },
   {
     "slug": "jurassic-park-cnt",
@@ -54208,7 +54799,17 @@
       }
     ],
     "tagline": "1993 CGI 恐龙 + 商业奇观",
-    "description": "《侏罗纪公园》(Jurassic Park) 是 1993 年斯皮尔伯格导演的恐龙科幻片, 改编自 Michael Crichton 1990 年同名小说。全球票房 9.2 亿美元 (1993 年世界纪录至 1997 年泰坦尼克), 与 1997 年系列第 2 部《失落的世界》一起开启'科幻恐龙'流行文化。CGI 恐龙 + 真人演员 + John Williams 主题音乐是 90 年代商业奇观代表。共 6 部作品, 2022 年第 6 部《统治》全球票房 10 亿美元。"
+    "description": "《侏罗纪公园》(Jurassic Park) 是 1993 年斯皮尔伯格导演的恐龙科幻片, 改编自 Michael Crichton 1990 年同名小说。全球票房 9.2 亿美元 (1993 年世界纪录至 1997 年泰坦尼克), 与 1997 年系列第 2 部《失落的世界》一起开启'科幻恐龙'流行文化。CGI 恐龙 + 真人演员 + John Williams 主题音乐是 90 年代商业奇观代表。共 6 部作品, 2022 年第 6 部《统治》全球票房 10 亿美元。",
+    "tags": [
+      "科幻电影",
+      "商业电影",
+      "1990s",
+      "恐龙",
+      "好莱坞",
+      "现代"
+    ],
+    "score": 8,
+    "createdAt": "2026-07-01"
   },
   {
     "slug": "bonobo",
@@ -54225,7 +54826,14 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/bonobo/bonobo-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/bonobo/bonobo-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "animal",
+      "mammal",
+      "现代",
+      "动物",
+      "自然",
+      "灵长类"
+    ],
     "tagline": "刚果特有, 与人类共享 98.7% DNA",
     "subtitle": "动物 · 倭黑猩猩 · 百科占位",
     "description": "倭黑猩猩 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
@@ -54281,7 +54889,13 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/introduced-species/introduced-species-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/introduced-species/introduced-species-full.webp",
     "score": 0,
-    "tags": [],
+    "tags": [
+      "phenomenon",
+      "biological",
+      "现代",
+      "动物",
+      "自然"
+    ],
     "tagline": "1970s 善意引入, 现入侵五大湖",
     "subtitle": "自然现象 · 亚洲鲤鱼入侵 · 百科占位",
     "description": "亚洲鲤鱼入侵 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",

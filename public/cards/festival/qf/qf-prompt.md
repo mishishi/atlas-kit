@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: BTS
-Category: 音乐
+Theme: 清明
+Category: 节日
 
 STRICT 9:16 vertical page.
 
@@ -85,63 +85,50 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Music Category Template
+# Festival Category Template
 
 ## Accent Color
-
-* Deep Purple — #6E628C
+* Defined by festival tradition
 
 ## Identity
-
-* Music encyclopedia and sound-culture profile page
+* Cultural and folklore encyclopedia page
 
 ## Hero Illustration
-
-* Representative music composition showing performer, instrument, score, album, stage, or sonic structure
-* Present the subject as an encyclopedia entry, not a concert poster or album advertisement
-* 3–5 detached music-detail panels around the hero illustration
+* Symbolic cultural scene with representative objects, clothing, and rituals
+* 3–5 detached custom or symbol detached detail panels around the hero illustration
 
 ## Information Modules
-
-* 音乐档案
-* 创作背景
-* 曲式结构
-* 声音语言
-* 编曲结构
-* 主题表达
-* 传播影响
+* 节日档案
+* 起源传说
+* 核心习俗
+* 代表食物
+* 代表服饰
+* 文化意涵
+* 现代演变
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 艺术影响
-* 旋律识别度
-* 技术复杂度
-* 传播广度
-* 时代代表性
+* 文化重要性
+* 传统保留度
+* 全球知名度
+* 参与门槛
+* 商业化程度
 
 ## Observation Insets
-
-* Select 3–5 distinctive musical or visual details appropriate to the subject
-* Examples: instrument, score, rhythm pattern, motif, performer, album cover detail, stage element, cultural symbol
-* Prefer visually different details
-* Avoid showing unrelated instruments, performers, or modern adaptations unless relevant
-* Short labels only
+* 器物
+* 色彩
+* 场景
+* 服饰
+* 仪式
 
 ## Visualization Strip
-
-* 1–2 compact analytical visualizations
-* Song structure
-* Timeline
-* Arrangement map
-* Rhythm or motif diagram
-* Minimal labels only
+* 1–2 compact visualizations
+* Calendar marker
+* Ritual flow
+* Festival symbols
 
 ## Failure Prevention
-
-* No concert poster
-* No album marketing
-* No streaming platform interface
-* No fabricated lyrics, awards, chart rankings, or quotations
-* Do not confuse the musical work with a single performer unless the subject requires it
-* Distinguish original work, performance version, and later adaptation
+* No holiday advertising
+* No retail promotion
+* No greeting-card aesthetics
+* Maintain cultural neutrality

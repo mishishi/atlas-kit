@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: BTS
-Category: 音乐
+Theme: 哈雷
+Category: 交通工具
 
 STRICT 9:16 vertical page.
 
@@ -85,63 +85,57 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Music Category Template
+# Vehicle Category Template
 
 ## Accent Color
 
-* Deep Purple — #6E628C
+* Industrial Red #B45A4A
 
 ## Identity
 
-* Music encyclopedia and sound-culture profile page
+* Transportation and engineering encyclopedia profile page
 
 ## Hero Illustration
 
-* Representative music composition showing performer, instrument, score, album, stage, or sonic structure
-* Present the subject as an encyclopedia entry, not a concert poster or album advertisement
-* 3–5 detached music-detail panels around the hero illustration
+* Accurate side view, three-quarter view, cutaway, or structural diagram
+* 3–5 detached structural or performance detail panels
 
 ## Information Modules
 
-* 音乐档案
-* 创作背景
-* 曲式结构
-* 声音语言
-* 编曲结构
-* 主题表达
-* 传播影响
+* 载具档案
+* 结构组成
+* 动力系统
+* 性能参数
+* 设计特点
+* 使用场景
+* 发展沿革
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 艺术影响
-* 旋律识别度
-* 技术复杂度
-* 传播广度
-* 时代代表性
+* 速度性能
+* 工程复杂度
+* 实用程度
+* 历史影响
+* 识别度
 
 ## Observation Insets
 
-* Select 3–5 distinctive musical or visual details appropriate to the subject
-* Examples: instrument, score, rhythm pattern, motif, performer, album cover detail, stage element, cultural symbol
-* Prefer visually different details
-* Avoid showing unrelated instruments, performers, or modern adaptations unless relevant
-* Short labels only
+* Select 3–5 distinctive structural components appropriate to the vehicle
+* Examples: body, cockpit, cabin, propulsion, chassis, wings, hull, wheels, tracks
+* Do not show components absent from the subject
 
 ## Visualization Strip
 
-* 1–2 compact analytical visualizations
-* Song structure
-* Timeline
-* Arrangement map
-* Rhythm or motif diagram
-* Minimal labels only
+* 1–2 compact visualizations
+* Size comparison
+* Powertrain diagram
+* Evolution timeline
 
 ## Failure Prevention
 
-* No concert poster
-* No album marketing
-* No streaming platform interface
-* No fabricated lyrics, awards, chart rankings, or quotations
-* Do not confuse the musical work with a single performer unless the subject requires it
-* Distinguish original work, performance version, and later adaptation
+* No commercial vehicle advertising
+* No showroom photography
+* No exaggerated speed effects
+* No invented specifications
+* Engineering structure must remain plausible

@@ -1,6 +1,6 @@
 # Encyclopedia Infographic
 
-Theme: BTS
+Theme: BP
 Category: 音乐
 
 STRICT 9:16 vertical page.

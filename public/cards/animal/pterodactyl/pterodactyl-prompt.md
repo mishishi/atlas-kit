@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: BTS
-Category: 音乐
+Theme: 翼龙
+Category: 动物
 
 STRICT 9:16 vertical page.
 
@@ -85,63 +85,53 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Music Category Template
+# Animal Category Template
 
 ## Accent Color
-
-* Deep Purple — #6E628C
+* Warm Amber #E07840
 
 ## Identity
-
-* Music encyclopedia and sound-culture profile page
+* Natural-history species profile page
 
 ## Hero Illustration
 
-* Representative music composition showing performer, instrument, score, album, stage, or sonic structure
-* Present the subject as an encyclopedia entry, not a concert poster or album advertisement
-* 3–5 detached music-detail panels around the hero illustration
+* Scientific full-body species illustration
+* 3–5 detached anatomical close-up panels around the hero illustration
 
 ## Information Modules
-
-* 音乐档案
-* 创作背景
-* 曲式结构
-* 声音语言
-* 编曲结构
-* 主题表达
-* 传播影响
+* 分类阶元
+* 形态特征
+* 栖息环境
+* 食性行为
+* 繁殖习性
+* 保护现状
+* 分布地图
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 艺术影响
-* 旋律识别度
-* 技术复杂度
-* 传播广度
-* 时代代表性
+* 体型
+* 攻击性
+* 稀有度
+* 适应力
+* 人类熟悉度
 
 ## Observation Insets
 
-* Select 3–5 distinctive musical or visual details appropriate to the subject
-* Examples: instrument, score, rhythm pattern, motif, performer, album cover detail, stage element, cultural symbol
-* Prefer visually different details
-* Avoid showing unrelated instruments, performers, or modern adaptations unless relevant
-* Short labels only
+* Select 3–5 distinctive anatomical features appropriate to the species
+* Prefer visually different features
+* Avoid duplicate or near-duplicate close-ups
+* Examples: head, eyes, beak, teeth, limbs, wings, fur, feathers, scales, tail
+* Do not show features absent from the species
 
 ## Visualization Strip
-
-* 1–2 compact analytical visualizations
-* Song structure
-* Timeline
-* Arrangement map
-* Rhythm or motif diagram
-* Minimal labels only
+* 1–2 compact visualizations
+* Range map
+* Human size comparison
+* Ecological niche
 
 ## Failure Prevention
-
-* No concert poster
-* No album marketing
-* No streaming platform interface
-* No fabricated lyrics, awards, chart rankings, or quotations
-* Do not confuse the musical work with a single performer unless the subject requires it
-* Distinguish original work, performance version, and later adaptation
+* Scientific illustration style
+* No wildlife photography poster
+* No cartoon or mascot
+* No anthropomorphic styling
+* No emotional conservation messaging

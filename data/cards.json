@@ -2563,7 +2563,7 @@
     "subKind": "traditional"
   },
   {
-    "slug": "qingming",
+    "slug": "qingming-festival",
     "title": "清明",
     "kind": "festival",
     "series": "festival-almanac",
@@ -2573,7 +2573,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qingming/qingming-card.png",
+    "image": "/cards/festival/qingming-festival/qingming-festival-card.png",
     "score": 9,
     "tags": [
       "祭祖",
@@ -2588,8 +2588,8 @@
     "subtitle": "祭祖 · 踏青 · 寒食 · 二十四节气",
     "description": "清明之所以是清明, 不只是节气. 它夹在两个传统之间: 寒食 (介子推被焚, 晋文公下令禁火) 和上巳 (临水祈福, 春日踏青). 唐代把这两条线合到清明一天, 扫墓 + 踏青, 悲伤和生机并存 — 这种双重情绪在其它节日里很少见. 现在我们插柳、扫墓、放风筝、吃青团, 江南的青团用艾草汁, 是寒食节禁火吃冷食的活化石. 2006 年列入国家级非遗, 但对大部分人来说, 清明不需要非遗四个字, 它每年 4 月 4-6 日自己来, 自己走. （参见：苏州、梅花）（参见：兰花、竹子）（参见：玉璧、漆器）（参见：青花瓷、故宫）（参见：敦煌莫高窟、苏州园林）（参见：童年）",
     "createdAt": "2026-05-29T08:12:00Z",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qingming/qingming-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qingming/qingming-full.webp",
+    "image_thumb": "/cards/festival/qingming-festival/qingming-festival-thumb.webp",
+    "image_full": "/cards/festival/qingming-festival/qingming-festival-full.webp",
     "history": [
       {
         "year": "周代",
@@ -34258,84 +34258,6 @@
     "quote": "视觉系摇滚的代名词, 古典与金属的融合实验。"
   },
   {
-    "slug": "bts",
-    "title": "防弹少年团",
-    "kind": "music",
-    "series": "soundtrack-atlas",
-    "seriesNo": "026",
-    "palette": [
-      "#F5F0E6",
-      "#B88952",
-      "#8C7F6E"
-    ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/bts/bts-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/bts/bts-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/bts/bts-full.webp",
-    "score": 0,
-    "tags": [
-      "韩国流行",
-      "东亚音乐",
-      "现代音乐",
-      "韩流组合"
-    ],
-    "tagline": "七道声音，化作穿透全球的青春子弹",
-    "subtitle": "music · 防弹少年团",
-    "description": "防弹少年团（BTS）是一支于2013年出道的韩国男子音乐组合，由RM、Jin、Suga、J-Hope、Jimin、V、Jung Kook七名成员组成。他们以融合嘻哈、流行、R&B等多元风格的音乐作品著称，歌词常聚焦青年成长与社会议题。作为K-pop代表组合之一，他们多次在国际音乐市场取得突破性成绩，推动了韩流文化的全球传播。",
-    "createdAt": "2026-06-26",
-    "history": [
-      {
-        "year": "2013",
-        "title": "防弹正式出道",
-        "body": "防弹少年团于2013年6月13日在韩国正式出道，发行首张迷你专辑《2 Cool 4 Skool》并在音乐节目亮相。"
-      },
-      {
-        "year": "2015",
-        "title": "首次获得音乐节目冠军",
-        "body": "2015年6月4日，成员们在Mnet《M Countdown》凭借《I Need U》夺得首个音乐节目冠军，开启持续夺冠之路。"
-      },
-      {
-        "year": "2016",
-        "title": "专辑《Wings》发行",
-        "body": "2016年10月10日发布的《Wings》专辑以独特的概念与高质量音乐登上多榜冠军，成为组合里程碑式作品。"
-      },
-      {
-        "year": "2017",
-        "title": "启动“爱你自己”系列",
-        "body": "2017年起，组合推出《Love Yourself》系列，从《Her》到《Tear》全面展开，深化全球粉丝共鸣。"
-      },
-      {
-        "year": "2020",
-        "title": "Dynamite全球发行",
-        "body": "2020年8月21日发布的《Dynamite》为首支全英文单曲，获Billboard Hot 100冠军并获格莱美提名。"
-      }
-    ],
-    "sources": [
-      {
-        "title": "维基百科中文版",
-        "url": "https://zh.wikipedia.org/wiki/%E9%98%B2%E5%BC%B9%E5%B0%91%E5%B9%B4%E5%9B%A2",
-        "type": "百科"
-      },
-      {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E9%98%B2%E5%BC%B9%E5%B0%91%E5%B9%B4%E5%9B%A2/20154699",
-        "type": "百科"
-      },
-      {
-        "title": "知网",
-        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y&kw=%E9%98%B2%E5%BC%B9%E5%B0%91%E5%B9%B4%E5%9B%A2",
-        "type": "学术"
-      },
-      {
-        "title": "人民日报海外版",
-        "url": "https://paper.people.com.cn/hrmb/html/2021-07/07/content_2047044.htm",
-        "type": "新闻"
-      }
-    ],
-    "subKind": "western-modern",
-    "quote": "作为K-pop代表组合之一，他们多次在国际音乐市场取得突破性成绩，推动了韩流文化的全球传播。",
-    "trivia": "一支于2013年出道的韩国男子音乐组合，由RM、Jin、Suga、J-Hope、Jimin、V、Jung Kook七名成员组成。"
-  },
-  {
     "slug": "taylor-swift",
     "title": "泰勒·斯威夫特",
     "kind": "music",
@@ -54933,6 +54855,1503 @@
         "title": "中国大百科全书",
         "url": "https://www.zgbk.com/",
         "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "botticelli-venus",
+    "title": "波提切利",
+    "kind": "artwork",
+    "series": "history-and-figures",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/artwork/botticelli-venus/botticelli-venus-card.png",
+    "image_thumb": "/cards/artwork/botticelli-venus/botticelli-venus-thumb.webp",
+    "image_full": "/cards/artwork/botticelli-venus/botticelli-venus-full.webp",
+    "score": 8.8,
+    "tags": [
+      "艺术",
+      "文艺复兴",
+      "意大利",
+      "波提切利",
+      "古代",
+      "全球"
+    ],
+    "tagline": "1485 文艺复兴, 乌菲齐镇馆",
+    "subtitle": "艺术品 · 波提切利 · 百科占位",
+    "description": "《维纳斯的诞生》(La nascita di Venere) 是 1485-1486 年意大利文艺复兴画家桑德罗·波提切利 (Sandro Botticelli) 创作, 现藏佛罗伦萨乌菲齐美术馆。画作尺寸 172.5 cm × 278.9 cm 大幅蛋彩画, 描绘爱与美女神维纳斯从海中贝壳里诞生, 微风之神把她吹向岸边。灵感来自古典神话 + 新柏拉图主义, 是西方艺术史上裸体女神最早范例之一。2019 年乌菲齐把它修复, 去除几百年黄变, 露出原本的鲜艳蓝粉色调。",
+    "createdAt": "2026-07-01",
+    "subKind": "painting",
+    "history": [
+      {
+        "year": "1485-1486",
+        "title": "botticelli create",
+        "body": "Florence, Medici commission, tempera, Uffizi"
+      },
+      {
+        "year": "1815",
+        "title": "Uffizi collection",
+        "body": "After Vienna Congress Medici collection transferred to Italy, Birth of Venus in Uffizi"
+      },
+      {
+        "year": "1986-1987",
+        "title": "First major restoration",
+        "body": "Italian Cultural Heritage restored painting, removed centuries of yellowing"
+      },
+      {
+        "year": "2019",
+        "title": "Second restoration",
+        "body": "Uffizi used modern tech + UV scanning, revealed original vivid blue-pink"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Uffizi Museum",
+        "url": "https://www.uffizi.it/en/artworks/birth-of-venus",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Birth of Venus",
+        "url": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "hokusai-wave",
+    "title": "葛饰北斋",
+    "kind": "artwork",
+    "series": "history-and-figures",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/artwork/hokusai-wave/hokusai-wave-card.png",
+    "image_thumb": "/cards/artwork/hokusai-wave/hokusai-wave-thumb.webp",
+    "image_full": "/cards/artwork/hokusai-wave/hokusai-wave-full.webp",
+    "score": 9.2,
+    "tags": [
+      "艺术",
+      "浮世绘",
+      "日本",
+      "葛饰北斋",
+      "古代",
+      "东亚"
+    ],
+    "tagline": "1831 巨浪 + 富士山, 浮世绘代表",
+    "subtitle": "艺术品 · 葛饰北斋 · 百科占位",
+    "description": "《神奈川冲浪里》(富岳三十六景之一) 是 1831 年日本浮世绘画家葛饰北斋 (Katsushika Hokusai) 创作, 木版画, 25.7 cm × 37.9 cm。画面描绘神奈川海域三次大浪, 远方富士山静立。鹰爪浪的简化造型 + 富士山的微缩, 是日本艺术对自然 vs 永恒最简洁表达。原作有 8000 幅印量, 至今巨浪成了全球识别度最高的亚洲艺术图像, 影响梵高 + 德彪西 + 莫奈。",
+    "createdAt": "2026-07-01",
+    "subKind": "painting",
+    "history": [
+      {
+        "year": "1831",
+        "title": "Hokusai create",
+        "body": "36 Views of Mt Fuji series #21, Under the Wave off Kanagawa, Edo"
+      },
+      {
+        "year": "1842",
+        "title": "Hokusai dies",
+        "body": "aged 89, left 100 Views of Mt Fuji and many ukiyo-e works"
+      },
+      {
+        "year": "1849",
+        "title": "West import",
+        "body": "Hokusai prints enter Europe via Dutch trading house, influence Impressionism"
+      },
+      {
+        "year": "2017",
+        "title": "Most popular Japanese art",
+        "body": "Great Wave voted among 30 most popular Japanese artworks"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Met Museum",
+        "url": "https://www.metmuseum.org/art/collection/search/45434",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Great Wave",
+        "url": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "klimt-kiss",
+    "title": "克里姆特",
+    "kind": "artwork",
+    "series": "history-and-figures",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/artwork/klimt-kiss/klimt-kiss-card.png",
+    "image_thumb": "/cards/artwork/klimt-kiss/klimt-kiss-thumb.webp",
+    "image_full": "/cards/artwork/klimt-kiss/klimt-kiss-full.webp",
+    "score": 8.7,
+    "tags": [
+      "艺术",
+      "分离派",
+      "奥地利",
+      "克里姆特",
+      "近现代",
+      "欧洲"
+    ],
+    "tagline": "1908 金箔 + 分离派, 维也纳镇馆",
+    "subtitle": "艺术品 · 克里姆特 · 百科占位",
+    "description": "《吻》(Der Kuss) 是 1907-1908 年奥地利分离派画家古斯塔夫·克里姆特 (Gustav Klimt) 创作, 180 cm × 180 cm, 金箔 + 油画, 现藏维也纳美景宫奥地利国家美术馆。画面一对情侣裹在金色长袍中亲吻, 男人俯身女人仰面, 周边是金色装饰图案。是克里姆特金色时期代表作, 受到拜占庭马赛克 + 古埃及艺术影响。原作估值 2.4 亿美元, 是 20 世纪初最贵艺术品之一。",
+    "createdAt": "2026-07-01",
+    "subKind": "painting",
+    "history": [
+      {
+        "year": "1907-1908",
+        "title": "Klimt create",
+        "body": "Vienna Golden Period representative, gold leaf + oil"
+      },
+      {
+        "year": "1908",
+        "title": "Belvedere collection",
+        "body": "Belvedere Octagonal Hall, Klimt last major work in his life"
+      },
+      {
+        "year": "1938",
+        "title": "Nazi confiscation",
+        "body": "Klimt works confiscated by Nazis, returned to Austria after WWII"
+      },
+      {
+        "year": "2006",
+        "title": "Restoration complete",
+        "body": "Austrian Gallery fully restored gold leaf + protected painting"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Belvedere Museum",
+        "url": "https://www.belvedere.at/en/gustav-klimt-the-kiss",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia The Kiss Klimt",
+        "url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "vangogh-ear",
+    "title": "梵高",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/person/vangogh-ear/vangogh-ear-card.png",
+    "image_thumb": "/cards/person/vangogh-ear/vangogh-ear-thumb.webp",
+    "image_full": "/cards/person/vangogh-ear/vangogh-ear-full.webp",
+    "score": 8.4,
+    "tags": [
+      "人物",
+      "后印象派",
+      "荷兰",
+      "梵高",
+      "近现代",
+      "欧洲"
+    ],
+    "tagline": "1888 阿尔勒, 高更争吵后",
+    "subtitle": "人物 · 梵高 · 百科占位",
+    "description": "1888 年 12 月 23 日晚, 荷兰后印象派画家文森特·梵高 (Vincent van Gogh, 1853-1890) 在阿尔勒黄房子跟保罗·高更 (Paul Gauguin) 争吵后, 用剃刀割下自己左耳的一部分, 送给附近妓院一个女工。次日高更离开阿尔勒, 梵高精神崩溃, 1889 年自愿进圣雷米精神病院。割耳事件成为梵高天才与疯狂的标志, 后来 2009 年研究发现他可能不是割耳, 而是高更的剑伤。",
+    "createdAt": "2026-07-01",
+    "subKind": "artist",
+    "history": [
+      {
+        "year": "1853",
+        "title": "Van Gogh born",
+        "body": "Groot-Zundert Netherlands, pastor family"
+      },
+      {
+        "year": "1886",
+        "title": "Paris study",
+        "body": "brother Theo funded, entered Cormon studio, met Impressionism"
+      },
+      {
+        "year": "1888",
+        "title": "Arles ear cutting",
+        "body": "Dec 23 evening fought with Gauguin, cut left ear sent to brothel worker"
+      },
+      {
+        "year": "1890",
+        "title": "Van Gogh dies",
+        "body": "July 29 suicide in Auvers-sur-Oise, aged 37"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Van Gogh Museum",
+        "url": "https://www.vangoghmuseum.nl/en",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Vincent van Gogh",
+        "url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "picasso-guernica",
+    "title": "毕加索",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/person/picasso-guernica/picasso-guernica-card.png",
+    "image_thumb": "/cards/person/picasso-guernica/picasso-guernica-thumb.webp",
+    "image_full": "/cards/person/picasso-guernica/picasso-guernica-full.webp",
+    "score": 9.5,
+    "tags": [
+      "人物",
+      "立体派",
+      "西班牙",
+      "毕加索",
+      "现代",
+      "反战"
+    ],
+    "tagline": "1937 反战图腾, 立体派巨作",
+    "subtitle": "人物 · 毕加索 · 百科占位",
+    "description": "《格尔尼卡》(Guernica) 是 1937 年西班牙画家巴勃罗·毕加索 (Pablo Picasso) 创作, 349 cm × 776 cm 巨幅黑白油画。1937 年 4 月 26 日, 纳粹德国空军应西班牙独裁者佛朗哥请求, 轰炸巴斯克小镇格尔尼卡, 屠杀平民。毕加索用立体派 + 超现实主义风格, 表现牛头 + 断臂 + 哭喊母亲 + 灯光 + 火焰, 控诉战争暴行。是 20 世纪反战艺术第一图腾。",
+    "createdAt": "2026-07-01",
+    "subKind": "artist",
+    "history": [
+      {
+        "year": "1937-04-26",
+        "title": "Guernica bombing",
+        "body": "Nazi Luftwaffe bombed Basque town at Franco's request, killed civilians"
+      },
+      {
+        "year": "1937",
+        "title": "Picasso create",
+        "body": "Commissioned by Spanish Republic, completed 349x776cm in 1 month"
+      },
+      {
+        "year": "1937",
+        "title": "Paris Expo",
+        "body": "Spanish Pavilion, global uproar"
+      },
+      {
+        "year": "1981",
+        "title": "Reina Sofia",
+        "body": "After 22 years at MoMA, moved 1992 to Madrid Reina Sofia"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reina Sofia Museum",
+        "url": "https://www.museoreinasofia.es/en/collection/artwork/guernica-1962",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Guernica painting",
+        "url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "schrodingers-cat",
+    "title": "薛定谔",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/phenomenon/schrodingers-cat/schrodingers-cat-card.png",
+    "image_thumb": "/cards/phenomenon/schrodingers-cat/schrodingers-cat-thumb.webp",
+    "image_full": "/cards/phenomenon/schrodingers-cat/schrodingers-cat-full.webp",
+    "score": 8.9,
+    "tags": [
+      "物理",
+      "量子力学",
+      "思想实验",
+      "薛定谔",
+      "现代",
+      "科学"
+    ],
+    "tagline": "1935 量子叠加思想实验",
+    "subtitle": "自然现象 · 薛定谔 · 百科占位",
+    "description": "薛定谔的猫 (Schrödingers cat) 是 1935 年奥地利物理学家埃尔温·薛定谔 (Erwin Schrödinger) 提出的思想实验: 把猫 + 毒气瓶 + 放射性原子 + 锤 + 盖革计数器封在黑盒。如果原子衰变, 盖革计数器触发锤子打碎毒气瓶, 猫死; 如果原子没衰变, 猫活。量子叠加原理说, 原子同时处于衰变 + 不衰变两个态, 猫同时死 + 活, 直到观察者开盒。今天是量子叠加 + 观测者效应最著名的科普隐喻。",
+    "createdAt": "2026-07-01",
+    "subKind": "biological",
+    "history": [
+      {
+        "year": "1926",
+        "title": "Schrodinger wave equation",
+        "body": "Erwin Schrodinger proposed quantum wave equation"
+      },
+      {
+        "year": "1935",
+        "title": "Thought experiment",
+        "body": "Schrodinger proposed in 'The Present Situation in Quantum Mechanics' paper, criticizing Copenhagen"
+      },
+      {
+        "year": "1996",
+        "title": "First experimental approximation",
+        "body": "NIST used beryllium ions to realize macroscopic quantum superposition"
+      },
+      {
+        "year": "2020",
+        "title": "Quantum computing verification",
+        "body": "IBM/Google quantum computers verified similar multistate superposition"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Schrodingers cat",
+        "url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat",
+        "type": "wiki"
+      },
+      {
+        "title": "NIST Quantum Information",
+        "url": "https://www.nist.gov/topics/physics/quantum-information-science",
+        "type": "institution"
+      }
+    ]
+  },
+  {
+    "slug": "double-slit",
+    "title": "双缝",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/phenomenon/double-slit/double-slit-card.png",
+    "image_thumb": "/cards/phenomenon/double-slit/double-slit-thumb.webp",
+    "image_full": "/cards/phenomenon/double-slit/double-slit-full.webp",
+    "score": 8.6,
+    "tags": [
+      "物理",
+      "光学",
+      "量子力学",
+      "杨",
+      "近现代",
+      "科学"
+    ],
+    "tagline": "1801 波动 + 粒子, 量子奠基",
+    "subtitle": "自然现象 · 双缝 · 百科占位",
+    "description": "双缝实验是 1801 年托马斯·杨 (Thomas Young) 提出的经典光学实验: 单色光过两条平行狭缝, 屏上出现明暗相间条纹 — 证明光具有波动性。1909 年爱因斯坦指出, 单个光子能跟自己干涉 — 证明光具有粒子性。1961 年克劳斯·约恩松 (Claus Jönsson) 用电子做同样实验, 同样出现干涉条纹, 证明波粒二象性是量子世界普遍规律。今天是量子力学奠基实验。",
+    "createdAt": "2026-07-01",
+    "subKind": "astronomical",
+    "history": [
+      {
+        "year": "1801",
+        "title": "Young double slit",
+        "body": "Thomas Young demonstrated at Royal Society, proved light wave nature"
+      },
+      {
+        "year": "1909",
+        "title": "Einstein single photon interference",
+        "body": "Einstein noted single photon can self-interfere, proved particle nature"
+      },
+      {
+        "year": "1961",
+        "title": "Electron double slit",
+        "body": "Claus Jonsson used electrons to verify wave-particle duality"
+      },
+      {
+        "year": "1974",
+        "title": "Single electron accumulation",
+        "body": "Pier Giorgio Merli used single electron emission, screen gradually showed interference fringes"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Double-slit experiment",
+        "url": "https://en.wikipedia.org/wiki/Double-slit_experiment",
+        "type": "wiki"
+      },
+      {
+        "title": "Physics World",
+        "url": "https://physicsworld.com/a/double-slit-experiment/",
+        "type": "media"
+      }
+    ]
+  },
+  {
+    "slug": "michelson-morley",
+    "title": "迈克尔逊",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/phenomenon/michelson-morley/michelson-morley-card.png",
+    "image_thumb": "/cards/phenomenon/michelson-morley/michelson-morley-thumb.webp",
+    "image_full": "/cards/phenomenon/michelson-morley/michelson-morley-full.webp",
+    "score": 8.5,
+    "tags": [
+      "物理",
+      "光学",
+      "相对论",
+      "迈克尔逊",
+      "近代",
+      "科学"
+    ],
+    "tagline": "1887 否决以太, 相对论基石",
+    "subtitle": "自然现象 · 迈克尔逊 · 百科占位",
+    "description": "迈克尔逊-莫雷实验是 1887 年阿尔伯特·迈克尔逊 (Albert Michelson) + 爱德华·莫雷 (Edward Morley) 在美国克利夫兰做的光学实验, 试图检测地球在以太中的运动速度。预期测到光速差 (每年 ±30 km/s), 实际测到几乎为 0。以太不存在 + 光速不变成为爱因斯坦 1905 年狭义相对论两个基本假设。物理学史上最伟大的失败实验之一, 但奠定现代宇宙观。",
+    "createdAt": "2026-07-01",
+    "subKind": "astronomical",
+    "history": [
+      {
+        "year": "1887",
+        "title": "Michelson-Morley experiment",
+        "body": "Cleveland USA, used interferometer to detect Earth velocity in ether, almost 0"
+      },
+      {
+        "year": "1905",
+        "title": "Einstein special relativity",
+        "body": "Based on non-existence of ether + constant light speed, proposed relativity"
+      },
+      {
+        "year": "1926",
+        "title": "Michelson Nobel Prize",
+        "body": "Albert Michelson 1927 won Physics Prize, optics precision instrument pioneer"
+      },
+      {
+        "year": "1931",
+        "title": "Morley dies",
+        "body": "Edward Morley aged 93, famed experimental physics"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Nobel Prize",
+        "url": "https://www.nobelprize.org/prizes/physics/1907/michelson/biographical/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Michelson-Morley",
+        "url": "https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "t-rex",
+    "title": "霸王龙",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/animal/t-rex/t-rex-card.png",
+    "image_thumb": "/cards/animal/t-rex/t-rex-thumb.webp",
+    "image_full": "/cards/animal/t-rex/t-rex-full.webp",
+    "score": 9,
+    "tags": [
+      "动物",
+      "恐龙",
+      "白垩纪",
+      "化石",
+      "远古",
+      "全球"
+    ],
+    "tagline": "白垩纪 12 米顶级掠食者",
+    "subtitle": "动物 · 霸王龙 · 百科占位",
+    "description": "霸王龙 (Tyrannosaurus rex, 暴君蜥蜴王) 是 6800-6600 万年前白垩纪末期北美顶级掠食者, 体长 12-13 米, 体重 8-9 吨, 咬合力 35,000-57,000 牛, 史上最强陆生肉食动物之一。1902 年美国自然历史博物馆 Barnum Brown 在蒙大拿州发现第一具完整骨架, 1905 年命名。化石存 30+ 副完整骨架, 知名标本 Sue 2018 年拍 3180 万美元, 是史上最贵恐龙化石。",
+    "createdAt": "2026-07-01",
+    "subKind": "reptile",
+    "history": [
+      {
+        "year": "1902",
+        "title": "Brown discovery",
+        "body": "AMNH Montana Hell Creek first complete skeleton"
+      },
+      {
+        "year": "1905",
+        "title": "Named T rex",
+        "body": "Osborn named tyrant lizard king"
+      },
+      {
+        "year": "1990",
+        "title": "Sue discovery",
+        "body": "South Dakota, 1997 auction 8.36M USD record"
+      },
+      {
+        "year": "2018",
+        "title": "Stan auction",
+        "body": "Christies NY auctioned 31.8M USD, most expensive dinosaur fossil ever"
+      }
+    ],
+    "sources": [
+      {
+        "title": "AMNH T Rex",
+        "url": "https://www.amnh.org/dinosaurs/tyrannosaurus-rex",
+        "type": "museum"
+      },
+      {
+        "title": "Field Museum Sue",
+        "url": "https://www.fieldmuseum.org/blog/sue-t-rex",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "komodo-dragon",
+    "title": "科莫多",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/animal/komodo-dragon/komodo-dragon-card.png",
+    "image_thumb": "/cards/animal/komodo-dragon/komodo-dragon-thumb.webp",
+    "image_full": "/cards/animal/komodo-dragon/komodo-dragon-full.webp",
+    "score": 7.8,
+    "tags": [
+      "动物",
+      "爬行动物",
+      "印尼",
+      "濒危",
+      "现代",
+      "亚太"
+    ],
+    "tagline": "印尼 3 米巨型蜥蜴, 濒危",
+    "subtitle": "动物 · 科莫多 · 百科占位",
+    "description": "科莫多巨蜥 (Varanus komodoensis) 是印度尼西亚科莫多岛 + 林卡岛 + 弗洛勒斯岛特有的巨型蜥蜴, 体长 2-3 米, 体重 70-90 公斤, 是现存最大蜥蜴类。1910 年欧洲人发现, 1926 年命名。口中含 50+ 种细菌 + 毒腺 (2009 年发现, 含毒蛋白 KDRF), 咬伤猎物后几天内因败血症或失血死亡。今天科莫多国家公园 (联合国遗产) 剩 1400 只, 濒危。",
+    "createdAt": "2026-07-01",
+    "subKind": "reptile",
+    "history": [
+      {
+        "year": "1910",
+        "title": "European discovery",
+        "body": "Komodo Island Indonesia"
+      },
+      {
+        "year": "1926",
+        "title": "Named Varanus komodoensis",
+        "body": "British Museum of Natural History named"
+      },
+      {
+        "year": "1980",
+        "title": "Komodo National Park",
+        "body": "Indonesia established national park"
+      },
+      {
+        "year": "2009",
+        "title": "Venom gland discovery",
+        "body": "University of Melbourne found venom protein KDRF, rewrote immunology"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO Komodo",
+        "url": "https://whc.unesco.org/en/list/609/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Komodo dragon",
+        "url": "https://en.wikipedia.org/wiki/Komodo_dragon",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "pterodactyl",
+    "title": "翼龙",
+    "kind": "animal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/animal/pterodactyl/pterodactyl-card.png",
+    "image_thumb": "/cards/animal/pterodactyl/pterodactyl-thumb.webp",
+    "image_full": "/cards/animal/pterodactyl/pterodactyl-full.webp",
+    "score": 7.5,
+    "tags": [
+      "动物",
+      "翼龙",
+      "侏罗纪",
+      "化石",
+      "远古",
+      "全球"
+    ],
+    "tagline": "晚侏罗纪飞行爬行动物",
+    "subtitle": "动物 · 翼龙 · 百科占位",
+    "description": "翼龙 (Pterodactylus antiquus) 是 1.5 亿年前晚侏罗纪德国索伦霍芬石灰岩发现的飞行爬行动物, 翼展 1-1.5 米, 体重 2-5 公斤, 是第一个飞行脊椎动物。1784 年意大利博物学家 Cosimo Collini 首次描述 (误认为海洋生物), 1801 年居维叶 (Cuvier) 才识别为飞行爬行动物。跟恐龙同期生存但不是恐龙, 是翼龙目代表, 6500 万年前白垩纪末灭绝。",
+    "createdAt": "2026-07-01",
+    "subKind": "reptile",
+    "history": [
+      {
+        "year": "1784",
+        "title": "First description",
+        "body": "Cosimo Collini found in Bavarian Solnhofen limestone"
+      },
+      {
+        "year": "1801",
+        "title": "Cuvier identification",
+        "body": "Cuvier identified as flying reptile"
+      },
+      {
+        "year": "1858",
+        "title": "Archaeopteryx discovery",
+        "body": "Germany Solnhofen found Archaeopteryx coexisted with pterosaurs"
+      },
+      {
+        "year": "2010s",
+        "title": "Feather traces",
+        "body": "Research found some pterosaurs had primitive feathers, flight ability beyond expectations"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Pterodactylus",
+        "url": "https://en.wikipedia.org/wiki/Pterodactylus",
+        "type": "wiki"
+      },
+      {
+        "title": "NHM Pterosaurs feathers",
+        "url": "https://www.nhm.ac.uk/discover/news/2020/january/pterosaurs-had-feathers-just-like-modern-birds.html",
+        "type": "media"
+      }
+    ]
+  },
+  {
+    "slug": "penny-farthing",
+    "title": "前轮车",
+    "kind": "vehicle",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/penny-farthing/penny-farthing-card.png",
+    "image_thumb": "/cards/vehicle/penny-farthing/penny-farthing-thumb.webp",
+    "image_full": "/cards/vehicle/penny-farthing/penny-farthing-full.webp",
+    "score": 6.8,
+    "tags": [
+      "交通工具",
+      "自行车",
+      "维多利亚",
+      "英国",
+      "近代",
+      "欧洲"
+    ],
+    "tagline": "1870s 维多利亚时代经典",
+    "subtitle": "交通工具 · 前轮车 · 百科占位",
+    "description": "前轮大自行车 (Penny-farthing) 是 1870-1880 年代英国流行的早期自行车, 前轮直径 1.2-1.5 米 (大如英国旧便士硬币), 后轮小 (远小于 1 便士硬币), 由此得名。前轮直接连踏板, 骑手坐在前轮正上方, 速度可达 25-30 km/h, 是当时最快的人力交通工具。1885 年罗孚 (John Kemp Starley) 发明链传动 + 同样大小双轮的安全自行车后, penny-farthing 在 1890 年代被淘汰。",
+    "createdAt": "2026-07-01",
+    "subKind": "bicycle",
+    "history": [
+      {
+        "year": "1870",
+        "title": "UK invention",
+        "body": "Eugene Meyer + James Starley promoted in UK"
+      },
+      {
+        "year": "1880",
+        "title": "Popularity peak",
+        "body": "Victorian gentlemen rode speed up to 30 km/h"
+      },
+      {
+        "year": "1885",
+        "title": "Safety bicycle invention",
+        "body": "John Kemp Starley invented chain drive + equal-size wheels"
+      },
+      {
+        "year": "1890",
+        "title": "Quickly obsolete",
+        "body": "Penny-farthing exited market due to danger, replaced by safety bicycle"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Penny-farthing",
+        "url": "https://en.wikipedia.org/wiki/Penny-farthing",
+        "type": "wiki"
+      },
+      {
+        "title": "Cycle Museum",
+        "url": "https://bicyclenh.org/exhibits/online-exhibits/history-of-bicycles/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "harley-davidson",
+    "title": "哈雷",
+    "kind": "vehicle",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "042",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/harley-davidson/harley-davidson-card.png",
+    "image_thumb": "/cards/vehicle/harley-davidson/harley-davidson-thumb.webp",
+    "image_full": "/cards/vehicle/harley-davidson/harley-davidson-full.webp",
+    "score": 7.4,
+    "tags": [
+      "交通工具",
+      "摩托车",
+      "美国",
+      "V-Twin",
+      "现代",
+      "美洲"
+    ],
+    "tagline": "1903 美国 V-Twin 摩托车文化",
+    "subtitle": "交通工具 · 哈雷 · 百科占位",
+    "description": "哈雷戴维森 (Harley-Davidson) 是 1903 年美国威斯康星州 William S. Harley + Arthur Davidson 兄弟创立的摩托车品牌, 是美国摩托车文化代表。1903 年第一辆摩托车出厂, 1909 年 V 型双缸引擎定型。今天产品线 Sportster + Softail + Touring + Trike + CVO, 2023 年全球销量 16 万辆, 营收 56 亿美元, 标志 V-Twin 引擎 + 标志性 potato-potato 排气声。哈雷是美国工人阶级 + 战后越战老兵自由象征。",
+    "createdAt": "2026-07-01",
+    "subKind": "scooter",
+    "history": [
+      {
+        "year": "1903",
+        "title": "Brand founded",
+        "body": "William Harley + Arthur Davidson in Milwaukee"
+      },
+      {
+        "year": "1909",
+        "title": "V-Twin engine",
+        "body": "First V-twin 7 hp Motor-Bicycle"
+      },
+      {
+        "year": "1941-1945",
+        "title": "WWII military orders",
+        "body": "US Army purchased WLA Liberator motorcycles"
+      },
+      {
+        "year": "1969",
+        "title": "AMF acquisition",
+        "body": "AMF merged, entered mass production era"
+      },
+      {
+        "year": "1981",
+        "title": "Management buyback",
+        "body": "13 executives bought back company shares, brand independence"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Harley-Davidson Official",
+        "url": "https://www.harley-davidson.com/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Harley-Davidson",
+        "url": "https://en.wikipedia.org/wiki/Harley-Davidson",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "vespa-elettra",
+    "title": "VespaE",
+    "kind": "vehicle",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "043",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/vehicle/vespa-elettra/vespa-elettra-card.png",
+    "image_thumb": "/cards/vehicle/vespa-elettra/vespa-elettra-thumb.webp",
+    "image_full": "/cards/vehicle/vespa-elettra/vespa-elettra-full.webp",
+    "score": 6.9,
+    "tags": [
+      "交通工具",
+      "电动",
+      "意大利",
+      "Piaggio",
+      "现代",
+      "欧洲"
+    ],
+    "tagline": "2023 电动化, 78 年经典转型",
+    "subtitle": "交通工具 · VespaE · 百科占位",
+    "description": "Vespa Elettra 是意大利 Piaggio 2023 年推出的电动 Vespa, 设计保留 1946 年原版 Vespa 经典造型 (单臂前叉 + 钢制车身 + 引擎后置), 用 4 kWh 锂电 + 4 kW 电机替代原 50cc 内燃机, 续航 100 km, 极速 70 km/h, 充电 4 小时。这是 Vespa 应对欧盟 2035 禁售燃油摩托 + 城市禁摩政策的转型, 同时保留 78 年意大利设计 DNA。欧洲售价 €6,990, 是电动两轮车市场复古派的代表。",
+    "createdAt": "2026-07-01",
+    "subKind": "scooter",
+    "history": [
+      {
+        "year": "1946",
+        "title": "Original Vespa",
+        "body": "Piaggio post-war launch, single-arm front fork + steel body"
+      },
+      {
+        "year": "1953",
+        "title": "Roman Holiday",
+        "body": "Audrey Hepburn rode Vespa through Rome streets, global hit"
+      },
+      {
+        "year": "2023",
+        "title": "Elettra electric",
+        "body": "Piaggio electrification, 4 kWh lithium battery, range 100 km"
+      },
+      {
+        "year": "2024",
+        "title": "EU launch",
+        "body": "Price 6990 EUR, in response to 2035 EU ban on fuel motorcycles"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Vespa Elettra",
+        "url": "https://www.vespa.com/en_EN/models/vespa-elettra.html",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Vespa Elettrica",
+        "url": "https://en.wikipedia.org/wiki/Vespa_Elettrica",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "k-pop",
+    "title": "Kpop",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "044",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/music/k-pop/k-pop-card.png",
+    "image_thumb": "/cards/music/k-pop/k-pop-thumb.webp",
+    "image_full": "/cards/music/k-pop/k-pop-full.webp",
+    "score": 8.2,
+    "tags": [
+      "音乐",
+      "韩国",
+      "偶像",
+      "Billboard",
+      "现代",
+      "全球"
+    ],
+    "tagline": "2010s 起, BTS 登顶 Billboard",
+    "subtitle": "music · Kpop · 百科占位",
+    "description": "K-pop (韩国流行音乐) 是 1990 年代后期韩国兴起的全球流行音乐流派, 融合韩国传统音乐 + 美国嘻哈 + 韩国偶像 (K-pop idol) 培训体系 + 高强度视觉 MV。2000 年代初 H.O.T. + BoA 在东亚开路, 2010 年代 PSY 江南 Style YouTube 100 亿播放, 2017-2023 年 BTS + BLACKPINK + Stray Kids + aespa 登顶 Billboard 200。2024 年 K-pop 全球市场份额 16 亿美元, 韩国文化软实力核心。",
+    "createdAt": "2026-07-01",
+    "subKind": "korean",
+    "history": [
+      {
+        "year": "1996",
+        "title": "H.O.T debut",
+        "body": "SM Entertainment 5-person group, K-pop idol system prototype"
+      },
+      {
+        "year": "2000s",
+        "title": "East Asia expansion",
+        "body": "BoA + TVXQ entered Japan market"
+      },
+      {
+        "year": "2012",
+        "title": "Gangnam Style",
+        "body": "PSY Gangnam Style YouTube 10 billion views, global breakthrough"
+      },
+      {
+        "year": "2017",
+        "title": "BTS US breakthrough",
+        "body": "BTS US Billboard 200 #1, Korean Wave globalization"
+      },
+      {
+        "year": "2024",
+        "title": "Global market 1.6B USD",
+        "body": "K-pop Korean soft power core"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia K-pop",
+        "url": "https://en.wikipedia.org/wiki/K-pop",
+        "type": "wiki"
+      },
+      {
+        "title": "IFPI 2024",
+        "url": "https://www.ifpi.org/wp-content/uploads/2024/03/Music_Engages_World.pdf",
+        "type": "industry"
+      }
+    ]
+  },
+  {
+    "slug": "bts",
+    "title": "BTS",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/music/bts/bts-card.png",
+    "image_thumb": "/cards/music/bts/bts-thumb.webp",
+    "image_full": "/cards/music/bts/bts-full.webp",
+    "score": 8.5,
+    "tags": [
+      "音乐",
+      "韩国",
+      "BTS",
+      "男团",
+      "现代",
+      "全球"
+    ],
+    "tagline": "2013 Big Hit, 格莱美提名",
+    "subtitle": "music · BTS · 百科占位",
+    "description": "BTS (방탄소년단, 防弹少年团) 是 2013 年韩国 Big Hit 娱乐 (现 HYBE) 出道的 7 人男子组合, 队长 RM, 成员 Jin / Suga / J-Hope / Jimin / V / Jungkook。代表专辑 Wings + Love Yourself + Map of the Soul + BE, 2020-2021 年连续 Billboard Hot 100 冠军, 2022 年格莱美提名 (Dynamite), 2022 年白宫记者晚宴表演。联合国演讲 3 次 (Speak Yourself 倡议)。今天 K-pop 全球化的最高峰。",
+    "createdAt": "2026-07-01",
+    "subKind": "korean",
+    "history": [
+      {
+        "year": "2013",
+        "title": "BTS debut",
+        "body": "Big Hit Entertainment 7-member boy group debut, RM + Jin + Suga + J-Hope + Jimin + V + Jungkook"
+      },
+      {
+        "year": "2017",
+        "title": "Billboard breakthrough",
+        "body": "DNA entered Billboard Hot 100, first K-pop group"
+      },
+      {
+        "year": "2020",
+        "title": "Dynamite global #1",
+        "body": "Dynamite Billboard Hot 100 #1, first K-pop group"
+      },
+      {
+        "year": "2021",
+        "title": "Butter & Permission to Dance",
+        "body": "Two more #1s, Grammy nomination"
+      },
+      {
+        "year": "2022",
+        "title": "White House",
+        "body": "Performed at White House Correspondents Dinner, 3 UN speeches"
+      }
+    ],
+    "sources": [
+      {
+        "title": "HYBE BTS",
+        "url": "https://www.hybecorp.com/eng/artist/detail/2",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia BTS",
+        "url": "https://en.wikipedia.org/wiki/BTS",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "blackpink",
+    "title": "BP",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/music/blackpink/blackpink-card.png",
+    "image_thumb": "/cards/music/blackpink/blackpink-thumb.webp",
+    "image_full": "/cards/music/blackpink/blackpink-full.webp",
+    "score": 8,
+    "tags": [
+      "音乐",
+      "韩国",
+      "女子组合",
+      "YG",
+      "现代",
+      "亚太"
+    ],
+    "tagline": "2016 YG, 4 国成员, Coachella",
+    "subtitle": "music · BP · 百科占位",
+    "description": "BLACKPINK 是 2016 年 YG 娱乐出道的韩国女子组合, 4 名成员 Jisoo / Jennie / Rosé / Lisa, 来自韩国 + 泰国 + 澳大利亚 + 新西兰多国。代表作 DDU-DU DDU-DU + Kill This Love + Pink Venom。2019 年 YouTube 频道最快破亿订阅 (2020), 2020 年首张正规专辑 THE ALBUM 预售破 80 万张, 2022 年 Coachella 主舞台 (亚洲女团首例)。今天跟 BTS 一起, 是 K-pop 全球化的双核。",
+    "createdAt": "2026-07-01",
+    "subKind": "korean",
+    "history": [
+      {
+        "year": "2016",
+        "title": "Debut",
+        "body": "YG Entertainment 4-person girl group Jisoo Jennie Rose Lisa"
+      },
+      {
+        "year": "2019",
+        "title": "DDU-DU DDU-DU",
+        "body": "MV YouTube 1.2 billion views, K-pop girl group most"
+      },
+      {
+        "year": "2020",
+        "title": "THE ALBUM",
+        "body": "First full album pre-sale 800k copies, global record"
+      },
+      {
+        "year": "2022",
+        "title": "Coachella main stage",
+        "body": "Asian girl group first on Coachella, global spotlight"
+      }
+    ],
+    "sources": [
+      {
+        "title": "YG Entertainment",
+        "url": "https://www.ygfamily.com/en/artists/blackpink",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia BLACKPINK",
+        "url": "https://en.wikipedia.org/wiki/Blackpink",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "louvre-museum",
+    "title": "卢浮宫",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/architecture/louvre-museum/louvre-museum-card.png",
+    "image_thumb": "/cards/architecture/louvre-museum/louvre-museum-thumb.webp",
+    "image_full": "/cards/architecture/louvre-museum/louvre-museum-full.webp",
+    "score": 9.3,
+    "tags": [
+      "建筑",
+      "博物馆",
+      "法国",
+      "巴黎",
+      "现代",
+      "欧洲"
+    ],
+    "tagline": "1793 法国王宫改馆, 35,000 件",
+    "subtitle": "建筑 · 卢浮宫 · 百科占位",
+    "description": "卢浮宫 (Musée du Louvre) 是 1793 年法国巴黎塞纳河右岸开馆的国立博物馆, 馆藏 35,000+ 件 (展厅 8,000+), 是世界访问量最大博物馆 (2019 年 960 万). 卢浮宫原是 12 世纪法国王宫, 1682 年路易十四迁凡尔赛宫后闲置, 大革命后 1793 年改为博物馆。1989 年贝聿铭玻璃金字塔入口落成。镇馆三宝: 蒙娜丽莎 + 米洛斯的维纳斯 + 萨莫色雷斯的胜利女神。拿破仑三世时期扩建 Richeliu + Denon 翼。",
+    "createdAt": "2026-07-01",
+    "subKind": "museum",
+    "history": [
+      {
+        "year": "12th century",
+        "title": "French royal palace",
+        "body": "Philip II built defensive castle, expanded by successive kings"
+      },
+      {
+        "year": "1682",
+        "title": "Louis XIV moves to Versailles",
+        "body": "Court moves to Versailles, Louvre left empty"
+      },
+      {
+        "year": "1793",
+        "title": "Became museum",
+        "body": "After French Revolution National Convention resolved to build central art museum"
+      },
+      {
+        "year": "1989",
+        "title": "I.M. Pei glass pyramid",
+        "body": "Controversial modern architecture completed, visitor capacity doubled"
+      },
+      {
+        "year": "2019",
+        "title": "9.6 million visitors",
+        "body": "Worlds most-visited museum (pre-COVID)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Louvre Official",
+        "url": "https://www.louvre.fr/en",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Louvre",
+        "url": "https://en.wikipedia.org/wiki/Louvre",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "uffizi",
+    "title": "乌菲齐",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/architecture/uffizi/uffizi-card.png",
+    "image_thumb": "/cards/architecture/uffizi/uffizi-thumb.webp",
+    "image_full": "/cards/architecture/uffizi/uffizi-full.webp",
+    "score": 9,
+    "tags": [
+      "建筑",
+      "博物馆",
+      "意大利",
+      "美第奇",
+      "近现代",
+      "欧洲"
+    ],
+    "tagline": "1581 美第奇, 文艺复兴殿堂",
+    "subtitle": "建筑 · 乌菲齐 · 百科占位",
+    "description": "乌菲齐美术馆 (Galleria degli Uffizi) 是 1581 年美第奇家族 (Cosimo I de Medici) 在佛罗伦萨建成的办公室 (Uffizi), 1769 年对外开放成美术馆。馆藏文艺复兴 + 巴洛克 100,000+ 件, 2019 年访客 437 万, 意大利访问量第 2。镇馆: 波提切利维纳斯的诞生 + 春 + 达芬奇博士来朝 + 米开朗基罗圣家族 + 卡拉瓦乔美杜莎。2024 年 5 月 Uffizi 扩建 + 6 层楼完工, 访客容量 +50%。",
+    "createdAt": "2026-07-01",
+    "subKind": "museum",
+    "history": [
+      {
+        "year": "1581",
+        "title": "Cosimo I built Uffizi",
+        "body": "Medici family built administrative office building in Florence"
+      },
+      {
+        "year": "1769",
+        "title": "Opened as art gallery",
+        "body": "Habsburg-Lorraine dynasty opened Medici art collection to public"
+      },
+      {
+        "year": "1993",
+        "title": "Uffizi bombing",
+        "body": "Italian mafia bombed Uffizi, 5 artworks damaged, sparked cultural protection reform"
+      },
+      {
+        "year": "2024",
+        "title": "Uffizi expansion complete",
+        "body": "6-story new building complete, visitor capacity +50%"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Uffizi Official",
+        "url": "https://www.uffizi.it/en",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Uffizi",
+        "url": "https://en.wikipedia.org/wiki/Uffizi",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "prado",
+    "title": "普拉多",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "049",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/architecture/prado/prado-card.png",
+    "image_thumb": "/cards/architecture/prado/prado-thumb.webp",
+    "image_full": "/cards/architecture/prado/prado-full.webp",
+    "score": 8.7,
+    "tags": [
+      "建筑",
+      "博物馆",
+      "西班牙",
+      "马德里",
+      "近现代",
+      "欧洲"
+    ],
+    "tagline": "1819 西班牙黄金时代, 委拉斯凯兹",
+    "subtitle": "建筑 · 普拉多 · 百科占位",
+    "description": "普拉多博物馆 (Museo del Prado) 是 1819 年西班牙马德里开馆的国立博物馆, 馆藏 8,600+ 件绘画 + 700+ 件雕塑, 是世界顶级艺术博物馆 (2019 年访客 320 万)。原是 18 世纪波旁王朝皇宫 + 自然科学收藏馆, 1819 年费迪南七世改为皇家绘画博物馆。镇馆: 委拉斯凯兹宫娥 + 戈雅裸体玛哈 + 博斯人间乐园 + 提香维纳斯之镜 + 鲁本斯 + 拉斐尔 + 卡拉瓦乔。西班牙黄金时代 (Siglo de Oro) 收藏最完整。",
+    "createdAt": "2026-07-01",
+    "subKind": "museum",
+    "history": [
+      {
+        "year": "1785",
+        "title": "Bourbon palace foundation",
+        "body": "Charles III commissioned Juan de Villanueva to design natural history museum"
+      },
+      {
+        "year": "1819",
+        "title": "Became Royal Painting Museum",
+        "body": "Ferdinand VII opened museum, Spanish national treasure center"
+      },
+      {
+        "year": "1872",
+        "title": "Named Museo del Prado",
+        "body": "Officially named Prado"
+      },
+      {
+        "year": "2007",
+        "title": "Capacity expansion",
+        "body": "Built 7-story underground exhibition halls, collection visibility improved"
+      }
+    ]
+  },
+  {
+    "slug": "kangxi-emperor",
+    "title": "康熙",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "050",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/person/kangxi-emperor/kangxi-emperor-card.png",
+    "image_thumb": "/cards/person/kangxi-emperor/kangxi-emperor-thumb.webp",
+    "image_full": "/cards/person/kangxi-emperor/kangxi-emperor-full.webp",
+    "score": 8.6,
+    "tags": [
+      "人物",
+      "清朝",
+      "康熙",
+      "皇帝",
+      "古代",
+      "中国"
+    ],
+    "tagline": "1661-1722 61 年在位",
+    "subtitle": "人物 · 康熙 · 百科占位",
+    "description": "康熙帝 (1654-1722) 是清朝入关后第二位皇帝, 1661-1722 年在位 61 年, 是中国历史上在位最长的皇帝之一, 也是康熙盛世奠基人。8 岁登基, 14 岁亲政 (擒鳌拜), 20 岁平三藩, 28 岁收台湾, 30 岁平准噶尔, 36 岁雅克萨击败沙俄 (签尼布楚条约). 康熙个人精通满 + 汉 + 蒙 + 藏 4 种语言, 推动御纂儒家经典翻译成满文。",
+    "createdAt": "2026-07-01",
+    "subKind": "emperor",
+    "history": [
+      {
+        "year": "1654",
+        "title": "Born Xuanye",
+        "body": "Shunzhi 3rd son, mother Tongja"
+      },
+      {
+        "year": "1661",
+        "title": "8 years old enthroned",
+        "body": "Shunzhi died, 4 regents Sonin + Oboi + Sukesaha + Ebilun"
+      },
+      {
+        "year": "1669",
+        "title": "Captured Oboi personal rule",
+        "body": "14 years old trained Bujue youth captured Oboi, recovered imperial power"
+      },
+      {
+        "year": "1683",
+        "title": "Recovered Taiwan",
+        "body": "Shi Lang conquered Taiwan, set up Taiwan Prefecture"
+      },
+      {
+        "year": "1689",
+        "title": "Nipchu Treaty",
+        "body": "Yaksa defeated Russia, signed first equal treaty for China"
+      },
+      {
+        "year": "1722",
+        "title": "Kangxi died",
+        "body": "Reigned 61 years, Yongzheng succeeded"
+      }
+    ]
+  },
+  {
+    "slug": "napoleon",
+    "title": "拿破仑",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/person/napoleon/napoleon-card.png",
+    "image_thumb": "/cards/person/napoleon/napoleon-thumb.webp",
+    "image_full": "/cards/person/napoleon/napoleon-full.webp",
+    "score": 8.9,
+    "tags": [
+      "人物",
+      "法国",
+      "皇帝",
+      "法典",
+      "近代",
+      "欧洲"
+    ],
+    "tagline": "1804 法兰西皇帝, 法典奠基人",
+    "subtitle": "人物 · 拿破仑 · 百科占位",
+    "description": "拿破仑·波拿巴 (Napoleon Bonaparte, 1769-1821) 是法国军事家 + 政治家, 1804-1814/1815 任法兰西第一帝国皇帝, 席卷欧洲大陆。1799 年雾月政变上台, 1804 年加冕皇帝, 颁布《拿破仑法典》(1804) 奠定大陆法系基础, 击败第三反法同盟 (1805 奥斯特里茨) + 第四次 (1806 耶拿) + 第五次 (1809 瓦格拉姆)。1812 年征俄惨败, 1814 年莱比锡战败退位流放厄尔巴岛, 1815 年百日王朝滑铁卢再败, 圣赫勒拿岛囚禁至死。",
+    "createdAt": "2026-07-01",
+    "subKind": "emperor",
+    "history": [
+      {
+        "year": "1769",
+        "title": "Born",
+        "body": "Corsica, France bought from Genoa 1 year earlier"
+      },
+      {
+        "year": "1799",
+        "title": "Brumaire coup",
+        "body": "Nov 9 coup overthrew Directory, became First Consul"
+      },
+      {
+        "year": "1804",
+        "title": "Crowned Emperor",
+        "body": "Dec 2 Notre-Dame, issued Napoleonic Code"
+      },
+      {
+        "year": "1805",
+        "title": "Austerlitz",
+        "body": "Battle of Three Emperors, defeated Russo-Austrian, dominated Europe"
+      },
+      {
+        "year": "1812",
+        "title": "Russian disaster",
+        "body": "600k army invaded Russia, Moscow winter only 30k returned"
+      },
+      {
+        "year": "1815",
+        "title": "Waterloo",
+        "body": "Hundred Days lost to Anglo-Prussian, exiled St Helena"
+      },
+      {
+        "year": "1821",
+        "title": "Died",
+        "body": "May 5 died of illness, aged 51"
+      }
+    ]
+  },
+  {
+    "slug": "piano-violin",
+    "title": "小提琴",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "052",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/music/piano-violin/piano-violin-card.png",
+    "image_thumb": "/cards/music/piano-violin/piano-violin-thumb.webp",
+    "image_full": "/cards/music/piano-violin/piano-violin-full.webp",
+    "score": 8.4,
+    "tags": [
+      "音乐",
+      "弦乐",
+      "意大利",
+      "古典",
+      "古代",
+      "欧洲"
+    ],
+    "tagline": "1520 意大利起源, 管弦乐核心",
+    "subtitle": "music · 小提琴 · 百科占位",
+    "description": "小提琴 (Violin) 是 16 世纪初意大利北部 (克雷莫纳 + 布雷西亚) 起源的 4 弦弓弦乐器, 4 根弦定音 G3-D4-A4-E5, 音域 4 个八度, 是管弦乐队 + 室内乐 + 独奏最常用的高音弦乐器。1520 年代安德烈亚·阿马蒂 (Andrea Amati) 应克雷莫纳宫廷订做, 1650-1750 年斯特拉迪瓦里 (Stradivari) + 瓜尔内里 (Guarneri) 黄金时期奠定现代小提琴结构。今天古典音乐最核心乐器之一。",
+    "createdAt": "2026-07-01",
+    "subKind": "western-classic",
+    "history": [
+      {
+        "year": "1520s",
+        "title": "Cremona origin",
+        "body": "Andrea Amati made for Cremona court, early 3-string violin"
+      },
+      {
+        "year": "1644-1737",
+        "title": "Stradivari golden age",
+        "body": "Antonio Stradivari made 1100, modern violin structure finalized"
+      },
+      {
+        "year": "1698-1744",
+        "title": "Guarneri golden age",
+        "body": "Guarneri del Gesu works, deeper tone"
+      },
+      {
+        "year": "19th century",
+        "title": "Modern performance",
+        "body": "Paganini + Vieuxtemps + Wieniawski established solo tradition"
+      }
+    ]
+  },
+  {
+    "slug": "guzheng",
+    "title": "古筝",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/music/guzheng/guzheng-card.png",
+    "image_thumb": "/cards/music/guzheng/guzheng-thumb.webp",
+    "image_full": "/cards/music/guzheng/guzheng-full.webp",
+    "score": 8.3,
+    "tags": [
+      "音乐",
+      "弹拨",
+      "中国",
+      "战国",
+      "古代",
+      "东亚"
+    ],
+    "tagline": "战国起源, 21 弦现代标准",
+    "subtitle": "music · 古筝 · 百科占位",
+    "description": "古筝是中国传统弹拨弦鸣乐器, 战国时期 (前 475-221) 秦国已有, 早期 5 弦, 唐代 13 弦, 明清 16 弦, 现代常用 21 弦 + 钢弦 + 筝码。音色清越 + 韵味悠长, 右手戴义甲拨弦, 左手按弦做韵 (滑音 + 颤音 + 揉弦)。代表曲目《渔舟唱晚》《高山流水》《出水莲》《寒鸦戏水》。今天中国民族管弦乐队核心弹拨声部, 也是日本筝 (koto) + 朝鲜伽倻琴 + 越南 đàn tranh 的祖先。",
+    "createdAt": "2026-07-01",
+    "subKind": "chinese-classical",
+    "history": [
+      {
+        "year": "475-221 BC",
+        "title": "Warring States origin",
+        "body": "5-string bamboo zheng in Qin, 'Striking Qin Zheng' recorded"
+      },
+      {
+        "year": "Tang (618-907)",
+        "title": "Tang 13-string",
+        "body": "Sui-Tang period developed 13-string, technique mature"
+      },
+      {
+        "year": "Ming (1368-1644)",
+        "title": "16-string finalized",
+        "body": "Ming-Qing zheng finalized 16-string + steel, modern zheng predecessor"
+      },
+      {
+        "year": "1965",
+        "title": "Modern 21-string",
+        "body": "Chinese zheng changed to 21-string + steel + bridges, used to this day"
       }
     ]
   }

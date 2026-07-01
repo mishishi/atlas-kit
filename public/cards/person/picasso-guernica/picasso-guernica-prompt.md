@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: BTS
-Category: 音乐
+Theme: 毕加索
+Category: 人物
 
 STRICT 9:16 vertical page.
 
@@ -85,63 +85,50 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Music Category Template
+# Person Category Template
 
 ## Accent Color
-
-* Deep Purple — #6E628C
+* Deep Purple #6B5EA8
 
 ## Identity
-
-* Music encyclopedia and sound-culture profile page
+* Biographical encyclopedia profile page
 
 ## Hero Illustration
-
-* Representative music composition showing performer, instrument, score, album, stage, or sonic structure
-* Present the subject as an encyclopedia entry, not a concert poster or album advertisement
-* 3–5 detached music-detail panels around the hero illustration
+* Engraving, sketch, or archival portrait
+* 3–5 detached symbolic detached detail panels around the portrait
 
 ## Information Modules
-
-* 音乐档案
-* 创作背景
-* 曲式结构
-* 声音语言
-* 编曲结构
-* 主题表达
-* 传播影响
+* 基本档案
+* 时代背景
+* 生平脉络
+* 核心成就
+* 历史地位
+* 思想主张
+* 相关人物
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 艺术影响
-* 旋律识别度
-* 技术复杂度
-* 传播广度
+* 历史影响
 * 时代代表性
+* 创新程度
+* 后世传播
+* 争议程度
 
 ## Observation Insets
-
-* Select 3–5 distinctive musical or visual details appropriate to the subject
-* Examples: instrument, score, rhythm pattern, motif, performer, album cover detail, stage element, cultural symbol
-* Prefer visually different details
-* Avoid showing unrelated instruments, performers, or modern adaptations unless relevant
-* Short labels only
+* 代表作
+* 时代
+* 手稿
+* 标志物
+* 关键场所
 
 ## Visualization Strip
-
-* 1–2 compact analytical visualizations
-* Song structure
-* Timeline
-* Arrangement map
-* Rhythm or motif diagram
-* Minimal labels only
+* 1–2 compact visualizations
+* Life timeline
+* Achievement network
+* Location map
 
 ## Failure Prevention
-
-* No concert poster
-* No album marketing
-* No streaming platform interface
-* No fabricated lyrics, awards, chart rankings, or quotations
-* Do not confuse the musical work with a single performer unless the subject requires it
-* Distinguish original work, performance version, and later adaptation
+* No celebrity poster aesthetics
+* No personality cult imagery
+* Neutral encyclopedic tone
+* No exaggerated praise

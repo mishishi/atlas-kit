@@ -93,6 +93,61 @@ export default function RootLayout({
             shows install banner; iOS allows Add to Home Screen). */}
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
+        {/* Schema.org site-level JSON-LD — Organization + WebSite
+            (with SearchAction) is what Google uses for the brand
+            panel + sitelinks search box. Rendered once at root
+            so every page inherits. The home page Article is in
+            app/page.tsx separately. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "图鉴社 Atlas Kit",
+              alternateName: "Atlas Kit · 图鉴社",
+              url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlas-kit-six.vercel.app",
+              logo: {
+                "@type": "ImageObject",
+                url: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlas-kit-six.vercel.app"}/icon-512.png`,
+                width: 512,
+                height: 512,
+              },
+              description: "系列化中文科普图鉴卡片集 · 博物馆质感 · AI 一键生成",
+              foundingDate: "2026",
+              inLanguage: "zh-CN",
+              sameAs: [
+                "https://github.com/mishishi/atlas-kit",
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "图鉴社 Atlas Kit",
+              url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlas-kit-six.vercel.app",
+              inLanguage: "zh-CN",
+              publisher: {
+                "@type": "Organization",
+                name: "图鉴社 Atlas Kit",
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlas-kit-six.vercel.app"}/search?q={search_term_string}`,
+                },
+                // Schema.org SearchAction requires a query-input.
+                // We use the URL fragment-in-search pattern Google uses.
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         {/* Theme bootstrap — runs synchronously in <head> BEFORE React
             paints, so users with stored "light"/"dark" never see a
             light→dark or dark→light flash. Mirrors the next-themes
@@ -139,3 +194,4 @@ export default function RootLayout({
     </html>
   );
 }
+

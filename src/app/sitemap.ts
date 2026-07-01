@@ -41,6 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(c.createdAt),
     changeFrequency: "monthly" as const,
     priority: 0.5,
+    // Sitemap extension (xmlns:image) — surfaces images in Google
+    // Image Search. Next 14 serializes sitemap as XML with the image
+    // namespace when entries include `images: [...]`. image_thumb is
+    // 384w WebP — small enough for image-search snippets to render.
+    images: c.image_thumb
+      ? [{ url: c.image_thumb.startsWith("http") ? c.image_thumb : `${base}${c.image_thumb}` }]
+      : [],
   }));
 
   return [...staticRoutes, ...seriesRoutes, ...cardRoutes];

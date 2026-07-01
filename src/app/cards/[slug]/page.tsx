@@ -31,6 +31,12 @@ export function generateStaticParams() {
 // the proper 404 response with the path-aware not-found.tsx body.
 export const dynamicParams = false;
 
+// Used in JSON-LD structured data (Article @type + author.url etc).
+// Single source of truth so the live URL matches between the
+// structured data and the sitemap.xml + og:url fields.
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlas-kit-six.vercel.app";
+
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const card = getCardBySlug(params.slug);
   if (!card) {
@@ -186,27 +192,141 @@ export default async function CardDetail({
 
   return (
     <article className="container py-8 md:py-12">
-      {/* JSON-LD: helps search engines surface rich snippets (image, date, tags). */}
+      {/* JSON-LD schema.org structured data — three @type blocks
+          stacked for SEO rich snippets:
+            1) Article — primary type (Google uses for article search)
+            2) BreadcrumbList — surfaces >home >series >card hierarchy
+            3) FAQPage — 3 Q/A pairs derived from description/history,
+               surfaces FAQ rich results (one-card per FAQPage, not
+               a site-wide FAQ list, because Google requires per-page
+               authoritative QAs).
+          All three blocks sit in a single <script type="application/ld+json">
+          per Google's "best practices" (multiple JSON-LD blocks per page OK,
+          but reads cleaner when each is its own script for diffability). */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ImageObject",
-            name: card.title,
+            "@type": "Article",
+            headline: card.title,
             description: card.tagline,
-            contentUrl: card.image_full ?? card.image,
-            keywords: card.tags.join(", "),
+            articleBody: card.description,
             inLanguage: "zh-CN",
-            datePublished: card.createdAt,
-            genre: displayLabel(card.kind),
+            datePublished: card.createdAt.length === 10 ? `${card.createdAt}T00:00:00+08:00` : card.createdAt,
+            dateModified:
+              card.revisions && card.revisions.length > 0
+                ? card.revisions[card.revisions.length - 1].date
+                : card.createdAt.length === 10
+                  ? `${card.createdAt}T00:00:00+08:00`
+                  : card.createdAt,
+            keywords: card.tags.join(", "),
+            articleSection: displayLabel(card.kind),
             isPartOf: {
-              "@type": "Collection",
+              "@type": "Series",
               name: seriesName,
+              position: card.seriesNo,
+            },
+            image: card.image_full ?? card.image,
+            thumbnailUrl: card.image_thumb,
+            author: {
+              "@type": "Organization",
+              name: "图鉴社 Atlas Kit",
+              url: SITE_URL,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "图鉴社 Atlas Kit",
+              logo: {
+                "@type": "ImageObject",
+                url: `${SITE_URL}/icon-512.png`,
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${SITE_URL}/cards/${card.slug}`,
             },
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "图鉴社",
+                item: `${SITE_URL}`,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: seriesName,
+                item: `${SITE_URL}/series/${card.series}`,
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: KIND_LABELS[card.kind as keyof typeof KIND_LABELS] ?? card.kind,
+                item: `${SITE_URL}/cards?kind=${card.kind}`,
+              },
+              {
+                "@type": "ListItem",
+                position: 4,
+                name: card.title,
+                item: `${SITE_URL}/cards/${card.slug}`,
+              },
+            ],
+          }),
+        }}
+      />
+      {/* FAQPage — 3 common Q/A pairs derived from description/history.
+          Only show if the card has at least one history node (otherwise
+          we'd invent fake Qs). */}
+      {card.history && card.history.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: `${card.title} 是什么?`,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: card.tagline ?? card.description.slice(0, 80),
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: `${card.title} 的主要特征 / 关键时间节点?`,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text:
+                      card.history && card.history.length > 0
+                        ? card.history.slice(0, 3).map((h) => `${h.year} · ${h.title}`).join("; ")
+                        : card.description.slice(0, 150),
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: `${card.title} 属于哪个分类 / 系列?`,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: `${KIND_LABELS[card.kind as keyof typeof KIND_LABELS] ?? card.kind} · 系列: ${seriesName} · 图鉴社收录 ID: ${card.slug}.`,
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+      )}
       {/* Breadcrumb */}
       <nav aria-label="面包屑" className="mb-6 text-sm text-muted-foreground flex flex-wrap items-center">
         <Link

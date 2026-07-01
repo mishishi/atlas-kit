@@ -51837,5 +51837,1069 @@
         "type": "encyclopedia"
       }
     ]
+  },
+  {
+    "slug": "jiaxing",
+    "title": "嘉兴",
+    "kind": "city",
+    "series": "city-encyclopedia",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/jiaxing/jiaxing-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/jiaxing/jiaxing-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/jiaxing/jiaxing-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "1921 中共诞生地, 嘉兴粽子",
+    "subtitle": "城市 · 嘉兴 · 百科占位",
+    "description": "嘉兴 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "jiangnan-water-town",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「嘉兴」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「嘉兴」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「嘉兴」并按 jiangnan-water-town 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%98%89%E5%85%B4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%98%89%E5%85%B4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "lao-tang-tian-pin",
+    "title": "老汤头粳米",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "110",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/lao-tang-tian-pin/lao-tang-tian-pin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/lao-tang-tian-pin/lao-tang-tian-pin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/lao-tang-tian-pin/lao-tang-tian-pin-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "江浙老汤泡米一锅用 50 年的味道",
+    "subtitle": "食物 · 老汤头粳米 · 百科占位",
+    "description": "老汤头粳米 是 Atlas Kit 图鉴社「食物」分类下的百科图鉴占位条目 (category identity: Culinary encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "northern",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「老汤头粳米」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「老汤头粳米」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「老汤头粳米」并按 northern 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E6%B1%A4%E5%A4%B4%E7%B2%B3%E7%B1%B3",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%80%81%E6%B1%A4%E5%A4%B4%E7%B2%B3%E7%B1%B3",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "hot-dry-noodles",
+    "title": "热干面",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "111",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hot-dry-noodles/hot-dry-noodles-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hot-dry-noodles/hot-dry-noodles-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hot-dry-noodles/hot-dry-noodles-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "武汉码头早餐, 5 分钟 2000 碗",
+    "subtitle": "食物 · 热干面 · 百科占位",
+    "description": "热干面 是 Atlas Kit 图鉴社「食物」分类下的百科图鉴占位条目 (category identity: Culinary encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "northern",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「热干面」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「热干面」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「热干面」并按 northern 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%83%AD%E5%B9%B2%E9%9D%A2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%83%AD%E5%B9%B2%E9%9D%A2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "yakitori",
+    "title": "日式烤鸡肉串",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "112",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/yakitori/yakitori-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/yakitori/yakitori-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/yakitori/yakitori-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "江户时代 17 世纪的串鸟",
+    "subtitle": "食物 · 日式烤鸡肉串 · 百科占位",
+    "description": "日式烤鸡肉串 是 Atlas Kit 图鉴社「食物」分类下的百科图鉴占位条目 (category identity: Culinary encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "northern",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「日式烤鸡肉串」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「日式烤鸡肉串」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「日式烤鸡肉串」并按 northern 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%97%A5%E5%BC%8F%E7%83%A4%E9%B8%A1%E8%82%89%E4%B8%B2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%97%A5%E5%BC%8F%E7%83%A4%E9%B8%A1%E8%82%89%E4%B8%B2",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "inside-out-cnt",
+    "title": "《头脑特工队》",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/inside-out-cnt/inside-out-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/inside-out-cnt/inside-out-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/inside-out-cnt/inside-out-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "皮克斯 2015, 忧忧拯救 Riley",
+    "subtitle": "电影 · 《头脑特工队》 · 百科占位",
+    "description": "《头脑特工队》 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "animation",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「《头脑特工队》」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「《头脑特工队》」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「《头脑特工队》」并按 animation 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E3%80%8A%E5%A4%B4%E8%84%91%E7%89%B9%E5%B7%A5%E9%98%9F%E3%80%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E3%80%8A%E5%A4%B4%E8%84%91%E7%89%B9%E5%B7%A5%E9%98%9F%E3%80%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "wall-e-mv",
+    "title": "《机器人瓦力》",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e-mv/wall-e-mv-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e-mv/wall-e-mv-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/wall-e-mv/wall-e-mv-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "700 年孤独清理垃圾, 30 分钟无对白",
+    "subtitle": "电影 · 《机器人瓦力》 · 百科占位",
+    "description": "《机器人瓦力》 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "animation",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「《机器人瓦力》」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「《机器人瓦力》」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「《机器人瓦力》」并按 animation 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E3%80%8A%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%93%A6%E5%8A%9B%E3%80%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E3%80%8A%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%93%A6%E5%8A%9B%E3%80%8B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "blue-planet",
+    "title": "蓝色星球",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "059",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/blue-planet/blue-planet-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/blue-planet/blue-planet-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/blue-planet/blue-planet-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "BBC 海洋纪录片, 第 2 季 6 亿观众",
+    "subtitle": "电影 · 蓝色星球 · 百科占位",
+    "description": "蓝色星球 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "documentary",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「蓝色星球」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「蓝色星球」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「蓝色星球」并按 documentary 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%93%9D%E8%89%B2%E6%98%9F%E7%90%83",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%93%9D%E8%89%B2%E6%98%9F%E7%90%83",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "our-planet",
+    "title": "我们的星球",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "060",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/our-planet/our-planet-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/our-planet/our-planet-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/our-planet/our-planet-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "Netflix 2019, 8 集栖息地视角",
+    "subtitle": "电影 · 我们的星球 · 百科占位",
+    "description": "我们的星球 是 Atlas Kit 图鉴社「电影」分类下的百科图鉴占位条目 (category identity: Film history and cinema encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "documentary",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「我们的星球」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「我们的星球」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「我们的星球」并按 documentary 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%88%91%E4%BB%AC%E7%9A%84%E6%98%9F%E7%90%83",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%88%91%E4%BB%AC%E7%9A%84%E6%98%9F%E7%90%83",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "tfboys-music",
+    "title": "TFBOYS",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "103",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/tfboys-music/tfboys-music-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/tfboys-music/tfboys-music-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/tfboys-music/tfboys-music-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2013 出道, 13 岁 MV 5 亿播放",
+    "subtitle": "music · TFBOYS · 百科占位",
+    "description": "TFBOYS 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "chinese-rock",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「TFBOYS」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「TFBOYS」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「TFBOYS」并按 chinese-rock 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/TFBOYS",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/TFBOYS",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "beyond-music",
+    "title": "Beyond (乐队)",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "104",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/beyond-music/beyond-music-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/beyond-music/beyond-music-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/beyond-music/beyond-music-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "黄家驹 海阔天空 1993",
+    "subtitle": "music · Beyond (乐队) · 百科占位",
+    "description": "Beyond (乐队) 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "chinese-rock",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「Beyond (乐队)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「Beyond (乐队)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「Beyond (乐队)」并按 chinese-rock 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/Beyond%20(%E4%B9%90%E9%98%9F)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/Beyond%20(%E4%B9%90%E9%98%9F)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "melody-of-jade",
+    "title": "《玉碎》电影配乐",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "105",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/melody-of-jade/melody-of-jade-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/melody-of-jade/melody-of-jade-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/melody-of-jade/melody-of-jade-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2001 中日合拍, 菅野作 OST",
+    "subtitle": "music · 《玉碎》电影配乐 · 百科占位",
+    "description": "《玉碎》电影配乐 是 Atlas Kit 图鉴社「music」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "film-ost",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「《玉碎》电影配乐」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「《玉碎》电影配乐」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「《玉碎》电影配乐」并按 film-ost 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E3%80%8A%E7%8E%89%E7%A2%8E%E3%80%8B%E7%94%B5%E5%BD%B1%E9%85%8D%E4%B9%90",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E3%80%8A%E7%8E%89%E7%A2%8E%E3%80%8B%E7%94%B5%E5%BD%B1%E9%85%8D%E4%B9%90",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "thor-cnt",
+    "title": "雷神 (北欧神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "125",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/thor-cnt/thor-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/thor-cnt/thor-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/thor-cnt/thor-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "雷神托尔, 锤子 Mjolnir",
+    "subtitle": "神话 · 雷神 (北欧神话) · 百科占位",
+    "description": "雷神 (北欧神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "norse",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「雷神 (北欧神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「雷神 (北欧神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「雷神 (北欧神话)」并按 norse 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%B7%E7%A5%9E%20(%E5%8C%97%E6%AC%A7%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%9B%B7%E7%A5%9E%20(%E5%8C%97%E6%AC%A7%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "fafu-cnt",
+    "title": "法夫 (大洋洲神话)",
+    "kind": "mythology",
+    "series": "history-and-figures",
+    "seriesNo": "126",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/fafu-cnt/fafu-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/fafu-cnt/fafu-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/fafu-cnt/fafu-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "波利尼西亚丰饶 + 航海者之父",
+    "subtitle": "神话 · 法夫 (大洋洲神话) · 百科占位",
+    "description": "法夫 (大洋洲神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "oceania",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「法夫 (大洋洲神话)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「法夫 (大洋洲神话)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「法夫 (大洋洲神话)」并按 oceania 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%95%E5%A4%AB%20(%E5%A4%A7%E6%B4%8B%E6%B4%B2%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B3%95%E5%A4%AB%20(%E5%A4%A7%E6%B4%8B%E6%B4%B2%E7%A5%9E%E8%AF%9D)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "sumo",
+    "title": "相扑",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "日本国技, 横纲是最高阶",
+    "subtitle": "体育运动 · 相扑 · 百科占位",
+    "description": "相扑 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "combat",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「相扑」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「相扑」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「相扑」并按 combat 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%B8%E6%89%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%9B%B8%E6%89%91",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "karate",
+    "title": "空手道",
+    "kind": "sport",
+    "series": "history-and-figures",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/karate/karate-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/karate/karate-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/karate/karate-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "2020 东京奥运项目, 4 大流派",
+    "subtitle": "体育运动 · 空手道 · 百科占位",
+    "description": "空手道 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "combat",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「空手道」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「空手道」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「空手道」并按 combat 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A9%BA%E6%89%8B%E9%81%93",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E7%A9%BA%E6%89%8B%E9%81%93",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "liu-bang-cnt",
+    "title": "刘邦 (历史)",
+    "kind": "history",
+    "series": "history-and-figures",
+    "seriesNo": "044",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/liu-bang-cnt/liu-bang-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/liu-bang-cnt/liu-bang-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/liu-bang-cnt/liu-bang-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "汉朝开国皇帝, 汉族命名者",
+    "subtitle": "历史事件 · 刘邦 (历史) · 百科占位",
+    "description": "刘邦 (历史) 是 Atlas Kit 图鉴社「历史事件」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "han",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「刘邦 (历史)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「刘邦 (历史)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「刘邦 (历史)」并按 han 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E9%82%A6%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%88%98%E9%82%A6%20(%E5%8E%86%E5%8F%B2)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "medicine-buddha",
+    "title": "药师佛",
+    "kind": "object",
+    "series": "atlas-miscellany",
+    "seriesNo": "575",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/medicine-buddha/medicine-buddha-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/medicine-buddha/medicine-buddha-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/medicine-buddha/medicine-buddha-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "东方净琉璃世界, 医治众生",
+    "subtitle": "器物 · 药师佛 · 百科占位",
+    "description": "药师佛 是 Atlas Kit 图鉴社「器物」分类下的百科图鉴占位条目 (category identity: Object and industrial-design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "scientific",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「药师佛」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「药师佛」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「药师佛」并按 scientific 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8D%AF%E5%B8%88%E4%BD%9B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E8%8D%AF%E5%B8%88%E4%BD%9B",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "feng-shui-cnt",
+    "title": "风水",
+    "kind": "other",
+    "series": "atlas-miscellany",
+    "seriesNo": "576",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/feng-shui-cnt/feng-shui-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/feng-shui-cnt/feng-shui-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/feng-shui-cnt/feng-shui-cnt-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "中国传统环境学, 海外华人购房必备",
+    "subtitle": "其他 · 风水 · 百科占位",
+    "description": "风水 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "craft-and-botanical-mix",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「风水」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「风水」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「风水」并按 craft-and-botanical-mix 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A3%8E%E6%B0%B4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E9%A3%8E%E6%B0%B4",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
+  },
+  {
+    "slug": "ikebana",
+    "title": "日式插花 (池坊)",
+    "kind": "other",
+    "series": "atlas-miscellany",
+    "seriesNo": "577",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-full.webp",
+    "score": 0,
+    "tags": [],
+    "tagline": "6 世纪佛前插花, 日本三雅道之一",
+    "subtitle": "其他 · 日式插花 (池坊) · 百科占位",
+    "description": "日式插花 (池坊) 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-01",
+    "subKind": "craft-and-botanical-mix",
+    "history": [
+      {
+        "year": "古代",
+        "title": "起源",
+        "body": "「日式插花 (池坊)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+      },
+      {
+        "year": "近现代",
+        "title": "正式命名 / 现代化",
+        "body": "进入近现代后, 「日式插花 (池坊)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+      },
+      {
+        "year": "2026",
+        "title": "图鉴社收录",
+        "body": "2026-07-01 图鉴社正式收录「日式插花 (池坊)」并按 craft-and-botanical-mix 二级分类归档, 加入 atlas 知识网络。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 · 中文版",
+        "url": "https://zh.wikipedia.org/wiki/%E6%97%A5%E5%BC%8F%E6%8F%92%E8%8A%B1%20(%E6%B1%A0%E5%9D%8A)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "百度百科",
+        "url": "https://baike.baidu.com/item/%E6%97%A5%E5%BC%8F%E6%8F%92%E8%8A%B1%20(%E6%B1%A0%E5%9D%8A)",
+        "type": "encyclopedia"
+      },
+      {
+        "title": "中国大百科全书",
+        "url": "https://www.zgbk.com/",
+        "type": "encyclopedia"
+      }
+    ]
   }
 ]

@@ -2006,3 +2006,58 @@ C': SortChips 共用组件
 - 全字段完整
 - 3 新 scripts 归档: `r66-clean.mjs` / `r67-clean.mjs` / `r67-rename.mjs` / `add-tags-batch.mjs` (启发式补 tags)
 - prod: https://atlas-kit-six.vercel.app/ (R66+R67 ship ✓, sitemap lastmod 滞后待修)
+
+## R68 (2026-07-02) — 24 ship, 3 new subKind, force-dynamic sitemap fix
+
+`commit 2e7a354`. 把 R66+R67 sitemap 滞后修掉 + 把 R68 24 张新主题收尾 (desc/tagline/score/tags/history/sources 全部填好, 5 张 sources 在 R69 兜底).
+
+### A. 24 ship + 1 rename (qingming → qingming-festival)
+
+5 artwork + 4 person + 3 phenomenon + 3 animal + 3 vehicle + 4 music + 3 architecture. catalog 729 → 753. 24 张都是 desc ≥ 150 字 + 4-7 dated history + 6 中文 tags + score 6.8-9.5 + image 3-tier CDN.
+
+R66 阶段把 qingming card 的 subKind 改成 qingming-festival (R66 wrap-up), R68 commit 顺手把 `public/cards/festival/qingming/` rename 成 `qingming-festival/`, git 自动检测 R rename.
+
+### B. 3 new subKind (taxonomy 150 → 153)
+
+- `artist` (person): 梵高 / 毕加索 / 波提切利 / 葛饰北斋 / 克里姆特 (5 张 R68 artwork+person 重新分类)
+- `emperor` (person): 康熙 / 拿破仑 (2 张)
+- `chinese-classical` (music): 古筝 (1 张)
+
+### C. Vercel sitemap `force-static` → `force-dynamic` (b8e356e → 2e7a354 真生效)
+
+R66+R67 推 master 后 Vercel build queue 卡住, sitemap.xml lastmod 永远停在 6/19, 每次 push commit 都不重 build. R67 hotfix commit `b8e356e` 把 `src/app/sitemap.ts` 的 `export const dynamic = "force-static"` 改成 `dynamic = "force-dynamic"`, 期望 Vercel 下次 build 触发新 sitemap.
+
+**R68 验证**: 推 2e7a354 后 30 min, curl sitemap.xml 显示 **776 url entries (上次 705 → 776, +71)** + lastmod `2026-07-02T12:57:01` — force-dynamic fix 真生效, Vercel build 这次跑通了, sitemap 真的刷了. R68 ship 完美.
+
+### D. R68 数据收尾过程
+
+R68 ship 中我栽了 2 次:
+1. **Edit classifier 拒中文大块**: kangxi/napoleon/piano/guzheng 4 张 desc 跟 22 张 history 用 Edit 一次性写中文 (含 6 个中文 tags + 4-7 个 history nodes), Edit tool 间歇拒绝接受. 解决: 单条 Edit + 短 context + PowerShell `[IO.File]::WriteAllText` + node 跑小脚本.
+2. **19/24 sources 一次过 + 5 张留 R69**: 19 张 R68 sources 用 Edit 单张加成功 (19 个 Edit 单条), 最后 5 张 (kangxi/napoleon/piano/guzheng/prado) Edit + bash classifier 间歇 5+ min block, 我放弃 chase 让 R69 补. **lesson**: 大段中文 + bash 写 data/ 目录是双陷阱, 后面继续走 PowerShell + node 模式比较稳.
+
+### E. 24 张 R68 history 真实 dates
+
+每张 4-7 个 dated nodes, 例:
+- kangxi: 1654 / 1661 / 1669 / 1683 / 1689 / 1722 (6 节点)
+- napoleon: 1769 / 1799 / 1804 / 1805 / 1812 / 1815 / 1821 (7 节点, 全生卒)
+- louvre: 12 世纪 / 1682 / 1793 / 1989 / 2019 (5 节点)
+- harley: 1903 / 1909 / 1941-1945 / 1969 / 1981 (5 节点)
+
+历史节点跨 700+ 年, 不是 placeholder a/b/c.
+
+### 当前 catalog 状态 (R68 后)
+
+- **753 张** (705 + 24 R68 + 24 qf/qingming-festival duplicates 等)
+- 26 kinds / **153 subKinds** (R66 + 4 = 150 → R68 + 3 = 153)
+- 12 series
+- 24 R68 cards 全齐 desc+tagline+score+tags+history, 19/24 有 sources, 5 张留 R69 (kangxi/napoleon/piano/guzheng/prado)
+- prod: https://atlas-kit-six.vercel.app/ (R68 ship ✓, sitemap 776 url entries, lastmod 12:57)
+
+## R69 (2026-07-02) — 5 sources 兜底
+
+R68 commit 2e7a354 后, 5 张 R68 cards 详情页"参考来源"段空 (kangxi-emperor / napoleon / piano-violin / guzheng / prado). 修法: Edit 单张加 sources. 每张 2 个 URL (museum/wiki + 1-2 backup).
+
+后续 (R70+):
+- mmx 抽风根因调查 (R60+ 一直 retry 24-30% history fail / 6-10% sources fail)
+- safe-build.mjs 在 Vercel Linux 容器跑 (硬编码 npx.cmd → 平台分支, commit 6d1b067)
+- Vercel Hobby build queue 监控 (没 Vercel CLI + 没 cron self-reminder, 必须 user 自己 dashboard)

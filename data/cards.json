@@ -56124,6 +56124,18 @@
         "title": "Capacity expansion",
         "body": "Built 7-story underground exhibition halls, collection visibility improved"
       }
+    ],
+    "sources": [
+      {
+        "title": "Prado Official",
+        "url": "https://www.museodelprado.es/en",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Museo del Prado",
+        "url": "https://en.wikipedia.org/wiki/Museo_del_Prado",
+        "type": "wiki"
+      }
     ]
   },
   {
@@ -56184,6 +56196,18 @@
         "year": "1722",
         "title": "Kangxi died",
         "body": "Reigned 61 years, Yongzheng succeeded"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Palace Museum Beijing",
+        "url": "https://www.dpm.org.cn/collection/people/228078.html",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Kangxi Emperor",
+        "url": "https://en.wikipedia.org/wiki/Kangxi_Emperor",
+        "type": "wiki"
       }
     ]
   },
@@ -56251,6 +56275,18 @@
         "title": "Died",
         "body": "May 5 died of illness, aged 51"
       }
+    ],
+    "sources": [
+      {
+        "title": "Musee de lArmee",
+        "url": "https://www.musee-armee.fr/en/collections/the-napoleon-collection.html",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Napoleon",
+        "url": "https://en.wikipedia.org/wiki/Napoleon",
+        "type": "wiki"
+      }
     ]
   },
   {
@@ -56302,6 +56338,18 @@
         "title": "Modern performance",
         "body": "Paganini + Vieuxtemps + Wieniawski established solo tradition"
       }
+    ],
+    "sources": [
+      {
+        "title": "Cremona Violin Museum",
+        "url": "https://www.museodellaviolino.info/en/",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Violin",
+        "url": "https://en.wikipedia.org/wiki/Violin",
+        "type": "wiki"
+      }
     ]
   },
   {
@@ -56352,6 +56400,18 @@
         "year": "1965",
         "title": "Modern 21-string",
         "body": "Chinese zheng changed to 21-string + steel + bridges, used to this day"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Central Conservatory",
+        "url": "http://www.ccom.edu.cn/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Guzheng",
+        "url": "https://en.wikipedia.org/wiki/Guzheng",
+        "type": "wiki"
       }
     ]
   }

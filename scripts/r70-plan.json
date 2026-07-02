@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "round": "R70",
+    "goal": "subKind 缺口 10 + topic 多样性 14",
+    "createdAt": "2026-07-03"
+  },
+  "cards": [
+    { "slug": "curie-marie", "title": "居里夫人", "kind": "person", "subKind": "modern-scientist", "series": "history-and-figures", "seriesNo": "054" },
+    { "slug": "richard-feynman", "title": "费曼", "kind": "person", "subKind": "modern-scientist", "series": "history-and-figures", "seriesNo": "055" },
+    { "slug": "darwin-charles", "title": "达尔文", "kind": "person", "subKind": "modern-scientist", "series": "history-and-figures", "seriesNo": "056" },
+    { "slug": "great-wall", "title": "长城", "kind": "architecture", "subKind": "ancient-monument", "series": "craft-and-botanical", "seriesNo": "050" },
+    { "slug": "forbidden-city-arch", "title": "故宫", "kind": "architecture", "subKind": "ancient-monument", "series": "craft-and-botanical", "seriesNo": "051" },
+    { "slug": "taj-mahal", "title": "泰姬陵", "kind": "architecture", "subKind": "ancient-monument", "series": "craft-and-botanical", "seriesNo": "052" },
+    { "slug": "apple-vision-pro", "title": "Vision Pro", "kind": "tech", "subKind": "consumer-electronics", "series": "frontiers-and-wonders", "seriesNo": "044" },
+    { "slug": "boston-dynamics", "title": "波士顿动力", "kind": "tech", "subKind": "robotics", "series": "frontiers-and-wonders", "seriesNo": "045" },
+    { "slug": "quantum-computer", "title": "量子计算机", "kind": "tech", "subKind": "computing", "series": "frontiers-and-wonders", "seriesNo": "046" },
+    { "slug": "sushi", "title": "寿司", "kind": "food", "subKind": "japanese", "series": "culinary-corner", "seriesNo": "031" },
+    { "slug": "pizza-margherita", "title": "披萨", "kind": "food", "subKind": "italian", "series": "culinary-corner", "seriesNo": "032" },
+    { "slug": "taco-mexican", "title": "塔可", "kind": "food", "subKind": "mexican", "series": "culinary-corner", "seriesNo": "033" },
+    { "slug": "volcano-eruption", "title": "火山喷发", "kind": "phenomenon", "subKind": "geological", "series": "frontiers-and-wonders", "seriesNo": "038" },
+    { "slug": "aurora-borealis", "title": "极光", "kind": "phenomenon", "subKind": "astronomical", "series": "frontiers-and-wonders", "seriesNo": "039" },
+    { "slug": "jay-chou", "title": "周杰伦", "kind": "music", "subKind": "chinese-pop", "series": "soundtrack-atlas", "seriesNo": "047" },
+    { "slug": "eason-chan", "title": "陈奕迅", "kind": "music", "subKind": "chinese-pop", "series": "soundtrack-atlas", "seriesNo": "048" },
+    { "slug": "deng-ziqi", "title": "邓紫棋", "kind": "music", "subKind": "chinese-pop", "series": "soundtrack-atlas", "seriesNo": "049" },
+    { "slug": "vagabond-anime", "title": "浪客行", "kind": "anime", "subKind": "seinen", "series": "anime-works-atlas", "seriesNo": "033" },
+    { "slug": "monster-anime", "title": "Monster", "kind": "anime", "subKind": "seinen", "series": "anime-works-atlas", "seriesNo": "034" },
+    { "slug": "cloisonne-art", "title": "景泰蓝", "kind": "object", "subKind": "art", "series": "craft-and-botanical", "seriesNo": "053" },
+    { "slug": "qi-baishi", "title": "齐白石", "kind": "person", "subKind": "artist", "series": "history-and-figures", "seriesNo": "057" },
+    { "slug": "nezha-myth", "title": "哪吒", "kind": "mythology", "subKind": "chinese", "series": "atlas-miscellany", "seriesNo": "034" },
+    { "slug": "utada-hikaru", "title": "宇多田光", "kind": "music", "subKind": "japanese", "series": "soundtrack-atlas", "seriesNo": "050" },
+    { "slug": "donghua-cnt", "title": "大鱼海棠", "kind": "movie", "subKind": "chinese", "series": "pulp-fiction", "seriesNo": "035" }
+  ]
+}

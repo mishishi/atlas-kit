@@ -10,6 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { callMmxSync, MmxHangError, MmxError } from "./mmx-client.mjs";
+import { isMmxContentBad, sanitizeMmxContent } from "./mmx-content-guard.mjs";
 import { fillMissingFields } from "./mmx-fallback.mjs";
 
 // draft-history needs the FULL JSON envelope (not --quiet) so it can extract
@@ -189,7 +190,21 @@ for (let i = 0; i < targets.length; i++) {
     try {
       const raw = callMmx(prompt);
       const text = extractResponseText(raw);
-      const arr = extractJsonArray(text);
+      const cleaned = sanitizeMmxContent(text);
+      // R70+: content-level guard — M2.7 sometimes returns JS-undefined docs,
+      // English Wikipedia stub, or AI refusals even when the API call succeeds.
+      // Detect and retry rather than waste the validated-parse step.
+      const bad = isMmxContentBad(cleaned);
+      if (bad.bad) {
+        lastErr = `content: ${bad.reason}`;
+        if (attempts < MAX_RETRIES) {
+          syncSleep(RETRY_DELAY_MS);
+          continue;
+        }
+        console.log(`FAIL: ${lastErr} after ${attempts} attempt(s)`);
+        break;
+      }
+      const arr = extractJsonArray(cleaned);
       if (!arr || arr.length < 3) {
         lastErr = "parse";
         if (attempts < MAX_RETRIES) {

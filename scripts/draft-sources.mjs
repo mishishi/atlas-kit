@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { callMmxSync, MmxHangError, MmxError } from "./mmx-client.mjs";
+import { isMmxContentBad, sanitizeMmxContent } from "./mmx-content-guard.mjs";
 import { fillMissingFields } from "./mmx-fallback.mjs";
 
 const args = process.argv.slice(2);
@@ -29,6 +30,17 @@ function userPrompt(card) {
 // Round 30 fix: --quiet causes M2.7 to emit empty output and hang.
 // Parse the JSON envelope to extract .text. See draft-history.mjs for rationale.
 const callMmx = (prompt) => callMmxSync(prompt, SYSTEM_PROMPT, { quiet: false });
+
+// R70+ content-level retry: M2.7 returns JS-undefined docs / English stub /
+// AI refusal ~10% of time. Retry up to MAX_RETRIES with 1.5s sleep between
+// before falling back to programmatic derivation.
+const MAX_RETRIES = 3;
+const RETRY_DELAY_MS = 1500;
+function syncSleep(ms) {
+  const sab = new SharedArrayBuffer(4);
+  const i32 = new Int32Array(sab);
+  Atomics.wait(i32, 0, 0, ms);
+}
 
 function extractResponseText(raw) {
   // Same as draft-history.mjs: extract .text from M2.7 envelope,
@@ -76,60 +88,97 @@ let success = 0, fail = 0, fallbackUsed = 0;
 for (let i = 0; i < todo.length; i++) {
   const c = todo[i];
   process.stdout.write(`[${i + 1}/${todo.length}] ${c.title} ... `);
-  try {
-    const raw = callMmx(userPrompt(c));
-    const text = extractResponseText(raw);
-    const arr = extractJsonArray(text);
-    if (!arr || arr.length < 2) {
-      // R60+: if mmx returned nothing useful, fall back to programmatic
-      // derivation rather than failing the whole card.
-      const { applied } = fillMissingFields(c);
-      if (applied.includes("sources")) {
-        fallbackUsed++;
-        console.log(`FALLBACK (${c.sources.length} sources)`);
-        success++;
-        fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
+
+  // R70+: content-level retry loop. Each iteration:
+  //   - callMmx → API retry (already inside mmx-client)
+  //   - extractResponseText + sanitize
+  //   - isMmxContentBad → reject JS-undefined / English stub / AI refusal
+  //   - extractJsonArray → parse
+  //   - validate: ≥2 sources with https URL
+  // Give up after MAX_RETRIES, fall back to programmatic derivation.
+  let valid = null;
+  let attempts = 0;
+  let lastErr = null;
+  let mmxGaveUp = false;
+  while (attempts < MAX_RETRIES && !valid) {
+    attempts++;
+    try {
+      const raw = callMmx(userPrompt(c));
+      const text = extractResponseText(raw);
+      const cleaned = sanitizeMmxContent(text);
+      const bad = isMmxContentBad(cleaned);
+      if (bad.bad) {
+        lastErr = `content: ${bad.reason}`;
+        if (attempts < MAX_RETRIES) {
+          syncSleep(RETRY_DELAY_MS);
+          continue;
+        }
+        break;
+      }
+      const arr = extractJsonArray(cleaned);
+      if (!arr || arr.length < 2) {
+        lastErr = "parse";
+        if (attempts < MAX_RETRIES) {
+          syncSleep(RETRY_DELAY_MS);
+          continue;
+        }
+        break;
+      }
+      const filtered = arr
+        .filter((s) => s && typeof s.title === "string" && typeof s.type === "string")
+        // Round 23 fix: drop sources with missing/empty url instead of
+        // writing "" into cards.json — that previously caused broken-link
+        // rows to render in the /cards/[slug] 参考来源 section.
+        .filter((s) => typeof s.url === "string" && s.url.startsWith("https://"))
+        .slice(0, 5)
+        .map((s) => ({
+          title: String(s.title).trim().slice(0, 60),
+          url: s.url.trim(),
+          type: String(s.type).trim(),
+        }));
+      if (filtered.length < 2) {
+        lastErr = `too few valid (got ${filtered.length})`;
+        if (attempts < MAX_RETRIES) {
+          syncSleep(RETRY_DELAY_MS);
+          continue;
+        }
+        break;
+      }
+      valid = filtered;
+    } catch (e) {
+      lastErr = `ERR: ${e.message?.slice(0, 80) ?? e}`;
+      if (e instanceof MmxHangError) {
+        mmxGaveUp = true;
+        console.log(`HANG (${(e.elapsedMs / 1000).toFixed(0)}s)`);
+        break;
+      }
+      if (attempts < MAX_RETRIES) {
+        syncSleep(RETRY_DELAY_MS);
         continue;
       }
-      console.log("FAIL: parse");
-      fail++;
-      continue;
+      break;
     }
-    // Validate: need title + url (or at least title + type)
-    const valid = arr
-      .filter((s) => s && typeof s.title === "string" && typeof s.type === "string")
-      // Round 23 fix: drop sources with missing/empty url instead of
-      // writing "" into cards.json — that previously caused broken-link
-      // rows to render in the /cards/[slug] 参考来源 section.
-      .filter((s) => typeof s.url === "string" && s.url.startsWith("https://"))
-      .slice(0, 5)
-      .map((s) => ({
-        title: String(s.title).trim().slice(0, 60),
-        url: s.url.trim(),
-        type: String(s.type).trim(),
-      }));
-    if (valid.length < 2) {
-      console.log("FAIL: too few");
-      fail++;
-      continue;
-    }
+  }
+
+  if (valid) {
     c.sources = valid;
     success++;
-    console.log(`OK (${valid.length} sources)`);
+    const note = attempts > 1 ? ` (after ${attempts} attempts)` : "";
+    console.log(`OK (${valid.length} sources)${note}`);
     fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
-  } catch (e) {
-    if (e instanceof MmxHangError || e instanceof MmxError) {
-      const { applied } = fillMissingFields(c);
-      if (applied.includes("sources")) {
-        fallbackUsed++;
-        console.log(`FALLBACK (${e.name}) (${c.sources.length} sources)`);
-        success++;
-        fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
-        continue;
-      }
+  } else {
+    // R60+: programmatic derivation as last resort
+    const { applied } = fillMissingFields(c);
+    if (applied.includes("sources")) {
+      fallbackUsed++;
+      const reason = mmxGaveUp ? "HANG" : lastErr || "parse";
+      console.log(`FALLBACK (${reason}) (${c.sources.length} sources)`);
+      success++;
+      fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
+    } else {
+      console.log(`FAIL: ${lastErr ?? "unknown"}`);
+      fail++;
     }
-    console.log(`ERR: ${e.message?.slice(0, 80) ?? e}`);
-    fail++;
   }
 }
 

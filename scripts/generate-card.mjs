@@ -84,6 +84,10 @@ if (fromPlan) {
     series: p.series,
     seriesNo: p.seriesNo,
     palette: p.palette,
+    // R71+: also read subKind from plan so it gets written to cards.json.
+    // Without this, subKind field is silently dropped and R70 had to
+    // backfill 24 subKinds via inline scripts.
+    subKind: p.subKind,
   }));
 } else if (topic && kind) {
   // R30: --series / --seriesNo / --palette overrides for single-card
@@ -394,6 +398,9 @@ for (const job of jobs) {
         slug: job.slug,
         title: job.topic,
         kind: job.kind,
+        // R71+: also write subKind if plan supplied one. Without this,
+        // R70 had to backfill 24 subKinds via inline scripts.
+        subKind: job.subKind || null,
         series: job.series || "craft-and-botanical",
         seriesNo: job.seriesNo || "001",
         palette: job.palette || ["#F5F0E6", "#B88952", "#8C7F6E"],

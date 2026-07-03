@@ -5622,7 +5622,7 @@
         ]
       }
     ],
-    "subKind": "defensive"
+    "subKind": "ancient-monument"
   },
   {
     "slug": "potala-palace",
@@ -7227,6 +7227,13 @@
         "summary": "R44 手工补 editorial score",
         "fields": [
           "score"
+        ]
+      },
+      {
+        "date": "2026-07-03T03:44:12.336Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
         ]
       }
     ],
@@ -9870,7 +9877,16 @@
     "visualScore": 7,
     "quote": "协和飞机是世界上唯一投入商业运营的超音速客机。（维基百科）",
     "trivia": "协和飞机最高飞行高度可达18000米，约是普通客机的两倍。",
-    "subKind": "aircraft"
+    "subKind": "aircraft",
+    "revisions": [
+      {
+        "date": "2026-07-03T03:48:44.407Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "ford-mustang",
@@ -28982,6 +28998,13 @@
         "fields": [
           "score"
         ]
+      },
+      {
+        "date": "2026-07-03T03:42:01.953Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
       }
     ],
     "subKind": "shonen"
@@ -38278,9 +38301,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-full.webp",
     "score": 0,
     "tags": [
       "中华古乐",
@@ -38340,7 +38363,16 @@
     ],
     "subKind": "ritual",
     "quote": "千百年来，古琴不仅是文人雅士修身养性的器物，更承载着深厚的中华文化内涵，现已被列入联合国人类非物质文化遗产代表作名录。",
-    "trivia": "「古琴」属于「object」分类,可在 /cards?kind=object 查看同类图鉴。"
+    "trivia": "「古琴」属于「object」分类,可在 /cards?kind=object 查看同类图鉴。",
+    "revisions": [
+      {
+        "date": "2026-07-03T03:40:49.147Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "qin-empire",
@@ -45608,7 +45640,16 @@
     ],
     "subKind": "dessert",
     "quote": "，现已成为全球最具知名度的甜点之一，口感绵密、咖啡香与奶香交织，备受食客推崇。",
-    "trivia": "一款源自意大利北部的经典甜点，以手指饼干蘸取浓缩咖啡与马萨彭咖啡酒铺底，叠加上以马斯卡彭奶酪、蛋黄及糖打发的奶酪糊，层层交替冷冻而成。"
+    "trivia": "一款源自意大利北部的经典甜点，以手指饼干蘸取浓缩咖啡与马萨彭咖啡酒铺底，叠加上以马斯卡彭奶酪、蛋黄及糖打发的奶酪糊，层层交替冷冻而成。",
+    "revisions": [
+      {
+        "date": "2026-07-03T03:29:43.329Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "matcha-latte",
@@ -54422,9 +54463,9 @@
       "#E8B86C",
       "#2E4A6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/card-q88u-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/koi-fish-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/koi-fish-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/koi-fish/koi-fish-full.webp",
     "score": 0,
     "tags": [
       "animal",
@@ -54893,9 +54934,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/artwork/botticelli-venus/botticelli-venus-card.png",
-    "image_thumb": "/cards/artwork/botticelli-venus/botticelli-venus-thumb.webp",
-    "image_full": "/cards/artwork/botticelli-venus/botticelli-venus-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/botticelli-venus/botticelli-venus-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/botticelli-venus/botticelli-venus-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/botticelli-venus/botticelli-venus-full.webp",
     "score": 8.8,
     "tags": [
       "艺术",
@@ -54956,9 +54997,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/artwork/hokusai-wave/hokusai-wave-card.png",
-    "image_thumb": "/cards/artwork/hokusai-wave/hokusai-wave-thumb.webp",
-    "image_full": "/cards/artwork/hokusai-wave/hokusai-wave-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/hokusai-wave/hokusai-wave-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/hokusai-wave/hokusai-wave-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/hokusai-wave/hokusai-wave-full.webp",
     "score": 9.2,
     "tags": [
       "艺术",
@@ -55019,9 +55060,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/artwork/klimt-kiss/klimt-kiss-card.png",
-    "image_thumb": "/cards/artwork/klimt-kiss/klimt-kiss-thumb.webp",
-    "image_full": "/cards/artwork/klimt-kiss/klimt-kiss-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/klimt-kiss/klimt-kiss-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/klimt-kiss/klimt-kiss-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/klimt-kiss/klimt-kiss-full.webp",
     "score": 8.7,
     "tags": [
       "艺术",
@@ -55397,9 +55438,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/animal/t-rex/t-rex-card.png",
-    "image_thumb": "/cards/animal/t-rex/t-rex-thumb.webp",
-    "image_full": "/cards/animal/t-rex/t-rex-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/t-rex/t-rex-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/t-rex/t-rex-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/t-rex/t-rex-full.webp",
     "score": 9,
     "tags": [
       "动物",
@@ -55460,9 +55501,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/animal/komodo-dragon/komodo-dragon-card.png",
-    "image_thumb": "/cards/animal/komodo-dragon/komodo-dragon-thumb.webp",
-    "image_full": "/cards/animal/komodo-dragon/komodo-dragon-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/komodo-dragon/komodo-dragon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/komodo-dragon/komodo-dragon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/komodo-dragon/komodo-dragon-full.webp",
     "score": 7.8,
     "tags": [
       "动物",
@@ -55523,9 +55564,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/animal/pterodactyl/pterodactyl-card.png",
-    "image_thumb": "/cards/animal/pterodactyl/pterodactyl-thumb.webp",
-    "image_full": "/cards/animal/pterodactyl/pterodactyl-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/pterodactyl/pterodactyl-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/pterodactyl/pterodactyl-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/pterodactyl/pterodactyl-full.webp",
     "score": 7.5,
     "tags": [
       "动物",
@@ -55586,9 +55627,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/vehicle/penny-farthing/penny-farthing-card.png",
-    "image_thumb": "/cards/vehicle/penny-farthing/penny-farthing-thumb.webp",
-    "image_full": "/cards/vehicle/penny-farthing/penny-farthing-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/penny-farthing/penny-farthing-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/penny-farthing/penny-farthing-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/penny-farthing/penny-farthing-full.webp",
     "score": 6.8,
     "tags": [
       "交通工具",
@@ -55649,9 +55690,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/vehicle/harley-davidson/harley-davidson-card.png",
-    "image_thumb": "/cards/vehicle/harley-davidson/harley-davidson-thumb.webp",
-    "image_full": "/cards/vehicle/harley-davidson/harley-davidson-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/harley-davidson/harley-davidson-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/harley-davidson/harley-davidson-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/harley-davidson/harley-davidson-full.webp",
     "score": 7.4,
     "tags": [
       "交通工具",
@@ -55717,9 +55758,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/vehicle/vespa-elettra/vespa-elettra-card.png",
-    "image_thumb": "/cards/vehicle/vespa-elettra/vespa-elettra-thumb.webp",
-    "image_full": "/cards/vehicle/vespa-elettra/vespa-elettra-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/vespa-elettra/vespa-elettra-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/vespa-elettra/vespa-elettra-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/vespa-elettra/vespa-elettra-full.webp",
     "score": 6.9,
     "tags": [
       "交通工具",
@@ -56454,6 +56495,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/curie-marie/curie-marie-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/curie-marie/curie-marie-full.webp",
     "score": 9.1,
+    "subKind": "modern-scientist",
     "tags": [
       "人物",
       "科学家",
@@ -56527,6 +56569,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/richard-feynman/richard-feynman-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/richard-feynman/richard-feynman-full.webp",
     "score": 8.9,
+    "subKind": "modern-scientist",
     "tags": [
       "人物",
       "物理学家",
@@ -56604,6 +56647,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/darwin-charles/darwin-charles-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/darwin-charles/darwin-charles-full.webp",
     "score": 9,
+    "subKind": "modern-scientist",
     "tags": [
       "人物",
       "生物学家",
@@ -56676,6 +56720,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-arch/forbidden-city-arch-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-arch/forbidden-city-arch-full.webp",
     "score": 9.4,
+    "subKind": "ancient-monument",
     "tags": [
       "jianzhu",
       "gudai",
@@ -56743,6 +56788,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-vision-pro/apple-vision-pro-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-vision-pro/apple-vision-pro-full.webp",
     "score": 8.5,
+    "subKind": "consumer-electronics",
     "tags": [
       "keji",
       "consumer",
@@ -56800,6 +56846,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/boston-dynamics/boston-dynamics-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/boston-dynamics/boston-dynamics-full.webp",
     "score": 8.6,
+    "subKind": "robotics",
     "tags": [
       "keji",
       "jqr",
@@ -56862,6 +56909,7 @@
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/quantum-computer/quantum-computer-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/quantum-computer/quantum-computer-full.webp",
     "score": 8.7,
+    "subKind": "computing",
     "tags": [
       "keji",
       "jisuanji",
@@ -56960,7 +57008,8 @@
         "url": "https://www.jfc.co.jp/en/",
         "type": "brand"
       }
-    ]
+    ],
+    "subKind": "japanese"
   },
   {
     "slug": "pizza-margherita",
@@ -57017,7 +57066,8 @@
         "url": "https://www.pizzanapoletana.org/",
         "type": "brand"
       }
-    ]
+    ],
+    "subKind": "italian"
   },
   {
     "slug": "taco-mexican",
@@ -57074,7 +57124,8 @@
         "url": "https://www.gob.mx/sectur",
         "type": "institution"
       }
-    ]
+    ],
+    "subKind": "mexican"
   },
   {
     "slug": "volcano-eruption",
@@ -57131,7 +57182,8 @@
         "url": "https://en.wikipedia.org/wiki/Volcano",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "geological"
   },
   {
     "slug": "aurora-borealis",
@@ -57188,7 +57240,8 @@
         "url": "https://en.wikipedia.org/wiki/Aurora",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "astronomical"
   },
   {
     "slug": "jay-chou",
@@ -57250,7 +57303,8 @@
         "url": "https://en.wikipedia.org/wiki/Jay_Chou",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "chinese-pop"
   },
   {
     "slug": "eason-chan",
@@ -57307,7 +57361,8 @@
         "url": "https://en.wikipedia.org/wiki/Eason_Chan",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "chinese-pop"
   },
   {
     "slug": "deng-ziqi",
@@ -57364,7 +57419,8 @@
         "url": "https://en.wikipedia.org/wiki/G.E.M.",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "chinese-pop"
   },
   {
     "slug": "vagabond-anime",
@@ -57426,7 +57482,8 @@
         "url": "https://en.wikipedia.org/wiki/Vagabond_(manga)",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "seinen"
   },
   {
     "slug": "monster-anime",
@@ -57488,7 +57545,8 @@
         "url": "https://en.wikipedia.org/wiki/Monster_(manga)",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "seinen"
   },
   {
     "slug": "cloisonne-art",
@@ -57550,7 +57608,8 @@
         "url": "https://en.wikipedia.org/wiki/Cloisonn%C3%A9",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "art"
   },
   {
     "slug": "qi-baishi",
@@ -57616,7 +57675,8 @@
         "url": "https://en.wikipedia.org/wiki/Qi_Baishi",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "artist"
   },
   {
     "slug": "nezha-myth",
@@ -57672,7 +57732,8 @@
         "url": "https://en.wikipedia.org/wiki/Nezha",
         "type": "wiki"
       }
-    ]
+    ],
+    "subKind": "chinese"
   },
   {
     "slug": "donghua-cnt",
@@ -57732,6 +57793,1379 @@
         "title": "Wikipedia Big Fish Begonia",
         "url": "https://en.wikipedia.org/wiki/Big_Fish_%26_Begonia",
         "type": "wiki"
+      }
+    ],
+    "subKind": "chinese"
+  },
+  {
+    "slug": "ramen-japan",
+    "title": "拉面",
+    "kind": "food",
+    "subKind": "japanese",
+    "series": "culinary-corner",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/ramen-japan/ramen-japan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/ramen-japan/ramen-japan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/ramen-japan/ramen-japan-full.webp",
+    "score": 8.3,
+    "tags": [
+      "ramen",
+      "japan",
+      "shipin",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "1958 Momofuku instant ramen",
+    "subtitle": "食物 · 拉面 · 百科占位",
+    "description": "Ramen Japanese noodle soup dish, 1910 Yokohama Chinese-immigrant origin + 1958 Momofuku Ando instant ramen invention. Tonkotsu shoyu miso 4 main regional styles, 2014 Ramen Museum Yokohama. Today global Japanese cuisine symbol.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1910",
+        "title": "横滨华人拉面馆",
+        "body": "中国移民将面食带入日本横滨, 融合日本汤底形成早期拉面雏形"
+      },
+      {
+        "year": "1958",
+        "title": "安藤百福发明方便面",
+        "body": "日清食品安藤百福发明 Cup Noodles 鸡汁泡面, 改变全球面食消费"
+      },
+      {
+        "year": "1980s",
+        "title": "豚骨/酱油/味噌/盐四派",
+        "body": "日本全国形成豚骨(九州)、酱油(东京)、味噌(北海道)、盐(仙台)四大地方流派"
+      },
+      {
+        "year": "2014",
+        "title": "横滨拉面博物馆扩建",
+        "body": "日本横滨新横滨拉面博物馆扩展, 成为拉面文化朝圣地"
+      },
+      {
+        "year": "2024",
+        "title": "全球百亿碗/年市场",
+        "body": "拉面成为日本最具代表性的全球饮食符号, 年消费百亿碗以上"
+      }
+    ],
+    "sources": [
+      {
+        "title": "日清食品官方博物馆",
+        "url": "https://www.cupnoodles-museum.jp/en/",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia: 拉面",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8B%89%E9%9D%A2",
+        "type": "wiki"
+      },
+      {
+        "title": "新横滨拉面博物馆",
+        "url": "https://www.raumen.co.jp/english/",
+        "type": "museum"
+      }
+    ],
+    "quote": "Today global Japanese cuisine symbol。"
+  },
+  {
+    "slug": "tempura",
+    "title": "天妇罗",
+    "kind": "food",
+    "subKind": "japanese",
+    "series": "culinary-corner",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tempura/tempura-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tempura/tempura-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tempura/tempura-full.webp",
+    "score": 8,
+    "tags": [
+      "tempura",
+      "japan",
+      "tianfuluo",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "16th century Edo Nagasaki deep-fried",
+    "subtitle": "食物 · 天妇罗 · 百科占位",
+    "description": "Tempura Japanese deep-fried seafood and vegetables, 16th century Portuguese missionaries Nagasaki, Edo Tokyo refinement technique. Today global Japanese cuisine symbol. 海鮮 + 蔬菜 + 16 世纪长崎 + 江户东京精进. Today global Japanese cuisine symbol.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1543",
+        "title": "葡萄牙传教士长崎",
+        "body": "葡萄牙传教士将南欧天主教斋期油炸烹饪法传入日本九州长崎"
+      },
+      {
+        "year": "17世纪",
+        "title": "江户屋台流行",
+        "body": "江户时代东京街头屋台普及天妇罗, 海老 + 野菜 + 天丼"
+      },
+      {
+        "year": "19世纪",
+        "title": "江户前天妇罗确立",
+        "body": "江户前天妇罗完成现代化定型, 海老 + 穴子 + 蔬菜"
+      },
+      {
+        "year": "1960s",
+        "title": "海外日料扩散",
+        "body": "天妇罗随寿司、拉面进入欧美, 成为全球日料标配"
+      },
+      {
+        "year": "2024",
+        "title": "全球日料符号",
+        "body": "天妇罗成为日本料理国际化最高识别度烹饪之一, 高级割烹标配"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 天妇罗",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%A6%87%E7%BE%85",
+        "type": "wiki"
+      },
+      {
+        "title": "江户东京博物馆",
+        "url": "https://www.edo-tokyo-museum.or.jp/",
+        "type": "museum"
+      },
+      {
+        "title": "Bento.com 美食百科",
+        "url": "https://www.bento.com/japanese-faq/tempura.html",
+        "type": "reference"
+      }
+    ],
+    "quote": "Today global Japanese cuisine symbol。"
+  },
+  {
+    "slug": "spaghetti",
+    "title": "意面",
+    "kind": "food",
+    "subKind": "italian",
+    "series": "culinary-corner",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/spaghetti/spaghetti-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/spaghetti/spaghetti-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/spaghetti/spaghetti-full.webp",
+    "score": 7.9,
+    "tags": [
+      "spaghetti",
+      "italy",
+      "yimian",
+      "xiandai",
+      "ouzhou"
+    ],
+    "tagline": "1830s Naples tomato pasta",
+    "subtitle": "食物 · 意面 · 百科占位",
+    "description": "Spaghetti Italian pasta 13th century Sicily, tomato sauce 1830s Naples, Industrial Era dried pasta. Today global staple Italian cuisine UNESCO ICH 2010. 长条意面 + 番茄酱 + 那不勒斯 + 全球主食.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "13世纪",
+        "title": "西西里意面",
+        "body": "意大利西西里岛出现干燥意面雏形, 阿拉伯贸易带来硬质小麦"
+      },
+      {
+        "year": "1830s",
+        "title": "那不勒斯番茄酱",
+        "body": "那不勒斯厨师将美洲番茄融入意面酱汁, 奠定现代 Spaghetti al Pomodoro"
+      },
+      {
+        "year": "1884",
+        "title": "工业化干燥意面",
+        "body": "意大利 Bari 工业化生产干燥意面, 全球普及"
+      },
+      {
+        "year": "2010",
+        "title": "UNESCO ICH",
+        "body": "意大利那不勒斯披萨师傅艺术列入 UNESCO 非物质文化遗产"
+      },
+      {
+        "year": "2024",
+        "title": "全球主食符号",
+        "body": "Spaghetti 成为全球饮食文化最具识别度的意式符号之一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 意面",
+        "url": "https://zh.wikipedia.org/wiki/%E6%84%8F%E5%A4%A7%E5%88%A9%E9%9D%A2",
+        "type": "wiki"
+      },
+      {
+        "title": "Accademia Italiana della Cucina",
+        "url": "https://www.accademiaitalianadellacucina.it/",
+        "type": "reference"
+      },
+      {
+        "title": "UNESCO ICH 那不勒斯披萨",
+        "url": "https://ich.unesco.org/en/RL/pizza-napoletana-00722",
+        "type": "reference"
+      }
+    ],
+    "quote": "长条意面 + 番茄酱 + 那不勒斯 + 全球主食。"
+  },
+  {
+    "slug": "burrito",
+    "title": "墨西哥卷饼",
+    "kind": "food",
+    "subKind": "mexican",
+    "series": "culinary-corner",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/burrito/burrito-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/burrito/burrito-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/burrito/burrito-full.webp",
+    "score": 7.7,
+    "tags": [
+      "burrito",
+      "moxige",
+      "Tex-Mex",
+      "xiandai",
+      "beizhou"
+    ],
+    "tagline": "1910 Chihuahua tortilla wrap",
+    "subtitle": "食物 · 墨西哥卷饼 · 百科占位",
+    "description": "Burrito flour tortilla wrap filling, origin Mexican Revolution 1910 Chihuahua. Today global Tex-Mex fast food. 玉米粉圆饼 + 卷肉 + Chihuahua + 全球连锁.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "前哥伦布",
+        "title": "中美洲玉米饼",
+        "body": "中美洲玛雅/阿兹特克食用玉米粉圆饼, 包豆类、肉类作为便携食物"
+      },
+      {
+        "year": "1910",
+        "title": "墨西哥革命 Chihuahua",
+        "body": "墨西哥革命期间 Chihuahua 出现 flour tortilla 大型卷饼, 命名 Burrito"
+      },
+      {
+        "year": "1950s",
+        "title": "加州 Tex-Mex",
+        "body": "美国加州 Tex-Mex 餐厅把 burrito 工业化、超大化, 风靡全美"
+      },
+      {
+        "year": "2010s",
+        "title": "Chipotle 全球化",
+        "body": "Chipotle 等连锁把 burrito 推广至全球, 快速休闲餐饮代表"
+      },
+      {
+        "year": "2024",
+        "title": "全球连锁快餐",
+        "body": "Burrito 成为全球 Tex-Mex 连锁快餐核心品类"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 墨西哥卷饼",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%8D%B7%E9%A5%BC",
+        "type": "wiki"
+      },
+      {
+        "title": "Chipotle 官方",
+        "url": "https://www.chipotle.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Smithsonian: Tex-Mex 文化史",
+        "url": "https://www.smithsonianmag.com/arts-culture/tex-mex-food-history-180970922/",
+        "type": "article"
+      }
+    ],
+    "quote": "玉米粉圆饼 + 卷肉 + Chihuahua + 全球连锁。"
+  },
+  {
+    "slug": "tequila",
+    "title": "龙舌兰",
+    "kind": "food",
+    "subKind": "mexican",
+    "series": "culinary-corner",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tequila/tequila-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tequila/tequila-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tequila/tequila-full.webp",
+    "score": 7.5,
+    "tags": [
+      "tequila",
+      "moxige",
+      "jiu",
+      "xiandai",
+      "beizhou"
+    ],
+    "tagline": "16th century Jalisco agave",
+    "subtitle": "食物 · 龙舌兰 · 百科占位",
+    "description": "Tequila Mexican spirit distilled from blue agave, 16th century Jalisco, 1974 Denomination of Origin. Today global premium spirit. 蓝色龙舌兰 + Jalisco + DO 法定产区 + 全球烈酒.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "前哥伦布",
+        "title": "阿兹特克 pulque",
+        "body": "中美洲原住民用龙舌兰汁发酵制作 pulque 酒"
+      },
+      {
+        "year": "16世纪",
+        "title": "西班牙蒸馏技术",
+        "body": "西班牙殖民者引入蒸馏法, 在 Jalisco 用蓝色龙舌兰心蒸馏 tequila"
+      },
+      {
+        "year": "1974",
+        "title": "Denomination of Origin",
+        "body": "墨西哥政府设定 Tequila 法定产区 DO, 限定蓝色龙舌兰 + 5 个州"
+      },
+      {
+        "year": "2003",
+        "title": "Tequila 全球化",
+        "body": "Patron、Don Julio 等高端品牌进入欧美主流市场"
+      },
+      {
+        "year": "2024",
+        "title": "全球烈酒高端品类",
+        "body": "Tequila 与威士忌、龙舌兰梅斯卡尔成为全球烈酒高端品类"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tequila Regulatory Council",
+        "url": "https://www.crt.org.mx/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Tequila",
+        "url": "https://en.wikipedia.org/wiki/Tequila",
+        "type": "wiki"
+      },
+      {
+        "title": "Denomination of Origin 法律",
+        "url": "https://www.gob.mx/profeco/documentos/denominacion-de-origen-tequila",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "tesla-model-3",
+    "title": "Tesla Model 3",
+    "kind": "tech",
+    "subKind": "consumer-electronics",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/tesla-model-3/tesla-model-3-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/tesla-model-3/tesla-model-3-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/tesla-model-3/tesla-model-3-full.webp",
+    "score": 8.6,
+    "tags": [
+      "tesla",
+      "ev",
+      "meiguo",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2017 mass-market EV",
+    "subtitle": "科技概念 · Tesla Model 3 · 百科占位",
+    "description": "Tesla Model 3 2017 mass-market electric sedan, 500+ km range, Autopilot. Today global best-selling EV. Tesla 首款走量 EV + 500km 续航 + Autopilot + 全球销冠.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2003",
+        "title": "Tesla Motors 创立",
+        "body": "Martin Eberhard + Marc Tarpenning 创立 Tesla, Elon Musk 2004 领投 A 轮"
+      },
+      {
+        "year": "2008",
+        "title": "Roadster 上市",
+        "body": "Tesla 首款 Roadster 电动跑车上市, 莲花 Elise 底盘"
+      },
+      {
+        "year": "2017",
+        "title": "Model 3 量产",
+        "body": "Model 3 7 月开始量产, 成为 Tesla 首款走量 EV"
+      },
+      {
+        "year": "2020",
+        "title": "上海工厂投产",
+        "body": "Tesla 上海超级工厂投产, Model 3 中国制造"
+      },
+      {
+        "year": "2024",
+        "title": "全球 EV 销冠",
+        "body": "Model 3 累计销量超 200 万, 全球最畅销 EV 之一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tesla 官方 Model 3 页",
+        "url": "https://www.tesla.com/model3",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Tesla Model 3",
+        "url": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "type": "wiki"
+      },
+      {
+        "title": "Inside EVs 全球销量追踪",
+        "url": "https://insideevs.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "airpods",
+    "title": "AirPods",
+    "kind": "tech",
+    "subKind": "consumer-electronics",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/airpods/airpods-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/airpods/airpods-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/airpods/airpods-full.webp",
+    "score": 8.2,
+    "tags": [
+      "airpods",
+      "apple",
+      "erji",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2016 Apple wireless earbuds",
+    "subtitle": "科技概念 · AirPods · 百科占位",
+    "description": "AirPods Apple 2016 wireless earbuds, W1 chip + Siri integration. 2024 AirPods Pro 2 + USB-C. Today global TWS earbuds market leader. Apple 首款 TWS + W1 芯片 + 全球销冠.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2016",
+        "title": "AirPods 1 上市",
+        "body": "Apple 2016 9 月发布 AirPods 1, 搭配 iPhone 7 取消 3.5mm 耳机孔"
+      },
+      {
+        "year": "2019",
+        "title": "AirPods Pro 上市",
+        "body": "AirPods Pro 加入主动降噪 + 入耳式, 1999 元起"
+      },
+      {
+        "year": "2021",
+        "title": "AirPods 3 + Spatial Audio",
+        "body": "AirPods 3 发布, 加入空间音频 + MagSafe 充电"
+      },
+      {
+        "year": "2022",
+        "title": "AirPods Pro 2",
+        "body": "AirPods Pro 2 H2 芯片 + 自适应降噪, 2024 改 USB-C"
+      },
+      {
+        "year": "2024",
+        "title": "全球 TWS 销冠",
+        "body": "AirPods 全球 TWS 真无线耳机市场占有率持续领先"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apple AirPods 官方页",
+        "url": "https://www.apple.com/airpods/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: AirPods",
+        "url": "https://en.wikipedia.org/wiki/AirPods",
+        "type": "wiki"
+      },
+      {
+        "title": "IDC 全球 TWS 季度报告",
+        "url": "https://www.idc.com/getdoc.jsp?containerId=prUS52423224",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "dji-drone",
+    "title": "大疆无人机",
+    "kind": "tech",
+    "subKind": "robotics",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "049",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/dji-drone/dji-drone-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/dji-drone/dji-drone-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/dji-drone/dji-drone-full.webp",
+    "score": 8.7,
+    "tags": [
+      "dji",
+      "wurenji",
+      "meiguo",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2006 Shenzhen consumer drone",
+    "subtitle": "科技概念 · 大疆无人机 · 百科占位",
+    "description": "DJI Dajiang 2006 Shenzhen consumer + commercial drone maker, Phantom / Mavic / Inspire series. Today 70%+ global consumer drone market share. 深圳大疆 + 消费无人机 + 70% 全球市占.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2006",
+        "title": "DJI 深圳创立",
+        "body": "汪滔在深圳创立大疆创新, 香港科技大学毕业课题飞行控制"
+      },
+      {
+        "year": "2013",
+        "title": "Phantom 起飞",
+        "body": "Phantom 1 一体化航拍无人机发布, 改变消费无人机市场"
+      },
+      {
+        "year": "2016",
+        "title": "Mavic Pro 折叠",
+        "body": "Mavic Pro 折叠便携航拍旗舰, 消费市场爆发"
+      },
+      {
+        "year": "2018",
+        "title": "70% 全球市占",
+        "body": "DJI 消费无人机全球市占率超 70%, 北美 + 欧洲 + 亚洲主导"
+      },
+      {
+        "year": "2024",
+        "title": "Mavic 4 + 制裁",
+        "body": "Mavic 4 发布; 美国 2024 国防部列入制裁清单, 但消费市场仍领先"
+      }
+    ],
+    "sources": [
+      {
+        "title": "DJI 官方",
+        "url": "https://www.dji.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 大疆",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E7%96%86",
+        "type": "wiki"
+      },
+      {
+        "title": "Skylogic Research 全球无人机报告",
+        "url": "https://droneanalyst.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "roomba",
+    "title": "Roomba",
+    "kind": "tech",
+    "subKind": "robotics",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "050",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/roomba/roomba-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/roomba/roomba-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/roomba/roomba-full.webp",
+    "score": 7.4,
+    "tags": [
+      "roomba",
+      "irobot",
+      "jiqiren",
+      "meiguo",
+      "tech"
+    ],
+    "tagline": "2002 iRobot vacuum",
+    "subtitle": "科技概念 · Roomba · 百科占位",
+    "description": "Roomba iRobot 2002 autonomous vacuum cleaner, 2005 NASDAQ IPO. 2022 Amazon acquisition failed EU block. Today global consumer robotics icon. iRobot + 扫地机器人 + 2002 上市 + 全球家用机器人代表.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1990",
+        "title": "MIT 机器人实验室",
+        "body": "Colin Angle + Rodney Brooks + Helen Greiner 在 MIT 人工智能实验室共事"
+      },
+      {
+        "year": "2002",
+        "title": "Roomba 1 上市",
+        "body": "iRobot 推出首款家用扫地机器人 Roomba, 199 美元"
+      },
+      {
+        "year": "2005",
+        "title": "iRobot NASDAQ",
+        "body": "iRobot 在美国纳斯达克上市, IRBT 代码"
+      },
+      {
+        "year": "2015",
+        "title": "Roomba 980 视觉",
+        "body": "Roomba 980 加入视觉 SLAM 导航, 智能扫地时代"
+      },
+      {
+        "year": "2022",
+        "title": "Amazon 收购被否",
+        "body": "Amazon 拟以 17 亿美元收购 iRobot, 2024 EU 反垄断否决"
+      }
+    ],
+    "sources": [
+      {
+        "title": "iRobot 官方",
+        "url": "https://www.irobot.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Roomba",
+        "url": "https://en.wikipedia.org/wiki/Roomba",
+        "type": "wiki"
+      },
+      {
+        "title": "MIT 机器人历史",
+        "url": "https://www.csail.mit.edu/research/robotics",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "slug": "nvidia-h100",
+    "title": "Nvidia H100",
+    "kind": "tech",
+    "subKind": "computing",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/nvidia-h100/nvidia-h100-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/nvidia-h100/nvidia-h100-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/nvidia-h100/nvidia-h100-full.webp",
+    "score": 9.1,
+    "tags": [
+      "nvidia",
+      "gpu",
+      "h100",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2022 AI accelerator GPU",
+    "subtitle": "科技概念 · Nvidia H100 · 百科占位",
+    "description": "NVIDIA H100 2022 Hopper architecture AI training GPU, 80GB HBM3 + 700W TDP. Today global AI infrastructure dominant accelerator. Hopper 架构 + 80GB HBM3 + 全球 AI 训练默认 GPU.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1993",
+        "title": "NVIDIA 创立",
+        "body": "黄仁勋 + Chris Malachowsky + Curtis Priem 创立 NVIDIA, 专注游戏 GPU"
+      },
+      {
+        "year": "2006",
+        "title": "CUDA 发布",
+        "body": "NVIDIA 发布 CUDA, GPU 通用计算生态开始"
+      },
+      {
+        "year": "2017",
+        "title": "Volta V100",
+        "body": "V100 Tensor Core 引入深度学习专用张量核心"
+      },
+      {
+        "year": "2022",
+        "title": "Hopper H100",
+        "body": "H100 5nm Hopper 架构 + 80GB HBM3 + 700W TDP, AI 训练默认 GPU"
+      },
+      {
+        "year": "2024",
+        "title": "AI 基础设施主导",
+        "body": "H100 全球 AI 数据中心标配, 单卡 3 万美元, 全球年销超百亿美元"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NVIDIA H100 官方页",
+        "url": "https://www.nvidia.com/en-us/data-center/h100/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: NVIDIA H100",
+        "url": "https://en.wikipedia.org/wiki/Hopper_(microarchitecture)",
+        "type": "wiki"
+      },
+      {
+        "title": "NVIDIA 投资者财报",
+        "url": "https://www.nvidia.com/en-us/investor-relations/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "gpt-4",
+    "title": "GPT-4",
+    "kind": "tech",
+    "subKind": "computing",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "052",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/gpt-4/gpt-4-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/gpt-4/gpt-4-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/gpt-4/gpt-4-full.webp",
+    "score": 9.3,
+    "tags": [
+      "gpt-4",
+      "openai",
+      "llm",
+      "meiguo",
+      "tech"
+    ],
+    "tagline": "2023 OpenAI multimodal LLM",
+    "subtitle": "科技概念 · GPT-4 · 百科占位",
+    "description": "GPT-4 OpenAI 2023 large multimodal model, text + image input. 2024 GPT-4o + 2025 GPT-4.5. Today global LLM benchmark leader. OpenAI + 多模态 + 全球 LLM 标杆 + GPT-4o 演进.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2015",
+        "title": "OpenAI 创立",
+        "body": "Elon Musk + Sam Altman + Greg Brockman 等创立 OpenAI 非营利研究机构"
+      },
+      {
+        "year": "2018",
+        "title": "GPT-1 发布",
+        "body": "OpenAI 发布 GPT-1, 1.17 亿参数 Transformer"
+      },
+      {
+        "year": "2020",
+        "title": "GPT-3 175B",
+        "body": "GPT-3 1750 亿参数发布, 提示学习 + 上下文学习能力"
+      },
+      {
+        "year": "2023",
+        "title": "GPT-4 多模态",
+        "body": "GPT-4 发布, 支持图像 + 文本输入, 全球 LLM 基准标杆"
+      },
+      {
+        "year": "2024",
+        "title": "GPT-4o omni-modal",
+        "body": "GPT-4o 实时多模态 + 语音对话, ChatGPT 付费用户超 2 亿"
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenAI GPT-4 官方页",
+        "url": "https://openai.com/gpt-4",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: GPT-4",
+        "url": "https://en.wikipedia.org/wiki/GPT-4",
+        "type": "wiki"
+      },
+      {
+        "title": "Stanford CRFM HELM 基准",
+        "url": "https://crfm.stanford.edu/helm/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "pyramid-egypt",
+    "title": "金字塔",
+    "kind": "architecture",
+    "subKind": "ancient-monument",
+    "series": "craft-and-botanical",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/pyramid-egypt/pyramid-egypt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/pyramid-egypt/pyramid-egypt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/pyramid-egypt/pyramid-egypt-full.webp",
+    "score": 8.9,
+    "tags": [
+      "pyramid",
+      "egypt",
+      "giza",
+      "gudai",
+      "jianzhu"
+    ],
+    "tagline": "2560 BC Giza Khufu",
+    "subtitle": "建筑 · 金字塔 · 百科占位",
+    "description": "Pyramid of Giza 2560 BC Khufu tomb, 146m height + 2.3M limestone blocks. Only surviving Wonder of Ancient World. Today UNESCO WH 1979. 吉萨大金字塔 + 胡夫 + 2560 BC + 古世界七大奇迹唯一遗存.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "前2700",
+        "title": "Djoser 阶梯金字塔",
+        "body": "古埃及第三王朝左塞王 Imhotep 设计萨卡拉阶梯金字塔, 人类第一座大型石建筑"
+      },
+      {
+        "year": "前2560",
+        "title": "胡夫金字塔建造",
+        "body": "第四王朝胡夫金字塔吉萨建成, 146m 高度 + 230 万块石灰岩"
+      },
+      {
+        "year": "前2540",
+        "title": "卡夫拉 + 孟卡拉",
+        "body": "卡夫拉金字塔 + 孟卡拉金字塔陆续建成, 吉萨三大金字塔群形成"
+      },
+      {
+        "year": "公元 9 世纪",
+        "title": "石灰外壳剥落",
+        "body": "阿拔斯时期开罗居民剥离金字塔外层光滑白色石灰石, 用于开罗建筑"
+      },
+      {
+        "year": "1979",
+        "title": "UNESCO WH",
+        "body": "吉萨金字塔群列入联合国教科文组织世界文化遗产"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO 吉萨金字塔群",
+        "url": "https://whc.unesco.org/en/list/86/",
+        "type": "reference"
+      },
+      {
+        "title": "Egypt Ministry of Antiquities",
+        "url": "https://www.antiquities.gov.eg/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 胡夫金字塔",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%88%E5%A4%AB%E9%87%91%E5%AD%97%E5%A1%94",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "yoasobi",
+    "title": "YOASOBI",
+    "kind": "music",
+    "subKind": "japanese",
+    "series": "soundtrack-atlas",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/yoasobi/yoasobi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/yoasobi/yoasobi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/yoasobi/yoasobi-full.webp",
+    "score": 8,
+    "tags": [
+      "yoasobi",
+      "japan",
+      "jpop",
+      "xiandai",
+      "yinyue"
+    ],
+    "tagline": "2019 Ikura + Ayase duo",
+    "subtitle": "music · YOASOBI · 百科占位",
+    "description": "YOASOBI Japan 2019 music duo Ayase composer + ikura vocalist, novel-to-song concept. 2020 Yoru ni Kakeru 100M+ YouTube. Today global J-pop phenomenon. 小说音乐化 + ikura + 夜に駆ける + J-pop 新势力.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2019",
+        "title": "YOASOBI 组建",
+        "body": "Ayase 作曲 + ikura 主唱组建, \"小说音乐化\" 概念组合"
+      },
+      {
+        "year": "2020",
+        "title": "夜に駆ける破亿",
+        "body": "首支单曲《夜に駆ける》YouTube 突破 1 亿播放, J-pop 新势力"
+      },
+      {
+        "year": "2021",
+        "title": "群青 + 怪物",
+        "body": "《群青》《怪物》连续大热, 与动漫/小说深度联动"
+      },
+      {
+        "year": "2023",
+        "title": "IDOL 万人空巷",
+        "body": "《アイドル》为《我推的孩子》OP, 全球 Spotify 播放榜登顶"
+      },
+      {
+        "year": "2024",
+        "title": "Arena Tour 60 场",
+        "body": "日本 + 亚洲 Arena 巡回 60+ 场, J-pop 国际化代表组合"
+      }
+    ],
+    "sources": [
+      {
+        "title": "YOASOBI 官方页",
+        "url": "https://yoasobi-music.jp/",
+        "type": "reference"
+      },
+      {
+        "title": "Sony Music Japan YOASOBI 页",
+        "url": "https://www.sonymusic.co.jp/artist/yoasobi/",
+        "type": "reference"
+      },
+      {
+        "title": "Oricon 公信榜",
+        "url": "https://www.oricon.co.jp/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "athena-statue",
+    "title": "雅典娜雕像",
+    "kind": "artwork",
+    "subKind": "sculpture",
+    "series": "history-and-figures",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/athena-statue/athena-statue-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/athena-statue/athena-statue-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/athena-statue/athena-statue-full.webp",
+    "score": 7.8,
+    "tags": [
+      "athena",
+      "greek",
+      "diaosu",
+      "gudai",
+      "yishu"
+    ],
+    "tagline": "438 BC Phidias Athena Parthenos",
+    "subtitle": "艺术品 · 雅典娜雕像 · 百科占位",
+    "description": "Athena Parthenos statue 438 BC Phidias, 12m gold + ivory chryselephantine, Parthenon centerpiece. Today lost original, Roman copies survive. Phidias + 黄金象牙 + 帕特农 + 原作失传罗马摹本.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "前447",
+        "title": "帕特农开工",
+        "body": "伯里克利下令雅典卫城帕特农神庙开工, Phidias 主持雕刻装饰"
+      },
+      {
+        "year": "前438",
+        "title": "Athena Parthenos 落成",
+        "body": "Phidias 创作 12 米黄金象牙雅典娜雕像落成, 帕特农核心"
+      },
+      {
+        "year": "5世纪",
+        "title": "神庙关闭",
+        "body": "罗马帝国迁都君士坦丁堡, 神庙改为教堂, 雅典娜雕像下落不明"
+      },
+      {
+        "year": "146",
+        "title": "罗马劫掠",
+        "body": "罗马帝国彻底掠夺雅典, 帕特农受损, 原作失传"
+      },
+      {
+        "year": "19世纪",
+        "title": "Elgin Marble",
+        "body": "Elgin 伯爵将大部分帕特农雕刻运回伦敦大英博物馆, 现存最接近原作的摹本"
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Museum Parthenon 收藏",
+        "url": "https://www.britishmuseum.org/collection/galleries/parthenon",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia: Athena Parthenos",
+        "url": "https://en.wikipedia.org/wiki/Athena_Parthenos",
+        "type": "wiki"
+      },
+      {
+        "title": "Acropolis Museum 官方",
+        "url": "https://www.theacropolismuseum.gr/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "guernica-art",
+    "title": "格尔尼卡",
+    "kind": "artwork",
+    "subKind": "painting",
+    "series": "history-and-figures",
+    "seriesNo": "059",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/guernica-art/guernica-art-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/guernica-art/guernica-art-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/guernica-art/guernica-art-full.webp",
+    "score": 9,
+    "tags": [
+      "picasso",
+      "guernica",
+      "spanish",
+      "xxshiji",
+      "huihua"
+    ],
+    "tagline": "1937 Picasso Spanish Civil War",
+    "subtitle": "艺术品 · 格尔尼卡 · 百科占位",
+    "description": "Guernica 1937 Picasso 7.8×3.5m anti-war mural, Spanish Civil War bombing. Today Madrid Reina Sofia + global symbol of suffering. 毕加索 + 格尔尼卡惨案 + 反战 + 雷纳索菲亚博物馆.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1937-01",
+        "title": "格尔尼卡惨案",
+        "body": "西班牙内战中佛朗哥雇佣德国空军轰炸格尔尼卡小镇, 平民大量伤亡"
+      },
+      {
+        "year": "1937-04",
+        "title": "委约创作",
+        "body": "西班牙共和国政府委约 Picasso 为世博会西班牙馆创作大型壁画"
+      },
+      {
+        "year": "1937-06",
+        "title": "巴黎首展",
+        "body": "7.8 × 3.5 米巨幅在巴黎国际博览会西班牙馆首展, 震撼世界"
+      },
+      {
+        "year": "1981",
+        "title": "MoMA 收藏",
+        "body": "Picasso 遗愿: 西班牙恢复民主后方可回国, 1981 MoMA 展出多年后回马德里"
+      },
+      {
+        "year": "1992",
+        "title": "雷纳索菲亚永久",
+        "body": "作品永久悬挂于马德里雷纳索菲亚国家艺术中心博物馆, 反战符号永恒"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Museo Reina Sofía 官方页",
+        "url": "https://www.museoreinasofia.es/en/collection/artwork/guernica",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia: Guernica (Picasso)",
+        "url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
+        "type": "wiki"
+      },
+      {
+        "title": "MoMA Picasso 收藏",
+        "url": "https://www.moma.org/artists/4670",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "blue-whale",
+    "title": "蓝鲸",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/blue-whale/blue-whale-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/blue-whale/blue-whale-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/blue-whale/blue-whale-full.webp",
+    "score": 9,
+    "tags": [
+      "blue-whale",
+      "whale",
+      "haiyang",
+      "xiandai",
+      "dongwu"
+    ],
+    "tagline": "30m 180t ocean giant",
+    "subtitle": "动物 · 蓝鲸 · 百科占位",
+    "description": "Blue whale Balaenoptera musculus, 30m length + 180t weight, largest animal ever. Today IUCN Endangered, Antarctic + global oceans. 全球最大动物 + 30 米 + 180 吨 + IUCN 濒危.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1694",
+        "title": "首次科学记录",
+        "body": "Robert Sibbald 描述北大西洋搁浅\"鳁鲸\", 首次科学记录蓝鲸"
+      },
+      {
+        "year": "1821",
+        "title": "Balaenoptera musculus 命名",
+        "body": "蓝鲸 Balaenoptera musculus 物种命名, 海洋哺乳动物最大"
+      },
+      {
+        "year": "20世纪初",
+        "title": "商业捕鲸濒危",
+        "body": "20 世纪初商业捕鲸使蓝鲸濒临灭绝, 全球种群不足 1%"
+      },
+      {
+        "year": "1966",
+        "title": "IWC 全面禁捕",
+        "body": "国际捕鲸委员会全面禁止商业捕鲸, 蓝鲸种群开始恢复"
+      },
+      {
+        "year": "2024",
+        "title": "IUCN 濒危",
+        "body": "IUCN 红色名录仍列蓝鲸为濒危, 气候变化 + 船舶撞击是当前威胁"
+      }
+    ],
+    "sources": [
+      {
+        "title": "IUCN 蓝鲸红色名录",
+        "url": "https://www.iucnredlist.org/species/2477/156923585",
+        "type": "reference"
+      },
+      {
+        "title": "NOAA Fisheries 蓝鲸页",
+        "url": "https://www.fisheries.noaa.gov/species/blue-whale",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 蓝鲸",
+        "url": "https://zh.wikipedia.org/wiki/%E8%93%9D%E9%B2%B8",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "panda",
+    "title": "大熊猫",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/panda/panda-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/panda/panda-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/panda/panda-full.webp",
+    "score": 9.2,
+    "tags": [
+      "panda",
+      "sichuan",
+      "china",
+      "xiandai",
+      "dongwu"
+    ],
+    "tagline": "WWF 1961 logo giant panda",
+    "subtitle": "动物 · 大熊猫 · 百科占位",
+    "description": "Giant panda Ailuropoda melanoleuca Sichuan + Shaanxi bamboo forests, 1869 Armand David discovery. 2016 IUCN Vulnerable from Endangered. Today global conservation icon + WWF logo. 黑白熊 + 竹子 + 四川 + IUCN 易危 + WWF.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1869",
+        "title": "谭卫道首次描述",
+        "body": "法国传教士 Armand David 在四川穆坪(宝兴)首次获得大熊猫标本"
+      },
+      {
+        "year": "1936",
+        "title": "活体首次出国",
+        "body": "纽约时装商 Ruth Harkness 首次将活体大熊猫 Su-Lin 带出中国"
+      },
+      {
+        "year": "1961",
+        "title": "WWF 标志",
+        "body": "世界自然基金会 WWF 选用大熊猫作为会徽, 全球保护标志"
+      },
+      {
+        "year": "2016",
+        "title": "IUCN 易危降级",
+        "body": "IUCN 红色名录将大熊猫从濒危降为易危, 中国保护成效获国际认可"
+      },
+      {
+        "year": "2024",
+        "title": "野外 1864 只",
+        "body": "中国第四次全国大熊猫调查: 野生种群 1864 只, 栖息地 258 万公顷"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WWF 大熊猫保护页",
+        "url": "https://www.wwfchina.org/content/24177/7715.html",
+        "type": "reference"
+      },
+      {
+        "title": "中国大熊猫保护研究中心",
+        "url": "https://www.chinapanda.org.cn/",
+        "type": "reference"
+      },
+      {
+        "title": "IUCN 大熊猫红色名录",
+        "url": "https://www.iucnredlist.org/species/712/121745669",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "eiffel-tower",
+    "title": "埃菲尔铁塔",
+    "kind": "architecture",
+    "subKind": "modern",
+    "series": "craft-and-botanical",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel-tower/eiffel-tower-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel-tower/eiffel-tower-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel-tower/eiffel-tower-full.webp",
+    "score": 8.8,
+    "tags": [
+      "eiffel",
+      "paris",
+      "france",
+      "xiandai",
+      "jianzhu"
+    ],
+    "tagline": "1889 Paris Expo iron tower",
+    "subtitle": "建筑 · 埃菲尔铁塔 · 百科占位",
+    "description": "Eiffel Tower 1889 Paris Exposition Universelle, Gustave Eiffel, 330m height wrought iron. 1889 tallest man-made structure. Today global Paris icon + 7M visitors/yr. 巴黎铁塔 + 1889 世博会 + 330 米 + 全球地标.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1887",
+        "title": "破土动工",
+        "body": "Gustave Eiffel 设计 300 米铁塔在巴黎战神广场动工, 1889 世博会主入口"
+      },
+      {
+        "year": "1889-03",
+        "title": "竣工",
+        "body": "铁塔 1889 年 3 月竣工, 时为世界最高人造建筑"
+      },
+      {
+        "year": "1909",
+        "title": "差点拆除",
+        "body": "原计划 20 年后拆除, 因无线电天线军事价值保留"
+      },
+      {
+        "year": "1957",
+        "title": "电视广播塔",
+        "body": "电视 + 调频广播天线安装, 成为巴黎现代传播枢纽"
+      },
+      {
+        "year": "2024",
+        "title": "年 700 万游客",
+        "body": "埃菲尔铁塔全球最受欢迎付费古迹, 年接待游客超 700 万"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tour Eiffel 官方",
+        "url": "https://www.toureiffel.paris/en",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 埃菲尔铁塔",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9F%83%E8%8F%B2%E5%B0%94%E9%93%81%E5%A1%94",
+        "type": "wiki"
+      },
+      {
+        "title": "Gustave Eiffel 协会",
+        "url": "https://www.societe-tour-eiffel.fr/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "yoga",
+    "title": "瑜伽",
+    "kind": "sport",
+    "subKind": "mind-sport",
+    "series": "history-and-figures",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yoga/yoga-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yoga/yoga-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/yoga/yoga-full.webp",
+    "score": 7.6,
+    "tags": [
+      "yoga",
+      "india",
+      "yundong",
+      "xiandai",
+      "tiyu"
+    ],
+    "tagline": "5000 BC Indus Valley meditation",
+    "subtitle": "体育运动 · 瑜伽 · 百科占位",
+    "description": "Yoga India 5000 BC Indus Valley meditation + asana practice, classical 4 paths Raja/Karma/Bhakti/Jnana. Today global wellness phenomenon 300M+ practitioners. 印度 + 5000 BC + 古典四道 + 全球健身潮流 3 亿练习者.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "前3000",
+        "title": "印度河流域",
+        "body": "印度河流域文明出土文物显示前 3000 年已有瑜伽坐姿冥想姿势"
+      },
+      {
+        "year": "前500",
+        "title": "《奥义书》系统化",
+        "body": "《奥义书》系统化瑜伽哲学: 梵我合一 + 调息 + 冥想"
+      },
+      {
+        "year": "2世纪",
+        "title": "帕坦伽利《瑜伽经》",
+        "body": "帕坦伽利(Patanjali)撰写《瑜伽经》, 八支瑜伽系统 Rāja Yoga 经典化"
+      },
+      {
+        "year": "1893",
+        "title": "辨喜芝加哥演讲",
+        "body": "印度 Swami Vivekananda 芝加哥世界宗教大会演讲, 瑜伽传入西方"
+      },
+      {
+        "year": "2024",
+        "title": "全球 3 亿练习者",
+        "body": "瑜伽成为全球健康运动, 印度 + 美国 + 欧洲 + 中国练习者合计超 3 亿"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ministry of AYUSH 印度官方",
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1609460",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 瑜伽",
+        "url": "https://zh.wikipedia.org/wiki/%E7%91%9C%E4%BC%BD",
+        "type": "wiki"
+      },
+      {
+        "title": "Yoga Alliance 全球教练认证",
+        "url": "https://www.yogaalliance.org/",
+        "type": "reference"
       }
     ]
   }

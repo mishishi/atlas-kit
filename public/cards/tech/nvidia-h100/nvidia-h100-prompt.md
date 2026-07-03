@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 千与千寻
-Category: 电影
+Theme: Nvidia H100
+Category: 科技概念
 
 STRICT 9:16 vertical page.
 
@@ -85,58 +85,51 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Movie Category Template
+# Technology Category Template
 
 ## Accent Color
-
-* Cinema Red #A34848
+* Teal Blue #2A8FA8
 
 ## Identity
-
-* Film history and cinema encyclopedia profile page
+* Technology encyclopedia concept page
 
 ## Hero Illustration
-
-* Representative cinematic composition, storyboard analysis, or visual-language study
-* Present the film as an encyclopedia subject, not a promotional poster
-* 3–5 detached cinematic analysis panels
+* Core principle diagram or system structure
+* Not a product render
+* 3–5 detached module, input, output, or application detached detail panels
 
 ## Information Modules
-
-* 影片档案
-* 创作背景
-* 剧情概要
-* 主要人物
-* 视听风格
-* 主题表达
-* 影响评价
+* 概念档案
+* 核心定义
+* 基本原理
+* 关键参数
+* 应用场景
+* 发展历程
+* 局限挑战
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 艺术影响
-* 叙事完成度
-* 视听创新
-* 传播广度
-* 时代代表性
+* 技术成熟度
+* 应用广泛度
+* 颠覆潜力
+* 普通人可及度
+* 争议程度
 
 ## Observation Insets
-
-* Select 3–5 distinct visual elements
-* Examples: composition, lighting, costume, prop, setting, recurring motif
-* Avoid repeating similar character portraits
+* 原理
+* 模块
+* 输入
+* 输出
+* 应用
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Story structure
-* Character relationship map
-* Production or release timeline
+* Principle diagram
+* Input-output flow
+* Application icons
 
 ## Failure Prevention
-
-* No promotional movie poster
-* No box-office marketing
-* No fabricated awards or quotations
-* Avoid excessive spoilers
-* Maintain neutral film analysis
+* No product-launch aesthetics
+* No cyberpunk style
+* No marketing buzzwords
+* Prioritize clarity over spectacle

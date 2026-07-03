@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 千与千寻
-Category: 电影
+Theme: 拉面
+Category: 食物
 
 STRICT 9:16 vertical page.
 
@@ -85,58 +85,50 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Movie Category Template
+# Food Category Template
 
 ## Accent Color
-
-* Cinema Red #A34848
+* Orange #D4722A
 
 ## Identity
-
-* Film history and cinema encyclopedia profile page
+* Culinary encyclopedia page
 
 ## Hero Illustration
-
-* Representative cinematic composition, storyboard analysis, or visual-language study
-* Present the film as an encyclopedia subject, not a promotional poster
-* 3–5 detached cinematic analysis panels
+* Diagrammatic food specimen or cutaway view
+* 3–5 detached ingredient, cross-section, or process detached detail panels
 
 ## Information Modules
-
-* 影片档案
-* 创作背景
-* 剧情概要
-* 主要人物
-* 视听风格
-* 主题表达
-* 影响评价
+* 食物档案
+* 核心食材
+* 制作工艺
+* 口味特征
+* 营养数据
+* 变体流派
+* 饮食文化
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 艺术影响
-* 叙事完成度
-* 视听创新
-* 传播广度
-* 时代代表性
+* 风味层次
+* 制作难度
+* 食材稀缺度
+* 文化代表性
+* 国际知名度
 
 ## Observation Insets
-
-* Select 3–5 distinct visual elements
-* Examples: composition, lighting, costume, prop, setting, recurring motif
-* Avoid repeating similar character portraits
+* 食材
+* 剖面
+* 工艺
+* 配料
+* 盛器
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Story structure
-* Character relationship map
-* Production or release timeline
+* Ingredient diagram
+* Process flow
+* Regional variants
 
 ## Failure Prevention
-
-* No promotional movie poster
-* No box-office marketing
-* No fabricated awards or quotations
-* Avoid excessive spoilers
-* Maintain neutral film analysis
+* No restaurant advertising
+* No menu aesthetics
+* No food-blog style
+* No marketing language

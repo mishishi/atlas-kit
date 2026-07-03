@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 千与千寻
-Category: 电影
+Theme: 金字塔
+Category: 建筑
 
 STRICT 9:16 vertical page.
 
@@ -85,58 +85,57 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Movie Category Template
+# Architecture Category Template
 
 ## Accent Color
 
-* Cinema Red #A34848
+* Sandstone Gold #B88952
 
 ## Identity
 
-* Film history and cinema encyclopedia profile page
+* Architectural history and design encyclopedia page
 
 ## Hero Illustration
 
-* Representative cinematic composition, storyboard analysis, or visual-language study
-* Present the film as an encyclopedia subject, not a promotional poster
-* 3–5 detached cinematic analysis panels
+* Elevation, axonometric view, cutaway, or site-context illustration
+* 3–5 detached structural, material, or decorative detail panels
 
 ## Information Modules
 
-* 影片档案
-* 创作背景
-* 剧情概要
-* 主要人物
-* 视听风格
-* 主题表达
-* 影响评价
+* 建筑档案
+* 地理位置
+* 历史背景
+* 空间结构
+* 建筑风格
+* 材料工艺
+* 功能用途
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 艺术影响
-* 叙事完成度
-* 视听创新
-* 传播广度
-* 时代代表性
+* 历史价值
+* 结构复杂度
+* 艺术表现
+* 文化象征
+* 保存程度
 
 ## Observation Insets
 
-* Select 3–5 distinct visual elements
-* Examples: composition, lighting, costume, prop, setting, recurring motif
-* Avoid repeating similar character portraits
+* Select 3–5 distinctive architectural details
+* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
+* Do not impose classical elements on unrelated architecture
 
 ## Visualization Strip
 
 * 1–2 compact visualizations
-* Story structure
-* Character relationship map
-* Production or release timeline
+* Floor plan
+* Structural section
+* Construction timeline
 
 ## Failure Prevention
 
-* No promotional movie poster
-* No box-office marketing
-* No fabricated awards or quotations
-* Avoid excessive spoilers
-* Maintain neutral film analysis
+* No real-estate advertising
+* No luxury-property brochure style
+* No cinematic architectural rendering
+* Do not mix unrelated architectural elements
+* Preserve structural and historical plausibility

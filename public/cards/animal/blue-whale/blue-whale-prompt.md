@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 千与千寻
-Category: 电影
+Theme: 蓝鲸
+Category: 动物
 
 STRICT 9:16 vertical page.
 
@@ -85,58 +85,53 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Movie Category Template
+# Animal Category Template
 
 ## Accent Color
-
-* Cinema Red #A34848
+* Warm Amber #E07840
 
 ## Identity
-
-* Film history and cinema encyclopedia profile page
+* Natural-history species profile page
 
 ## Hero Illustration
 
-* Representative cinematic composition, storyboard analysis, or visual-language study
-* Present the film as an encyclopedia subject, not a promotional poster
-* 3–5 detached cinematic analysis panels
+* Scientific full-body species illustration
+* 3–5 detached anatomical close-up panels around the hero illustration
 
 ## Information Modules
-
-* 影片档案
-* 创作背景
-* 剧情概要
-* 主要人物
-* 视听风格
-* 主题表达
-* 影响评价
+* 分类阶元
+* 形态特征
+* 栖息环境
+* 食性行为
+* 繁殖习性
+* 保护现状
+* 分布地图
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 艺术影响
-* 叙事完成度
-* 视听创新
-* 传播广度
-* 时代代表性
+* 体型
+* 攻击性
+* 稀有度
+* 适应力
+* 人类熟悉度
 
 ## Observation Insets
 
-* Select 3–5 distinct visual elements
-* Examples: composition, lighting, costume, prop, setting, recurring motif
-* Avoid repeating similar character portraits
+* Select 3–5 distinctive anatomical features appropriate to the species
+* Prefer visually different features
+* Avoid duplicate or near-duplicate close-ups
+* Examples: head, eyes, beak, teeth, limbs, wings, fur, feathers, scales, tail
+* Do not show features absent from the species
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Story structure
-* Character relationship map
-* Production or release timeline
+* Range map
+* Human size comparison
+* Ecological niche
 
 ## Failure Prevention
-
-* No promotional movie poster
-* No box-office marketing
-* No fabricated awards or quotations
-* Avoid excessive spoilers
-* Maintain neutral film analysis
+* Scientific illustration style
+* No wildlife photography poster
+* No cartoon or mascot
+* No anthropomorphic styling
+* No emotional conservation messaging

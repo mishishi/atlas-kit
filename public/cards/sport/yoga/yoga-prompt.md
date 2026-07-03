@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 千与千寻
-Category: 电影
+Theme: 瑜伽
+Category: 体育运动
 
 STRICT 9:16 vertical page.
 
@@ -85,58 +85,59 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Movie Category Template
+# Sport Category Template
 
 ## Accent Color
 
-* Cinema Red #A34848
+* Athletic Green #4F8A62
 
 ## Identity
 
-* Film history and cinema encyclopedia profile page
+* Sports encyclopedia discipline profile page
 
 ## Hero Illustration
 
-* Representative cinematic composition, storyboard analysis, or visual-language study
-* Present the film as an encyclopedia subject, not a promotional poster
-* 3–5 detached cinematic analysis panels
+* Clear athletic action, field layout, equipment, or technical posture
+* 3–5 detached movement, equipment, or rule detached detail panels around the hero illustration
 
 ## Information Modules
 
-* 影片档案
-* 创作背景
-* 剧情概要
-* 主要人物
-* 视听风格
-* 主题表达
-* 影响评价
+* 项目档案
+* 起源沿革
+* 场地器材
+* 核心规则
+* 技术动作
+* 赛事体系
+* 体能要求
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 艺术影响
-* 叙事完成度
-* 视听创新
-* 传播广度
-* 时代代表性
+* 体能强度
+* 技术难度
+* 对抗程度
+* 全球普及度
+* 观赏性
 
 ## Observation Insets
 
-* Select 3–5 distinct visual elements
-* Examples: composition, lighting, costume, prop, setting, recurring motif
-* Avoid repeating similar character portraits
+* 动作
+* 器材
+* 场地
+* 姿势
+* 战术
 
 ## Visualization Strip
 
 * 1–2 compact visualizations
-* Story structure
-* Character relationship map
-* Production or release timeline
+* Field, course, arena, route, or equipment diagram as appropriate
+* Movement sequence
+* Competition structure
 
 ## Failure Prevention
 
-* No promotional movie poster
-* No box-office marketing
-* No fabricated awards or quotations
-* Avoid excessive spoilers
-* Maintain neutral film analysis
+* No event-promotion poster
+* No sports-brand advertising
+* No exaggerated action effects
+* Keep rules and equipment accurate
+* Do not confuse the sport with a single league, club, or athlete

@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 千与千寻
-Category: 电影
+Theme: 格尔尼卡
+Category: 艺术品
 
 STRICT 9:16 vertical page.
 
@@ -85,58 +85,62 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Movie Category Template
+# Artwork Category Template
 
 ## Accent Color
 
-* Cinema Red #A34848
+* Gallery Ochre #B47A3C
 
 ## Identity
 
-* Film history and cinema encyclopedia profile page
+* Art-history encyclopedia artwork profile page
 
 ## Hero Illustration
 
-* Representative cinematic composition, storyboard analysis, or visual-language study
-* Present the film as an encyclopedia subject, not a promotional poster
-* 3–5 detached cinematic analysis panels
+* One faithful full reproduction of the artwork
+* Preserve the original composition, proportions, orientation, and dominant palette
+* Do not reinterpret, rearrange, simplify, or add elements
+* Compact museum-catalogue presentation
 
 ## Information Modules
 
-* 影片档案
+* 作品档案
+* 作者背景
 * 创作背景
-* 剧情概要
-* 主要人物
-* 视听风格
-* 主题表达
-* 影响评价
+* 构图分析
+* 色彩语言
+* 技法材料
+* 历史影响
 * 快速评分卡
 
 ## Rating Dimensions
 
 * 艺术影响
-* 叙事完成度
-* 视听创新
+* 技法复杂度
+* 视觉识别度
+* 文化价值
 * 传播广度
-* 时代代表性
 
 ## Observation Insets
 
-* Select 3–5 distinct visual elements
-* Examples: composition, lighting, costume, prop, setting, recurring motif
-* Avoid repeating similar character portraits
+* 3–5 detached close-up crops taken directly from the artwork
+* Show genuine details from different regions of the original composition
+* Prefer visually distinct details
+* Do not invent alternative versions or unrelated symbolic illustrations
+* Short labels only
 
 ## Visualization Strip
 
-* 1–2 compact visualizations
-* Story structure
-* Character relationship map
-* Production or release timeline
+* 1–2 compact analytical visualizations
+* Prefer composition diagram, restrained color palette, or provenance timeline
+* No more than 4–5 timeline points
+* Minimal labels only
 
 ## Failure Prevention
 
-* No promotional movie poster
-* No box-office marketing
-* No fabricated awards or quotations
-* Avoid excessive spoilers
-* Maintain neutral film analysis
+* No reinterpretation of the original artwork
+* No invented visual elements
+* No decorative poster treatment
+* No auction or exhibition advertising
+* No oversized infographic icons
+* Do not invent provenance, dimensions, or quotations

@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "round": "R71",
+    "goal": "subKind 11 缺口 + topic 多样性",
+    "createdAt": "2026-07-03"
+  },
+  "plan": [
+    { "slug": "ramen-japan", "title": "拉面", "kind": "food", "subKind": "japanese", "series": "culinary-corner", "seriesNo": "034" },
+    { "slug": "tempura", "title": "天妇罗", "kind": "food", "subKind": "japanese", "series": "culinary-corner", "seriesNo": "035" },
+    { "slug": "spaghetti", "title": "意面", "kind": "food", "subKind": "italian", "series": "culinary-corner", "seriesNo": "036" },
+    { "slug": "tiramisu", "title": "提拉米苏", "kind": "food", "subKind": "italian", "series": "culinary-corner", "seriesNo": "037" },
+    { "slug": "burrito", "title": "墨西哥卷饼", "kind": "food", "subKind": "mexican", "series": "culinary-corner", "seriesNo": "038" },
+    { "slug": "tequila", "title": "龙舌兰", "kind": "food", "subKind": "mexican", "series": "culinary-corner", "seriesNo": "039" },
+    { "slug": "tesla-model-3", "title": "Tesla Model 3", "kind": "tech", "subKind": "consumer-electronics", "series": "frontiers-and-wonders", "seriesNo": "047" },
+    { "slug": "airpods", "title": "AirPods", "kind": "tech", "subKind": "consumer-electronics", "series": "frontiers-and-wonders", "seriesNo": "048" },
+    { "slug": "dji-drone", "title": "大疆无人机", "kind": "tech", "subKind": "robotics", "series": "frontiers-and-wonders", "seriesNo": "049" },
+    { "slug": "roomba", "title": "Roomba", "kind": "tech", "subKind": "robotics", "series": "frontiers-and-wonders", "seriesNo": "050" },
+    { "slug": "nvidia-h100", "title": "Nvidia H100", "kind": "tech", "subKind": "computing", "series": "frontiers-and-wonders", "seriesNo": "051" },
+    { "slug": "gpt-4", "title": "GPT-4", "kind": "tech", "subKind": "computing", "series": "frontiers-and-wonders", "seriesNo": "052" },
+    { "slug": "pyramid-egypt", "title": "金字塔", "kind": "architecture", "subKind": "ancient-monument", "series": "craft-and-botanical", "seriesNo": "054" },
+    { "slug": "yoasobi", "title": "YOASOBI", "kind": "music", "subKind": "japanese", "series": "soundtrack-atlas", "seriesNo": "051" },
+    { "slug": "guqin", "title": "古琴", "kind": "music", "subKind": "chinese-classical", "series": "soundtrack-atlas", "seriesNo": "052" },
+    { "slug": "demon-slayer", "title": "鬼灭之刃", "kind": "anime", "subKind": "shonen", "series": "anime-works-atlas", "seriesNo": "035" },
+    { "slug": "spirited-away", "title": "千与千寻", "kind": "movie", "subKind": "japanese", "series": "pulp-fiction", "seriesNo": "036" },
+    { "slug": "athena-statue", "title": "雅典娜雕像", "kind": "artwork", "subKind": "sculpture", "series": "history-and-figures", "seriesNo": "058" },
+    { "slug": "guernica-art", "title": "格尔尼卡", "kind": "artwork", "subKind": "painting", "series": "history-and-figures", "seriesNo": "059" },
+    { "slug": "blue-whale", "title": "蓝鲸", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "029" },
+    { "slug": "panda", "title": "大熊猫", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "030" },
+    { "slug": "concorde", "title": "协和飞机", "kind": "vehicle", "subKind": "aircraft", "series": "frontiers-and-wonders", "seriesNo": "053" },
+    { "slug": "eiffel-tower", "title": "埃菲尔铁塔", "kind": "architecture", "subKind": "modern", "series": "craft-and-botanical", "seriesNo": "055" },
+    { "slug": "yoga", "title": "瑜伽", "kind": "sport", "subKind": "mind-sport", "series": "history-and-figures", "seriesNo": "058" }
+  ]
+}

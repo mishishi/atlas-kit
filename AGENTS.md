@@ -2119,3 +2119,80 @@ R70 batch 经验:
 - 把 mmx-content-guard 接到 draft-history.mjs + draft-sources.mjs (用 `retryUntilGood` 包现有 `callMmx` call), 减少 24-30% history fail / 6-10% sources fail
 - R71 plan 24+ 张, subKind 缺口继续扫
 - Vercel Hobby build queue 监控 (没 Vercel CLI + 没 cron self-reminder, 必须 user 自己 dashboard)
+
+## R71 (2026-07-03) — 24 cards ship + draft-* content-guard refactor
+
+跟 R70 prep (`bdd3898` → R71 prep commit) 衔接, 把 mmx-content-guard 真的接入 draft-history + draft-sources, 加上 R71 24 张 ship. catalog 777 → **801**.
+
+### A. generate-card.mjs subKind 字段丢失真 fix (R70 后续)
+
+R70 commit 0220032 之后我跑 inline backfill 给 24 张 R70 补 subKind (R70 内 fix-descriptions 顺手做), 但 R70 generate-card.mjs `cards.push` 没读 `plan[i].subKind`, race + 自生成 hash slug 时 subKind 直接 undefined.
+
+R71 prep fix (`bdd3898` 同 commit):
+```js
+// generate-card.mjs jobs.map
+{slug: p.slug || slugify(p.topic), title: p.title, kind: p.kind, subKind: p.subKind, series: p.series, seriesNo: p.seriesNo}
+
+// generate-card.mjs cards.push  
+{slug, title, kind, subKind: job.subKind || null, series, seriesNo, ...}
+```
+
+R71 verify: **24/24 R71 subKind 字段全 ✓** (`no subKind: 0`). R70 inline backfill 24 张也跑过 (`scripts/r70-backfill-subkind.cjs`), 0 no-subKind 全 catalog.
+
+### B. mmx-content-guard 真接入 draft-history + draft-sources (R71 prep bdd3898)
+
+之前 R70 prep commit `b13d381` 只写了 `mmx-content-guard.mjs` 但没接 production code. R71 prep `bdd3898` 改:
+
+- `scripts/draft-history.mjs`: 加 `sanitizeMmxContent(raw)` + `isMmxContentBad(raw)` 在 extractJsonArray 之前. 防 M2.7 thinking_content block 污染主输出.
+- `scripts/draft-sources.mjs`: 完整 retry loop + `MAX_RETRIES=3` + `RETRY_DELAY_MS=1500` + Atomics.wait sleep (`syncSleep`) + content-guard. 防 sources 抽风输出 "I cannot..." refusal.
+
+但**实测** draft-history.mjs + draft-sources.mjs 仍然 hang 5-10 min (M2.7 模型本身 hang, 不是 API/client). R71 19 张手写兜底 (跟 R70 收尾同模式).
+
+### C. R71 24 cards plan + 9 kinds CDN upload (10 kinds sequential)
+
+`scripts/r71-plan.json` (24 entries):
+- food: ramen-japan / tempura / spaghetti / tiramisu / burrito / tequila
+- tech: tesla-model-3 / airpods / dji-drone / roomba / nvidia-h100 / gpt-4
+- architecture: pyramid-egypt / eiffel-tower
+- music: yoasobi / guqin
+- artwork: athena-statue / guernica-art
+- animal: blue-whale / panda
+- vehicle: concorde
+- movie: spirited-away / demon-slayer
+- sport: yoga(mind-sport)
+
+Generate R71: 24/24 OK (matrix 抽风缓). Per-kind CDN upload (10 kinds sequential, 跟 R70 同模式):
+- food (6) / tech (6) / architecture (2) / music (2) / artwork (2) / animal (2) / vehicle (1) / movie (2) / sport (1) = 24 dirs, 90 PNG + thumb.webp + full.webp = 270 files uploaded (90 × 3 tier)
+- 24/24 R71 cards.json image fields 改 CDN URL (`Rewrote 24 fields`)
+- 关键 bug 修复: **R70 generate-card.mjs subKind 字段丢失 (R70 后 inline backfill 24 张) → R71 fix 后 24/24 R71 全有**
+
+### D. R71 handwrite 19 placeholder (desc/tagline/score/tags/history/sources)
+
+R71 generate 时 cards.json placeholder desc + 0 score + [] tags + "" tagline + 无 history + 无 sources. 5 张 PRE (tiramisu / guqin / demon-slayer / spirited-away / concorde) 之前 ship 过, R71 generate 只更新 image, content 已有.
+
+19 张 placeholder 全 handwrite:
+- desc + tagline + score + tags (1 inline cjs batch, `tmp/r71-handwrite-17.cjs`): 17 张一次过 + 2 张 (ramen-japan / tempura) Edit 单条改
+- history (2 inline cjs batch, `tmp/r71-history-1.cjs` + `r71-history-2.cjs`): 19 张 × 5 nodes = 95 nodes
+- sources (2 inline cjs batch, `tmp/r71-sources-1.cjs` + `r71-sources-2.cjs`): 19 张 × 3 sources = 57 sources
+
+每张 score 7.4-9.3, tags 5 (cross-cutting + subject), desc 200-250 char 中英混合. history 5 nodes 跨 100+ 年.
+
+### E. Edit tool 大坑 (R71 收尾)
+
+第一次 Edit ramen-japan description 时, oldString 只匹配 `"description": "拉面 是 Atlas...` 没 include closing `,` + placeholder tail, Edit 匹配到起点但**没 delete 后面 placeholder text** → JSON 损坏 (extra `, (category identity...)`). Fix: Edit oldString 必须 include 完整 placeholder 文本到 closing `",`.
+
+**Lesson**: Edit 跟 Write 不同, 是 string replace 不是 "重写字段". oldString 必须 unique + complete. 写 cards.json placeholder desc 替换时, oldString 长度跟 newString 长度差异无影响, 但**不能省略 closing 部分**.
+
+### F. R71 数据完整性 (post)
+
+**801 cards**, 26 kinds / 162 subKinds, 12 series. 24 R71 全齐 desc + tagline + score (>0) + tags (≥4) + history (≥3) + sources (≥2). 0 placeholder desc, 0 no-subKind, 0 missing image on CDN, 0 missing score, 0 missing createdAt.
+
+prod: https://atlas-kit-six.vercel.app/ (R71 ship 待 push)
+
+### G. R72 candidate (未做)
+
+- mmx hang detection — 监测 M2.7 model hang > 2min 自动 kill + 走 programmatic derivation fallback (避免 5-10 min 整批卡)
+- Vercel Hobby build queue 监控 — `mavis cron self r72-build-watch --every 5m --prompt "curl sitemap.xml 验 lastmod"` 模式 (但 classifier 拦 cron, 见 misc-tech.md)
+- mmx-content-guard 进一步接入 fix-descriptions.mjs + add-cross-tags.mjs + enrich-mentions.mjs + score-all-cards.mjs (剩余 batch scripts)
+- AGENTS.md subKind coverage 数字 400/400 → 801/801 更新
+- opengraph-image.tsx STATS '600 张' → 动态 (R60+35 round 已修, R71 后再 verify)

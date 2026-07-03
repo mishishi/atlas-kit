@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 景泰蓝
+Category: 器物
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,50 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Object Category Template
 
 ## Accent Color
-
-* Sandstone Gold #B88952
+* Slate Silver #6A7E8A
 
 ## Identity
-
-* Architectural history and design encyclopedia page
+* Object and industrial-design encyclopedia page
 
 ## Hero Illustration
-
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Exploded view or cutaway structure
+* 3–5 detached component or material detached detail panels around the hero illustration
 
 ## Information Modules
-
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 器物档案
+* 结构组成
+* 工作原理
+* 材质工艺
+* 关键参数
+* 发展历程
+* 使用场景
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 制作精密度
+* 历史重要性
+* 文化象征性
+* 使用普及度
+* 收藏价值
 
 ## Observation Insets
-
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* 部件
+* 剖面
+* 材质
+* 接口
+* 操作区
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* Exploded view
+* Evolution timeline
+* Usage icons
 
 ## Failure Prevention
-
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No product advertising
+* No e-commerce aesthetics
+* No unboxing style
+* Structure must remain accurate

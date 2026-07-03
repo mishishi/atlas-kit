@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 火山喷发
+Category: 自然现象
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,51 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Natural Phenomenon Category Template
 
 ## Accent Color
-
-* Sandstone Gold #B88952
+* Storm Blue Grey #4A7A9B
 
 ## Identity
-
-* Architectural history and design encyclopedia page
+* Scientific natural-phenomenon page
 
 ## Hero Illustration
-
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Scientific mechanism or formation diagram
+* 3–5 detached cause, stage, form, or warning-signal detached detail panels
 
 ## Information Modules
-
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 现象档案
+* 成因机制
+* 规模参数
+* 分布规律
+* 持续周期
+* 影响评估
+* 风险与应对
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 能量规模
+* 预测难度
+* 发生频率
+* 影响范围
+* 研究成熟度
 
 ## Observation Insets
-
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* 成因
+* 形态
+* 阶段
+* 前兆
+* 强度
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* Mechanism flow
+* Distribution map
+* Structure diagram
 
 ## Failure Prevention
-
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No disaster-movie aesthetics
+* No sensational imagery
+* No fear-based presentation
+* Prioritize scientific explanation

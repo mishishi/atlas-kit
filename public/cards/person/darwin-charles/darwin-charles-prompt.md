@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 达尔文
+Category: 人物
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,50 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Person Category Template
 
 ## Accent Color
-
-* Sandstone Gold #B88952
+* Deep Purple #6B5EA8
 
 ## Identity
-
-* Architectural history and design encyclopedia page
+* Biographical encyclopedia profile page
 
 ## Hero Illustration
-
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Engraving, sketch, or archival portrait
+* 3–5 detached symbolic detached detail panels around the portrait
 
 ## Information Modules
-
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 基本档案
+* 时代背景
+* 生平脉络
+* 核心成就
+* 历史地位
+* 思想主张
+* 相关人物
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 历史影响
+* 时代代表性
+* 创新程度
+* 后世传播
+* 争议程度
 
 ## Observation Insets
-
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* 代表作
+* 时代
+* 手稿
+* 标志物
+* 关键场所
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* Life timeline
+* Achievement network
+* Location map
 
 ## Failure Prevention
-
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No celebrity poster aesthetics
+* No personality cult imagery
+* Neutral encyclopedic tone
+* No exaggerated praise

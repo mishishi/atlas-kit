@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 哪吒
+Category: 神话
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,61 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Mythology Category Template
 
 ## Accent Color
 
-* Sandstone Gold #B88952
+* Mythic Indigo #5D5A8A
 
 ## Identity
 
-* Architectural history and design encyclopedia page
+* Mythology and folklore encyclopedia profile page
 
 ## Hero Illustration
 
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Symbolic mythological figure, creature, scene, or cosmological diagram
+* 3–5 detached attribute or narrative detached detail panels around the hero illustration
 
 ## Information Modules
 
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 神话档案
+* 文化来源
+* 核心形象
+* 主要故事
+* 象征意义
+* 相关神祇
+* 后世影响
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 文化影响
+* 传播广度
+* 象征复杂度
+* 叙事知名度
+* 后世改编度
 
 ## Observation Insets
 
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* 形象
+* 器物
+* 标志
+* 场景
+* 关系
 
 ## Visualization Strip
 
 * 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* Genealogy map
+* Myth cycle
+* Cultural distribution map
 
 ## Failure Prevention
 
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No fantasy game poster
+* No heroic propaganda
+* Do not merge unrelated myth systems
+* Prioritize the earliest or culturally established tradition
+* Clearly separate original mythology from later adaptations
+* Do not use modern game or film costume designs as historical canon
+* Maintain cultural neutrality and respect

@@ -5613,6 +5613,13 @@
           "image",
           "prompt"
         ]
+      },
+      {
+        "date": "2026-07-02T19:59:39.931Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
       }
     ],
     "subKind": "defensive"
@@ -34117,18 +34124,17 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/utada-hikaru/utada-hikaru-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/utada-hikaru/utada-hikaru-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/utada-hikaru/utada-hikaru-full.webp",
-    "score": 0,
+    "score": 8.6,
     "tags": [
-      "日本流行音乐",
-      "东亚当代流行",
-      "日本音乐人物",
-      "东亚流行歌手",
-      "日本艺术音乐",
-      "现代东亚音乐"
+      "music",
+      "japan",
+      "R&B",
+      "xiandai",
+      "yatai"
     ],
-    "tagline": "**一个人的声音，足以定义一个时代**",
+    "tagline": "1998 First Love 7.65M Japan best",
     "subtitle": "music · 宇多田光",
-    "description": "宇多田光（Hikaru Utada），1973年出生于美国纽约，日本歌手、词曲作者及音乐制作人。1998年以单曲《Close Your Eyes》正式出道，凭借次年发行的专辑《First Love》获得广泛关注，被誉为“平成歌姬”之一。其音乐融合J-POP、R&B、电子音乐等多种风格，作品在亚洲地区拥有重要影响力。",
+    "description": "Utada Hikaru Japanese-American singer-songwriter, 1998 First Love debut 7.65M Japan sales all-time best, 2002 DEEP RIVER, 2018 Hatsukoi collaboration with Skrillex.",
     "createdAt": "2026-06-26",
     "sources": [
       {
@@ -34176,7 +34182,16 @@
     ],
     "subKind": "japanese",
     "quote": "其音乐融合J-POP、R&B、电子音乐等多种风格，作品在亚洲地区拥有重要影响力。",
-    "trivia": "1973年出生于美国纽约，日本歌手、词曲作者及音乐制作人。"
+    "trivia": "1973年出生于美国纽约，日本歌手、词曲作者及音乐制作人。",
+    "revisions": [
+      {
+        "date": "2026-07-02T21:37:23.283Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "x-japan",
@@ -39180,7 +39195,7 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/taj-mahal/taj-mahal-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/taj-mahal/taj-mahal-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/taj-mahal/taj-mahal-full.webp",
-    "score": 0,
+    "score": 9.3,
     "tags": [
       "印度建筑",
       "莫卧儿",
@@ -39239,7 +39254,16 @@
     ],
     "subKind": "religious",
     "trivia": "五代皇帝沙贾汗为纪念已故妻子蒙塔兹·玛哈尔而建造的白色大理石陵墓。",
-    "quote": "一滴凝固在时间里的永恒眼泪。"
+    "quote": "一滴凝固在时间里的永恒眼泪。",
+    "revisions": [
+      {
+        "date": "2026-07-02T20:01:33.297Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "pisa-tower",
@@ -55058,9 +55082,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/person/vangogh-ear/vangogh-ear-card.png",
-    "image_thumb": "/cards/person/vangogh-ear/vangogh-ear-thumb.webp",
-    "image_full": "/cards/person/vangogh-ear/vangogh-ear-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/vangogh-ear/vangogh-ear-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/vangogh-ear/vangogh-ear-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/vangogh-ear/vangogh-ear-full.webp",
     "score": 8.4,
     "tags": [
       "人物",
@@ -55121,9 +55145,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/person/picasso-guernica/picasso-guernica-card.png",
-    "image_thumb": "/cards/person/picasso-guernica/picasso-guernica-thumb.webp",
-    "image_full": "/cards/person/picasso-guernica/picasso-guernica-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/picasso-guernica/picasso-guernica-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/picasso-guernica/picasso-guernica-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/picasso-guernica/picasso-guernica-full.webp",
     "score": 9.5,
     "tags": [
       "人物",
@@ -55184,9 +55208,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/phenomenon/schrodingers-cat/schrodingers-cat-card.png",
-    "image_thumb": "/cards/phenomenon/schrodingers-cat/schrodingers-cat-thumb.webp",
-    "image_full": "/cards/phenomenon/schrodingers-cat/schrodingers-cat-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/schrodingers-cat/schrodingers-cat-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/schrodingers-cat/schrodingers-cat-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/schrodingers-cat/schrodingers-cat-full.webp",
     "score": 8.9,
     "tags": [
       "物理",
@@ -55247,9 +55271,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/phenomenon/double-slit/double-slit-card.png",
-    "image_thumb": "/cards/phenomenon/double-slit/double-slit-thumb.webp",
-    "image_full": "/cards/phenomenon/double-slit/double-slit-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/double-slit/double-slit-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/double-slit/double-slit-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/double-slit/double-slit-full.webp",
     "score": 8.6,
     "tags": [
       "物理",
@@ -55310,9 +55334,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/phenomenon/michelson-morley/michelson-morley-card.png",
-    "image_thumb": "/cards/phenomenon/michelson-morley/michelson-morley-thumb.webp",
-    "image_full": "/cards/phenomenon/michelson-morley/michelson-morley-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/michelson-morley/michelson-morley-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/michelson-morley/michelson-morley-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/michelson-morley/michelson-morley-full.webp",
     "score": 8.5,
     "tags": [
       "物理",
@@ -55756,9 +55780,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/music/k-pop/k-pop-card.png",
-    "image_thumb": "/cards/music/k-pop/k-pop-thumb.webp",
-    "image_full": "/cards/music/k-pop/k-pop-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/k-pop/k-pop-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/k-pop/k-pop-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/k-pop/k-pop-full.webp",
     "score": 8.2,
     "tags": [
       "音乐",
@@ -55824,9 +55848,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/music/bts/bts-card.png",
-    "image_thumb": "/cards/music/bts/bts-thumb.webp",
-    "image_full": "/cards/music/bts/bts-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/bts/bts-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/bts/bts-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/bts/bts-full.webp",
     "score": 8.5,
     "tags": [
       "音乐",
@@ -55892,9 +55916,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/music/blackpink/blackpink-card.png",
-    "image_thumb": "/cards/music/blackpink/blackpink-thumb.webp",
-    "image_full": "/cards/music/blackpink/blackpink-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/blackpink/blackpink-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/blackpink/blackpink-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/blackpink/blackpink-full.webp",
     "score": 8,
     "tags": [
       "音乐",
@@ -55955,9 +55979,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/architecture/louvre-museum/louvre-museum-card.png",
-    "image_thumb": "/cards/architecture/louvre-museum/louvre-museum-thumb.webp",
-    "image_full": "/cards/architecture/louvre-museum/louvre-museum-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/louvre-museum/louvre-museum-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/louvre-museum/louvre-museum-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/louvre-museum/louvre-museum-full.webp",
     "score": 9.3,
     "tags": [
       "建筑",
@@ -56023,9 +56047,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/architecture/uffizi/uffizi-card.png",
-    "image_thumb": "/cards/architecture/uffizi/uffizi-thumb.webp",
-    "image_full": "/cards/architecture/uffizi/uffizi-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/uffizi/uffizi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/uffizi/uffizi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/uffizi/uffizi-full.webp",
     "score": 9,
     "tags": [
       "建筑",
@@ -56086,9 +56110,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/architecture/prado/prado-card.png",
-    "image_thumb": "/cards/architecture/prado/prado-thumb.webp",
-    "image_full": "/cards/architecture/prado/prado-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/prado/prado-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/prado/prado-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/prado/prado-full.webp",
     "score": 8.7,
     "tags": [
       "建筑",
@@ -56149,9 +56173,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/person/kangxi-emperor/kangxi-emperor-card.png",
-    "image_thumb": "/cards/person/kangxi-emperor/kangxi-emperor-thumb.webp",
-    "image_full": "/cards/person/kangxi-emperor/kangxi-emperor-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/kangxi-emperor/kangxi-emperor-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/kangxi-emperor/kangxi-emperor-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/kangxi-emperor/kangxi-emperor-full.webp",
     "score": 8.6,
     "tags": [
       "人物",
@@ -56222,9 +56246,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/person/napoleon/napoleon-card.png",
-    "image_thumb": "/cards/person/napoleon/napoleon-thumb.webp",
-    "image_full": "/cards/person/napoleon/napoleon-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/napoleon/napoleon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/napoleon/napoleon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/napoleon/napoleon-full.webp",
     "score": 8.9,
     "tags": [
       "人物",
@@ -56300,9 +56324,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/music/piano-violin/piano-violin-card.png",
-    "image_thumb": "/cards/music/piano-violin/piano-violin-thumb.webp",
-    "image_full": "/cards/music/piano-violin/piano-violin-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/piano-violin/piano-violin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/piano-violin/piano-violin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/piano-violin/piano-violin-full.webp",
     "score": 8.4,
     "tags": [
       "音乐",
@@ -56363,9 +56387,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "/cards/music/guzheng/guzheng-card.png",
-    "image_thumb": "/cards/music/guzheng/guzheng-thumb.webp",
-    "image_full": "/cards/music/guzheng/guzheng-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guzheng/guzheng-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guzheng/guzheng-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guzheng/guzheng-full.webp",
     "score": 8.3,
     "tags": [
       "音乐",
@@ -56411,6 +56435,1302 @@
       {
         "title": "Wikipedia Guzheng",
         "url": "https://en.wikipedia.org/wiki/Guzheng",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "curie-marie",
+    "title": "居里夫人",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/curie-marie/curie-marie-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/curie-marie/curie-marie-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/curie-marie/curie-marie-full.webp",
+    "score": 9.1,
+    "tags": [
+      "人物",
+      "科学家",
+      "波兰",
+      "法国",
+      "放射",
+      "近现代",
+      "欧洲"
+    ],
+    "tagline": "1903 镭 + 钋, 首位双诺奖",
+    "subtitle": "人物 · 居里夫人 · 百科占位",
+    "description": "居里夫人 (Marie Curie, 1867-1934) 是波兰裔法国物理化学家, 1903 年获诺贝尔物理学奖 (与丈夫皮埃尔 + 贝克勒尔共) 是首位女性诺奖, 1911 年再获诺贝尔化学奖发现镭 + 钋, 是史上唯一双诺奖 + 双学科女科学家。今天物理学 + 化学双学科诺奖保持者, 放射性研究奠基人之一, 居里 (放射性强度单位) 以她命名。",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1867",
+        "title": "Born Warsaw",
+        "body": "波兰华沙, 教师家庭"
+      },
+      {
+        "year": "1891",
+        "title": "Move to Paris",
+        "body": "巴黎索邦大学物理系, 遇皮埃尔·居里"
+      },
+      {
+        "year": "1898",
+        "title": "Discover polonium + radium",
+        "body": "从沥青铀矿分离出钋 + 镭"
+      },
+      {
+        "year": "1903",
+        "title": "Nobel Physics",
+        "body": "放射性研究, 与皮埃尔 + 贝克勒尔共获"
+      },
+      {
+        "year": "1911",
+        "title": "Nobel Chemistry",
+        "body": "发现镭 + 钋, 史上首位双诺奖"
+      },
+      {
+        "year": "1934",
+        "title": "Died",
+        "body": "因长期辐射暴露致再生障碍性贫血, 享年 66"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Nobel Prize",
+        "url": "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Marie Curie",
+        "url": "https://en.wikipedia.org/wiki/Marie_Curie",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "richard-feynman",
+    "title": "费曼",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/richard-feynman/richard-feynman-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/richard-feynman/richard-feynman-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/richard-feynman/richard-feynman-full.webp",
+    "score": 8.9,
+    "tags": [
+      "人物",
+      "物理学家",
+      "美国",
+      "量子电动力学",
+      "近现代",
+      "美洲"
+    ],
+    "tagline": "1965 诺奖, 量子电动力学",
+    "subtitle": "人物 · 费曼 · 百科占位",
+    "description": "理查德·费曼 (Richard Feynman, 1918-1988) 是美国理论物理学家, 1965 年诺贝尔物理学奖 (QED 重整化 + 费曼图) 共获。今天费曼图是粒子物理学的标准计算语言, 费曼讲座 (The Character of Physical Law) 是 20 世纪最受欢迎物理入门。曼哈顿计划 + 挑战者号航天飞机事故调查也参与, 1986 年挑战者号调查独立结论震惊全美。",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1918",
+        "title": "Born NYC",
+        "body": "纽约皇后区, 犹太家庭"
+      },
+      {
+        "year": "1939",
+        "title": "MIT BS",
+        "body": "麻省理工物理学士"
+      },
+      {
+        "year": "1942",
+        "title": "Princeton PhD",
+        "body": "普林斯顿博士, Wheeler 共事"
+      },
+      {
+        "year": "1943",
+        "title": "Manhattan Project",
+        "body": "洛斯阿拉莫斯国家实验室"
+      },
+      {
+        "year": "1965",
+        "title": "Nobel Physics",
+        "body": "QED 重整化 + 费曼图, 与 Schwinger + Tomonaga 共获"
+      },
+      {
+        "year": "1986",
+        "title": "Challenger investigation",
+        "body": "挑战者号事故独立调查, O-ring 失效"
+      },
+      {
+        "year": "1988",
+        "title": "Died",
+        "body": "癌症, 享年 69"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Nobel Prize",
+        "url": "https://www.nobelprize.org/prizes/physics/1965/feynman/biographical/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Richard Feynman",
+        "url": "https://en.wikipedia.org/wiki/Richard_Feynman",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "darwin-charles",
+    "title": "达尔文",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/darwin-charles/darwin-charles-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/darwin-charles/darwin-charles-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/darwin-charles/darwin-charles-full.webp",
+    "score": 9,
+    "tags": [
+      "人物",
+      "生物学家",
+      "英国",
+      "进化论",
+      "近现代",
+      "欧洲"
+    ],
+    "tagline": "1859 物种起源, 进化论奠基",
+    "subtitle": "人物 · 达尔文 · 百科占位",
+    "description": "查尔斯·达尔文 (Charles Darwin, 1809-1882) 是英国博物学家 + 地质学家, 1859 年发表《物种起源》奠定自然选择进化论, 是现代生物学奠基人。1831-1836 年乘小猎犬号环球科考 5 年, 采集南美加拉帕戈斯群岛物种标本, 1842 年起草进化论, 1858 年华莱士独立提出类似理论促成联合发表。1859 年《物种起源》当日售罄, 颠覆神创论。",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1809",
+        "title": "Born Shrewsbury",
+        "body": "英国什鲁斯伯里, 富裕医生家庭"
+      },
+      {
+        "year": "1831",
+        "title": "Beagle voyage",
+        "body": "小猎犬号 5 年环球科考"
+      },
+      {
+        "year": "1858",
+        "title": "Joint Linnean paper",
+        "body": "与华莱士联合发表, 自然选择"
+      },
+      {
+        "year": "1859",
+        "title": "Origin of Species",
+        "body": "《物种起源》出版, 当日售罄"
+      },
+      {
+        "year": "1871",
+        "title": "Descent of Man",
+        "body": "《人类的由来》"
+      },
+      {
+        "year": "1882",
+        "title": "Died",
+        "body": "葬于威斯敏斯特大教堂, 牛顿墓旁"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Darwin Project",
+        "url": "https://www.darwinproject.ac.uk/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Charles Darwin",
+        "url": "https://en.wikipedia.org/wiki/Charles_Darwin",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "forbidden-city-arch",
+    "title": "故宫",
+    "kind": "architecture",
+    "series": "craft-and-botanical",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-arch/forbidden-city-arch-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-arch/forbidden-city-arch-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-arch/forbidden-city-arch-full.webp",
+    "score": 9.4,
+    "tags": [
+      "jianzhu",
+      "gudai",
+      "zhongguo",
+      "mingchao",
+      "gudai",
+      "yatai"
+    ],
+    "tagline": "1406 Yongle build, 24 emperors 1420-1912",
+    "subtitle": "建筑 · 故宫 · 百科占位",
+    "description": "Forbidden City Beijing built 1406-1420 Ming Yongle Emperor, 180 acres 980 buildings, served as imperial palace 1420-1912 24 emperors Ming + Qing dynasties, today Palace Museum. Largest surviving wooden palace complex in world, UNESCO 1987.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1406",
+        "title": "Yongle build start",
+        "body": "Ming Yongle Emperor ordered construction"
+      },
+      {
+        "year": "1420",
+        "title": "Palace complete",
+        "body": "24 years construction"
+      },
+      {
+        "year": "1912",
+        "title": "Qing fall",
+        "body": "Last emperor Puyi abdicated"
+      },
+      {
+        "year": "1925",
+        "title": "Palace Museum",
+        "body": "Converted to public museum"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Palace Museum Beijing",
+        "url": "https://www.dpm.org.cn/",
+        "type": "museum"
+      },
+      {
+        "title": "Palace Museum Beijing",
+        "url": "https://www.dpm.org.cn/",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia Forbidden City",
+        "url": "https://en.wikipedia.org/wiki/Forbidden_City",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "apple-vision-pro",
+    "title": "Vision Pro",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "044",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-vision-pro/apple-vision-pro-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-vision-pro/apple-vision-pro-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-vision-pro/apple-vision-pro-full.webp",
+    "score": 8.5,
+    "tags": [
+      "keji",
+      "consumer",
+      "meiguo",
+      "Apple",
+      "xiandai",
+      "meizhou"
+    ],
+    "tagline": "2024 spatial computing $3499",
+    "subtitle": "科技概念 · Vision Pro · 百科占位",
+    "description": "Apple Vision Pro launched June 2024 mixed reality headset, $3499, visionOS, micro-OLED 23M pixels, eye tracking + hand gesture + voice control, spatial video + photo, Vision Pro 2 rumored 2025.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "2023-06",
+        "title": "WWDC announce",
+        "body": "Apple WWDC Vision Pro"
+      },
+      {
+        "year": "2024-02",
+        "title": "US launch",
+        "body": "$3499 US stores"
+      },
+      {
+        "year": "2024-09",
+        "title": "visionOS 2",
+        "body": "Spatial photo + Ultra Wide Mac"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apple Vision Pro",
+        "url": "https://www.apple.com/apple-vision-pro/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Apple Vision Pro",
+        "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "boston-dynamics",
+    "title": "波士顿动力",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "045",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/boston-dynamics/boston-dynamics-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/boston-dynamics/boston-dynamics-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/boston-dynamics/boston-dynamics-full.webp",
+    "score": 8.6,
+    "tags": [
+      "keji",
+      "jqr",
+      "meiguo",
+      "Hyundai",
+      "xiandai",
+      "meizhou"
+    ],
+    "tagline": "1992 Spot dog + Atlas humanoid",
+    "subtitle": "科技概念 · 波士顿动力 · 百科占位",
+    "description": "Boston Dynamics 1992-founded US robotics company, famous for Spot (dog robot) + Atlas (humanoid). Acquired by Hyundai 2020 $1.1B. Pioneering legged locomotion + balance algorithms.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1992",
+        "title": "Founded",
+        "body": "MIT spin-off Marc Raibert"
+      },
+      {
+        "year": "2016",
+        "title": "Spot released",
+        "body": "Quadruped commercial robot"
+      },
+      {
+        "year": "2020",
+        "title": "Hyundai acquire",
+        "body": "$1.1B Hyundai"
+      },
+      {
+        "year": "2024",
+        "title": "Atlas electric",
+        "body": "All-electric humanoid"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Boston Dynamics",
+        "url": "https://bostondynamics.com/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Boston Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Boston_Dynamics",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-computer",
+    "title": "量子计算机",
+    "kind": "tech",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/quantum-computer/quantum-computer-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/quantum-computer/quantum-computer-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/quantum-computer/quantum-computer-full.webp",
+    "score": 8.7,
+    "tags": [
+      "keji",
+      "jisuanji",
+      "quanlu",
+      "IBM",
+      "Google",
+      "xiandai",
+      "quanqiu"
+    ],
+    "tagline": "2019 Sycamore quantum supremacy",
+    "subtitle": "科技概念 · 量子计算机 · 百科占位",
+    "description": "Quantum computer uses qubits superposition + entanglement, IBM Q 50-qubit 2017, Google Sycamore 53-qubit quantum supremacy 2019, China Jiuzhang photonic 2020. Practical use: cryptography, drug sim, optimization.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1994",
+        "title": "Shor algorithm",
+        "body": "factoring"
+      },
+      {
+        "year": "2019",
+        "title": "Sycamore",
+        "body": "supremacy"
+      },
+      {
+        "year": "2024",
+        "title": "IBM Heron 156",
+        "body": "156 qubits"
+      }
+    ],
+    "sources": [
+      {
+        "title": "IBM Quantum",
+        "url": "https://www.ibm.com/quantum",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Quantum computing",
+        "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "sushi",
+    "title": "寿司",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/sushi/sushi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/sushi/sushi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/sushi/sushi-full.webp",
+    "score": 8.4,
+    "tags": [
+      "food",
+      "japan",
+      "riben",
+      "guoji",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "1820 nigiri Edo + 1970s California roll",
+    "subtitle": "食物 · 寿司 · 百科占位",
+    "description": "Sushi originated Japan 8th century narezushi fermented fish + rice, modern nigiri 1820s Hanaya Yohei Edo Tokyo. Salmon avocado roll 1970s California. Today global cuisine symbol.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "8th century",
+        "title": "Narezushi origin",
+        "body": "Southeast Asia fermented fish + rice"
+      },
+      {
+        "year": "1820s",
+        "title": "Edo nigiri",
+        "body": "Hanaya Yohei nigiri Edo Tokyo"
+      },
+      {
+        "year": "1970s",
+        "title": "California roll",
+        "body": "LA sushi chef avocado roll"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Sushi",
+        "url": "https://en.wikipedia.org/wiki/Sushi",
+        "type": "wiki"
+      },
+      {
+        "title": "JFC Japan",
+        "url": "https://www.jfc.co.jp/en/",
+        "type": "brand"
+      }
+    ]
+  },
+  {
+    "slug": "pizza-margherita",
+    "title": "披萨",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/pizza-margherita/pizza-margherita-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/pizza-margherita/pizza-margherita-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/pizza-margherita/pizza-margherita-full.webp",
+    "score": 8,
+    "tags": [
+      "food",
+      "italy",
+      "yidali",
+      "guoji",
+      "xiandai",
+      "ouzhou"
+    ],
+    "tagline": "1889 Naples Queen Margherita",
+    "subtitle": "食物 · 披萨 · 百科占位",
+    "description": "Pizza Margherita 1889 Naples Italy, pizzaiolo Raffaele Esposito named after Queen Margherita, tomato + mozzarella + basil = Italian flag colors. Today global fast food.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1700s",
+        "title": "Naples flatbread",
+        "body": "Working class Naples flatbread"
+      },
+      {
+        "year": "1889",
+        "title": "Margherita",
+        "body": "Raffaele Esposito named after Queen Margherita"
+      },
+      {
+        "year": "1958",
+        "title": "Pizza Hut",
+        "body": "Chain pizza founding"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Pizza",
+        "url": "https://en.wikipedia.org/wiki/Pizza",
+        "type": "wiki"
+      },
+      {
+        "title": "AVPN Napoli",
+        "url": "https://www.pizzanapoletana.org/",
+        "type": "brand"
+      }
+    ]
+  },
+  {
+    "slug": "taco-mexican",
+    "title": "塔可",
+    "kind": "food",
+    "series": "culinary-corner",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/taco-mexican/taco-mexican-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/taco-mexican/taco-mexican-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/taco-mexican/taco-mexican-full.webp",
+    "score": 7.9,
+    "tags": [
+      "food",
+      "mexico",
+      "moxige",
+      "Tex-Mex",
+      "xiandai",
+      "beizhou"
+    ],
+    "tagline": "1930s Lebanese immigrant al pastor",
+    "subtitle": "食物 · 塔可 · 百科占位",
+    "description": "Taco ancient Mesoamerican origin corn tortilla folded filling, modern Mexican street food, taco al pastor 1930s Lebanese immigrants Mexico City. Today global Tex-Mex staple.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "pre-Columbian",
+        "title": "Mesoamerican tortilla",
+        "body": "Corn tortilla folded filling"
+      },
+      {
+        "year": "1930s",
+        "title": "Al pastor",
+        "body": "Lebanese immigrants Mexico City shawarma technique"
+      },
+      {
+        "year": "1962",
+        "title": "Taco Bell",
+        "body": "California Tex-Mex spread"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia Taco",
+        "url": "https://en.wikipedia.org/wiki/Taco",
+        "type": "wiki"
+      },
+      {
+        "title": "Mexico Govt Cuisine",
+        "url": "https://www.gob.mx/sectur",
+        "type": "institution"
+      }
+    ]
+  },
+  {
+    "slug": "volcano-eruption",
+    "title": "火山喷发",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/volcano-eruption/volcano-eruption-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/volcano-eruption/volcano-eruption-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/volcano-eruption/volcano-eruption-full.webp",
+    "score": 8.4,
+    "tags": [
+      "phenomenon",
+      "dizhi",
+      "quanqiu",
+      "Vesuvius",
+      "gudai",
+      "quanqiu"
+    ],
+    "tagline": "79 AD Vesuvius + 1883 Krakatoa",
+    "subtitle": "自然现象 · 火山喷发 · 百科占位",
+    "description": "Volcanic eruption molten rock magma + gas + ash escapes. Ring of Fire Pacific 75% world volcanoes, Vesuvius 79 AD destroyed Pompeii, Krakatoa 1883 largest modern, Yellowstone supervolcano next threat.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "79 AD",
+        "title": "Vesuvius Pompeii",
+        "body": "Vesuvius destroyed Pompeii + Herculaneum"
+      },
+      {
+        "year": "1883",
+        "title": "Krakatoa",
+        "body": "Largest modern eruption, 36000 dead"
+      },
+      {
+        "year": "1991",
+        "title": "Pinatubo climate",
+        "body": "Philippines Pinatubo lowered global temp 0.5C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "USGS Volcano",
+        "url": "https://www.usgs.gov/programs/VHP",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Volcano",
+        "url": "https://en.wikipedia.org/wiki/Volcano",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "aurora-borealis",
+    "title": "极光",
+    "kind": "phenomenon",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/aurora-borealis/aurora-borealis-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/aurora-borealis/aurora-borealis-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/aurora-borealis/aurora-borealis-full.webp",
+    "score": 8.6,
+    "tags": [
+      "phenomenon",
+      "tianwen",
+      "beiji",
+      "ouzhou",
+      "xiandai",
+      "quanqiu"
+    ],
+    "tagline": "Norway Iceland Sept-Mar viewing",
+    "subtitle": "自然现象 · 极光 · 百科占位",
+    "description": "Aurora borealis northern lights + aurora australis southern, solar wind charged particles + Earth magnetic field + atmosphere oxygen + nitrogen colors. Norway Tromso Iceland best viewing Sept-Mar.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1619",
+        "title": "Galileo named",
+        "body": "Galileo Galilei named aurora borealis"
+      },
+      {
+        "year": "1900s",
+        "title": "Birkeland currents",
+        "body": "Kristian Birkeland proposed solar wind theory"
+      },
+      {
+        "year": "2024",
+        "title": "Solar max peak",
+        "body": "Solar Cycle 25 max producing strong auroras at low latitudes"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA Auroras",
+        "url": "https://science.nasa.gov/heliophysics/auroras/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Aurora",
+        "url": "https://en.wikipedia.org/wiki/Aurora",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "jay-chou",
+    "title": "周杰伦",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/jay-chou/jay-chou-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/jay-chou/jay-chou-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/jay-chou/jay-chou-full.webp",
+    "score": 8.5,
+    "tags": [
+      "music",
+      "taiwan",
+      "zhongguo",
+      "pop",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "2000 debut 15 albums 30M+ sold",
+    "subtitle": "music · 周杰伦 · 百科占位",
+    "description": "Jay Chou Taiwanese singer-songwriter rapper 2000 debut, 15 studio albums, 30M+ records sold, Chou-style R&B + classical Chinese fusion influence, films Secret 2007 + initial D.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1979",
+        "title": "Born Taiwan",
+        "body": "Taiwan New Taipei City"
+      },
+      {
+        "year": "2000",
+        "title": "Debut Jay",
+        "body": "Universal Music debut album"
+      },
+      {
+        "year": "2007",
+        "title": "Secret film",
+        "body": "Acted + directed debut film"
+      },
+      {
+        "year": "2016",
+        "title": "Bedtime Stories",
+        "body": "Fatherhood album"
+      }
+    ],
+    "sources": [
+      {
+        "title": "JVR Music Jay Chou",
+        "url": "https://www.jvrmusic.com/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Jay Chou",
+        "url": "https://en.wikipedia.org/wiki/Jay_Chou",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "eason-chan",
+    "title": "陈奕迅",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/eason-chan/eason-chan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/eason-chan/eason-chan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/eason-chan/eason-chan-full.webp",
+    "score": 8.4,
+    "tags": [
+      "music",
+      "xianggang",
+      "Cantopop",
+      "ballad",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "1995 debut 12 HK film awards",
+    "subtitle": "music · 陈奕迅 · 百科占位",
+    "description": "Eason Chan Hong Kong singer 1995 debut, Cantonese + Mandarin + English, 12 Hong Kong Film Awards Best Actor for musical career + acting, time ballads + jazz, Eternal Happiness concert tour.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1974",
+        "title": "Born Hong Kong",
+        "body": "Hong Kong British era"
+      },
+      {
+        "year": "1995",
+        "title": "Debut",
+        "body": "Capital Artists debut"
+      },
+      {
+        "year": "2006",
+        "title": "U87 album",
+        "body": "Mandarin career peak"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Eason Chan Official",
+        "url": "https://www.easonchan.net/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Eason Chan",
+        "url": "https://en.wikipedia.org/wiki/Eason_Chan",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "deng-ziqi",
+    "title": "邓紫棋",
+    "kind": "music",
+    "series": "soundtrack-atlas",
+    "seriesNo": "049",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/deng-ziqi/deng-ziqi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/deng-ziqi/deng-ziqi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/deng-ziqi/deng-ziqi-full.webp",
+    "score": 8,
+    "tags": [
+      "music",
+      "xianggang",
+      "Cantopop",
+      "vocal",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "2008 debut I Am a Singer 2014",
+    "subtitle": "music · 邓紫棋 · 百科占位",
+    "description": "G.E.M. Deng Ziqi Hong Kong singer 2008 debut, 14 albums, I Am a Singer 2 Hunan TV champion 2014, X Factor, voice similar Mariah Carey vocal range 3.5 octaves, 50+ concerts.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1991",
+        "title": "Born Shanghai",
+        "body": "Shanghai musical family"
+      },
+      {
+        "year": "2008",
+        "title": "Debut G.E.M.",
+        "body": "Hong Kong debut G.E.M. Get Everybody Moving"
+      },
+      {
+        "year": "2014",
+        "title": "I Am a Singer",
+        "body": "Hunan TV I Am a Singer 2 champion"
+      }
+    ],
+    "sources": [
+      {
+        "title": "G.E.M.",
+        "url": "https://gemmusic163.com/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia G.E.M.",
+        "url": "https://en.wikipedia.org/wiki/G.E.M.",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "vagabond-anime",
+    "title": "浪客行",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/vagabond-anime/vagabond-anime-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/vagabond-anime/vagabond-anime-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/vagabond-anime/vagabond-anime-full.webp",
+    "score": 8.7,
+    "tags": [
+      "anime",
+      "seinen",
+      "japan",
+      "manga",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "1998 manga Inoue Eiji Yoshikawa",
+    "subtitle": "anime · 浪客行 · 百科占位",
+    "description": "Vagabond Takehiko Inoue manga adapting Eiji Yoshikawa Musashi novel, 1998-ongoing Young Animal magazine, set Edo Japan Miyamoto Musashi legendary samurai, 27 volumes + hiatus 2015.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1994",
+        "title": "Inoue Slam Dunk",
+        "body": "Takehiko Inoue Slam Dunk 1990-1996"
+      },
+      {
+        "year": "1998",
+        "title": "Vagabond start",
+        "body": "Manga adapting Yoshikawa novel"
+      },
+      {
+        "year": "2002",
+        "title": "Tezuka award",
+        "body": "Tezuka Osamu Cultural Prize"
+      },
+      {
+        "year": "2015",
+        "title": "Hiatus",
+        "body": "Inoue hiatus for art projects"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Young Animal Vagabond",
+        "url": "https://younganimal.jp/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Vagabond manga",
+        "url": "https://en.wikipedia.org/wiki/Vagabond_(manga)",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "monster-anime",
+    "title": "Monster",
+    "kind": "anime",
+    "series": "anime-works-atlas",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/monster-anime/monster-anime-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/monster-anime/monster-anime-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/monster-anime/monster-anime-full.webp",
+    "score": 9.1,
+    "tags": [
+      "anime",
+      "seinen",
+      "japan",
+      "psychological",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "1994-2001 Urasawa masterpiece",
+    "subtitle": "anime · Monster · 百科占位",
+    "description": "Monster Naoki Urasawa manga 1994-2001 + anime 2004 74 eps, psychological thriller Dr Tenma saves boy who becomes serial killer, masterpiece alongside 20th Century Boys.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1994",
+        "title": "Manga start",
+        "body": "Big Comic Original 1994-2001"
+      },
+      {
+        "year": "2004",
+        "title": "Anime 74 eps",
+        "body": "Madhouse anime 2004"
+      },
+      {
+        "year": "2005",
+        "title": "International",
+        "body": "Translated 20+ languages"
+      },
+      {
+        "year": "2021",
+        "title": "Anime rerelease",
+        "body": "Rewatched masterpiece 2021"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Naoki Urasawa",
+        "url": "https://www.naokiurasawa.com/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Monster manga",
+        "url": "https://en.wikipedia.org/wiki/Monster_(manga)",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "cloisonne-art",
+    "title": "景泰蓝",
+    "kind": "object",
+    "series": "craft-and-botanical",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/cloisonne-art/cloisonne-art-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/cloisonne-art/cloisonne-art-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/cloisonne-art/cloisonne-art-full.webp",
+    "score": 7.8,
+    "tags": [
+      "object",
+      "art",
+      "zhongguo",
+      "mingchao",
+      "gudai",
+      "yatai"
+    ],
+    "tagline": "1450-1457 Ming Jingtai blue",
+    "subtitle": "器物 · 景泰蓝 · 百科占位",
+    "description": "Cloisonne jingtailan Ming Jingtai 1450-1457 reign peak blue enamel, French Japonisme 1860s revival Art Nouveau. Beijing + Hebei + Anhui traditional crafts today UNESCO ICH.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "13th century",
+        "title": "Origin Byzantine",
+        "body": "Byzantine + Islamic world"
+      },
+      {
+        "year": "1450",
+        "title": "Ming Jingtai",
+        "body": "Ming Jingtai Emperor peak blue enamel"
+      },
+      {
+        "year": "17-18th century",
+        "title": "Japonisme Europe",
+        "body": "European revival Art Nouveau"
+      },
+      {
+        "year": "2006",
+        "title": "UNESCO ICH",
+        "body": "Cloisonne traditional craft ICH recognition"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Beijing Cultural Heritage",
+        "url": "http://www.bjww.gov.cn/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Cloisonne",
+        "url": "https://en.wikipedia.org/wiki/Cloisonn%C3%A9",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "qi-baishi",
+    "title": "齐白石",
+    "kind": "person",
+    "series": "history-and-figures",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/qi-baishi/qi-baishi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/qi-baishi/qi-baishi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/qi-baishi/qi-baishi-full.webp",
+    "score": 9.2,
+    "tags": [
+      "person",
+      "artist",
+      "zhongguo",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "1864-1957 Picasso peer shrimp",
+    "subtitle": "人物 · 齐白石 · 百科占位",
+    "description": "Qi Baishi 1864-1957 Chinese folk painter + seal carver, shrimp + crabs + cabbage iconography, 1953 World Peace Council international peace prize, 1956 international art prize Picasso praise.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "1864",
+        "title": "Born Xiangtan",
+        "body": "Hunan Xiangtan poor peasant"
+      },
+      {
+        "year": "1919",
+        "title": "Move Beijing",
+        "body": "Settled Beijing aged 55"
+      },
+      {
+        "year": "1949",
+        "title": "People's Republic",
+        "body": "National people artist honored"
+      },
+      {
+        "year": "1956",
+        "title": "World Peace Prize",
+        "body": "World Peace Council international prize Picasso praised"
+      },
+      {
+        "year": "1957",
+        "title": "Died Beijing",
+        "body": "Aged 93"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Qi Baishi Memorial",
+        "url": "http://www.qibaishi.org/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Qi Baishi",
+        "url": "https://en.wikipedia.org/wiki/Qi_Baishi",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "nezha-myth",
+    "title": "哪吒",
+    "kind": "mythology",
+    "series": "atlas-miscellany",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/nezha-myth/nezha-myth-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/nezha-myth/nezha-myth-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/nezha-myth/nezha-myth-full.webp",
+    "score": 8.4,
+    "tags": [
+      "mythology",
+      "zhonguo",
+      "lianhua",
+      "gudai",
+      "yatai"
+    ],
+    "tagline": "Lotus Lantern + 2019 50B yuan film",
+    "subtitle": "神话 · 哪吒 · 百科占位",
+    "description": "Nezha Chinese mythology Taoist protective deity, Lotus Lantern tale, son Li Jing + Lady Yin, reborns lotus after death by Taiyi Zhenren, weapon Qiankun Ring + Red Armillary Sash. 2019 film 50B+ yuan.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "Tang dynasty",
+        "title": "Buddhist origin",
+        "body": "Nata Hindu-Buddhist protective deity China"
+      },
+      {
+        "year": "Ming dynasty",
+        "title": "Fengshen Yanyi",
+        "body": "Fengshen Yanyi novel Nezha Lotus rebirth"
+      },
+      {
+        "year": "2019",
+        "title": "Nezha film",
+        "body": "Jiaozi director 50B yuan box office"
+      }
+    ],
+    "sources": [
+      {
+        "title": "China Culture",
+        "url": "http://www.chinaculture.org/",
+        "type": "institution"
+      },
+      {
+        "title": "Wikipedia Nezha",
+        "url": "https://en.wikipedia.org/wiki/Nezha",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "donghua-cnt",
+    "title": "大鱼海棠",
+    "kind": "movie",
+    "series": "pulp-fiction",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/donghua-cnt/donghua-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/donghua-cnt/donghua-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/donghua-cnt/donghua-cnt-full.webp",
+    "score": 8.3,
+    "tags": [
+      "movie",
+      "china",
+      "donghua",
+      "xiandai",
+      "yatai"
+    ],
+    "tagline": "2016 30M RMB Zhuangzi fantasy",
+    "subtitle": "电影 · 大鱼海棠 · 百科占位",
+    "description": "Big Fish Begonia 2016 Chinese animated fantasy, director Liang Xuan + Zhang Chun, 30M RMB box office, inspired Zhuangzi +山海经, sequel 2024 + Disney partnership.",
+    "createdAt": "2026-07-02",
+    "history": [
+      {
+        "year": "2004",
+        "title": "Flashback",
+        "body": "Liang Xuan director initial flash animation"
+      },
+      {
+        "year": "2013",
+        "title": "Project start",
+        "body": "Director Liang + Zhang Chun began Big Fish"
+      },
+      {
+        "year": "2016",
+        "title": "Release",
+        "body": "July 2016 30M RMB box office"
+      },
+      {
+        "year": "2024",
+        "title": "Disney partnership",
+        "body": "Disney distribution abroad"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Boli Animation",
+        "url": "https://www.boliart.cn/",
+        "type": "brand"
+      },
+      {
+        "title": "Wikipedia Big Fish Begonia",
+        "url": "https://en.wikipedia.org/wiki/Big_Fish_%26_Begonia",
         "type": "wiki"
       }
     ]

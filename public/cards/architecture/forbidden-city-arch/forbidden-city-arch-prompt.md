@@ -1,6 +1,6 @@
 # Encyclopedia Infographic
 
-Theme: 长城
+Theme: 故宫
 Category: 建筑
 
 STRICT 9:16 vertical page.

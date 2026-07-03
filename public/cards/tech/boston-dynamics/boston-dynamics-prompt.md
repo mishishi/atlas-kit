@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 波士顿动力
+Category: 科技概念
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,51 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Technology Category Template
 
 ## Accent Color
-
-* Sandstone Gold #B88952
+* Teal Blue #2A8FA8
 
 ## Identity
-
-* Architectural history and design encyclopedia page
+* Technology encyclopedia concept page
 
 ## Hero Illustration
-
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Core principle diagram or system structure
+* Not a product render
+* 3–5 detached module, input, output, or application detached detail panels
 
 ## Information Modules
-
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 概念档案
+* 核心定义
+* 基本原理
+* 关键参数
+* 应用场景
+* 发展历程
+* 局限挑战
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 技术成熟度
+* 应用广泛度
+* 颠覆潜力
+* 普通人可及度
+* 争议程度
 
 ## Observation Insets
-
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* 原理
+* 模块
+* 输入
+* 输出
+* 应用
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* Principle diagram
+* Input-output flow
+* Application icons
 
 ## Failure Prevention
-
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No product-launch aesthetics
+* No cyberpunk style
+* No marketing buzzwords
+* Prioritize clarity over spectacle

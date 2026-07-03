@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 寿司
+Category: 食物
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,50 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Food Category Template
 
 ## Accent Color
-
-* Sandstone Gold #B88952
+* Orange #D4722A
 
 ## Identity
-
-* Architectural history and design encyclopedia page
+* Culinary encyclopedia page
 
 ## Hero Illustration
-
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Diagrammatic food specimen or cutaway view
+* 3–5 detached ingredient, cross-section, or process detached detail panels
 
 ## Information Modules
-
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 食物档案
+* 核心食材
+* 制作工艺
+* 口味特征
+* 营养数据
+* 变体流派
+* 饮食文化
 * 快速评分卡
 
 ## Rating Dimensions
-
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 风味层次
+* 制作难度
+* 食材稀缺度
+* 文化代表性
+* 国际知名度
 
 ## Observation Insets
-
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* 食材
+* 剖面
+* 工艺
+* 配料
+* 盛器
 
 ## Visualization Strip
-
 * 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* Ingredient diagram
+* Process flow
+* Regional variants
 
 ## Failure Prevention
-
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No restaurant advertising
+* No menu aesthetics
+* No food-blog style
+* No marketing language

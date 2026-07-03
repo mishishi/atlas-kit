@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: 周杰伦
+Category: 音乐
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,63 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Music Category Template
 
 ## Accent Color
 
-* Sandstone Gold #B88952
+* Deep Purple — #6E628C
 
 ## Identity
 
-* Architectural history and design encyclopedia page
+* Music encyclopedia and sound-culture profile page
 
 ## Hero Illustration
 
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Representative music composition showing performer, instrument, score, album, stage, or sonic structure
+* Present the subject as an encyclopedia entry, not a concert poster or album advertisement
+* 3–5 detached music-detail panels around the hero illustration
 
 ## Information Modules
 
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 音乐档案
+* 创作背景
+* 曲式结构
+* 声音语言
+* 编曲结构
+* 主题表达
+* 传播影响
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 艺术影响
+* 旋律识别度
+* 技术复杂度
+* 传播广度
+* 时代代表性
 
 ## Observation Insets
 
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* Select 3–5 distinctive musical or visual details appropriate to the subject
+* Examples: instrument, score, rhythm pattern, motif, performer, album cover detail, stage element, cultural symbol
+* Prefer visually different details
+* Avoid showing unrelated instruments, performers, or modern adaptations unless relevant
+* Short labels only
 
 ## Visualization Strip
 
-* 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* 1–2 compact analytical visualizations
+* Song structure
+* Timeline
+* Arrangement map
+* Rhythm or motif diagram
+* Minimal labels only
 
 ## Failure Prevention
 
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No concert poster
+* No album marketing
+* No streaming platform interface
+* No fabricated lyrics, awards, chart rankings, or quotations
+* Do not confuse the musical work with a single performer unless the subject requires it
+* Distinguish original work, performance version, and later adaptation

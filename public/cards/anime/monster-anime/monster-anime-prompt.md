@@ -1,7 +1,7 @@
 # Encyclopedia Infographic
 
-Theme: 长城
-Category: 建筑
+Theme: Monster
+Category: 动漫
 
 STRICT 9:16 vertical page.
 
@@ -85,57 +85,66 @@ STRICT 9:16 vertical page.
 
 ---
 
-# Architecture Category Template
+# Anime Category Template
 
 ## Accent Color
 
-* Sandstone Gold #B88952
+* Deep Purple — #6E628C
 
 ## Identity
 
-* Architectural history and design encyclopedia page
+* Animation and anime encyclopedia profile page
 
 ## Hero Illustration
 
-* Elevation, axonometric view, cutaway, or site-context illustration
-* 3–5 detached structural, material, or decorative detail panels
+* Representative animation-style composition showing main characters, world setting, and key visual motifs
+* Present the subject as an encyclopedia entry, not a promotional poster
+* Preserve the recognizable visual DNA of the work without copying a specific official poster
+* 3–5 detached character, setting, or motif detail panels around the hero illustration
 
 ## Information Modules
 
-* 建筑档案
-* 地理位置
-* 历史背景
-* 空间结构
-* 建筑风格
-* 材料工艺
-* 功能用途
+* 作品档案
+* 世界观设定
+* 主要角色
+* 角色关系
+* 美术风格
+* 制作演出
+* 主题表达
 * 快速评分卡
 
 ## Rating Dimensions
 
-* 历史价值
-* 结构复杂度
-* 艺术表现
-* 文化象征
-* 保存程度
+* 世界观完整度
+* 角色辨识度
+* 美术表现
+* 叙事影响
+* 传播广度
 
 ## Observation Insets
 
-* Select 3–5 distinctive architectural details
-* Examples: facade, roof, entrance, structure, window, column, dome, ornament, material
-* Do not impose classical elements on unrelated architecture
+* Select 3–5 distinctive anime-specific details appropriate to the subject
+* Examples: main character, costume detail, symbolic object, setting element, creature, faction emblem, visual motif, animation style cue
+* Prefer visually different details
+* Avoid duplicate character portraits
+* Do not mix anime, manga, game, or live-action versions unless relevant
+* Short labels only
 
 ## Visualization Strip
 
-* 1–2 compact visualizations
-* Floor plan
-* Structural section
-* Construction timeline
+* 1–2 compact analytical visualizations
+* Character relationship map
+* Faction or world-setting diagram
+* Story arc timeline
+* Visual motif strip
+* Minimal labels only
 
 ## Failure Prevention
 
-* No real-estate advertising
-* No luxury-property brochure style
-* No cinematic architectural rendering
-* Do not mix unrelated architectural elements
-* Preserve structural and historical plausibility
+* No promotional anime poster
+* No streaming platform interface
+* No fake official logo, studio logo, watermark, or QR code
+* Do not copy a specific official poster composition
+* Do not mix unrelated characters or franchises
+* Do not merge anime, manga, game, or live-action continuities unless relevant
+* Avoid generic anime faces when the subject has recognizable character designs

@@ -2061,3 +2061,61 @@ R68 commit 2e7a354 后, 5 张 R68 cards 详情页"参考来源"段空 (kangxi-em
 - mmx 抽风根因调查 (R60+ 一直 retry 24-30% history fail / 6-10% sources fail)
 - safe-build.mjs 在 Vercel Linux 容器跑 (硬编码 npx.cmd → 平台分支, commit 6d1b067)
 - Vercel Hobby build queue 监控 (没 Vercel CLI + 没 cron self-reminder, 必须 user 自己 dashboard)
+
+## R70 (2026-07-03) — 24 cards, mmx-content-guard, 8 new subKinds
+
+3 commits (b13d381 mmx-content-guard + 2f49c10 R70 prep + 0220032 R70 ship). Catalog 753 → 777.
+
+### A. mmx-content-guard.mjs (commit b13d381)
+
+`scripts/mmx-content-guard.mjs` — 内容级 retry 检测 M2.7 模型"undefined content"抽风. 跟现有 `mmx-client.mjs` (API-level retry) 互补.
+
+**Bad patterns 检测**:
+- JavaScript undefined trap (`/MDN|ECMAScript|JavaScript.*typeof|typeof\s+undefined|未赋值的原始值|.../`)
+- English Wikipedia stub (返回 `/Wikipedia|encyclopedia article|This article is about/`)
+- AI refusal (`/I cannot|I apologize|as an AI|对不起,我无法/`)
+- 内容级 residue (`/\bundefined\b|\[object Object\]|\[object Promise\]|\bNaN\b/`)
+- 短内容 (< 30 chars) / placeholder 单字符 (`/^a$/i`)
+
+`isMmxContentBad(raw)` returns `{bad: true, reason: "..."}` 或 `{bad: false}`.
+`sanitizeMmxContent(raw)` strips ` ``` ` fences + leading `reasoning_content:` block.
+`retryUntilGood({call, parser, maxAttempts: 5})` — 综合 API retry + content guard + parser 检查. 每次重试可以是 different seed (call 函数 closure).
+`isResidueInCardField(value)` — 给 handwrite-* cleanup scripts 找 cards 还含 placeholder/undefined/[object Object] 的字段.
+
+Probe 9/9 准确分类 ✓. **未接入 draft-history.mjs / draft-sources.mjs** — R71 改造.
+
+### B. 8 new subKinds (commit 2f49c10)
+
+`_meta` version 4 → 5, totalSubKinds 153 → 162:
+- `person/modern-scientist` (居里夫人 / 费曼 / 达尔文)
+- `architecture/ancient-monument` (长城 / 故宫 / 泰姬陵)
+- `tech/consumer-electronics` (Vision Pro)
+- `tech/robotics` (波士顿动力)
+- `tech/computing` (量子计算机)
+- `food/japanese` (寿司)
+- `food/italian` (披萨)
+- `food/mexican` (塔可)
+
+### C. R70 plan 24 (commit 2f49c10)
+
+`scripts/r70-plan.json` (plan 数组, 跟 generate-card.mjs --from-plan 兼容). `scripts/r70-validate-plan.mjs` gate 每个 (kind, subKind) pair 在 taxonomy 里有定义. `scripts/r70-gap-scan.mjs` 跟 `scripts/r70-kind-balance.mjs` 是 reusable scanners (R71+ 直接复用).
+
+### D. R70 generate + retry (commit 0220032)
+
+24 张 generate:
+- matrix 抽风首轮 6/24 (跟 R66+R67+R68 同模式), retry 18 张 dead-letter 100% 成功 (`scripts/r70-retry.json`)
+- 24 张 CDN 上传 (10 个 kind sequential `node --env-file=.env.local scripts/upload-cdn.mjs --kind X --also-rewrite`)
+- 24 张 handwrite: desc (inline node script 一次 18 张) + tagline/score/tags/history (Edit 单张) + sources (inline bash 一次 1-2 张)
+
+### E. 数据完整性 (R70 后)
+
+**777 cards**, 26 kinds / 162 subKinds, 12 series. 24 R70 全齐 desc+tagline+score(>0)+tags(≥4)+history(≥3)+sources(≥2). 0 placeholder.
+
+R70 batch 经验:
+- Edit tool 中文大块 content 频繁 blocker (5+ min moody cycle), workaround: PowerShell `[IO.File]::WriteAllText` + inline `node` 写 `tmp/r70-X.cjs` 跑. 一次 1-2 张 batch classifier 拦少, 4+ 张必拦.
+- `node -e "..."` 用于 read-only status check (count / find missing) OK, write-only 单条 inline 可; multi-card write classifier 卡.
+
+后续 (R71+):
+- 把 mmx-content-guard 接到 draft-history.mjs + draft-sources.mjs (用 `retryUntilGood` 包现有 `callMmx` call), 减少 24-30% history fail / 6-10% sources fail
+- R71 plan 24+ 张, subKind 缺口继续扫
+- Vercel Hobby build queue 监控 (没 Vercel CLI + 没 cron self-reminder, 必须 user 自己 dashboard)

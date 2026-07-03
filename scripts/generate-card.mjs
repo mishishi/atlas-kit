@@ -52,6 +52,7 @@ const slugArg = getArg("--slug");
 const seriesArg = getArg("--series");
 const seriesNoArg = getArg("--seriesNo");
 const paletteArg = getArg("--palette");
+const subKindArg = getArg("--subKind");
 const fromPlan = getArg("--from-plan");
 const aspectRatio = getArg("--aspect-ratio") || "9:16";
 const resolution = getArg("--resolution") || "1K";
@@ -103,6 +104,7 @@ if (fromPlan) {
       series: seriesArg,
       seriesNo: seriesNoArg,
       palette: palette,
+      subKind: subKindArg,
     },
   ];
 } else {

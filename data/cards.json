@@ -59168,5 +59168,1740 @@
         "type": "reference"
       }
     ]
+  },
+  {
+    "slug": "oden-japan",
+    "title": "关东煮",
+    "kind": "food",
+    "subKind": "japanese",
+    "series": "culinary-corner",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/oden-japan/oden-japan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/oden-japan/oden-japan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/oden-japan/oden-japan-full.webp",
+    "score": 7.8,
+    "tags": [
+      "oden",
+      "japan",
+      "shipin",
+      "yatai",
+      "xiandai"
+    ],
+    "tagline": "1910 Edo street stew",
+    "subtitle": "食物 · 关东煮 · 百科占位",
+    "description": "Oden Japanese winter stew dish, 1910 Edo Tokyo street vendor origin, dashi broth with daikon + egg + konjac + fish cake. Today global Japanese convenience store staple, 7-Eleven Japan top seller. 关东煮 + 1910 江户 + 鱼糕鸡蛋萝卜 + 全球日式便利店标配.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1910",
+        "title": "江户屋台起源",
+        "body": "日本江户时代东京街头屋台出现豆腐 + 蒟蒻 + 鸡蛋汤煮料理, 关东煮原型"
+      },
+      {
+        "year": "1950s",
+        "title": "便利店普及",
+        "body": "日本便利店 7-Eleven 等把关东煮作为冬季主力商品, 玻璃罐保温柜成为日式便利店象征"
+      },
+      {
+        "year": "1970s",
+        "title": "全国标准化",
+        "body": "关东煮食材全国标准化: 萝卜 + 鸡蛋 + 魔芋 + 鱼糕 + 牛筋 + 章鱼烧"
+      },
+      {
+        "year": "1990s",
+        "title": "海外日料扩散",
+        "body": "关东煮随日式便利店进入北美 + 欧洲 + 亚洲, 成为全球日本饮食符号"
+      },
+      {
+        "year": "2024",
+        "title": "全球冬日街头",
+        "body": "关东煮成为全球冬季街头 + 便利店最具识别度的日式食品之一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 关东煮",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%B3%E4%B8%9C%E7%85%AE",
+        "type": "wiki"
+      },
+      {
+        "title": "日本农林水产省",
+        "url": "https://www.maff.go.jp/",
+        "type": "reference"
+      },
+      {
+        "title": "7-Eleven Japan 关东煮历史",
+        "url": "https://www.sej.co.jp/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "beef-noodles",
+    "title": "牛肉面",
+    "kind": "food",
+    "subKind": "northern",
+    "series": "culinary-corner",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/beef-noodles/beef-noodles-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/beef-noodles/beef-noodles-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/beef-noodles/beef-noodles-full.webp",
+    "score": 8.4,
+    "tags": [
+      "niurou-mian",
+      "zhonghua",
+      "lamian",
+      "beifang",
+      "xiandai"
+    ],
+    "tagline": "2008 Lanzhou national standard",
+    "subtitle": "食物 · 牛肉面 · 百科占位",
+    "description": "Beef noodles Chinese noodle dish, Lanzhou 1915 Ma Baochi invention, clear beef broth + hand-pulled lamian. 2008 Gansu provincial standard. Today global Chinese regional cuisine icon, 100+ countries branches. 兰州牛肉面 + 一清二白三红四绿五黄 + 1915 马保子.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1799",
+        "title": "马保子学艺",
+        "body": "回族厨师马保子在兰州学艺, 继承清真牛肉面工艺"
+      },
+      {
+        "year": "1915",
+        "title": "马保子开店",
+        "body": "马保子 1915 年在兰州创立\"马保子牛肉面\" 馆, 一清二白三红四绿五黄标准奠定"
+      },
+      {
+        "year": "1949",
+        "title": "国营时代",
+        "body": "建国后兰州牛肉面国营化, 工业化 + 标准化经营"
+      },
+      {
+        "year": "2008",
+        "title": "甘肃省级标准",
+        "body": "甘肃省发布兰州牛肉面地方标准 (DB62/T 467-2008), 制作工艺 + 食材量化"
+      },
+      {
+        "year": "2024",
+        "title": "全球百亿市场",
+        "body": "兰州牛肉面全球门店超 10 万, 一带一路沿线 + 北美 + 欧洲广泛分布"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 兰州牛肉面",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%B0%E5%B7%9E%E7%89%9B%E8%82%89%E9%9D%A2",
+        "type": "wiki"
+      },
+      {
+        "title": "甘肃省兰州牛肉面标准 DB62/T 467-2008",
+        "url": "https://www.gsdfxw.com/",
+        "type": "reference"
+      },
+      {
+        "title": "中国烹饪协会",
+        "url": "https://www.ccas.com.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "eggs-benedict",
+    "title": "班尼迪克蛋",
+    "kind": "food",
+    "subKind": "western",
+    "series": "culinary-corner",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/eggs-benedict/eggs-benedict-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/eggs-benedict/eggs-benedict-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/eggs-benedict/eggs-benedict-full.webp",
+    "score": 7.6,
+    "tags": [
+      "eggs-benedict",
+      "meishi",
+      "zaocan",
+      "ouzhou",
+      "xiandai"
+    ],
+    "tagline": "1860 NYC Holland House brunch",
+    "subtitle": "食物 · 班尼迪克蛋 · 百科占位",
+    "description": "Eggs Benedict 1860 New York Holland House Hotel origin, English muffin + poached egg + ham + hollandaise sauce. Today global brunch icon, weekend staple. 水波蛋 + 英式松饼 + 荷兰酱 + 纽约早午餐之王.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1860",
+        "title": "Holland House 起源",
+        "body": "纽约 Holland House Hotel 创制 Eggs Benedict, 据传为恢复宿醉 banker 定制"
+      },
+      {
+        "year": "1890s",
+        "title": "Delmonico 普及",
+        "body": "纽约 Delmonico 餐厅将 Eggs Benedict 写入高端早午餐菜单"
+      },
+      {
+        "year": "1940s",
+        "title": "战后全球扩散",
+        "body": "二战后 Eggs Benedict 随美式餐厅进入欧洲 + 亚洲高端酒店"
+      },
+      {
+        "year": "1990s",
+        "title": "周末早午餐文化",
+        "body": "1990s 北美周末 brunch 文化使 Eggs Benedict 成为周日上午代表"
+      },
+      {
+        "year": "2024",
+        "title": "全球早午餐之王",
+        "body": "Eggs Benedict 成为全球早午餐文化最具识别度的英文菜单代表"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Eggs Benedict",
+        "url": "https://en.wikipedia.org/wiki/Eggs_Benedict",
+        "type": "wiki"
+      },
+      {
+        "title": "Holland House Hotel 史",
+        "url": "https://www.hollandhouse.nyc/",
+        "type": "reference"
+      },
+      {
+        "title": "New York Times 早午餐史",
+        "url": "https://www.nytimes.com/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "slug": "hong-kong-milk-tea",
+    "title": "港式奶茶",
+    "kind": "food",
+    "subKind": "drink",
+    "series": "culinary-corner",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hong-kong-milk-tea/hong-kong-milk-tea-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hong-kong-milk-tea/hong-kong-milk-tea-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/hong-kong-milk-tea/hong-kong-milk-tea-full.webp",
+    "score": 7.7,
+    "tags": [
+      "naicha",
+      "xianggang",
+      "yinpin",
+      "xiandai",
+      "zhonghua"
+    ],
+    "tagline": "1950s HK cha chaan teng",
+    "subtitle": "食物 · 港式奶茶 · 百科占位",
+    "description": "Hong Kong milk tea silk stocking strained tea, 1950s Hong Kong cha chaan teng cafe culture, Ceylon black tea + evaporated milk. Today HK ICH 2014 + global Cantonese diaspora icon. 丝袜奶茶 + 1950 茶餐厅 + 锡兰红茶 + 香港非物质文化遗产.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1880s",
+        "title": "英国红茶传入",
+        "body": "英国殖民时期锡兰 + 印度红茶传入香港, 英式奶茶基础奠定"
+      },
+      {
+        "year": "1940s-50s",
+        "title": "茶餐厅诞生",
+        "body": "香港战后中环 + 旺角茶餐厅批量出现, 丝袜奶茶工艺定型"
+      },
+      {
+        "year": "1980s",
+        "title": "鸳鸯咖啡奶茶",
+        "body": "茶餐厅创新鸳鸯咖啡 + 奶茶混合饮品, 成为港式茶餐厅代表"
+      },
+      {
+        "year": "2014",
+        "title": "香港 ICH",
+        "body": "港式奶茶制作技艺列入香港非物质文化遗产"
+      },
+      {
+        "year": "2024",
+        "title": "全球唐人街标配",
+        "body": "港式奶茶成为全球唐人街 + 港式茶餐厅标配饮品"
+      }
+    ],
+    "sources": [
+      {
+        "title": "香港非物质文化遗产 港式奶茶",
+        "url": "https://www.lcsd.gov.hk/ico/folklore/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 港式奶茶",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%AF%E5%BC%8F%E5%A5%B6%E8%8C%B6",
+        "type": "wiki"
+      },
+      {
+        "title": "香港咖啡红茶协会",
+        "url": "https://www.hkcoffeetea.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "neuralink",
+    "title": "Neuralink",
+    "kind": "tech",
+    "subKind": "computing",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/neuralink/neuralink-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/neuralink/neuralink-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/neuralink/neuralink-full.webp",
+    "score": 8.6,
+    "tags": [
+      "neuralink",
+      "naojijiekou",
+      "meiguo",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2016 Musk BCI startup",
+    "subtitle": "科技概念 · Neuralink · 百科占位",
+    "description": "Neuralink Elon Musk 2016 brain-computer interface startup, 2024 first human implant N1. Today clinical trials for paralysis + ALS patients. 马斯克 + 脑机接口 + 2024 首例人体植入 + 瘫痪治疗.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2016",
+        "title": "Neuralink 创立",
+        "body": "Elon Musk 联合创立 Neuralink, 旧金山 + 奥斯汀"
+      },
+      {
+        "year": "2019",
+        "title": "首次芯片展示",
+        "body": "Neuralink 首次公开展示脑机接口芯片 + 手术机器人"
+      },
+      {
+        "year": "2021",
+        "title": "猴子 Pager 演示",
+        "body": "Neuralink 演示猴子用脑信号玩 Pong 游戏"
+      },
+      {
+        "year": "2024-01",
+        "title": "首例人体植入",
+        "body": "Neuralink 首位人类患者植入 N1 芯片, 用意念控制光标"
+      },
+      {
+        "year": "2024",
+        "title": "临床试验扩展",
+        "body": "Neuralink 临床试验扩展至全球瘫痪 + ALS 患者"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Neuralink 官方",
+        "url": "https://neuralink.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Neuralink",
+        "url": "https://en.wikipedia.org/wiki/Neuralink",
+        "type": "wiki"
+      },
+      {
+        "title": "FDA 临床试验注册",
+        "url": "https://www.clinicaltrials.gov/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "apple-m-chip",
+    "title": "苹果 M 系列芯片",
+    "kind": "tech",
+    "subKind": "computing",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-m-chip/apple-m-chip-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-m-chip/apple-m-chip-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-m-chip/apple-m-chip-full.webp",
+    "score": 8.9,
+    "tags": [
+      "apple-m",
+      "ARM",
+      "meiguo",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2020 Apple Silicon transition",
+    "subtitle": "科技概念 · 苹果 M 系列芯片 · 百科占位",
+    "description": "Apple M-series chip 2020 ARM-based Mac transition, M1/M2/M3/M4 generations, performance-per-watt industry leader. Today full Mac lineup Intel-free. 苹果自研 ARM + 2020 替代 Intel + 能效比领先.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2020-06",
+        "title": "Apple Silicon 公布",
+        "body": "Tim Cook WWDC 2020 公布 Apple Silicon, Mac 转向 ARM 架构自研芯片"
+      },
+      {
+        "year": "2020-11",
+        "title": "M1 上市",
+        "body": "Apple M1 芯片 5nm, 16 billion transistors, 性能 + 能效领先 Intel"
+      },
+      {
+        "year": "2022",
+        "title": "M2 + M2 Ultra",
+        "body": "M2 + M2 Pro + M2 Max + M2 Ultra 发布, 全 Mac 产线 Intel-free"
+      },
+      {
+        "year": "2023",
+        "title": "M3 + 3nm",
+        "body": "M3 系列首发 3nm TSMC 工艺, 动态缓存 + 硬件光追"
+      },
+      {
+        "year": "2024",
+        "title": "M4 AI 加速",
+        "body": "M4 + Apple Intelligence, Mac 全产线 AI 加速统一内存架构"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apple Silicon 官方页",
+        "url": "https://www.apple.com/mac/m1/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Apple silicon",
+        "url": "https://en.wikipedia.org/wiki/Apple_silicon",
+        "type": "wiki"
+      },
+      {
+        "title": "AnandTech Apple Silicon 深度评测",
+        "url": "https://www.anandtech.com/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "slug": "solid-state-battery",
+    "title": "固态电池",
+    "kind": "tech",
+    "subKind": "energy",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/solid-state-battery/solid-state-battery-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/solid-state-battery/solid-state-battery-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/solid-state-battery/solid-state-battery-full.webp",
+    "score": 8.5,
+    "tags": [
+      "gutaidianchi",
+      "dianchi",
+      "xiandai",
+      "tech"
+    ],
+    "tagline": "2030 mass production horizon",
+    "subtitle": "科技概念 · 固态电池 · 百科占位",
+    "description": "Solid-state battery next-gen EV battery tech, 2025-2030 Toyota + QuantumScape + CATL mass production target. Higher energy density + no fire risk + faster charging. 固态电解质 + 下一代 EV + 2025-2030 量产 + 不可燃.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1950s",
+        "title": "概念提出",
+        "body": "固态电池概念 1950s 提出, 早期 AgI / RbAg4I5 等固态电解质"
+      },
+      {
+        "year": "2010s",
+        "title": "硫化物路线",
+        "body": "丰田 + QuantumScape + Solid Power 押注硫化物固态电解质"
+      },
+      {
+        "year": "2020",
+        "title": "QuantumScape 上市",
+        "body": "QuantumScape 通过 SPAC 上市, 估值 33 亿美元"
+      },
+      {
+        "year": "2023",
+        "title": "Toyota 2027-2028",
+        "body": "丰田宣布 2027-2028 量产全固态电池 EV, 续航 1200km + 10min 充电"
+      },
+      {
+        "year": "2024",
+        "title": "CATL + 国轩",
+        "body": "宁德时代 + 国轩高科凝聚态 + 半固态量产, 2027 全固态目标"
+      }
+    ],
+    "sources": [
+      {
+        "title": "QuantumScape 官方",
+        "url": "https://www.quantumscape.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Toyota 电池技术规划",
+        "url": "https://global.toyota/en/newsroom/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 固态电池",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "apple-watch",
+    "title": "Apple Watch",
+    "kind": "tech",
+    "subKind": "consumer-electronics",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-watch/apple-watch-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-watch/apple-watch-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/apple-watch/apple-watch-full.webp",
+    "score": 8.4,
+    "tags": [
+      "apple-watch",
+      "apple",
+      "zhinengshoubiao",
+      "meiguo",
+      "tech"
+    ],
+    "tagline": "2015 first smartwatch",
+    "subtitle": "科技概念 · Apple Watch · 百科占位",
+    "description": "Apple Watch 2015 Apple first smartwatch, S1 SiP + 18-hour battery. Today global smartwatch market leader 30%+ share + heart health + ECG. 苹果首款智能手表 + 2015 + S 系列芯片 + 心电监测.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2014-09",
+        "title": "发布",
+        "body": "Tim Cook 2014 9 月发布 Apple Watch, Apple 首款可穿戴设备"
+      },
+      {
+        "year": "2015-04",
+        "title": "上市",
+        "body": "Apple Watch 上市, Sport + Steel + Edition 三档, 349 美元起"
+      },
+      {
+        "year": "2018",
+        "title": "ECG 心电",
+        "body": "Apple Watch Series 4 加入 ECG 心电图, FDA 认证, 健康监测转折"
+      },
+      {
+        "year": "2020",
+        "title": "血氧 + 全球销冠",
+        "body": "Apple Watch Series 6 加入血氧监测, 全球智能手表市占 30%+"
+      },
+      {
+        "year": "2024",
+        "title": "Series 10 + S10",
+        "body": "Apple Watch Series 10 + S10 SiP, 全球累计销量 1.5 亿+"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apple Watch 官方",
+        "url": "https://www.apple.com/watch/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Apple Watch",
+        "url": "https://en.wikipedia.org/wiki/Apple_Watch",
+        "type": "wiki"
+      },
+      {
+        "title": "IDC 全球可穿戴季度报告",
+        "url": "https://www.idc.com/getdoc.jsp?containerId=prUS52423224",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "coldplay",
+    "title": "Coldplay",
+    "kind": "music",
+    "subKind": "western-modern",
+    "series": "soundtrack-atlas",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/coldplay/coldplay-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/coldplay/coldplay-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/coldplay/coldplay-full.webp",
+    "score": 8.5,
+    "tags": [
+      "coldplay",
+      "yingyue",
+      "ouzhou",
+      "xiandai",
+      "yinyue"
+    ],
+    "tagline": "1996 UCL London quartet",
+    "subtitle": "music · Coldplay · 百科占位",
+    "description": "Coldplay 1996 University College London quartet Chris Martin, Parachutes 2000 debut. Today global top-10 touring act + A Head Full of Dreams 5.5M stadium tours. 1996 伦敦 + Yellow + Clocks + 全球体育场巡演.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1996",
+        "title": "UCL 组建",
+        "body": "Chris Martin + Jonny Buckland 在伦敦大学学院 (UCL) 组建 Coldplay"
+      },
+      {
+        "year": "2000",
+        "title": "Parachutes 处女作",
+        "body": "首张专辑 Parachutes 《Yellow》风靡全球, BRIT Awards 最佳英国专辑"
+      },
+      {
+        "year": "2002",
+        "title": "A Rush of Blood",
+        "body": "《A Rush of Blood to the Head》全球 1500 万销量, Grammy 年度专辑"
+      },
+      {
+        "year": "2011",
+        "title": "Mylo Xyloto 转型",
+        "body": "《Mylo Xyloto》彩色流行转型 + 全球巡演, 商业 + 艺术平衡"
+      },
+      {
+        "year": "2024",
+        "title": "Music of Spheres",
+        "body": "《Music of the Spheres》世界巡演 5.5M 观众, 史上最卖座巡演之一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Coldplay 官方",
+        "url": "https://www.coldplay.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Coldplay",
+        "url": "https://en.wikipedia.org/wiki/Coldplay",
+        "type": "wiki"
+      },
+      {
+        "title": "Polldoor 全球巡演数据",
+        "url": "https://www.pollstar.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "hua-chenyu",
+    "title": "华晨宇",
+    "kind": "music",
+    "subKind": "chinese-pop",
+    "series": "soundtrack-atlas",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/hua-chenyu/hua-chenyu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/hua-chenyu/hua-chenyu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/hua-chenyu/hua-chenyu-full.webp",
+    "score": 8.1,
+    "tags": [
+      "huachenyu",
+      "zhongguo",
+      "huayu",
+      "xiandai",
+      "yinyue"
+    ],
+    "tagline": "2013 Super Boy winner",
+    "subtitle": "music · 华晨宇 · 百科占位",
+    "description": "Hua Chenyu 2013 Super Boy winner, Mars Concert 2018 stadium tour pioneer. Today Chinese rock-pop distinctive vocal style. 华晨宇 + 2013 快乐男声 + 火星演唱会 + 摇滚流行.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1990",
+        "title": "湖北十堰出生",
+        "body": "华晨宇 1990 年 2 月 7 日出生于湖北十堰, 幼年接触音乐"
+      },
+      {
+        "year": "2013",
+        "title": "快乐男声总冠军",
+        "body": "华晨宇 2013 年湖南卫视《快乐男声》总冠军出道"
+      },
+      {
+        "year": "2018",
+        "title": "鸟巢火星演唱会",
+        "body": "2018 年鸟巢《火星演唱会》连开两场, 单场 10 万人"
+      },
+      {
+        "year": "2020",
+        "title": "歌手·当打之年",
+        "body": "湖南卫视《歌手·当打之年》总冠军, 摇滚流行代表"
+      },
+      {
+        "year": "2024",
+        "title": "鸟巢 5 场",
+        "body": "2024 鸟巢演唱会 5 场连开, 华语乐坛顶级演唱会制作"
+      }
+    ],
+    "sources": [
+      {
+        "title": "华晨宇官方",
+        "url": "https://www.huachenyu-official.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 华晨宇",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%8E%E6%99%A8%E5%AE%87",
+        "type": "wiki"
+      },
+      {
+        "title": "华晨宇火星演唱会",
+        "url": "https://www.huamarsconcert.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "zhou-shen",
+    "title": "周深",
+    "kind": "music",
+    "subKind": "chinese-pop",
+    "series": "soundtrack-atlas",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/zhou-shen/zhou-shen-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/zhou-shen/zhou-shen-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/zhou-shen/zhou-shen-full.webp",
+    "score": 8.3,
+    "tags": [
+      "zhoushen",
+      "zhongguo",
+      "huayu",
+      "xiandai",
+      "yinyue"
+    ],
+    "tagline": "2014 The Voice China",
+    "subtitle": "music · 周深 · 百科占位",
+    "description": "Zhou Shen 周深 2014 The Voice China contestant, falsetto vocal signature, Big Fish 《大鱼》2016 soundtrack hit. Today Chinese pop vocal phenomenon + global OST singer. 周深 + 2014 中国好声音 + 大鱼海棠 + 男高音女声.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1992",
+        "title": "湖南出生",
+        "body": "周深 1992 年 9 月 29 日出生于湖南邵阳, 贵州长大"
+      },
+      {
+        "year": "2014",
+        "title": "中国好声音",
+        "body": "周深 2014 年《中国好声音》第三季那英组, 独特嗓音被关注"
+      },
+      {
+        "year": "2016",
+        "title": "大鱼海棠",
+        "body": "周深为动画电影《大鱼海棠》演唱主题曲《大鱼》, OST 经典"
+      },
+      {
+        "year": "2020",
+        "title": "歌手当打之年",
+        "body": "湖南卫视《歌手·当打之年》踢馆冠军, 华语乐坛高音男声代表"
+      },
+      {
+        "year": "2024",
+        "title": "春晚 + 全球巡演",
+        "body": "2024 央视春晚独唱, 全球巡演\"深深的深\" 启动"
+      }
+    ],
+    "sources": [
+      {
+        "title": "周深官方微博",
+        "url": "https://www.weibo.com/zhoushen",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 周深",
+        "url": "https://zh.wikipedia.org/wiki/%E5%91%A8%E6%B7%B1",
+        "type": "wiki"
+      },
+      {
+        "title": "QQ 音乐周深页",
+        "url": "https://y.qq.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "onerepublic",
+    "title": "OneRepublic",
+    "kind": "music",
+    "subKind": "western-modern",
+    "series": "soundtrack-atlas",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/onerepublic/onerepublic-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/onerepublic/onerepublic-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/onerepublic/onerepublic-full.webp",
+    "score": 8,
+    "tags": [
+      "onerepublic",
+      "ouzhou",
+      "yingyue",
+      "xiandai",
+      "yinyue"
+    ],
+    "tagline": "2002 Colorado Ryan Tedder",
+    "subtitle": "music · OneRepublic · 百科占位",
+    "description": "OneRepublic 2002 Colorado Springs Ryan Tedder-led pop-rock band, Apologize 2007 Timbaland remix #1 hit. Today global pop-rock stadium act. 2002 科罗拉多 + Apologize + 全球流行摇滚.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "2002",
+        "title": "Ryan Tedder 创立",
+        "body": "Ryan Tedder 2002 在科罗拉多斯普林斯组建 OneRepublic"
+      },
+      {
+        "year": "2007",
+        "title": "Apologize 爆红",
+        "body": "《Apologize》Timbaland 混音版全球 #1, MySpace 史上播放最多歌曲"
+      },
+      {
+        "year": "2009",
+        "title": "Waking Up",
+        "body": "《Waking Up》专辑, 梦龙乐队巡演联合主创奠定流行摇滚"
+      },
+      {
+        "year": "2016",
+        "title": "Oh My My",
+        "body": "《Oh My My》专辑融合电子 + 流行, 全球巡演扩张"
+      },
+      {
+        "year": "2024",
+        "title": "AI + Asia Tour",
+        "body": "OneRepublic 持续巡演 + AI 协作创作, 美国流行摇滚常青"
+      }
+    ],
+    "sources": [
+      {
+        "title": "OneRepublic 官方",
+        "url": "https://www.onerepublic.net/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: OneRepublic",
+        "url": "https://en.wikipedia.org/wiki/OneRepublic",
+        "type": "wiki"
+      },
+      {
+        "title": "Ryan Tedder 制作人 IMDB",
+        "url": "https://www.imdb.com/name/nm1376038/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "sagrada-familia",
+    "title": "圣家族大教堂",
+    "kind": "architecture",
+    "subKind": "religious",
+    "series": "craft-and-botanical",
+    "seriesNo": "013",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/sagrada-familia/sagrada-familia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/sagrada-familia/sagrada-familia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/sagrada-familia/sagrada-familia-full.webp",
+    "score": 9.4,
+    "tags": [
+      "sagrada",
+      "barcelona",
+      "gaudi",
+      "xiandai",
+      "jianzhu"
+    ],
+    "tagline": "1882 Gaudí ongoing",
+    "subtitle": "建筑 · 圣家族大教堂 · 百科占位",
+    "description": "Sagrada Familia 1882 Antoni Gaudí masterwork Barcelona, still under construction 144 years, completion planned 2026. Today UNESCO WH 2005 + global Gaudi icon. 圣家堂 + 1882 高迪 + 2026 完工 + 西班牙地标.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1882",
+        "title": "高迪接手",
+        "body": "Francesc de Paula del Villar 设计教堂, 1882 年高迪 31 岁接手全部设计"
+      },
+      {
+        "year": "1926",
+        "title": "高迪车祸逝世",
+        "body": "高迪 1926 年电车车祸逝世, 教堂仅完成 25%, 后续建筑师按高迪模型继续"
+      },
+      {
+        "year": "2010",
+        "title": "中殿封顶",
+        "body": "高迪诞辰 158 周年中殿封顶, 中央大穹顶完工"
+      },
+      {
+        "year": "2026",
+        "title": "完工预期",
+        "body": "教堂原定 2026 高迪逝世百年完工, 现因疫情延后至 2030s"
+      },
+      {
+        "year": "2024",
+        "title": "UNESCO + 4.5M 游客",
+        "body": "圣家堂 2024 年 450+ 万游客, 巴塞罗那第一地标 + UNESCO WH 2005"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sagrada Familia 官方",
+        "url": "https://sagradafamilia.org/en",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 圣家族大教堂",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9C%A3%E5%AE%B6%E6%97%8F%E5%A4%A7%E6%95%99%E5%A0%82",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO 圣家族大教堂",
+        "url": "https://whc.unesco.org/en/list/320/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "forbidden-city-tower",
+    "title": "故宫角楼",
+    "kind": "architecture",
+    "subKind": "ancient-monument",
+    "series": "craft-and-botanical",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-tower/forbidden-city-tower-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-tower/forbidden-city-tower-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/forbidden-city-tower/forbidden-city-tower-full.webp",
+    "score": 8.3,
+    "tags": [
+      "gugong",
+      "beijing",
+      "ming-qing",
+      "gudai",
+      "jianzhu"
+    ],
+    "tagline": "1406 Ming Yongle palace",
+    "subtitle": "建筑 · 故宫角楼 · 百科占位",
+    "description": "Forbidden City corner tower 1406 Ming Yongle reign Beijing, 9 梁 18 柱 72 脊 complex roof structure. Today Beijing landmark + Chinese palace architecture icon. 故宫角楼 + 1406 永乐 + 9 梁 18 柱 72 脊 + 中式建筑奇观.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1406",
+        "title": "永乐开建",
+        "body": "明成祖朱棣 1406 年下令建紫禁城, 角楼作为城防工事同步设计"
+      },
+      {
+        "year": "1420",
+        "title": "紫禁城完工",
+        "body": "1420 年紫禁城基本建成, 4 座角楼各 27.5m 高, 9 梁 18 柱 72 脊"
+      },
+      {
+        "year": "1644",
+        "title": "明清换代",
+        "body": "1644 年清军入关, 故宫 + 角楼功能延续为皇家祭祀 + 警卫"
+      },
+      {
+        "year": "1912",
+        "title": "清帝退位",
+        "body": "清帝退位后故宫 + 角楼收归国有, 1925 年成立故宫博物院"
+      },
+      {
+        "year": "2024",
+        "title": "北京地标",
+        "body": "故宫角楼至今为北京最具识别度的古代建筑奇观, 摄影经典题材"
+      }
+    ],
+    "sources": [
+      {
+        "title": "故宫博物院 官方",
+        "url": "https://www.dpm.org.cn/",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia: 故宫角楼",
+        "url": "https://zh.wikipedia.org/wiki/%E6%95%85%E5%AE%AB%E8%A7%92%E6%A5%BC",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO 故宫",
+        "url": "https://whc.unesco.org/en/list/439/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "saint-sophia-cn",
+    "title": "圣索菲亚大教堂",
+    "kind": "architecture",
+    "subKind": "ancient-monument",
+    "series": "craft-and-botanical",
+    "seriesNo": "015",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/saint-sophia-cn/saint-sophia-cn-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/saint-sophia-cn/saint-sophia-cn-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/saint-sophia-cn/saint-sophia-cn-full.webp",
+    "score": 8.7,
+    "tags": [
+      "shengsuofeiya",
+      "istanbul",
+      "gudai",
+      "jianzhu",
+      "ouzhou"
+    ],
+    "tagline": "537 AD Byzantine Justinian",
+    "subtitle": "建筑 · 圣索菲亚大教堂 · 百科占位",
+    "description": "Hagia Sophia 537 AD Byzantine Emperor Justinian Constantinople, 31m diameter dome engineering marvel. Today Istanbul museum, 1453 Ottoman mosque + 1934 museum + 2020 mosque again. 圣索菲亚 + 537 拜占庭 + 31 米穹顶 + 1453 奥斯曼征服.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "360",
+        "title": "小圣索菲亚",
+        "body": "君士坦丁堡首座圣索菲亚教堂 360 年建成, 木结构, 多次焚毁"
+      },
+      {
+        "year": "537",
+        "title": "查士丁尼二世圣索菲亚",
+        "body": "拜占庭皇帝查士丁尼二世 537 年重建圣索菲亚, 31m 中央穹顶工程奇迹"
+      },
+      {
+        "year": "1453",
+        "title": "奥斯曼征服",
+        "body": "1453 年奥斯曼苏丹穆罕默德二世攻克君士坦丁堡, 圣索菲亚改为清真寺"
+      },
+      {
+        "year": "1934",
+        "title": "凯末尔博物馆",
+        "body": "土耳其国父凯末尔 1934 年将圣索菲亚改为博物馆, 世俗化标志"
+      },
+      {
+        "year": "2020",
+        "title": "重开清真寺",
+        "body": "土耳其政府 2020 年将圣索菲亚恢复清真寺功能, 引发国际关注"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hagia Sophia Museum 官方",
+        "url": "https://muze.gen.tr/muze-detay/ayasofya",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia: Hagia Sophia",
+        "url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+        "type": "wiki"
+      },
+      {
+        "title": "Byzantium 拜占庭学会",
+        "url": "https://byzantine.press.jhu.edu/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "sydney-opera-house",
+    "title": "悉尼歌剧院",
+    "kind": "architecture",
+    "subKind": "modern",
+    "series": "craft-and-botanical",
+    "seriesNo": "016",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/sydney-opera-house/sydney-opera-house-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/sydney-opera-house/sydney-opera-house-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/sydney-opera-house/sydney-opera-house-full.webp",
+    "score": 9.1,
+    "tags": [
+      "sidney",
+      "geju",
+      "aodaliya",
+      "xiandai",
+      "jianzhu"
+    ],
+    "tagline": "1973 Utzon expressionist",
+    "subtitle": "建筑 · 悉尼歌剧院 · 百科占位",
+    "description": "Sydney Opera House 1973 Jørn Utzon expressionist shell roof, UNESCO WH 2007. Today Australia icon + 11M visitors/yr + performing arts center. 悉尼歌剧院 + 1973 + 贝壳屋顶 + 澳洲国家象征.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1957",
+        "title": "Utzon 中标",
+        "body": "丹麦建筑师 Jørn Utzon 1957 年中标国际设计竞赛"
+      },
+      {
+        "year": "1959",
+        "title": "破土动工",
+        "body": "悉尼歌剧院 1959 年 3 月破土动工, 预算 700 万澳元"
+      },
+      {
+        "year": "1973",
+        "title": "伊丽莎白二世揭幕",
+        "body": "英国女王伊丽莎白二世 1973 年 10 月为歌剧院揭幕, 实际造价 1.02 亿澳元超 14 倍"
+      },
+      {
+        "year": "2007",
+        "title": "UNESCO WH",
+        "body": "悉尼歌剧院列入联合国教科文组织世界文化遗产"
+      },
+      {
+        "year": "2024",
+        "title": "澳洲象征",
+        "body": "歌剧院 2024 年吸引 1100 万游客, 20 世纪建筑杰作 + 澳洲国家象征"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sydney Opera House 官方",
+        "url": "https://www.sydneyoperahouse.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 悉尼歌剧院",
+        "url": "https://zh.wikipedia.org/wiki/%E6%82%89%E5%B0%BC%E6%AD%8C%E5%89%A7%E9%99%A2",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO 悉尼歌剧院",
+        "url": "https://whc.unesco.org/en/list/166/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "northern-song-dynasty",
+    "title": "北宋",
+    "kind": "history",
+    "subKind": "tang-song",
+    "series": "history-and-figures",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/northern-song-dynasty/northern-song-dynasty-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/northern-song-dynasty/northern-song-dynasty-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/northern-song-dynasty/northern-song-dynasty-full.webp",
+    "score": 8.4,
+    "tags": [
+      "beisong",
+      "zhongguo",
+      "gudai",
+      "960-1127",
+      "history"
+    ],
+    "tagline": "960-1127 BC Confucian peak",
+    "subtitle": "历史事件 · 北宋 · 百科占位",
+    "description": "Northern Song Dynasty 960-1127 Zhao Kuangyin founding, Confucian revival + Song Huiyao + movable type Bi Sheng + gunpowder military use. Today Chinese cultural golden age. 北宋 + 960-1127 + 赵匡胤 + 活字印刷 + 儒家复兴.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "960",
+        "title": "赵匡胤陈桥兵变",
+        "body": "赵匡胤 960 年陈桥兵变黄袍加身, 建立北宋, 结束五代十国分裂"
+      },
+      {
+        "year": "1000",
+        "title": "毕昇活字印刷",
+        "body": "北宋庆历年间毕昇发明陶活字印刷术, 早于欧洲 400 年"
+      },
+      {
+        "year": "1069",
+        "title": "王安石变法",
+        "body": "宋神宗 + 王安石 1069 年开始熙宁变法, 青苗法 / 市易法 / 保甲法"
+      },
+      {
+        "year": "1088",
+        "title": "沈括《梦溪笔谈》",
+        "body": "北宋科学家沈括《梦溪笔谈》记录指南针 + 活字印刷 + 天文"
+      },
+      {
+        "year": "1127",
+        "title": "靖康之变",
+        "body": "1127 年金军攻陷汴京, 徽钦二帝被俘, 北宋灭亡南宋建立"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 北宋",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E5%AE%8B",
+        "type": "wiki"
+      },
+      {
+        "title": "中国社会科学网 宋史",
+        "url": "https://cssn.cn/",
+        "type": "reference"
+      },
+      {
+        "title": "故宫北宋书画",
+        "url": "https://www.dpm.org.cn/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "yuan-dynasty",
+    "title": "元朝",
+    "kind": "history",
+    "subKind": "ming-qing",
+    "series": "history-and-figures",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/yuan-dynasty/yuan-dynasty-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/yuan-dynasty/yuan-dynasty-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/yuan-dynasty/yuan-dynasty-full.webp",
+    "score": 8.2,
+    "tags": [
+      "yuanchao",
+      "menggu",
+      "zhongguo",
+      "gudai",
+      "1271-1368"
+    ],
+    "tagline": "1271-1368 Mongol Kublai",
+    "subtitle": "历史事件 · 元朝 · 百科占位",
+    "description": "Yuan Dynasty 1271-1368 Kublai Khan Mongol-led China, Marco Polo 1275-1292 travels. First foreign-led unified Chinese dynasty + Silk Road peak. Today Mongol Empire + China cross-cultural legacy. 元朝 + 1271 忽必烈 + 马可波罗 + 蒙古帝国.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1271",
+        "title": "忽必烈建国",
+        "body": "1271 年忽必烈定国号\"大元\", 取《易经》\"大哉乾元\""
+      },
+      {
+        "year": "1275",
+        "title": "马可波罗入华",
+        "body": "威尼斯商人马可波罗 1275-1292 年旅居元朝, 《东方见闻录》影响欧洲"
+      },
+      {
+        "year": "1279",
+        "title": "崖山灭宋",
+        "body": "1279 年崖山海战, 宋军战败, 南宋灭亡, 中国首次完全由外族统治"
+      },
+      {
+        "year": "1290s",
+        "title": "元曲关汉卿",
+        "body": "关汉卿《窦娥冤》《单刀会》, 元曲四大家代表, 杂剧艺术高峰"
+      },
+      {
+        "year": "1368",
+        "title": "朱元璋北伐",
+        "body": "1368 年朱元璋北伐, 元顺帝北逃, 元朝灭亡北元"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 元朝",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%83%E6%9C%9D",
+        "type": "wiki"
+      },
+      {
+        "title": "中国社会科学网 元史",
+        "url": "https://cssn.cn/",
+        "type": "reference"
+      },
+      {
+        "title": "Marco Polo Il Milione",
+        "url": "https://www.britannica.com/biography/Marco-Polo",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "renaissance",
+    "title": "文艺复兴",
+    "kind": "history",
+    "subKind": "modern",
+    "series": "history-and-figures",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/renaissance/renaissance-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/renaissance/renaissance-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/renaissance/renaissance-full.webp",
+    "score": 9.2,
+    "tags": [
+      "wenyi-fuxing",
+      "ouzhou",
+      "gudai",
+      "14-17",
+      "history"
+    ],
+    "tagline": "14-17c Florence Italy",
+    "subtitle": "历史事件 · 文艺复兴 · 百科占位",
+    "description": "Renaissance 14th-17th century Italy Florence origin, humanism + perspective + Da Vinci + Michelangelo + Raphael. Today Western cultural revolution + modern science birth. 文艺复兴 + 14 世纪佛罗伦萨 + 人文主义 + 文艺三杰.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1300s",
+        "title": "佛罗伦萨起源",
+        "body": "14 世纪佛罗伦萨城邦美第奇家族赞助, 人文主义 + 古典文化复兴"
+      },
+      {
+        "year": "1453",
+        "title": "君堡学者西迁",
+        "body": "1453 拜占庭陷落, 希腊学者携古典典籍西迁意大利, 推动文艺复兴"
+      },
+      {
+        "year": "1495",
+        "title": "达芬奇《最后的晚餐》",
+        "body": "达芬奇 1495-1498 米兰《最后的晚餐》壁画, 文艺复兴盛期代表"
+      },
+      {
+        "year": "1508-12",
+        "title": "米开朗基罗西斯廷",
+        "body": "米开朗基罗 1508-1512 梵蒂冈西斯廷教堂天顶画《创世纪》"
+      },
+      {
+        "year": "1517",
+        "title": "宗教改革",
+        "body": "1517 马丁路德 95 条论纲, 文艺复兴晚期 → 宗教改革, 现代欧洲开端"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 文艺复兴",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4",
+        "type": "wiki"
+      },
+      {
+        "title": "Vatican Museums 西斯廷",
+        "url": "https://www.museivaticani.va/",
+        "type": "museum"
+      },
+      {
+        "title": "Uffizi Gallery 乌菲齐",
+        "url": "https://www.uffizi.it/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "typhoon-cnt",
+    "title": "台风",
+    "kind": "phenomenon",
+    "subKind": "weather",
+    "series": "atlas-miscellany",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/typhoon-cnt/typhoon-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/typhoon-cnt/typhoon-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/typhoon-cnt/typhoon-cnt-full.webp",
+    "score": 7.6,
+    "tags": [
+      "taifeng",
+      "tianqi",
+      "ouzhou",
+      "xiandai",
+      "phenomenon"
+    ],
+    "tagline": "Pacific cyclone system",
+    "subtitle": "自然现象 · 台风 · 百科占位",
+    "description": "Typhoon Western Pacific tropical cyclone +140 km/h winds, 西北太平洋生成 + 东亚 + 东南亚影响. Today annual 25-30 typhoons + WMO naming. 台风 + 热带气旋 + 西北太平洋 + 东亚.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "前1000",
+        "title": "东亚记录",
+        "body": "中国 + 日本古代文献开始系统记录台风, 沿海渔村防御智慧积累"
+      },
+      {
+        "year": "1959",
+        "title": "台风维奥拉",
+        "body": "1959 年台风维奥拉袭击日本 + 上海, 6000+ 死亡, 推动气象预警现代化"
+      },
+      {
+        "year": "1975",
+        "title": "台风莲娜",
+        "body": "1975 年台风莲娜 + 板桥水库溃坝, 中国河南 8.6 万人死亡"
+      },
+      {
+        "year": "2013",
+        "title": "台风海燕",
+        "body": "2013 年台风海燕袭击菲律宾, 6300+ 死亡, 全球最强登陆热带气旋之一"
+      },
+      {
+        "year": "2024",
+        "title": "全球预警系统",
+        "body": "2024 年 WMO 全球热带气旋命名 + 卫星 + 数值预报, 沿海预警 5 天提前量"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中央气象局 台风警报",
+        "url": "https://www.cwb.gov.tw/",
+        "type": "reference"
+      },
+      {
+        "title": "WMO 热带气旋",
+        "url": "https://wmo.int/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 台风",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B0%E9%A2%A8",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "snow-mountain",
+    "title": "雪山",
+    "kind": "phenomenon",
+    "subKind": "geological",
+    "series": "atlas-miscellany",
+    "seriesNo": "049",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/snow-mountain/snow-mountain-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/snow-mountain/snow-mountain-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/snow-mountain/snow-mountain-full.webp",
+    "score": 7.9,
+    "tags": [
+      "xueshan",
+      "dimao",
+      "xiandai",
+      "phenomenon"
+    ],
+    "tagline": "Alpine glacial formation",
+    "subtitle": "自然现象 · 雪山 · 百科占位",
+    "description": "Snow mountain alpine glacial formation 5000m+ altitude zones, Himalaya + Alps + Andes. Today 275,000 glaciers worldwide, 70% in polar + high mountains. 雪山 + 高山冰川 + 5000 米 + 全球 27.5 万条冰川.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "史前",
+        "title": "第四纪冰川",
+        "body": "第四纪冰川期全球高山冰川形成, 雪线下降 1000m"
+      },
+      {
+        "year": "1850",
+        "title": "阿尔卑斯冰川科学",
+        "body": "Louis Agassiz 1840s 在阿尔卑斯山创立冰川学说, 雪线 + 冰蚀地貌系统化"
+      },
+      {
+        "year": "1953",
+        "title": "珠穆朗玛登顶",
+        "body": "1953 年 5 月 29 日 Hillary + Norgay 首次登顶珠穆朗玛峰 8848m"
+      },
+      {
+        "year": "2019",
+        "title": "阿尔卑斯冰川告急",
+        "body": "阿尔卑斯冰川 2019 年融化加速, 瑞士 + 奥地利冰量减少 50%+"
+      },
+      {
+        "year": "2024",
+        "title": "全球冰川",
+        "body": "2024 年 WMO 报告: 全球高山冰川年均 -1m 厚度, 气候变化临界点临近"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 高山冰川",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%B0%E5%B7%9D",
+        "type": "wiki"
+      },
+      {
+        "title": "WMO 冰川监测",
+        "url": "https://library.wmo.int/",
+        "type": "reference"
+      },
+      {
+        "title": "NSIDC National Snow and Ice Data Center",
+        "url": "https://nsidc.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "polar-night",
+    "title": "极昼极夜",
+    "kind": "phenomenon",
+    "subKind": "astronomical",
+    "series": "atlas-miscellany",
+    "seriesNo": "050",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/polar-night/polar-night-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/polar-night/polar-night-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/polar-night/polar-night-full.webp",
+    "score": 7.7,
+    "tags": [
+      "jizhou",
+      "tianwen",
+      "ouzhou",
+      "xiandai",
+      "phenomenon"
+    ],
+    "tagline": "Arctic + Antarctic polar night",
+    "subtitle": "自然现象 · 极昼极夜 · 百科占位",
+    "description": "Polar night + polar day Arctic Circle + Antarctic Circle 66.5° latitude. 极夜半年 + 极昼半年 + 冬至夏至 + 挪威 Svalbard 朗伊尔城. Today climate change shifts polar night length. 极昼极夜 + 极圈 66.5° + 北极 + 南极.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "史前",
+        "title": "地球轴倾角",
+        "body": "地球自转轴 23.5° 倾角 + 公转, 形成南北极圈 66.5° + 极昼极夜现象"
+      },
+      {
+        "year": "1596",
+        "title": "Barents 探险",
+        "body": "荷兰探险家 Barents 1596 年首次系统记录北极极夜, Svalbard 命名"
+      },
+      {
+        "year": "1909",
+        "title": "Peary 北极",
+        "body": "Robert Peary 1909 年 4 月 6 日宣布到达北极点 (有争议)"
+      },
+      {
+        "year": "1911",
+        "title": "Amundsen 南极",
+        "body": "Roald Amundsen 1911 年 12 月 14 日抵达南极点, 极昼期探险"
+      },
+      {
+        "year": "2024",
+        "title": "极昼变短",
+        "body": "全球变暖导致海冰消融 + 北极极昼缩短, 朗伊尔城等极夜城市面临永昼转变"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Norwegian Polar Institute",
+        "url": "https://www.npolar.no/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 极昼极夜",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%81%E6%98%BC%E6%9E%81%E5%A4%9C",
+        "type": "wiki"
+      },
+      {
+        "title": "NOAA Arctic Theme Page",
+        "url": "https://www.arctic.noaa.gov/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "sugar-glider-pet",
+    "title": "蜜袋鼯",
+    "kind": "pet",
+    "subKind": "small-mammal",
+    "series": "pet-breed-guide",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/sugar-glider-pet/sugar-glider-pet-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/sugar-glider-pet/sugar-glider-pet-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/sugar-glider-pet/sugar-glider-pet-full.webp",
+    "score": 7.4,
+    "tags": [
+      "midaiwu",
+      "chongwu",
+      "aodaliya",
+      "xiandai",
+      "pet"
+    ],
+    "tagline": "1994 exotic pet boom",
+    "subtitle": "宠物 · 蜜袋鼯 · 百科占位",
+    "description": "Sugar glider Petaurus breviceps Australia marsupial, nocturnal gliding membrane, 1990s exotic pet global boom. Today 100K+ pets in US + EU + Japan. 蜜袋鼯 + 澳大利亚 + 滑翔膜 + 异宠热潮.",
+    "createdAt": "2026-07-03",
+    "history": [
+      {
+        "year": "1770s",
+        "title": "澳大利亚土著",
+        "body": "澳大利亚土著数千年来观察蜜袋鼯, 现代分类学 1770s 由欧洲探险家记录"
+      },
+      {
+        "year": "1990s",
+        "title": "美国异宠热潮",
+        "body": "1990s 美国异宠市场兴起, 蜜袋鼯因外表可爱 + 可驯化成为热门"
+      },
+      {
+        "year": "2010s",
+        "title": "社交媒体推动",
+        "body": "Instagram + YouTube 推动蜜袋鼯全球异宠热潮, 亚洲 + 欧洲广泛饲养"
+      },
+      {
+        "year": "2020",
+        "title": "宠物地位确立",
+        "body": "美国异宠协会 + 欧洲蜜袋鼯协会建立, 宠物医疗 + 营养学完善"
+      },
+      {
+        "year": "2024",
+        "title": "保护 + 圈养",
+        "body": "野外蜜袋鼯种群稳定 IUCN 低危, 但圈养宠物福利监管趋严"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Sugar Glider",
+        "url": "https://en.wikipedia.org/wiki/Sugar_glider",
+        "type": "wiki"
+      },
+      {
+        "title": "Sugar Glider Guardian 圈养指南",
+        "url": "https://sugargliderguardians.com/",
+        "type": "reference"
+      },
+      {
+        "title": "IUCN Sugar Glider",
+        "url": "https://www.iucnredlist.org/species/16731/115056778",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "arctic-fox",
+    "title": "北极狐",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/arctic-fox/arctic-fox-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/arctic-fox/arctic-fox-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/arctic-fox/arctic-fox-full.webp",
+    "score": 8,
+    "tags": [
+      "beijifu",
+      "beiyou",
+      "gudai",
+      "xiandai",
+      "animal"
+    ],
+    "tagline": "Vulpes lagopus Arctic Circle",
+    "subtitle": "动物 · 北极狐 · 百科占位",
+    "description": "Arctic fox Vulpes lagopus Arctic Circle seasonal coat color change white winter + brown summer, -70°C survival. Today IUCN Least Concern + climate change threat. 北极狐 + 季节换毛 + -70°C + 北极圈 + IUCN 低危.",
+    "createdAt": "2026-07-03",
+    "revisions": [
+      {
+        "date": "2026-07-03T18:53:30.568Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": "1758",
+        "title": "林奈分类",
+        "body": "林奈 1758 年命名 Vulpes lagopus 北极狐, Arctic fox"
+      },
+      {
+        "year": "19世纪",
+        "title": "皮毛贸易",
+        "body": "19 世纪北极狐皮毛成为欧洲 + 北美高端时装原料, 北极种群遭大量捕杀"
+      },
+      {
+        "year": "1950s",
+        "title": "保护立法",
+        "body": "斯堪的纳维亚 + 俄罗斯 1950s 起立法保护北极狐, 限制商业捕猎"
+      },
+      {
+        "year": "2019",
+        "title": "挪威 Svalbard 移民",
+        "body": "2019 年挪威 Svalbard 群岛上北极狐从芬兰 + 挪威北部 3500km 长距离移民"
+      },
+      {
+        "year": "2024",
+        "title": "气候变化威胁",
+        "body": "IUCN 北极狐全球种群 33 万只成年, 北欧 + 北亚种群因气候变化 + 红狐扩张减少 50%+"
+      }
+    ],
+    "sources": [
+      {
+        "title": "IUCN 北极狐红色名录",
+        "url": "https://www.iucnredlist.org/species/899/144981961",
+        "type": "reference"
+      },
+      {
+        "title": "Norwegian Polar Institute 北极狐",
+        "url": "https://www.npolar.no/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 北极狐",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E6%9E%81%E7%8B%90",
+        "type": "wiki"
+      }
+    ]
   }
 ]

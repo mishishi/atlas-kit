@@ -2196,3 +2196,84 @@ prod: https://atlas-kit-six.vercel.app/ (R71 ship 待 push)
 - mmx-content-guard 进一步接入 fix-descriptions.mjs + add-cross-tags.mjs + enrich-mentions.mjs + score-all-cards.mjs (剩余 batch scripts)
 - AGENTS.md subKind coverage 数字 400/400 → 801/801 更新
 - opengraph-image.tsx STATS '600 张' → 动态 (R60+35 round 已修, R71 后再 verify)
+
+
+## R72 (2026-07-03 ~ 2026-07-04) — 24 cards ship + generate-card.mjs --subKind CLI fix + matrix dead-letter retry
+
+跟 R71 衔接. catalog 793 → **817** (817 = R72 ship 24 全 added). 24 R72 cards 全齐 desc + tagline + score (>0) + tags (≥4) + history (≥3) + sources (≥2) + subKind + image 3-tier on CDN.
+
+### A. generate-card.mjs --subKind CLI bug fix (R71 prep 遗留)
+
+R71 prep `bdd3898` 修了 `--from-plan` 路径读 `p.subKind`, 但**单条 CLI mode (line 98-107) 没读 --subKind 参数**. R72 跑单条 generate 时传 `--subKind japanese` 但 cards.json entry `subKind: null`. Inline batch 18 张需要 backfill.
+
+修法:
+```js
+// generate-card.mjs args
+const subKindArg = getArg("--subKind");
+// single-card jobs.push
+subKind: subKindArg,
+```
+
+修后单条 CLI 也带 subKind. R73+ 不用 backfill.
+
+### B. R72 inline-cjs serial generate (dead-letter retry 自动化)
+
+R71 用 inline node 跑单条时已经发现 `--from-plan` 25 min hang (M2.7 model hang 不是 API retry), 但 R72 跑 22 张时实际 single CLI mode 平均 60s/张 (matrix 抽风比例 ~5%, 1 张 renaissance 162s 是 hang 1 time 但仍 OK), 全 batch 22 张 = 22 min 跑完.
+
+新 pattern: `tmp/r72-run-all.cjs` 用 execFileSync 串行 spawn 22 个 single-card process, 每张 timeout 180s, log 进 `tmp/r72-gen-results.txt`. 比 `--from-plan` 优势:
+- 单张 fail 不阻塞整批 (--from-plan 1 hang 全 batch 卡)
+- 实时打印单张耗时 + status
+- 失败可单独 retry 不重跑全 batch
+
+R72 22 张 inline 串行全 OK + 1 张 (arctic-fox) matrix 抽风 file 实际没写 → single-card retry OK.
+
+### C. R72 24 cards plan + CDN upload + handwrite 24
+
+`scripts/r72-plan.json` 24 entries (跟 R70+R71 同结构):
+
+| Kind | Count | Cards |
+|---|---|---|
+| food | 4 | oden-japan / beef-noodles / eggs-benedict / hong-kong-milk-tea |
+| tech | 4 | neuralink / apple-m-chip / solid-state-battery / apple-watch |
+| music | 4 | coldplay / hua-chenyu / zhou-shen / onerepublic |
+| architecture | 4 | sagrada-familia / forbidden-city-tower / saint-sophia-cn / sydney-opera-house |
+| history | 3 | northern-song-dynasty / yuan-dynasty / renaissance |
+| phenomenon | 3 | typhoon-cnt / snow-mountain / polar-night |
+| pet | 1 | sugar-glider-pet |
+| animal | 1 | arctic-fox |
+
+CDN upload 8 kinds sequential (`--also-rewrite`):
+- food 126 / tech 132 / music 141 / architecture 108 / history 93 / phenomenon 111 / pet 84 / animal 90 = **885 files** 0 fail
+- 81 fields rewritten to CDN URL (含 R70+R71 history 残留)
+- arctic-fox 第 1 次 matrix 抽风 file 没写 → retry single + CDN 上传 OK
+
+Handwrite (5 batch scripts, `tmp/r72-*.cjs`):
+- 4 fields (desc/tagline/score/tags): 24 张一次过
+- history: 24 张 × 5 nodes = 120 nodes 一次过
+- sources: 24 张 × 3 sources = 72 sources 一次过
+
+### D. R72 subKind validate fix
+
+R72 plan validate 时 10 subKind NF — 是我 plan 用未来 taxonomy 没的 subKind (chinese / china-ancient / european / geology / astronomy). 修法:
+- beef-noodles / hong-kong-milk-tea: chinese → northern / drink
+- coldplay / onerepublic: western-rock / western-pop → western-modern
+- sagrada-familia: european → religious
+- northern-song-dynasty / yuan-dynasty: china-ancient → tang-song / ming-qing
+- renaissance: europe → modern
+- snow-mountain / polar-night: geology / astronomy → geological / astronomical
+
+最后 validate 24/24 全 OK. R72+ 改 plan 用现有 taxonomy (跟 R70 validate 教训一致).
+
+### E. R72 数据完整性 (post)
+
+**817 cards**, 26 kinds / 162 subKinds, 12 series. 24 R72 全齐 desc + tagline + score (>0) + tags (≥4) + history (≥3) + sources (≥2) + subKind. 0 placeholder, 0 no-subKind, 0 missing image on CDN.
+
+prod: https://atlas-kit-six.vercel.app/ (R72 ship 待 push, sitemap expected 825+ url entries / lastmod ≥ 2026-07-03T17:40)
+
+### F. R73 candidate (未做)
+
+- mmx hang > 2min 自动 kill + programmatic derivation fallback — R70+R71+R72 各 1-2 张 hang 卡 60-160s, 影响小但偶尔触发. R73 改 mmx-client.mjs 加 max-timeout watchdog
+- 接入 mmx-content-guard 到剩下 batch scripts (fix-descriptions / add-cross-tags / enrich-mentions / score-all-cards)
+- R73 plan 24+ 张 — subKind gap 现在只有 4 张 (food/italian / music/chinese-classical / anime/shonen / movie/japanese), 跟 R70 validate 发现的 gap 同模式, R73 收尾
+- catalog 800+ 后, /cards page default sort 改 "评分" 而不是 "最新" — 新加的 R70+R71+R72 24×3=72 张会自然沉淀
+- AGENTS.md subKind coverage 数字 (R58b 400/400 → R72 817/817) 同步 + sitemap force-dynamic verify 注释

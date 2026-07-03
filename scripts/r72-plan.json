@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "round": "R72",
+    "goal": "24 张新主题 - subKind gap fill + kind 平衡 + topic diversity",
+    "createdAt": "2026-07-03",
+    "totalCards": 801
+  },
+  "plan": [
+    {"slug": "oden-japan", "title": "关东煮", "kind": "food", "subKind": "japanese", "series": "culinary-corner", "seriesNo": "026"},
+    {"slug": "beef-noodles", "title": "牛肉面", "kind": "food", "subKind": "northern", "series": "culinary-corner", "seriesNo": "027"},
+    {"slug": "eggs-benedict", "title": "班尼迪克蛋", "kind": "food", "subKind": "western", "series": "culinary-corner", "seriesNo": "028"},
+    {"slug": "hong-kong-milk-tea", "title": "港式奶茶", "kind": "food", "subKind": "drink", "series": "culinary-corner", "seriesNo": "029"},
+
+    {"slug": "neuralink", "title": "Neuralink", "kind": "tech", "subKind": "computing", "series": "frontiers-and-wonders", "seriesNo": "024"},
+    {"slug": "apple-m-chip", "title": "苹果 M 系列芯片", "kind": "tech", "subKind": "computing", "series": "frontiers-and-wonders", "seriesNo": "025"},
+    {"slug": "solid-state-battery", "title": "固态电池", "kind": "tech", "subKind": "energy", "series": "frontiers-and-wonders", "seriesNo": "026"},
+    {"slug": "apple-watch", "title": "Apple Watch", "kind": "tech", "subKind": "consumer-electronics", "series": "frontiers-and-wonders", "seriesNo": "027"},
+
+    {"slug": "coldplay", "title": "Coldplay", "kind": "music", "subKind": "western-modern", "series": "soundtrack-atlas", "seriesNo": "028"},
+    {"slug": "hua-chenyu", "title": "华晨宇", "kind": "music", "subKind": "chinese-pop", "series": "soundtrack-atlas", "seriesNo": "029"},
+    {"slug": "zhou-shen", "title": "周深", "kind": "music", "subKind": "chinese-pop", "series": "soundtrack-atlas", "seriesNo": "030"},
+    {"slug": "onerepublic", "title": "OneRepublic", "kind": "music", "subKind": "western-modern", "series": "soundtrack-atlas", "seriesNo": "031"},
+
+    {"slug": "sagrada-familia", "title": "圣家族大教堂", "kind": "architecture", "subKind": "religious", "series": "craft-and-botanical", "seriesNo": "013"},
+    {"slug": "forbidden-city-tower", "title": "故宫角楼", "kind": "architecture", "subKind": "ancient-monument", "series": "craft-and-botanical", "seriesNo": "014"},
+    {"slug": "saint-sophia-cn", "title": "圣索菲亚大教堂", "kind": "architecture", "subKind": "ancient-monument", "series": "craft-and-botanical", "seriesNo": "015"},
+    {"slug": "sydney-opera-house", "title": "悉尼歌剧院", "kind": "architecture", "subKind": "modern", "series": "craft-and-botanical", "seriesNo": "016"},
+
+    {"slug": "northern-song-dynasty", "title": "北宋", "kind": "history", "subKind": "tang-song", "series": "history-and-figures", "seriesNo": "018"},
+    {"slug": "yuan-dynasty", "title": "元朝", "kind": "history", "subKind": "ming-qing", "series": "history-and-figures", "seriesNo": "019"},
+    {"slug": "renaissance", "title": "文艺复兴", "kind": "history", "subKind": "modern", "series": "history-and-figures", "seriesNo": "020"},
+
+    {"slug": "typhoon-cnt", "title": "台风", "kind": "phenomenon", "subKind": "weather", "series": "atlas-miscellany", "seriesNo": "048"},
+    {"slug": "snow-mountain", "title": "雪山", "kind": "phenomenon", "subKind": "geological", "series": "atlas-miscellany", "seriesNo": "049"},
+    {"slug": "polar-night", "title": "极昼极夜", "kind": "phenomenon", "subKind": "astronomical", "series": "atlas-miscellany", "seriesNo": "050"},
+
+    {"slug": "sugar-glider-pet", "title": "蜜袋鼯", "kind": "pet", "subKind": "small-mammal", "series": "pet-breed-guide", "seriesNo": "019"},
+    {"slug": "arctic-fox", "title": "北极狐", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "030"}
+  ]
+}

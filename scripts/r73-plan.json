@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "round": "R73",
+    "goal": "24 张新主题 - 4 subKind gap 收尾 + city/object 短板补 + topic diversity",
+    "createdAt": "2026-07-04",
+    "totalCards": 817
+  },
+  "plan": [
+    {"slug": "risotto", "title": "意式炖饭", "kind": "food", "subKind": "italian", "series": "culinary-corner", "seriesNo": "030"},
+    {"slug": "guqin-melody", "title": "古琴曲", "kind": "music", "subKind": "chinese-classical", "series": "soundtrack-atlas", "seriesNo": "032"},
+    {"slug": "naruto-shippuden", "title": "火影忍者疾风传", "kind": "anime", "subKind": "shonen", "series": "anime-works-atlas", "seriesNo": "018"},
+    {"slug": "shoplifters-japan", "title": "小偷家族", "kind": "movie", "subKind": "japanese", "series": "pulp-fiction", "seriesNo": "026"},
+
+    {"slug": "kathmandu", "title": "加德满都", "kind": "city", "subKind": "mountain", "series": "city-encyclopedia", "seriesNo": "025"},
+    {"slug": "tashkent", "title": "塔什干", "kind": "city", "subKind": "ancient-capital", "series": "city-encyclopedia", "seriesNo": "026"},
+    {"slug": "reykjavik", "title": "雷克雅未克", "kind": "city", "subKind": "coastal", "series": "city-encyclopedia", "seriesNo": "027"},
+    {"slug": "kigali", "title": "基加利", "kind": "city", "subKind": "modern-mega", "series": "city-encyclopedia", "seriesNo": "028"},
+
+    {"slug": "jade-burial-suit", "title": "金缕玉衣", "kind": "object", "subKind": "ritual", "series": "atlas-miscellany", "seriesNo": "051"},
+    {"slug": "sundial", "title": "日晷", "kind": "object", "subKind": "scientific", "series": "atlas-miscellany", "seriesNo": "052"},
+    {"slug": "astrolabe", "title": "星盘", "kind": "object", "subKind": "scientific", "series": "atlas-miscellany", "seriesNo": "053"},
+    {"slug": "inkstone", "title": "砚台", "kind": "object", "subKind": "craft", "series": "atlas-miscellany", "seriesNo": "054"},
+
+    {"slug": "cucumber", "title": "黄瓜", "kind": "plant", "subKind": "grass", "series": "craft-and-botanical", "seriesNo": "017"},
+    {"slug": "lavender", "title": "薰衣草", "kind": "plant", "subKind": "flower", "series": "craft-and-botanical", "seriesNo": "018"},
+
+    {"slug": "komodo-dragon", "title": "科莫多巨蜥", "kind": "animal", "subKind": "reptile", "series": "wild-fauna-atlas", "seriesNo": "031"},
+    {"slug": "gibbon", "title": "长臂猿", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "032"},
+
+    {"slug": "russian-blue", "title": "俄罗斯蓝猫", "kind": "pet", "subKind": "cat-breed", "series": "pet-breed-guide", "seriesNo": "020"},
+
+    {"slug": "tai-chi", "title": "太极拳", "kind": "sport", "subKind": "combat", "series": "atlas-miscellany", "seriesNo": "055"},
+    {"slug": "bull-fighting", "title": "斗牛", "kind": "sport", "subKind": "athletics", "series": "atlas-miscellany", "seriesNo": "056"},
+
+    {"slug": "mid-autumn-festival", "title": "中秋节", "kind": "festival", "subKind": "traditional", "series": "festival-almanac", "seriesNo": "014"},
+    {"slug": "day-of-dead", "title": "墨西哥亡灵节", "kind": "festival", "subKind": "ethnic-minority", "series": "festival-almanac", "seriesNo": "015"},
+
+    {"slug": "vietnam-war", "title": "越南战争", "kind": "history", "subKind": "modern", "series": "history-and-figures", "seriesNo": "021"},
+    {"slug": "berlin-wall", "title": "柏林墙", "kind": "history", "subKind": "contemporary", "series": "history-and-figures", "seriesNo": "022"},
+    {"slug": "shogi", "title": "将棋", "kind": "sport", "subKind": "mind-sport", "series": "atlas-miscellany", "seriesNo": "057"}
+  ]
+}

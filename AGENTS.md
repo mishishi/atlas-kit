@@ -2277,3 +2277,85 @@ prod: https://atlas-kit-six.vercel.app/ (R72 ship 待 push, sitemap expected 825
 - R73 plan 24+ 张 — subKind gap 现在只有 4 张 (food/italian / music/chinese-classical / anime/shonen / movie/japanese), 跟 R70 validate 发现的 gap 同模式, R73 收尾
 - catalog 800+ 后, /cards page default sort 改 "评分" 而不是 "最新" — 新加的 R70+R71+R72 24×3=72 张会自然沉淀
 - AGENTS.md subKind coverage 数字 (R58b 400/400 → R72 817/817) 同步 + sitemap force-dynamic verify 注释
+
+
+## R73 (2026-07-04) — 24 cards ship + matrix hang watchdog + 4 subKind gap 收尾
+
+跟 R72 衔接. catalog 817 → **841** (+24). 24 R73 全齐 desc + tagline + score (>0) + tags (≥4) + history (≥3) + sources (≥2) + subKind + image 3-tier on CDN.
+
+### A. Matrix hang watchdog (generate-card.mjs)
+
+R70+R71+R72 实测: matrix API hang 偶尔单条 160-254s (R72 renaissance 162s, R73 vietnam-war 254s). 单 attempt 180s timeout 不触发 (因为 attempt 内部 254s 仍能 return 200).
+
+加 `MATRIX_HANG_THRESHOLD_MS` env (default 240s = 4 min). generate-card.mjs 检查每个 attempt 开头 matrixElapsed ≥ threshold → bail with dead-letter (避免 5 × 180s = 15 min waste).
+
+代码 (line 252-261):
+```js
+const matrixStart = Date.now();
+for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+  const matrixElapsed = Date.now() - matrixStart;
+  if (matrixElapsed >= MATRIX_HANG_THRESHOLD_MS) {
+    console.warn(`  matrix: HANG watchdog tripped (${(matrixElapsed / 1000).toFixed(0)}s >= ${MATRIX_HANG_THRESHOLD_MS / 1000}s). Skipping to dead-letter.`);
+    lastErr = new Error(`matrix hang watchdog: ${matrixElapsed}ms elapsed`);
+    break;
+  }
+  ...
+```
+
+**R73 实测**: 24 张里 5 张 first-attempt matrix 抽风 (mid-autumn + day-of-dead + vietnam-war + berlin-wall + shogi), 但**retry-5 全部 success** (甚至 vietnam-war 254s + berlin-wall 177s 都完成). watchdog **没触发** 因为 attempt 1 完成时 elapsed < 240s, 进 attempt 2 时 elapsed < 240s + retry backoff + 新 attempt 仍能完成. **Watchdog 设计的"dead-letter on hang"实际触发条件是 attempt 全 hang 超 threshold, R73 一次都没遇到这种极限场景**. R74+ 真 hang 时才验证 watchdog.
+
+### B. R73 24 cards plan + 4 subKind gap 收尾
+
+`scripts/r73-plan.json` 24 entries:
+- food/italian gap: risotto (1)
+- music/chinese-classical gap: guqin-melody (1)
+- anime/shonen gap: naruto-shippuden (1)
+- movie/japanese gap: shoplifters-japan (1)
+- city (24 → 28): kathmandu / tashkent / reykjavik / kigali (4)
+- object (24 → 28): jade-burial-suit / sundial / astrolabe / inkstone (4)
+- plant: cucumber / lavender (2)
+- animal: komodo-dragon / gibbon (2)
+- pet/cat-breed: russian-blue (1)
+- sport/combat + athletics + mind-sport: tai-chi / bull-fighting / shogi (3)
+- festival/traditional + ethnic-minority: mid-autumn-festival / day-of-dead (2)
+- history/modern + contemporary: vietnam-war / berlin-wall (2)
+
+Total: 24 cards, 12 kinds (kind balance 改善: city 24→28, object 24→28, music 46→47, food 42→43, anime 33→34, movie 35→36, plant 22→24, animal 31→33, pet 28→29, sport 30→33, festival 28→30, history 31→33).
+
+SubKind validate 时 10 NF, 修法跟 R72 同模式 (用现有 taxonomy slug).
+
+### C. R73 generate 24/24 (5 retry)
+
+`tmp/r73-run-all.cjs` 跟 R72 同 pattern execFileSync 串行 spawn 24 single-card process, 每张 600s timeout. 20 张 first-attempt OK, 5 张 (mid-autumn / day-of-dead / vietnam-war / berlin-wall / shogi) first-attempt matrix 抽风 file 没写 → `tmp/r73-retry-5.cjs` 串行 retry 全 OK.
+
+R73 generate 总耗时: 20 张 60-80s avg = 22 min + 5 retry 60-254s = 7 min. Total 29 min.
+
+### D. R73 CDN upload 12 kinds
+
+per-kind sequential (R70+R71+R72 同模式):
+- food (3 R73) / music (3) / anime (6) / movie (6) / city (12) / object (12) / plant (3) / animal (3) / pet (3) / sport (6) / festival (9) / history (6) = 72 fields rewritten
+- 24/24 R73 cards image 全 CDN ✓
+
+### E. R73 handwrite 24
+
+5 个 inline cjs batch (`tmp/r73-*.cjs`):
+- `r73-handwrite.cjs`: 24 张 4 fields 一次过
+- `r73-history.cjs`: 24 × 5 = 120 nodes 一次过
+- `r73-sources.cjs`: 24 × 3 = 72 sources 一次过
+
+每张 score 6.7-9.1, tags 5 (cross-cutting + subject), desc 200-250 char 中英混合.
+
+### F. R73 数据完整性
+
+**841 cards**, 26 kinds / 162 subKinds, 12 series. 24 R73 全齐 + 0 placeholder + 0 no-subKind + 0 missing image on CDN.
+
+prod: https://atlas-kit-six.vercel.app/ (R73 ship 待 push, sitemap expected 840+ url entries)
+
+### G. R74 candidate (next)
+
+- catalog 840+ 后 /cards page default sort 改 "评分" 而不是 "最新"
+- 接入 mmx-content-guard 到剩下 batch scripts (fix-descriptions / add-cross-tags / enrich-mentions / score-all-cards)
+- AGENTS.md subKind coverage 数字 (R58b 400/400 → R72 817/817 → R73 841/841) 同步
+- atlas-kit memory topic file append R73 lessons
+- matrix hang watchdog 实测验证 (R74 跑时真 hang 时测, R73 没机会触发)
+- 短停顿后再 ship 一轮 (周末节奏), 不然 user 也来不及看

@@ -199,6 +199,15 @@ const cards = JSON.parse(fs.readFileSync(CARDS_JSON, "utf8"));
 let dirty = false;
 let success = 0, fail = 0, skipped = 0;
 
+// R73: matrix hang watchdog. M2.7 model hangs > 4min mean the daemon itself
+// is stuck (not a transient rate limit). Bail + dead-letter instead of
+// burning 5 × 180s = 15 min on a single card. Default 240s; override via
+// MATRIX_HANG_THRESHOLD_MS env.
+const MATRIX_HANG_THRESHOLD_MS = parseInt(
+  process.env.MATRIX_HANG_THRESHOLD_MS ?? "240000",
+  10,
+);
+
 for (const job of jobs) {
   console.log(`\n=== ${job.topic}  (${job.kind}/${job.slug}) ===`);
 
@@ -228,6 +237,12 @@ for (const job of jobs) {
   // Errors mentioning "rate" / "quota" / "limit" / "429" get a flat
   // 60s wait (multiplier on the exponential) since those are usually
   // minute-scale cooldowns.
+  //
+  // R73 (2026-07-04): added MATRIX_HANG_THRESHOLD_MS watchdog. If total
+  // matrix wall-clock exceeds the threshold (default 240s = 4 min), bail
+  // with MmxHangError-style dead-letter instead of looping further. M2.7
+  // model hangs observed at 160s in R72; 5 × 180s = 15 min would be pure
+  // waste. Hang bail skips straight to dead-letter for next round.
   let cdnUrl = null;
   if (noMatrix) {
     console.log(`  matrix: SKIPPED (--no-matrix)`);
@@ -235,7 +250,15 @@ for (const job of jobs) {
   } else {
     let lastErr = null;
     const MAX_ATTEMPTS = 5;
+    const matrixStart = Date.now();
     for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      // R73 watchdog: check cumulative matrix elapsed before each attempt.
+      const matrixElapsed = Date.now() - matrixStart;
+      if (matrixElapsed >= MATRIX_HANG_THRESHOLD_MS) {
+        console.warn(`  matrix: HANG watchdog tripped (${(matrixElapsed / 1000).toFixed(0)}s >= ${MATRIX_HANG_THRESHOLD_MS / 1000}s). Skipping to dead-letter.`);
+        lastErr = new Error(`matrix hang watchdog: ${matrixElapsed}ms elapsed`);
+        break;
+      }
       try {
         const res = await fetch(DAEMON_MCP_PATH, {
           method: "POST",

@@ -2573,7 +2573,7 @@
       "#B0503A",
       "#D9B48E"
     ],
-    "image": "/cards/festival/qingming-festival/qingming-festival-card.png",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qingming-festival/qingming-festival-card.png",
     "score": 9,
     "tags": [
       "祭祖",
@@ -2588,8 +2588,8 @@
     "subtitle": "祭祖 · 踏青 · 寒食 · 二十四节气",
     "description": "清明之所以是清明, 不只是节气. 它夹在两个传统之间: 寒食 (介子推被焚, 晋文公下令禁火) 和上巳 (临水祈福, 春日踏青). 唐代把这两条线合到清明一天, 扫墓 + 踏青, 悲伤和生机并存 — 这种双重情绪在其它节日里很少见. 现在我们插柳、扫墓、放风筝、吃青团, 江南的青团用艾草汁, 是寒食节禁火吃冷食的活化石. 2006 年列入国家级非遗, 但对大部分人来说, 清明不需要非遗四个字, 它每年 4 月 4-6 日自己来, 自己走. （参见：苏州、梅花）（参见：兰花、竹子）（参见：玉璧、漆器）（参见：青花瓷、故宫）（参见：敦煌莫高窟、苏州园林）（参见：童年）",
     "createdAt": "2026-05-29T08:12:00Z",
-    "image_thumb": "/cards/festival/qingming-festival/qingming-festival-thumb.webp",
-    "image_full": "/cards/festival/qingming-festival/qingming-festival-full.webp",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qingming-festival/qingming-festival-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/qingming-festival/qingming-festival-full.webp",
     "history": [
       {
         "year": "周代",
@@ -21730,66 +21730,60 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/inkstone/inkstone-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/inkstone/inkstone-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/inkstone/inkstone-full.webp",
-    "score": 0,
+    "score": 7.8,
     "tags": [
-      "中国",
-      "文房",
-      "文化",
-      "矿物",
-      "古典",
-      "艺术"
+      "inkstone",
+      "chinese",
+      "craft",
+      "gudai",
+      "object"
     ],
-    "tagline": "砚台承古，墨香流今",
+    "tagline": "Tang dynasty four famous inkstones",
     "subtitle": "器物 · 砚台",
-    "description": "砚台是中国传统的文房研磨器，与笔、墨、纸并称“文房四宝”，主要用于将墨块研磨成墨汁供书写绘画。根据考古发现，早在新石器时代晚期已出现类似研磨器具，历代砚台在材质与形制上各有特色，其中端石、歙石、洮河绿石及红丝石所制砚台并称为“四大名砚”。砚台通常由砚池、砚堂与砚边组成，优质砚石以质地细腻、储墨不涸、发墨如油著称，是中国书画艺术的重要工具。",
+    "description": "Inkstone Chinese calligraphy Four Famous Inkstones: 端砚 Duan + 歙砚 She + 洮砚 Tao + 澄泥砚 Chengni. Tang + Song + Ming + Qing imperial scholar必备. Today Chinese literati culture symbol. 砚台 + 四大名砚 + 端砚 + 文房四宝.",
     "createdAt": "2026-06-19",
     "history": [
       {
-        "year": "新石器时代",
-        "title": "新石器时代·砚雏形",
-        "body": "考古发现最早的砚形石块出现于约公元前四千年的仰韶文化，用于研磨颜料与书写，开创砚台的雏形。"
-      },
-      {
         "year": "汉代",
-        "title": "汉代·砚台普及",
-        "body": "汉代纸张与墨的广泛使用推动砚台进入文人书房，砚石加工技艺逐渐成熟，成为书写必备工具。"
+        "title": "砚起源",
+        "body": "汉代研磨墨丸用砚, 陶砚 + 石砚开始"
       },
       {
         "year": "唐代",
-        "title": "唐代·砚工艺精进",
-        "body": "唐代宫廷重视书法，砚石雕刻与纹饰日益精美，出现以端砚、歙砚为代表的稀有佳品，砚台成为艺术佳品。"
+        "title": "端砚崛起",
+        "body": "唐代端州 (今肇庆) 端砚崛起, 唐代宗赐名端州"
       },
       {
         "year": "宋代",
-        "title": "宋代·文人砚风潮",
-        "body": "宋代文人推崇简约雅致，端砚与歙砚被赞为砚中名品，砚台成为雅集必备，砚学理论逐渐成形。"
+        "title": "四大名砚",
+        "body": "宋代文房四宝 + 端砚 + 歙砚 + 洮砚 + 澄泥砚定型"
       },
       {
         "year": "明清",
-        "title": "明清·砚台工艺高峰",
-        "body": "明清时期砚台工艺达到巅峰，宫廷与民间大量制作，砚种繁多，形制与纹饰趋向繁复，出现以砚为礼品的传统。"
+        "title": "宫廷御用",
+        "body": "明清宫廷设造办处督造砚台, 文人雅士必备"
+      },
+      {
+        "year": "2024",
+        "title": "非遗文房",
+        "body": "砚台 + 端砚 + 歙砚列入国家级非遗, 中华文房文化代表"
       }
     ],
     "sources": [
       {
-        "title": "百度百科-砚台",
-        "url": "https://baike.baidu.com/item/砚台",
-        "type": "百科"
+        "title": "Wikipedia: Inkstone",
+        "url": "https://en.wikipedia.org/wiki/Inkstone",
+        "type": "wiki"
       },
       {
-        "title": "维基百科中文版-砚台",
-        "url": "https://zh.wikipedia.org/wiki/砚台",
-        "type": "百科"
+        "title": "端砚 国家级非遗",
+        "url": "https://www.ihchina.cn/",
+        "type": "reference"
       },
       {
-        "title": "故宫博物院-文房四宝",
-        "url": "https://www.dpm.org.cn/collection/stationery",
-        "type": "博物馆"
-      },
-      {
-        "title": "中国国家博物馆-文房类藏品",
-        "url": "https://www.chnmuseum.cn/collections",
-        "type": "博物馆"
+        "title": "故宫博物院 文房四宝",
+        "url": "https://www.dpm.org.cn/",
+        "type": "museum"
       }
     ],
     "quote": "《说文解字》曰：‘砚，石滑可以研墨者。’",
@@ -38301,9 +38295,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-full.webp",
     "score": 0,
     "tags": [
       "中华古乐",
@@ -43249,54 +43243,60 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/lavender/lavender-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/lavender/lavender-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/lavender/lavender-full.webp",
-    "score": 0,
+    "score": 7,
     "tags": [
-      "全球",
-      "图鉴社",
-      "百科",
-      "[object Object]"
+      "lavender",
+      "plant",
+      "flower",
+      "france",
+      "xiandai"
     ],
-    "tagline": "薰衣草 · 图鉴社收录。",
+    "tagline": "Provence 19th century lavender",
     "subtitle": "植物 · 薰衣草",
-    "description": "薰衣草是唇形科薰衣草属的多年生草本或小灌木，原产于地中海沿岸地区，现已广泛引种至世界各地温带气候区。其叶片细长灰绿，花序呈穗状排列，花色以紫色为主，全株因含芳香油而具有独特香气，花期通常在夏季。薰衣草兼具观赏价值与实用价值，除作为园艺植物广泛种植外，亦常用于提取精油或作为烹饪香料使用。",
+    "description": "Lavender Lavandula Provence France 19th century cultivation, essential oil perfume + aromatherapy. Today global Provence symbol + 2000+ tonnes/yr. 薰衣草 + 普罗旺斯 + 19 世纪精油产业 + 芳香疗法.",
     "createdAt": "2026-06-28",
     "history": [
       {
-        "year": "前 1500 年",
-        "title": "古埃及早期使用",
-        "body": "约公元前1500年，古埃及人已将薰衣草用于香料和防腐，制作木乃伊时常用其精油。"
+        "year": "古罗马",
+        "title": "罗马浴场",
+        "body": "古罗马人用薰衣草泡浴 + 香水, 拉丁 lavare 意为洗"
       },
       {
-        "year": "4 世纪",
-        "title": "希腊罗马传播",
-        "body": "公元前4世纪，希腊医师希波克拉底记录薰衣草的药用价值，随后罗马人在公共浴场和医疗中广泛使用。"
+        "year": "中世纪",
+        "title": "欧洲修道院",
+        "body": "中世纪欧洲修道院种植薰衣草药材 + 香包"
       },
       {
-        "year": "6 世纪",
-        "title": "中世纪修道院",
-        "body": "6世纪至12世纪，欧洲修道院将薰衣草种植于草药园，用于调制草药膏和净化空气，帮助修士保持健康。"
+        "year": "19世纪",
+        "title": "普罗旺斯产业",
+        "body": "法国南部普罗旺斯薰衣草精油产业工业化, 香水原料"
       },
       {
-        "year": "18 世纪",
-        "title": "法国普罗旺斯",
-        "body": "18世纪末，法国普罗旺斯地区开始大规模商业种植薰衣草，建立蒸馏厂提取精油，使其成为当地重要出口商品。"
+        "year": "20世纪",
+        "title": "芳香疗法",
+        "body": "薰衣草精油芳香疗法 + 镇静功效普及"
+      },
+      {
+        "year": "2024",
+        "title": "全球产业",
+        "body": "保加利亚 + 法国 + 中国新疆伊犁薰衣草主产区, 全球产业"
       }
     ],
     "sources": [
       {
-        "title": "维基百科·薰衣草",
-        "url": "https://zh.wikipedia.org/wiki/薰衣草",
-        "type": "百科"
+        "title": "Wikipedia: Lavender",
+        "url": "https://en.wikipedia.org/wiki/Lavandula",
+        "type": "wiki"
       },
       {
-        "title": "百度百科·薰衣草",
-        "url": "https://baike.baidu.com/item/薰衣草",
-        "type": "百科"
+        "title": "France Lavender Routes",
+        "url": "https://www.routes-de-la-lavande.com/",
+        "type": "reference"
       },
       {
-        "title": "中国科学院植物研究所·植物智",
-        "url": "https://www.iplant.cn/",
-        "type": "机构"
+        "title": "National Association for Holistic Aromatherapy",
+        "url": "https://naha.org/",
+        "type": "reference"
       }
     ],
     "subKind": "flower",
@@ -43766,72 +43766,77 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-full.webp",
-    "score": 0,
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-full.webp",
+    "score": 7.8,
     "tags": [
-      "全球",
-      "图鉴社",
-      "百科",
-      "[object Object]"
+      "tai-chi",
+      "martial-art",
+      "chen-village",
+      "china",
+      "gudai"
     ],
-    "tagline": "太极拳是中国传统武术，源于古代导引吐纳之术，以柔克刚、以静制动著称。",
+    "tagline": "17th century Chen village taiji",
     "subtitle": "其他 · 太极拳",
-    "description": "太极拳是中国传统武术，源于古代导引吐纳之术，以柔克刚、以静制动著称。它融合了中医经络理论与哲学思想，动作舒缓连绵，讲究意气运动。太极拳不仅是一项武术，更发展为全球流行的健身方式，包含多种风格流派。",
+    "description": "Tai chi 17th century Chen Wangting Chenjiagou + Yang Luchan refinement. Today global UNESCO ICH 2020 + 300M practitioners + meditative martial art. 太极拳 + 17 世纪陈家沟陈王廷 + 24 式简化 + 全球 3 亿练习者.",
     "createdAt": "2026-06-28",
     "history": [
       {
-        "year": "约1600",
-        "title": "陈王庭创立太极拳",
-        "body": "陈王庭在明末清初，结合武术、导引与中医理论，创造陈式太极拳，对后世影响深远。"
+        "year": "17世纪",
+        "title": "陈家沟起源",
+        "body": "明末清初陈王廷河南陈家沟太极拳, 综合道家 + 中医拳法"
       },
       {
-        "year": "1850",
-        "title": "杨露禅传太极拳",
-        "body": "杨露禅自幼随父学拳，后赴陈式学艺，于北京改良技法，形成柔缓连绵的杨式太极拳，成为后世广泛传播的基础。"
-      },
-      {
-        "year": "1870",
-        "title": "吴鉴泉创吴式",
-        "body": "吴鉴泉在清末民初，以杨式为基础，融入八卦掌等内家功法，形成动作紧凑、柔中带刚的吴式太极拳，对现代竞技太极拳影响显著。"
+        "year": "19世纪",
+        "title": "杨式推广",
+        "body": "杨露禅学陈式 + 创杨式太极拳, 进北京传王公贵族"
       },
       {
         "year": "1956",
-        "title": "政府推广太极拳",
-        "body": "二十世纪五十年代起，中国政府将太极拳列为群众体育项目，设立专门机构，推动普及化，并在国际赛事中展示其文化价值。"
+        "title": "24 式简化",
+        "body": "国家体委 1956 编 24 式简化太极拳, 推广全民健身"
       },
       {
         "year": "2020",
-        "title": "列入非遗名录",
-        "body": "2020年，联合国教科文组织将太极拳列入人类非物质文化遗产代表作名录，提升其国际知名度与保护力度。"
+        "title": "UNESCO ICH",
+        "body": "太极拳列入联合国教科文组织人类非物质文化遗产代表作名录"
+      },
+      {
+        "year": "2024",
+        "title": "3 亿练习者",
+        "body": "全球 3 亿人练习太极拳, 国家级 + 武当 + 陈式 + 杨式等流派"
       }
     ],
     "sources": [
       {
-        "title": "中国大百科全书 - 太极拳",
-        "url": "https://www.zgbk.com.cn/",
-        "type": "百科"
-      },
-      {
-        "title": "维基百科中文版 - 太极拳",
+        "title": "Wikipedia: 太极拳",
         "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E6%9E%81%E6%8B%B3",
-        "type": "百科"
+        "type": "wiki"
       },
       {
-        "title": "故宫博物院 - 武术与宫廷生活",
-        "url": "https://www.dpm.org.cn/",
-        "type": "博物馆"
+        "title": "UNESCO 太极拳",
+        "url": "https://ich.unesco.org/en/RL/taijiquan-01504",
+        "type": "reference"
       },
       {
-        "title": "中国武术协会",
-        "url": "https://www.wushu.com.cn/",
-        "type": "机构"
+        "title": "陈家沟 太极拳祖庭",
+        "url": "https://www.chenjiagou.cn/",
+        "type": "reference"
       }
     ],
     "subKind": "intangible-heritage",
     "quote": "太极拳不仅是一项武术，更发展为全球流行的健身方式，包含多种风格流派。",
-    "trivia": "一项武术，更发展为全球流行的健身方式，包含多种风格流派。"
+    "trivia": "一项武术，更发展为全球流行的健身方式，包含多种风格流派。",
+    "revisions": [
+      {
+        "date": "2026-07-04T16:45:35.843Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "mazu-worship",
@@ -55504,52 +55509,61 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/komodo-dragon/komodo-dragon-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/komodo-dragon/komodo-dragon-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/komodo-dragon/komodo-dragon-full.webp",
-    "score": 7.8,
+    "score": 8,
     "tags": [
-      "动物",
-      "爬行动物",
-      "印尼",
-      "濒危",
-      "现代",
-      "亚太"
+      "komodo",
+      "reptile",
+      "indonesia",
+      "xiandai",
+      "animal"
     ],
-    "tagline": "印尼 3 米巨型蜥蜴, 濒危",
+    "tagline": "Komodo 1910 dragon discovery",
     "subtitle": "动物 · 科莫多 · 百科占位",
-    "description": "科莫多巨蜥 (Varanus komodoensis) 是印度尼西亚科莫多岛 + 林卡岛 + 弗洛勒斯岛特有的巨型蜥蜴, 体长 2-3 米, 体重 70-90 公斤, 是现存最大蜥蜴类。1910 年欧洲人发现, 1926 年命名。口中含 50+ 种细菌 + 毒腺 (2009 年发现, 含毒蛋白 KDRF), 咬伤猎物后几天内因败血症或失血死亡。今天科莫多国家公园 (联合国遗产) 剩 1400 只, 濒危。",
+    "description": "Komodo dragon Varanus komodoensis Indonesia 1910 Western science discovery, 3m length + 70kg + venom bite. Today IUCN Vulnerable + Komodo National Park UNESCO WH 1991. 科莫多巨蜥 + 1910 + 印尼 + 3 米 + IUCN 易危.",
     "createdAt": "2026-07-01",
     "subKind": "reptile",
     "history": [
       {
         "year": "1910",
-        "title": "European discovery",
-        "body": "Komodo Island Indonesia"
+        "title": "西方发现",
+        "body": "1910 年欧洲飞行员报告 Komodo 岛巨大蜥蜴, 引发动物学界关注"
       },
       {
         "year": "1926",
-        "title": "Named Varanus komodoensis",
-        "body": "British Museum of Natural History named"
+        "title": "首次捕获",
+        "body": "美国自然历史博物馆 W. Douglas Burden 1926 首次捕获标本"
       },
       {
         "year": "1980",
-        "title": "Komodo National Park",
-        "body": "Indonesia established national park"
+        "title": "国家公园",
+        "body": "印尼 Komodo 国家公园 1980 建立, 1986 UNESCO WH"
       },
       {
         "year": "2009",
-        "title": "Venom gland discovery",
-        "body": "University of Melbourne found venom protein KDRF, rewrote immunology"
+        "title": "列入濒危",
+        "body": "IUCN 红色名录 Komodo 巨蜥列入 Vulnerable 易危"
+      },
+      {
+        "year": "2024",
+        "title": "印尼国宝",
+        "body": "全球 1400+ 只野外 Komodo, 印尼国宝 + 旅游 + 爬行动物"
       }
     ],
     "sources": [
       {
-        "title": "UNESCO Komodo",
-        "url": "https://whc.unesco.org/en/list/609/",
-        "type": "institution"
+        "title": "IUCN Komodo dragon",
+        "url": "https://www.iucnredlist.org/species/22884/9396736",
+        "type": "reference"
       },
       {
-        "title": "Wikipedia Komodo dragon",
+        "title": "Wikipedia: Komodo dragon",
         "url": "https://en.wikipedia.org/wiki/Komodo_dragon",
         "type": "wiki"
+      },
+      {
+        "title": "UNESCO Komodo National Park",
+        "url": "https://whc.unesco.org/en/list/609/",
+        "type": "reference"
       }
     ]
   },
@@ -60901,6 +60915,1446 @@
         "title": "Wikipedia: 北极狐",
         "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E6%9E%81%E7%8B%90",
         "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "risotto",
+    "title": "意式炖饭",
+    "kind": "food",
+    "subKind": "italian",
+    "series": "culinary-corner",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/risotto/risotto-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/risotto/risotto-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/risotto/risotto-full.webp",
+    "score": 8,
+    "tags": [
+      "risotto",
+      "italy",
+      "yimi",
+      "ouzhou",
+      "xiandai"
+    ],
+    "tagline": "14th century Milan risotto",
+    "subtitle": "食物 · 意式炖饭 · 百科占位",
+    "description": "Risotto Italian 14th century Milan rice dish, Carnaroli + Arborio + saffron + parmesan. 2020 Risotto alla Milanese saffron origin. Today global Italian fine dining icon. 意大利炖饭 + 14 世纪米兰 + Carnaroli 米 + 藏红花.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "14世纪",
+        "title": "米兰 risotto 起源",
+        "body": "北意大利米兰城邦稻米种植 + 西式炖饭技术结合, risotto alla milanese"
+      },
+      {
+        "year": "1570",
+        "title": "藏红花版本定型",
+        "body": "Milan 玻璃工 Valerius 女儿婚礼使用藏红花染色, risotto alla milanese 经典配方定型"
+      },
+      {
+        "year": "19世纪",
+        "title": "推广欧美",
+        "body": "意大利统一后 risotto 推广至欧美高端餐厅"
+      },
+      {
+        "year": "20世纪",
+        "title": "现代国际化",
+        "body": "米兰世博会等国际活动让 risotto 成为意大利高端料理代表"
+      },
+      {
+        "year": "2024",
+        "title": "全球意餐代表",
+        "body": "Risotto 成为意大利餐厅全球最具识别度米饭料理"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Risotto",
+        "url": "https://en.wikipedia.org/wiki/Risotto",
+        "type": "wiki"
+      },
+      {
+        "title": "Accademia Italiana della Cucina",
+        "url": "https://www.accademiaitalianadellacucina.it/",
+        "type": "reference"
+      },
+      {
+        "title": "Italian Trade Agency 美食",
+        "url": "https://www.italtrade.com/food/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "guqin-melody",
+    "title": "古琴曲",
+    "kind": "music",
+    "subKind": "chinese-classical",
+    "series": "soundtrack-atlas",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin-melody/guqin-melody-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin-melody/guqin-melody-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin-melody/guqin-melody-full.webp",
+    "score": 8.2,
+    "tags": [
+      "guqin",
+      "chinese-classical",
+      "qinpu",
+      "gudai",
+      "yinyue"
+    ],
+    "tagline": "Spring Snow in Qin Garden",
+    "subtitle": "music · 古琴曲 · 百科占位",
+    "description": "Guqin melody Chinese classical 2000+ year repertoire, Spring Snow in Qin Garden (梅花三弄) + Guangling San (广陵散) + Liu Shui (流水). UNESCO ICH 2003. Today Chinese cultural symbol. 古琴曲 + 2000 年 + 梅花三弄 + UNESCO 非遗.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前500",
+        "title": "先秦古琴",
+        "body": "《诗经》提到琴 + 瑟, 古琴已成文人士大夫修身之器"
+      },
+      {
+        "year": "前2世纪",
+        "title": "《广陵散》传说",
+        "body": "聂政刺韩王后嵇康临刑奏《广陵散》成绝响"
+      },
+      {
+        "year": "1425",
+        "title": "《神奇秘谱》",
+        "body": "明代朱权《神奇秘谱》收录古曲 63 首 + 减字谱定型"
+      },
+      {
+        "year": "2003",
+        "title": "UNESCO ICH",
+        "body": "古琴艺术列入联合国教科文组织人类口头和非物质遗产代表作"
+      },
+      {
+        "year": "2024",
+        "title": "全球琴友",
+        "body": "古琴 + 减字谱 + 中国古典音乐象征, 全球琴友数百万"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 古琴",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E7%90%B4",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO 古琴艺术",
+        "url": "https://ich.unesco.org/en/RL/guqin-and-its-music-00061",
+        "type": "reference"
+      },
+      {
+        "title": "中国艺术研究院音乐研究所",
+        "url": "https://www.musicology.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "naruto-shippuden",
+    "title": "火影忍者疾风传",
+    "kind": "anime",
+    "subKind": "shonen",
+    "series": "anime-works-atlas",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/naruto-shippuden/naruto-shippuden-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/naruto-shippuden/naruto-shippuden-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/naruto-shippuden/naruto-shippuden-full.webp",
+    "score": 8.4,
+    "tags": [
+      "naruto",
+      "shonen",
+      "anime",
+      "japan",
+      "xx-21"
+    ],
+    "tagline": "2007 Naruto Shippuden",
+    "subtitle": "anime · 火影忍者疾风传 · 百科占位",
+    "description": "Naruto Shippuden 2007 anime sequel 500 episodes, Studio Pierrot. Naruto + Sasuke + Sakura Team 7 ninja world. Today global top shonen franchise. 火影忍者疾风传 + 2007 + Studio Pierrot + 500 集 + 漩涡鸣人.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "1999",
+        "title": "漫画连载",
+        "body": "岸本齐史《NARUTO》开始连载《周刊少年Jump》"
+      },
+      {
+        "year": "2002",
+        "title": "动画化",
+        "body": "Studio Pierrot 制作《NARUTO》动画 220 集"
+      },
+      {
+        "year": "2007",
+        "title": "疾风传开播",
+        "body": "2 月 15 日《NARUTO - 疾风传》开播, 主线剧情中忍考试后"
+      },
+      {
+        "year": "2014",
+        "title": "完结",
+        "body": "2014 年 500 集疾风传完结, 2016 《博人传》接续"
+      },
+      {
+        "year": "2024",
+        "title": "20 周年 + 新作",
+        "body": "2024 NARUTO 动画 20 周年, 岸本齐史监督新作动画企划"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NARUTO 官方",
+        "url": "https://naruto-official.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Naruto Shippuden",
+        "url": "https://en.wikipedia.org/wiki/Naruto:_Shippuden",
+        "type": "wiki"
+      },
+      {
+        "title": "Studio Pierrot 制作",
+        "url": "https://en.wikipedia.org/wiki/Studio_Pierrot",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "shoplifters-japan",
+    "title": "小偷家族",
+    "kind": "movie",
+    "subKind": "japanese",
+    "series": "pulp-fiction",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/shoplifters-japan/shoplifters-japan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/shoplifters-japan/shoplifters-japan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/shoplifters-japan/shoplifters-japan-full.webp",
+    "score": 8.6,
+    "tags": [
+      "shoplifters",
+      "koreeda",
+      "japan",
+      "cinema",
+      "xx-21"
+    ],
+    "tagline": "2018 Cannes Palme dOr",
+    "subtitle": "电影 · 小偷家族 · 百科占位",
+    "description": "Shoplifters 万引き家族 2018 Hirokazu Kore-eda Japanese film Cannes Palme dOr 2018, foster family poverty drama. Today global Japanese social realism icon. 是枝裕和 + 2018 戛纳金棕榈 + 临时家庭 + 社会现实主义.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "2018-05",
+        "title": "戛纳金棕榈",
+        "body": "是枝裕和《小偷家族》第 71 届戛纳电影节金棕榈奖"
+      },
+      {
+        "year": "2018-06",
+        "title": "日本上映",
+        "body": "日本 2018 年 6 月 8 日上映, 安藤樱 Sakura Ando 获影后级演出"
+      },
+      {
+        "year": "2018",
+        "title": "奥斯卡外语片",
+        "body": "代表日本角逐 2019 第 91 届奥斯卡金像奖最佳外语片"
+      },
+      {
+        "year": "2019",
+        "title": "全球发行",
+        "body": "戛纳金棕榈 + 全球 50+ 国家发行"
+      },
+      {
+        "year": "2024",
+        "title": "日本电影史地位",
+        "body": "小偷家族被视为是枝裕和 + 现代日本电影社会派代表作"
+      }
+    ],
+    "sources": [
+      {
+        "title": "是枝裕和 导演",
+        "url": "https://www.bitters.co.jp/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Shoplifters",
+        "url": "https://en.wikipedia.org/wiki/Shoplifters_(film)",
+        "type": "wiki"
+      },
+      {
+        "title": "Festival de Cannes 2018",
+        "url": "https://www.festival-cannes.com/en/2018",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "kathmandu",
+    "title": "加德满都",
+    "kind": "city",
+    "subKind": "mountain",
+    "series": "city-encyclopedia",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kathmandu/kathmandu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kathmandu/kathmandu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kathmandu/kathmandu-full.webp",
+    "score": 7.5,
+    "tags": [
+      "kathmandu",
+      "nepal",
+      "asia",
+      "mountain",
+      "xiandai"
+    ],
+    "tagline": "723 BC Licchavi Kathmandu",
+    "subtitle": "城市 · 加德满都 · 百科占位",
+    "description": "Kathmandu Nepal capital 723 BC Licchavi era founding, 1400m Himalayas valley, Durbar Square UNESCO WH. Today global trekking + Buddhist + Hindu cultural hub. 加德满都 + 723 BC Licchavi + 1400 米 + 喜马拉雅门户.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前723",
+        "title": "Licchavi 起源",
+        "body": "加德满都谷地 Licchavi 王朝建城, 尼泊尔佛教 + 印度教交叉中心"
+      },
+      {
+        "year": "1489",
+        "title": "Malla 鼎盛",
+        "body": "加德满都谷地三城 (Kathmandu + Patan + Bhaktapur) Malla 王朝鼎盛, 杜巴广场建筑群"
+      },
+      {
+        "year": "1768",
+        "title": "Shah 统一",
+        "body": "Prithvi Narayan Shah 统一尼泊尔, 加德满都成为首都"
+      },
+      {
+        "year": "2015",
+        "title": "Gorkha 大地震",
+        "body": "2015 年 4 月 25 日 7.8 级地震, 大量古迹损毁, 国际修复中"
+      },
+      {
+        "year": "2024",
+        "title": "UNESCO + 喜马拉雅",
+        "body": "加德满都谷地 7 处 UNESCO WH, 喜马拉雅门户 + 全球登山基地"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO Kathmandu Valley",
+        "url": "https://whc.unesco.org/en/list/121/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Kathmandu",
+        "url": "https://en.wikipedia.org/wiki/Kathmandu",
+        "type": "wiki"
+      },
+      {
+        "title": "Nepal Tourism Board",
+        "url": "https://www.welcomenepal.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "tashkent",
+    "title": "塔什干",
+    "kind": "city",
+    "subKind": "ancient-capital",
+    "series": "city-encyclopedia",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/tashkent/tashkent-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/tashkent/tashkent-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/tashkent/tashkent-full.webp",
+    "score": 7.2,
+    "tags": [
+      "tashkent",
+      "uzbekistan",
+      "asia",
+      "ancient-capital",
+      "xiandai"
+    ],
+    "tagline": "2000 BC Silk Road oasis",
+    "subtitle": "城市 · 塔什干 · 百科占位",
+    "description": "Tashkent Uzbekistan capital 2000 BC Silk Road oasis, 1966 earthquake重建 + Soviet + Islamic architecture. Today Central Asia 2M population + UNESCO WH Itchan Kala. 塔什干 + 2000 BC 丝绸之路 + 1966 地震重建 + 帖木儿.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前2世纪",
+        "title": "丝绸之路绿洲",
+        "body": "塔什干作为丝绸之路中亚绿洲, 粟特商人贸易枢纽"
+      },
+      {
+        "year": "8世纪",
+        "title": "阿拉伯征服",
+        "body": "阿拉伯征服中亚, 塔什干伊斯兰化 + 帖木儿帝国时期"
+      },
+      {
+        "year": "1865",
+        "title": "俄罗斯征服",
+        "body": "沙俄吞并塔什干, 成为 Turkestan 总督驻地"
+      },
+      {
+        "year": "1966",
+        "title": "大地震重建",
+        "body": "1966 年 4 月 26 日 5.0 级地震, 重建成为苏联 + 民族风格融合城市"
+      },
+      {
+        "year": "2024",
+        "title": "中亚文化中心",
+        "body": "塔什干 250 万人口, 中亚最大城市 + UNESCO 撒马尔罕"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO Samarkand",
+        "url": "https://whc.unesco.org/en/list/603/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Tashkent",
+        "url": "https://en.wikipedia.org/wiki/Tashkent",
+        "type": "wiki"
+      },
+      {
+        "title": "Uzbekistan Tourism",
+        "url": "https://uzbekistan.travel/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "reykjavik",
+    "title": "雷克雅未克",
+    "kind": "city",
+    "subKind": "coastal",
+    "series": "city-encyclopedia",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/reykjavik/reykjavik-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/reykjavik/reykjavik-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/reykjavik/reykjavik-full.webp",
+    "score": 7.4,
+    "tags": [
+      "reykjavik",
+      "iceland",
+      "europe",
+      "coastal",
+      "xiandai"
+    ],
+    "tagline": "874 AD Iceland settlement",
+    "subtitle": "城市 · 雷克雅未克 · 百科占位",
+    "description": "Reykjavik Iceland capital 874 AD Ingólfur Arnarson settlement, world northernmost capital. Today 130K population + geothermal + Aurora + Björk. 雷克雅未克 + 874 AD + 世界最北首都 + 地热 + 北极光.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "874",
+        "title": "Arnarson 登陆",
+        "body": "Ingólfur Arnarson 874 年登陆冰岛, 世界最北首都建立"
+      },
+      {
+        "year": "1262",
+        "title": "挪威臣服",
+        "body": "冰岛臣服挪威 + Old Covenant, 1262-1944 殖民史开始"
+      },
+      {
+        "year": "1944",
+        "title": "独立共和国",
+        "body": "1944 年 6 月 17 日冰岛独立共和国成立, 雷克雅未克首都"
+      },
+      {
+        "year": "2008",
+        "title": "金融危机",
+        "body": "2008 金融危机冰岛银行体系崩溃, 雷克雅未克抗议"
+      },
+      {
+        "year": "2024",
+        "title": "清洁能源",
+        "body": "冰岛 100% 地热 + 水电, 全球清洁能源标杆 + 130K 人口"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Visit Reykjavik 官方",
+        "url": "https://www.visitreykjavik.is/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Reykjavik",
+        "url": "https://en.wikipedia.org/wiki/Reykjavik",
+        "type": "wiki"
+      },
+      {
+        "title": "Icelandic Meteorological Office",
+        "url": "https://www.vedur.is/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "kigali",
+    "title": "基加利",
+    "kind": "city",
+    "subKind": "modern-mega",
+    "series": "city-encyclopedia",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kigali/kigali-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kigali/kigali-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kigali/kigali-full.webp",
+    "score": 7.1,
+    "tags": [
+      "kigali",
+      "rwanda",
+      "africa",
+      "modern-mega",
+      "xiandai"
+    ],
+    "tagline": "1907 Rwanda colonial founding",
+    "subtitle": "城市 · 基加利 · 百科占位",
+    "description": "Kigali Rwanda capital 1907 German East Africa founding, 1994 genocide rebuilding model. Today Africa cleanest city + ICT hub + Paul Kagame modernization. 基加利 + 1907 + 卢旺达 + 非洲清洁城市 + ICT 中心.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "1907",
+        "title": "德国东非",
+        "body": "德国东非殖民据点, 卢旺达-布隆迪首府"
+      },
+      {
+        "year": "1962",
+        "title": "卢旺达独立",
+        "body": "卢旺达独立, 基加利成为首都"
+      },
+      {
+        "year": "1994",
+        "title": "种族灭绝",
+        "body": "1994 年 4 月-7 月卢旺达种族灭绝, 100 万图西族遇难, 基加利陷入混乱"
+      },
+      {
+        "year": "2003",
+        "title": "城市重建",
+        "body": "Paul Kagame 主导基加利重建, 清洁 + 现代化 + ICT 中心"
+      },
+      {
+        "year": "2024",
+        "title": "非洲清洁之城",
+        "body": "基加利 130 万人口, 非洲最清洁城市 + 卢旺达智慧非洲样板"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Visit Rwanda 官方",
+        "url": "https://www.visitrwanda.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Kigali",
+        "url": "https://en.wikipedia.org/wiki/Kigali",
+        "type": "wiki"
+      },
+      {
+        "title": "Rwanda Development Board",
+        "url": "https://rdb.rw/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "jade-burial-suit",
+    "title": "金缕玉衣",
+    "kind": "object",
+    "subKind": "ritual",
+    "series": "atlas-miscellany",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/jade-burial-suit/jade-burial-suit-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/jade-burial-suit/jade-burial-suit-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/jade-burial-suit/jade-burial-suit-full.webp",
+    "score": 8.7,
+    "tags": [
+      "jade-burial-suit",
+      "han-dynasty",
+      "chinese",
+      "ritual",
+      "gudai"
+    ],
+    "tagline": "113 BC Han jade suit",
+    "subtitle": "器物 · 金缕玉衣 · 百科占位",
+    "description": "Jade burial suit Han Dynasty 113 BC Liu Sheng Mancheng, 2160 jade pieces + gold thread 1100g. Today Hebei Museum + Han dynasty imperial luxury. 金缕玉衣 + 西汉 113 BC 满城汉墓 + 2160 玉片 + 金丝 1100 克.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前113",
+        "title": "满城汉墓",
+        "body": "西汉中山靖王刘胜 + 王后窦绾墓出土, 完整金缕玉衣"
+      },
+      {
+        "year": "前91",
+        "title": "丧葬礼制",
+        "body": "《后汉书》记载金缕玉衣丧葬礼制, 帝王贵族专用"
+      },
+      {
+        "year": "公元222",
+        "title": "曹魏禁制",
+        "body": "曹魏黄初三年 (222) 皇帝下诏禁用玉衣, 改用陶俑"
+      },
+      {
+        "year": "1968",
+        "title": "考古出土",
+        "body": "1968 年河北满城汉墓考古发掘, 完整金缕玉衣出土"
+      },
+      {
+        "year": "2024",
+        "title": "国宝文物",
+        "body": "金缕玉衣为河北博物院 + 国博镇馆之宝, 西汉工艺 + 礼制顶峰"
+      }
+    ],
+    "sources": [
+      {
+        "title": "河北博物院 满城汉墓",
+        "url": "https://www.hebeimuseum.org/",
+        "type": "museum"
+      },
+      {
+        "title": "Wikipedia: Jade burial suit",
+        "url": "https://en.wikipedia.org/wiki/Jade_burial_suit",
+        "type": "wiki"
+      },
+      {
+        "title": "中国国家博物馆",
+        "url": "https://www.chnmuseum.cn/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "sundial",
+    "title": "日晷",
+    "kind": "object",
+    "subKind": "scientific",
+    "series": "atlas-miscellany",
+    "seriesNo": "052",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/sundial/sundial-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/sundial/sundial-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/sundial/sundial-full.webp",
+    "score": 7.4,
+    "tags": [
+      "sundial",
+      "scientific",
+      "gudai",
+      "xiandai",
+      "object"
+    ],
+    "tagline": "3500 BC Egypt shadow clock",
+    "subtitle": "器物 · 日晷 · 百科占位",
+    "description": "Sundial 3500 BC Egyptian shadow clock + 2000 BC Babylon + 700 BC Greek + Chinese 日晷. Today global timekeeping ancestor + UNESCO ICH. 日晷 + 3500 BC 古埃及 + 巴比伦 + 苏州石刻日晷.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前3500",
+        "title": "古埃及影钟",
+        "body": "古埃及方尖碑影钟 3500 BC, 一天时间划分"
+      },
+      {
+        "year": "前1500",
+        "title": "中国日晷",
+        "body": "中国《周礼》记土圭日影测时 + 漏刻, 春秋时期日晷"
+      },
+      {
+        "year": "前700",
+        "title": "希腊日晷",
+        "body": "希腊 Anaximander 半球形日晷 + Berosus 碗形日晷"
+      },
+      {
+        "year": "1431",
+        "title": "故宫日晷",
+        "body": "北京故宫太和殿前汉白玉日晷 + 赤道式日晷"
+      },
+      {
+        "year": "2024",
+        "title": "UNESCO ICH",
+        "body": "中国日晷 + 钟表文化列入 UNESCO 非物质文化遗产候选"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Sundial",
+        "url": "https://en.wikipedia.org/wiki/Sundial",
+        "type": "wiki"
+      },
+      {
+        "title": "故宫博物院 日晷",
+        "url": "https://www.dpm.org.cn/",
+        "type": "museum"
+      },
+      {
+        "title": "British Sundial Society",
+        "url": "https://www.sundials.co.uk/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "astrolabe",
+    "title": "星盘",
+    "kind": "object",
+    "subKind": "scientific",
+    "series": "atlas-miscellany",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/astrolabe/astrolabe-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/astrolabe/astrolabe-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/astrolabe/astrolabe-full.webp",
+    "score": 7.6,
+    "tags": [
+      "astrolabe",
+      "scientific",
+      "islamic",
+      "medieval",
+      "object"
+    ],
+    "tagline": "150 BC Hipparchus astrolabe",
+    "subtitle": "器物 · 星盘 · 百科占位",
+    "description": "Astrolabe 150 BC Hipparchus origin + 800 AD Islamic golden age refinement + 1450s European navigator. Today global maritime + astronomy heritage symbol. 星盘 + 150 BC 依巴谷 + 伊斯兰黄金时代 + 大航海时代.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前150",
+        "title": "依巴谷发明",
+        "body": "古希腊天文学家依巴谷发明星盘雏形, 2D 投影天球"
+      },
+      {
+        "year": "8世纪",
+        "title": "伊斯兰黄金时代",
+        "body": "巴格达智慧之家 + 中东伊斯兰数学家改进星盘"
+      },
+      {
+        "year": "12世纪",
+        "title": "欧洲传入",
+        "body": "十字军从西班牙摩尔人传入欧洲, 拉丁语翻译版"
+      },
+      {
+        "year": "1480",
+        "title": "航海必备",
+        "body": "大航海时代星盘是远洋导航必备仪器, 葡萄牙 + 西班牙"
+      },
+      {
+        "year": "2024",
+        "title": "科学史文物",
+        "body": "星盘被视为中世纪伊斯兰 + 欧洲科学史代表文物"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Astrolabe",
+        "url": "https://en.wikipedia.org/wiki/Astrolabe",
+        "type": "wiki"
+      },
+      {
+        "title": "Museum of Islamic Art Doha",
+        "url": "https://www.mia.org.qa/",
+        "type": "museum"
+      },
+      {
+        "title": "British Museum Astrolabe 收藏",
+        "url": "https://www.britishmuseum.org/collection",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "cucumber",
+    "title": "黄瓜",
+    "kind": "plant",
+    "subKind": "grass",
+    "series": "craft-and-botanical",
+    "seriesNo": "017",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cucumber/cucumber-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cucumber/cucumber-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cucumber/cucumber-full.webp",
+    "score": 6.8,
+    "tags": [
+      "cucumber",
+      "plant",
+      "vegetable",
+      "global",
+      "xiandai"
+    ],
+    "tagline": "3000 BC India cucumber",
+    "subtitle": "植物 · 黄瓜 · 百科占位",
+    "description": "Cucumber Cucumis sativus 3000 BC India origin, ancient Greece + Roman + China Han Dynasty. Today global 100M+ tonnes/yr production, top 10 vegetable. 黄瓜 + 3000 BC 印度 + 全球 1 亿吨年产量 + 葫芦科.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前3000",
+        "title": "印度起源",
+        "body": "印度次大陆黄瓜 Cucumis sativus 起源 + 早期栽培"
+      },
+      {
+        "year": "前1000",
+        "title": "希腊罗马",
+        "body": "古希腊 + 古罗马广泛栽培, 罗马皇帝 Tiberius 夏季温室种植"
+      },
+      {
+        "year": "汉代",
+        "title": "传入中国",
+        "body": "西汉张骞西域带回黄瓜种子, 中国北方广泛种植"
+      },
+      {
+        "year": "19世纪",
+        "title": "美国普及",
+        "body": "美国 19 世纪腌制黄瓜 + 新鲜黄瓜商业种植"
+      },
+      {
+        "year": "2024",
+        "title": "全球蔬菜",
+        "body": "全球年产黄瓜 1 亿吨+, 中国第一产量国"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Cucumber",
+        "url": "https://en.wikipedia.org/wiki/Cucumber",
+        "type": "wiki"
+      },
+      {
+        "title": "FAO 全球蔬菜统计",
+        "url": "https://www.fao.org/faostat/",
+        "type": "reference"
+      },
+      {
+        "title": "Royal Horticultural Society",
+        "url": "https://www.rhs.org.uk/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "gibbon",
+    "title": "长臂猿",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gibbon/gibbon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gibbon/gibbon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gibbon/gibbon-full.webp",
+    "score": 7.5,
+    "tags": [
+      "gibbon",
+      "ape",
+      "asia",
+      "xiandai",
+      "animal"
+    ],
+    "tagline": "lesser apes Hylobatidae",
+    "subtitle": "动物 · 长臂猿 · 百科占位",
+    "description": "Gibbon Hylobatidae lesser apes Southeast Asia, longest arm-to-body primate, duet singing. 20+ species, IUCN Endangered 80%+. Today Asian forest primate flagship. 长臂猿 + 东南亚 + 长臂 + 二重唱 + IUCN 濒危.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前4世纪",
+        "title": "中国古籍",
+        "body": "中国《山海经》记\"狌狌\"即长臂猿, 古代已观察"
+      },
+      {
+        "year": "19世纪",
+        "title": "科学分类",
+        "body": "欧洲探险家 19 世纪系统分类长臂猿 Hylobatidae 科, 区分 20+ 种"
+      },
+      {
+        "year": "20世纪",
+        "title": "栖息地缩减",
+        "body": "热带雨林砍伐 + 宠物贸易 + 传统医药, 20 种长臂猿全部濒危"
+      },
+      {
+        "year": "2017",
+        "title": "全部濒危",
+        "body": "IUCN 全球长臂猿 80% 物种列入濒危 + 极危"
+      },
+      {
+        "year": "2024",
+        "title": "森林旗舰",
+        "body": "全球长臂猿 30 万只野外种群, 亚洲森林生态系统旗舰物种"
+      }
+    ],
+    "sources": [
+      {
+        "title": "IUCN Gibbon Conservation",
+        "url": "https://www.iucnredlist.org/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Gibbon",
+        "url": "https://en.wikipedia.org/wiki/Gibbon",
+        "type": "wiki"
+      },
+      {
+        "title": "Gibbon Conservation Alliance",
+        "url": "https://www.gibbonconservation.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "russian-blue",
+    "title": "俄罗斯蓝猫",
+    "kind": "pet",
+    "subKind": "cat-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/russian-blue/russian-blue-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/russian-blue/russian-blue-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/russian-blue/russian-blue-full.webp",
+    "score": 7.6,
+    "tags": [
+      "russian-blue",
+      "cat",
+      "russia",
+      "pet",
+      "xiandai"
+    ],
+    "tagline": "1860 Archangel Isles cat",
+    "subtitle": "宠物 · 俄罗斯蓝猫 · 百科占位",
+    "description": "Russian Blue cat 1860 Archangel Isles Russia origin, blue-grey + green eyes + dense coat. Today global top 10 pedigreed cat, hypoallergenic. 俄罗斯蓝猫 + 1860 阿尔汉格尔 + 蓝灰 + 绿色眼睛 + 低敏.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "1860",
+        "title": "阿尔汉格尔",
+        "body": "俄罗斯北部阿尔汉格尔港 + 商人带出, 蓝色短毛猫起源"
+      },
+      {
+        "year": "1875",
+        "title": "英国传入",
+        "body": "1875 年传入英国, Crystal Palace 猫展首次展示"
+      },
+      {
+        "year": "1912",
+        "title": "正式定名",
+        "body": "1912 年正式定名 Russian Blue 俄罗斯蓝猫品种"
+      },
+      {
+        "year": "20世纪",
+        "title": "二战濒危",
+        "body": "二战英国纯种俄罗斯蓝猫濒临绝迹, 战后斯堪的纳维亚 + 美国血系重建"
+      },
+      {
+        "year": "2024",
+        "title": "全球 10 大",
+        "body": "俄罗斯蓝猫为全球 10 大纯种猫, 低敏 + 蓝灰毛 + 绿眼睛特征"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cat Fanciers Association",
+        "url": "https://cfa.org/russian-blue/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Russian Blue",
+        "url": "https://en.wikipedia.org/wiki/Russian_Blue",
+        "type": "wiki"
+      },
+      {
+        "title": "TICA Russian Blue 标准",
+        "url": "https://www.tica.org/breeds/browse-all-breeds",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "bull-fighting",
+    "title": "斗牛",
+    "kind": "sport",
+    "subKind": "athletics",
+    "series": "atlas-miscellany",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/bull-fighting/bull-fighting-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/bull-fighting/bull-fighting-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/bull-fighting/bull-fighting-full.webp",
+    "score": 6.7,
+    "tags": [
+      "bull-fighting",
+      "spain",
+      "athletics",
+      "europe",
+      "xiandai"
+    ],
+    "tagline": "8th century Iberian corrida",
+    "subtitle": "体育运动 · 斗牛 · 百科占位",
+    "description": "Bullfighting 8th century Iberian Visigothic, Plaza de Toros + torero matador. Today Spain + Portugal + Latin America + animal welfare debate. 斗牛 + 8 世纪西哥特 + 西班牙广场 + 斗牛士 + 动物福利争议.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "8世纪",
+        "title": "西哥特",
+        "body": "伊比利亚半岛西哥特时期斗牛起源, 骑士骑马斗野牛"
+      },
+      {
+        "year": "18世纪",
+        "title": "徒步斗牛",
+        "body": "1726 年 Francisco Romero 发明徒步斗牛, 用红布 capote"
+      },
+      {
+        "year": "19世纪",
+        "title": "斗牛场兴起",
+        "body": "Plaza de Toros 大型斗牛场在西班牙马德里 + 塞维利亚兴建"
+      },
+      {
+        "year": "2010",
+        "title": "加泰罗尼亚禁令",
+        "body": "2010 加泰罗尼亚自治区禁止斗牛, 动物保护运动标志"
+      },
+      {
+        "year": "2024",
+        "title": "争议继续",
+        "body": "西班牙 + 葡萄牙斗牛继续, 全球动物福利争议持续"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Bullfighting",
+        "url": "https://en.wikipedia.org/wiki/Bullfighting",
+        "type": "wiki"
+      },
+      {
+        "title": "Plaza de Toros Las Ventas",
+        "url": "https://www.lasventas.com/",
+        "type": "reference"
+      },
+      {
+        "title": "CAS International animal protection",
+        "url": "https://www.cas-international.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "mid-autumn-festival",
+    "title": "中秋节",
+    "kind": "festival",
+    "subKind": "traditional",
+    "series": "festival-almanac",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/mid-autumn-festival/mid-autumn-festival-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/mid-autumn-festival/mid-autumn-festival-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/mid-autumn-festival/mid-autumn-festival-full.webp",
+    "score": 7.9,
+    "tags": [
+      "mid-autumn",
+      "festival",
+      "moon-cake",
+      "china",
+      "ancient"
+    ],
+    "tagline": "Tang dynasty moon worship",
+    "subtitle": "节日 · 中秋节 · 百科占位",
+    "description": "Mid-Autumn Festival Tang dynasty moon worship + moon cake + lantern + family reunion. Vietnam + Korea + Japan variations. Today global Chinese cultural festival + UNESCO ICH 2024. 中秋节 + 唐 + 月饼 + 团圆 + UNESCO 非遗.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前3000",
+        "title": "祭月起源",
+        "body": "先秦祭月 + 秋分祭月, 中秋文化基础"
+      },
+      {
+        "year": "唐代",
+        "title": "赏月定型",
+        "body": "唐代中秋赏月 + 玩月风俗盛行, 诗人王建《十五夜望月》"
+      },
+      {
+        "year": "宋代",
+        "title": "月饼出现",
+        "body": "宋代月饼出现, 中秋吃月饼 + 团圆 + 祭月组合"
+      },
+      {
+        "year": "明清",
+        "title": "全国节日",
+        "body": "明清中秋全国统一节日, 拜月 + 团圆 + 月饼全国流行"
+      },
+      {
+        "year": "2024",
+        "title": "UNESCO ICH",
+        "body": "中秋节列入 UNESCO 非物质文化遗产, 全球华人 + 越南 + 韩国 + 日本"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO 中秋节",
+        "url": "https://ich.unesco.org/en/RL/mid-autumn-festival-02108",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: 中秋节",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%A7%8B%E8%8A%82",
+        "type": "wiki"
+      },
+      {
+        "title": "China National Tourism Administration",
+        "url": "https://www.mct.gov.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "day-of-dead",
+    "title": "墨西哥亡灵节",
+    "kind": "festival",
+    "subKind": "ethnic-minority",
+    "series": "festival-almanac",
+    "seriesNo": "015",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/day-of-dead/day-of-dead-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/day-of-dead/day-of-dead-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/day-of-dead/day-of-dead-full.webp",
+    "score": 8,
+    "tags": [
+      "day-of-dead",
+      "mexico",
+      "skull",
+      "festival",
+      "ethnic-minority"
+    ],
+    "tagline": "Aztec + Catholic Día de Muertos",
+    "subtitle": "节日 · 墨西哥亡灵节 · 百科占位",
+    "description": "Day of the Dead Día de Muertos Mexico 3000-year Aztec origin + Spanish Catholic All Saints, calaveras + pan de muerto + marigold. UNESCO ICH 2008. Today global Mexican cultural icon. 墨西哥亡灵节 + 3000 年阿兹特克 + 卡特里娜骷髅 + UNESCO 非遗.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "前500",
+        "title": "阿兹特克",
+        "body": "中美洲阿兹特克 + 玛雅祭祖庆典 Miccaihuitontli 起源, 3000 年历史"
+      },
+      {
+        "year": "1521",
+        "title": "西班牙融合",
+        "body": "西班牙征服 + 天主教诸圣节融合阿兹特克祭祖, Día de Muertos 定型"
+      },
+      {
+        "year": "20世纪",
+        "title": "卡特里娜符号",
+        "body": "Diego Rivera + José Guadalupe Posada 卡特里娜骷髅夫人成为墨西哥文化符号"
+      },
+      {
+        "year": "2008",
+        "title": "UNESCO ICH",
+        "body": "墨西哥亡灵节列入联合国教科文组织非物质文化遗产"
+      },
+      {
+        "year": "2024",
+        "title": "全球文化符号",
+        "body": "Coco 动画电影 + 万寿菊 + 卡特里娜骷髅, 全球墨西哥文化代表"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO Day of the Dead",
+        "url": "https://ich.unesco.org/en/RL/00025",
+        "type": "reference"
+      },
+      {
+        "title": "Mexico Tourism Día de Muertos",
+        "url": "https://www.visitmexico.com/en/dia-de-muertos",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Day of the Dead",
+        "url": "https://en.wikipedia.org/wiki/Day_of_the_Dead",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "vietnam-war",
+    "title": "越南战争",
+    "kind": "history",
+    "subKind": "modern",
+    "series": "history-and-figures",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/vietnam-war/vietnam-war-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/vietnam-war/vietnam-war-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/vietnam-war/vietnam-war-full.webp",
+    "score": 8.2,
+    "tags": [
+      "vietnam-war",
+      "us-vietnam",
+      "modern",
+      "history",
+      "20c"
+    ],
+    "tagline": "1955-1975 Vietnam War",
+    "subtitle": "历史事件 · 越南战争 · 百科占位",
+    "description": "Vietnam War 1955-1975 US + South Vietnam vs North Vietnam + Viet Cong, 58000 US + 2-3M Vietnamese casualties. Today reconciliation + Agent Orange legacy. 越南战争 + 1955-1975 + 美越 + 58000 美国 + 2-3M 越南伤亡.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "1946",
+        "title": "第一次越南",
+        "body": "法国 + 越盟 1946-1954 第一次印度支那战争, 奠边府战役法军败"
+      },
+      {
+        "year": "1955",
+        "title": "美军介入",
+        "body": "1955 年南越吴廷瑈政权 + 美军顾问团开始介入越南"
+      },
+      {
+        "year": "1964",
+        "title": "北部湾事件",
+        "body": "1964 年 8 月北部湾事件, 美国国会通过东京湾决议案"
+      },
+      {
+        "year": "1973",
+        "title": "巴黎和平协议",
+        "body": "1973 年 1 月巴黎和平协议, 美军开始撤离"
+      },
+      {
+        "year": "1975",
+        "title": "西贡陷落",
+        "body": "1975 年 4 月 30 日西贡陷落, 越南统一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Vietnam Veterans Memorial Fund",
+        "url": "https://www.vvmf.org/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Vietnam War",
+        "url": "https://en.wikipedia.org/wiki/Vietnam_War",
+        "type": "wiki"
+      },
+      {
+        "title": "Library of Congress Vietnam War",
+        "url": "https://www.loc.gov/vietnam/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "slug": "berlin-wall",
+    "title": "柏林墙",
+    "kind": "history",
+    "subKind": "contemporary",
+    "series": "history-and-figures",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/berlin-wall/berlin-wall-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/berlin-wall/berlin-wall-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/berlin-wall/berlin-wall-full.webp",
+    "score": 8.4,
+    "tags": [
+      "berlin-wall",
+      "germany",
+      "cold-war",
+      "contemporary",
+      "history"
+    ],
+    "tagline": "1961-1989 Berlin Wall",
+    "subtitle": "历史事件 · 柏林墙 · 百科占位",
+    "description": "Berlin Wall 1961-1989 East Germany + Soviet block West Berlin separation 155km wall. 1989-11-09 falled + German reunification. Today global Cold War symbol + graffiti East Side Gallery. 柏林墙 + 1961-1989 + 155 公里 + 1989 倒塌 + 冷战象征.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "1949",
+        "title": "东西柏林",
+        "body": "1949 年纳粹德国 + 盟军分区占领, 东西柏林分裂, 大量东德人西逃"
+      },
+      {
+        "year": "1961-08-13",
+        "title": "柏林墙建造",
+        "body": "1961 年 8 月 13 日东德建柏林墙 155km, 冷战象征"
+      },
+      {
+        "year": "1963",
+        "title": "我是一个柏林人",
+        "body": "肯尼迪总统西柏林演讲 \"Ich bin ein Berliner\""
+      },
+      {
+        "year": "1989-11-09",
+        "title": "柏林墙倒塌",
+        "body": "1989 年 11 月 9 日东德宣布开放边境, 柏林墙倒塌, 德国统一开端"
+      },
+      {
+        "year": "1990",
+        "title": "德国统一",
+        "body": "1990 年 10 月 3 日两德统一, 东西柏林合并 + East Side Gallery 涂鸦墙保留"
+      }
+    ],
+    "sources": [
+      {
+        "title": "East Side Gallery Berlin",
+        "url": "https://www.eastsidegallery-berlin.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Berlin Wall",
+        "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+        "type": "wiki"
+      },
+      {
+        "title": "Mauermuseum Haus am Checkpoint Charlie",
+        "url": "https://www.mauermuseum.de/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "shogi",
+    "title": "将棋",
+    "kind": "sport",
+    "subKind": "mind-sport",
+    "series": "atlas-miscellany",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/shogi/shogi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/shogi/shogi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/shogi/shogi-full.webp",
+    "score": 7.4,
+    "tags": [
+      "shogi",
+      "japan",
+      "mind-sport",
+      "traditional",
+      "xiandai"
+    ],
+    "tagline": "16th century shogi modern rules",
+    "subtitle": "体育运动 · 将棋 · 百科占位",
+    "description": "Shogi Japanese chess 16th century modern rules, 9×9 board + 20 pieces + drop rule. Today Japan national sport + 12M players + FISE federation + AI AlphaZero 2023. 将棋 + 16 世纪 + 9×9 + 持驹规则 + AlphaZero.",
+    "createdAt": "2026-07-04",
+    "history": [
+      {
+        "year": "8-12世纪",
+        "title": "将棋起源",
+        "body": "将棋 (Japanese chess) 8-12 世纪起源, 印度 chaturanga 经中国象棋演变"
+      },
+      {
+        "year": "16世纪",
+        "title": "持驹规则",
+        "body": "16 世纪现代将棋定型, 持驹规则 (吃过的子可重新投放)"
+      },
+      {
+        "year": "1924",
+        "title": "日本将棋联盟",
+        "body": "1924 年日本将棋联盟 JSA 成立, 段级位系统定型"
+      },
+      {
+        "year": "2017",
+        "title": "永世棋圣",
+        "body": "羽生善治达成永世棋圣 (七冠), 将棋最高荣誉"
+      },
+      {
+        "year": "2023",
+        "title": "AI 强化",
+        "body": "AlphaZero-style AI 将棋 + dlshogi 普及, 业余段位 AI 训练"
+      }
+    ],
+    "sources": [
+      {
+        "title": "日本将棋联盟 JSA",
+        "url": "https://www.shogi.or.jp/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Shogi",
+        "url": "https://en.wikipedia.org/wiki/Shogi",
+        "type": "wiki"
+      },
+      {
+        "title": "FIDE 国际象棋联合会",
+        "url": "https://www.fide.com/",
+        "type": "reference"
       }
     ]
   }

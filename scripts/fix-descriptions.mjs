@@ -12,6 +12,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { callMmxSync, MmxHangError, MmxError } from "./mmx-client.mjs";
 import { fillMissingFields } from "./mmx-fallback.mjs";
+import { isMmxContentBad, sanitizeMmxContent } from "./mmx-content-guard.mjs";
 // Polyfill old-style callMmx(prompt, system) using the retry+backoff wrapper.
 const callMmx = (prompt, system) => callMmxSync(prompt, system);
 
@@ -49,10 +50,27 @@ for (let i = 0; i < targets.length; i++) {
   process.stdout.write(`[${i + 1}/${targets.length}] ${c.title} ... `);
   try {
     const out = callMmx(prompt).trim();
+    // R74: mmx-content-guard sanitize + bad-content detection.
+    // Catches JS-undefined trap / English stub / AI refusal before falling
+    // through to the 30-char heuristic. Falls back to programmatic
+    // derivation if both guards reject.
+    const sanitized = sanitizeMmxContent(out);
+    const bad = isMmxContentBad(sanitized);
+    if (bad.bad) {
+      const { applied } = fillMissingFields(c);
+      if (applied.includes("description")) {
+        fallbackUsed++;
+        console.log(`FALLBACK (mmx bad: ${bad.reason}) (${c.description.length} chars)`);
+        success++;
+        fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
+        continue;
+      }
+      console.log(`FAIL: mmx bad content (${bad.reason})`);
+      fail++;
+      continue;
+    }
     // Strip quotes / code fences if the model wrapped the output
-    let body = out
-      .replace(/^```[a-z]*\s*/i, "")
-      .replace(/```\s*$/, "")
+    let body = sanitized
       .replace(/^["「『]|["」』]$/g, "")
       .trim();
     if (body.length < 30) {

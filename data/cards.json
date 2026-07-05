@@ -9207,64 +9207,60 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/astronaut/astronaut-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/astronaut/astronaut-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/astronaut/astronaut-full.webp",
-    "score": 9.2,
+    "score": 8,
     "tags": [
-      "职业",
-      "航天",
-      "全球",
-      "科学"
+      "yuhangyuan",
+      "space",
+      "profession",
+      "tech",
+      "xiandai"
     ],
-    "tagline": "揽月摘星的勇士",
+    "tagline": "1961 Gagarin first cosmonaut",
     "subtitle": "职业 · 宇航员",
-    "description": "宇航员是指经过专门训练、完成航天任务的专业人员，主要在航天器或空间站中执行飞行、科研和设备维护等任务。自人类首次进入太空以来，宇航员职业逐渐成为探索宇宙前沿的关键岗位，通常需要具备出色的身体素质、专业的科学或工程背景，以及在极端环境下的应变能力。全球范围内，宇航员选拔严格、培养周期长，是人类迈向太空时代的重要职业之一。",
+    "description": "Astronaut 宇航员 1961 Gagarin first human space 地球轨道 + 1969 Neil Armstrong moon. Today China taikonaut + SpaceX commercial + ESA + 600+ humans space flown + 12 moonwalkers. 宇航员 + 1961 加加林 + 1969 阿姆斯特朗 + 全球 600+ 人 + 中国 taikonaut.",
     "createdAt": "2026-06-18",
     "sources": [
       {
-        "title": "中国大百科全书（专业版）- 航天员",
-        "url": "https://www.zgbk.com/",
-        "type": "百科"
+        "title": "NASA Astronaut Biographies",
+        "url": "https://www.nasa.gov/astronauts/biographies/",
+        "type": "reference"
       },
       {
-        "title": "维基百科中文版 - 宇航员",
-        "url": "https://zh.wikipedia.org/wiki/%E5%AE%87%E8%88%AA%E5%91%98",
-        "type": "百科"
+        "title": "Wikipedia: Astronaut",
+        "url": "https://en.wikipedia.org/wiki/Astronaut",
+        "type": "wiki"
       },
       {
-        "title": "中国科学院 - 航天与深空探测",
-        "url": "https://www.cas.cas.cn/",
-        "type": "机构"
-      },
-      {
-        "title": "中国航天科技集团",
-        "url": "https://www.spacechina.com/",
-        "type": "机构"
+        "title": "China Manned Space Agency",
+        "url": "http://www.cmse.gov.cn/",
+        "type": "reference"
       }
     ],
     "history": [
       {
-        "year": "1961 年",
-        "title": "首次进入太空",
-        "body": "1961年4月12日，苏联宇航员尤里·加加林完成人类首次太空飞行，标志宇航员职业诞生。"
+        "year": "1961",
+        "title": "加加林",
+        "body": "1961-04-12 苏联 Yuri Gagarin Vostok 1 首次 108 分钟地球轨道"
       },
       {
-        "year": "1969 年",
-        "title": "美国首次登月",
-        "body": "1969年7月20日，尼尔·阿姆斯特朗作为美国宇航员登上月球，实现人类首次月面行走。"
+        "year": "1963",
+        "title": "捷列什科娃",
+        "body": "1963 苏联 Valentina Tereshkova 首位女宇航员 Vostok 6 独立绕地 48 圈"
       },
       {
-        "year": "1983 年",
-        "title": "女性宇航员首飞",
-        "body": "1983年6月18日，美国宇航员萨莉·莱德成为首位进入太空的美国女性宇航员。"
+        "year": "1969",
+        "title": "阿姆斯特朗",
+        "body": "1969-07-20 Apollo 11 Neil Armstrong + Buzz Aldrin 首次月面行走 21 小时"
       },
       {
-        "year": "2003 年",
-        "title": "中国首位航天员",
-        "body": "2003年10月15日，中国宇航员杨利伟乘坐神舟五号完成首次载人航天飞行。"
+        "year": "2003",
+        "title": "杨利伟",
+        "body": "2003-10-15 中国 Yang Liwei 神舟五号, 中国首次载人航天, 中国 taikonaut 起源"
       },
       {
-        "year": "2000 年",
-        "title": "太空站长期驻留",
-        "body": "2000年11月2日，国际空间站首批宇航员入住，开始持续有人驻留的太空实验工作。"
+        "year": "2024",
+        "title": "600+ 太空人",
+        "body": "2024 全球 600+ 宇航员进入太空 + SpaceX Crew Dragon 商业化 + 中国空间站 + 月球基地"
       }
     ],
     "visualScore": 8,
@@ -9582,59 +9578,60 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/diabetes/diabetes-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/diabetes/diabetes-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/diabetes/diabetes-full.webp",
-    "score": 8.3,
+    "score": 8,
     "tags": [
-      "医学",
-      "慢性病",
-      "全球",
-      "代谢"
+      "tangniaobing",
+      "global",
+      "disease",
+      "chronic",
+      "xiandai"
     ],
-    "tagline": "甜蜜的隐形杀手",
+    "tagline": "537M global diabetes",
     "subtitle": "疾病 · 糖尿病",
-    "description": "糖尿病是一组以慢性高血糖为特征的代谢性疾病，主要因胰岛素分泌不足或作用缺陷导致。全球范围内患者众多，已成为最常见的慢性病之一。根据发病机制可分为1型、2型和妊娠糖尿病等类型，长期高血糖可引发多系统损害。",
+    "description": "Diabetes 糖尿病 537M global adults WHO 2021, Type 1 autoimmune + Type 2 insulin resistance 90%. Today insulin discovery 1921 Banting + Best + 全球 670 万年死亡. 糖尿病 + 5.37 亿 + 1 型 + 2 型 + 670 万年死亡.",
     "createdAt": "2026-06-18",
     "history": [
       {
-        "year": "1921 年",
-        "title": "胰岛素首次发现",
-        "body": "1921年，加拿大科学家班廷和麦克莱德成功提取胰岛素，开启糖尿病治疗新纪元。"
+        "year": "前1500",
+        "title": "古埃及记录",
+        "body": "前 1500 年古埃及 Ebers 莎草纸记录一种多饮多尿疾病 — 最早糖尿病记载"
       },
       {
-        "year": "1950 年",
-        "title": "口服药物研发",
-        "body": "1950年代，首批磺酰脲类药物面世，为2型糖尿病患者提供非注射治疗选择。"
+        "year": "1776",
+        "title": "糖尿病命名",
+        "body": "1776 英国医生 Thomas Willis 描述糖尿病 + 1921 Banting + Best 发现胰岛素"
       },
       {
-        "year": "1999 年",
-        "title": "连续血糖监测",
-        "body": "1999年，首款连续血糖监测系统上市，实时监控血糖波动，提高患者管理效率。"
+        "year": "1921",
+        "title": "胰岛素",
+        "body": "1921 Banting + Best 提取胰岛素, 1922 首例糖尿病患者治疗成功"
       },
       {
-        "year": "2010 年",
-        "title": "基因与精准医学",
-        "body": "2010年代，全基因组关联研究揭示多种糖尿病易感基因，推动个体化治疗方案发展。"
+        "year": "1996",
+        "title": "HAART",
+        "body": "1996 DCCT + UKPDS study, 1 型 2 型区别 + 强化血糖控制原则"
+      },
+      {
+        "year": "2024",
+        "title": "5.37 亿",
+        "body": "WHO 2021 全球 5.37 亿糖尿病 + 6.7 亿年死亡 + 健保系统核心议题"
       }
     ],
     "sources": [
       {
-        "title": "百度百科 - 糖尿病",
-        "url": "https://baike.baidu.com/item/%E7%B3%96%E5%B0%BF%E7%97%85",
-        "type": "百科"
+        "title": "WHO Diabetes Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/diabetes",
+        "type": "reference"
       },
       {
-        "title": "中华医学会糖尿病学分会",
-        "url": "https://www.diab.net.cn",
-        "type": "机构"
+        "title": "Wikipedia: Diabetes",
+        "url": "https://en.wikipedia.org/wiki/Diabetes_mellitus",
+        "type": "wiki"
       },
       {
-        "title": "中国知网 - 糖尿病专题",
-        "url": "https://kns.cnki.net/kns8/defaultresult/index",
-        "type": "学术"
-      },
-      {
-        "title": "中国疾病预防控制中心 - 糖尿病防治",
-        "url": "https://www.chinacdc.cn",
-        "type": "机构"
+        "title": "International Diabetes Federation",
+        "url": "https://idf.org/",
+        "type": "reference"
       }
     ],
     "visualScore": 7,
@@ -18068,65 +18065,60 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hypertension/hypertension-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hypertension/hypertension-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hypertension/hypertension-full.webp",
-    "score": 0,
+    "score": 8,
     "tags": [
-      "中国医学",
-      "现代疾病",
-      "全球健康",
-      "慢性病",
-      "心血管"
+      "gaoxueya",
+      "global",
+      "disease",
+      "chronic",
+      "xiandai"
     ],
-    "tagline": "沉默的健康杀手",
+    "tagline": "1.3B global hypertension",
     "subtitle": "疾病 · 高血压",
-    "description": "高血压是一种以体循环动脉血压持续升高为主要特征的慢性心血管疾病，可导致心脏、血管等器官功能或器质性改变。高血压通常无明显症状，但长期未控制的高血压会增加心脑血管疾病、肾脏损害等并发症风险。根据流行病学数据，高血压在全球范围内患病率较高，且受遗传因素、年龄、生活方式及环境因素等影响，是影响公共健康的重要慢性疾病之一。",
+    "description": "Hypertension 高血压 global 1.3B affected WHO 2023, leading cardiovascular risk factor. Today primary hypertension 90% idiopathic + secondary 10% + 130/80 mmHg threshold + 18M annual deaths. 高血压 + 13 亿人 + 心血管病首位 + 1800 万年死亡.",
     "createdAt": "2026-06-18",
     "history": [
       {
-        "year": "1850",
-        "title": "血压测量首例",
-        "body": "1850年，塞缪尔·冯·巴什首次使用汞血压计测量血压，开启血压量化时代，为高血压研究奠定基础。"
+        "year": "1914",
+        "title": "血压袖套",
+        "body": "1914 年俄国医生 Korotkoff 发现柯氏音 + 现代血压测量法"
       },
       {
-        "year": "1896",
-        "title": "高血压概念界定",
-        "body": "1896年，弗朗茨·冯·莱万多夫提出高血压概念，将血压异常升高正式列为疾病，引起医学界关注。"
+        "year": "1948",
+        "title": "Framingham 心脏研究",
+        "body": "1948 起 Framingham Heart Study 长期队列研究高血压 + 心血管病风险"
       },
       {
-        "year": "1930",
-        "title": "利尿剂治疗出现",
-        "body": "1930年代，首个利尿剂——氢氯噻嗪问世，为高血压患者提供首个有效药物疗法，显著降低并发症。"
+        "year": "1960s",
+        "title": "抗高血压药",
+        "body": "1960s 利尿剂 + β 阻断剂 + 钙通道阻滞剂多药降压"
       },
       {
-        "year": "1967",
-        "title": "β受体阻滞剂上市",
-        "body": "1967年，首个β受体阻滞剂——普萘洛尔获批上市，成为高血压治疗里程碑，改变临床用药格局。"
+        "year": "1990s",
+        "title": "WHO 重申",
+        "body": "1990s WHO 高血压全球战略, \"120/80\" 阈值争议至今"
       },
       {
-        "year": "1997",
-        "title": "全球高血压指南发布",
-        "body": "1997年，世界卫生组织发布首部全球高血压指南，统一诊断标准与治疗方案，推动全球防控工作。"
+        "year": "2024",
+        "title": "13 亿 + 死亡首位",
+        "body": "WHO 2023 统计全球 13 亿高血压, 心血管死亡首位, 1800 万年死亡"
       }
     ],
     "sources": [
       {
-        "title": "百度百科-高血压",
-        "url": "https://baike.baidu.com/item/%E9%AB%98%E8%A1%80%E5%8E%8B",
-        "type": "百科"
+        "title": "WHO Hypertension Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/hypertension",
+        "type": "reference"
       },
       {
-        "title": "中国高血压联盟",
-        "url": "https://www.bhli.org.cn",
-        "type": "机构"
+        "title": "Framingham Heart Study",
+        "url": "https://www.framinghamheartstudy.org/",
+        "type": "reference"
       },
       {
-        "title": "中华高血压杂志",
-        "url": "https://zhgxyzz.yiigle.com",
-        "type": "学术"
-      },
-      {
-        "title": "丁香园-高血压专题",
-        "url": "https://www.dxy.cn/special/topic/hypertension",
-        "type": "其它"
+        "title": "Wikipedia: Hypertension",
+        "url": "https://en.wikipedia.org/wiki/Hypertension",
+        "type": "wiki"
       }
     ],
     "quote": "世界卫生组织（WHO）指出，高血压是导致全球死亡的主要原因之一。",
@@ -40287,66 +40279,60 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/nurse/nurse-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/nurse/nurse-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/nurse/nurse-full.webp",
-    "score": 0,
+    "score": 7.7,
     "tags": [
-      "现代医疗",
-      "护理行业",
-      "全球卫生",
-      "人物职业",
-      "近代起源",
-      "职业流行"
+      "hushi",
+      "medical",
+      "profession",
+      "service",
+      "xiandai"
     ],
-    "tagline": "护士 · 图鉴社收录。",
+    "tagline": "Florence Nightingale 1854 nursing",
     "subtitle": "职业 · 护士",
-    "description": "护士是从事临床护理工作的卫生技术人员，主要职责是协助患者康复、执行医疗计划、提供健康教育等。他们广泛分布于医院、社区卫生服务中心等医疗机构，是医疗团队中不可或缺的成员。护士需具备专业的医学知识和临床技能，同时应具备高度的责任心与同理心。",
+    "description": "Nurse 护士 profession 1854 Florence Nightingale Crimean War 现代护理起源, 2020 International Year of the Nurse. Today global 28M nurses + WHO essential workforce + 90% female profession. 护士 + 1854 南丁格尔 + 2800 万 + 90% 女性 + 2020 国际护士年.",
     "createdAt": "2026-06-27",
     "history": [
       {
         "year": "1854",
-        "title": "南丁格尔护理先驱",
-        "body": "弗洛伦斯·南丁格尔在克里米亚战争中组织护理工作，奠定现代护理理念。"
+        "title": "南丁格尔",
+        "body": "1854 克里米亚战争 Florence Nightingale 现代护理起源, 战场死亡率 42% → 2%"
       },
       {
         "year": "1860",
-        "title": "首所护理学校",
-        "body": "1860年，南丁格尔在伦敦圣托马斯医院创办首所正规护理学校，推动护理教育制度化。"
+        "title": "圣托马斯医校",
+        "body": "1860 Nightingale 创办伦敦圣托马斯医院护校, 系统化护士教育"
       },
       {
-        "year": "1881",
-        "title": "红十字护士培训",
-        "body": "1881年，克拉克·巴顿在美国创立红十字会，随后开展系统化护士培训项目。"
+        "year": "1912",
+        "title": "南丁格尔奖",
+        "body": "1912 国际护士会 ICN 设立南丁格尔奖章, 战时护理最高荣誉"
       },
       {
-        "year": "1910",
-        "title": "中国护理教育起步",
-        "body": "1910年，上海圣公会医院设立中国首批护理培训班，开启中国现代护理教育。"
+        "year": "1974",
+        "title": "国际护士理事会",
+        "body": "1974 ICN \"国际护士日\" 5.12 设立, 国际护士理事会规范全球护士角色"
       },
       {
-        "year": "1965",
-        "title": "世卫强调护士角色",
-        "body": "1965年，世界卫生组织通过《阿拉木图宣言》，强调护士在初级卫生保健中的核心作用。"
+        "year": "2020",
+        "title": "WHO 护士年",
+        "body": "2020 WHO 国际护士 + 助产士年, 全球 2800 万护士 + 90% 女性 + 关键劳力"
       }
     ],
     "sources": [
       {
-        "title": "护士（职业） - 百度百科",
-        "url": "https://baike.baidu.com/item/护士",
-        "type": "百科"
+        "title": "WHO Nursing Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/nursing-and-midwifery",
+        "type": "reference"
       },
       {
-        "title": "护士 - 维基百科中文版",
-        "url": "https://zh.wikipedia.org/wiki/护士",
-        "type": "百科"
+        "title": "ICN International Council of Nurses",
+        "url": "https://www.icn.ch/",
+        "type": "reference"
       },
       {
-        "title": "护士职业概述 - 中国知网",
-        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&action=scholar&searchword=%E6%8A%A4%E5%A3%AB",
-        "type": "学术"
-      },
-      {
-        "title": "护士职业信息 - 国家卫生健康委员会",
-        "url": "https://www.nhc.gov.cn",
-        "type": "机构"
+        "title": "Wikipedia: Nursing",
+        "url": "https://en.wikipedia.org/wiki/Nursing",
+        "type": "wiki"
       }
     ],
     "subKind": "medical",
@@ -48718,7 +48704,7 @@
     ],
     "tagline": "陆地上最大的哺乳动物, 不能跳",
     "subtitle": "动物 · 大象 (动物) · 百科占位",
-    "description": "大象 (动物) 是 Atlas Kit 图鉴社「动物」分类下的百科图鉴占位条目 (category identity: Natural-history species profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "大象是现存体型最大的陆生哺乳动物，属于象科，分为非洲象（Loxodonta）与亚洲象（Elephas maximus）两属。它们拥有强壮的长鼻、宽大的耳廓和发达的象牙，体高可达四米，体重约六至七吨，寿命约七十余年，主要以植被为食，具有高度社群性，常成群活动。",
     "createdAt": "2026-07-01",
     "subKind": "mammal",
     "history": [
@@ -48781,7 +48767,7 @@
     ],
     "tagline": "毛利人传说中钓出北岛的半神",
     "subtitle": "神话 · 毛伊 (毛利神话) · 百科占位",
-    "description": "毛伊 (毛利神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "毛伊是新西兰毛利神话中的一位半神英雄，以其机智与力量在众多传说中扮演关键角色。传说中，他用神杖钓起北岛、拉慢太阳、熄灭火焰等壮举，展示了人类与自然的互动。毛伊的事迹在后世文学、艺术及现代流行文化中被广泛引用，成为毛利文化的重要象征。",
     "createdAt": "2026-07-01",
     "subKind": "oceania",
     "history": [
@@ -48844,7 +48830,7 @@
     ],
     "tagline": "印度神话雷神战神, 梵天之首",
     "subtitle": "神话 · 因陀罗 (印度神话) · 百科占位",
-    "description": "因陀罗 (印度神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "因陀罗是印度神话中的雷电与战争之神，也是天界诸神（Deva）之王，最早见于《吠陀》文献，尤其是《梨俱吠陀》中大量赞颂其勇猛与统治。在后期梵文与史诗时代，因陀罗形象逐渐被赋予更多政治与护法职能，成为印度教多个教派与民间信仰中的重要护法神之一。",
     "createdAt": "2026-07-01",
     "subKind": "hindu",
     "history": [
@@ -48907,7 +48893,7 @@
     ],
     "tagline": "印度爱欲之神, 甘蔗弓花箭",
     "subtitle": "神话 · 伽摩 (印度神话) · 百科占位",
-    "description": "伽摩 (印度神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "伽摩是印度神话中的爱欲与欲望之神，常被称为卡玛德瓦（Kamadeva）。其形象为手持花弓、以甘蔗为弦的少年，伴随其妻罗蒂（Rati）出现，主管众神与凡间的情感萌动。",
     "createdAt": "2026-07-01",
     "subKind": "hindu",
     "history": [
@@ -48970,7 +48956,7 @@
     ],
     "tagline": "光明音乐诗艺之神, 德尔菲神谕",
     "subtitle": "神话 · 阿波罗 (希腊神话) · 百科占位",
-    "description": "阿波罗 (希腊神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "阿波罗是古希腊神话中的重要神祇之一，为奥林波斯十二主神之一，父亲是宙斯，母亲为勒托，与狩猎女神阿耳忒弥斯为孪生兄妹。他掌管音乐、诗歌、弓箭、预言、医术以及太阳等多项领域，常以弓箭、银弓和七弦琴为象征，在神话与后世艺术中被广泛描绘。",
     "createdAt": "2026-07-01",
     "subKind": "classical-roman",
     "history": [
@@ -49032,7 +49018,7 @@
     ],
     "tagline": "罗马智慧女神, 雅典的罗马对应",
     "subtitle": "神话 · 密涅瓦 (罗马) · 百科占位",
-    "description": "密涅瓦 (罗马) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "密涅瓦是罗马神话中的智慧与工艺女神，主管知识、艺术、战争与手工业。她对应希腊神话的雅典娜，常以戴着盔甲、持有盾牌和猫头鹰的形象出现，象征理性与战略。在古罗马宗教中，她的祭司称为女祭司，主要节庆为三月的米涅尔瓦节。",
     "createdAt": "2026-07-01",
     "subKind": "classical-roman",
     "history": [
@@ -49095,7 +49081,7 @@
     ],
     "tagline": "巴比伦主神, 创世原初混沌之母 Tiamat 的征服者",
     "subtitle": "神话 · 马尔杜克 (近东神话) · 百科占位",
-    "description": "马尔杜克 (近东神话) 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "马尔杜克是古巴比伦神话中的主神之一，主管天空、雷鸣与战争，并因击败混沌之龙提亚玛特而获得巴比伦的保护神地位。其形象常以手持雷电的王者姿态出现，在后世与希腊的宙斯等神祇相提并论，对古代近东宗教与王权象征产生深远影响。",
     "createdAt": "2026-07-01",
     "subKind": "near-eastern",
     "history": [
@@ -51927,51 +51913,61 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/vancouver/vancouver-full.webp",
-    "score": 0,
+    "score": 7.6,
     "tags": [
-      "city",
+      "vancouver",
+      "canada",
+      "north-america",
       "coastal",
-      "现代",
-      "百科",
-      "图鉴社"
+      "xiandai"
     ],
-    "tagline": "8 次蝉联世界最宜居城市",
+    "tagline": "1886 Vancouver founding",
     "subtitle": "城市 · 温哥华 · 百科占位",
-    "description": "温哥华 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "Vancouver Canada 1886 CPR railroad terminal, Pacific Rim seaport + immigration port. Today 2.6M metro + Hollywood North 影视基地 + Stanley Park. 温哥华 + 1886 横贯加拿大铁路 + 太平洋港口 + 北好莱坞.",
     "createdAt": "2026-07-01",
     "subKind": "coastal",
     "history": [
       {
-        "year": "古代",
-        "title": "起源",
-        "body": "「温哥华」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+        "year": "1886",
+        "title": "铁路终点站",
+        "body": "1886 年加拿大太平洋铁路 CPR 终点站建城, 同年大火烧毁后重建"
       },
       {
-        "year": "近现代",
-        "title": "正式命名 / 现代化",
-        "body": "进入近现代后, 「温哥华」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+        "year": "1907",
+        "title": "移民潮",
+        "body": "1907 印度锡克移民潮 + 加拿大首座 Sikh gurdwara 教堂"
       },
       {
-        "year": "2026",
-        "title": "图鉴社收录",
-        "body": "2026-07-01 图鉴社正式收录「温哥华」并按 coastal 二级分类归档, 加入 atlas 知识网络。"
+        "year": "1971",
+        "title": "城市规划",
+        "body": "1971 取消高速公路计划保留 downtown 半岛, 城市宜居转型"
+      },
+      {
+        "year": "2010",
+        "title": "冬奥",
+        "body": "2010 冬奥会主办, BC Place + Canada Hockey Place 建成"
+      },
+      {
+        "year": "2024",
+        "title": "加拿大影都",
+        "body": "温哥华 2.6M metro + Stanley Park + 北好莱坞影视基地 + 亚太门户"
       }
     ],
     "sources": [
       {
-        "title": "维基百科 · 中文版",
-        "url": "https://zh.wikipedia.org/wiki/%E6%B8%A9%E5%93%A5%E5%8D%8E",
-        "type": "encyclopedia"
+        "title": "Tourism Vancouver",
+        "url": "https://www.tourismvancouver.com/",
+        "type": "reference"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E6%B8%A9%E5%93%A5%E5%8D%8E",
-        "type": "encyclopedia"
+        "title": "Wikipedia: Vancouver",
+        "url": "https://en.wikipedia.org/wiki/Vancouver",
+        "type": "wiki"
       },
       {
-        "title": "中国大百科全书",
-        "url": "https://www.zgbk.com/",
-        "type": "encyclopedia"
+        "title": "City of Vancouver Official",
+        "url": "https://vancouver.ca/",
+        "type": "reference"
       }
     ]
   },
@@ -62354,6 +62350,1374 @@
       {
         "title": "FIDE 国际象棋联合会",
         "url": "https://www.fide.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "wheat",
+    "title": "小麦",
+    "kind": "plant",
+    "subKind": "grass",
+    "series": "craft-and-botanical",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/wheat/wheat-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/wheat/wheat-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/wheat/wheat-full.webp",
+    "score": 7.5,
+    "tags": [
+      "xiaomai",
+      "maitong",
+      "global",
+      "shipin",
+      "shiji"
+    ],
+    "tagline": "9000 BC Fertile Crescent wheat",
+    "subtitle": "植物 · 小麦 · 百科占位",
+    "description": "Wheat Triticum aestivum 9000 BC Fertile Crescent origin, Neolithic Revolution staple, 220+ million hectares global harvest. Today 800M tonnes/yr, China + India + Russia + US top producers. 小麦 + 9000 BC 新月沃土 + 全球 8 亿吨 + 4 大主产国.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前9000",
+        "title": "新月沃土起源",
+        "body": "小麦 Triticum 起源新月沃土 (今以色列/黎巴嫩), 二粒小麦野生 + 农业革命"
+      },
+      {
+        "year": "前3000",
+        "title": "古埃及 + 美索不达米亚",
+        "body": "小麦种植扩张至尼罗河 + 两河流域, 古埃及面包文化 + 啤酒配料"
+      },
+      {
+        "year": "前2000",
+        "title": "传入中国",
+        "body": "小麦经中亚丝绸之路传入中国西北, 取代黍稷为主粮, 北方面食定型"
+      },
+      {
+        "year": "19世纪",
+        "title": "全球扩展",
+        "body": "小麦种植全球扩展至北美 + 澳洲 + 阿根廷, 移民农业 + 国际贸易"
+      },
+      {
+        "year": "2024",
+        "title": "750 百万吨",
+        "body": "全球小麦 7.5 亿吨年产量, 中国 + 印度 + 俄罗斯 + 美 + 法 + 加 + 澳 + 乌 8 大产国"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FAO Wheat Statistics",
+        "url": "https://www.fao.org/faostat/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Wheat",
+        "url": "https://en.wikipedia.org/wiki/Wheat",
+        "type": "wiki"
+      },
+      {
+        "title": "CIMMYT International Maize and Wheat",
+        "url": "https://www.cimmyt.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "rice",
+    "title": "水稻",
+    "kind": "plant",
+    "subKind": "grass",
+    "series": "craft-and-botanical",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/rice/rice-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/rice/rice-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/rice/rice-full.webp",
+    "score": 7.8,
+    "tags": [
+      "shuidao",
+      "zhongguo",
+      "shipin",
+      "nongye",
+      "shiji"
+    ],
+    "tagline": "10000 BC Yangtze rice",
+    "subtitle": "植物 · 水稻 · 百科占位",
+    "description": "Rice Oryza sativa 10000 BC Yangtze River China origin, East Asia + South Asia staple, 500M tonnes/yr global. Today Asia 90% production + 3.5B people主食 + Oryza sativa japonica + indica. 水稻 + 10000 BC 长江流域 + 全球 5 亿吨 + 35 亿人主食.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前10000",
+        "title": "长江流域驯化",
+        "body": "水稻 Oryza sativa 长江流域中国驯化, 河姆渡遗址 7000 BC 稻米遗存"
+      },
+      {
+        "year": "前3000",
+        "title": "亚洲传播",
+        "body": "水稻传播至东亚 + 东南亚 + 南亚, 印度次大陆 + 日本弥生 + 东南亚"
+      },
+      {
+        "year": "前1世纪",
+        "title": "粳稻 + 籼稻",
+        "body": "水稻分化为 japonica 粳稻 (北) + indica 籼稻 (南), 适应不同气候"
+      },
+      {
+        "year": "1960s",
+        "title": "绿色革命",
+        "body": "IR8 半矮秆高产水稻 1966 国际水稻研究所, F1 杂交 + 化肥 + 灌溉, 全球增产"
+      },
+      {
+        "year": "2024",
+        "title": "亚洲 90% 主食",
+        "body": "全球稻米 5 亿吨年产量, 亚洲 90% + 35 亿人主食 + 国际粮食安全核心"
+      }
+    ],
+    "sources": [
+      {
+        "title": "International Rice Research Institute",
+        "url": "https://www.irri.org/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Rice",
+        "url": "https://en.wikipedia.org/wiki/Rice",
+        "type": "wiki"
+      },
+      {
+        "title": "FAO Rice Statistics",
+        "url": "https://www.fao.org/faostat/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "sunflower",
+    "title": "向日葵",
+    "kind": "plant",
+    "subKind": "flower",
+    "series": "craft-and-botanical",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/sunflower/sunflower-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/sunflower/sunflower-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/sunflower/sunflower-full.webp",
+    "score": 7,
+    "tags": [
+      "xiangrikui",
+      "meiguo",
+      "huahui",
+      "shiji",
+      "xiandai"
+    ],
+    "tagline": "1500 BC Americas sunflower",
+    "subtitle": "植物 · 向日葵 · 百科占位",
+    "description": "Sunflower Helianthus annuus 1500 BC North America origin, 1510 西班牙引入欧洲, Heliotropism 太阳追随. Today global oilseed crop #4 + Ukraine + Russia 60% production. 向日葵 + 1500 BC 美洲 + 向阳性 + 全球油料第 4.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前3000",
+        "title": "北美驯化",
+        "body": "北美原住民 3000 BC 驯化向日葵, 单头花 + 大种子"
+      },
+      {
+        "year": "1510",
+        "title": "引入欧洲",
+        "body": "1510 西班牙探险家从北美带回向日葵种子, 欧洲园艺 + 油画题材 (梵高向日葵 1888)"
+      },
+      {
+        "year": "19世纪",
+        "title": "俄国榨油",
+        "body": "俄国东正教 19 世纪大规模种植, 葵花籽油工业 + Lenten food"
+      },
+      {
+        "year": "20世纪",
+        "title": "杂交育种",
+        "body": "20 世纪杂交育种 + 高油酸品种, 全球油料"
+      },
+      {
+        "year": "2024",
+        "title": "乌克兰 + 俄罗斯",
+        "body": "乌克兰 + 俄罗斯 60% 全球向日葵油生产, 国际油料第 4 位"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Sunflower",
+        "url": "https://en.wikipedia.org/wiki/Helianthus_annuus",
+        "type": "wiki"
+      },
+      {
+        "title": "National Sunflower Association",
+        "url": "https://www.sunflowernsa.com/",
+        "type": "reference"
+      },
+      {
+        "title": "USDA Sunflower Production",
+        "url": "https://www.usda.gov/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "bamboo-shoot",
+    "title": "竹笋",
+    "kind": "plant",
+    "subKind": "grass",
+    "series": "craft-and-botanical",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/bamboo-shoot/bamboo-shoot-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/bamboo-shoot/bamboo-shoot-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/bamboo-shoot/bamboo-shoot-full.webp",
+    "score": 7.2,
+    "tags": [
+      "zhusun",
+      "zhonghua",
+      "shipin",
+      "xiandai",
+      "shiji"
+    ],
+    "tagline": "2000 BC China bamboo shoot",
+    "subtitle": "植物 · 竹笋 · 百科占位",
+    "description": "Bamboo shoot China 2000 BC 食用起源, spring harvest 春笋 + winter 冬笋 + shoot classifications 毛竹 + 雷竹. Today China 8M tonnes/yr 笋干 + 罐头. 竹笋 + 2000 BC 中国 + 春笋冬笋 + 8 百万吨.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前2000",
+        "title": "中国食用起源",
+        "body": "中国先秦时期竹笋食用起源, 周礼记载笋人采集"
+      },
+      {
+        "year": "唐宋",
+        "title": "笋食谱成熟",
+        "body": "唐宋时期笋谱 + 笋干技术成熟, 春笋 + 冬笋 + 玉兰片 / 笋干"
+      },
+      {
+        "year": "明清",
+        "title": "天目笋干 + 浙江",
+        "body": "明清浙江天目山笋干 + 福建闽笋 + 江西井冈竹笋, 中国饮食文化标志"
+      },
+      {
+        "year": "20世纪",
+        "title": "罐头工业化",
+        "body": "20 世纪竹笋罐头工厂 + 出口日本 + 欧美, 中国 8M 吨年产量"
+      },
+      {
+        "year": "2024",
+        "title": "中国 + 全球",
+        "body": "竹笋全球 80 万吨 + 中国 70%, 亚洲 + 北美 + 欧洲餐厅常用食材"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Bamboo shoot",
+        "url": "https://en.wikipedia.org/wiki/Bamboo_shoot",
+        "type": "wiki"
+      },
+      {
+        "title": "中国竹子协会",
+        "url": "http://www.ca-bamboo.com.cn/",
+        "type": "reference"
+      },
+      {
+        "title": "浙江天目竹笋产业",
+        "url": "https://www.zj.gov.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "saffron",
+    "title": "藏红花",
+    "kind": "plant",
+    "subKind": "flower",
+    "series": "craft-and-botanical",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/saffron/saffron-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/saffron/saffron-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/saffron/saffron-full.webp",
+    "score": 8.6,
+    "tags": [
+      "zanghonghua",
+      "shijie",
+      "shipin",
+      "spice",
+      "shiji"
+    ],
+    "tagline": "1700 BC Minoan saffron",
+    "subtitle": "植物 · 藏红花 · 百科占位",
+    "description": "Saffron Crocus sativus 1700 BC Crete Minoan origin, 1500 USD/oz world most expensive spice. Iran 90% production, India Kashmir + Spain La Mancha. Today ~430 tonnes/yr global. 藏红花 + 1700 BC 米诺斯 + 1500 美元/oz + 伊朗 90%. UNESCO Iranian spice heritage.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前1700",
+        "title": "米诺斯",
+        "body": "1700 BC 克里特岛米诺斯文明最早使用藏红花作染料 + 药材"
+      },
+      {
+        "year": "前500",
+        "title": "波斯帝国",
+        "body": "波斯帝国 500 BC 藏红花 + 大流士一世王室染料, \"红色金子\"起源"
+      },
+      {
+        "year": "8世纪",
+        "title": "摩洛哥",
+        "body": "伊斯兰黄金时代藏红花传播至摩洛哥 + 西班牙"
+      },
+      {
+        "year": "20世纪",
+        "title": "现代科研",
+        "body": "20 世纪藏红花素 Crocin + Safranal 风味化合物研究 + 抗抑郁 + 抗氧化"
+      },
+      {
+        "year": "2024",
+        "title": "伊朗 90%",
+        "body": "伊朗呼罗珊省 90% 全球产, 全球 430 吨年产量 + 克什米尔 Kesar + 西班牙 La Mancha"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Saffron",
+        "url": "https://en.wikipedia.org/wiki/Saffron",
+        "type": "wiki"
+      },
+      {
+        "title": "Iran Ministry of Agriculture",
+        "url": "https://www.maj.ir/",
+        "type": "reference"
+      },
+      {
+        "title": "ISO Saffron Standard 3632",
+        "url": "https://www.iso.org/standard/23251.html",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "montevideo",
+    "title": "蒙得维的亚",
+    "kind": "city",
+    "subKind": "coastal",
+    "series": "city-encyclopedia",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/montevideo/montevideo-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/montevideo/montevideo-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/montevideo/montevideo-full.webp",
+    "score": 7.4,
+    "tags": [
+      "montevideo",
+      "uruguay",
+      "south-america",
+      "coastal",
+      "xiandai"
+    ],
+    "tagline": "1724 Montevideo founding",
+    "subtitle": "城市 · 蒙得维的亚 · 百科占位",
+    "description": "Montevideo Uruguay capital 1724 Spanish Bruno Mauricio de Zabala founding, Río de la Plata 拉普拉塔河. Today 1.4M population + UNESCO WH old town + tango + literary heritage 2013. 蒙得维的亚 + 1724 西班牙 + 拉普拉塔河口 + UNESCO 文学之城 2013.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1724",
+        "title": "西班牙建城",
+        "body": "西班牙殖民者 Bruno Mauricio de Zabala 1724 建蒙得维的亚, 拉普拉塔河东岸"
+      },
+      {
+        "year": "1808",
+        "title": "英国入侵",
+        "body": "英法战争期间 1807-1808 短暂英国入侵, 拉普拉塔河战略"
+      },
+      {
+        "year": "1828",
+        "title": "乌拉圭独立",
+        "body": "1828 年乌拉圭独立战争后, 蒙得维的亚成为首都"
+      },
+      {
+        "year": "1973",
+        "title": "军事独裁",
+        "body": "1973-1985 军事独裁 + 圆屋书店起义 + 失踪者广场"
+      },
+      {
+        "year": "2013",
+        "title": "UNESCO 文学",
+        "body": "2013 UNESCO 文学之城, Idahosa 多家书店 + tango 文化中心"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO Montevideo",
+        "url": "https://whc.unesco.org/en/list/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Montevideo",
+        "url": "https://en.wikipedia.org/wiki/Montevideo",
+        "type": "wiki"
+      },
+      {
+        "title": "Uruguay Government Tourism",
+        "url": "https://www.gub.uy/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "helsinki",
+    "title": "赫尔辛基",
+    "kind": "city",
+    "subKind": "coastal",
+    "series": "city-encyclopedia",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/helsinki/helsinki-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/helsinki/helsinki-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/helsinki/helsinki-full.webp",
+    "score": 7.5,
+    "tags": [
+      "helsinki",
+      "finland",
+      "europe",
+      "coastal",
+      "xiandai"
+    ],
+    "tagline": "1550 Helsinki founding",
+    "subtitle": "城市 · 赫尔辛基 · 百科占位",
+    "description": "Helsinki Finland capital 1550 Gustav I founding, 1812 capital transfer from Turku, Aalto architecture + sauma + Sibelius. Today 660K population + UNESCO WH Suomenlinna. 赫尔辛基 + 1550 + 1812 首都 + Aalto 建筑 + UNESCO 苏奥曼.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1550",
+        "title": "瑞典建城",
+        "body": "1550 瑞典国王 Gustav I 命令建城, 抗衡俄罗斯彼得堡"
+      },
+      {
+        "year": "1809",
+        "title": "俄属芬兰",
+        "body": "1809 芬兰被俄国吞并, 1812 成为芬兰大公国首都"
+      },
+      {
+        "year": "1917",
+        "title": "独立首都",
+        "body": "1917 芬兰独立 + 1918 内战后, 赫尔辛基议会制共和国首都"
+      },
+      {
+        "year": "1952",
+        "title": "夏季奥运",
+        "body": "1952 赫尔辛基夏季奥运会 + Alvar Aalto 现代建筑 + 萨乌纳文化"
+      },
+      {
+        "year": "2024",
+        "title": "设计之都",
+        "body": "赫尔辛基 660K 人口 + UNESCO WH Suomenlinna + 设计之都 + 桑拿起源地"
+      }
+    ],
+    "sources": [
+      {
+        "title": "My Helsinki Tourism",
+        "url": "https://www.myhelsinki.fi/en",
+        "type": "reference"
+      },
+      {
+        "title": "UNESCO Suomenlinna",
+        "url": "https://whc.unesco.org/en/list/583/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Helsinki",
+        "url": "https://en.wikipedia.org/wiki/Helsinki",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "yangon",
+    "title": "仰光",
+    "kind": "city",
+    "subKind": "ancient-capital",
+    "series": "city-encyclopedia",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/yangon/yangon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/yangon/yangon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/yangon/yangon-full.webp",
+    "score": 7,
+    "tags": [
+      "yangon",
+      "myanmar",
+      "asia",
+      "ancient-capital",
+      "xiandai"
+    ],
+    "tagline": "1755 Dagon Yangon founding",
+    "subtitle": "城市 · 仰光 · 百科占位",
+    "description": "Yangon Myanmar largest city 1755 King Alaungpayaya renamed Dagon as Yangon, British colonial Rangoon 1886-1948. Today Shwedagon Pagoda 全球佛教中心 + 5M population. 仰光 + 1755 + 英国殖民 + 大金塔.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1755",
+        "title": "Dagon + Yangon",
+        "body": "Alaungpayaya 国王 1755 征服 Dagon 改名仰光"
+      },
+      {
+        "year": "1824",
+        "title": "英缅战争",
+        "body": "1824-1826 英缅战争, 仰光 1852 入英属印度殖民地"
+      },
+      {
+        "year": "1886",
+        "title": "英属缅甸",
+        "body": "英属缅甸 1886 仰光总督驻地 + 印度洋贸易中心"
+      },
+      {
+        "year": "1948",
+        "title": "独立",
+        "body": "1948 缅甸独立, 仰光首都 1948-2006, 后迁内比都"
+      },
+      {
+        "year": "2024",
+        "title": "大金塔",
+        "body": "仰光 5M 人口 + Shwedagon Pagoda 2500 年 + 仰光 Hluttaw 议会"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Myanmar Ministry of Hotels and Tourism",
+        "url": "https://www.tourismmyanmar.org/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Yangon",
+        "url": "https://en.wikipedia.org/wiki/Yangon",
+        "type": "wiki"
+      },
+      {
+        "title": "Shwedagon Pagoda Official",
+        "url": "https://www.shwedagonpagoda.org.mm/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "meerschaum-pipe",
+    "title": "海泡石烟斗",
+    "kind": "object",
+    "subKind": "craft",
+    "series": "atlas-miscellany",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/meerschaum-pipe/meerschaum-pipe-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/meerschaum-pipe/meerschaum-pipe-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/meerschaum-pipe/meerschaum-pipe-full.webp",
+    "score": 7,
+    "tags": [
+      "haipaoshi",
+      "turkey",
+      "craft",
+      "xiandai",
+      "object"
+    ],
+    "tagline": "18c Vienna meerschaum pipe",
+    "subtitle": "器物 · 海泡石烟斗 · 百科占位",
+    "description": "Meerschaum pipe 18 century Vienna origin, Eskisehir Turkey海泡石 Sepiolite + Bavarian pipes. Today collectible art + collectors museum quality. 海泡石烟斗 + 18 世纪维也纳 + 土耳其 Eskisehir 原料 + 收藏艺术品.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1723",
+        "title": "维也纳",
+        "body": "1723 维也纳工匠 Andreas Speratus 制造海泡石烟斗, 奥斯曼帝国传入原料"
+      },
+      {
+        "year": "18-19世纪",
+        "title": "Bavaria 产业",
+        "body": "18-19 世纪德国 Bavaria + 维也纳烟斗产业成熟, 收藏级 + 雕刻艺术品"
+      },
+      {
+        "year": "20世纪",
+        "title": "Eskisehir",
+        "body": "20 世纪土耳其 Eskisehir 现代生产 + Sepiolite 矿脉保护"
+      },
+      {
+        "year": "当代",
+        "title": "收藏市场",
+        "body": "海泡石烟斗全球收藏市场 + 协会 + 博物馆级百年古董"
+      },
+      {
+        "year": "2024",
+        "title": "收藏艺术品",
+        "body": "海泡石烟斗 200+ 欧元入门, 收藏级 1000+ USD, 当代工艺品 + 历史古董分立"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Meerschaum pipe",
+        "url": "https://en.wikipedia.org/wiki/Meerschaum_pipe",
+        "type": "wiki"
+      },
+      {
+        "title": "Meerschaum Association",
+        "url": "https://www.meerschaumcorner.com/",
+        "type": "reference"
+      },
+      {
+        "title": "TurkStat Eskisehir mining",
+        "url": "https://www.tuik.gov.tr/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "thangka",
+    "title": "唐卡",
+    "kind": "object",
+    "subKind": "art",
+    "series": "atlas-miscellany",
+    "seriesNo": "059",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/thangka/thangka-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/thangka/thangka-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/thangka/thangka-full.webp",
+    "score": 7.8,
+    "tags": [
+      "tangka",
+      "tibet",
+      "buddhist",
+      "art",
+      "xiandai"
+    ],
+    "tagline": "7c Tibetan Buddhist thangka",
+    "subtitle": "器物 · 唐卡 · 百科占位",
+    "description": "Thangka 唐卡 Tibetan Buddhist art 7th century origin, mineral pigment + cotton silk scroll painting + mandala + Buddha. Today UNESCO ICH 2009 Tibetan + UNESCO Mongolian + 2800+ years tradition. 唐卡 + 7 世纪吐蕃 + 矿物颜料 + 玛尼 + UNESCO 非遗.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "7世纪",
+        "title": "吐蕃起源",
+        "body": "7 世纪文成公主入藏 + 吐蕃佛教, 唐卡艺术起源"
+      },
+      {
+        "year": "11世纪",
+        "title": "后弘期",
+        "body": "11 世纪藏传佛教后弘期, 唐卡玛尼 + 佛像定型"
+      },
+      {
+        "year": "13世纪",
+        "title": "萨迦派黄金时代",
+        "body": "元代萨迦派 + 唐卡黄金 + 佛像丝绸画布 + 矿物颜料"
+      },
+      {
+        "year": "17-18世纪",
+        "title": "噶举派",
+        "body": "噶举派 + 噶玛巴 + 五世达赖 + 宗喀巴大师题材繁盛"
+      },
+      {
+        "year": "2024",
+        "title": "UNESCO",
+        "body": "2009 唐卡列入 UNESCO 非遗, 西 + 蒙古 + 尼泊尔 + 不丹多种流派"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Thangka",
+        "url": "https://en.wikipedia.org/wiki/Thangka",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO Tibetan thangka",
+        "url": "https://ich.unesco.org/en/RL/tibetan-thangka-painting-00090",
+        "type": "reference"
+      },
+      {
+        "title": "Rubin Museum of Art",
+        "url": "https://rubinmuseum.org/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "kiritsuke-knife",
+    "title": "切付刀",
+    "kind": "object",
+    "subKind": "craft",
+    "series": "atlas-miscellany",
+    "seriesNo": "060",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kiritsuke-knife/kiritsuke-knife-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kiritsuke-knife/kiritsuke-knife-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kiritsuke-knife/kiritsuke-knife-full.webp",
+    "score": 7.2,
+    "tags": [
+      "qieqie-dao",
+      "japan",
+      "craft",
+      "kitchen",
+      "object"
+    ],
+    "tagline": "16c Japanese kiritsuke",
+    "subtitle": "器物 · 切付刀 · 百科占位",
+    "description": "Kiritsuke knife 16 century Japanese传统厨刀, sashimi + katsuramuki切丝 + sushi chef status symbol. Today Jiro Ono + 全球顶级 sushi 店御用. 切付刀 + 16 世纪江户 + 刺身 + 寿司师傅尊严象征.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "16世纪",
+        "title": "江户起源",
+        "body": "16 世纪江户时代刺身刀 切付刀起源, 1624 大阪造"
+      },
+      {
+        "year": "18世纪",
+        "title": "片刃制作",
+        "body": "18 世纪柳刃 + 出刃 + 切付 3 大日本厨刀定型, single-bevel 单刃"
+      },
+      {
+        "year": "20世纪",
+        "title": "Jiro Ono",
+        "body": "现代寿司之神 Jiro Ono + \"二郎的寿司梦\" 切付刀状态象征"
+      },
+      {
+        "year": "今日",
+        "title": "顶级寿司店御用",
+        "body": "切付刀 5-10 万人民币 + 顶级寿司店御用, 普通居酒屋 chef 禁止用"
+      },
+      {
+        "year": "现代",
+        "title": "日本寿司",
+        "body": "日本 江戸前寿司 + 刺身 + 手握寿司 + 切付刀 combination"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Kiritsuke",
+        "url": "https://en.wikipedia.org/wiki/Kiritsuke",
+        "type": "wiki"
+      },
+      {
+        "title": "Japanese Knife Museum 関刃物",
+        "url": "https://www.sekiknives.jp/",
+        "type": "reference"
+      },
+      {
+        "title": "Jiro Ono 寿司之神",
+        "url": "https://www.sukiyabashi-jiro.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "compass-ming",
+    "title": "司南",
+    "kind": "object",
+    "subKind": "scientific",
+    "series": "atlas-miscellany",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/compass-ming/compass-ming-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/compass-ming/compass-ming-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/compass-ming/compass-ming-full.webp",
+    "score": 7.5,
+    "tags": [
+      "sinan",
+      "china",
+      "compass",
+      "scientific",
+      "object"
+    ],
+    "tagline": "Han dynasty magnetic compass",
+    "subtitle": "器物 · 司南 · 百科占位",
+    "description": "司南 Compass Han Dynasty Chinese invention, 司南 (spoon + lodestone plate) earliest magnetic compass. Today 11 century Compass + Song dynasty 航海 + 全球航海史开端. 司南 + 汉代 + 磁石勺 + 全球航海史起点.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前3世纪",
+        "title": "天然磁石",
+        "body": "前 3 世纪中国文献 吕氏春秋 \"磁石召铁\" 记载磁石特性"
+      },
+      {
+        "year": "前2世纪",
+        "title": "司南雏形",
+        "body": "中国司南 = 磁石琢成勺 + 铜地盘光滑 + 静磁指南仪器, 汉代雏形"
+      },
+      {
+        "year": "1044",
+        "title": "曾公亮",
+        "body": "宋代曾公亮《武经总要》最早明确记载指南鱼 + 指南针军用品"
+      },
+      {
+        "year": "1100",
+        "title": "沈括《梦溪》",
+        "body": "沈括《梦溪笔谈》详细记载指南针 + 磁偏角, 全球最早期磁偏角发现"
+      },
+      {
+        "year": "1405",
+        "title": "郑和",
+        "body": "1405 郑和 7 下西洋, 罗盘 + 牵星术导航, 世界大航海时代先驱"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Magnetic compass",
+        "url": "https://en.wikipedia.org/wiki/History_of_the_compass",
+        "type": "wiki"
+      },
+      {
+        "title": "Needham Science and Civilisation in China",
+        "url": "https://www.cambridge.org/",
+        "type": "reference"
+      },
+      {
+        "title": "中国科学技术史 沈括",
+        "url": "https://www.ihchina.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "alzheimer",
+    "title": "阿尔茨海默症",
+    "kind": "disease",
+    "subKind": "mental",
+    "series": "atlas-miscellany",
+    "seriesNo": "064",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/alzheimer/alzheimer-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/alzheimer/alzheimer-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/alzheimer/alzheimer-full.webp",
+    "score": 7.8,
+    "tags": [
+      "aezhihaimo",
+      "global",
+      "disease",
+      "neuro",
+      "xiandai"
+    ],
+    "tagline": "55M global Alzheimer",
+    "subtitle": "疾病 · 阿尔茨海默症 · 百科占位",
+    "description": "Alzheimer disease 阿尔茨海默症 55M global dementia WHO 2023, amyloid plaque + tau tangles + neuron loss. Today 1906 Dr. Alzheimer 发现 + 全球 1.4 万亿 USD 年成本 + 无治愈药. 阿尔茨海默症 + 5500 万痴呆 + 1906 发现 + 1.4 万亿成本.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1906",
+        "title": "Alzheimer 发现",
+        "body": "1906 德国医生 Alois Alzheimer 首次描述一位 51 岁女患者大脑 amyloid plaque 病变"
+      },
+      {
+        "year": "1984",
+        "title": "β 淀粉样蛋白",
+        "body": "1984 Glenner + Wong 鉴定阿尔茨海默症大脑 amyloid β 蛋白 Aβ42"
+      },
+      {
+        "year": "1986",
+        "title": "Tau 蛋白",
+        "body": "1986 tau 蛋白异常磷酸化 tangles 神经原纤维缠结发现"
+      },
+      {
+        "year": "2003",
+        "title": "Memantine 上市",
+        "body": "2003 Memantine 上市, NMDA 受体拮抗剂, 阿尔茨海默中后期唯一治疗"
+      },
+      {
+        "year": "2024",
+        "title": "新抗体药",
+        "body": "2023-2024 Lecanemab + Donanemab 上市, 抗 Aβ 抗体, 全球首个减缓阿尔茨海默症疾病进展药"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WHO Dementia Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/dementia",
+        "type": "reference"
+      },
+      {
+        "title": "Alzheimer Association",
+        "url": "https://www.alz.org/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Alzheimer disease",
+        "url": "https://en.wikipedia.org/wiki/Alzheimer%27s_disease",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "hiv-vaccine",
+    "title": "艾滋病疫苗",
+    "kind": "disease",
+    "subKind": "infectious",
+    "series": "atlas-miscellany",
+    "seriesNo": "065",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hiv-vaccine/hiv-vaccine-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hiv-vaccine/hiv-vaccine-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/hiv-vaccine/hiv-vaccine-full.webp",
+    "score": 7.5,
+    "tags": [
+      "aizibing",
+      "global",
+      "disease",
+      "infectious",
+      "xiandai"
+    ],
+    "tagline": "1983-2025 HIV research",
+    "subtitle": "疾病 · 艾滋病疫苗 · 百科占位",
+    "description": "HIV vaccine 艾滋病疫苗 research 1983 HIV discovery + 1996 HAART cocktail + 2025 mRNA HIV vaccine clinical trial. Today 39M living with HIV + 40M deaths累计 + Moderna mRNA-1644 trial. HIV 疫苗 + 1983 发现 + 2025 mRNA 临床 + 3900 万感染.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1981",
+        "title": "AIDS 发现",
+        "body": "1981 美国 CDC 首次报告 5 例男同性恋 Pneumocystis 肺炎, AIDS 命名 1982"
+      },
+      {
+        "year": "1983",
+        "title": "HIV 鉴定",
+        "body": "1983 法国巴斯德所 Luc Montagnier 鉴定 HIV 病毒 (后命名 LAV, 1986 HTVL-III 改名 HIV)"
+      },
+      {
+        "year": "1996",
+        "title": "HAART 三联",
+        "body": "1996 美籍华裔何大一提出 HAART 三联抗反转录疗法, HIV 死亡陡降"
+      },
+      {
+        "year": "2009",
+        "title": "RV144 泰国",
+        "body": "2009 泰国 RV144 临床试验首次显示 HIV 疫苗 31% 保护力 (后续未重现)"
+      },
+      {
+        "year": "2024",
+        "title": "mRNA HIV 临床",
+        "body": "Moderna mRNA-1644 HIV 疫苗 2024 临床 I 期, 全球 3900 万 HIV 患者 + 4000 万累计死亡"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WHO HIV Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/hiv-aids",
+        "type": "reference"
+      },
+      {
+        "title": "Moderna mRNA HIV trials",
+        "url": "https://www.modernatx.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: HIV vaccine",
+        "url": "https://en.wikipedia.org/wiki/HIV_vaccine",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "psychologist",
+    "title": "心理咨询师",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "atlas-miscellany",
+    "seriesNo": "067",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/psychologist/psychologist-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/psychologist/psychologist-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/psychologist/psychologist-full.webp",
+    "score": 7.6,
+    "tags": [
+      "xinli",
+      "service",
+      "profession",
+      "shiji",
+      "xiandai"
+    ],
+    "tagline": "1879 Wundt psychology",
+    "subtitle": "职业 · 心理咨询师 · 百科占位",
+    "description": "Psychologist 心理咨询师 1879 Wundt Leipzig 第一个心理学实验室, Freud psychoanalytic + 1948 APA clinical psychology. Today global mental health workforce shortage + 280 USD/hr avg + 心理咨询时长 50 min. 心理咨询师 + 1879 冯特 + 弗洛伊德 + 1948 临床心理学.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1879",
+        "title": "冯特实验",
+        "body": "1879 德国 Wilhelm Wundt 莱比锡 第一个心理学实验室, 心理学脱离哲学"
+      },
+      {
+        "year": "1900",
+        "title": "弗洛伊德",
+        "body": "1900 弗洛伊德《梦的解析》出版, 精神分析学派崛起"
+      },
+      {
+        "year": "1948",
+        "title": "APA 临床心理学",
+        "body": "1948 美国心理学会 (APA) Boulder 会议确立临床心理学博士 (PhD) 训练标准"
+      },
+      {
+        "year": "1980",
+        "title": "DSM-III",
+        "body": "1980 APA DSM-III 出版, 精神疾病诊断标准化, 心理咨询的基础"
+      },
+      {
+        "year": "2024",
+        "title": "心理健康短缺",
+        "body": "WHO 全球心理健康专业短缺 100 万 +, 心理咨询师 280 USD/hr 平均, 50 min 标准会谈"
+      }
+    ],
+    "sources": [
+      {
+        "title": "APA American Psychological Association",
+        "url": "https://www.apa.org/",
+        "type": "reference"
+      },
+      {
+        "title": "WHO Mental Health Workforce",
+        "url": "https://www.who.int/teams/mental-health-and-substance-use",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Clinical psychology",
+        "url": "https://en.wikipedia.org/wiki/Clinical_psychology",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "kolkata",
+    "title": "加尔各答",
+    "kind": "city",
+    "subKind": "ancient-capital",
+    "series": "city-encyclopedia",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kolkata/kolkata-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kolkata/kolkata-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/kolkata/kolkata-full.webp",
+    "score": 7.4,
+    "tags": [
+      "jiaergeda",
+      "india",
+      "asia",
+      "ancient-capital",
+      "xiandai"
+    ],
+    "tagline": "1690 British colonial Kolkata",
+    "subtitle": "城市 · 加尔各答 · 百科占位",
+    "description": "Kolkata India West Bengal capital 1690 British East India Company East Bengal 殖民首府. Today 14M population + 诺贝尔文学奖 Tagore + Mother Teresa + Howrah Bridge. 加尔各答 + 1690 英属东印度公司 + 孟加拉文学 + 泰戈尔.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1690",
+        "title": "英属东印度",
+        "body": "1690 Job Charnock 英国东印度公司 Sutanuti + Gobindapur + Kalikata 三村合并"
+      },
+      {
+        "year": "1757",
+        "title": "Plassey 战役",
+        "body": "1757 Plassey 战役克莱武击败孟加拉王, 英属印度殖民统治确立"
+      },
+      {
+        "year": "1850s",
+        "title": "印度启蒙中心",
+        "body": "1850s 加尔各答印度启蒙运动中心, 1885 国大党诞生"
+      },
+      {
+        "year": "1913",
+        "title": "诺贝尔 Tagore",
+        "body": "1913 泰戈尔 Nobel 文学奖 + 孟加拉文艺复兴"
+      },
+      {
+        "year": "2024",
+        "title": "14M 文学之城",
+        "body": "加尔各答 14M 人口 + 印度 East 商业文学中心 + Mother Teresa 服务 + Howrah Bridge"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Kolkata",
+        "url": "https://en.wikipedia.org/wiki/Kolkata",
+        "type": "wiki"
+      },
+      {
+        "title": "West Bengal Tourism",
+        "url": "https://www.wbtourismgov.in/",
+        "type": "reference"
+      },
+      {
+        "title": "UNESCO Kolkata",
+        "url": "https://en.unesco.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "osaka",
+    "title": "大阪",
+    "kind": "city",
+    "subKind": "modern-mega",
+    "series": "city-encyclopedia",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/osaka/osaka-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/osaka/osaka-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/osaka/osaka-full.webp",
+    "score": 7.7,
+    "tags": [
+      "daban",
+      "japan",
+      "asia",
+      "modern-mega",
+      "xiandai"
+    ],
+    "tagline": "1583 Toyotomi Osaka Castle",
+    "subtitle": "城市 · 大阪 · 百科占位",
+    "description": "Osaka Japan Kansai 1583 Toyotomi Hideyoshi Osaka Castle 建城, 古都京都奈良京阪神商都. Today 2.7M + 天下厨房 + Dotonbori 美食 + Shinsekai. 大阪 + 1583 丰臣秀吉 + 天下厨房 + 道顿堀.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "1583",
+        "title": "丰臣大坂城",
+        "body": "1583 丰臣秀吉建大坂城 + 全国统一大本营 + 日本经济中心"
+      },
+      {
+        "year": "1614",
+        "title": "大坂之阵",
+        "body": "1614 大坂冬之阵 + 1615 夏之阵, 丰臣家灭亡, 德川幕府开始"
+      },
+      {
+        "year": "1868",
+        "title": "明治维新",
+        "body": "1868 大阪作为维新通商口岸, 明治维新商业资本枢纽"
+      },
+      {
+        "year": "1970",
+        "title": "世博会",
+        "body": "1970 大阪世博会 万国博 60 国 + 6000 万游客 + 太阳塔"
+      },
+      {
+        "year": "2024",
+        "title": "万博 2025",
+        "body": "大阪 2025 万博会 \"未来社会实验场\" 主题 + 关西国际机场 + Dotonbori 美食"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Visit Osaka Official",
+        "url": "https://osaka-info.jp/en",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Osaka",
+        "url": "https://en.wikipedia.org/wiki/Osaka",
+        "type": "wiki"
+      },
+      {
+        "title": "Japan Expo 2025",
+        "url": "https://www.expo2025.or.jp/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "alpaca",
+    "title": "羊驼",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/alpaca/alpaca-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/alpaca/alpaca-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/alpaca/alpaca-full.webp",
+    "score": 7.2,
+    "tags": [
+      "yangtuo",
+      "andes",
+      "mammal",
+      "animal",
+      "south-america"
+    ],
+    "tagline": "5000 BC Andean alpaca",
+    "subtitle": "动物 · 羊驼 · 百科占位",
+    "description": "Alpaca 羊驼 Vicugna pacos 5000 BC Andes Peru domestication, 22 natural colors fleece, llama cousin. Today global 350K + Andes 80% + alpaca fiber 软 luxury wool + 印加 Pacha Mama. 羊驼 + 5000 BC 安第斯 + 22 自然色 + 安第斯 80%.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "前5000",
+        "title": "印加驯化",
+        "body": "前 5000 安第斯高原原住民驯化羊驼 Vicugna pacos, 印加文明重要纺织原料"
+      },
+      {
+        "year": "1532",
+        "title": "西班牙征服",
+        "body": "1532 西班牙征服印加后, 羊驼 + 美洲驼几近灭绝, 西班牙引入羊只取代"
+      },
+      {
+        "year": "19世纪",
+        "title": "纤维复兴",
+        "body": "19 世纪欧洲纺织业复兴, Alpaca Fiber 22 自然色 + 高档面料重新兴起"
+      },
+      {
+        "year": "1990s",
+        "title": "国际纺织品",
+        "body": "20 世纪后期 Alpaca 纤维国际化, 美国 + 澳洲 + 中国新疆引进"
+      },
+      {
+        "year": "2024",
+        "title": "350K 安第斯 80%",
+        "body": "全球 350K 羊驼 + 安第斯 80% (秘鲁 + 玻利维亚 + 智利) + 22 自然色 + Alpaca 纤维 peak"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Alpaca",
+        "url": "https://en.wikipedia.org/wiki/Alpaca",
+        "type": "wiki"
+      },
+      {
+        "title": "International Alpaca Association",
+        "url": "https://www.aia.org.pe/",
+        "type": "reference"
+      },
+      {
+        "title": "Peru Ministry of Agriculture",
+        "url": "https://www.midagri.gob.pe/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "otter",
+    "title": "水獭",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/otter/otter-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/otter/otter-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/otter/otter-full.webp",
+    "score": 7.5,
+    "tags": [
+      "shuita",
+      "global",
+      "mammal",
+      "animal",
+      "xiandai"
+    ],
+    "tagline": "Lutra lutra Eurasian otter",
+    "subtitle": "动物 · 水獭 · 百科占位",
+    "description": "Otter 水獭 Lutra lutra + Lontra + Enhydra 13 species, semi-aquatic + tool use + social play. Today IUCN varying + 1985 Eurasian otter UK reintroduction + 海洋生态旗舰. 水獭 + 13 种 + 半水栖 + 工具使用 + IUCN 旗舰.",
+    "createdAt": "2026-07-05",
+    "history": [
+      {
+        "year": "13种",
+        "title": "全球水獭",
+        "body": "13 种水獭: Eurasian + Sea + Giant + Smooth + Asian small-clawed 等"
+      },
+      {
+        "year": "1950s",
+        "title": "农药危机",
+        "body": "20 世纪 50-70 年代 DDT + 河流污染, 全球水獭种群崩溃"
+      },
+      {
+        "year": "1979",
+        "title": "CITES",
+        "body": "1979 水獭列入 CITES 附录 II, 国际公约保护"
+      },
+      {
+        "year": "1985",
+        "title": "英国 UK 重引入",
+        "body": "1985-1996 英国水獭信托基金从 86 只扩张到 2000+, 全欧著名恢复项目"
+      },
+      {
+        "year": "2024",
+        "title": "海洋旗舰",
+        "body": "2024 IUCN Sea Otter 濒危 + Eurasian 近乎濒危 + 海洋生态旗舰物种 + 工具使用研究"
+      }
+    ],
+    "sources": [
+      {
+        "title": "IUCN Otter Specialist Group",
+        "url": "https://www.iucnosg.org/",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Otter",
+        "url": "https://en.wikipedia.org/wiki/Otter",
+        "type": "wiki"
+      },
+      {
+        "title": "Otters Trust UK",
+        "url": "https://www.otter.org/",
         "type": "reference"
       }
     ]

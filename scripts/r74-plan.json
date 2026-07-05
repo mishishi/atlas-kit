@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "round": "R74",
+    "goal": "24 张新主题 - kind 短板 (plant/city/object/disease/profession) + topic diversity",
+    "createdAt": "2026-07-05",
+    "totalCards": 841
+  },
+  "plan": [
+    {"slug": "wheat", "title": "小麦", "kind": "plant", "subKind": "grass", "series": "craft-and-botanical", "seriesNo": "019"},
+    {"slug": "rice", "title": "水稻", "kind": "plant", "subKind": "grass", "series": "craft-and-botanical", "seriesNo": "020"},
+    {"slug": "sunflower", "title": "向日葵", "kind": "plant", "subKind": "flower", "series": "craft-and-botanical", "seriesNo": "021"},
+    {"slug": "bamboo-shoot", "title": "竹笋", "kind": "plant", "subKind": "grass", "series": "craft-and-botanical", "seriesNo": "022"},
+    {"slug": "saffron", "title": "藏红花", "kind": "plant", "subKind": "flower", "series": "craft-and-botanical", "seriesNo": "023"},
+
+    {"slug": "montevideo", "title": "蒙得维的亚", "kind": "city", "subKind": "coastal", "series": "city-encyclopedia", "seriesNo": "029"},
+    {"slug": "vancouver", "title": "温哥华", "kind": "city", "subKind": "coastal", "series": "city-encyclopedia", "seriesNo": "030"},
+    {"slug": "helsinki", "title": "赫尔辛基", "kind": "city", "subKind": "coastal", "series": "city-encyclopedia", "seriesNo": "031"},
+    {"slug": "yangon", "title": "仰光", "kind": "city", "subKind": "ancient-capital", "series": "city-encyclopedia", "seriesNo": "032"},
+
+    {"slug": "meerschaum-pipe", "title": "海泡石烟斗", "kind": "object", "subKind": "craft", "series": "atlas-miscellany", "seriesNo": "058"},
+    {"slug": "thangka", "title": "唐卡", "kind": "object", "subKind": "art", "series": "atlas-miscellany", "seriesNo": "059"},
+    {"slug": "kiritsuke-knife", "title": "切付刀", "kind": "object", "subKind": "craft", "series": "atlas-miscellany", "seriesNo": "060"},
+    {"slug": "compass-ming", "title": "司南", "kind": "object", "subKind": "scientific", "series": "atlas-miscellany", "seriesNo": "061"},
+
+    {"slug": "hypertension", "title": "高血压", "kind": "disease", "subKind": "chronic", "series": "atlas-miscellany", "seriesNo": "062"},
+    {"slug": "diabetes", "title": "糖尿病", "kind": "disease", "subKind": "chronic", "series": "atlas-miscellany", "seriesNo": "063"},
+    {"slug": "alzheimer", "title": "阿尔茨海默症", "kind": "disease", "subKind": "mental", "series": "atlas-miscellany", "seriesNo": "064"},
+    {"slug": "hiv-vaccine", "title": "艾滋病疫苗", "kind": "disease", "subKind": "infectious", "series": "atlas-miscellany", "seriesNo": "065"},
+
+    {"slug": "nurse", "title": "护士", "kind": "profession", "subKind": "medical", "series": "atlas-miscellany", "seriesNo": "066"},
+    {"slug": "psychologist", "title": "心理咨询师", "kind": "profession", "subKind": "service", "series": "atlas-miscellany", "seriesNo": "067"},
+    {"slug": "astronaut", "title": "宇航员", "kind": "profession", "subKind": "tech", "series": "atlas-miscellany", "seriesNo": "068"},
+
+    {"slug": "kolkata", "title": "加尔各答", "kind": "city", "subKind": "ancient-capital", "series": "city-encyclopedia", "seriesNo": "033"},
+    {"slug": "osaka", "title": "大阪", "kind": "city", "subKind": "modern-mega", "series": "city-encyclopedia", "seriesNo": "034"},
+
+    {"slug": "alpaca", "title": "羊驼", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "033"},
+    {"slug": "otter", "title": "水獭", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "034"}
+  ]
+}

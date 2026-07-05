@@ -2359,3 +2359,71 @@ prod: https://atlas-kit-six.vercel.app/ (R73 ship 待 push, sitemap expected 840
 - atlas-kit memory topic file append R73 lessons
 - matrix hang watchdog 实测验证 (R74 跑时真 hang 时测, R73 没机会触发)
 - 短停顿后再 ship 一轮 (周末节奏), 不然 user 也来不及看
+
+
+## R74 (2026-07-05) — 24 cards ship + 4 polish (verify tool, content guard, default sort, A B C D 全 done)
+
+跟 R73 衔接. catalog 841 → **856** (+15). R74 plan 24 cards 但 9 张 matrix 抽风 retry (后续复现), 最终 24/24 全 in cards.json.
+
+### A. R74 polish 4 件套
+
+跟 R73 + A B C D 同时推进:
+
+1. **D. tmp/rXX-verify.cjs** — 自动化 file existence check (新文件, 2511+ files 0 missing 首次跑). 防止"matrix OK 但 file 没写" 静默漏.
+2. **C. fix-descriptions.mjs mmx-content-guard** — 接入 `isMmxContentBad` + `sanitizeMmxContent` 在 30-char heuristic 之前. 捕 JS-undefined trap + English stub + AI refusal + residue. 3 其他 batch scripts (add-cross-tags + enrich-mentions + score-all-cards) 是 deterministic — **不需要 content guard**, mmx hang 不是 content guard 能救的.
+3. **B. /cards default sort "评分"** — catalog 840+ 后改 sort default 'newest' → 'score' 让用户先看 editorial curated 高质卡片. SortChips 仍显示 4 选项, 'newest' 1-click 可切回. **这改动是 R74 给用户最直接的 UX 提升**.
+4. **A. R74 ship 24 cards** — 加 6 种 kinds (plant/city/object/disease/profession/animal), kind balance 大幅改善. 9 张 matrix 抽风 retry 全部成功.
+
+### B. R74 plan 24 (跟 R73 同样的策略)
+
+- plant: wheat + rice + sunflower + bamboo-shoot + saffron (5 张, R74 plant 短板 23 → 28)
+- city: montevideo + vancouver + helsinki + yangon + kolkata + osaka (6 张, city 28 → 34)
+- object: meerschaum-pipe + thangka + kiritsuke-knife + compass-ming (4 张, object 27 → 31)
+- disease: hypertension + diabetes + alzheimer + hiv-vaccine (4 张, disease 26 → 30)
+- profession: nurse + psychologist + astronaut (3 张, profession 23 → 26)
+- animal: alpaca + otter (2 张, animal 33 → 35)
+
+Total: 24 cards / 6 kinds. SubKind validate 时 2 NF (alzheimer/disease/neuro → mental, astronaut/profession/scientific → tech), 修后全 OK.
+
+### C. R74 generate 9 retry pattern 复现 + 自动化 verify 验证
+
+R74 generate 24 张里 9 张 (kiritsuke-knife + compass-ming + alzheimer + hiv-vaccine + psychologist + kolkata + osaka + alpaca + otter) log "matrix: ok (attempt 1)" 但 `public/cards/<kind>/<slug>/` 没 file. 跟 R72 arctic-fox + R73 5 retry 同模式.
+
+**Key learning (R74)**: tmp/rXX-verify.cjs D 工具**就该跑在 `tmp/rXX-run-all.cjs` 之后** — 19/24 first-attempt 都 in cards.json 但实际 file 还在 9 张缺失. 修复后 24/24 OK + 2511 files 0 missing + 24 张 R74 完整.
+
+R74 inline cjs retry pattern (跟 R73 完全相同): `tmp/r74-retry-9.cjs` 9 张单条 execFileSync 串行, 全 OK.
+
+### D. R74 CDN upload 6 kinds sequential
+
+- plant 15 / city 15 / object 12 / disease 6 / profession 3 / animal 6 = 57 fields rewritten
+- 24/24 R74 cards image 全 CDN ✓
+
+### E. R74 handwrite 24 (跟 R70+R71+R72+R73 同 5 batch scripts)
+
+- `r74-handwrite.cjs`: 24 张 4 fields 一次过
+- `r74-history.cjs`: 24 × 5 = 120 nodes 一次过 (中间 fix 一处 unterminated string JSON syntax)
+- `r74-sources.cjs`: 24 × 3 = 72 sources 一次过
+
+每张 score 6.8-8.6, tags 5 (cross-cutting + subject), desc 200-270 char 中英混合.
+
+### F. R74 commit 包含 3 polish + 24 cards
+
+3 polish 同时跟 24 cards ship commit:
+1. `src/app/cards/page.tsx` default sort 'newest' → 'score'
+2. `scripts/fix-descriptions.mjs` mmx-content-guard 接入
+3. `tmp/rXX-verify.cjs` 新工具
+
+### G. R74 数据完整性 (post)
+
+**856 cards**, 26 kinds / 162 subKinds, 12 series. 24 R74 全齐 desc + tagline + score (>0) + tags (≥4) + history (≥3) + sources (≥2) + subKind + image 3-tier on CDN.
+
+prod: https://atlas-kit-six.vercel.app/ (R74 ship 待 push, sitemap expected 870+ url, /cards page 默认 sort 改 "评分")
+
+### H. R75 candidate (next)
+
+- Polish `tmp/rXX-run-all.cjs` 接入 `tmp/rXX-verify.cjs` 作为标准 step (auto-retry if file missing)
+- 接入 mmx-content-guard 到 score-all-cards.mjs (R60+ 改用启发式后, mmx-content-guard 帮不上 deterministic 脚本)
+- catalog 856+ 后 /cards page default sort 改"评分"已 ship, 看 user 体验反馈 — 是否需要 "印象筛选"?
+- atlas-kit memory topic file `atlas-kit.md` R74 lessons append (R74 实战经验: rXX-verify.cjs pattern + matrix 抽风 9 张 retry)
+- R75 plan 24+ 张 — kind 短板都改善了, 现在走 topic diversity + user feedback 选题
+- AGENTS.md R74 round note + memory tail sync

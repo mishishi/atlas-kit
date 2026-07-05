@@ -91,28 +91,36 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
   // R60plus (2026-06-30): sort options. Default 'newest' so the most
   // recently added cards surface first (matters when 600 cards are
   // added in batches of 35 — users want to see the new ones).
-  // Valid values: 'newest' (default) | 'oldest' | 'score' | 'seriesNo'.
-  // Unknown → 'newest'.
+  //
+  // R74 (2026-07-05): default switched to 'score' now that catalog is
+  // 841+ cards (R70-R73 batches in). Sorting by score surfaces
+  // editorially-curated high-quality cards first instead of letting
+  // recent additions dominate. 'newest' is still available via the
+  // SortChips row. Search "newest" via SortChips gives the same UX as
+  // before.
+  //
+  // Valid values: 'score' (default) | 'newest' | 'oldest' | 'seriesNo'.
+  // Unknown → 'score'.
   const SORT_OPTIONS = [
+    { key: "score", label: "评分" },
     { key: "newest", label: "最新" },
     { key: "oldest", label: "最早" },
-    { key: "score", label: "评分" },
     { key: "seriesNo", label: "系列号" },
   ];
   const activeSort: string = SORT_OPTIONS.some((s) => s.key === searchParams.sort)
     ? (searchParams.sort as string)
-    : "newest";
+    : "score";
   const sortedCards = [...filteredCards].sort((a, b) => {
     switch (activeSort) {
+      case "newest":
+        return b.createdAt.localeCompare(a.createdAt);
       case "oldest":
         return a.createdAt.localeCompare(b.createdAt);
-      case "score":
-        return (b.score ?? 0) - (a.score ?? 0);
       case "seriesNo":
         return a.seriesNo.localeCompare(b.seriesNo);
-      case "newest":
+      case "score":
       default:
-        return b.createdAt.localeCompare(a.createdAt);
+        return (b.score ?? 0) - (a.score ?? 0);
     }
   });
   const kindLabel = activeKind ? KIND_LABELS[activeKind] : null;
@@ -283,7 +291,7 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
             if (activeKind) params.set("kind", activeKind);
             if (activeSubKind) params.set("subKind", activeSubKind);
             if (activeTag) params.set("tag", activeTag);
-            if (key !== "newest") params.set("sort", key);
+            if (key !== "score") params.set("sort", key);
             return `/cards?${params.toString()}`;
           }}
         />

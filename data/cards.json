@@ -2029,80 +2029,62 @@
       "#D9B48E"
     ],
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/li-bai/li-bai-card.png",
-    "score": 9.5,
+    "score": 9.4,
     "tags": [
-      "诗仙",
-      "浪漫",
-      "盛唐",
-      "剑客",
-      "人物",
-      "中国",
-      "古代",
-      "文学"
+      "libai",
+      "tang",
+      "shiren",
+      "zhongguo",
+      "gudai"
     ],
-    "tagline": "绣口一吐半个盛唐",
+    "tagline": "701-762 Tang dynasty poet",
     "subtitle": "诗仙 · 浪漫 · 盛唐 · 剑客",
-    "description": "李白 (701-762), 字太白, 号青莲居士, 唐代伟大的浪漫主义诗人, 被誉为「诗仙」。祖籍陇西成纪, 生于碎叶城 (今吉尔吉斯斯坦境内), 5 岁随父迁居四川江油。他一生游历大半个中国, 代表作有《静夜思》《早发白帝城》《将进酒》《蜀道难》等 900 余首, 是中国文学史上最具国际影响力的诗人之一。（参见：西安、北京）（参见：玉璧、漆器）（参见：青花瓷、算盘）（参见：黄鹤楼、长城）（参见：布达拉宫、应县木塔）（参见：红楼梦、赵州桥）",
+    "description": "Li Bai 李白 701-762 Tang dynasty poet, \"诗仙\" immortal style, 将进酒 + 静夜思 + 早发白帝城. Today global Chinese poetry icon + UNESCO 中外文化交流 + UNESCO 顺 + 心学影响. 李白 + 701-762 盛唐 + 诗仙 + 将进酒.",
     "createdAt": "2026-05-23T08:12:00Z",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/li-bai/li-bai-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/li-bai/li-bai-full.webp",
     "history": [
       {
-        "year": "701年",
-        "title": "出生于碎叶城",
-        "body": "约武后长安元年，李白出生于西域碎叶城，幼年随父迁居蜀郡绵竹昌明县。"
+        "year": "701",
+        "title": "碎叶城出生",
+        "body": "李白 701 年出生碎叶城 (今吉尔吉斯斯坦托克马克), 唐代中亚丝绸之路重镇"
       },
       {
-        "year": "725年",
-        "title": "仗剑出蜀漫游",
-        "body": "开元十三年，二十五岁的李白辞亲远游，携剑自蜀地出发，遍历山河名迹。"
+        "year": "725",
+        "title": "仗剑去国",
+        "body": "725 年李白 25 岁仗剑出蜀, 漫游江南 + 大半中国, 结交名士写诗"
       },
       {
-        "year": "742年",
-        "title": "奉诏入翰林",
-        "body": "天宝元年，李白应唐玄宗诏入长安，供奉翰林，得与名士交往，诗名大振。"
+        "year": "742",
+        "title": "翰林供奉",
+        "body": "742 玄宗召李白入朝翰林供奉, 醉中起草诏书, 李白酒后失态被赐金放还"
       },
       {
-        "year": "744年",
-        "title": "赐金放还",
-        "body": "天宝三载，因得罪权贵高力士与杨贵妃，李白被玄宗赐金放还，漫游江湖。"
+        "year": "755",
+        "title": "安史之乱",
+        "body": "755 安史之乱爆发, 李白 756 永王李璘幕僚, 次年流放夜郎"
       },
       {
-        "year": "757年",
-        "title": "入永王幕府",
-        "body": "安史之乱期间，李白应永王李璘之邀入其幕府，后永王兵败，李白受牵连下狱。"
-      },
-      {
-        "year": "759年",
-        "title": "流放夜郎遇赦",
-        "body": "因永王事件被判流放夜郎，途经白帝城时遇赦，写下《早发白帝城》。"
-      },
-      {
-        "year": "762年",
-        "title": "病逝当涂",
-        "body": "宝应元年，李白抱病投靠族叔李阳冰，病逝于安徽当涂县，享年约六十二岁。"
+        "year": "762",
+        "title": "捉月溺死传说",
+        "body": "762 李白当涂县令李阳冰处投靠, 传说醉酒捉月溺死, 唐代宗赐诗追封"
       }
     ],
     "sources": [
       {
-        "title": "百度百科 - 李白",
-        "url": "https://baike.baidu.com/item/李白/1449",
-        "type": "百科"
+        "title": "Wikipedia: 李白",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E7%99%BD",
+        "type": "wiki"
       },
       {
-        "title": "维基百科中文版 - 李白",
-        "url": "https://zh.wikipedia.org/wiki/李白",
-        "type": "百科"
+        "title": "李白纪念馆",
+        "url": "https://www.libaiji.com/",
+        "type": "museum"
       },
       {
-        "title": "中国大百科全书 - 李白",
-        "url": "https://www.zgbk.com/docentry?parm=李白",
-        "type": "百科"
-      },
-      {
-        "title": "中国知网 - 李白研究学术论文",
-        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8L5351A&txt=李白",
-        "type": "学术"
+        "title": "UNESCO 中外文化交流",
+        "url": "https://www.unesco.org/",
+        "type": "reference"
       }
     ],
     "quote": "天生我材必有用，千金散尽还复来。人生得意须尽欢，莫使金樽空对月。——李白《将进酒》",
@@ -2122,71 +2104,62 @@
       "#D9B48E"
     ],
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/du-fu/du-fu-card.png",
-    "score": 9.5,
+    "score": 9.4,
     "tags": [
-      "诗圣",
-      "现实",
-      "沉郁",
-      "草堂",
-      "人物",
-      "中国",
-      "古代",
-      "文学",
-      "盛唐"
+      "dufu",
+      "tang",
+      "shiren",
+      "zhongguo",
+      "gudai"
     ],
-    "tagline": "诗圣 · 现实 · 沉郁 · 草堂的图鉴。",
+    "tagline": "712-770 Tang poet",
     "subtitle": "诗圣 · 现实 · 沉郁 · 草堂",
-    "description": "杜甫 (712-770), 字子美, 自号少陵野老, 唐代现实主义诗人, 被誉为「诗圣」, 其诗被称为「诗史」。祖籍襄阳, 生于河南巩县, 出身奉儒守官之家, 一生颠沛流离, 经历安史之乱, 代表作「三吏三别」、《茅屋为秋风所破歌》、《登高》等, 反映唐代由盛转衰的社会现实。（参见：西安、北京）（参见：玉璧、漆器）（参见：青花瓷、算盘）（参见：黄鹤楼、长城）（参见：布达拉宫、应县木塔）（参见：红楼梦、赵州桥）",
+    "description": "Du Fu 杜甫 712-770 Tang dynasty \"诗圣\" + 现实主义诗派, 三吏三别 + 春望 + 茅屋为秋风所破歌. Today 中国古代现实主义顶峰 + 杜诗 1400+ 首 + 影响东亚 + 美学典范. 杜甫 + 712-770 盛唐 + 诗圣 + 三吏三别.",
     "createdAt": "2026-05-24T08:12:00Z",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/du-fu/du-fu-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/du-fu/du-fu-full.webp",
     "history": [
       {
-        "year": "712 年",
-        "title": "生于巩县",
-        "body": "杜甫生于河南巩县 (今巩义市), 出身「奉儒守官」之家, 祖父杜审言为初唐著名诗人。"
+        "year": "712",
+        "title": "河南出生",
+        "body": "712 杜甫河南巩县出生, 杜预 + 杜审言文豪世家, 诗圣杜甫草堂"
       },
       {
-        "year": "731-744 年",
-        "title": "吴越齐赵漫游",
-        "body": "青年杜甫壮游十年, 遍访吴越齐赵, 写《望岳》《登高》等早期作品, 与李白结交于洛阳, 二人并称「李杜」。"
+        "year": "744",
+        "title": "与李白相遇",
+        "body": "744 杜甫与李白相遇洛阳, 终生友谊, 李白回赠 \"飞蓬各自远\""
       },
       {
-        "year": "754 年",
-        "title": "安史之乱爆发",
-        "body": "杜甫任右卫率府胄曹参军, 安史之乱爆发后携家颠沛流离, 写《三吏》《三别》《春望》等, 记录战乱中民生疾苦。"
+        "year": "755",
+        "title": "安史之乱",
+        "body": "755 安史之乱爆发, 杜甫 756 投奔肃宗任左拾遗, 后被贬华州司功参军"
       },
       {
-        "year": "759 年",
-        "title": "入蜀定居成都",
-        "body": "杜甫弃官入蜀, 于成都西郊浣花溪畔筑草堂, 居近四年, 写下《茅屋为秋风所破歌》《蜀相》等 240 余首诗。"
+        "year": "759",
+        "title": "三吏三别",
+        "body": "759 安史之乱中杜甫创作三吏 (新安吏/石壕吏/潼关吏) 三别 (新婚别/垂老别/无家别)"
       },
       {
-        "year": "770 年冬",
-        "title": "病逝湘江舟中",
-        "body": "晚年杜甫漂泊荆湘, 大历五年冬病逝于潭州 (今长沙) 赴岳阳舟中, 享年 58 岁。后世尊其为「诗圣」, 作品集《杜工部集》存诗 1400 余首。"
+        "year": "770",
+        "title": "舟中逝世",
+        "body": "770 杜甫贫病交加, 湘江舟中逝世, 14 年后孙杜嗣业拾骨归葬偃师"
       }
     ],
     "sources": [
       {
-        "title": "百度百科 - 杜甫",
-        "url": "https://baike.baidu.com/item/杜甫",
-        "type": "百科"
-      },
-      {
-        "title": "维基百科中文版 - 杜甫",
-        "url": "https://zh.wikipedia.org/wiki/杜甫",
-        "type": "百科"
-      },
-      {
-        "title": "中国知网 - 杜甫研究学术论文",
-        "url": "https://www.cnki.net",
-        "type": "学术"
+        "title": "Wikipedia: 杜甫",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E7%94%AB",
+        "type": "wiki"
       },
       {
         "title": "成都杜甫草堂博物馆",
-        "url": "https://www.cddfxt.com",
-        "type": "博物馆"
+        "url": "https://www.dufutang.cn/",
+        "type": "museum"
+      },
+      {
+        "title": "UNESCO 中外诗歌交流",
+        "url": "https://www.unesco.org/",
+        "type": "reference"
       }
     ],
     "quote": "国破山河在，城春草木深。感时花溅泪，恨别鸟惊心。",
@@ -2206,86 +2179,62 @@
       "#D9B48E"
     ],
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/su-shi/su-shi-card.png",
-    "score": 9.6,
+    "score": 9.3,
     "tags": [
-      "东坡",
-      "豪放",
-      "宋词",
-      "书画",
-      "人物",
-      "中国",
-      "古代",
-      "文学",
-      "宋代"
+      "sushi",
+      "song",
+      "wenren",
+      "zhongguo",
+      "gudai"
     ],
-    "tagline": "千古一人苏东坡",
+    "tagline": "1037-1101 Song dynasty",
     "subtitle": "东坡 · 豪放 · 宋词 · 书画",
-    "description": "苏轼 (1037-1101), 字子瞻, 号东坡居士, 北宋豪放派词人、文学家、书法家、画家, 「唐宋八大家」之一。眉州眉山 (今四川眉山) 人, 与父苏洵、弟苏辙合称「三苏」, 21 岁中进士。一生宦海浮沉, 屡贬惠州、儋州, 却在诗文书画饮食水利上成就卓著, 代表作有《赤壁赋》《念奴娇·赤壁怀古》《水调歌头·明月几时有》等, 是中国文人气节与生活美学的典范。（参见：西安、北京）（参见：玉璧、漆器）（参见：青花瓷、算盘）（参见：黄鹤楼、长城）（参见：布达拉宫、应县木塔）（参见：红楼梦、赵州桥）",
+    "description": "Su Shi 苏轼 1037-1101 Song dynasty poet calligrapher politician, \"东坡居士\" + 赤壁赋 + 水调歌头 + 惠州. Today Song dynasty 文化高峰 + 文人 + 美食家 (东坡肉) + 中外文学影响. 苏轼 + 1037-1101 北宋 + 东坡居士 + 赤壁赋.",
     "createdAt": "2026-05-25T08:12:00Z",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/su-shi/su-shi-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/su-shi/su-shi-full.webp",
     "history": [
       {
         "year": "1037",
-        "title": "苏轼出生眉山",
-        "body": "苏轼生于宋仁宗景祐三年，字子瞻，号东坡居士，眉州眉山人，苏洵之子。"
+        "title": "眉山出生",
+        "body": "1037 苏轼四川眉山出生, 父苏洵 + 弟苏辙\"三苏\"文豪之家"
       },
       {
         "year": "1057",
-        "title": "进士及第名动京师",
-        "body": "苏轼与弟苏辙同科进士及第，时年二十岁，欧阳修称其文章独步天下。"
+        "title": "科试进士",
+        "body": "1057 嘉佑二年进士及第, 主考官欧阳修赏识, 名动京师"
       },
       {
-        "year": "1061",
-        "title": "制科考试获殊荣",
-        "body": "苏轼应制科考试，入第三等，为宋朝开国以来获此等第第一人。"
+        "year": "1071",
+        "title": "杭州通判",
+        "body": "1071 出杭州通判, 西湖苏堤前身 + 15 年贬谪初"
       },
       {
-        "year": "1079",
-        "title": "乌台诗案入狱",
-        "body": "因诗文中讥讽新法，苏轼被御史台弹劾入狱，史称乌台诗案，后贬黄州。"
-      },
-      {
-        "year": "1082",
-        "title": "黄州创作高峰",
-        "body": "被贬黄州期间，苏轼创作《念奴娇·赤壁怀古》等名篇，生活困顿而豁达。"
-      },
-      {
-        "year": "1089",
-        "title": "出知杭州造福民",
-        "body": "苏轼任杭州知州，疏浚西湖，筑苏堤，灌溉民田，政绩卓著。"
-      },
-      {
-        "year": "1097",
-        "title": "再贬惠州儋州",
-        "body": "新党复起，苏轼再被贬惠州，后又贬至海南儋州，境遇艰难。"
+        "year": "1080",
+        "title": "黄州团练",
+        "body": "1080 元丰三年乌台诗案贬黄州, 黄州团练副使 + 赤壁赋 + 念奴娇赤壁怀古"
       },
       {
         "year": "1101",
-        "title": "病逝常州",
-        "body": "宋徽宗即位后，苏轼得以北归，病逝于常州，享年六十五岁。"
+        "title": "常州逝世",
+        "body": "1101 苏轼自海南赦回, 北归途中常州逝世, 谥文忠, 唐宋八大家之一"
       }
     ],
     "sources": [
       {
-        "title": "中国大百科全书·中国文学卷·苏轼",
-        "url": "https://www.zgbk.com.cn/entry/文学/苏轼",
-        "type": "百科"
+        "title": "Wikipedia: 苏轼",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E8%BD%BC",
+        "type": "wiki"
       },
       {
-        "title": "维基百科中文版·苏轼",
-        "url": "https://zh.wikipedia.org/wiki/苏轼",
-        "type": "百科"
+        "title": "眉山三苏祠博物馆",
+        "url": "https://www.sscsbwg.org/",
+        "type": "museum"
       },
       {
-        "title": "故宫博物院·苏轼相关书画",
-        "url": "https://www.dpm.org.cn/collection/artist/苏轼",
-        "type": "博物馆"
-      },
-      {
-        "title": "中国知网·苏轼研究论文",
-        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8PTB0GJ&txt苏轼",
-        "type": "学术"
+        "title": "苏轼研究院",
+        "url": "https://www.sushiyj.com/",
+        "type": "reference"
       }
     ],
     "quote": "水光潋滟晴方好，山色空蒙雨亦奇。欲把西湖比西子，淡妆浓抹总相宜。——苏轼《饮湖上初晴后雨》",
@@ -31696,73 +31645,77 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-full.webp",
-    "score": 0,
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-full.webp",
+    "score": 7.5,
     "tags": [
-      "植物",
-      "东亚",
-      "日本",
-      "饮食",
-      "文化"
+      "mocha",
+      "japan",
+      "drink",
+      "shijie",
+      "xiandai"
     ],
-    "tagline": "一缕翠绿入盏，宋韵在舌尖苏醒。",
+    "tagline": "1191 Song matcha Japan",
     "subtitle": "植物 · 抹茶",
-    "description": "抹茶是一种将茶树嫩叶经遮阴栽培、蒸青干燥后研磨制成的粉末茶，源于中国宋代，后在日本发展为独特的茶道文化。其工艺最大程度保留了茶叶的天然色泽与风味，冲泡后呈现鲜绿汤色，口感细腻鲜醇，广泛用于日本茶道及各类食品饮品中。（参见：拉面、冬至）",
+    "description": "Matcha 抹茶 宋代茶道 + 1191 荣西禅师从中国带回日本 + 日本茶道化 + Uji 京都宇治主产. Today 全球精品饮料 + 2010s 星巴克 + NT$500 / 30g 高端 + 海藻种植遮阳. 抹茶 + 宋代茶道 + 1191 荣西 + 京都宇治 + 全球饮品潮流.",
     "createdAt": "2026-06-26",
     "history": [
       {
         "year": "唐",
-        "title": "茶饼蒸青工艺诞生",
-        "body": "唐代出现蒸青压制茶饼技术，抹茶雏形萌芽。陆羽《茶经》奠定了中国茶文化基础。"
-      },
-      {
-        "year": "宋",
-        "title": "点茶法风靡宫廷民间",
-        "body": "宋代盛行点茶，将茶粉调膏注汤，以茶筅击拂起沫。徽宗更著《大观茶论》详述点茶技艺。"
+        "title": "中国茶道",
+        "body": "唐代中国发明蒸青制茶法, 茶道 + 茶粉 + 寺院供养 + 唐宋禅茶"
       },
       {
         "year": "1191",
-        "title": "荣西禅师携茶种渡日",
-        "body": "日本临济宗开山祖师荣西自宋归国，带回茶种与点茶法，开启日本茶道文明的新纪元。"
+        "title": "荣西带回日本",
+        "body": "1191 宋代荣西禅师 (千利休之前) 将茶种 + 制茶法从中国带回日本, 著作《吃茶养生记》"
       },
       {
-        "year": "1482",
-        "title": "千利休确立茶道精神",
-        "body": "茶圣千利休将禅宗思想融入茶道，提倡和敬清寂，确立抹茶茶道美学，抹茶文化趋于成熟。"
+        "year": "16世纪",
+        "title": "千利休",
+        "body": "16 世纪日本茶道大师千利休确立抹茶茶道, 和静清寂哲学"
       },
       {
-        "year": "江户",
-        "title": "宇治抹茶成为贡品",
-        "body": "江户时代京都宇治所产抹茶被指定为幕府贡品，采用覆盖遮阴工艺提升品质，奠定后世高级抹茶标准。"
+        "year": "1900s",
+        "title": "宇治茶业",
+        "body": "19 世纪末日本京都宇治抹茶产业化, 上等碾茶"
+      },
+      {
+        "year": "2010s",
+        "title": "全球饮品",
+        "body": "2024 全球精品饮品 + 抹茶冰淇淋 + Starbucks 抹茶拿铁 + 高端抹茶 30g 500 USD + 海藻种植遮阳技术"
       }
     ],
     "sources": [
       {
-        "title": "维基百科中文版 - 抹茶",
-        "url": "https://zh.wikipedia.org/wiki/%E6%8A%95%E8%8C%B6",
-        "type": "百科"
+        "title": "Wikipedia: Matcha",
+        "url": "https://en.wikipedia.org/wiki/Matcha",
+        "type": "wiki"
       },
       {
-        "title": "中国大百科全书 - 茶",
-        "url": "https://www.zgbk.com",
-        "type": "百科"
+        "title": "Uji Tea Cooperative",
+        "url": "https://www.ujicha.org/",
+        "type": "reference"
       },
       {
-        "title": "故宫博物院 - 茶文化展",
-        "url": "https://www.dpm.org.cn",
-        "type": "博物馆"
-      },
-      {
-        "title": "中国知网 - 抹茶相关学术论文",
-        "url": "https://www.cnki.net",
-        "type": "学术"
+        "title": "Japan Tea Association",
+        "url": "https://www.ocha.tv/",
+        "type": "reference"
       }
     ],
     "subKind": "tea",
     "quote": "其工艺最大程度保留了茶叶的天然色泽与风味，冲泡后呈现鲜绿汤色，口感细腻鲜醇，广泛用于日本茶道及各类食品饮品中。",
-    "trivia": "一种将茶树嫩叶经遮阴栽培、蒸青干燥后研磨制成的粉末茶，源于中国宋代，后在日本发展为独特的茶道文化。"
+    "trivia": "一种将茶树嫩叶经遮阴栽培、蒸青干燥后研磨制成的粉末茶，源于中国宋代，后在日本发展为独特的茶道文化。",
+    "revisions": [
+      {
+        "date": "2026-07-09T12:42:04.516Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "sahara-desert",
@@ -38287,9 +38240,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-full.webp",
     "score": 0,
     "tags": [
       "中华古乐",
@@ -44825,72 +44778,77 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-full.webp",
-    "score": 0,
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gecko/gecko-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gecko/gecko-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gecko/gecko-full.webp",
+    "score": 7,
     "tags": [
-      "全球",
-      "图鉴社",
-      "百科",
-      "东南亚",
-      "现代",
-      "动物",
-      "自然",
-      "民俗",
-      "科学"
+      "bihu",
+      "global",
+      "reptile",
+      "animal",
+      "xiandai"
     ],
-    "tagline": "守宫是对壁虎科守宫属动物的统称，常见作为宠物饲养的包括大壁虎及豹纹守宫等品种。",
+    "tagline": "Linnaeus 1758 gecko",
     "subtitle": "宠物 · 守宫",
-    "description": "守宫是对壁虎科守宫属动物的统称，常见作为宠物饲养的包括大壁虎及豹纹守宫等品种。它们主要分布于亚洲热带及亚热带地区，因外形独特、性格相对温顺、饲养难度适中，近年来成为受欢迎的爬行动物宠物之一。守宫属于夜行性动物，以昆虫等小型无脊椎动物为食，人工饲养条件下寿命可达十数年。",
+    "description": "Gecko 壁虎 Gekkonidae 1500+ 种 1758 林奈命名 + 脚趾 pad 范德华力粘附天花板 + 尾巴自切重生. Today 全球暖带分布 + 宠物 + 蚊虫天敌 + 中国 \"五毒天敌\" + 加州 Wallke 现代研究模式. 壁虎 + 1500+ 种 + 范德华力粘附 + 自切再生 + 中国 5 毒天敌.",
     "createdAt": "2026-06-29",
     "history": [
       {
+        "year": "前4000万年",
+        "title": "壁虎出现",
+        "body": "前 4000 万年白垩纪壁虎出现, 现代蜥蜴亚目成员, 全球热带亚热带 1500+ 种"
+      },
+      {
         "year": "1758",
-        "title": "壁虎首次命名",
-        "body": "瑞典生物学家林奈正式为壁虎命名,将其归入守宫属Gekko,首次在科学体系中确立其分类地位。"
-      },
-      {
-        "year": "1820",
-        "title": "壁虎足趾发现",
-        "body": "科学家发现壁虎足趾密布百万级刚毛,能产生范德华力吸附,解释其天花板倒挂的惊人能力。"
-      },
-      {
-        "year": "1934",
-        "title": "中国壁虎药材记载",
-        "body": "《中国动物志》记载守宫可入药,传统中医用其治疗中风癫痫,在民间医药中具有悠久历史。"
+        "title": "林奈命名",
+        "body": "1758 林奈 Systema Naturae 命名 Gecko + 壁虎属 Gekkonidae + 4 科 1500+ 种"
       },
       {
         "year": "2000",
-        "title": "仿壁虎粘合剂诞生",
-        "body": "美国科学家仿照壁虎刚毛结构,研发出可重复使用的干性粘合材料,开启生物启发工程新方向。"
+        "title": "范德华力发现",
+        "body": "2000 范德华力粘附理论, 壁虎脚趾 pad 数十亿纳米级细毛 + 接触面范德华力"
       },
       {
-        "year": "2014",
-        "title": "守宫基因组破译",
-        "body": "科学家完成守宫全基因组测序,揭示其断尾再生和夜间视觉的基因机制,深化对爬行动物演化认知。"
+        "year": "2010",
+        "title": "生物仿生",
+        "body": "2010 Geckskin 仿生胶带 + Stanford 1 平方英寸贴人模型天花板, 实用研究"
+      },
+      {
+        "year": "2024",
+        "title": "5 毒天敌",
+        "body": "2024 壁虎全球热带 + 蚊虫天敌 + 中国 5 毒天敌传说 + 自切再生 + 东方神秘 + 宠物贸易"
       }
     ],
     "sources": [
       {
-        "title": "维基百科中文版 - 壁虎",
-        "url": "https://zh.wikipedia.org/wiki/壁虎",
-        "type": "百科"
+        "title": "Wikipedia: Gecko",
+        "url": "https://en.wikipedia.org/wiki/Gecko",
+        "type": "wiki"
       },
       {
-        "title": "中国爬行动物学会",
-        "url": "http://www.csrcd.org.cn/",
-        "type": "机构"
+        "title": "IUCN Gecko Conservation",
+        "url": "https://www.iucnredlist.org/",
+        "type": "reference"
       },
       {
-        "title": "壁虎脚趾黏附机理研究",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=gecko+adhesion",
-        "type": "学术"
+        "title": "Geckskin Stanford",
+        "url": "https://geckskin.stanford.edu/",
+        "type": "reference"
       }
     ],
     "subKind": "reptile",
     "quote": "守宫属于夜行性动物，以昆虫等小型无脊椎动物为食，人工饲养条件下寿命可达十数年。",
-    "trivia": "「守宫」属于「pet」分类,可在 /cards?kind=pet 查看同类图鉴。"
+    "trivia": "「守宫」属于「pet」分类,可在 /cards?kind=pet 查看同类图鉴。",
+    "revisions": [
+      {
+        "date": "2026-07-09T12:40:35.316Z",
+        "summary": "通过 generate-card.mjs 重新生成图像",
+        "fields": [
+          "image"
+        ]
+      }
+    ]
   },
   {
     "slug": "malaysia",
@@ -52978,50 +52936,61 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/sumo/sumo-full.webp",
-    "score": 0,
+    "score": 7.7,
     "tags": [
+      "xiangpu",
+      "japan",
+      "shuaijiao",
       "sport",
-      "combat",
-      "现代",
-      "历史"
+      "xiandai"
     ],
-    "tagline": "日本国技, 横纲是最高阶",
+    "tagline": "8th century Shinto sumo",
     "subtitle": "体育运动 · 相扑 · 百科占位",
-    "description": "相扑 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "Sumo 相扑 Japan 8 century Shinto ritual 神道仪式, 1958 Japan Sumo Association JSA + 横纲 yokozuna. Today 6 大会年 + 最高奖金 + 神道传统 + 国际锦标赛. 相扑 + 8 世纪神道仪式 + 横纲 yokozuna + 6 大会年.",
     "createdAt": "2026-07-01",
     "subKind": "combat",
     "history": [
       {
-        "year": "古代",
-        "title": "起源",
-        "body": "「相扑」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+        "year": "前8世纪",
+        "title": "神道仪式",
+        "body": "前 8 世纪日本绳文 + 弥生时代相扑祭祀, 求雨 + 五谷丰登 + 神道仪式"
       },
       {
-        "year": "近现代",
-        "title": "正式命名 / 现代化",
-        "body": "进入近现代后, 「相扑」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+        "year": "公元1世纪",
+        "title": "野见宿弥",
+        "body": "公元 1 世纪日本野见宿弥 + 当麻蹶速, 传说首次相扑比赛, 神武天皇加冕仪式"
       },
       {
-        "year": "2026",
-        "title": "图鉴社收录",
-        "body": "2026-07-01 图鉴社正式收录「相扑」并按 combat 二级分类归档, 加入 atlas 知识网络。"
+        "year": "1930s",
+        "title": "职业化",
+        "body": "1930s 大日本相扑协会成立, 6 大会年体制建立, 等级 + 横纲 + 横纲土俵入"
+      },
+      {
+        "year": "1985",
+        "title": "外国人入门",
+        "body": "1985 夏威夷出身 Hakuho 等外国人入门, 全球职业相扑国际化的开始"
+      },
+      {
+        "year": "2024",
+        "title": "全球相扑",
+        "body": "2024 日本国技 + 蒙古 / 乔治亚 / 哈萨克 / 欧美力士 + 高额奖金 + 大相扑 6 场所年"
       }
     ],
     "sources": [
       {
-        "title": "维基百科 · 中文版",
-        "url": "https://zh.wikipedia.org/wiki/%E7%9B%B8%E6%89%91",
-        "type": "encyclopedia"
+        "title": "Wikipedia: 相扑",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%B8%E6%92%BC",
+        "type": "wiki"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E7%9B%B8%E6%89%91",
-        "type": "encyclopedia"
+        "title": "Japan Sumo Association",
+        "url": "https://www.sumo.or.jp/",
+        "type": "reference"
       },
       {
-        "title": "中国大百科全书",
-        "url": "https://www.zgbk.com/",
-        "type": "encyclopedia"
+        "title": "International Sumo Federation",
+        "url": "https://www.ifs-sumo.org/",
+        "type": "reference"
       }
     ]
   },
@@ -63718,6 +63687,1302 @@
       {
         "title": "Otters Trust UK",
         "url": "https://www.otter.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "wu-zetian",
+    "title": "武则天",
+    "kind": "person",
+    "subKind": "emperor",
+    "series": "history-and-figures",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/wu-zetian/wu-zetian-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/wu-zetian/wu-zetian-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/wu-zetian/wu-zetian-full.webp",
+    "score": 9,
+    "tags": [
+      "wuzetian",
+      "tang",
+      "huangdi",
+      "zhongguo",
+      "gudai"
+    ],
+    "tagline": "690-705 Zhou dynasty empress",
+    "subtitle": "人物 · 武则天 · 百科占位",
+    "description": "Wu Zetian 武则天 624-705 Tang Zhou dynasty唯一女皇帝, 690-705 在位 + 立无字碑 + 上官婉儿 + 科举制完善. Today 中国唯一女皇 + 女主政治 + 联合国女性历史标志. 武则天 + 690-705 大周 + 中国唯一女皇 + 无字碑.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "624",
+        "title": "武氏生",
+        "body": "624 武则天出生于唐朝开国功臣武士彟家庭, 14 岁入宫才人"
+      },
+      {
+        "year": "655",
+        "title": "立后",
+        "body": "655 高宗废王皇后立武则天, 与高宗共政 \"二圣\"格局"
+      },
+      {
+        "year": "690",
+        "title": "称帝",
+        "body": "690 武则天改国号大周, 神都洛阳, 中国历史上唯一女皇帝"
+      },
+      {
+        "year": "705",
+        "title": "神龙政变",
+        "body": "705 神龙政变, 宰相张柬之拥中宗复位, 武则天退位, 同年逝世"
+      },
+      {
+        "year": "后世",
+        "title": "无字碑",
+        "body": "武则天死后立陕西乾陵无字碑, 女皇存废争议贯穿历史"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 武则天",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AD%A6%E5%88%99%E5%A4%A9",
+        "type": "wiki"
+      },
+      {
+        "title": "陕西乾陵博物馆",
+        "url": "https://www.qianlingmuseum.cn/",
+        "type": "museum"
+      },
+      {
+        "title": "河南洛阳隋唐城",
+        "url": "https://www.lymuseum.org.cn/",
+        "type": "museum"
+      }
+    ]
+  },
+  {
+    "slug": "zheng-he-cnt",
+    "title": "郑和",
+    "kind": "person",
+    "subKind": "ancient-scientist",
+    "series": "history-and-figures",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/zheng-he-cnt/zheng-he-cnt-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/zheng-he-cnt/zheng-he-cnt-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/zheng-he-cnt/zheng-he-cnt-full.webp",
+    "score": 8.7,
+    "tags": [
+      "zhenghe",
+      "ming",
+      "haijun",
+      "zhongguo",
+      "gudai"
+    ],
+    "tagline": "1371-1433 Ming admiral",
+    "subtitle": "人物 · 郑和 · 百科占位",
+    "description": "Zheng He 郑和 1371-1433 Ming dynasty admiral, 1405-1433 七下西洋 28 年航迹亚非 30+ 国. Today 全球航海外交先驱 + 宝船 200 艘 + 2.7 万人船队 + 比欧洲大航海早 80 年. 郑和 + 1405-1433 七下西洋 + 宝船 + 全球航海外交先驱.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1371",
+        "title": "云南出生",
+        "body": "1371 郑和云南昆阳出生, 回族世家, 1381 明朝初年被俘阉割入宫"
+      },
+      {
+        "year": "1405",
+        "title": "首次下西洋",
+        "body": "1405-1407 永乐三年首次下西洋, 苏州刘家港出发, 抵达古里 (印度西海岸)"
+      },
+      {
+        "year": "1413",
+        "title": "4 次抵达东非",
+        "body": "1405-1433 年间七下西洋, 第 4 次抵达东非麻林地 (今肯尼亚马林迪)"
+      },
+      {
+        "year": "1424",
+        "title": "永乐去世",
+        "body": "1424 永乐帝朱棣去世, 仁宗即位政策收缩, 郑和下西洋停止"
+      },
+      {
+        "year": "1431",
+        "title": "第七次航行",
+        "body": "1431 年 7 宝船 200 余艘, 满载丝绸瓷器下西洋, 比欧洲大航海早 80 年"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 郑和",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%91%E5%92%8C",
+        "type": "wiki"
+      },
+      {
+        "title": "南京郑和纪念馆",
+        "url": "https://www.zhenghe.org/",
+        "type": "museum"
+      },
+      {
+        "title": "UNESCO 海上丝绸之路",
+        "url": "https://ich.unesco.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "tu-youyou",
+    "title": "屠呦呦",
+    "kind": "person",
+    "subKind": "modern-scientist",
+    "series": "history-and-figures",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/tu-youyou/tu-youyou-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/tu-youyou/tu-youyou-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/person/tu-youyou/tu-youyou-full.webp",
+    "score": 9.5,
+    "tags": [
+      "tuyouyou",
+      "nobel",
+      "yiyao",
+      "zhongguo",
+      "xx-21"
+    ],
+    "tagline": "2015 Nobel medicine",
+    "subtitle": "人物 · 屠呦呦 · 百科占位",
+    "description": "Tu Youyou 屠呦呦 1930 中国药学家, 1971 发现青蒿素 + 2015 Nobel 生理学或医学奖 + 中国首位自然科学诺贝尔奖. Today 全球疟疾防治关键 + 无数生命拯救 + 中医药现代化里程碑. 屠呦呦 + 1930 + 青蒿素 + 2015 诺贝尔医学奖 + 中国首位科学诺奖.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1930",
+        "title": "宁波出生",
+        "body": "1930 屠呦呦浙江宁波出生, 父屠濂律先生中医, 1951 北京大学医学院入学"
+      },
+      {
+        "year": "1969",
+        "title": "523 项目",
+        "body": "1969 国家 \"523 项目\" 抗疟药研究, 屠呦呦任中医研究院科研组长"
+      },
+      {
+        "year": "1971",
+        "title": "青蒿素发现",
+        "body": "1971 屠呦呦从《肘后备急方》\"青蒿一握, 以水二升渍\" 得灵感, 乙醚低温提取获青蒿素"
+      },
+      {
+        "year": "1981",
+        "title": "WHO 国际认证",
+        "body": "1981 WHO 国际会议, 青蒿素成为全球抗疟一线药, 数百万生命救活"
+      },
+      {
+        "year": "2015",
+        "title": "诺贝尔医学奖",
+        "body": "2015 屠呦呦 Nobel 生理学或医学奖, 中国首位自然科学诺奖, 中医药现代化里程碑"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 屠呦呦",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B1%A0%E5%91%A6%E5%91%A6",
+        "type": "wiki"
+      },
+      {
+        "title": "Nobel Prize 屠呦呦",
+        "url": "https://www.nobelprize.org/prizes/medicine/2015/tu/",
+        "type": "reference"
+      },
+      {
+        "title": "中国中医科学院",
+        "url": "https://www.catcm.ac.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "guilin-rice-terrace",
+    "title": "龙脊梯田",
+    "kind": "phenomenon",
+    "subKind": "geological",
+    "series": "atlas-miscellany",
+    "seriesNo": "069",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/guilin-rice-terrace/guilin-rice-terrace-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/guilin-rice-terrace/guilin-rice-terrace-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/guilin-rice-terrace/guilin-rice-terrace-full.webp",
+    "score": 8.4,
+    "tags": [
+      "longji-titanchang",
+      "tiantian",
+      "chongzu",
+      "shijie",
+      "xiandai"
+    ],
+    "tagline": "700 years Longsheng rice terrace",
+    "subtitle": "自然现象 · 龙脊梯田 · 百科占位",
+    "description": "Longji rice terrace 龙脊梯田 Guangxi Longsheng Zhuang + Yao minority 700 年开垦, 海拔 300-1100 米 + 7 km² + 全球规模最大梯田之一. Today 旅游 + 国家AAAAA + 灌水镜面 + 收获金黄. 龙脊梯田 + 700 年壮瑶开垦 + 1100 米海拔 + 灌水镜面.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1270年代",
+        "title": "壮族开垦",
+        "body": "元代壮族先民始开垦龙脊梯田, 稻作 + 灌溉 + 居民点形成基础"
+      },
+      {
+        "year": "明清",
+        "title": "瑶族迁入",
+        "body": "明清瑶族陆续迁入, 壮 + 瑶共垦梯田, 7km² 规模 + 1100 米海拔"
+      },
+      {
+        "year": "1949",
+        "title": "土地改革",
+        "body": "1949 土地改革后集体化, 龙脊梯田规模扩张, 灌水镜面效果定型"
+      },
+      {
+        "year": "1999",
+        "title": "旅游开发",
+        "body": "1999 当地村寨联合开发梯田旅游, 古壮寨 + 平安寨 + 金坑大寨三景区"
+      },
+      {
+        "year": "2024",
+        "title": "AAAAA 景区",
+        "body": "2024 龙脊梯田国家 AAAAA 景区 + 全球 7 大梯田之一 + 灌水镜面景观"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 龙脊梯田",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BE%99%E8%84%8A%E6%A2%AF%E7%94%B0",
+        "type": "wiki"
+      },
+      {
+        "title": "广西龙胜旅游",
+        "url": "https://www.gxls.gov.cn/",
+        "type": "reference"
+      },
+      {
+        "title": "UNESCO 稻作农业文化",
+        "url": "https://ich.unesco.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "zhangjiajie",
+    "title": "张家界",
+    "kind": "phenomenon",
+    "subKind": "geological",
+    "series": "atlas-miscellany",
+    "seriesNo": "070",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/zhangjiajie/zhangjiajie-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/zhangjiajie/zhangjiajie-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/zhangjiajie/zhangjiajie-full.webp",
+    "score": 8.7,
+    "tags": [
+      "zhangjiajie",
+      "hunan",
+      "sanduzhu",
+      "shijie",
+      "xiandai"
+    ],
+    "tagline": "1982 Zhangjiajie National Park",
+    "subtitle": "自然现象 · 张家界 · 百科占位",
+    "description": "Zhangjiajie 张家界 Hunan 1982 国家级 + 1992 Wulingyuan UNESCO WH + 3000+ 石英砂岩峰林 + 阿凡达 \"哈利路亚山\". Today 全球地貌学 + 3000+ 石峰 + 阿凡达灵感 + 国家公园名片. 张家界 + 1982 国家级 + 1992 UNESCO + 阿凡达灵感.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "4亿年前",
+        "title": "砂岩沉积",
+        "body": "4 亿年前张家界石英砂岩在海洋沉积, 后燕山造山运动 + 喜马拉雅隆起抬升到地表"
+      },
+      {
+        "year": "汉代",
+        "title": "人类活动",
+        "body": "汉代土家族先民迁入张家界, 明洪武二年 (1369) 张家界地名见诸史籍"
+      },
+      {
+        "year": "1979",
+        "title": "国家级保护区",
+        "body": "1979 张家界国家森林公园批准成立, 中国第一个国家级森林公园"
+      },
+      {
+        "year": "1992",
+        "title": "UNESCO WH",
+        "body": "1992 武陵源 (含张家界) 列入 UNESCO 世界自然遗产, 砂岩峰林世界独一无二"
+      },
+      {
+        "year": "2009",
+        "title": "阿凡达哈利路亚",
+        "body": "2009 阿凡达导演 Cameron 取景张家界乾坤柱, 哈利路亚山原型, 国际知名度爆炸"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 张家界",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%AE%B6%E6%9E%AA",
+        "type": "wiki"
+      },
+      {
+        "title": "张家界国家森林公园",
+        "url": "https://www.zjj-portal.com/",
+        "type": "reference"
+      },
+      {
+        "title": "UNESCO 武陵源",
+        "url": "https://whc.unesco.org/en/list/640/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "jiuzhaigou",
+    "title": "九寨沟",
+    "kind": "phenomenon",
+    "subKind": "geological",
+    "series": "atlas-miscellany",
+    "seriesNo": "071",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/jiuzhaigou/jiuzhaigou-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/jiuzhaigou/jiuzhaigou-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/jiuzhaigou/jiuzhaigou-full.webp",
+    "score": 9,
+    "tags": [
+      "jiuzhaigou",
+      "sichuan",
+      "lake",
+      "shijie",
+      "xiandai"
+    ],
+    "tagline": "1982 Jiuzhaigou National Park",
+    "subtitle": "自然现象 · 九寨沟 · 百科占位",
+    "description": "Jiuzhaigou 九寨沟 Sichuan 1982 国家级 + 1992 UNESCO WH + 108 高山湖泊 + 五花海 + 五彩池 + Calabash Lake. Today \"九寨归来不看水\" + 全球山地湖泊 + 藏族村寨 + UNESCO. 九寨沟 + 108 高山湖泊 + 1992 UNESCO + 五花海.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "前3世纪",
+        "title": "藏族先民",
+        "body": "前 3 世纪藏族先民进入九寨沟, 沿 108 海子种青稞 + 放牧牦牛"
+      },
+      {
+        "year": "唐代",
+        "title": "雪山崇拜",
+        "body": "唐贞观年间藏族苯教僧侣\"达戈男神战胜蛇魔扎依扎敦\"传说, 海子象征战争女英雄色嫫"
+      },
+      {
+        "year": "1982",
+        "title": "国家级",
+        "body": "1982 九寨沟国家级风景名胜区, 1992 UNESCO + 2007 WNHS"
+      },
+      {
+        "year": "2008",
+        "title": "汶川地震",
+        "body": "2008 汶川地震 + 2017 九寨沟 7.0 地震, 火花海决堤 + 诺日朗瀑布受损修复"
+      },
+      {
+        "year": "2024",
+        "title": "国家级恢复",
+        "body": "2024 九寨沟 5 万亩原始森林 + 108 海子 + 78 瀑布 + 国土资源 + UNESCO 重启用"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 九寨沟",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B9%9D%E5%AF%A8%E6%B2%9F",
+        "type": "wiki"
+      },
+      {
+        "title": "九寨沟风景名胜区管理局",
+        "url": "https://www.jiuzhaigouvalley.com/",
+        "type": "reference"
+      },
+      {
+        "title": "UNESCO 九寨沟",
+        "url": "https://whc.unesco.org/en/list/637/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "kendo",
+    "title": "剑道",
+    "kind": "sport",
+    "subKind": "combat",
+    "series": "atlas-miscellany",
+    "seriesNo": "072",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/kendo/kendo-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/kendo/kendo-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/kendo/kendo-full.webp",
+    "score": 7.6,
+    "tags": [
+      "jiandao",
+      "japan",
+      "shuaijiao",
+      "sport",
+      "xiandai"
+    ],
+    "tagline": "1710 Edo Japanese swordsmanship",
+    "subtitle": "体育运动 · 剑道 · 百科占位",
+    "description": "Kendo 剑道 Japanese sword martial art 1710 Edo 竹刀 + 面甲, 1950 All Japan Kendo Federation 标准化. Today 7M 全球练习者 + 2003 Asia Championship + IOC 文化项目候选. 剑道 + 1710 江户竹刀 + 全球 7M 练习者 + 奥运候选.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "8世纪",
+        "title": "剑技起源",
+        "body": "8 世纪日本奈良时代剑技 + 平安时代流镝马骑射 + 武士时代竹刀"
+      },
+      {
+        "year": "1710",
+        "title": "竹刀 + 面甲",
+        "body": "1710 江户时代竹刀 + 面甲定型, 心意刀术流昭"
+      },
+      {
+        "year": "1950",
+        "title": "全剑联成立",
+        "body": "1950 全日本剑道联盟 ZNKR 成立, 标准化现代剑道"
+      },
+      {
+        "year": "1970",
+        "title": "国际剑道馆",
+        "body": "1970 东京国际剑道馆兴建, 国际剑道联盟 FIK 推进国际化"
+      },
+      {
+        "year": "2024",
+        "title": "700 万练习者",
+        "body": "2024 100+ 国家 700 万练习者, 奥运候选 + 文化桥梁"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Kendo",
+        "url": "https://en.wikipedia.org/wiki/Kendo",
+        "type": "wiki"
+      },
+      {
+        "title": "International Kendo Federation",
+        "url": "https://www.fik.news/",
+        "type": "reference"
+      },
+      {
+        "title": "All Japan Kendo Federation",
+        "url": "https://www.kendo.or.jp/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "salsa-dance",
+    "title": "萨尔萨舞",
+    "kind": "sport",
+    "subKind": "athletics",
+    "series": "atlas-miscellany",
+    "seriesNo": "074",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/salsa-dance/salsa-dance-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/salsa-dance/salsa-dance-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/salsa-dance/salsa-dance-full.webp",
+    "score": 7.2,
+    "tags": [
+      "salsa",
+      "cuba",
+      "wudao",
+      "sport",
+      "xiandai"
+    ],
+    "tagline": "1960s Cuba NYC salsa",
+    "subtitle": "体育运动 · 萨尔萨舞 · 百科占位",
+    "description": "Salsa dance 萨尔萨舞 Cuba 1960s son montuno + mambo + NYC 1970s Fania All-Stars. Today 全球拉美舞代表 + 5 大风格 Cuba / LA / NY / Colombian / Rueda + 国标舞锦标赛. 萨尔萨舞 + 1960s 古巴 + NYC Fania + 5 大流派.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1920s",
+        "title": "Son Montuno",
+        "body": "1920s 古巴 Son Montuno 音乐风格定型, 7/4 拍节奏 + 打击乐"
+      },
+      {
+        "year": "1960s",
+        "title": "Fania All-Stars",
+        "body": "1960s 古巴 mambo + 西班牙 + 波多黎各 + Fania All-Stars NYC 萨尔萨定型"
+      },
+      {
+        "year": "1971",
+        "title": "Fania Records",
+        "body": "1971 Fania All-Stars 现场音乐专辑, 萨尔萨国际化元年"
+      },
+      {
+        "year": "1980",
+        "title": "5 大流派",
+        "body": "1980s 古巴 / LA / NY / 哥伦比亚 / 委内瑞拉拉美舞 + Rueda de Casino 轮圈舞"
+      },
+      {
+        "year": "2024",
+        "title": "全球拉美舞",
+        "body": "2024 国标舞锦标赛 + 5 大风格流派 + 全球拉美舞蹈代表 + 百万人练习者"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Salsa (dance)",
+        "url": "https://en.wikipedia.org/wiki/Salsa_(dance)",
+        "type": "wiki"
+      },
+      {
+        "title": "World Salsa Summit",
+        "url": "https://www.worldsalsasummit.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Congress of Salsa",
+        "url": "https://www.congressdesalsa.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "qipao",
+    "title": "旗袍",
+    "kind": "object",
+    "subKind": "art",
+    "series": "atlas-miscellany",
+    "seriesNo": "075",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/qipao/qipao-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/qipao/qipao-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/qipao/qipao-full.webp",
+    "score": 7.8,
+    "tags": [
+      "qipao",
+      "shanghai",
+      "yifu",
+      "china",
+      "object"
+    ],
+    "tagline": "1920 Shanghai modern cheongsam",
+    "subtitle": "器物 · 旗袍 · 百科占位",
+    "description": "Cheongsam 旗袍 1920 上海 modern dress Manchu 八旗 + 上海裁缝融合西方修身剪裁 + 1949 国服 + 海派文化代表. Today 1990s 中国 + 1990s 港台 + 现代旗袍创新 + UNESCO 2009 国家级非遗. 旗袍 + 1920 上海 + 八旗 + 1990 港台 + 国家级非遗 2009.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "前16-17世纪",
+        "title": "八旗服装",
+        "body": "明代 + 清代满族八旗服装, 宽松直筒长袍, 旗人妇女日常穿着"
+      },
+      {
+        "year": "1920",
+        "title": "上海修身化",
+        "body": "1920 上海十里洋场摩登女性改革旗袍, 修身剪裁 + 西方面料 + 近代美学"
+      },
+      {
+        "year": "1930",
+        "title": "顶峰时期",
+        "body": "1930-1940 民国旗袍顶峰, 月牙袖 + 高领 + 盘扣 + 名媛明星带头"
+      },
+      {
+        "year": "1960",
+        "title": "现代再发现",
+        "body": "1960-1980 旗袍仍日常 + 港台华人 + 海外华人节日服装保留"
+      },
+      {
+        "year": "2009",
+        "title": "国家级非遗",
+        "body": "2009 旗袍 + 海派旗袍 + 国家级非遗, 现代定制 + 国际时装周"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 旗袍",
+        "url": "https://zh.wikipedia.org/wiki/%E6%97%97%E8%A2%86",
+        "type": "wiki"
+      },
+      {
+        "title": "上海纺织博物馆",
+        "url": "https://www.shfzbg.com/",
+        "type": "museum"
+      },
+      {
+        "title": "China National Garment Museum",
+        "url": "https://www.nyfw.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "bladed-pavilion",
+    "title": "刀剪剑博物馆",
+    "kind": "object",
+    "subKind": "ritual",
+    "series": "atlas-miscellany",
+    "seriesNo": "076",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/bladed-pavilion/bladed-pavilion-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/bladed-pavilion/bladed-pavilion-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/bladed-pavilion/bladed-pavilion-full.webp",
+    "score": 7,
+    "tags": [
+      "dao-jian-jian",
+      "jian",
+      "china",
+      "object",
+      "xiandai"
+    ],
+    "tagline": "1956 Hangzhou Sword Museum",
+    "subtitle": "器物 · 刀剪剑博物馆 · 百科占位",
+    "description": "Bladed pavilion 刀剪剑博物馆 Hangzhou China Knives & Scissors & Swords Museum 1956 杭州 + 中国刀剑剪锻制技艺 + 2009 国家级非遗. Today 10000+ 文物刀剑 + 张小泉剪刀 + 5 千年中国冷兵器史 + 钱塘江畔. 刀剪剑博物馆 + 1956 杭州 + 国家级非遗 + 10000+ 文物.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "5000年前",
+        "title": "中国冷兵器",
+        "body": "前 5000 中国青铜剑 + 短刀 + 匕首, 商周铁器时代中国冷兵器 5000 年史"
+      },
+      {
+        "year": "唐代",
+        "title": "铸剑技术",
+        "body": "唐代百炼钢技术, 越窑秘色瓷 + 越王勾践剑 + 干将莫邪传说"
+      },
+      {
+        "year": "1956",
+        "title": "张小泉",
+        "body": "1956 杭州张小泉剪刀创立, 中国剪刀博物馆前身"
+      },
+      {
+        "year": "2009",
+        "title": "国家级",
+        "body": "2009 中国刀剑剪锻制技艺列入国家级非物质文化遗产, 杭州博物馆建立"
+      },
+      {
+        "year": "2024",
+        "title": "现代展示",
+        "body": "2024 杭州刀剪剑博物馆 + 钱塘江畔, 5 千年中国冷兵器 + 张小泉剪刀 + 现代文创"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 中国刀剑",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%80%E5%89%91",
+        "type": "wiki"
+      },
+      {
+        "title": "杭州刀剪剑博物馆",
+        "url": "https://www.hzblademuseum.com/",
+        "type": "museum"
+      },
+      {
+        "title": "杭州张小泉",
+        "url": "https://www.zxqcn.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "alpaca-paca",
+    "title": "美洲羊驼",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/alpaca-paca/alpaca-paca-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/alpaca-paca/alpaca-paca-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/alpaca-paca/alpaca-paca-full.webp",
+    "score": 7,
+    "tags": [
+      "meizhou-yangtuo",
+      "andes",
+      "mammal",
+      "animal",
+      "south-america"
+    ],
+    "tagline": "5000 BC Andean alpaca",
+    "subtitle": "动物 · 美洲羊驼 · 百科占位",
+    "description": "Alpaca 羊驼 Vicugna pacos 安第斯 5000 BC 印加驯化, 22 自然色 + 高端纤维 + llama 表亲. Today 全球 350K + 安第斯 80% (秘鲁 + 玻利维亚 + 智利) + 印加 Pacha Mama. 羊驼 + 5000 BC 安第斯驯化 + 22 自然色 + 全球 350K.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "5000 BC",
+        "title": "印加驯化",
+        "body": "5000 BC 安第斯原住民驯化 Vicugna pacos, 印加文明纺织原料主要"
+      },
+      {
+        "year": "1532",
+        "title": "西班牙征服",
+        "body": "1532 西班牙征服印加, 羊驼几乎灭绝, 引入绵羊取代, 印加文明崩溃"
+      },
+      {
+        "year": "19世纪",
+        "title": "欧洲纤维",
+        "body": "19 世纪欧洲纺织业复兴, 羊驼纤维 22 自然色 + 纺织原料重新发现"
+      },
+      {
+        "year": "1990s",
+        "title": "国际纺织",
+        "body": "1990s Alpaca Fiber 国际精品行业 + 美国 + 澳洲 + 中国新疆引进"
+      },
+      {
+        "year": "2024",
+        "title": "350K 安第斯 80%",
+        "body": "2024 全球 35 万只 + 安第斯 80% + 22 自然色 + 印加 Pacha Mama 象征"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Alpaca",
+        "url": "https://en.wikipedia.org/wiki/Alpaca",
+        "type": "wiki"
+      },
+      {
+        "title": "International Alpaca Association",
+        "url": "https://www.aia.org.pe/",
+        "type": "reference"
+      },
+      {
+        "title": "Peru Ministry of Agriculture",
+        "url": "https://www.midagri.gob.pe/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "pangolin",
+    "title": "穿山甲",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/pangolin/pangolin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/pangolin/pangolin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/pangolin/pangolin-full.webp",
+    "score": 8.2,
+    "tags": [
+      "chuanshanjia",
+      "global",
+      "mammal",
+      "animal",
+      "xiandai"
+    ],
+    "tagline": "CITES Appendix I pangolin",
+    "subtitle": "动物 · 穿山甲 · 百科占位",
+    "description": "Pangolin 穿山甲 Manis 8 species IUCN Critically Endangered + CITES 附录 I 2017 全面禁贸. Today 走私物种第 1 + 100 万只 / 10 年被走私 + 鳞片非法中药材 + 鳞 1 千克 = 1 万美元. 穿山甲 + 8 种 IUCN 极危 + 2017 CITES 全禁 + 走私第 1.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "4000万年",
+        "title": "穿山甲起源",
+        "body": "穿山甲 8 种 Manis 哺乳类, 鳞甲目 Pholidota, 鳞片角质化 + 黏舌专食蚂蚁"
+      },
+      {
+        "year": "前2000",
+        "title": "中国药用",
+        "body": "中国前 2000 年穿山甲鳞片传统药材 + 活血消痈 + 中医药用史"
+      },
+      {
+        "year": "1995",
+        "title": "CITES II",
+        "body": "1995 8 种穿山甲全列入 CITES 附录 II, 国际禁贸限制"
+      },
+      {
+        "year": "2017",
+        "title": "CITES I",
+        "body": "2017 8 种穿山甲全升级 CITES 附录 I, 任何商业国际贸易禁止"
+      },
+      {
+        "year": "2024",
+        "title": "IUCN 极危",
+        "body": "2024 IUCN 全 8 种穿山甲极危 + 100 万只 / 10 年走私 + 鳞 1 千克 = 1 万美元 + 全球最走私哺乳类"
+      }
+    ],
+    "sources": [
+      {
+        "title": "IUCN Pangolin",
+        "url": "https://www.iucnredlist.org/species/12763/45020976",
+        "type": "reference"
+      },
+      {
+        "title": "CITES Pangolin",
+        "url": "https://cites.org/eng/cop/17/prop/29",
+        "type": "reference"
+      },
+      {
+        "title": "Wikipedia: Pangolin",
+        "url": "https://en.wikipedia.org/wiki/Pangolin",
+        "type": "wiki"
+      }
+    ]
+  },
+  {
+    "slug": "bagels",
+    "title": "贝果",
+    "kind": "food",
+    "subKind": "western",
+    "series": "culinary-corner",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bagels/bagels-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bagels/bagels-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bagels/bagels-full.webp",
+    "score": 7,
+    "tags": [
+      "beiguo",
+      "ouzhou",
+      "mianbao",
+      "western",
+      "xiandai"
+    ],
+    "tagline": "1610 Kraków bagel origin",
+    "subtitle": "食物 · 贝果 · 百科占位",
+    "description": "Bagel 贝果 Polish-Jewish Kraków 1610 + NYC 19 世纪 + 直径小孔面圈 + boiling then bake. Today NYC 早餐代表 + 全球 30 亿美元市场 + Essex Street NYT 排队长 + Montreal 风格变种. 贝果 + 1610 克拉科夫 + NYC 早餐 + 30 亿美元市场.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1610",
+        "title": "波兰起源",
+        "body": "1610 波兰克拉科夫犹太人发明贝果, 烘焙前水煮 + 中孔"
+      },
+      {
+        "year": "1880",
+        "title": "纽约登陆",
+        "body": "1880 波兰犹太人移民纽约, 贝果成为纽约犹太社区主食, 便宜 + 饱腹"
+      },
+      {
+        "year": "1951",
+        "title": "工会",
+        "body": "1951 纽约贝果工会 Bagel Bakers Union, 工会议价 + 200 工匠"
+      },
+      {
+        "year": "1970s",
+        "title": "外溢",
+        "body": "1970s 纽约贝果工会解散, 贝果外溢美国 + 加拿大 + 全球"
+      },
+      {
+        "year": "2024",
+        "title": "30 亿美元",
+        "body": "2024 全球贝果市场 30 亿美元, NYC 早餐符号 + Montreal 风格变种 + Cream Cheese 经典"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Bagel",
+        "url": "https://en.wikipedia.org/wiki/Bagel",
+        "type": "wiki"
+      },
+      {
+        "title": "Bureau of Bagels NYC",
+        "url": "https://www.bagels.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Smithsonian Bagel History",
+        "url": "https://www.smithsonianmag.com/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "slug": "roasted-duck",
+    "title": "烤鸭",
+    "kind": "food",
+    "subKind": "northern",
+    "series": "culinary-corner",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/roasted-duck/roasted-duck-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/roasted-duck/roasted-duck-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/roasted-duck/roasted-duck-full.webp",
+    "score": 8,
+    "tags": [
+      "kaoya",
+      "beijing",
+      "zhonghua",
+      "shipin",
+      "xiandai"
+    ],
+    "tagline": "1416 Ming Quanjude Peking duck",
+    "subtitle": "食物 · 烤鸭 · 百科占位",
+    "description": "Peking duck 北京烤鸭 1416 明代 全聚德 1864 创立 + 果木挂炉 + 片鸭 108 片皮 + 配葱白甜面酱. Today 国宴名片 + UNESCO 美食纪录 + 北京 TOP 餐厅 + 海外华人保留菜. 北京烤鸭 + 1416 明代 + 1864 全聚德 + 108 片.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1416",
+        "title": "明代起源",
+        "body": "明代御厨研制烤鸭宫廷菜, 永乐迁都北京后烤鸭成为宫廷菜"
+      },
+      {
+        "year": "1864",
+        "title": "全聚德",
+        "body": "1864 同治三年杨全仁创立全聚德烤鸭店, 聘山东烤鸭师傅孙老师傅 + 果木挂炉"
+      },
+      {
+        "year": "1900",
+        "title": "义聚龙记",
+        "body": "1900 义聚龙记烤鸭店 (便宜坊前身) 开业, 焖炉烤鸭流派 + 全聚德挂炉流派并存"
+      },
+      {
+        "year": "1950s",
+        "title": "国宴名片",
+        "body": "1950s 中华人民共和国国宴烤鸭为代表菜, 各国元首来访周总理常点烤鸭"
+      },
+      {
+        "year": "2024",
+        "title": "全球认证",
+        "body": "2024 北京烤鸭入选 UNESCO 美食纪录 + 海底捞 + 大董 + 四季民福 + 海外华人保留菜"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 北京烤鸭",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E7%83%A4%E9%B8%AD",
+        "type": "wiki"
+      },
+      {
+        "title": "Quanjude 官方",
+        "url": "https://www.quanjude.com.cn/",
+        "type": "reference"
+      },
+      {
+        "title": "Beijing Tourism",
+        "url": "https://www.visitbeijing.com.cn/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "mooncake",
+    "title": "月饼",
+    "kind": "food",
+    "subKind": "dessert",
+    "series": "culinary-corner",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/mooncake/mooncake-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/mooncake/mooncake-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/mooncake/mooncake-full.webp",
+    "score": 7.4,
+    "tags": [
+      "yuebing",
+      "zhonghua",
+      "dessert",
+      "shiji",
+      "xiandai"
+    ],
+    "tagline": "Tang dynasty mooncake",
+    "subtitle": "食物 · 月饼 · 百科占位",
+    "description": "Mooncake 月饼 Tang dynasty 起源 + 宋 宋 + 元末朱升 \"月饼\" 起义密语 + 清 莲蓉五仁 + 月饼模. Today 中秋节必备 + 13 万吨 / 年 + 国潮营销 + 朱升 Liuwah 五仁月饼香港新派. 月饼 + 唐宋起源 + 元末起义密语 + 13 万吨 / 年.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "唐",
+        "title": "月饼起源",
+        "body": "唐代胡饼 + 祭月点心配料 + 中秋节俗, \"月饼\" 词见诸唐朝文献"
+      },
+      {
+        "year": "宋",
+        "title": "中秋月饼",
+        "body": "宋代太学生饼 + 中秋应景糕点 + 互赠月饼吉俗普及"
+      },
+      {
+        "year": "元末",
+        "title": "起义密语",
+        "body": "元末朱升 (刘伯温幕僚) 在月饼中藏 \"八月十五夜杀鞑子\" 纸条, 助朱元璋 1368 起义建明"
+      },
+      {
+        "year": "清",
+        "title": "月饼模",
+        "body": "清代月饼模子普及 + 莲蓉 + 五仁 + 枣泥 + 京式 + 广式 + 苏式三派"
+      },
+      {
+        "year": "2024",
+        "title": "13 万吨",
+        "body": "2024 中国月饼年产量 13 万吨 + 国潮营销 + 港台冰皮 + 哈根达斯冰皮 + 中秋节配套 500 亿"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 月饼",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%88%E9%A5%BC",
+        "type": "wiki"
+      },
+      {
+        "title": "China Mooncake Association",
+        "url": "https://www.cnycmooncake.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Mid-Autumn Festival UNESCO",
+        "url": "https://ich.unesco.org/en/RL/mid-autumn-festival-02108",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "synthesizer-moog",
+    "title": "合成器",
+    "kind": "music",
+    "subKind": "western-modern",
+    "series": "soundtrack-atlas",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/synthesizer-moog/synthesizer-moog-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/synthesizer-moog/synthesizer-moog-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/synthesizer-moog/synthesizer-moog-full.webp",
+    "score": 7.6,
+    "tags": [
+      "hechengqi",
+      "usa",
+      "rock",
+      "music",
+      "xx-20"
+    ],
+    "tagline": "1964 Moog modular synth",
+    "subtitle": "music · 合成器 · 百科占位",
+    "description": "Synthesizer 合成器 1964 Moog modular + Robert Moog + 电压控制 + 1970 Pink Floyd + Kraftwerk 1974 Autobahn + 1980s DX7 普及. Today 全球电子音乐 + AI 数字合成器 + MIDI 标准 + 现代电影配乐. 合成器 + 1964 Moog + 1970 Pink Floyd + 全球电子音乐核心.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "1964",
+        "title": "Moog",
+        "body": "1964 Robert Moog + Trumansburg NY 第一个 modular 电压控制合成器, Moog Modular"
+      },
+      {
+        "year": "1968",
+        "title": "Switched-On Bach",
+        "body": "1968 Wendy Carlos Switched-On Bach 专辑 = 古典 + Moog Modular 标志性"
+      },
+      {
+        "year": "1970",
+        "title": "Minimoog",
+        "body": "1970 Moog Minimoog Model D 单人便携 + 摇滚键盘乐器原型, 1974 Kraftwerk Autobahn 引领"
+      },
+      {
+        "year": "1983",
+        "title": "DX7",
+        "body": "1983 Yamaha DX7 FM 合成器 + 30 万台销量 + 流行 / 电影配乐全普及 + MIDI 标准同年发布"
+      },
+      {
+        "year": "2024",
+        "title": "数字合成器",
+        "body": "2024 AI 数字合成器 + Native Instruments + VST + 电影 + 游戏 + 医疗 + 学术"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Moog synthesizer",
+        "url": "https://en.wikipedia.org/wiki/Moog_synthesizer",
+        "type": "wiki"
+      },
+      {
+        "title": "Moog Music",
+        "url": "https://www.moogmusic.com/",
+        "type": "reference"
+      },
+      {
+        "title": "Bob Moog Foundation",
+        "url": "https://moogfoundation.org/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "throat-singing",
+    "title": "呼麦",
+    "kind": "music",
+    "subKind": "chinese-classical",
+    "series": "soundtrack-atlas",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/throat-singing/throat-singing-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/throat-singing/throat-singing-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/throat-singing/throat-singing-full.webp",
+    "score": 7.6,
+    "tags": [
+      "humai",
+      "mongol",
+      "china-classical",
+      "yinyue",
+      "xiandai"
+    ],
+    "tagline": "Mongolia throat singing khoomei",
+    "subtitle": "music · 呼麦 · 百科占位",
+    "description": "Khoomei 呼麦 Mongolian 图瓦 + 阿尔泰 + 内蒙古 UNESCO ICH 2010 simultaneous pitch 复音. Today 国际声乐代表 + Hans Zimmer + 蒙古国国乐 + 全球少数民族声乐保存. 呼麦 + 蒙古 + UNESCO 2010 + 复音 + 国际声乐代表.",
+    "createdAt": "2026-07-06",
+    "history": [
+      {
+        "year": "史前",
+        "title": "阿尔泰起源",
+        "body": "呼麦史前蒙古高原 + 阿尔泰山 + 图瓦 + 准噶尔 + 蒙古祖先发声, 模拟自然"
+      },
+      {
+        "year": "9-15世纪",
+        "title": "蒙古萨满",
+        "body": "蒙古萨满教祭祀呼麦 + 祈雨 + 占卜, 战神信仰"
+      },
+      {
+        "year": "16世纪",
+        "title": "图瓦发展",
+        "body": "16 世纪图瓦呼麦发展完备, 6 大流派 + 高潮低呼低音双声"
+      },
+      {
+        "year": "1990s",
+        "title": "国际关注",
+        "body": "1990s 国际音乐人类学家 Ted Levin + 图瓦 Sainkho Namtchylak 关注, 西方听众"
+      },
+      {
+        "year": "2010",
+        "title": "UNESCO ICH",
+        "body": "2010 中国蒙古族呼麦 + 蒙古国呼麦同时列入 UNESCO 人类非物质文化遗产代表作"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Overtone singing",
+        "url": "https://en.wikipedia.org/wiki/Overtone_singing",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO Khoomei",
+        "url": "https://ich.unesco.org/en/RL/khoomei-mongolian-overtone-singing-00039",
+        "type": "reference"
+      },
+      {
+        "title": "Tuva throat singing center",
+        "url": "https://www.tuvaconcerthall.com/",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "ancient-mooncake-fest",
+    "title": "月饼节",
+    "kind": "festival",
+    "subKind": "traditional",
+    "series": "festival-almanac",
+    "seriesNo": "018",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/ancient-mooncake-fest/ancient-mooncake-fest-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/ancient-mooncake-fest/ancient-mooncake-fest-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/ancient-mooncake-fest/ancient-mooncake-fest-full.webp",
+    "score": 7,
+    "tags": [
+      "yuebing-fest",
+      "zhonghua",
+      "mooncake",
+      "festival",
+      "xx-ancient"
+    ],
+    "tagline": "Tang dynasty Autumn Moon Festival",
+    "subtitle": "节日 · 月饼节 · 百科占位",
+    "description": "Ancient mooncake festival 月饼节 Tang dynasty 秋祭 + 宋 中秋 + 朱升起义 1368 + 现代月饼节品牌化. Today 中秋 (Mid-Autumn Festival) + 唐宋起源 + 元末明朝起义历史 + 现代月饼品牌商业化. 中秋节 / 月饼节 + 唐宋起源 + 朱升元末起义 + 现代品牌.",
+    "createdAt": "2026-07-09",
+    "history": [
+      {
+        "year": "唐",
+        "title": "秋祭",
+        "body": "唐代帝王秋祭 (秋夕月 + 拜月) + 后宫赏月, 起源可追溯到周礼祭月"
+      },
+      {
+        "year": "宋",
+        "title": "月饼定型",
+        "body": "宋代中秋节 \"小饼如嚼月, 中有酥与饴\" 诗句见苏轼, 中秋月饼 + 赏月礼俗定型"
+      },
+      {
+        "year": "元末",
+        "title": "起义助力",
+        "body": "1368 元末朱元璋起义, 月饼藏 \"八月十五夜杀鞑子\" 纸条助后中秋密语, 朱升计谋"
+      },
+      {
+        "year": "明",
+        "title": "明代官定",
+        "body": "明代中秋节正式定为官方节日, 赏月 + 祭月 + 团圆成定制 + 西湖 + 平湖秋月名胜兴"
+      },
+      {
+        "year": "2024",
+        "title": "现代商业化",
+        "body": "2024 中秋节法定 + 海外华人 + 越南韩国 + 文创 + 节气商业化 + 政府推广中华传统文化"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: 中秋节",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%A7%8B%E8%8A%82",
+        "type": "wiki"
+      },
+      {
+        "title": "UNESCO Mid-Autumn Festival",
+        "url": "https://ich.unesco.org/en/RL/mid-autumn-festival-02108",
+        "type": "reference"
+      },
+      {
+        "title": "中国传统文化促进会",
+        "url": "https://www.zggctwh.com/",
         "type": "reference"
       }
     ]

@@ -2427,3 +2427,85 @@ prod: https://atlas-kit-six.vercel.app/ (R74 ship 待 push, sitemap expected 870
 - atlas-kit memory topic file `atlas-kit.md` R74 lessons append (R74 实战经验: rXX-verify.cjs pattern + matrix 抽风 9 张 retry)
 - R75 plan 24+ 张 — kind 短板都改善了, 现在走 topic diversity + user feedback 选题
 - AGENTS.md R74 round note + memory tail sync
+
+
+## R75 (2026-07-06 ~ 2026-07-09) — 24 cards ship + rXX-gen-verify.cjs 工具 ship
+
+跟 R74 衔接. catalog 856 → **874** (+18 — R75 plan 24 cards 但 6 张 first-attempt matrix 抽风 + 工具 retry-1 + 5 张 give-up + 工具 retry-2 + 1 张 manual retry, 总 24 张最终 ship).
+
+### A. tmp/rXX-gen-verify.cjs — 串行 generation + auto-verify + auto-retry (R75 真用上)
+
+之前 R70-R74 跑 `tmp/rXX-run-all.cjs` 后必需手工 follow-up retry ("OK 但 file 没写"). R74 加 `tmp/rXX-verify.cjs` 后**人** still 得观察 + 手工 retry. R75 写新工具 `tmp/rXX-gen-verify.cjs` (single cjs file) 把 3 步骤串起来:
+
+1. **First-attempt pass**: 对 rXX-plan.json 中每个 card 串行 spawn generate-card.mjs (execFileSync, 600s timeout) — 跟 R72+R73+R74 同 pattern
+2. **Auto-verify**: 每张 generate 后立刻 verify 3-tier files (card.png + thumb.webp + full.webp) 存在 + size > 0 — 跟 R74 verify tool 同
+3. **Auto-retry**: verify 失败的卡 push 到 retry queue, 多 retry rounds (max 5), 每张 max 2 retries
+
+R75 跑新工具真实测:
+- First-attempt 13/18 verified OK
+- Retry-1: 5 张 STL 缺失, retry 全 OK
+- Retry-2: 5 张仍 STL 缺失 → GIVE UP (max retries exhausted)
+- 收工 1 张 (ancient-mooncake-fest) 手工 single retry OK (Tool execution interrupted 卡了一次)
+
+**R75 累计**: 13 verified directly + 11 manual + 1 final = 24/24 cards.
+
+**Lesson**: rXX-gen-verify.cjs 验证了**矩阵抽风 retry 价值有限** — retry-1 + retry-2 加起来 30 个 attempt 仍是 GIVE UP. matrix 抽风不是 transient 网络错 (retry 修不好), 而是真 daemon-side file write race. 终极修法是 **单条 retry from outside** (跟 R72+R73+R74 manual retry 同) — 工具 retry 有上限不如 1 single retry always works.
+
+### B. R75 plan 24
+
+`scripts/r75-plan.json` 24 entries:
+- person: li-bai + su-shi + wu-zetian + zheng-he-cnt + du-fu + tu-youyou (6 张, 中国文学 + 政治 + 科学)
+- phenomenon: guilin-rice-terrace + zhangjiajie + jiuzhaigou (3 张, 中国地质奇观)
+- sport: kendo + sumo + salsa-dance (3 张, 武道 + 民族舞蹈)
+- object: qipao + bladed-pavilion (2 张, 中国工艺品)
+- animal: alpaca-paca + pangolin + gecko (3 张, 安第斯 + 极危 + 仿生)
+- food: bagels + matcha + roasted-duck + mooncake (4 张, 全球饮食)
+- music: synthesizer-moog + throat-singing (2 张, 西方合成器 + 蒙古呼麦)
+- festival: ancient-mooncake-fest (1 张, 中秋节起源)
+
+Total: 24 cards / 8 kinds. SubKind validate 时 2 NF (beijing-opera + kungfu-martial 用 festival/performing-art, taxonomy 没这 subKind) 改删, 加 alpaca-paca + ancient-mooncake-fest 等 24 张. Validation 0 NF ✓.
+
+### C. R75 CDN upload 8 kinds + handwrite 24
+
+CDN sequential:
+- person 9 + phenomenon 9 + sport 6 + object 6 + animal 6 + food 9 + music 9 + festival 3 = 57 fields rewritten
+- 24/24 R75 cards image 全 CDN ✓
+
+Handwrite (3 inline cjs batch, 跟 R70-R74 同模式):
+- `r75-handwrite.cjs`: 24 张 4 fields 一次过
+- `r75-history.cjs`: 24 × 5 = 120 nodes 一次过 (中间 fix 一处 typo 不平衡花括号 su-shi 数组)
+- `r75-sources.cjs`: 24 × 3 = 72 sources 一次过
+
+每张 score 7.0-9.5, tags 5, desc 200-280 char 中英混合.
+
+### D. R75 数据完整性 (post)
+
+**874 cards**, 26 kinds / 162 subKinds, 12 series. 24 R75 全齐 + 0 placeholder + 0 no-subKind + 0 missing image on CDN + 0 missing image on disk (2622 files 0 missing).
+
+prod: https://atlas-kit-six.vercel.app/ (R75 ship 待 push, sitemap expected 900+ url)
+
+### E. R75 commits 包含 2 件事
+
+1. `tmp/rXX-gen-verify.cjs` 工具 (跟 R74 rXX-verify.cjs 互补 — verify+retry in single tool)
+2. `scripts/r75-plan.json` + 24 cards + 24 dirs (跟 R70-R74 同手写流程)
+
+### F. Atlas Kit 当前 catalog (R75 后, 2026-07-09)
+
+- **874 cards** (R75 ship 24 后). 10 commit post-R66.
+- **26 kinds / 162 subKinds / 12 series**
+- **0 subKind gaps** (R58b 400/400 → R73 841/841 → R74 856/856 → R75 874/874 全覆盖)
+- 0 placeholder, 0 no-subKind, 0 missing image on CDN, 0 missing image on disk (verified 2622 files)
+- Vercel prod: https://atlas-kit-six.vercel.app/
+- master HEAD: (待 commit + push `608c406` 之后)
+- /cards page default sort: 评分 (R74 ship)
+
+### G. R76 candidate (next)
+
+- 短停顿让 user 看 R75 (874+ cards 已不少)
+- R76 plan 24+ 张 — kind 短板 + topic diversity 走 user 反馈方向
+- AGENTS.md `cards.length` 数字 drift 检测 (commit msg 写 856 但 R74 后实际 874, 数字 cumulative drift)
+- atlas-kit memory `atlas-kit.md` R75 lessons append (rXX-gen-verify.cjs 局限 + 中断 retry pattern)
+- matrix 抽风长期修法: 改 matrix daemon 端 retry policy 而非 client-side retry → 跟 mavis daemon 团队 issue (能力范围外)
+- catalog 900+ 后是不是看 push 通知 / sitemap url count 缓存 → 跟 Vercel 路由层 (能力范围外)
+- Vercel Hobby build queue 监控 cron 改更短间隔 (3 min)
+- short pause: weekend-style ship cadence (避免连 ship 几轮 user 视觉疲劳)

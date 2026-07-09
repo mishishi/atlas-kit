@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "round": "R75",
+    "goal": "24 张新主题 - kind 平衡 + topic diversity (中国文化 / 地理 / 历史人物细化)",
+    "createdAt": "2026-07-06",
+    "totalCards": 856
+  },
+  "plan": [
+    {"slug": "li-bai", "title": "李白", "kind": "person", "subKind": "ancient-scientist", "series": "history-and-figures", "seriesNo": "036"},
+    {"slug": "su-shi", "title": "苏轼", "kind": "person", "subKind": "ancient-scientist", "series": "history-and-figures", "seriesNo": "037"},
+    {"slug": "wu-zetian", "title": "武则天", "kind": "person", "subKind": "emperor", "series": "history-and-figures", "seriesNo": "038"},
+    {"slug": "zheng-he-cnt", "title": "郑和", "kind": "person", "subKind": "ancient-scientist", "series": "history-and-figures", "seriesNo": "039"},
+    {"slug": "du-fu", "title": "杜甫", "kind": "person", "subKind": "ancient-scientist", "series": "history-and-figures", "seriesNo": "040"},
+    {"slug": "tu-youyou", "title": "屠呦呦", "kind": "person", "subKind": "modern-scientist", "series": "history-and-figures", "seriesNo": "041"},
+
+    {"slug": "guilin-rice-terrace", "title": "龙脊梯田", "kind": "phenomenon", "subKind": "geological", "series": "atlas-miscellany", "seriesNo": "069"},
+    {"slug": "zhangjiajie", "title": "张家界", "kind": "phenomenon", "subKind": "geological", "series": "atlas-miscellany", "seriesNo": "070"},
+    {"slug": "jiuzhaigou", "title": "九寨沟", "kind": "phenomenon", "subKind": "geological", "series": "atlas-miscellany", "seriesNo": "071"},
+
+    {"slug": "kendo", "title": "剑道", "kind": "sport", "subKind": "combat", "series": "atlas-miscellany", "seriesNo": "072"},
+    {"slug": "sumo", "title": "相扑", "kind": "sport", "subKind": "combat", "series": "atlas-miscellany", "seriesNo": "073"},
+    {"slug": "salsa-dance", "title": "萨尔萨舞", "kind": "sport", "subKind": "athletics", "series": "atlas-miscellany", "seriesNo": "074"},
+
+    {"slug": "qipao", "title": "旗袍", "kind": "object", "subKind": "art", "series": "atlas-miscellany", "seriesNo": "075"},
+    {"slug": "bladed-pavilion", "title": "刀剪剑博物馆", "kind": "object", "subKind": "ritual", "series": "atlas-miscellany", "seriesNo": "076"},
+
+    {"slug": "alpaca-paca", "title": "美洲羊驼", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "035"},
+    {"slug": "pangolin", "title": "穿山甲", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "036"},
+    {"slug": "gecko", "title": "壁虎", "kind": "animal", "subKind": "reptile", "series": "wild-fauna-atlas", "seriesNo": "037"},
+
+    {"slug": "bagels", "title": "贝果", "kind": "food", "subKind": "western", "series": "culinary-corner", "seriesNo": "031"},
+    {"slug": "matcha", "title": "抹茶", "kind": "food", "subKind": "drink", "series": "culinary-corner", "seriesNo": "033"},
+    {"slug": "roasted-duck", "title": "烤鸭", "kind": "food", "subKind": "northern", "series": "culinary-corner", "seriesNo": "034"},
+    {"slug": "mooncake", "title": "月饼", "kind": "food", "subKind": "dessert", "series": "culinary-corner", "seriesNo": "035"},
+
+    {"slug": "synthesizer-moog", "title": "合成器", "kind": "music", "subKind": "western-modern", "series": "soundtrack-atlas", "seriesNo": "035"},
+    {"slug": "throat-singing", "title": "呼麦", "kind": "music", "subKind": "chinese-classical", "series": "soundtrack-atlas", "seriesNo": "036"},
+    {"slug": "ancient-mooncake-fest", "title": "月饼节", "kind": "festival", "subKind": "traditional", "series": "festival-almanac", "seriesNo": "018"}
+  ]
+}

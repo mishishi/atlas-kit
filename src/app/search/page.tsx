@@ -1,6 +1,7 @@
 import { CardGrid } from "@/components/card-grid";
 import { SortChips } from "@/components/sort-chips";
 import { CardPreview } from "@/components/card-preview";
+import { SearchInput } from "@/components/search-input";
 import {
   getAllCards,
   getDiverseFeatured,
@@ -128,26 +129,11 @@ export default function SearchPage({ searchParams }: SearchProps) {
       </header>
 
       <form className="mb-10 max-w-xl" action="/search" method="get" role="search">
-        <label className="sr-only" htmlFor="search-q">搜索图鉴</label>
-        <div className="relative">
-          <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" aria-hidden="true" />
-          <input
-            id="search-q"
-            type="search"
-            name="q"
-            defaultValue={query}
-            inputMode="search"
-            autoComplete="off"
-            data-search-input=""
-            spellCheck={false}
-            aria-describedby="search-hint"
-            placeholder="试试 金毛、柯基、普洱茶、夜行..."
-            className="w-full rounded-md border border-border bg-card pl-10 pr-4 py-3 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          />
-        </div>
-        <p id="search-hint" className="mt-2 text-xs text-muted-foreground">
-          模糊搜索, 支持中英 / 拼写容错 / 标题副标题标签描述
-        </p>
+        <SearchInput
+          initialQuery={query}
+          topTags={topTags}
+          featuredTitles={popularSuggestions.map((c) => ({ title: c.title, slug: c.slug }))}
+        />
       </form>
 
       {query && (

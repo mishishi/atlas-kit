@@ -2568,3 +2568,77 @@ prod: https://atlas-kit-six.vercel.app/ (R75 ship 待 push, sitemap expected 900
 - /map 12 card animated pin drop (P2)
 - R77 plan 24+ 张是 next (UI polish 一轮, 内容 ship 一轮, 节奏 R66-R76)
 - 周 user ping "看了 R76 的几个 polish 觉得如何?"
+
+
+## R77 (2026-07-10) — UX polish: CardPreview score badge + reading progress + /search history
+
+跟 R76 同 UX 路线 — ship 3 个 user-visible polish (no new cards):
+
+### A. CardPreview score badge (R77 ship)
+
+`src/components/card-preview.tsx` 加 score badge — 跟 R76 推荐段 / 系列页编辑精选 同 visual treatment:
+
+- Threshold ≥ 7 (跟 R76 一致)
+- Color = `card.palette[1]` (跟图片自配色, 不硬编码 gold-deep 撞色)
+- Position: `top-2 right-12` (3rem offset, 在 star button 左边, 不打架)
+
+效果: 现在 60+ 高分 cards 在 600+ 卡片 grid 上有视觉提示. `tsc --noEmit` clean ✓.
+
+### B. ReadingProgress 新 component
+
+`src/components/reading-progress.tsx` (NEW file) + `<ReadingProgress />` mount 到 `/cards/[slug]` 页面:
+
+- 0.5px sticky top bar (用 `h-0.5` = 2px Tailwind v4)
+- gold-deep (`bg-gold-deep`) `transition-[width] duration-100` 跟 scroll
+- Hide at scroll=0 or 100% (避免 stuck bar feeling)
+- `rAF-throttle` (instead of measuring scrollHeight 每次 scroll event) — 防止 layout thrash
+- `print:hidden` (避免 print 出来 sticky bar)
+- SSR-safe (initial state 0, useEffect 后 mount set real value)
+- 不在 root layout (只在 /cards/[slug] mount) — short 页面不需要
+
+### C. /search localStorage history + autocomplete (R77 ship)
+
+`src/components/search-input.tsx` (NEW client island) + search page 改用:
+
+- **localStorage history** (atlas-search-history key, max 10 items, JSON array)
+- **onMount hydrate from localStorage**, 不 SSR (server 不知道 client localStorage)
+- Inline `<script>` (synchronous DOM ready handler) 兜底 save 逻辑 — 用户 submit 时即使 React island 还没 hydrate 也能写历史
+- **最近搜索 + 标签 + 标题建议** 段 (4-6 items), 不 gate (empty history 仍显示 tag suggestions)
+- **dedup + dismiss × button** on each recent item
+- **清除** button on history header
+- Suggestion 段 source: `topTags` (12 from `getTopTags()`) + `featuredTitles` (4 from `popularSuggestions`)
+- Server-side 计算 (`/search/page.tsx` 仍 server component):  传 prop 给 client island, 不把 874-card 全表发给 client
+
+效果: search 输入框有记忆 + autocomplete (跟现代搜索引擎 UX pattern), 不必展开 sort chips 等结果 grid 重新渲染 (因为 server-side search 重新 navigation).
+
+### D. R77 commit changes
+
+4 files: card-preview.tsx + page.tsx (cards/[slug]) + page.tsx (search) + search-input.tsx 新 + reading-progress.tsx 新. Total +550 -45 lines.
+`tsc --noEmit` clean ✓.
+
+### E. Atlas Kit 当前 catalog (R77 后, 2026-07-10)
+
+- **874 cards** (R76 后不变). 12 commit post-R66.
+- CardPreview 加 score badge (≥ 7 cards 自动显示)
+- 详情页 reading progress bar
+- /search history + autocomplete
+
+### F. R78 candidate (next)
+
+- 详情页 polish 续:
+  - "同系列" 段加 score badge
+  - 历史沿革 段 key year 高亮 (heading font bigger, gold)
+  - 详情页 hero 下加 reading time estimate ("约 8 分钟阅读") — 跟前 reading progress bar 配套
+- 系列页 polish 续:
+  - 编辑精选段加 total count "显示 6 / N 张"
+  - 系列 tag cloud (按 series.themeTags 频率排序 top N)
+- /cards mobile sticky sort chips
+- /cards grid 加 hover preview (R53 已 ship image scale + 「查看图鉴 ↗」pill, 跟 CardPreview 已 ship score 配套)
+- /graph 力导向 cursor 加 hover 详情 (P2)
+- /map 12 card animated pin drop (P2)
+- R77 后考虑短 pause 1 round 让 user verify R76+R77 polish
+- AGENTS.md subKind coverage 数字 (R58b 400/400 → R75 874/874) 同步
+- atlas-kit memory topic file R77 lessons 已 append (待 push 后)
+- search history localStorage quota / private mode 兼容 — R77 已 try/catch
+- 中文搜索 history 经常含模糊 unicode (e.g. "搜索" 等), localStorage JSON encode OK 但 cross-browser 跟 cross-device 不同步 (user-side 痛点, 需要 sync server 可考虑 R78)
+- R78 候选: ship 24 张 + 1 UX polish + Vercel dashboard build queue 监控 (矩阵 daemon bug fix 能力范围外)

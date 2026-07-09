@@ -73,6 +73,25 @@ export function CardPreview({ card, className, priority = false }: CardPreviewPr
             新收录
           </span>
         )}
+        {/* R77 (2026-07-10): score badge — matches the
+            "你可能也会喜欢" + 编辑精选 grid cards (R76/R77 polish)
+            so visitors recognize the editorial-quality signal across
+            surfaces. Threshold ≥ 7 (the "高质卡片" cutoff). Positioned
+            top-right under the star button (which sits at right-2); we
+            use right-12 (3rem offset) so the badge clears the star.
+            Color comes from card.palette[1] so it stays branded without
+            a hard-coded gold-deep (which would clash with the card's
+            designed palette). Hidden on screen reader to avoid duplicate
+            announcement — parent Link's aria-label carries title. */}
+        {card.score >= 7 && (
+          <div
+            aria-hidden="true"
+            className="absolute top-2 right-12 px-2 py-0.5 rounded-full text-[10px] font-bold tabular-nums shadow-card backdrop-blur-sm"
+            style={{ backgroundColor: card.palette[1], color: card.palette[0] }}
+          >
+            ★ {card.score.toFixed(1)}
+          </div>
+        )}
         {/* R52 (2026-06-22): favorite star — mirror of 新收录 badge on
             the top-right. Subtle variant: hidden until card hover
             (or always visible when favorited) so it doesn't fight the

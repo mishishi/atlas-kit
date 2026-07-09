@@ -12,6 +12,7 @@ import { getAiPitch } from "@/lib/ai-pitch";
 import { StarButton } from "@/components/star-button";
 import { LinkedText } from "@/components/linked-text";
 import { CardNav } from "@/components/card-nav";
+import { ReadingProgress } from "@/components/reading-progress";
 import { CardFlipMode } from "@/components/card-flip-mode";
 import { getAdjacentInSeries } from "@/lib/data";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
@@ -348,6 +349,16 @@ export default async function CardDetail({
 
       {/* R34: prev/next nav bar + ←/→ keyboard (component handles both) */}
       <CardNav prev={prevRef} next={nextRef} />
+
+      {/* R77 (2026-07-10): thin top progress bar so long-form detail
+          pages give users a sense of "how far am I". Renders nothing
+          on scroll=0 or scroll=100%, so it doesn't nag at very top
+          or bottom. Hidden on print to keep PDF output clean.
+          Lives inside the page body (not layout) so it doesn't
+          appear on /, /cards, /timeline, etc. — the design
+          intent is "long-form reading aid", and 1-screen pages
+          don't need it. */}
+      <ReadingProgress />
 
       {/* R34 Day 3: enter fullscreen flip-through mode. Centered
           below the prev/next bar, low-visual-weight so it doesn't

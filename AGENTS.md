@@ -2509,3 +2509,62 @@ prod: https://atlas-kit-six.vercel.app/ (R75 ship 待 push, sitemap expected 900
 - catalog 900+ 后是不是看 push 通知 / sitemap url count 缓存 → 跟 Vercel 路由层 (能力范围外)
 - Vercel Hobby build queue 监控 cron 改更短间隔 (3 min)
 - short pause: weekend-style ship cadence (避免连 ship 几轮 user 视觉疲劳)
+
+
+## R76 (2026-07-10) — UX polish: 详情页 + 系列页 (P0 改善)
+
+跟 R75 衔接. 不加新卡, **纯 UI 改善**. R66-R75 连续 10 轮 ship 874 cards, 加新主题单轮边际效益递减, 改 refresh 现有 874 cards 的浏览体验.
+
+### A. 详情页 "你可能也会喜欢" 段 polish
+
+`src/app/cards/[slug]/page.tsx`:
+- **score badge**: top-right corner, ≥ 7 才显示, gold + palette 配色 (跟 star 形 score 相同视觉)
+- **tagline**: 1 行 subtitle, empty fallback 到 kind label
+- **前 3 cross tag pills**: 显示连接 (e.g. `#中国 #古代 #北方`), ≥ 3 tag 才显示
+
+之前 段是纯图 grid (看不到为什么 recommend), 加这 3 件后变成 "curated shelf" — 用户能立即判断 "这为什么推荐给我".
+
+### B. "提到了 X" 段加 inline score chip
+
+跟 "你可能也会喜欢" 段视觉差异化 — big badge vs inline 10px pill (因为 reverse-mention 段是 compact row, 大 badge 会打架).
+
+### C. /series/[slug] 加 "编辑精选" top-6 段
+
+`src/series/[slug]/page.tsx`:
+- Top 6 cards by score desc (ties break: createdAt desc)
+- 6-column grid (跟 series-level meta 用同一 series palette + score badge treatment)
+- 隐藏条件: series.cards.length < 6 (小 series 不显示 "best of 6" 误导)
+
+之前 series detail page header 后直接跳到 tabs + grid. 加这 段让用户立即看到 series 高分 cards, 不必 scroll 全 series 卡片列表.
+
+### D. R76 commit changes
+
+2 files: `src/app/cards/[slug]/page.tsx` + `src/app/series/[slug]/page.tsx`. Total +121 -3 lines.
+`tsc --noEmit` clean ✓.
+
+### E. Atlas Kit 当前 catalog (R76 后, 2026-07-10)
+
+- **874 cards** (R75 ship 后不变). 11 commit post-R66.
+- **26 kinds / 162 subKinds / 12 series**
+- **0 subKind gaps** (R58b 400/400 → R75 874/874 全覆盖)
+- 0 placeholder, 0 no-subKind, 0 missing image on CDN / disk
+- Vercel prod: https://atlas-kit-six.vercel.app/ (R75 verified by user manual check)
+- master HEAD: `a90ae57` (R75 ship)
+- /cards page default sort: 评分 (R74 ship)
+- 详情页 "你可能也会喜欢" 段 polish (R76 ship)
+- 系列页 "编辑精选" 段 (R76 ship)
+
+### F. R77 candidate (next)
+
+- 详情页 polish 续:
+  - "同系列" 段加 score badge (跟 recommend 一致)
+  - 历史沿革 (历史时间轴) 段 key year 高亮 (heading font bigger, gold)
+  - 详情页 hero 加 reading progress bar (顶部 + bottom; /print/cards/[slug] 不需要)
+- 系列页 polish 续:
+  - 编辑精选段加 total count "显示 6 / N 张"
+  - 系列 tag cloud (按 series.themeTags 频率排序 top N)
+- 卡片 grid 加 印象分 "★ 8.7" 已 ship, /cards grid 看看
+- /graph 力导向 layout cursor 加 hover 详情 (P2)
+- /map 12 card animated pin drop (P2)
+- R77 plan 24+ 张是 next (UI polish 一轮, 内容 ship 一轮, 节奏 R66-R76)
+- 周 user ping "看了 R76 的几个 polish 觉得如何?"

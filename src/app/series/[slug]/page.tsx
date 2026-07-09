@@ -146,6 +146,73 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
         </div>
       </header>
 
+      {/* R76 (2026-07-10): 编辑精选 — top 6 cards by score.
+          Renders before the tabs so the visitor sees the best
+          entries immediately, without having to scroll through
+          a tabbed list. Hidden when series has fewer than 6
+          cards (small / new series where 'best of 6' is
+          misleading vs. just showing all cards). Sort: score
+          desc; break ties by createdAt desc (newer first). */}
+      {series.cards.length >= 6 && (
+        <section className="mb-10">
+          <div className="flex items-baseline justify-between mb-4">
+            <h2 className="font-serif text-2xl font-bold flex items-center gap-2">
+              <BookMarked className="h-5 w-5 text-gold-deep" aria-hidden="true" />
+              编辑精选
+            </h2>
+            <span className="text-xs text-muted-foreground">
+              按评分排序 · 取前 {Math.min(6, series.cards.length)} 张
+            </span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+            {[...series.cards]
+              .sort((a, b) => {
+                if (b.score !== a.score) return b.score - a.score;
+                return a.createdAt < b.createdAt ? 1 : -1;
+              })
+              .slice(0, 6)
+              .map((c) => (
+                <Link
+                  key={c.slug}
+                  href={`/cards/${c.slug}`}
+                  aria-label={`查看 ${c.title} · 评分 ${c.score.toFixed(1)}`}
+                  className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all hover:-translate-y-0.5"
+                >
+                  <div className="relative aspect-[9/16]">
+                    <Image
+                      src={c.image_thumb ?? c.image}
+                      alt={c.title}
+                      fill
+                      sizes="(max-width: 640px) 50vw, 16vw"
+                      className="object-cover"
+                    />
+                    {/* score badge — same visual treatment as the
+                        "你可能也会喜欢" cards on the detail page, so
+                        visitors recognize the recommendation signal
+                        across surfaces. */}
+                    <div
+                      className="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold tabular-nums shadow-md"
+                      style={{ backgroundColor: c.palette[1], color: c.palette[0] }}
+                    >
+                      ★ {c.score.toFixed(1)}
+                    </div>
+                  </div>
+                  <div className="p-2">
+                    <p className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors truncate">
+                      {c.title}
+                    </p>
+                    {c.tagline && (
+                      <p className="mt-0.5 text-[10px] leading-tight text-muted-foreground line-clamp-2">
+                        {c.tagline}
+                      </p>
+                    )}
+                  </div>
+                </Link>
+              ))}
+          </div>
+        </section>
+      )}
+
       {/* Tabs + grid */}
       <SeriesDetailTabs cards={series.cards} />
     </div>

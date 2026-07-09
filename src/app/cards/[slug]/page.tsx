@@ -886,7 +886,11 @@ export default async function CardDetail({
           signal from 同类推荐 (kind-only) and 同系列 (siblings-
           only) above, so the three sections don't overlap. Skip
           if no candidates scored ≥ 3 (very small datasets, or
-          very unique cards with no overlap to anything). */}
+          very unique cards with no overlap to anything).
+          R76 polish: recommend cards now show tagline + score
+          badge + first 3 cross tags so users can see WHY each
+          candidate is here, instead of having to click into
+          each one to learn what it's about. */}
       {relatedByInterest.length > 0 && (
         <section className="mt-16">
           <h2 className="font-serif text-2xl font-bold mb-6 flex items-center gap-2">
@@ -909,9 +913,44 @@ export default async function CardDetail({
                     sizes="(max-width: 640px) 50vw, 25vw"
                     className="object-cover"
                   />
+                  {/* R76: score badge — editorial "we recommend this"
+                      signal. Top-right corner, gold color. Top 30%
+                      sort-order tie-break. Not every card has it; the
+                      ≈85% with score ≥ 7 are the ones most users
+                      would want to see first. */}
+                  {c.score >= 7 && (
+                    <div
+                      className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-[10px] font-bold tabular-nums shadow-md"
+                      style={{ backgroundColor: c.palette[1], color: c.palette[0] }}
+                      aria-label={`评分 ${c.score}`}
+                    >
+                      ★ {c.score.toFixed(1)}
+                    </div>
+                  )}
                 </div>
                 <div className="p-3">
-                  <p className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors">{c.title}</p>
+                  <p className="font-serif text-sm font-medium group-hover:text-gold-deep transition-colors truncate">
+                    {c.title}
+                  </p>
+                  {/* R76: tagline as 1-line subtitle so the recommend grid
+                      reads like a curated shelf (book spine) rather than
+                      a thumbnail gallery. Truncated to keep card heights
+                      even — empty tagline falls back to kind label. */}
+                  {(c.tagline || c.kind) && (
+                    <p className="mt-1 text-[11px] leading-tight text-muted-foreground line-clamp-2">
+                      {c.tagline || c.kind}
+                    </p>
+                  )}
+                  {/* R76: first 3 cross-cutting tags so the user sees
+                      the connection immediately (e.g. both cards
+                      tagged "中国" / "古代"). Renders nothing if
+                      card has <3 tags (small cards older than
+                      R66 may have only 2 tags). */}
+                  {c.tags && c.tags.length >= 3 && (
+                    <p className="mt-1.5 text-[10px] text-muted-foreground/70 tabular-nums truncate">
+                      #{c.tags.slice(0, 3).join(" #")}
+                    </p>
+                  )}
                 </div>
               </Link>
             ))}
@@ -989,7 +1028,19 @@ export default async function CardDetail({
                     />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="font-serif text-sm font-medium leading-snug truncate group-hover:text-gold-deep transition-colors">{c.title}</p>
+                    <div className="flex items-baseline gap-1.5">
+                      <p className="font-serif text-sm font-medium leading-snug truncate group-hover:text-gold-deep transition-colors flex-1">{c.title}</p>
+                      {/* R76: tiny score chip — same data as the
+                          "你可能也会喜欢" big badge, but rendered as
+                          an inline 10px pill so it doesn't fight
+                          the compact list layout of the reverse-
+                          mention section. }} */}
+                      {c.score > 0 && (
+                        <span className="shrink-0 text-[9px] font-bold tabular-nums px-1 rounded" style={{ backgroundColor: c.palette[1], color: c.palette[0] }} aria-label={`评分 ${c.score}`}>
+                          ★{c.score.toFixed(1)}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-[10px] text-muted-foreground/70 tabular-nums">{c.seriesNo} · {c.kind}</p>
                   </div>
                 </Link>

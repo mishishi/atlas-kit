@@ -281,11 +281,17 @@ export default function CardsPage({ searchParams }: CardsPageProps) {
         </nav>
       )}
 
-      {/* Sort chips — only in filtered view. R60plus (2026-06-30) */}
+      {/* Sort chips — only in filtered view. R60plus (2026-06-30) ship
+          original; R78 (2026-07-10) added `sticky` so the chip row
+          follows the user as they scroll through a 30+ row grid on
+          mobile. /search doesn't sticky because its results are a
+          compact list (not a tall grid), so the chips don't need to
+          stay reachable. */}
       {activeKind && sortedCards.length > 1 && (
         <SortChips
           options={SORT_OPTIONS}
           activeSort={activeSort}
+          sticky
           buildHref={(key) => {
             const params = new URLSearchParams();
             if (activeKind) params.set("kind", activeKind);

@@ -160,8 +160,8 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
               <BookMarked className="h-5 w-5 text-gold-deep" aria-hidden="true" />
               编辑精选
             </h2>
-            <span className="text-xs text-muted-foreground">
-              按评分排序 · 取前 {Math.min(6, series.cards.length)} 张
+            <span className="text-xs text-muted-foreground tabular-nums">
+              按评分排序 · 显示 {Math.min(6, series.cards.length)} / {series.cards.length} 张
             </span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2, AlertTriangle, Palette } from "lucide-react";
+import { ArrowLeft, Calendar, Tag as TagIcon, BookMarked, BookOpen, ExternalLink, Search, Sparkles, Link2, ScrollText, AlertCircle, History, Quote, Globe, Building2, Newspaper, GraduationCap, Library, Maximize2, AlertTriangle, Palette, Clock } from "lucide-react";
 import { getAllCards, getCardBySlug, getCardsByKind, getCardsBySeries, getRelatedCards, getReverseMentions, getAllCardsForMentionMap, getSamePaletteCards } from "@/lib/data";
 import { getCardFullDims } from "@/lib/server/image-dims";
 import { Tag } from "@/components/tag";
@@ -14,6 +14,7 @@ import { LinkedText } from "@/components/linked-text";
 import { CardNav } from "@/components/card-nav";
 import { ReadingProgress } from "@/components/reading-progress";
 import { CardFlipMode } from "@/components/card-flip-mode";
+import { estimateReadingTime, formatReadingTime } from "@/lib/reading-time";
 import { getAdjacentInSeries } from "@/lib/data";
 import { KIND_LABELS, displayLabel } from "@/lib/types";
 import { SERIES_TYPE_MAP } from "@/lib/series-types";
@@ -190,6 +191,13 @@ export default async function CardDetail({
   // Title → slug map for the body description — turns "提到了 X"
   // into a real <Link> to X's detail page.
   const mentionMap = getAllCardsForMentionMap(card.slug);
+
+  // R78 (2026-07-10): reading time estimate shown in the hero meta row.
+  // Pairs with R77's <ReadingProgress /> — the bar shows progress
+  // WHILE reading, this shows ETA BEFORE reading starts. Aggregates
+  // description + history + sources (not quote/trivia/myth/fact, which
+  // are short side panels). 400 cpm + 220 wpm, max(1, ceil).
+  const readingTime = estimateReadingTime(card);
 
   return (
     <article className="container py-8 md:py-12">
@@ -477,6 +485,34 @@ export default async function CardDetail({
                 <span>{getSubKindLabel(card.kind, card.subKind) ?? card.subKind}</span>
               </Link>
             )}
+
+            {/* R78 (2026-07-10): reading time estimate. Pairs with
+                R77's <ReadingProgress /> — the bar shows progress
+                WHILE reading, this shows ETA BEFORE reading starts.
+                Sits between the subKind chip and the description as
+                a quiet meta row (no border, no background) so it
+                doesn't compete with the body text. Includes a
+                print:hidden equivalent via the natural rendering
+                — the page is generally 1-page when printed so the
+                progress bar would never be meaningful anyway. */}
+            <div className="flex items-center gap-3 text-xs text-muted-foreground/80 mb-4">
+              <span className="inline-flex items-center gap-1" aria-label={formatReadingTime(readingTime)}>
+                <Clock className="h-3 w-3" aria-hidden="true" />
+                {formatReadingTime(readingTime)}
+              </span>
+              {card.history && card.history.length > 0 && (
+                <>
+                  <span aria-hidden="true">·</span>
+                  <span>{card.history.length} 个历史节点</span>
+                </>
+              )}
+              {card.sources && card.sources.length > 0 && (
+                <>
+                  <span aria-hidden="true">·</span>
+                  <span>{card.sources.length} 条参考来源</span>
+                </>
+              )}
+            </div>
           </div>
 
           <p className="text-base leading-relaxed text-foreground/90">

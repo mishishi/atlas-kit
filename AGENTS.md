@@ -2642,3 +2642,85 @@ prod: https://atlas-kit-six.vercel.app/ (R75 ship 待 push, sitemap expected 900
 - search history localStorage quota / private mode 兼容 — R77 已 try/catch
 - 中文搜索 history 经常含模糊 unicode (e.g. "搜索" 等), localStorage JSON encode OK 但 cross-browser 跟 cross-device 不同步 (user-side 痛点, 需要 sync server 可考虑 R78)
 - R78 候选: ship 24 张 + 1 UX polish + Vercel dashboard build queue 监控 (矩阵 daemon bug fix 能力范围外)
+
+
+## R78 (2026-07-10) — UX polish 3 件: 详情页 reading time + series count + /cards mobile sticky sort
+
+跟 R76 + R77 一样 UX 路线 — 3 件 polish (no new cards). 已经 R75 之后 3 连续 polish rounds (R76 + R77 + R78), 节奏考虑 R79 短 pause 1 round 让 user verify.
+
+### A. 详情页 reading time estimate (R78 ship)
+
+`src/lib/reading-time.ts` (NEW) + 详情页 hero subKind chip 后加 meta strip:
+
+- **`estimateReadingTime(card)`**: aggregate description + history titles/bodies + sources titles (skip quote/trivia/myth/fact, 短 side panels)
+- 400 cpm Chinese + 220 wpm Latin (Chinese silent reading 标 400 cpm, 比 English 250 wpm 明显快)
+- `formatReadingTime(rt)` → "约 N 分钟阅读"
+- Meta strip: Clock icon + "约 N 分钟阅读" + "· N 个历史节点" + "· N 条参考来源"
+- Sits between subKind chip and description (no border, no bg — 跟 R77 ReadingProgress 配对: bar shows progress WHILE reading, this shows ETA BEFORE)
+- example 实测: qingming-festival 487 cjk + 18 latin → 2 min; sanxingdui 545 → 2 min; li-bai 184 → 1 min
+
+**Why skip quote/trivia/myth/fact**: 短 side panels, 不算 main reading flow. 用户开卡想知道 "main content 多长", 包括 side panels 虚高.
+
+**Why 400 cpm Chinese (not 250 wpm standard)**: 250 wpm 是 English 标. Chinese silent reading 400-500 cpm 一字一音节. 400 偏保守.
+
+**Why server-side computed (not client island)**: 1 call, no state, no event handler. SSG build time bake into HTML. No useEffect / hydration. 单卡页面 re-render 0 cost.
+
+### B. series "编辑精选" total count (R78 ship)
+
+`src/app/series/[slug]/page.tsx`:
+
+- Old: "按评分排序 · 取前 N 张"
+- New: "按评分排序 · 显示 N / total 张" (with `tabular-nums` 数字 alignment)
+
+**Why this matters**: 用户看精选段时想知道 "我看的这只是冰山一角, 还有更多". "6 / 30 张" 比 "取前 6 张" 信息密度高. Same pattern as R53 FavoritesCta "N 张" badge — count + total.
+
+### C. /cards mobile sticky sort chips (R78 ship)
+
+`src/components/sort-chips.tsx` 加 `sticky?: boolean` prop + `/cards/page.tsx` 传 `sticky`:
+
+- 移动端 (`< sm`) sticky `top-16 z-20` (under site header at top-0/12)
+- `bg-background/85 backdrop-blur` (semi-transparent, 透出 grid image)
+- `supports-[backdrop-filter]:bg-background/70` 渐进增强 (老 browser fallback opaque 85%)
+- 桌面端 inline (`sm:static sm:bg-transparent sm:backdrop-blur-0`)
+- `/search` 不 sticky (results 是 compact list, 不是 tall grid, chip row 不必一直 reachable)
+
+**Why 移动端 only**: 桌面 wider viewport, sort chips already in eyebrow. 移动 600+ cards 滚 30+ row, sticky 跟 scroll 体验能省 1-2 秒 (不必 scroll 回 top 改 sort).
+
+**Why `top-16` (not `top-0`)**: site header 在 top-0/12 占位, sticky chip 必须 under header. `top-16` = 4rem = header height + small gap.
+
+### D. R78 commit changes
+
+5 files: 4 modified + 1 NEW (`src/lib/reading-time.ts`). +149 -6 lines.
+`tsc --noEmit` clean ✓. commit `1c688e4` pushed (`d51d448 → 1c688e4`).
+
+### E. Atlas Kit 当前 catalog (R78 后, 2026-07-10)
+
+- **874 cards** (R75 ship 后不变). 13 commit post-R66.
+- **26 kinds / 162 subKinds / 12 series**
+- 详情页 polish R76: "你可能也会喜欢" + "提到了 X" 段加 score badge
+- 详情页 polish R77: reading progress bar
+- 详情页 polish R78: reading time estimate
+- 系列页 polish R76: 编辑精选 top-6
+- 系列页 polish R78: "显示 N / total 张" total count
+- /search polish R77: localStorage history + autocomplete
+- /cards polish R74: default sort "评分"
+- /cards polish R78: 移动端 sticky sort chips
+- CardPreview polish R77: score badge
+- master HEAD: `1c688e4`
+
+### F. R79 candidate (next)
+
+- **短 pause 1 round** 让 user verify R76+R77+R78 polish (3 连续 polish rounds)
+- 详情页 polish 续 (剩): 
+  - "同系列" 段加 score badge (跟 recommend 一致)
+  - 历史沿革 段 key year 高亮 (heading font bigger, gold)
+  - 参考来源段加 ⭐ "权威度" badge
+- 系列页 polish 续 (剩): 
+  - 系列 tag cloud (按 series.themeTags 频率排序 top N)
+- /graph cursor hover 详情 (P2)
+- /map animated pin drop (P2)
+- R79 候选 plan 24+ 张是 next (UI 3 连续 rounds 后)
+- AGENTS.md subKind coverage 数字 (R75 874/874) 同步 (R78 没变, 跳过)
+- atlas-kit memory topic file `atlas-kit.md` R78 lessons 已 append
+- 节奏适合先 polish 后 ship (R75 后 1 周 3 polish rounds, user 视觉跟得上)
+- 站 day-of-week 周几 — 6 = Friday, 周末 user 验证 polish + 决定下条合适

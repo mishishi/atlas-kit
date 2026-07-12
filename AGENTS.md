@@ -2855,3 +2855,67 @@ commit `a8197ce` pushed (`587fdb3 → a8197ce`).
 - catalog 900 milestone R81 ship 10 张就够
 - 配平 status: 24-49 → R80 后 26-49 (差缩小, R81 candidate 仍找 topic diversity + 短板收尾)
 - atlas-kit memory topic file `atlas-kit.md` R80 lessons 已 append (待 push 后)
+
+
+## R81 (2026-07-12) — 13 cards ship: 900 milestone hit!
+
+catalog 890 → **900** (+10 new + 3 refreshed). 16 commit post-R66 = 12 content ships + 4 UX polish. R80 距今 1 round 后续内容 ship, 冲整数 milestone.
+
+### A. R81 plan 设计 (kind 配平 + 900 milestone)
+
+`scripts/r81-plan.json` 13 cards, 5 短板 kind 配平 + 1 艺术 subKind:
+
+- **country 2**: norway / finland (europe subKind)
+- **disease 2**: leukemia (cancer) / lupus (autoimmune, R81 新 subKind)
+- **vehicle 2**: ferry (ship) / scooter-elec (scooter)
+- **pet 4**: poodle / ragdoll / schipperke / sphynx (dog-breed / cat-breed)
+- **profession 2**: chef (service) / soldier-rank (military, R81 新 subKind)
+- **artwork 1**: art-deco (painting)
+
+totalSubKinds 174 → **176** (R81 加 autoimmune + military 2 个新 subKind).
+
+### B. R81 generate + upload + handwrite 13
+
+`tmp/r81-run-all.cjs` 跟 R80 同 pattern. 实际 generate 10 张 first (chef/ragdoll/soldier-rank 3 张已存在), 之后扩 plan 加 3 张 (schipperke + sphynx + art-deco) 凑 900 milestone.
+
+13/13 R81 cards 全 ok, files 0 missing, 5 kinds CDN 上传 (country + disease + vehicle + pet + artwork + profession).
+
+### C. R81 handwrite 13 (跟 R80 同 inline cjs pattern)
+
+13 张全 handwrite (3 张 refresh + 10 张 new). 7 张 first batch (R80 pattern: 1 inline cjs 5-12 张试探), 3 张 second batch (R81 extend 后), 各 batch 全 ok. 总耗时 1-2 min.
+
+每张 score 6.5-8.0, tags 5-7 (cross-cutting + subject), desc 200-300 char 中英混合, history 5 nodes 跨 50-3000 年, sources 3 (百科+学术+官方 各 1).
+
+### D. R81 commit + ship
+
+13 files: 2 modified (data/cards.json + data/taxonomy.json) + 10 new public/cards/*/ dirs + scripts/r81-plan.json. Total 13 cards 内容 ship.
+`tsc --noEmit` clean (R81 没碰 src, 跟 R80+R75 同 pattern).
+commit `75c6d22` pushed (`6a028d5 → 75c6d22`).
+
+### E. Atlas Kit 当前 catalog (R81 后, 2026-07-12)
+
+- **900 cards** (R81 ship 13 后). 16 commit post-R66.
+- **26 kinds / 176 subKinds / 12 series**
+- 5 短板 kind 配平: country 28→30 / disease 28→30 / vehicle 28→30 / pet 29→32 / profession 26→28
+- 0 placeholder / 0 no-subKind / 0 missing image on CDN / disk
+- /cards page default sort: 评分 (R74)
+- 4 polish rounds (R76-R79) 实战 ship 上 R80+R81 共 37 cards
+- master HEAD: `75c6d22`
+
+### F. 900 milestone 心理标记
+
+- R58 (2026-06-26) 400 cards (R58b 后 100% subKind 覆盖)
+- R66 (2026-07-01) 700+ cards (race condition fix)
+- R75 (2026-07-06) 874 cards
+- R80 (2026-07-12) 890 cards
+- **R81 (2026-07-12) 900 cards** ← 当前
+
+### G. R82 candidate (next)
+
+- 短 pause 1 round 让 user verify R76-R79+R80+R81 polish 实战
+- ship 24+ 张内容 OR polish 收口 (参考来源 ⭐ 权威度 badge)
+- series 页 tag cloud
+- /graph cursor hover 详情 (P2)
+- /map animated pin drop (P2)
+- catalog 1000 milestone 预计 R85 左右
+- 配平 status: 26-49 → R81 后 28-49 (差缩小, R82 找 kind 30+ 拉齐)

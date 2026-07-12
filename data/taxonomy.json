@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "version": 8,
-    "createdAt": "2026-07-12",
-    "round": "R82 (middle-east + asia-japan)",
+    "version": 9,
+    "createdAt": "2026-07-13",
+    "round": "R84 (object/traditional + city/european)",
     "totalKinds": 26,
-    "totalSubKinds": 178,
+    "totalSubKinds": 180,
     "namingConvention": "kebab-case slugs, 1-3 words. Chinese labels in 2-4 字",
     "howToAdd": "Append a new kind entry or subKind under existing kind. Run `node scripts/backfill-subkinds.mjs` to apply to cards.json.",
     "cardMigrationStrategy": "Run `node scripts/plan-subkind-backfill.mjs` to see a draft assignment per card, hand-tweak, then run backfill-subkinds.mjs --apply",
@@ -98,6 +98,11 @@
         {
           "slug": "mountain",
           "label": "山城",
+          "expected": 2
+        },
+        {
+          "slug": "european",
+          "label": "欧洲",
           "expected": 2
         }
       ]
@@ -283,6 +288,11 @@
         {
           "slug": "scientific",
           "label": "科学仪器",
+          "expected": 2
+        },
+        {
+          "slug": "traditional",
+          "label": "传统器物",
           "expected": 2
         }
       ]

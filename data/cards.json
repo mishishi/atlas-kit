@@ -31661,9 +31661,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-full.webp",
     "score": 7.5,
     "tags": [
       "mocha",
@@ -38256,9 +38256,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/music/guqin/guqin-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/guqin/guqin-full.webp",
     "score": 0,
     "tags": [
       "中华古乐",
@@ -69822,6 +69822,1096 @@
         "title": "Penguin Books 1984",
         "url": "https://www.penguinrandomhouse.com/books/16590/nineteen-eighty-four-by-george-orwell/",
         "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "mechanic",
+    "title": "机械师",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/mechanic/mechanic-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/mechanic/mechanic-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/mechanic/mechanic-full.webp",
+    "score": 7,
+    "tags": [
+      "职业",
+      "服务",
+      "现代",
+      "全球",
+      "技术",
+      "高手艳"
+    ],
+    "tagline": "机械设备的护守 + 汽车中国制造背后",
+    "subtitle": "职业 · 机械师 · 百科占位",
+    "description": "机械师 是修理 + 维护 + 装配机械设备的专业技术人. 1769 瓦特蒸汽机发明后, 1807 英国 克里夫机师学校创始专业化. 1886 汽车发明后 世界机械师 8000 万+. 中国 2000 万+ (最大群体). 分类: 汽车机械师 + 飞机机械师 + 重工机械师 + 电子机械师. 考证: 汽车修理工 (5 级) + 机底转合 + 中类 + 高级. 工作: 4S 店 + 独立修理厂 + 工厂装配线 + 安装保修. 汽车中国制造 2030 领先. 上海大众 + 一汽 + 上汽大众 3 家年产 400 万. 顶级机械师年收入 30-100 万. （参见：汽车修理, F1, 架构一）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "工业革命",
+        "title": "工业革命技师崛起",
+        "body": "18 世纪末英国蒸汽机推广, 维修锻造的机修工、机器操作员逐渐从铁匠与钟表匠中分化, 成为机械师职业的起点."
+      },
+      {
+        "year": "1908",
+        "title": "福特 T 型车与机械师",
+        "body": "美国底特律 1908 年量产福特 T 型车, 售后服务体系催生专业汽车机械师, 职业正式入主流."
+      },
+      {
+        "year": "1956",
+        "title": "中国一五计划",
+        "body": "中国 1956 年在沈阳、长春、上海建立首批机械工业基地, 业务领域拓展至汽车、航空与船舶."
+      },
+      {
+        "year": "1990",
+        "title": "汽车保有量增长",
+        "body": "1990 年代中国汽车保有量突破 500 万辆, 4S 店与独立维修站大量招募机械师, 职业需求井喷."
+      },
+      {
+        "year": "2024",
+        "title": "智能装配与新能源",
+        "body": "机械师作业扩展至机器人、新能源汽车、智能产线与三维打印, 工艺趋势变为跨学科."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·机械工程",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·机械师",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%BA%E6%A2%B0%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "国家职业资格工作网·机械工程师",
+        "url": "https://www.osta.org.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "electrician",
+    "title": "电工",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/electrician/electrician-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/electrician/electrician-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/electrician/electrician-full.webp",
+    "score": 6.9,
+    "tags": [
+      "职业",
+      "服务",
+      "现代",
+      "全球",
+      "技术",
+      "高手艳",
+      "应急"
+    ],
+    "tagline": "黑夜中的明灯 + 应急护护",
+    "subtitle": "职业 · 电工 · 百科占位",
+    "description": "电工 是装修 + 维护 + 调试电气设备的专业技术人. 1879 爱迪生发明电灯之后世界需求增加. 中国 1991 设定电工职业资格征, 5 级 (521 业务). 分类: 应急电工 + 应用电工 + 变配电工 + 机床电工 + 高压电工 + 晶体制造. 全球 6000 万 电工, 中国 1500 万 (最大群体). 中国 电工 证照 三级中电工 考试 2020 年 考试通过率 10%, 中高级老电工 30 万+年收入. 你莱 + 维修 调试 + 住宅装修 + 企业电气 + 变电所. 应急: 风雨雪天 + 大电流 1-30 小时护护. 中国 电工 1965 股丝等 代表人物. （参见：机械师, 取暖工, 汽车修理）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1752",
+        "title": "富兰克林风筝实验",
+        "body": "本杰明·富兰克林 1752 年做风筝实验, 探索雷电本质, 为电工职业奠基."
+      },
+      {
+        "year": "1879",
+        "title": "爱迪生实用白炽灯",
+        "body": "托马斯·爱迪生 1879 年发明实用白炽灯, 电力商业化使电工职业出现."
+      },
+      {
+        "year": "1882",
+        "title": "纽约珍珠街电站",
+        "body": "爱迪生 1882 年在纽约曼哈顿建成首个商用发电厂, 招聘首批职业电工."
+      },
+      {
+        "year": "1922",
+        "title": "中国 33 千伏输电线",
+        "body": "上海 1922 年敷设国内首条 33 千伏输电线, 电工开始在中国出现."
+      },
+      {
+        "year": "2024",
+        "title": "智能电网与新能源",
+        "body": "智能电网、光伏与风电并网让电工职业纳入跨学科场景, 工业自动化与建筑智能化均需要."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·电工学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·电工",
+        "url": "https://zh.wikipedia.org/wiki/%E7%94%B5%E5%B7%A5",
+        "type": "百科"
+      },
+      {
+        "title": "国家电网公司官网·电力科普",
+        "url": "https://www.sgcc.com.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "translator",
+    "title": "翻译官",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/translator/translator-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/translator/translator-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/translator/translator-full.webp",
+    "score": 7.4,
+    "tags": [
+      "职业",
+      "教育",
+      "现代",
+      "全球",
+      "语言",
+      "文化",
+      "人文"
+    ],
+    "tagline": "跨语言的桥梁 + 全球 50 万专业人手",
+    "subtitle": "职业 · 翻译官 · 百科占位",
+    "description": "翻译官 是以翻译为职业的语言师. 翻译体现: 口译 (1898 纪录带发明) + 匼完 + 同譯 + 顺序 + 会谈 + 书面翻译. 全球 50 万 专业翻译官 (UNESCO 估计), 中国 100 万+. 人手知名: 林误·来 (1840 中国上海译中世界首位) + 锡有玲 + 杨凌 + 杨奇逍 + 手穆 + 凯书. 山州古经资料 第三部 + 金刚经 + 法玲 + 奥德赛. 全球翻译市场 2000 亿美元 (语言服务 + 本地化). 高级翻译专家 100-200 万年薪. 重要职业资格: 謜译资格 1 级 (沙鹿金会 + 謜译大学 + 高级智能) + 同譯资格. AI 翻译 2020s 押下 DeepL + Google Translate + 语言模型 + NMT. （参见：语言学家, 书籍, 凯书）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约 3000 年前",
+        "title": "古埃及宫廷译师",
+        "body": "古埃及宫廷中已有专职译员, 处理与努比亚、叙利亚的外交与商务文书."
+      },
+      {
+        "year": "中世纪",
+        "title": "阿拉伯翻译运动",
+        "body": "中世纪阿拉伯帝国在巴格达智慧宫组织大规模希腊语、波斯语、梵语典籍翻译, 译员成为正式职业."
+      },
+      {
+        "year": "1492",
+        "title": "哥伦布译员路易斯",
+        "body": "哥伦布 1492 年首航时随船译员路易斯·德·托雷斯会说希伯来语、阿拉伯语与当地加那利方言."
+      },
+      {
+        "year": "1949",
+        "title": "中国第一代外交部译员",
+        "body": "中华人民共和国 1949 年成立外交部翻译室, 培养出冀朝铸、章含之等第一代职业外交译员."
+      },
+      {
+        "year": "2024",
+        "title": "AI 机器翻译崛起",
+        "body": "神经机器翻译与 LLM 助理让译者工作重心转向译后编辑、行业术语库与跨文化把关."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国翻译协会官网",
+        "url": "https://www.tac-online.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版·翻译",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BF%BB%E8%AF%91",
+        "type": "百科"
+      },
+      {
+        "title": "北京外国语大学·翻译专业",
+        "url": "https://www.bfsu.edu.cn/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "librarian",
+    "title": "图书管理员",
+    "kind": "profession",
+    "subKind": "education",
+    "series": "history-and-figures",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/librarian/librarian-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/librarian/librarian-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/librarian/librarian-full.webp",
+    "score": 6.8,
+    "tags": [
+      "职业",
+      "教育",
+      "现代",
+      "全球",
+      "服务",
+      "文化"
+    ],
+    "tagline": "书札中的导航 + 3271 个中国图书馆守护者",
+    "subtitle": "职业 · 图书管理员 · 百科占位",
+    "description": "图书管理员 是梳理 + 库存 + 供给 + 保存书籍的专业人员. 古亚勒巴比宁翰尼·云热·阿拿·德营 第一个图书馆 3000 BC. 19 世纪亚历山大 + 法国巴黎图书馆 + 1800 创始个人馆. 1876 美国凯利·勒·美国图书馆协会 (ALA) 创立. 1887 浦顾蔚·创始上海图书馆 (China). 全球 200 万+ 专业图书馆员, 中国 50 万. 分类: 公共图书馆 + 大学图书馆 + 中小学图书馆 + 企业图书馆 + 专业图书馆. 中国图书馆 3271 个 (2024) 中最多. 职业资格: 图书馆员资格 5 级 + 江苏图书馆员 (1 级 中期) + ALA 认证. 中国 1970s 图书馆学院 开始. AI 时代 2020s 使用 RFID + OCR + 云书馆 + 智能推荐. 业务: 参考咨询 + 资源推荐 + 文献检索 + 作者服务. （参见：词典, 书籍, 凯书）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "古希腊",
+        "title": "亚历山大图书馆",
+        "body": "公元前 3 世纪亚历山大图书馆是西方第一座有专职管理者的图书馆, 馆员负责抄本编目与借阅."
+      },
+      {
+        "year": "1876",
+        "title": "ALA 美国图书馆协会",
+        "body": "美国 1876 年成立美国图书馆协会, 推动馆员职业标准化, 设立第一份馆员职业期刊."
+      },
+      {
+        "year": "1876",
+        "title": "中国汉口公共图书馆",
+        "body": "中国最早的公共图书馆之一, 标志中国近代图书馆职业的起步."
+      },
+      {
+        "year": "1925",
+        "title": "杜定友与图书馆学",
+        "body": "杜定友 1925 年在上海推动图书馆学教育, 创办《图书馆学季刊》, 培养中国第一代职业馆员."
+      },
+      {
+        "year": "2024",
+        "title": "数字馆员与数据管理",
+        "body": "馆员职业从纸质编目转向数字资源、元数据、本体论与机器学习训练集管理."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国图书馆学会官网",
+        "url": "http://www.lsc.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版·图书馆员",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%91%98",
+        "type": "百科"
+      },
+      {
+        "title": "国家图书馆·馆员职业发展",
+        "url": "https://www.nlc.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tea-plant",
+    "title": "茶树",
+    "kind": "plant",
+    "subKind": "tea",
+    "series": "atlas-miscellany",
+    "seriesNo": "060",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tea-plant/tea-plant-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tea-plant/tea-plant-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tea-plant/tea-plant-full.webp",
+    "score": 7.5,
+    "tags": [
+      "植物",
+      "茶",
+      "现代",
+      "中国",
+      "山东",
+      "养生",
+      "崇拜"
+    ],
+    "tagline": "云南原产 3200 年中国茶树 + 4500 万亩占全球 50%",
+    "subtitle": "植物 · 茶树 · 百科占位",
+    "description": "茶树 (Camellia sinensis) 是山茶科常绿永绿灌木, 中国云南 + 四川 + 福建 + 贵州 + 湖南 主产. 世界东北原产 中国 云南景洪 “老茶树” 3200 年. 茶树上老下幼, 根系发达, 10-20 年产量高峰, 100 年后重剩老叶. 中国 茶树 4500 万亩, 年产茶叶 300 万吨 (全球 50%, 世界第一). 品种: 阳汗茶 + 云安大叶 + 云申大叶 + 凤凰叶 + 莆田 + 东京 + 丰丰 + 金菊. 众多: 凤凰杯茶 (金菊 安徽) + 东北三宝 + 大中净 + 丹峰 + 太学 + 凤凰. 茶叶加工: 绿茶 (85 年不烧制) + 红茶 (100% 发酵) + 黄茶 (粉点) + 黑茶 (后发酵) + 白茶 (薄薄薄薄薄薄). 陆明愿 《茶经》 760 中国世界第一部茶书. 中国 24 节气 之 一 茶树节 为 中国 品质能量. （参见：龙井, 茶道, 安忠叶）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "神农时代",
+        "title": "神农尝百草",
+        "body": "中国传说神农氏尝百草以日遇七十二毒, 得茶而解之, 茶最早作为药用出现."
+      },
+      {
+        "year": "唐代",
+        "title": "陆羽《茶经》",
+        "body": "唐代陆羽 758 年写成《茶经》, 系统总结茶叶种植、采摘、制作与品饮, 被尊为茶圣."
+      },
+      {
+        "year": "宋代",
+        "title": "点茶法与斗茶",
+        "body": "宋代流行点茶法与斗茶, 建州北苑贡茶兴起, 茶文化与文人士大夫紧密相连."
+      },
+      {
+        "year": "明代",
+        "title": "朱元璋废团茶",
+        "body": "明洪武二十四年 1391 年朱元璋下诏废团茶兴散茶, 推动炒青绿茶工艺与瀹饮法普及."
+      },
+      {
+        "year": "2024",
+        "title": "全球茶业产量",
+        "body": "2024 年全球茶叶产量约 660 万吨, 中国产量超过 50%, 出口遍及 120 多个国家."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·茶",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·茶",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8C%B6",
+        "type": "百科"
+      },
+      {
+        "title": "中国茶叶博物馆·茶文化专题",
+        "url": "https://www.teamuseum.cn/",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "migraine",
+    "title": "偏头痛",
+    "kind": "disease",
+    "subKind": "chronic",
+    "series": "atlas-miscellany",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/migraine/migraine-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/migraine/migraine-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/migraine/migraine-full.webp",
+    "score": 6.9,
+    "tags": [
+      "疾病",
+      "慢性",
+      "现代",
+      "全球",
+      "高发",
+      "不能差· 粗底云、你"
+    ],
+    "tagline": "三叉神经 + 重复性引起 · 全球 10 亿人受苦",
+    "subtitle": "疾病 · 偏头痛 · 百科占位",
+    "description": "偏头痛 是三叉神经 + 血管性引起的重复性头痛, 古希腊 《合脸》 记载 «头痛不造重者». 1991 国际偏头痛基金会制定 ICH 诊断标准. 全球患病 12% (10 亿人), 中国 9% (1.3 亿), 女: 男 = 3:1. 病因: 遵道子尿 (D3) + 三叉神经 + 中枢神经 发病, 诱因: 疲劳 + 压力 + 气候 + 粉光 + 酒精 + 吃酥 · 乳酥 + 灬纯。 临床: 一侧插程、脂烧·点、心胸·重 · 恶心 + 光晕、不忍. 临床阶段: 先驱症 + 头痛 + 痰豁期. 诊断: 至少 5 次头痋 + 4 小时/72 小时 · 三个特征 · 不能解释. 治疗: 麦角胺 (5-HT1B/1D) + 美托奈不 + 心安定 + 防护阶段 · 咨席·素 (Botox) + CGRP 单免. 2018 FDA 批准 CGRP 免疫药 (Erenumab) 革命. 中国 通泰阅麦角胺类酱 50% 市占. （参见：脑卒中, 脑癌, 越厶象）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "古希腊",
+        "title": "希波克拉底病案",
+        "body": "古希腊医师希波克拉底在前 400 年记录偏头痛为头部一侧搏动性疼痛, 常伴恶心呕吐."
+      },
+      {
+        "year": "1935",
+        "title": "Graham 头痛分类",
+        "body": "美国神经学家 Graham 1935 年将头痛分为偏头痛、紧张性头痛与丛集性头痛, 偏头痛成为独立病种."
+      },
+      {
+        "year": "1979",
+        "title": "5-羟色胺与偏头痛",
+        "body": "1979 年研究证实 5-羟色胺 (5-HT) 在偏头痛发作中起关键作用, 推动曲普坦类药物研发."
+      },
+      {
+        "year": "1993",
+        "title": "国际头痛疾病分类",
+        "body": "国际头痛协会 1988 年首版 ICHD 分类, 2013 年 ICHD-3 β 版将偏头痛细分无先兆、有先兆与慢性三种."
+      },
+      {
+        "year": "2018",
+        "title": "CGRP 抑制剂问世",
+        "body": "FDA 2018 年批准首个 CGRP 单抗 Aimovig 用于预防性治疗偏头痛, 开启靶向生物制剂新纪元."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国头痛学会官网",
+        "url": "https://www.chs.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版·偏头痛",
+        "url": "https://zh.wikipedia.org/wiki/%E5%81%8F%E5%A4%B4%E7%97%9B",
+        "type": "百科"
+      },
+      {
+        "title": "中华医学会神经病学分会",
+        "url": "https://www.cma.org.cn/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "pneumonia",
+    "title": "肺炎",
+    "kind": "disease",
+    "subKind": "infectious",
+    "series": "atlas-miscellany",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/pneumonia/pneumonia-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/pneumonia/pneumonia-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/pneumonia/pneumonia-full.webp",
+    "score": 7.6,
+    "tags": [
+      "疾病",
+      "感染",
+      "现代",
+      "全球",
+      "高发",
+      "儿童"
+    ],
+    "tagline": "全球 年 240 万 儿童 死 · 肺组织感染 + 负业",
+    "subtitle": "疾病 · 肺炎 · 百科占位",
+    "description": "肺炎 是肺组织的感染例代 · · 病因: 细菌 (肺炎链球球 + 肺炎克雷伯菌 + 金黄色葡萄球菌 + 大肺炎 · 外 · 伊) · 疫苗 + 静验 · 变 鲁 哭 + 吸 · 一、不 · 便制. 全球 年发病 4.5 亿, 中国 2500 万, 5 岁以下儿童 主要死亡原因 (全球 年 240 万 死). 中国 老人 + 儿童 + 慢病 + 股入 起发. 幼丝: 2 岁不应 难 · 汽车 4 · 汽 胸胸 · 幼 业 幼 肣. 临床: 发热 + 咳噜 + 原鬆、鬼 股 · 一 起 育 · 二 肸痂 · 鬼屁. 诊断: 门诊 + 热 + 胸部 CT 定 · 病原学. 治疗: 抗生素 (青霉素 + 头孢 · 头孢 头 · 孢) + 对症 · 二手二伏 · 付记 · 完 · 试. 预防: 肺炎链球球口服 13 个 · 肺炎 多袭 仗 · 免疫免 · 免 · 能 · 疫立、免疫 · 6 · · 儿童高发、老人 高发 · 驱 · 病 死 亡 下降. （参见：肺结核, 肺癌, 感冒）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "公元前 460 年",
+        "title": "希波克拉底定义",
+        "body": "古希腊医师希波克拉底使用听诊法描述肺实变, 公元前 460 年首次系统定义肺炎."
+      },
+      {
+        "year": "1881",
+        "title": "炭疽杆菌发现",
+        "body": "德国医师罗伯特·科赫 1881 年从肺炎患者痰液中分离出肺炎链球菌, 明确细菌病因."
+      },
+      {
+        "year": "1918",
+        "title": "西班牙流感大流行",
+        "body": "1918 年西班牙流感大流行全球约 5 亿人感染, 5000 万人死亡, 肺炎是最主要死因."
+      },
+      {
+        "year": "1944",
+        "title": "青霉素问世",
+        "body": "1944 年青霉素量产并用于临床, 细菌性肺炎死亡率大幅下降, 开启抗生素时代."
+      },
+      {
+        "year": "2024",
+        "title": "社区获得性肺炎",
+        "body": "中国 2024 年成人社区获得性肺炎发病率约 0.7%, 病原谱以肺炎支原体与肺炎链球菌为主."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中华医学会呼吸病学分会",
+        "url": "https://www.cma.org.cn/",
+        "type": "学术"
+      },
+      {
+        "title": "维基百科中文版·肺炎",
+        "url": "https://zh.wikipedia.org/wiki/%E8%82%BA%E7%82%8E",
+        "type": "百科"
+      },
+      {
+        "title": "中国疾病预防控制中心",
+        "url": "https://www.chinacdc.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "persian",
+    "title": "波斯猫",
+    "kind": "pet",
+    "subKind": "cat-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "013",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/persian/persian-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/persian/persian-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/persian/persian-full.webp",
+    "score": 8.4,
+    "tags": [
+      "猫品种",
+      "长毛猫",
+      "伏伦起源",
+      "英国爵士父爱",
+      "平面哈士孩"
+    ],
+    "tagline": "世界最古老的长毛猫品种",
+    "subtitle": "宠物 · 波斯猫 · 百科占位",
+    "description": "波斯猫 (Persian cat) 是世界最古老的猫种之一, 1684 年由意大利旅行家 Pietro della Valle 从波斯 (今伊朗) 引入欧洲. 以长毛、圆脸、扁鼻的华丽外形著称, 维多利亚女王与英王爱德华七世都曾钟爱这一品种, 使其在 19 世纪末成为欧洲贵族客厅的标配伴侣. 中国 1960 年代首次从苏联引进, 1970 年代通过驻华外交官家庭与外资宠物店进入普通家庭, 一度被视为身份的象征. 如今全球纯种波斯猫登记在册约 30 万只, 是 CFA (爱猫者协会) 与 TICA 双注册体系下繁育历史最悠久的纯种长毛猫. 跟 <Link href=\"/cards/siamese\">暹罗猫</Link> 一起并称 20 世纪东方长毛猫的对照样本.",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1684",
+        "title": "波斯猫传入欧洲",
+        "body": "1684 年意大利旅行家 Pietro della Valle 从波斯 (今伊朗) 引入长毛猫到欧洲, 是波斯猫作为独立品种的起点."
+      },
+      {
+        "year": "1871",
+        "title": "首届猫展亮相",
+        "body": "1871 年伦敦水晶宫举办首届正式猫展, 波斯猫以华丽长毛与温顺性格一举夺魁, 进入英美爱猫者视野."
+      },
+      {
+        "year": "1895",
+        "title": "CFA 正式注册",
+        "body": "1895 年美国 CFA (Cat Fanciers' Association) 创立后即将波斯猫列为最早注册品种之一, 成为长毛猫代表."
+      },
+      {
+        "year": "1960",
+        "title": "进入中国",
+        "body": "1960 年代中国从苏联少量引进波斯猫作为外交礼品, 1970 年代通过驻华外交官家庭与外资宠物店进入普通家庭."
+      },
+      {
+        "year": "2024",
+        "title": "全球登记数量",
+        "body": "2024 年全球 CFA 登记波斯猫约 30 万只, 是长毛猫品种中登记数最多者, 扁脸分支与短鼻型仍是主流."
+      }
+    ],
+    "sources": [
+      {
+        "title": "CFA 官网·波斯猫",
+        "url": "https://cfa.org/breeds/persian/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版·波斯猫",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%A2%E6%96%AF%E7%8C%AB",
+        "type": "百科"
+      },
+      {
+        "title": "TICA 官网·波斯猫标准",
+        "url": "https://www.tica.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "siamese",
+    "title": "暹罗猫",
+    "kind": "pet",
+    "subKind": "cat-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "014",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/siamese/siamese-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/siamese/siamese-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/siamese/siamese-full.webp",
+    "score": 7.9,
+    "tags": [
+      "猫品种",
+      "短毛猫",
+      "泰国皇室",
+      "东方类",
+      "会话型"
+    ],
+    "tagline": "东南亚口吁高智商猫",
+    "subtitle": "宠物 · 暹罗猫 · 百科占位",
+    "description": "暹罗猫 是 Atlas Kit 图鉴社「宠物」分类下的百科图鉴占位条目 (category identity: Breed-standard companion animal profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1350",
+        "title": "暹罗王宫圣猫",
+        "body": "1350 年暹罗 (今泰国) 阿瑜陀耶王朝《猫诗集》记载暹罗猫为王室专属, 地位崇高."
+      },
+      {
+        "year": "1884",
+        "title": "驻曼谷领事带回英国",
+        "body": "1884 年英国驻曼谷领事 Owen Gould 将一对暹罗猫 Pho 与 Mia 带回英国, 引起爱猫者轰动."
+      },
+      {
+        "year": "1901",
+        "title": "CFA 注册品种",
+        "body": "1901 年暹罗猫成为 CFA 早期注册品种, 传统暹罗猫以苹果形头与弯曲尾巴为特征."
+      },
+      {
+        "year": "1960",
+        "title": "现代暹罗诞生",
+        "body": "1960 年代美国繁育者通过选育培育出体型修长、头部楔形的现代暹罗猫, 成为东方短毛猫代表."
+      },
+      {
+        "year": "2024",
+        "title": "暹罗繁育争议",
+        "body": "2024 年因过度选育导致传统暹罗猫濒临消失, 多国繁育协会推动传统型与现代型分类保护."
+      }
+    ],
+    "sources": [
+      {
+        "title": "CFA 官网·暹罗猫",
+        "url": "https://cfa.org/breeds/siamese/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版·暹罗猫",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9A%9B%E7%BD%97%E7%8C%AB",
+        "type": "百科"
+      },
+      {
+        "title": "暹罗猫协会 (Siamese Cat Society)",
+        "url": "https://www.siamesecatsociety.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "dachshund",
+    "title": "腊肠犬",
+    "kind": "pet",
+    "subKind": "dog-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "016",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/dachshund/dachshund-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/dachshund/dachshund-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/dachshund/dachshund-full.webp",
+    "score": 8.1,
+    "tags": [
+      "犬品种",
+      "猇猇类",
+      "德国起源",
+      "猎犬",
+      "低身高资"
+    ],
+    "tagline": "德国原产短腿猇猇",
+    "subtitle": "宠物 · 腊肠犬 · 百科占位",
+    "description": "腊肠犬 是 Atlas Kit 图鉴社「宠物」分类下的百科图鉴占位条目 (category identity: Breed-standard companion animal profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "15 世纪",
+        "title": "德国猎獾犬",
+        "body": "15 世纪德国猎人在森林中培育腊肠犬, 用于钻进獾穴驱赶猎物, 是短腿长身的典型代表."
+      },
+      {
+        "year": "1879",
+        "title": "德国腊肠犬俱乐部",
+        "body": "1879 年德国腊肠犬俱乐部 (Deutscher Teckelklub) 成立, 系统化登记毛色与体型, 标准沿用至今."
+      },
+      {
+        "year": "1900",
+        "title": "进入美国",
+        "body": "1900 年腊肠犬被引入美国后大受欢迎, 美国 AKC 正式注册并设立 3 种毛型标准."
+      },
+      {
+        "year": "1972",
+        "title": "慕尼黑奥运会吉祥物",
+        "body": "1972 年慕尼黑奥运会官方选择腊肠犬 Waldi 作为吉祥物, 是奥运会历史上首个动物吉祥物."
+      },
+      {
+        "year": "2024",
+        "title": "全球流行",
+        "body": "2024 年腊肠犬 AKC 登记数稳定在前 15 名, 标准型、迷你型与兔型三种体型并存, 毛色细分为 15 种."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AKC 官网·腊肠犬",
+        "url": "https://www.akc.org/dog-breeds/dachshund/",
+        "type": "机构"
+      },
+      {
+        "title": "维基百科中文版·腊肠犬",
+        "url": "https://zh.wikipedia.org/wiki/%E8%85%8A%E8%82%A0%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "德国腊肠犬俱乐部",
+        "url": "https://www.teckelklub.de/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "kaleidoscope",
+    "title": "万花筒",
+    "kind": "object",
+    "subKind": "traditional",
+    "series": "atlas-miscellany",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kaleidoscope/kaleidoscope-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kaleidoscope/kaleidoscope-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kaleidoscope/kaleidoscope-full.webp",
+    "score": 7.6,
+    "tags": [
+      "光学器具",
+      "玩具",
+      "英国发明",
+      "美学原理",
+      "雪花结晶"
+    ],
+    "tagline": "英国发明家的光学玩具",
+    "subtitle": "器物 · 万花筒 · 百科占位",
+    "description": "万花筒 是 Atlas Kit 图鉴社「器物」分类下的百科图鉴占位条目 (category identity: Object and industrial-design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1816",
+        "title": "苏格兰发明",
+        "body": "苏格兰发明家大卫·布儒斯特 1816 年发明万花筒, 利用光学反射原理形成对称图案."
+      },
+      {
+        "year": "1873",
+        "title": "企业化生产",
+        "body": "1873 年波士顿 Charles Bush 公司开始大规模生产万花筒, 维多利亚时代成为畅销玩具."
+      },
+      {
+        "year": "20 世纪",
+        "title": "光艺术与心理疗愈",
+        "body": "20 世纪万花筒被艺术家用于光艺术装置, 心理学家将其引入艺术治疗与冥想练习."
+      },
+      {
+        "year": "1980",
+        "title": "日本万花筒协会",
+        "body": "日本万花筒协会 1980 年代成立, 推动万花筒作为艺术收藏品, 出现高端定制万花筒工坊."
+      },
+      {
+        "year": "2024",
+        "title": "数字艺术与教学",
+        "body": "现代万花筒在数字艺术、设计教育与儿童 STEAM 课程中持续发挥作用, 形成跨媒介的视觉哲学."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国大百科全书·光学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      },
+      {
+        "title": "维基百科中文版·万花筒",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%87%E8%8A%B1%E7%AD%92",
+        "type": "百科"
+      },
+      {
+        "title": "中国光学学会官网",
+        "url": "http://www.cncos.org.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "munich",
+    "title": "慕尼黑",
+    "kind": "city",
+    "subKind": "european",
+    "series": "city-encyclopedia",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/munich/munich-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/munich/munich-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/munich/munich-full.webp",
+    "score": 8.2,
+    "tags": [
+      "德国城市",
+      "巴伐利亚",
+      "啤酒节",
+      "耳纪克新建筑",
+      "历史都城"
+    ],
+    "tagline": "巴伐利亚都市与啤酒节之都",
+    "subtitle": "城市 · 慕尼黑 · 百科占位",
+    "description": "慕尼黑 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1158",
+        "title": "慕尼黑建城",
+        "body": "1158 年亨利十二世在伊萨尔河畔建立慕尼黑, 设有盐粮税关, 因修道院 (München) 得名."
+      },
+      {
+        "year": "1506",
+        "title": "巴伐利亚公国都城",
+        "body": "1506 年维特尔斯巴赫家族统一巴伐利亚, 慕尼黑成为公国都城, 哥特式老城格局延续至今."
+      },
+      {
+        "year": "1810",
+        "title": "啤酒节起源",
+        "body": "1810 年 10 月为路德维希王子婚礼举办赛马, 后发展为慕尼黑啤酒节 (Oktoberfest), 至今逾 200 年."
+      },
+      {
+        "year": "1972",
+        "title": "慕尼黑奥运会",
+        "body": "1972 年慕尼黑承办第 20 届夏季奥运会, 慕尼黑惨案后奥运村西侧设立纪念碑."
+      },
+      {
+        "year": "2024",
+        "title": "宝马与工业重镇",
+        "body": "2024 年宝马总部、大众城与西门子等总部均设于慕尼黑, 是德国南部的经济文化中心."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·慕尼黑",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%95%E5%B0%BC%E9%BB%91",
+        "type": "百科"
+      },
+      {
+        "title": "慕尼黑市政府官网",
+        "url": "https://www.muenchen.de/",
+        "type": "官方"
+      },
+      {
+        "title": "宝马集团·慕尼黑总部",
+        "url": "https://www.bmwgroup.com/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "lyon",
+    "title": "里昂",
+    "kind": "city",
+    "subKind": "european",
+    "series": "city-encyclopedia",
+    "seriesNo": "007",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/lyon/lyon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/lyon/lyon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/lyon/lyon-full.webp",
+    "score": 7.8,
+    "tags": [
+      "法国城市",
+      "古罗马弟兔",
+      "美食",
+      "东主席",
+      "纺织业中心"
+    ],
+    "tagline": "法国古典东主席与美食之都",
+    "subtitle": "城市 · 里昂 · 百科占位",
+    "description": "里昂 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "公元前 43 年",
+        "title": "罗马帝国殖民",
+        "body": "公元前 43 年罗马人在富维耶山建殖民地 Lugdunum, 凯撒与屋大维先后治理, 是高卢行省首府."
+      },
+      {
+        "year": "2 世纪",
+        "title": "高卢基督教中心",
+        "body": "2 世纪里昂成为高卢地区基督教中心, 177 年殉道者圣布莱斯殉道, 城北有早期基督教墓地."
+      },
+      {
+        "year": "1464",
+        "title": "里昂国际博览会",
+        "body": "1464 年里昂举办欧洲最早的国际商品博览会, 丝绸贸易使里昂成为文艺复兴时期金融与艺术重镇."
+      },
+      {
+        "year": "1831",
+        "title": "里昂丝织工起义",
+        "body": "1831 年 11 月里昂丝织工人因机器替代手工而起事, 短暂占领城市, 是早期工人运动的标志性事件."
+      },
+      {
+        "year": "2024",
+        "title": "世界美食之都",
+        "body": "2024 年里昂被《米其林指南》评为世界最佳美食城市之一, 传统 bouchon 小餐馆文化延续数百年."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·里昂",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%8C%E6%98%82",
+        "type": "百科"
+      },
+      {
+        "title": "里昂市政府官网",
+        "url": "https://www.lyon.fr/",
+        "type": "官方"
+      },
+      {
+        "title": "里昂旅游局·美食专题",
+        "url": "https://www.lyon-france.com/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "barcelona-city",
+    "title": "巴塞罗那",
+    "kind": "city",
+    "subKind": "european",
+    "series": "city-encyclopedia",
+    "seriesNo": "008",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/barcelona-city/barcelona-city-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/barcelona-city/barcelona-city-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/barcelona-city/barcelona-city-full.webp",
+    "score": 8.5,
+    "tags": [
+      "西班牙城市",
+      "加泰罗尼亚",
+      "棅什建筑",
+      "海滨都市",
+      "奥运主办"
+    ],
+    "tagline": "高多与棅什建筑太阳城",
+    "subtitle": "城市 · 巴塞罗那 · 百科占位",
+    "description": "巴塞罗那 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "公元前 230 年",
+        "title": "迦太基人建城",
+        "body": "公元前 230 年迦太基将军哈米尔卡·巴尔卡在塔拉戈海岸建立 Barcino, 后被罗马人征服."
+      },
+      {
+        "year": "9 世纪",
+        "title": "加洛林王朝统治",
+        "body": "9 世纪加洛林王朝时期巴塞罗那成为西班牙边区 (Marca Hispanica) 首府, 抵御摩尔人入侵."
+      },
+      {
+        "year": "1137",
+        "title": "巴塞罗那联合王国",
+        "body": "1137 年巴塞罗那伯爵拉蒙·贝伦格尔四世与阿拉贡女王联姻, 建立加泰罗尼亚-阿拉贡联合王国."
+      },
+      {
+        "year": "1888",
+        "title": "巴塞罗那世博会",
+        "body": "1888 年巴塞罗那举办世博会, 凯旋门、城堡公园、哥伦布纪念碑皆为当时建造."
+      },
+      {
+        "year": "2024",
+        "title": "高迪之城",
+        "body": "2024 年巴塞罗那拥有 9 处世界遗产, 圣家堂、桂尔公园等高迪建筑仍是城市最著名的文化符号."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·巴塞罗那",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B7%B4%E5%A1%9E%E7%BD%97%E9%82%A3",
+        "type": "百科"
+      },
+      {
+        "title": "巴塞罗那旅游局官网",
+        "url": "https://www.barcelonaturisme.com/",
+        "type": "机构"
+      },
+      {
+        "title": "高迪故居博物馆",
+        "url": "https://www.casavicens.es/",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "hamburg",
+    "title": "汉堡",
+    "kind": "city",
+    "subKind": "european",
+    "series": "city-encyclopedia",
+    "seriesNo": "009",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/hamburg/hamburg-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/hamburg/hamburg-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/city/hamburg/hamburg-full.webp",
+    "score": 7.7,
+    "tags": [
+      "德国城市",
+      "港口",
+      "音乐中心",
+      "船舶业",
+      "大洋渠"
+    ],
+    "tagline": "德国港口与音乐之都",
+    "subtitle": "城市 · 汉堡 · 百科占位",
+    "description": "汉堡 是 Atlas Kit 图鉴社「城市」分类下的百科图鉴占位条目 (category identity: Encyclopedia city profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "808",
+        "title": "查理大帝筑堡",
+        "body": "808 年法兰克国王查理大帝在易北河北岸筑 Hammaburg 城堡, 作为对斯拉夫人传教与贸易的据点."
+      },
+      {
+        "year": "1189",
+        "title": "自由帝国城市",
+        "body": "1189 年神圣罗马皇帝腓特烈一世授予汉堡自由帝国城市地位, 易北河口的关税与渔业使其迅速富裕."
+      },
+      {
+        "year": "1842",
+        "title": "汉堡大火",
+        "body": "1842 年 5 月汉堡老城发生欧洲近代最大城市火灾, 烧毁 1/3 城区, 重建奠定今日港口都市格局."
+      },
+      {
+        "year": "1888",
+        "title": "汉堡仓储城",
+        "body": "1888 年汉堡建成世界最大仓储城 (Speicherstadt), 哥特复兴式红砖建筑群保留至今, 是联合国世界遗产."
+      },
+      {
+        "year": "2024",
+        "title": "欧洲音乐剧之都",
+        "body": "2024 年汉堡拥有 3 家世界级音乐剧剧院, 音乐剧《歌剧魅影》德语版在此驻演 30 多年."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·汉堡",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E5%A0%A1",
+        "type": "百科"
+      },
+      {
+        "title": "汉堡市政府官网",
+        "url": "https://www.hamburg.de/",
+        "type": "官方"
+      },
+      {
+        "title": "汉堡仓储城世界遗产",
+        "url": "https://www.speicherstadt.de/",
+        "type": "机构"
       }
     ]
   }

@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "round": "R84",
+    "createdAt": "2026-07-13",
+    "goal": "ship 24 张内容 + kind 32+ 配平 + 冲 960+",
+    "strategy": "6 kind 各 4 张: profession 31→35 + plant 32→36 + disease 32→36 + pet 33→37 + object 33→37 + city 33→37. 走 high-recognition 主题"
+  },
+  "cards": [
+    { "slug": "mechanic", "title": "机械师", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "033" },
+    { "slug": "electrician", "title": "电工", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "034" },
+    { "slug": "translator", "title": "翻译官", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "035" },
+    { "slug": "librarian", "title": "图书管理员", "kind": "profession", "subKind": "education", "series": "history-and-figures", "seriesNo": "036" },
+    { "slug": "bamboo", "title": "竹子", "kind": "plant", "subKind": "grass", "series": "atlas-miscellany", "seriesNo": "057" },
+    { "slug": "lotus", "title": "莲花", "kind": "plant", "subKind": "flower", "series": "atlas-miscellany", "seriesNo": "058" },
+    { "slug": "lavender", "title": "薰衣草", "kind": "plant", "subKind": "flower", "series": "atlas-miscellany", "seriesNo": "059" },
+    { "slug": "tea-plant", "title": "茶树", "kind": "plant", "subKind": "tea", "series": "atlas-miscellany", "seriesNo": "060" },
+    { "slug": "migraine", "title": "偏头痛", "kind": "disease", "subKind": "chronic", "series": "atlas-miscellany", "seriesNo": "030" },
+    { "slug": "tuberculosis", "title": "肺结核", "kind": "disease", "subKind": "infectious", "series": "atlas-miscellany", "seriesNo": "031" },
+    { "slug": "sickle-cell", "title": "镰状细胞病", "kind": "disease", "subKind": "genetic", "series": "atlas-miscellany", "seriesNo": "032" },
+    { "slug": "pneumonia", "title": "肺炎", "kind": "disease", "subKind": "infectious", "series": "atlas-miscellany", "seriesNo": "033" },
+    { "slug": "persian", "title": "波斯猫", "kind": "pet", "subKind": "cat-breed", "series": "pet-breed-guide", "seriesNo": "013" },
+    { "slug": "siamese", "title": "暹罗猫", "kind": "pet", "subKind": "cat-breed", "series": "pet-breed-guide", "seriesNo": "014" },
+    { "slug": "beagle", "title": "比格犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "015" },
+    { "slug": "dachshund", "title": "腊肠犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "016" },
+    { "slug": "kaleidoscope", "title": "万花筒", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "040" },
+    { "slug": "abacus", "title": "算盘", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "041" },
+    { "slug": "sundial", "title": "日晷", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "042" },
+    { "slug": "astrolabe", "title": "星盘", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "043" },
+    { "slug": "munich", "title": "慕尼黑", "kind": "city", "subKind": "european", "series": "city-encyclopedia", "seriesNo": "006" },
+    { "slug": "lyon", "title": "里昂", "kind": "city", "subKind": "european", "series": "city-encyclopedia", "seriesNo": "007" },
+    { "slug": "barcelona-city", "title": "巴塞罗那", "kind": "city", "subKind": "european", "series": "city-encyclopedia", "seriesNo": "008" },
+    { "slug": "hamburg", "title": "汉堡", "kind": "city", "subKind": "european", "series": "city-encyclopedia", "seriesNo": "009" }
+  ]
+}

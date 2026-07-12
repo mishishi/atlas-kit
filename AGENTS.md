@@ -2724,3 +2724,65 @@ prod: https://atlas-kit-six.vercel.app/ (R75 ship 待 push, sitemap expected 900
 - atlas-kit memory topic file `atlas-kit.md` R78 lessons 已 append
 - 节奏适合先 polish 后 ship (R75 后 1 周 3 polish rounds, user 视觉跟得上)
 - 站 day-of-week 周几 — 6 = Friday, 周末 user 验证 polish + 决定下条合适
+
+
+## R79 (2026-07-12) — UX polish 2 件: 同系列 score badge + 历史沿革 latest node highlight
+
+catalog 874 (不变). 14 commit post-R66 = 10 content ships + 4 UX polish. 周末短 pause 1 round 验证 R76+R77+R78 polish 后, R79 收口 2 件详情页 polish 续.
+
+### A. 同系列 score badge (R79 ship)
+
+`src/app/cards/[slug]/page.tsx` "同系列其他图鉴" 段 — 4-card grid 200px wide:
+
+- threshold ≥ 7 (跟 R76+R77 score badge 一致)
+- color = `card.palette[1]` (跟图片自配色, 跟 R77 CardPreview + R76 编辑精选 同 treatment)
+- Position: `top-1.5 right-1.5` (4-card grid 比 series 编辑精选 6-card 16vw 略大, 1.5 padding 视觉更紧凑)
+- `aria-hidden="true"` + parent Link 加 `aria-label="查看 X · 评分 Y"` 跟 series 编辑精选 一致
+
+**Why 5 surface 同 treatment (同系列 + recommend + CardPreview + 编辑精选)**: 用户视觉识别 "这是高分 cards" 一致. R76+R77 决定过, R79 收口最后一个 surface.
+
+### B. 历史沿革 latest node highlight (R79 ship)
+
+`src/app/cards/[slug]/page.tsx` "历史沿革" 段 — 最后 node (idx === historyLen - 1) 视觉强调:
+
+- 桌面 rail year: `text-base font-bold bg-cream px-2 py-0.5 rounded-md ring-1 ring-gold/40` (从 `text-xs uppercase tracking-[0.15em] font-medium` 升)
+- 桌面 dot: `h-3.5 w-3.5 ring-[6px]` (从 `h-2.5 w-2.5 ring-4` 升)
+- mobile year: `text-xs font-bold bg-cream inline-block px-2 py-0.5 rounded-md ring-1 ring-gold/40`
+- title: `text-lg font-bold` (从 `text-base font-semibold` 升)
+- 早期 nodes 保持原 subtle visual
+
+**Why latest node only**: 5-8 history nodes 经常 build up to final state ("现在 / 当前 / today"). 视觉强调 "现在" 让用户快速 find "where we are now" year, 不必读 every body text.
+
+**Why only latest, not also earliest**: earliest 已经是 first by visual order (1st in list), 不需额外强调. latest 在 list 底部, 容易被忽略 — 这是 highlight 真实价值.
+
+**Why bg-cream (not bg-gold)**: gold-deep 太 saturated, ring-1 ring-gold/40 已经足够强. bg-cream neutral highlight, 让 year 数字 readable. 跟 R76 series 编辑精选 score badge 用 palette[1] (中 saturation accent) 同 pattern.
+
+**Why tabular-nums**: year 数字 alignment (1925 / 762 / 2024 mixed width 不会左右跳动).
+
+### C. R79 commit + ship
+
+1 file modified: +77 -26 lines.
+- `tsc --noEmit` clean ✓ (fix `card.history` 可能 undefined 的 TS18048 用 `!` operator + 1 local const `historyLen` for readability)
+- commit `74eec35` pushed (`7ebea25 → 74eec35`)
+
+### D. Atlas Kit 当前 catalog (R79 后, 2026-07-12)
+
+- **874 cards** (没新卡). 14 commit post-R66.
+- 4 polish 段全收口: 详情页 recommend / 提到了 X / 同系列 / CardPreview / series 编辑精选 5 surface 同 score badge treatment
+- 详情页 polish 8 件累计: hero (subKind chip + reading time) + reading progress + description + quote + trivia + myth/fact + 历史沿革 (latest highlight) + 同系列 (score badge) + recommend (score badge) + reverse-mention (inline chip) + sources + 延伸阅读
+- /search history + autocomplete (R77)
+- /cards mobile sticky sort chips (R78)
+- master HEAD: `74eec35`
+
+### E. R80 candidate (next)
+
+- ship 24+ 张内容 (R75 距今 1 周, 内容 ship 节奏到)
+- 详情页 polish 续: 参考来源 ⭐ 权威度 badge (官方/学术/百科 三档)
+- 系列页 polish 续: 系列 tag cloud (按 series.themeTags 频率 top 12)
+- /graph cursor hover 详情 (P2)
+- /map animated pin drop (P2)
+- AGENTS.md subKind coverage 数字 (R75 874/874) 同步
+- catalog 900+ milestone 候选: R80 ship 24+ 张 push 到 ~900
+- 站 day-of-week: 6 = Sunday, 周日 ship 内容 + 周末 user 看 polish 合适
+- R79 后 5 连续 polish rounds: R76 + R77 + R78 + R79, 节奏适合 R80 content ship 收口
+- atlas-kit memory topic file `atlas-kit.md` R79 lessons 已 append (待 push 后)

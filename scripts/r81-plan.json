@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "round": "R81",
+    "createdAt": "2026-07-12",
+    "goal": "ship 10 张冲 900 milestone + kind balance 收尾",
+    "strategy": "5 短板 kind 各 2 张: country(28→30) + disease(28→30) + vehicle(28→30) + pet(29→31) + profession(26→28). 走 high-recognition 主题让 user verify R76-R79 polish (新 cards 上线)"
+  },
+  "cards": [
+    { "slug": "norway", "title": "挪威", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "030" },
+    { "slug": "finland", "title": "芬兰", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "031" },
+    { "slug": "leukemia", "title": "白血病", "kind": "disease", "subKind": "cancer", "series": "atlas-miscellany", "seriesNo": "024" },
+    { "slug": "lupus", "title": "红斑狼疮", "kind": "disease", "subKind": "autoimmune", "series": "atlas-miscellany", "seriesNo": "025" },
+    { "slug": "ferry", "title": "渡轮", "kind": "vehicle", "subKind": "ship", "series": "atlas-miscellany", "seriesNo": "053" },
+    { "slug": "scooter-elec", "title": "电动滑板车", "kind": "vehicle", "subKind": "scooter", "series": "atlas-miscellany", "seriesNo": "054" },
+    { "slug": "poodle", "title": "贵宾犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "006" },
+    { "slug": "ragdoll", "title": "布偶猫", "kind": "pet", "subKind": "cat-breed", "series": "pet-breed-guide", "seriesNo": "007" },
+    { "slug": "chef", "title": "厨师", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "027" },
+    { "slug": "soldier-rank", "title": "士兵", "kind": "profession", "subKind": "military", "series": "history-and-figures", "seriesNo": "028" },
+    { "slug": "schipperke", "title": "史奇派克犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "008" },
+    { "slug": "sphynx", "title": "斯芬克斯猫", "kind": "pet", "subKind": "cat-breed", "series": "pet-breed-guide", "seriesNo": "009" },
+    { "slug": "art-deco", "title": "装饰艺术风格", "kind": "artwork", "subKind": "painting", "series": "atlas-miscellany", "seriesNo": "040" }
+  ]
+}

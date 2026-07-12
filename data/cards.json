@@ -40447,17 +40447,19 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/leukemia/leukemia-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/leukemia/leukemia-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/leukemia/leukemia-full.webp",
-    "score": 0,
+    "score": 8,
     "tags": [
-      "医学",
-      "肿瘤",
-      "血液",
-      "细胞",
-      "现代"
+      "疾病",
+      "癌症",
+      "现代",
+      "全球",
+      "血液病",
+      "化疗",
+      "儿童"
     ],
-    "tagline": "白血病 · 图鉴社收录。",
+    "tagline": "白细胞叛变 + 儿童肿瘤首位的血液癌",
     "subtitle": "疾病 · 白血病",
-    "description": "白血病是造血系统的恶性肿瘤，其特征为造血细胞异常增殖导致正常血细胞功能受损，主要表现为贫血、出血倾向和感染风险升高。根据病程和细胞类型，可分为急性和慢性两大类，治疗方法包括化疗、放疗、靶向治疗及造血干细胞移植等。",
+    "description": "白血病 是造血系统恶性肿瘤, 1845 英国 Bennett + 1847 德国 Virchow 命名 (希腊 leukos 白 + haima 血). 中国年发病 7-8 万例, 儿童恶性肿瘤首位 (0-14 岁 35%). 病因: 电离辐射 + 苯 + 化疗 + 病毒 (HTLV-1 + EBV) + 染色体异常 (Ph 染色体 t(9;22) 见于 95% CML). 分急性 (ALL + AML) + 慢性 (CLL + CML) + 特殊型. 症状: 贫血 + 出血 + 感染 + 肝脾淋巴结肿大. 诊断: 血常规 + 骨髓穿刺 (原始细胞 ≥ 20%). 治疗: 化疗 + 靶向 (伊马替尼/格列卫 2001 革命性, Ph+ CML 5 年生存率从 30% → 90%) + 造血干细胞移植 (HSCT). 儿童 ALL 5 年生存率 1950s 0% → 2020s 90%. （参见：淋巴瘤, 红斑狼疮, 贫血）",
     "createdAt": "2026-06-27",
     "history": [
       {
@@ -44776,9 +44778,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gecko/gecko-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gecko/gecko-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/animal/gecko/gecko-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/gecko/gecko-full.webp",
     "score": 7,
     "tags": [
       "bihu",
@@ -66166,6 +66168,746 @@
       {
         "title": "Plants For A Future: Spinach",
         "url": "https://pfaf.org/user/Plant.aspx?LatinName=Spinacia+oleracea",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "norway",
+    "title": "挪威",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/norway/norway-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/norway/norway-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/norway/norway-full.webp",
+    "score": 7.8,
+    "tags": [
+      "国家",
+      "欧洲",
+      "北欧",
+      "现代",
+      "高收入",
+      "石油",
+      "维京"
+    ],
+    "tagline": "峡湾与极光之国 + 主权财富基金冠军",
+    "subtitle": "国家 · 挪威 · 百科占位",
+    "description": "挪威 是北欧 5 国之一 (冰岛 + 丹麦 + 瑞典 + 芬兰 + 挪威), 面积 38.5 万 km² (含 Svalbard 斯瓦尔巴 + Jan Mayen), 人口 540 万. 公元 9 世纪维京海盗统一挪威, 1015-1035 Olav II 皈依基督教 + 统一全国, 1319-1905 跟瑞典/丹麦联合王国, 1905 独立. 挪威是西欧最大石油生产国 (1969 Ekofisk 油田发现, 北海油气 60 亿桶), 主权财富基金 1.5 万亿美元 (全球最大), 2023 人均 GDP 8.9 万美元. 三文鱼 + 鳕鱼 + 鲸鱼 海产出口, 北极光 + 峡湾 (Geiranger / Nærøy) 著名. 诺贝尔和平奖 1901 设立, 颁奖地奥斯陆. （参见：芬兰, 维京, 北极光）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约 9000 年前",
+        "title": "挪威最早人类",
+        "body": "挪威北部 Finnmark 最早人类活动痕迹 (Komsa 文化, 约 9000-8000 BC)"
+      },
+      {
+        "year": "约 800 AD",
+        "title": "维京时代",
+        "body": "维京海盗 793 Lindisfarne 突袭, 8-11 世纪斯堪的纳维亚扩张, 挪威统一 (Harald Fairhair 约 872)"
+      },
+      {
+        "year": "1015-1035",
+        "title": "Olav II 皈依基督教",
+        "body": "Olav Haraldsson 1015 称王 + 1030 战死, 后封圣, 基督教挪威化, 1130 斯堪的纳维亚首位国王"
+      },
+      {
+        "year": "1319-1905",
+        "title": "卡尔马联合 + 瑞典统治",
+        "body": "1319 卡尔马联合, 1380 丹麦统治, 1814 瑞典夺取, 1905 独立公投 99.5% 同意"
+      },
+      {
+        "year": "1969",
+        "title": "北海石油发现",
+        "body": "1969 Ekofisk 油田发现 (北海挪威海域), 1971 Statoil 国家石油公司成立, 主权财富基金 1990 立法"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 挪威",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8C%AA%E5%A8%81",
+        "type": "百科"
+      },
+      {
+        "title": "挪威政府官网",
+        "url": "https://www.regjeringen.no/",
+        "type": "官方"
+      },
+      {
+        "title": "挪威央行 NBIM 主权基金",
+        "url": "https://www.nbim.no/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "finland",
+    "title": "芬兰",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/finland/finland-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/finland/finland-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/finland/finland-full.webp",
+    "score": 7.7,
+    "tags": [
+      "国家",
+      "欧洲",
+      "北欧",
+      "现代",
+      "高福利",
+      "幸福",
+      "教育"
+    ],
+    "tagline": "千湖之国 + 幸福榜首 + 桑拿之国",
+    "subtitle": "国家 · 芬兰 · 百科占位",
+    "description": "芬兰 是北欧 5 国之一, 面积 33.8 万 km², 人口 550 万. 12 世纪瑞典征服芬兰, 1809 沙俄夺取, 1917 独立. 1939 冬季战争 苏芬战争 (苏 30 万 vs 芬 30 万, 芬胜), 1941 继续战 (德国援助), 1944 退出. 1995 加入欧盟, 2023 加入 NATO. 芬兰是 全球最幸福国家 6 连冠 (UN World Happiness Report 2018-2023), 福利国家 + 教育免费 + 医疗免费. Nokia (1865 诺基亚 + 木材厂 → 1960s 电信 → 2007-2013 全球手机冠军), Angry Birds (Rovio 2009). 桑拿 300 万间 (人均 0.5 间, 全球第一), 圣诞老人故乡 (Rovaniemi 拉普兰). 2023 人均 GDP 5.0 万美元. （参见：挪威, 圣诞老人, 桑拿）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约 9000 年前",
+        "title": "Suomu 狩猎采集",
+        "body": "Suomusjärvi 文化 (约 9000 BC) 芬兰最早人类活动"
+      },
+      {
+        "year": "1150-1809",
+        "title": "瑞典统治芬兰",
+        "body": "1150 瑞典十字军东征 (Birger Jarl), 1249 第二次东征, 瑞典 6 个世纪统治"
+      },
+      {
+        "year": "1809",
+        "title": "沙俄夺取",
+        "body": "1808-1809 芬兰战争 沙俄击败瑞典, 1809 签订 Fredrikshamn 条约 芬兰成为沙俄大公国 (沙皇兼任大公)"
+      },
+      {
+        "year": "1917",
+        "title": "芬兰独立",
+        "body": "1917 俄国十月革命, 12 月 6 日 议会宣布独立 (K.J. Ståhlberg 任首任总统)"
+      },
+      {
+        "year": "1939-1940",
+        "title": "冬季战争",
+        "body": "1939 苏联入侵 (曼纳海姆防线), 芬兰顽强抵抗, 1940 莫斯科和约 芬兰割让卡累利阿, 维持独立"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 芬兰",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8A%AC%E5%85%B0",
+        "type": "百科"
+      },
+      {
+        "title": "芬兰政府 Valtioneuvosto",
+        "url": "https://valtioneuvosto.fi/",
+        "type": "官方"
+      },
+      {
+        "title": "UN World Happiness Report",
+        "url": "https://worldhappiness.report/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "lupus",
+    "title": "红斑狼疮",
+    "kind": "disease",
+    "subKind": "autoimmune",
+    "series": "atlas-miscellany",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lupus/lupus-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lupus/lupus-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lupus/lupus-full.webp",
+    "score": 7.2,
+    "tags": [
+      "疾病",
+      "自身免疫",
+      "现代",
+      "全球",
+      "女性高发",
+      "慢性病",
+      "难治"
+    ],
+    "tagline": "蝶形红斑 + 多器官损害的自身免疫病",
+    "subtitle": "疾病 · 红斑狼疮 · 百科占位",
+    "description": "红斑狼疮 (SLE) 是全身性自身免疫病 — 免疫系统攻击自身 DNA + 组织, 致多器官损害. 1828 法国 Biett 首次描述, 1851 命名 lupus (拉丁 狼, 面部蝶形红斑像狼咬). 1990s 发现抗 dsDNA + 抗 Sm 自身抗体, 是确诊关键. 中国患病率 30-70/10 万, 黑人女性高发 (1/250). 病因未明, 遗传 + 紫外线 + 病毒 + 激素 4 因素. 症状: 蝶形红斑 + 关节炎 + 肾炎 (50% 狼疮肾炎) + 神经狼疮 + 血细胞减少. 治疗: 羟氯喹 (基础药) + 糖皮质激素 + 环磷酰胺 + 生物制剂 (贝利尤单抗). 5 年生存率 1950s 50% → 2020s 95%. 2020 FDA 批准 voclosporin 首个狼疮肾炎口服药. （参见：白血病, 艾滋病, 类风湿）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1828",
+        "title": "Biett 描述",
+        "body": "法国 Laurent Biett 首次描述面部蝶形红斑 + 皮肤损害"
+      },
+      {
+        "year": "1851",
+        "title": "Cazenave 命名 lupus",
+        "body": "法国 Cazenave 命名 lupus (拉丁 狼) erythematosus (红斑)"
+      },
+      {
+        "year": "1948",
+        "title": "Hargraves 发现 LE 细胞",
+        "body": "美国 Hargraves 在骨髓中发现 LE 细胞, 首次客观诊断依据"
+      },
+      {
+        "year": "1957",
+        "title": "抗 dsDNA 抗体",
+        "body": "1957 抗 dsDNA 抗体首次报告, 确诊 SLE 关键标志"
+      },
+      {
+        "year": "2011",
+        "title": "贝利尤单抗 FDA",
+        "body": "2011 FDA 批准贝利尤单抗 (Belimumab) 首个 SLE 生物制剂, 2020 voclosporin 狼疮肾炎口服药"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 系统性红斑狼疮",
+        "url": "https://zh.wikipedia.org/wiki/%E7%B3%BB%E7%BB%9F%E6%80%A7%E7%BA%A2%E6%96%91%E7%8B%BC%E7%96%AE",
+        "type": "百科"
+      },
+      {
+        "title": "中华医学会风湿病分会",
+        "url": "https://www.cma.org.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "ACR 美国风湿病学会",
+        "url": "https://www.rheumatology.org/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "ferry",
+    "title": "渡轮",
+    "kind": "vehicle",
+    "subKind": "ship",
+    "series": "atlas-miscellany",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/ferry/ferry-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/ferry/ferry-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/ferry/ferry-full.webp",
+    "score": 7.1,
+    "tags": [
+      "载具",
+      "船舶",
+      "现代",
+      "全球",
+      "客运",
+      "海运",
+      "海岛"
+    ],
+    "tagline": "跨海越江的水上桥梁 + 千年的海运传统",
+    "subtitle": "交通工具 · 渡轮 · 百科占位",
+    "description": "渡轮 是跨水域 (海 / 江 / 湖) 载客或载货的轮船, 1812 蒸汽渡轮 首次在英国 Clyde 河运营, 19 世纪欧洲普及. 现代渡轮分滚装 (RoRo, 卡车直接开上船) / 客滚 (客 + 车) / 高速 (双体 / 水翼) 三类. 2024 全球渡轮 1.5 万艘, 希腊 + 挪威 + 日本 + 印尼 四国集中. 挪威沿岸渡轮 (Hurtigruten 1893) 是著名观光路线, 34 港口 11 天 2500 公里. 香港天星小轮 (1898) 维多利亚港标志, 尖沙咀 ↔ 中环 7 分钟. 青岛轮渡 (1891) 胶州湾. 日本濑户内海 + 宫古岛 + 北海道渡轮网. 全球最大渡轮 MS Symphony of the Seas (2018 皇家加勒比) 23 万吨, 载客 6780 人 + 2100 船员. （参见：航空母舰, 游轮, 潜艇）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1812",
+        "title": "首艘蒸汽渡轮",
+        "body": "1812 英国 Henry Bell 蒸汽渡轮 Comet 在 Clyde 河运营, 30 hp 蒸汽机 + 4 km/h"
+      },
+      {
+        "year": "1830s-1900s",
+        "title": "欧洲渡轮普及",
+        "body": "1830s 蒸汽渡轮普及, 1900s 柴油渡轮 + 汽车普及, 客滚渡轮 (RoPax) 兴起"
+      },
+      {
+        "year": "1898",
+        "title": "香港天星小轮",
+        "body": "1898 香港天星小轮 (Star Ferry) 开业, 至今维多利亚港标志, 6 艘船 + 每日 7 万人次"
+      },
+      {
+        "year": "1893",
+        "title": "Hurtigruten 海岸邮递",
+        "body": "挪威 Hurtigruten 沿海邮递航线 1893 开业, 34 港口 2500 公里 11 天, 至今观光标志"
+      },
+      {
+        "year": "2018",
+        "title": "Symphony of the Seas",
+        "body": "2018 皇家加勒比 Symphony of the Seas 全球最大渡轮 23 万吨, 6780 客 + 2100 船员, 18 层甲板"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 渡轮",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%A1%E8%BD%AE",
+        "type": "百科"
+      },
+      {
+        "title": "Hurtigruten 官网",
+        "url": "https://www.hurtigruten.com/",
+        "type": "官方"
+      },
+      {
+        "title": "天星小轮 Star Ferry",
+        "url": "https://www.starferry.com.hk/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "scooter-elec",
+    "title": "电动滑板车",
+    "kind": "vehicle",
+    "subKind": "scooter",
+    "series": "atlas-miscellany",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/scooter-elec/scooter-elec-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/scooter-elec/scooter-elec-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/scooter-elec/scooter-elec-full.webp",
+    "score": 7,
+    "tags": [
+      "载具",
+      "滑板车",
+      "现代",
+      "全球",
+      "电动",
+      "共享",
+      "城市"
+    ],
+    "tagline": "城市最后一公里 + 共享出行的革新",
+    "subtitle": "交通工具 · 电动滑板车 · 百科占位",
+    "description": "电动滑板车 (e-scooter) 是站立式双轮电动车, 1996 GoPed 首创, 2017 美国 Bird + Lime 共享滑板车引爆 (投 1 亿美元 1 年). 2018 巴黎 + 柏林 + 里斯本 全面铺开, 2019 中国美团 + 哈啰 + 滴滴 三家大战. 2024 全球市场 350 亿美元, 共享 + 私人 6:4 分布. 主流配置 250-500W 电机, 25-30 km/h 极速, 25-40 km 续航, 8-15 kg 重量, 1500-5000 元. 法规分化: 欧洲 L1e-A 25 km/h + 头盔, 美国 州分化 (加州 15 mph + 不允许人行道), 中国 GB 17761-2018 强制 25 km/h + 脚踏. 2020-2024 全球累计 1.5 亿辆, 锂电池火灾 + 人行道事故争议. （参见：自行车, 摩托车, 哈雷）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1996",
+        "title": "GoPed 首创",
+        "body": "1996 GoPed 公司发明电动滑板车原型, 早期主要为机场 + 仓库内部短途"
+      },
+      {
+        "year": "2017",
+        "title": "Bird + Lime 共享",
+        "body": "2017 美国 Bird (Travis VanderZanden) + Lime 共享滑板车引爆, 投 1 亿美元 1 年覆盖 100+ 城市"
+      },
+      {
+        "year": "2018",
+        "title": "欧洲 + 亚洲普及",
+        "body": "2018 巴黎 + 柏林 + 里斯本 + 北京 + 上海 + 深圳全面铺开, 美团 + 哈啰 + 滴滴 共享三巨头"
+      },
+      {
+        "year": "2019",
+        "title": "新国标发布",
+        "body": "2019 中国 GB 17761-2018 强制实施, 25 km/h + 脚踏 + 头盔, 共享 + 私人 6:4"
+      },
+      {
+        "year": "2020",
+        "title": "锂电池火灾争议",
+        "body": "2020-2024 全球累计 1.5 亿辆, 锂电池火灾 + 人行道事故 + 行人投诉争议, 部分城市限禁"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 电动滑板车",
+        "url": "https://zh.wikipedia.org/wiki/%E7%94%B5%E5%8A%A8%E6%BB%91%E6%9D%BF%E8%BD%A6",
+        "type": "百科"
+      },
+      {
+        "title": "国标 GB 17761-2018",
+        "url": "https://openstd.samr.gov.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "Lime 全球",
+        "url": "https://www.li.me/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "poodle",
+    "title": "贵宾犬",
+    "kind": "pet",
+    "subKind": "dog-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/poodle/poodle-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/poodle/poodle-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/poodle/poodle-full.webp",
+    "score": 7.6,
+    "tags": [
+      "宠物",
+      "犬种",
+      "现代",
+      "全球",
+      "高智商",
+      "低过敏",
+      "表演"
+    ],
+    "tagline": "不掉毛的卷毛贵族 + 全球最聪明犬种 #2",
+    "subtitle": "宠物 · 贵宾犬 · 百科占位",
+    "description": "贵宾犬 (Poodle) 是 AKC 排名第 5 犬种, 源自德国 Pudel (水猎犬, 16 世纪), 后成法国国犬 (Caniche). 标准型 + 迷你型 + 玩具型 三种大小, 巨型可达 30-32 cm / 20-32 kg. 智商 AKC 排名 #2 (边境牧羊犬后), 训练 + 服从性极高, 是马戏团 + 表演常用. 被毛卷曲 + 不掉毛 + 过敏友好, 需要定期美容 (5-7 周一次). 颜色分黑 + 白 + 棕 + 红 + 杏 + 银 + 蓝 + 奶油 12 种. 寿命 12-15 年, 易患髋关节发育不良 + 进行性视网膜萎缩 + 癫痫. 名犬: 雪球 (雪纳瑞贵宾混血 = 雪纳瑞贵宾犬) 流行. 1950s 法国密特朗总统有标准贵宾犬. 1 只 AKC 注册 1500-3000 美元, 表演级 1 万+ 美元. （参见：拉布拉多, 边境牧羊犬, 比熊）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "16 世纪",
+        "title": "德国 Pudel 水猎犬",
+        "body": "16 世纪德国 Pudel (水猎犬, 协助猎人水中捡回猎物), 标准型 + 迷你型 + 玩具型 三大类"
+      },
+      {
+        "year": "17-18 世纪",
+        "title": "法国国犬",
+        "body": "17-18 世纪传入法国成 Caniche (母鸭), 法国国王路易十六 + 玛丽王后均有, 法国国犬地位确立"
+      },
+      {
+        "year": "1887",
+        "title": "AKC 注册",
+        "body": "美国 AKC 1887 注册贵宾犬, 至今 AKC 排名第 5 大流行犬种"
+      },
+      {
+        "year": "1950s",
+        "title": "马戏团 + 表演",
+        "body": "贵宾犬智商 AKC 排名 #2, 训练 + 服从性极高, 1950s 马戏团 + 表演明星"
+      },
+      {
+        "year": "1990s",
+        "title": "低过敏宠物风潮",
+        "body": "1990s 贵宾犬不掉毛 + 低过敏特性, 美国 + 欧洲家庭宠物风潮, 标准型 + 玩具型 + 迷你型三型饲养"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 贵宾犬",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B4%B5%E5%AE%BE%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "AKC Poodle 品种页",
+        "url": "https://www.akc.org/dog-breeds/poodle-standard/",
+        "type": "官方"
+      },
+      {
+        "title": "CKU 中国犬业联盟",
+        "url": "http://www.cku.org.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "soldier-rank",
+    "title": "士兵",
+    "kind": "profession",
+    "subKind": "military",
+    "series": "history-and-figures",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/soldier-rank/soldier-rank-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/soldier-rank/soldier-rank-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/soldier-rank/soldier-rank-full.webp",
+    "score": 7.4,
+    "tags": [
+      "职业",
+      "军事",
+      "现代",
+      "全球",
+      "训练",
+      "国家机器",
+      "团队"
+    ],
+    "tagline": "国家武装力量的基础 + 军衔金字塔的最底层",
+    "subtitle": "职业 · 士兵 · 百科占位",
+    "description": "士兵 是国家武装力量的基础 — 接受军事训练 + 服从指挥 + 保卫国家的职业军人. 现代军队结构分义务兵 (conscript, 1-3 年服役, 中国 + 韩国 + 俄罗斯) + 志愿兵 (volunteer, 美国 + 英国 + 日本 + 法国) + 职业军人 (career). 古希腊城邦公民兵 (500 BC) + 古罗马军团 + 中世纪骑士 + 中国府兵制 (唐) + 现代义务兵役 (法国 1793 革命) + 全志愿兵 (美国 1973). 2024 全球现役军人 2700 万 (中国 200 万 + 印度 145 万 + 美国 130 万 + 朝鲜 130 万 + 俄罗斯 115 万). 军衔分列兵 + 士官 (下士/中士/上士/军士长) + 尉官 (少尉/中尉/上尉) + 校官 (少校/中校/上校) + 将官 (少将/中将/上将/元帅) 6 级. 美军最高五星上将 (George Marshall 1944), 中国 1988 恢复军衔制. （参见：将军, 律师, 记者）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "古希腊",
+        "title": "希腊城邦公民兵",
+        "body": "500 BC 古希腊城邦公民兵, 重装步兵 (Hoplite) 2-3 万, 公民自备武器, 战阵 (phalanx) 决定战争"
+      },
+      {
+        "year": "古罗马",
+        "title": "罗马军团",
+        "body": "前 27 世纪-476 AD 罗马军团, 5000-6000 人军团 (Legion) 5 大队, 20-25 年服役, 退役得土地"
+      },
+      {
+        "year": "公元 702",
+        "title": "唐府兵制",
+        "body": "中国 702 年唐府兵制, 兵农合一, 3 年一拣点, 战时召, 平时务农, 兵 60 万"
+      },
+      {
+        "year": "1793",
+        "title": "法国革命义务兵",
+        "body": "1793 法国革命, 雅各宾派 全面义务兵役 (levée en masse), 首部现代义务兵役, 拿破仑靠此称霸欧洲"
+      },
+      {
+        "year": "1973",
+        "title": "美军全志愿兵",
+        "body": "1973 美国尼克松终止征兵, 全志愿兵 (All-Volunteer Force), 现役 130 万职业军人"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 军衔",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%9B%E8%A1%94",
+        "type": "百科"
+      },
+      {
+        "title": "中国军网",
+        "url": "http://www.81.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "US DoD 国防部",
+        "url": "https://www.defense.gov/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "schipperke",
+    "title": "史奇派克犬",
+    "kind": "pet",
+    "subKind": "dog-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "008",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/schipperke/schipperke-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/schipperke/schipperke-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/schipperke/schipperke-full.webp",
+    "score": 6.5,
+    "tags": [
+      "宠物",
+      "犬种",
+      "现代",
+      "欧洲",
+      "小型",
+      "警觉",
+      "牧羊"
+    ],
+    "tagline": "比利时小船长 + 黑色警觉的运河牧羊犬",
+    "subtitle": "宠物 · 史奇派克犬 · 百科占位",
+    "description": "史奇派克犬 (Schipperke) 是比利时 Schipperke 起源小型牧羊犬, 16-17 世纪布鲁塞尔 + 佛兰德斯 起源, 1885 比利时皇家养犬俱乐部 (Société Royale Saint-Hubert) 首次承认, 1888 美国 AKC 注册. 体型小 (3-9 kg, 22-33 cm), 黑色 (其他颜色 AKC 不接受), 短毛 + 立耳 + 围裙状 (culotte) 后躯长毛, 尾巴天生短或截. 名字 Schipperke 在佛兰德斯语意为 小船长, 19 世纪是比利时运河驳船的看门 + 灭鼠犬. 性格警觉 + 好奇 + 忠诚, 适合看家 + 家庭. 寿命 13-15 年. 1900s 美国流行, 但 2024 全球 AKC 排名 #112 稀少. 容易肥胖 + 髋关节发育不良 + 甲状腺问题. （参见：拉布拉多, 贵宾犬, 边境牧羊犬）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约 16 世纪",
+        "title": "比利时起源",
+        "body": "Schipperke 16-17 世纪比利时布鲁塞尔 + 佛兰德斯, 运河驳船 + 工人家庭 看门 + 灭鼠"
+      },
+      {
+        "year": "1885",
+        "title": "比利时承认",
+        "body": "1885 比利时皇家养犬俱乐部 (Société Royale Saint-Hubert) 首次承认 Schipperke 品种"
+      },
+      {
+        "year": "1888",
+        "title": "美国 AKC 注册",
+        "body": "1888 美国 AKC 注册 Schipperke, 早期称 Spitzke"
+      },
+      {
+        "year": "1929",
+        "title": "断尾禁令",
+        "body": "比利时 1929 立法禁止断尾, 欧洲多数国家跟, 美国仍允许断尾, 至今争议"
+      },
+      {
+        "year": "2024",
+        "title": "AKC 排名 #112",
+        "body": "Schipperke 全球少见, AKC 排名 #112, 比利时国犬之一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 史奇派克犬",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B2%E5%A5%87%E6%B4%BE%E5%85%8B%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "AKC Schipperke",
+        "url": "https://www.akc.org/dog-breeds/schipperke/",
+        "type": "官方"
+      },
+      {
+        "title": "Société Royale Saint-Hubert",
+        "url": "https://www.srsh.be/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "sphynx",
+    "title": "斯芬克斯猫",
+    "kind": "pet",
+    "subKind": "cat-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "009",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/sphynx/sphynx-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/sphynx/sphynx-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/sphynx/sphynx-full.webp",
+    "score": 7.4,
+    "tags": [
+      "宠物",
+      "猫种",
+      "现代",
+      "全球",
+      "无毛",
+      "友善",
+      "稀有"
+    ],
+    "tagline": "加拿大无毛精灵 + 过敏人群的友好伴侣",
+    "subtitle": "宠物 · 斯芬克斯猫 · 百科占位",
+    "description": "斯芬克斯猫 (Sphynx) 是加拿大无毛猫品种, 1966 加拿大 Ontario 一窝家猫自然基因突变 (无毛基因 hr), 1975-1980 育种家培育出稳定品系, 1985 TICA 承认, 2002 CFA 承认. 体型中等 (3-5 kg, 肩高 20-25 cm), 皮肤有细绒毛 (像桃皮), 颜色 30+ 种 (皮肤 + 毛发颜色), 立耳 + 大眼睛 + 八字胡须 (很短). 不是完全无毛, 皮肤有细绒毛. 体温 38-39°C (比有毛猫高 1°C, 因散热快). 性格友善 + 粘人 + 智商高, 适合室内 + 过敏人群 (但不是低过敏, 仍产生 Fel d1 蛋白). 寿命 12-15 年, 易患肥厚性心肌病 (HCM) + 遗传性肌病 + 皮肤问题. 售价 1.5-3 万人民币, 全球种群 < 10 万只. 2008 中国引入, 至今 1 万+ 只. （参见：布偶猫, 暹罗猫, 波斯猫）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1966",
+        "title": "加拿大 Ontario 突变",
+        "body": "1966 加拿大 Ontario 多伦多 一窝家猫自然基因突变, 母猫 Prune 生无毛猫, 命名 Prune"
+      },
+      {
+        "year": "1975-1980",
+        "title": "育种品系建立",
+        "body": "1975 Minnesota 农场再次突变 (无毛猫), 育种家用 Devonshire Rex + Cornish Rex 配, 1980s 稳定品系"
+      },
+      {
+        "year": "1985",
+        "title": "TICA 承认",
+        "body": "1985 TICA (The International Cat Association) 承认 Sphynx 品种"
+      },
+      {
+        "year": "2002",
+        "title": "CFA 承认",
+        "body": "2002 CFA (Cat Fanciers Association) 承认 Sphynx, 至今美国主流猫会接受"
+      },
+      {
+        "year": "2008",
+        "title": "中国引入",
+        "body": "2008 中国引入 Sphynx, 至今 1 万+ 只, 售价 1.5-3 万人民币"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 斯芬克斯猫",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%AF%E8%8A%AC%E5%85%8B%E6%96%AF%E7%8C%AB",
+        "type": "百科"
+      },
+      {
+        "title": "CFA Sphynx",
+        "url": "https://cfa.org/breed/sphynx/",
+        "type": "官方"
+      },
+      {
+        "title": "TICA Sphynx",
+        "url": "https://www.tica.org/breeds/browse-all-breeds?view=article&id=871",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "art-deco",
+    "title": "装饰艺术风格",
+    "kind": "artwork",
+    "subKind": "painting",
+    "series": "atlas-miscellany",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/art-deco/art-deco-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/art-deco/art-deco-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/artwork/art-deco/art-deco-full.webp",
+    "score": 7.8,
+    "tags": [
+      "艺术",
+      "绘画",
+      "现代",
+      "全球",
+      "建筑",
+      "设计",
+      "装饰"
+    ],
+    "tagline": "几何 + 奢华 + 机械的 1920-1940 美学",
+    "subtitle": "艺术品 · 装饰艺术风格 · 百科占位",
+    "description": "装饰艺术 (Art Deco) 是 1920-1940 全球流行的设计风格, 1925 巴黎国际现代工业装饰艺术博览会 (Exposition Internationale des Arts Décoratifs et Industriels Modernes) 命名. 风格特征: 几何 (太阳光芒 + 阶梯形 + 锯齿) + 流线 + 机械美学 + 奢华材料 (镀铬 + 玻璃 + 漆器 + 大理石 + 紫檀). 代表: 纽约 Chrysler 大厦 (1930) + Empire State (1931) + Rockefeller Center (1939), 巴黎 Palais de Chaillot (1937), 上海外滩 Art Deco 建筑群 (1920-1930). 衍生流派: Streamline Moderne (流线现代) + Zigzag Moderne (锯齿) + Bauhaus (包豪斯, 1919 德国). 标志: 古希腊 + 古埃及 + 阿兹特克 + 非洲艺术 融合. 1940 二战后包豪斯 + 极简主义兴起, Art Deco 衰落, 1960s 复兴. 1980s 后现代主义新装饰主义 (Memphis Group) 是 Art Deco 继承. （参见：包豪斯, 极简主义, 紫禁城）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1908",
+        "title": "立体派前夜",
+        "body": "1908 立体派 (Cubism) + 未来派 (Futurism) 兴起, Art Deco 雏形"
+      },
+      {
+        "year": "1925",
+        "title": "巴黎装饰艺术博览会",
+        "body": "1925 巴黎 Exposition Internationale des Arts Décoratifs et Industriels Modernes 命名 Art Deco, 30 国参展"
+      },
+      {
+        "year": "1930",
+        "title": "纽约 Chrysler 大厦",
+        "body": "1930 纽约 Chrysler 大厦 (William Van Alen 设计) 77 层 + 镀铬鹰滴水兽, Art Deco 经典"
+      },
+      {
+        "year": "1937",
+        "title": "巴黎 Chaillot 宫",
+        "body": "1937 巴黎国际博览会 Chaillot 宫 (Carlu + Boileau + Azéma), 装饰艺术成熟"
+      },
+      {
+        "year": "1980s",
+        "title": "新装饰主义复兴",
+        "body": "1980s Memphis Group (意大利 Ettore Sottsass 1981) 新装饰主义复兴, 1990s Y2K 美学继承"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 装饰艺术",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A3%85%E9%A5%B0%E8%89%BA%E6%9C%AF",
+        "type": "百科"
+      },
+      {
+        "title": "MoMA Art Deco 馆藏",
+        "url": "https://www.moma.org/collection/terms/3530",
+        "type": "学术"
+      },
+      {
+        "title": "V&A Art Deco 馆",
+        "url": "https://www.vam.ac.uk/articles/art-deco",
         "type": "学术"
       }
     ]

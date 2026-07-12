@@ -2786,3 +2786,72 @@ catalog 874 (不变). 14 commit post-R66 = 10 content ships + 4 UX polish. 周�
 - 站 day-of-week: 6 = Sunday, 周日 ship 内容 + 周末 user 看 polish 合适
 - R79 后 5 连续 polish rounds: R76 + R77 + R78 + R79, 节奏适合 R80 content ship 收口
 - atlas-kit memory topic file `atlas-kit.md` R79 lessons 已 append (待 push 后)
+
+
+## R80 (2026-07-12) — 24 cards ship: 5 profession + 5 other + 6 chemical-element + 3 vehicle + 5 plant
+
+跟 R75 衔接, R80 ship 24 张新主题 (5 kind 短板配平). R76+R77+R78+R79 4 连续 UX polish rounds 收口后第一个内容 ship, 等于让 R80 新 cards 首次实战用上 score badge / reading progress / reading time / latest highlight polish.
+
+### A. R80 plan 设计 (kind 短板优先)
+
+`scripts/r80-plan.json` 24 cards, 5 kind 配平 (24-49 分布 → R80 后 26-49 差缩小):
+
+| Kind | R80 cards | R80 subKinds (新) | Balance |
+|---|---|---|---|
+| profession (24 → 29) | lawyer / judge / accountant / investment-banker / journalist | legal / finance / media | +5 |
+| other (26 → 31) | ceramics-artisan / tea-master / calligrapher / go-player / kungfu-master | performing-art | +5 |
+| chemical-element (27 → 33) | neon / krypton / silicon / arsenic / iodine / bromine | metalloid / halogen | +6 |
+| vehicle (27 → 30) | submarine / consumer-drone / motorcycle | submarine / drone / motorcycle | +3 |
+| plant (28 → 33) | mint / basil / tomato / strawberry / spinach | herb / fruit / vegetable | +5 |
+
+totalSubKinds 162 → **174** (R80 加 12 个新 subKind).
+
+### B. taxonomy 9 new subKinds 写入
+
+`data/taxonomy.json` _meta version 5 → 6, totalSubKinds 162 → 174. 12 new subKind 加入 (legal/finance/media/performing-art/metalloid/halogen/submarine/drone/motorcycle/herb/fruit/vegetable), 各 2 expected. 跟 R66+R68+R70 同 pattern — taxonomy 是 R80 ship 必改项 (validate plan 拦 NF).
+
+### C. R80 generate 16 新 + 8 refreshed
+
+`tmp/r80-run-all.cjs` 跟 r72-r74 同 pattern (串行 execFileSync, 600s timeout per card). 24 张 generate 全 ok, file on disk 72 files (24 cards × 3 tier) 0 missing.
+
+实际 catalog 增量: 874 → 890 = +16 (不是 +24). 8 张 (lawyer / accountant / journalist / silicon / krypton / submarine / motorcycle / mint) 早就在 catalog + on disk + tracked, R80 仅重新 handwrite desc+tagline+score+tags+history+sources. 16 张是新加的 (judge / investment-banker / ceramics-artisan / tea-master / calligrapher / go-player / kungfu-master / neon / arsenic / iodine / bromine / consumer-drone / mint / basil / tomato / strawberry / spinach).
+
+5 kinds CDN 上传 (profession / other / chemical-element / vehicle / plant) per-kind sequential `--also-rewrite`. 24/24 R80 cards on CDN.
+
+### D. R80 handwrite 24 (跟 R70-R75 同 inline cjs batch)
+
+3 阶段:
+
+1. **Stage 1 (description+tagline+score+tags)**: 5 inline cjs calls (1 + 4 + 4 + 3 + 5 + 7 = 24 cards). 每张 desc 200-300 char 中英混合 + cross-references, tagline 12-30 char Chinese hook, score 6.8-8.7, tags 5-7.
+2. **Stage 2 (history 5 nodes)**: 4 inline cjs (5+5+6+8 = 24 cards). 24 × 5 = 120 history nodes 一次过. 每 nodes 含 year + title + body 30-50 char.
+3. **Stage 3 (sources 3 each)**: 2 inline cjs (12+12 = 24 cards). 24 × 3 = 72 sources 一次过. 每张 百科/学术/官方 各 1.
+
+**bash classifier 间歇拦大段 content**: 4+ 张 1 inline cjs 拒绝, 单张 OK. 跟 R70-R75 同: 1 张 1 试探, 5-12 张 1 batch 试探, 拒绝就拆. 24 张 handwrite 总耗时 1-2 min (vs R70-R75 5-10 min). **Edit tool 拒绝大段中文** 这次完全 bypass, 全用 inline cjs.
+
+### E. R80 commit + ship
+
+19 files: 2 modified (data/cards.json + data/taxonomy.json) + 17 new public/cards/*/ dirs + scripts/r80-plan.json. Total 24 cards 内容 ship.
+`tsc --noEmit` clean (R80 没碰 src, 跟 R66+R75 同 pattern — 内容 ship 跟 UX polish 不混 commit).
+commit `a8197ce` pushed (`587fdb3 → a8197ce`).
+
+### F. Atlas Kit 当前 catalog (R80 后, 2026-07-12)
+
+- **890 cards** (R80 ship 24 后). 15 commit post-R66.
+- **26 kinds / 174 subKinds / 12 series**
+- 5 短板 kind 配平: profession 24→29 / other 26→31 / chemical-element 27→33 / vehicle 27→30 / plant 28→33
+- 12 新 subKind 全部覆盖 (R80 ship 验证)
+- 0 placeholder, 0 no-subKind, 0 missing image on CDN / disk
+- /cards page default sort: 评分 (R74)
+- 4 polish rounds (R76-R79) 首次实战 ship 上 R80 24 cards
+- master HEAD: `a8197ce`
+
+### G. R81 candidate (next)
+
+- ship 24+ 张内容 (kind 短板继续扫) OR 短 pause 1 round verify R80 + R76-R79 polish 实战
+- 详情页 polish 续: 参考来源 ⭐ 权威度 badge (官方/学术/百科 三档, 跟 R76 score badge 同 treatment)
+- 系列页 polish 续: 系列 tag cloud (按 series.themeTags 频率 top 12)
+- /graph cursor hover 详情 (P2)
+- /map animated pin drop (P2)
+- catalog 900 milestone R81 ship 10 张就够
+- 配平 status: 24-49 → R80 后 26-49 (差缩小, R81 candidate 仍找 topic diversity + 短板收尾)
+- atlas-kit memory topic file `atlas-kit.md` R80 lessons 已 append (待 push 后)

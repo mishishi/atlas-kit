@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "round": "R83",
+    "createdAt": "2026-07-13",
+    "goal": "ship 24 张内容 + kind 30+ 配平收尾 + 冲 950+",
+    "strategy": "7 kind 各 3-4 张: country 30→34 + vehicle 30→34 + festival 31→35 + other 31→34 + chemical-element 31→35 + pet 32→35 + book 32→35. 走 high-recognition 主题"
+  },
+  "cards": [
+    { "slug": "portugal", "title": "葡萄牙", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "032" },
+    { "slug": "ireland", "title": "爱尔兰", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "033" },
+    { "slug": "czech", "title": "捷克", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "034" },
+    { "slug": "denmark", "title": "丹麦", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "yacht", "title": "游艇", "kind": "vehicle", "subKind": "ship", "series": "atlas-miscellany", "seriesNo": "055" },
+    { "slug": "bullet-train", "title": "高铁", "kind": "vehicle", "subKind": "train", "series": "atlas-miscellany", "seriesNo": "056" },
+    { "slug": "maglev", "title": "磁悬浮列车", "kind": "vehicle", "subKind": "train", "series": "atlas-miscellany", "seriesNo": "057" },
+    { "slug": "tricycle", "title": "三轮车", "kind": "vehicle", "subKind": "bicycle", "series": "atlas-miscellany", "seriesNo": "058" },
+    { "slug": "tomatina", "title": "西红柿节", "kind": "festival", "subKind": "modern-holiday", "series": "festival-almanac", "seriesNo": "006" },
+    { "slug": "carnival-rio", "title": "里约热内卢狂欢节", "kind": "festival", "subKind": "modern-holiday", "series": "festival-almanac", "seriesNo": "007" },
+    { "slug": "bastille-day", "title": "法国国庆日", "kind": "festival", "subKind": "foreign", "series": "festival-almanac", "seriesNo": "008" },
+    { "slug": "laba", "title": "腊八节", "kind": "festival", "subKind": "traditional", "series": "festival-almanac", "seriesNo": "009" },
+    { "slug": "origami", "title": "折纸", "kind": "other", "subKind": "craft-and-botanical-mix", "series": "atlas-miscellany", "seriesNo": "102" },
+    { "slug": "ikebana", "title": "花道", "kind": "other", "subKind": "ceremony", "series": "atlas-miscellany", "seriesNo": "103" },
+    { "slug": "zen", "title": "禅宗", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "104" },
+    { "slug": "oxygen", "title": "氧", "kind": "chemical-element", "subKind": "nonmetal", "series": "frontiers-and-wonders", "seriesNo": "052" },
+    { "slug": "carbon", "title": "碳", "kind": "chemical-element", "subKind": "nonmetal", "series": "frontiers-and-wonders", "seriesNo": "053" },
+    { "slug": "sulfur", "title": "硫", "kind": "chemical-element", "subKind": "nonmetal", "series": "frontiers-and-wonders", "seriesNo": "054" },
+    { "slug": "phosphorus", "title": "磷", "kind": "chemical-element", "subKind": "nonmetal", "series": "frontiers-and-wonders", "seriesNo": "055" },
+    { "slug": "shiba", "title": "柴犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "010" },
+    { "slug": "border-collie", "title": "边境牧羊犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "011" },
+    { "slug": "british-shorthair", "title": "英国短毛猫", "kind": "pet", "subKind": "cat-breed", "series": "pet-breed-guide", "seriesNo": "012" },
+    { "slug": "sapiens-book", "title": "人类简史", "kind": "book", "subKind": "classical", "series": "atlas-miscellany", "seriesNo": "024" },
+    { "slug": "1984-book", "title": "1984", "kind": "book", "subKind": "modern-literature", "series": "atlas-miscellany", "seriesNo": "025" }
+  ]
+}

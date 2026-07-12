@@ -10078,7 +10078,7 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/border-collie/border-collie-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/border-collie/border-collie-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/border-collie/border-collie-full.webp",
-    "score": 0,
+    "score": 8,
     "tags": [
       "欧洲哺乳",
       "近代工作犬",
@@ -10296,7 +10296,7 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/british-shorthair/british-shorthair-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/british-shorthair/british-shorthair-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/british-shorthair/british-shorthair-full.webp",
-    "score": 0,
+    "score": 7.3,
     "tags": [
       "英伦猫",
       "现代宠物",
@@ -43729,9 +43729,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-full.webp",
     "score": 7.8,
     "tags": [
       "tai-chi",
@@ -53281,7 +53281,7 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ikebana/ikebana-full.webp",
-    "score": 0,
+    "score": 7.2,
     "tags": [
       "other",
       "craft-and-botanical-mix",
@@ -53291,41 +53291,51 @@
     ],
     "tagline": "6 世纪佛前插花, 日本三雅道之一",
     "subtitle": "其他 · 日式插花 (池坊) · 百科占位",
-    "description": "日式插花 (池坊) 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "description": "花道 (Ikebana) 是日本传统插花艺术, 起源 6 世纪中国佛教插花传入日本, 15 世纪池坊 (Ikenobo) 创建, 池坊起源为佛教祭祀用花. 学派: 池坊 (Ikenobo, 最古老) + 小原流 (Ohara, 19 世纪中期丰田) + 生田流 (Sogetsu, 20 世纪初生田孝一创). 学派理念: 天 (主查) + 人 (客查) + 地 (intermediate). 材料: 生锁春枫枫叶 + 玫瑰 + 洋以全各种花木. 学习: 生花 + 倒序 + 纵序 + 平安 + 三世纪. 全球 花道爱好者 5000 万+, 中国 200 万+. （参见：茶道, 拙纸, 禅宗）",
     "createdAt": "2026-07-01",
     "subKind": "craft-and-botanical-mix",
     "history": [
       {
-        "year": "古代",
-        "title": "起源",
-        "body": "「日式插花 (池坊)」相关主题的最早记录散见于古代文献, 具体年代因史料缺乏, 难以追溯到单一来源。"
+        "year": "6 世纪",
+        "title": "佛教传入",
+        "body": "6 世纪中国佛教插花传入日本"
       },
       {
-        "year": "近现代",
-        "title": "正式命名 / 现代化",
-        "body": "进入近现代后, 「日式插花 (池坊)」作为一个独立概念被学术界正式命名。20 世纪的博物馆学和百科全书运动给了它清晰的定义边界。"
+        "year": "15 世纪",
+        "title": "池坊",
+        "body": "15 世纪 池坊 (Ikenobo) 创建 (最古老)"
       },
       {
-        "year": "2026",
-        "title": "图鉴社收录",
-        "body": "2026-07-01 图鉴社正式收录「日式插花 (池坊)」并按 craft-and-botanical-mix 二级分类归档, 加入 atlas 知识网络。"
+        "year": "19 世纪",
+        "title": "小原流",
+        "body": "19 世纪中期 小原流 (Ohara) 创立于丰田"
+      },
+      {
+        "year": "20 世纪",
+        "title": "生田流",
+        "body": "20 世纪初 生田流 (Sogetsu) 创立于生田孝一"
+      },
+      {
+        "year": "2024",
+        "title": "全球 5000 万",
+        "body": "2024 全球花道爱好者 5000 万+, 中国 200 万+"
       }
     ],
     "sources": [
       {
-        "title": "维基百科 · 中文版",
-        "url": "https://zh.wikipedia.org/wiki/%E6%97%A5%E5%BC%8F%E6%8F%92%E8%8A%B1%20(%E6%B1%A0%E5%9D%8A)",
-        "type": "encyclopedia"
+        "title": "WIKI: 花道",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8A%B1%E9%81%93",
+        "type": "百科"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E6%97%A5%E5%BC%8F%E6%8F%92%E8%8A%B1%20(%E6%B1%A0%E5%9D%8A)",
-        "type": "encyclopedia"
+        "title": "池坊 Ikenobo",
+        "url": "https://www.ikenobo.jp/",
+        "type": "官方"
       },
       {
-        "title": "中国大百科全书",
-        "url": "https://www.zgbk.com/",
-        "type": "encyclopedia"
+        "title": "生田流 Sogetsu",
+        "url": "https://www.sogetsu.or.jp/",
+        "type": "官方"
       }
     ]
   },
@@ -68412,6 +68422,1405 @@
       {
         "title": "中国互联网络信息中心 CNNIC",
         "url": "https://www.cnnic.net.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "portugal",
+    "title": "葡萄牙",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/portugal/portugal-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/portugal/portugal-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/portugal/portugal-full.webp",
+    "score": 7.6,
+    "tags": [
+      "国家",
+      "欧洲",
+      "现代",
+      "大航海",
+      "高收入",
+      "文化"
+    ],
+    "tagline": "大航海时代的开创者 + 软木塞与蛋挞的故乡",
+    "subtitle": "国家 · 葡萄牙 · 百科占位",
+    "description": "葡萄牙 是西南欧伊比利亚半岛国家, 面积 9.2 万 km², 人口 1030 万. 1139 葡萄牙王国独立 (Afonso Henriques), 1415 开启大航海时代, 1487 迪亚士到达非洲好望角, 1498 达伽马到达印度, 1500 卡布拉尔发现巴西, 1522 麦哲伦船队首次环球航行. 16 世纪葡萄牙帝国达顶峰, 巴西 + 非洲 + 印度 + 澳门 (1557) + 果阿. 1755 里斯本大地震 (欧洲史上最大, 8.5 级, 死 6 万), 1961-1974 非洲殖民地战争, 1974 康乃馨革命推翻独裁. 现代: 欧盟 (1986) + 欧元区 (1999) + 申根 (1995). 2023 人均 GDP 2.8 万美元. 文化: 法朵 (Fado) 民歌 + 葡式蛋挞 (1837 Belem 起源) + 波特酒 (Porto 杜罗河谷) + 软木塞占全球 50%+. （参见：西班牙, 巴西, 麦哲伦）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1139",
+        "title": "独立",
+        "body": "1139 葡萄牙王国独立 (Afonso Henriques)"
+      },
+      {
+        "year": "1415",
+        "title": "大航海",
+        "body": "1415 开启大航海时代, 赢取摩洛哥海岸"
+      },
+      {
+        "year": "1487",
+        "title": "达伊施",
+        "body": "1487 迪士发现非洲好望角"
+      },
+      {
+        "year": "1498",
+        "title": "达伽马",
+        "body": "1498 达伽马达到印度, 开辟海上丝路"
+      },
+      {
+        "year": "1755",
+        "title": "里斯本大地震",
+        "body": "1755 里斯本 8.5 级大地震, 死 6 万, 重建城"
+      }
+    ],
+    "sources": [
+      {
+        "title": "葡萄牙政府",
+        "url": "https://www.portugal.gov.pt/",
+        "type": "官方"
+      },
+      {
+        "title": "葡萄牙精神",
+        "url": "https://www.visitportugal.com/",
+        "type": "官方"
+      },
+      {
+        "title": "UNESCO 世界遗产",
+        "url": "https://whc.unesco.org/en/statesparties/pt",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "ireland",
+    "title": "爱尔兰",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "033",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/ireland/ireland-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/ireland/ireland-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/ireland/ireland-full.webp",
+    "score": 7.5,
+    "tags": [
+      "国家",
+      "欧洲",
+      "现代",
+      "高收入",
+      "凯尔特",
+      "文化"
+    ],
+    "tagline": "翡翠之岛 + 大饥荒后的凯尔特复兴",
+    "subtitle": "国家 · 爱尔兰 · 百科占位",
+    "description": "爱尔兰 是西欧岛国, 面积 7 万 km², 人口 510 万. 5-12 世纪盖尔人 + 凯尔特文化, 1169 英格兰入侵, 1541 亨利八世改宗后爱尔兰全境归英, 17-18 世纪 Cromwell 征服 + 大饥荒 (1845-1852 土豆枯萎病, 死 100 万 + 移民 200 万, 人口减半). 1916 复活节起义, 1921 爱尔兰自由邦独立 (除北方 6 郡), 1937 宪法独立共和国, 1949 完全脱离英联邦, 1973 加入 EEC (欧共体). 1998 贝尔法斯特协议 北爱和平. 经济: 1990s 凯尔特之虎 (Celtic Tiger) 高速增长 (GDP +9%/年), 2008 金融危机重创, 2023 人均 GDP 10.3 万美元 (全球第 3). 文化: 都柏林 + 三叶草 + 健力士黑啤 (1759) + 圣帕特里克节 (3-17) + U2 + Enya. （参见：英国, 凯尔特, 圣帕特里克）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "5 世纪",
+        "title": "盖尔人",
+        "body": "5-12 世纪盖尔人 + 凯尔特文化位居"
+      },
+      {
+        "year": "1169",
+        "title": "英格兰入侵",
+        "body": "1169 英格兰入侵爱尔兰"
+      },
+      {
+        "year": "1541",
+        "title": "交给英王",
+        "body": "1541 亨利八世改宗后爱尔兰全境归英"
+      },
+      {
+        "year": "1845-1852",
+        "title": "大饥荒",
+        "body": "1845-1852 土豆枯萎病, 死 100 万 + 移民 200 万, 人口减半"
+      },
+      {
+        "year": "1998",
+        "title": "北爱和平",
+        "body": "1998 贝尔法斯特协议 北爱和平"
+      }
+    ],
+    "sources": [
+      {
+        "title": "爱尔兰政府",
+        "url": "https://www.gov.ie/",
+        "type": "官方"
+      },
+      {
+        "title": "爱尔兰旅游局",
+        "url": "https://www.tourismireland.com/",
+        "type": "官方"
+      },
+      {
+        "title": "BBC 爱尔兰",
+        "url": "https://www.bbc.com/news/world/europe/ireland",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "czech",
+    "title": "捷克",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "034",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/czech/czech-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/czech/czech-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/czech/czech-full.webp",
+    "score": 7.4,
+    "tags": [
+      "国家",
+      "欧洲",
+      "现代",
+      "中欧",
+      "文化",
+      "啤酒"
+    ],
+    "tagline": "百塔之城 + 卡夫卡与德沃夏克的故乡",
+    "subtitle": "国家 · 捷克 · 百科占位",
+    "description": "捷克 是中欧内陆国, 面积 7.9 万 km², 人口 1070 万. 5-6 世纪斯拉夫人定居, 9 世纪大摩拉维亚 + 波西米亚公国, 1306 卢森堡王朝, 1419 胡斯战争 (Jan Hus 宗教改革先驱), 1526 哈布斯堡王朝, 1618 三十年战争 (布拉格掷窗事件), 1918 一战后 捷克斯洛伐克独立 (马萨里克 + 贝奈斯), 1938 慕尼黑协定 苏台德割让德国, 1968 布拉格之春 (杜布切克改革被苏联坦克镇压), 1993 天鹅绒分离 (捷克 + 斯洛伐克和平分手), 1999 加入 NATO, 2004 加入 EU, 2007 申根. 文化: 布拉格百塔之城 + 卡夫卡 + 米兰昆德拉 + 德沃夏克 + 斯美塔那 + 啤酒 (人均 188L 全球第 1) + 玻璃工艺 + 布拉格之春国际音乐节. 2023 人均 GDP 2.7 万美元. （参见：斯洛伐克, 卡夫卡, 哈布斯堡）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "5-6 世纪",
+        "title": "斯拉夫人",
+        "body": "5-6 世纪斯拉夫人定居"
+      },
+      {
+        "year": "1306",
+        "title": "卢森堡率",
+        "body": "1306 卢森堡率朝上柏鲁鲊"
+      },
+      {
+        "year": "1419",
+        "title": "胡斯战争",
+        "body": "1419 胡斯战争 (Jan Hus 宗教改革)"
+      },
+      {
+        "year": "1918",
+        "title": "捷克斯洛伐克",
+        "body": "1918 一战后捷克斯洛伐克独立 (马萨里克 + 贝奈斯)"
+      },
+      {
+        "year": "1993",
+        "title": "天缩绽分离",
+        "body": "1993 天缩绽分离 (捷克 + 斯洛伐克和平分手)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "捷克政府",
+        "url": "https://www.vlada.cz/",
+        "type": "官方"
+      },
+      {
+        "title": "CzechTourism",
+        "url": "https://www.czechtourism.com/",
+        "type": "官方"
+      },
+      {
+        "title": "捷克历史博物馆",
+        "url": "https://www.nm.cz/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "denmark",
+    "title": "丹麦",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/denmark/denmark-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/denmark/denmark-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/denmark/denmark-full.webp",
+    "score": 7.7,
+    "tags": [
+      "国家",
+      "欧洲",
+      "北欧",
+      "现代",
+      "高福利",
+      "风能"
+    ],
+    "tagline": "维京故土 + LEGO 积木 + 福利国家典范",
+    "subtitle": "国家 · 丹麦 · 百科占位",
+    "description": "丹麦 是北欧 5 国之一, 面积 4.3 万 km² (含格陵兰 216 万), 人口 580 万 (含法罗群岛 5.4 万). 9-10 世纪维京人统一丹麦, 1397 卡尔马联合 (含瑞典 + 挪威), 1536 路德宗新教, 16-19 世纪丹麦帝国 (挪威 + 法罗 + 冰岛 + 瑞典南部 30%), 1864 普丹战争 失去石勒苏益格 + 荷尔斯泰因, 1918 冰岛独立, 1940 纳粹 5 小时闪电战, 1949 NATO 创始, 1973 加入 EEC, 2000 废除 EC. 经济: 养猪 3000 万头 (人均 5 头, 培根 + 火腿占出口 5%) + 风能占电力 50% (世界最高) + LEGO 1932 (全球 70 亿年 80% 玩具积木) + Novo Nordisk 糖尿病药 + Maersk 航运. 福利: 高税收 + 免费教育 + 免费医疗 + 父母带薪产假 52 周. 2023 人均 GDP 6.8 万美元. （参见：瑞典, 挪威, LEGO）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "9-10 世纪",
+        "title": "维京人",
+        "body": "9-10 世纪维京人统一丹麦"
+      },
+      {
+        "year": "1397",
+        "title": "卡尔马",
+        "body": "1397 卡尔马联合 (含瑞典 + 挪威)"
+      },
+      {
+        "year": "1864",
+        "title": "普丹战争",
+        "body": "1864 普丹战争 失去石勒苏渤格 + 荷尔斯泰因"
+      },
+      {
+        "year": "1940",
+        "title": "纳籍 5 小时",
+        "body": "1940 纳籍 5 小时闪电战占领丹麦"
+      },
+      {
+        "year": "1932",
+        "title": "LEGO",
+        "body": "1932 丹麦 Ole Kirk Christiansen 创立 LEGO"
+      }
+    ],
+    "sources": [
+      {
+        "title": "丹麦政府",
+        "url": "https://www.regeringen.dk/",
+        "type": "官方"
+      },
+      {
+        "title": "VisitDenmark",
+        "url": "https://www.visitdenmark.com/",
+        "type": "官方"
+      },
+      {
+        "title": "LEGO Group",
+        "url": "https://www.lego.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "yacht",
+    "title": "游艇",
+    "kind": "vehicle",
+    "subKind": "ship",
+    "series": "atlas-miscellany",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/yacht/yacht-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/yacht/yacht-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/yacht/yacht-full.webp",
+    "score": 6.8,
+    "tags": [
+      "载具",
+      "船舶",
+      "现代",
+      "全球",
+      "奢华",
+      "航海",
+      "休闲"
+    ],
+    "tagline": "亿万富翁的海上宫殿 + 自由与奢华的极致",
+    "subtitle": "交通工具 · 游艇 · 百科占位",
+    "description": "游艇 是私人休闲船, 分类: 帆船 (Sailing Yacht, 风驱动) + 机动船 (Motor Yacht, 引擎驱动). 1843 荷兰建造第一艘蒸汽机动游艇, 1860s 美国南北战争富人 (Vanderbilt + Morgan) 订制大型游艇, 20 世纪游艇俱乐部 (Yacht Club) 兴起, 1962 Sydney Hobart Yacht Race (世界顶级), 2024 全球 10000+ 艘大型游艇 (>24m). 顶级游艇长度 50-180 m, 价格 5000 万 - 20 亿美元, 每年运营成本 10% 船价. 著名: 迪拜 Azzam (180 m, 2013, 6 亿美元) + Eclipse (163 m, 2009, Abramovich) + Dilbar (156 m, 2016, Usmanov). 中国 2010s 兴起, 2024 三亚 + 青岛 + 上海 4 大游艇码头. 法规: IMO 商业游艇标准 + 美国 USCG + 欧洲 RCD. （参见：渡轮, 帆船, 潜艇）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1843",
+        "title": "漢个迪船",
+        "body": "1843 荷兰建造第一艘蒸汽机动游艇"
+      },
+      {
+        "year": "1860s",
+        "title": "美国富人",
+        "body": "1860s 美国南北战争富人 (Vanderbilt + Morgan) 订制大型游艇"
+      },
+      {
+        "year": "1962",
+        "title": "赛艇俱乐部",
+        "body": "1962 Sydney Hobart Yacht Race 创始, 世界顶级"
+      },
+      {
+        "year": "2009",
+        "title": "Eclipse",
+        "body": "2009 Eclipse (163 m, Abramovich)"
+      },
+      {
+        "year": "2013",
+        "title": "Azzam",
+        "body": "2013 Azzam (180 m, 迪拜 6 亿美元, 世界最大)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 游艇",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%B8%E8%89%87",
+        "type": "百科"
+      },
+      {
+        "title": "SYBA 中国游艇会",
+        "url": "http://www.syba.org.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "World Superyacht Awards",
+        "url": "https://www.worldsuperyachtawards.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "bullet-train",
+    "title": "高铁",
+    "kind": "vehicle",
+    "subKind": "train",
+    "series": "atlas-miscellany",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/bullet-train/bullet-train-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/bullet-train/bullet-train-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/bullet-train/bullet-train-full.webp",
+    "score": 8.4,
+    "tags": [
+      "载具",
+      "火车",
+      "现代",
+      "全球",
+      "高铁",
+      "中国",
+      "基建"
+    ],
+    "tagline": "新干线 60 年 0 重大事故 + 中国 4.8 万 km 网络",
+    "subtitle": "交通工具 · 高铁 · 百科占位",
+    "description": "高铁 (高速铁路) 是设计速度 250+ km/h 的客运铁路, 1964 日本新干线 (Shinkansen) 0 系开通 东海道新干线 (东京 ↔ 大阪 515 km, 2h30min), 世界第一条商业运营高铁, 至今 60 年 0 重大事故 (6 千万 + 旅客 0 死亡). 法国 TGV (1981, 巴黎 ↔ 里昂), 德国 ICE (1991), 西班牙 AVE (1992), 意大利 Frecciarossa, 中国 CRH (2008, 引进 + 自主). 2024 全球高铁 6 万 km, 中国 4.8 万 km 占 80% (世界最长, 2017 京沪 1318 km 中国速度 350 km/h 全球最快). 复兴号 CR400AF/BF 2017 自主研发, 设计 400 km/h 试验 486 km/h. 中国高铁出海: 雅万高铁 (印尼 2023) + 中老铁路 (老挝 2021) + 麦麦高铁 (沙特 2018) + 匈塞铁路 (塞尔维亚). 优势: 速度 (3 倍汽车) + 节能 (60% 飞机) + 安全 (低死亡 90%) + 准点 (99%) + 容量 (双线 8 万 /日). （参见：新干线, 磁悬浮, 复兴号）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1964",
+        "title": "新干线",
+        "body": "1964 日本新干线 0 系开通 东海道新干线 (东京 ↔ 大阥 515 km, 2h30min)"
+      },
+      {
+        "year": "1981",
+        "title": "TGV",
+        "body": "1981 法国 TGV 首次运营"
+      },
+      {
+        "year": "1991",
+        "title": "ICE",
+        "body": "1991 德国 ICE"
+      },
+      {
+        "year": "2008",
+        "title": "中国 CRH",
+        "body": "2008 中国 CRH 引进 + 自主"
+      },
+      {
+        "year": "2024",
+        "title": "中国 4.8 万 km",
+        "body": "2024 全球高铁 6 万 km, 中国 4.8 万 km 占 80%, 2017 京沪 350 km/h"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 高速铁路",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E9%80%9F%E9%93%81%E8%B7%AF",
+        "type": "百科"
+      },
+      {
+        "title": "UIC 国际铁路联合",
+        "url": "https://uic.org/",
+        "type": "官方"
+      },
+      {
+        "title": "中国铁路总公司",
+        "url": "http://www.china-railway.com.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "maglev",
+    "title": "磁悬浮列车",
+    "kind": "vehicle",
+    "subKind": "train",
+    "series": "atlas-miscellany",
+    "seriesNo": "057",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/maglev/maglev-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/maglev/maglev-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/maglev/maglev-full.webp",
+    "score": 7.5,
+    "tags": [
+      "载具",
+      "火车",
+      "现代",
+      "全球",
+      "磁悬浮",
+      "前沿",
+      "环保"
+    ],
+    "tagline": "悬浮的无摩擦列车 + 未来 1000 km/h 真空管的种子",
+    "subtitle": "交通工具 · 磁悬浮列车 · 百科占位",
+    "description": "磁悬浮列车 (Maglev) 是利用电磁力悬浮 + 直线电机驱动的无接触列车, 1934 德国 Hermann Kemper 申请专利, 1966 美国 James Powell + Gordon Danby 申请超导磁悬浮专利, 1984 英国伯明翰低速磁悬浮 (世界首条商业运营, 600m, 已退役), 2003 中国上海磁悬浮 (Transrapid, 30 km, 430 km/h, 浦东机场 ↔ 地铁龙阳路 7 min 431 km/h 纪录), 2005 日本 JR 磁悬浮 (中央新干线, 2027 东京 ↔ 大阪 67 min 500 km/h). 原理: EMS (电磁吸力, 常导, 上海) + EDS (电动斥力, 超导, 日本). 优势: 无摩擦 (700+ km/h) + 安静 + 环保 + 维护低. 缺点: 造价高 (1.5 倍高铁) + 路径刚性 (不兼容既有网). 2024 全球商业运营 4 条 (上海 + 长沙 + 仁川 + 名古屋), 总 < 100 km. 未来: Hyperloop One / HyperloopTT (真空管, 1200 km/h). （参见：新干线, 高铁, 复兴号）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1934",
+        "title": "Kemper 专利",
+        "body": "1934 德国 Hermann Kemper 申请磁悬浮专利"
+      },
+      {
+        "year": "1966",
+        "title": "超导磁悬浮",
+        "body": "1966 美国 James Powell + Gordon Danby 申请超导磁悬浮专利"
+      },
+      {
+        "year": "1984",
+        "title": "伯明翁",
+        "body": "1984 伯明翁低速磁悬浮 (600m, 已退役)"
+      },
+      {
+        "year": "2003",
+        "title": "上海",
+        "body": "2003 上海磁悬浮 Transrapid (30 km, 430 km/h, 浦东机场 ↔ 龙阳路 7 min)"
+      },
+      {
+        "year": "2027",
+        "title": "中央新干线",
+        "body": "2027 日本 JR 中央新干线 (东京 ↔ 大阥 67 min 500 km/h)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 磁悬浮列车",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A3%81%E6%82%AC%E6%B5%AE%E5%88%97%E8%BD%A6",
+        "type": "百科"
+      },
+      {
+        "title": "JR Central 中央新干线",
+        "url": "https://www.jreast.co.jp/chuo-shinkansen/",
+        "type": "官方"
+      },
+      {
+        "title": "Transrapid 上海磁悬浮",
+        "url": "https://www.smtdc.com/en/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tricycle",
+    "title": "三轮车",
+    "kind": "vehicle",
+    "subKind": "bicycle",
+    "series": "atlas-miscellany",
+    "seriesNo": "058",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/tricycle/tricycle-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/tricycle/tricycle-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/tricycle/tricycle-full.webp",
+    "score": 6.4,
+    "tags": [
+      "载具",
+      "自行车",
+      "现代",
+      "全球",
+      "三轮",
+      "载货",
+      "城乡"
+    ],
+    "tagline": "从 1680 康熙年间到 21 世纪城乡的万能车",
+    "subtitle": "交通工具 · 三轮车 · 百科占位",
+    "description": "三轮车 (Tricycle) 是三轮驱动的载具, 1680 中国康熙年间 黄履庄发明, 1770 法国尼古拉·塞洛 改进人力三轮, 1818 德国 Karl Drais 三轮, 1884 英国 Starley 三轮安全自行车. 三轮分: 人力三轮 (cargo trike) + 机动三轮 (auto rickshaw) + 残疾人三轮 + 儿童三轮. 中国机动三轮 (俗称 三蹦子) 1950s 普及农村, 1990s 电瓶三轮车, 2024 中国年产 300 万+ 辆, 农村 + 城乡接驳主流. 印度 auto rickshaw (Bajaj + Piaggio 三蹦子) 1956 普及, 2024 印度 1000 万+ 辆, 城市 taxi 主力. 儿童三轮: 1880 美国 Pope 推出, 至今畅销. 货运三轮 (cargo bike) 2000s 欧洲流行, 阿姆斯特丹 80% 货运用 cargo bike. 中国机动三轮 2020s 因环保 (柴油) + 城市管理 (影响交通) 部分城市限禁, 农村仍主流. （参见：自行车, 汽车, 摩托车）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1680",
+        "title": "黄履庄",
+        "body": "1680 中国康熗年间 黄履庄发明三轮车"
+      },
+      {
+        "year": "1770",
+        "title": "塔塔小三轮",
+        "body": "1770 法国尼古拉 · 塞洛 改进人力三轮"
+      },
+      {
+        "year": "1884",
+        "title": "三轮安全",
+        "body": "1884 英国 Starley 三轮安全自行车"
+      },
+      {
+        "year": "1950s",
+        "title": "中国农村",
+        "body": "1950s 中国农村机动三轮 (3 蹽子) 普及"
+      },
+      {
+        "year": "2000s",
+        "title": "欧洲 cargo bike",
+        "body": "2000s 欧洲 cargo bike 货运三轮流行, 阿姆斯特丹 80% 货运"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 三轮车",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%89%E8%BD%AE%E8%BD%A6",
+        "type": "百科"
+      },
+      {
+        "title": "Bajaj Auto",
+        "url": "https://www.bajajauto.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Piaggio 集团",
+        "url": "https://www.piaggio.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tomatina",
+    "title": "西红柿节",
+    "kind": "festival",
+    "subKind": "modern-holiday",
+    "series": "festival-almanac",
+    "seriesNo": "006",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/tomatina/tomatina-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/tomatina/tomatina-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/tomatina/tomatina-full.webp",
+    "score": 6.7,
+    "tags": [
+      "节日",
+      "现代",
+      "西班牙",
+      "巴伦西亚",
+      "国际",
+      "番茄",
+      "街头"
+    ],
+    "tagline": "西班牙番茄大战 + 1 小时 1 吨番茄漫天飞舞",
+    "subtitle": "节日 · 西红柿节 · 百科占位",
+    "description": "西红柿节 (La Tomatina) 是西班牙巴伦西亚自治区 Bunol 镇 番茄大战节, 1945 起源 (一说 1944), 当地青年在街头互扔番茄宣泄情绪, 1950 警察禁办, 1957 警方因民众请愿 (包含神父) 重新批准, 1975 改成年度官方节. 1980s 已成为国际知名节庆, 2013 人数达 5 万 (小镇人口 1 万), 主办方 2014 起售票 (10-15 欧元). 2019 主办方取消因过度拥挤, 2022 重新举办. 规则: 1 吨番茄卡车 11 点入场, 鸣枪开战, 1 小时结束, 参与者穿白 T 恤 (染色), 戴护目镜. 习俗: 投掷番茄 + 倒立喝酒 + 在番茄河里游泳. 西红柿产自 Extremadura, 是不能卖的次等果. 类似: 美国 La Tomatina (佛州), 意大利 Calcio Storico Fiorentino (历史 16 世纪). 中国 2010s 引入多个番茄节 (山东 + 山西 + 河南), 但规模和原版差距大. （参见：里约狂欢节, 法国国庆日, 圣帕特里克节）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1945",
+        "title": "起源",
+        "body": "1945 西班牙 Bunol 镇青年街头互抛番茄, 源于表演戲原型"
+      },
+      {
+        "year": "1950",
+        "title": "警禁",
+        "body": "1950 警方禁办, 争议争"
+      },
+      {
+        "year": "1957",
+        "title": "重启",
+        "body": "1957 民众请愿 (542 人含神父) 重启"
+      },
+      {
+        "year": "1975",
+        "title": "官方",
+        "body": "1975 改成年度官方节"
+      },
+      {
+        "year": "2014",
+        "title": "售票",
+        "body": "2014 售票 (10-15 欧元) 贴住人数过剩"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 西红柿节",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E7%BA%A2%E6%9E%9C%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "La Tomatina 官网",
+        "url": "https://www.latomatina.es/",
+        "type": "官方"
+      },
+      {
+        "title": "Bunol 镇",
+        "url": "https://www.bunol.es/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "carnival-rio",
+    "title": "里约热内卢狂欢节",
+    "kind": "festival",
+    "subKind": "modern-holiday",
+    "series": "festival-almanac",
+    "seriesNo": "007",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/carnival-rio/carnival-rio-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/carnival-rio/carnival-rio-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/carnival-rio/carnival-rio-full.webp",
+    "score": 7.6,
+    "tags": [
+      "节日",
+      "现代",
+      "巴西",
+      "里约",
+      "国际",
+      "桑巴",
+      "狂欢"
+    ],
+    "tagline": "巴西 5 天 5 夜桑巴狂欢 + 200 万人不眠之夜",
+    "subtitle": "节日 · 里约热内卢狂欢节 · 百科占位",
+    "description": "里约热内卢狂欢节 (Carnaval do Rio) 是巴西里约热内卢一年一度盛大狂欢节, 起源 1723 葡萄牙引入, 19 世纪欧洲移民影响形成, 1940s 现代桑巴学校 (Escola de Samba) 体系, 1984 第一届 Sambadrome 桑巴大道 (里约 Sambódromo 700 m 跑道). 每年 2-3 月 (天主教大斋节前 40 天), 5 天 5 夜不眠不休, 2019 年 200 万人参与. 主要内容: 桑巴学校巡游 (12-14 所顶级学校, 3000-5000 人/校, 90 分钟/校, 评奖 + 总冠军), 街头狂欢 (blocos), 选美 (Rainha da Bateria 鼓后), 化装舞会 (Baile de Gala). 顶级桑巴学校: Mangueira + Portela + Beija-Flor + Salgueiro + Vila Isabel + Imperatriz. 文化: 巴西非洲奴隶 + 葡萄牙 + 印第安融合. 服装: 5-10 公斤羽毛 + 亮片 + 刺绣, 单套 1-100 万人民币. 中国 2010s 引入 (上海 + 北京), 2024 中国桑巴学校联盟. （参见：里约热内卢, 桑巴, 巴伦西亚番茄节）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1723",
+        "title": "葡萄牙引入",
+        "body": "1723 葡萄牙引入狂欢节"
+      },
+      {
+        "year": "19 世纪",
+        "title": "现代形成",
+        "body": "19 世纪欧洲移民影响现代形成"
+      },
+      {
+        "year": "1940s",
+        "title": "桑巴学校",
+        "body": "1940s 现代桑巴学校 (Escola de Samba) 体系"
+      },
+      {
+        "year": "1984",
+        "title": "Sambadrome",
+        "body": "1984 Sambadrome 桑巴大道开通 (700 m 跑道)"
+      },
+      {
+        "year": "2019",
+        "title": "200 万人",
+        "body": "2019 里约狂欢节 200 万人参与"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 里约狂欢节",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%8C%E7%BA%A6%E7%8B%82%E6%AC%A2%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "Carnaval do Rio 官网",
+        "url": "https://www.rio-carnival.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Liga Independente das Escolas de Samba",
+        "url": "https://liesa.globo.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "bastille-day",
+    "title": "法国国庆日",
+    "kind": "festival",
+    "subKind": "foreign",
+    "series": "festival-almanac",
+    "seriesNo": "008",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/bastille-day/bastille-day-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/bastille-day/bastille-day-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/bastille-day/bastille-day-full.webp",
+    "score": 7.4,
+    "tags": [
+      "节日",
+      "现代",
+      "法国",
+      "巴黎",
+      "国庆",
+      "革命"
+    ],
+    "tagline": "1789 巴士底日 + 巴黎香街阅兵与烟花",
+    "subtitle": "节日 · 法国国庆日 · 百科占位",
+    "description": "法国国庆日 7月14日, 纪念1789年巴士底日. 1880 法国立法. 庆祝: 巴黎香街阅兵+烟花. （参见：法国大革命, 拿破仑）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1789",
+        "title": "巴士底日",
+        "body": "1789 巴士底状 (巴黎皇家监狱) 被攻陷, 法国大革命开始"
+      },
+      {
+        "year": "1790",
+        "title": "联邦节",
+        "body": "1790 联邦节 (合并三个状幢)"
+      },
+      {
+        "year": "1880",
+        "title": "定为国庆",
+        "body": "1880 法国第三共和国立法定 7月14日为国庆日"
+      },
+      {
+        "year": "1880-",
+        "title": "阅兵",
+        "body": "1880- 巴黎香街阅兵, 欧洲最大"
+      },
+      {
+        "year": "2014-",
+        "title": "安全与烟花",
+        "body": "2014- 反恐难安全 + 香街烟花"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 法国国庆日",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%95%E5%9B%BD%E5%9B%BD%E5%BA%86%E6%97%A5",
+        "type": "百科"
+      },
+      {
+        "title": "法国政府 官方",
+        "url": "https://www.gouvernement.fr/14-juillet",
+        "type": "官方"
+      },
+      {
+        "title": "香街阅兵",
+        "url": "https://www.defense.gouv.fr/operations/bastille-day",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "laba",
+    "title": "腊八节",
+    "kind": "festival",
+    "subKind": "traditional",
+    "series": "festival-almanac",
+    "seriesNo": "009",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/laba/laba-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/laba/laba-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/laba/laba-full.webp",
+    "score": 7,
+    "tags": [
+      "节日",
+      "传统",
+      "中国",
+      "佛教",
+      "农业",
+      "民俗"
+    ],
+    "tagline": "腊初八 + 一碗八宝粉的千年传统",
+    "subtitle": "节日 · 腊八节 · 百科占位",
+    "description": "腊八节 是中国农历十二月初八, 起源于先秋蜡祭. 释迪诺佛 12-8 成道日, 佛教传入后腊八 = 佛祖成道节. 习俗: 腊八粉糊 (糯米+红豆+红枣+桂圆+莲子+花生+核桃+薇米) + 腊八蒙 + 腊八面. 传说: 岳家军百姓送粉糊, 朱元璋鼠洞刨米煮粉糊度荒. 2024 中国 24节气外最大民俗节日. （参见：春节, 端午, 寒食节）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "先秋",
+        "title": "蜡祭起源",
+        "body": "先秋 蜡祭 (年终祭祀祖先 + 农神)"
+      },
+      {
+        "year": "1 世纪",
+        "title": "佛教传入",
+        "body": "1 世纪 佛教传入中国, 腊八 = 佛祖成道节"
+      },
+      {
+        "year": "宋",
+        "title": "七宝五味粉",
+        "body": "宋代 七宝五味粉 (8 种) 施众"
+      },
+      {
+        "year": "1368-1644",
+        "title": "粉糊主食",
+        "body": "明清 腊八粉糊主食, 腊八蒙 + 腊八面 + 腊八豆腐 起源"
+      },
+      {
+        "year": "2024",
+        "title": "最大民俗",
+        "body": "2024 中国 24 节气外最大民俗节日"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 腊八节",
+        "url": "https://zh.wikipedia.org/wiki/%E8%85%8A%E5%85%AB%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "中国民俗学会",
+        "url": "https://www.chinesefolklore.org/",
+        "type": "学术"
+      },
+      {
+        "title": "佛教华严经典",
+        "url": "https://www.fjdhw.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "origami",
+    "title": "折纸",
+    "kind": "other",
+    "subKind": "craft-and-botanical-mix",
+    "series": "atlas-miscellany",
+    "seriesNo": "102",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami/origami-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami/origami-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami/origami-full.webp",
+    "score": 7.4,
+    "tags": [
+      "传统",
+      "工艺",
+      "日本",
+      "东亚",
+      "数学",
+      "艺术",
+      "手作"
+    ],
+    "tagline": "方形纸上的几何魔法 + 千年东方手艺",
+    "subtitle": "其他 · 折纸 · 百科占位",
+    "description": "折纸 (Origami) 是日本传统纸艺, 起源于中国 1-2 世纪东汉 蔡伦造纸后, 6-7 世纪佛教僧侣传至日本, 平安时代 折鹤 (Orizuru) 用于仪式, 1797 世界上第一本折纸书《千羽鹤之图》出版, 1950s 日本 阿部一朗 Akira Yoshizawa 现代折纸之父 + 吉泽章 国际折纸协会成立. 现代分: 传统折纸 (单一方形纸) + 模块化折纸 (多张组合) + 湿折法 (湿纸塑形) + 复合折纸 + 几何折纸 + 抽象折纸. 2024 全球折纸人口 5000 万+, 中国 1000 万+ (校园 + 老年活动中心普及). 应用: 工程 (卫星太阳能板 + 心脏支架) + 医学 (微型机器人) + 包装 (缓冲结构) + 教育 (STEAM 几何 + 空间感). 著名: 千羽鹤 (千只纸鹤许愿, 广岛 1945 + 25 个奥运后援 + 中国汶川地震). 顶级折纸家: 神谷哲史 (Satoshi Kamiya, 18 小时 1 只 龙, 3 米高 长颈鹿). （参见：剪纸, 风筝, 樱花）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1-2 世纪",
+        "title": "中国起源",
+        "body": "1-2 世纪东汉 蔡伦造纸后, 6-7 世纪佛教传入日本"
+      },
+      {
+        "year": "1797",
+        "title": "第一本折纸书",
+        "body": "1797 世界上第一本折纸书《千羽鹤之图》出版"
+      },
+      {
+        "year": "1950s",
+        "title": "吉泽章",
+        "body": "1950s 日本 吉泽章 (Akira Yoshizawa) 现代折纸之父, 1958 国际折纸协会成立"
+      },
+      {
+        "year": "1945",
+        "title": "广岛千羽鹤",
+        "body": "1945 广岛原子弹小女子萨贤美 持续 8 月折千羽鹤 、 千广岛主票, 后世家住 60 年"
+      },
+      {
+        "year": "2010s",
+        "title": "工程应用",
+        "body": "2010s 工程应用 · 微型机器人 + 心脑支架 · 差化叠层太阳能板"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 折纸",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8A%98%E7%BA%B8",
+        "type": "百科"
+      },
+      {
+        "title": "日本折纸博物馆",
+        "url": "https://origami-oa.org/",
+        "type": "官方"
+      },
+      {
+        "title": "全球折纸中心",
+        "url": "https://www.origami-center.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "zen",
+    "title": "禅宗",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "104",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/zen/zen-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/zen/zen-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/zen/zen-full.webp",
+    "score": 8.2,
+    "tags": [
+      "传统",
+      "佛教",
+      "中国",
+      "日本",
+      "东亚",
+      "哲学",
+      "修行"
+    ],
+    "tagline": "不立文字 + 直指人心的东方智慧",
+    "subtitle": "其他 · 禅宗 · 百科占位",
+    "description": "禅宗 (Zen) 是佛教中国化宗派之一, 起源于 6 世纪印度 菩提达摩 (Bodhidharma) 少林寺面壁 9 年, 6 世纪中国南宗 (慧能 638-713) + 北宗 (神秀) 二分, 9 世纪北宗衰, 12-13 世纪 日本荣西 (1141) + 道元 (1200) + 忽必吉 (1233) 三传, 改名 禅 (zen, 梵 dhyana 简化). 禅宗核心: 不立文字 + 直指人心 + 见性成佛 + 公案 (Koan) + 棒喝. 修法: 坐禅 (Zazen, 双盘 + 单盘 + 自然盘) + 参话头 (看念佛是谁) + 公案 (赵州无 + 狗子有佛性) + 默照. 流派: 临济 (Rinzai, 公案为主) + 曹洞 (Soto, 默照为主) + 黄檗 (Obaku). 文化: 茶道 + 花道 + 剑道 + 武士道 + 枯山水 + 侘寂美学 + 寺庭 + 禅语书法. 西方影响: 1950s 禅 (Alan Watts) + 1960s 反文化 + Steve Jobs 苹果. 中国 1949 后衰落, 1980s 复兴. 2024 全球禅修中心 500+ 家. （参见：佛教, 茶道, 少林寺）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "6 世纪",
+        "title": "菩提达摩",
+        "body": "6 世纪印度 菩提达摩 (Bodhidharma) 少林寺面壁 9 年"
+      },
+      {
+        "year": "6 世纪",
+        "title": "南北二宗",
+        "body": "6 世纪中国南宗 (慧能 638-713) + 北宗 (神秀) 二分"
+      },
+      {
+        "year": "12-13 世纪",
+        "title": "传日本",
+        "body": "12-13 世纪 荣西 (1141) + 道元 (1200) + 忽必吉 (1233) 三传日本, 改名禅 (zen)"
+      },
+      {
+        "year": "1950s",
+        "title": "西方传播",
+        "body": "1950s Alan Watts 《禅》 传播西方, 1960s 反文化 + Steve Jobs 苹果"
+      },
+      {
+        "year": "2024",
+        "title": "全球众多",
+        "body": "2024 全球禅修中心 500+ 家, 民众化复兴"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 禅宗",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A6%85%E5%AE%97",
+        "type": "百科"
+      },
+      {
+        "title": "日本禅学",
+        "url": "https://www.zenbunka.or.jp/",
+        "type": "官方"
+      },
+      {
+        "title": "SZSL 日本临济宗全国禅学协会",
+        "url": "https://www.sotozen.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "sulfur",
+    "title": "硫",
+    "kind": "chemical-element",
+    "subKind": "nonmetal",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/sulfur/sulfur-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/sulfur/sulfur-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/sulfur/sulfur-full.webp",
+    "score": 6.7,
+    "tags": [
+      "元素",
+      "非金属",
+      "古代",
+      "现代",
+      "工业",
+      "化工"
+    ],
+    "tagline": "黄色硫磺 + 硫酸与橡胶硫化",
+    "subtitle": "化学元素 · 硫 · 百科占位",
+    "description": "硫 (S, Sulfur) 原子序数 16, 元素周期表 16 族 (氧族), 俗称硫磺, 沸点 444.6 °C, 熔点 115.2 °C, 黄色脆性固体, 古希腊 + 罗马 + 中国 都熟知. 1844 法国 Frémy 制出纯硫, 1891 美国 Herman Frasch 发明 Frasch 工艺 (过热水注入地下 300 m 硫矿床, 熔化硫, 压缩空气吹出地表, 至今占全球 30% 产). 2024 全球年产硫 7000 万吨, 中国 1800 万吨 (最大产). 主要用途: 硫酸 (硫酸占硫消费 85%, 用于化肥 + 石油 + 化工) + 橡胶硫化 (轮胎 + 工业橡胶, 1839 Goodyear 发现) + 制药 + 火药 (黑火药 75% 硝石 + 10% 硫 + 15% 木炭) + 二硫化碳 (CS2 溶剂) + 食品防腐 (E220). 中国贵州瓮福 + 广东云浮 + 山东金矿硫铁矿. 硫醇 (R-SH) 极臭 (1 ppt 可闻, 煤气 + 狐臭主因), 1990s 除臭剂. 硫化物 SO2 致酸雨 (伦敦雾 1952 死 1.2 万), 中国 2000s 脱硫. （参见：碳, 氧, 磷）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "古希腊",
+        "title": "希腊古名",
+        "body": "古希腊 + 罗马 + 中国古代都熟知硫黄"
+      },
+      {
+        "year": "1844",
+        "title": "Frémy",
+        "body": "1844 法国 Frémy 制出纯硫"
+      },
+      {
+        "year": "1891",
+        "title": "Frasch",
+        "body": "1891 美国 Herman Frasch 发明 Frasch 工艺, 过热水注入地下 300 m 硫矿床"
+      },
+      {
+        "year": "1839",
+        "title": "橡胶硫化",
+        "body": "1839 Goodyear 发现橡胶硫化, 轮胎与工业橡胶"
+      },
+      {
+        "year": "2024",
+        "title": "中国 1800 万",
+        "body": "2024 中国 1800 万吨, 世界最大产, 贵州瓦福 + 广东云浮"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 硫",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A1%AB",
+        "type": "百科"
+      },
+      {
+        "title": "RSC: Sulfur",
+        "url": "https://www.rsc.org/periodic-table/element/16/sulfur",
+        "type": "学术"
+      },
+      {
+        "title": "WebElements Sulfur",
+        "url": "https://www.webelements.com/sulfur/",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "phosphorus",
+    "title": "磷",
+    "kind": "chemical-element",
+    "subKind": "nonmetal",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/phosphorus/phosphorus-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/phosphorus/phosphorus-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/phosphorus/phosphorus-full.webp",
+    "score": 6.8,
+    "tags": [
+      "元素",
+      "非金属",
+      "现代",
+      "全球",
+      "农业",
+      "化工",
+      "半导体"
+    ],
+    "tagline": "光 + 携带 + 1669 德国炼金术士的发现",
+    "subtitle": "化学元素 · 磷 · 百科占位",
+    "description": "磷 (P, Phosphorus) 原子序数 15, 元素周期表 15 族 (氮族), 1669 德国 Hennig Brand 炼金术士 从尿液中首次分离 (希腊 phos 光 + phoros 携带), 白色蜡状 + 剧毒 + 黑暗中发光 (化学发光). 同素异形体: 白磷 (P4 分子, 30 °C 自燃, 30 万吨/年中国产, 早期火柴用, 现禁) + 红磷 (聚合, 安全) + 黑磷 (层状, 半导体, 2014 中国造出). 主要用途: 化肥 (磷矿 80% 产, 磷酸钙 + 磷酸二铵) + 火柴 (红磷 + 三硫化二锑, 1844 瑞典 Lundström 发明安全火柴) + 杀鼠剂 (磷化锌) + 半导体 (磷化铟 InP, 5G 光通信) + LED (磷化镓 GaP 红黄) + 神经毒气 (含磷, 1980s 两伊战争用). 全球年产磷肥 5000 万吨, 中国 1700 万吨 (最大), 摩洛哥 70% 磷矿储. 2024 红磷 5 美元/kg, 白磷 50 美元/kg. （参见：硫, 氮, 砷）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1669",
+        "title": "Brand",
+        "body": "1669 德国 Hennig Brand 炼金术士 从尿液中首次分离磷"
+      },
+      {
+        "year": "1844",
+        "title": "安全火柹",
+        "body": "1844 瑞典 Lundström 发明安全火柹 (红磷 + 三硫化二鋁)"
+      },
+      {
+        "year": "1950s",
+        "title": "农肥",
+        "body": "1950s 农肥 (磷矿 80% 产) 主要用途"
+      },
+      {
+        "year": "2014",
+        "title": "黑磷",
+        "body": "2014 中国造出黑磷 (半导体)"
+      },
+      {
+        "year": "2024",
+        "title": "中国 1700 万",
+        "body": "2024 中国 1700 万吨 (最大), 摩洛哥 70% 磷矿储"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 磷",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A3%B7",
+        "type": "百科"
+      },
+      {
+        "title": "RSC: Phosphorus",
+        "url": "https://www.rsc.org/periodic-table/element/15/phosphorus",
+        "type": "学术"
+      },
+      {
+        "title": "ICL 以色列化学",
+        "url": "https://www.icl-group.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "shiba",
+    "title": "柴犬",
+    "kind": "pet",
+    "subKind": "dog-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "010",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/shiba/shiba-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/shiba/shiba-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/shiba/shiba-full.webp",
+    "score": 8,
+    "tags": [
+      "宠物",
+      "犬种",
+      "现代",
+      "东亚",
+      "日本",
+      "天然纪念物",
+      "网红"
+    ],
+    "tagline": "日本最古老犬种 + Doge meme 的原型",
+    "subtitle": "宠物 · 柴犬 · 百科占位",
+    "description": "柴犬 (Shiba Inu) 是日本最古老 + 最小犬种, 原产日本中部山区 (信州 + 越后 + 美浓), 公元前 300 BC 绳文时代犬只, 狩猎小型动物 (野猪 + 兔 + 鸟), 1936 日本指定 天然纪念物, 1945 二战濒临灭绝, 战后 3 血统 (信州 + 越后 + 美浓) 复兴, 1955 纯种登记. 体型: 雄 8-11 kg / 雌 7-9 kg, 肩高 35-43 cm. 被毛: 双层 + 短硬, 颜色 红 + 黑 + 芝麻 + 白色. 性格: 警觉 + 独立 + 忠诚 + 固执, 训练难度中等. 寿命 12-16 年. 标志表情: 柴犬笑 + 柴犬表情包 (2013 Kabosu + Doge meme 走火, 2013-2024 全球 doge + 柴犬币 1 千亿+ 美元市值). 全球 2024 注册 50 万只, 美国 10 万+ AKC 排名 #42, 中国 2010s 引进. 2019 美国 + 韩国 + 加拿大 流行 doge meme 二次创作. 2025 + 2024 + 2023 多次占据日本最受欢迎犬种第 1. （参见：秋田犬, 边境牧羊犬, 贵宾犬）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "前 300",
+        "title": "绳文时代",
+        "body": "前 300 BC 绳文时代日本中部山区犬只"
+      },
+      {
+        "year": "1936",
+        "title": "天然纪念",
+        "body": "1936 日本指定柴犬为天然纪念物"
+      },
+      {
+        "year": "1945",
+        "title": "澳广灭绝",
+        "body": "1945 二战澳广灭绝, 战后 3 血统 (信州 + 越后 + 美派) 复兴"
+      },
+      {
+        "year": "2013",
+        "title": "Doge meme",
+        "body": "2013 Kabosu 柴犬 + Doge meme 走火, 2013-2024 doge + 柴犬币 1 千亿+ 美元市值"
+      },
+      {
+        "year": "2024",
+        "title": "AKC",
+        "body": "2024 全球 AKC 50 万只, 美国 10 万+, AKC 排名 #42"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 柴犬",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9F%B4%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "AKC Shiba Inu",
+        "url": "https://www.akc.org/dog-breeds/shiba-inu/",
+        "type": "官方"
+      },
+      {
+        "title": "日本犬物爱好者协会",
+        "url": "http://www.jkc.or.jp/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "sapiens-book",
+    "title": "人类简史",
+    "kind": "book",
+    "subKind": "classical",
+    "series": "atlas-miscellany",
+    "seriesNo": "024",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/sapiens-book/sapiens-book-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/sapiens-book/sapiens-book-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/sapiens-book/sapiens-book-full.webp",
+    "score": 8.4,
+    "tags": [
+      "书",
+      "非虚构",
+      "现代",
+      "全球",
+      "畅销",
+      "历史",
+      "哲学"
+    ],
+    "tagline": "从 7 万年前认知革命到 21 世纪神性的全球现象级畅销书",
+    "subtitle": "书籍 · 人类简史 · 百科占位",
+    "description": "人类简史 (Sapiens: A Brief History of Humankind) 是以色列 尤瓦尔·赫拉利 (Yuval Noah Harari) 2011 希伯来语 + 2014 英文版 + 2015 中译本, 2011-2024 全球 6500 万册 (非虚构类全球第 4, 仅次于 1984 + 圣经 + 毛主席语录). 全书 4 部分: 认知革命 (7 万年前, 智人虚构故事 + 八卦能力 150 人上限) + 农业革命 (1.2 万年前, 驯化小麦 + 鸡 + 牛, 智人反而更累 + 腰椎 + 牙齿问题) + 人类的融合统一 (钱 + 帝国 + 宗教 三大统一力) + 科学革命 (500 年前, 承认无知 + 能力增长 + 帝国扩张). 争议: 农业革命 智人 被害论 (智人活得比采集狩猎更糟) + 现代性 虚构故事 + 资本主义 信用 + 自由主义 个人幻觉 + 未来 神性 (Homo Deus). 中国 2015 中信出版社 + 2017 升级版, 2024 中国 800 万册 + 35 元 + 影响一代青年. 衍生: 未来简史 (Homo Deus 2017) + 今日简史 (21 Lessons 2018) 三部曲. （参见：1984, 未来简史, 动物庄园）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "2011",
+        "title": "希伯来语",
+        "body": "2011 以色列 尤瓦尔 · 赫拉利 《人类简史》 希伯来语首版"
+      },
+      {
+        "year": "2014",
+        "title": "英文版",
+        "body": "2014 英文版, 65 国出版, 起初 1 万册, 5 年 100 万册"
+      },
+      {
+        "year": "2015",
+        "title": "中译",
+        "body": "2015 中信出版社中译本, 中国 800 万册"
+      },
+      {
+        "year": "2017",
+        "title": "未来简史",
+        "body": "2017 《未来简史》 (Homo Deus) 出版, 4 年 1000 万册"
+      },
+      {
+        "year": "2024",
+        "title": "6500 万册",
+        "body": "2024 《人类简史》全球 6500 万册 (非虚构类全球第 4)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 人类简史",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2",
+        "type": "百科"
+      },
+      {
+        "title": "Harari 官方",
+        "url": "https://www.ynharari.com/",
+        "type": "官方"
+      },
+      {
+        "title": "中信出版社",
+        "url": "http://www.cits-press.com.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "1984-book",
+    "title": "1984",
+    "kind": "book",
+    "subKind": "modern-literature",
+    "series": "atlas-miscellany",
+    "seriesNo": "025",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/1984-book/1984-book-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/1984-book/1984-book-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/1984-book/1984-book-full.webp",
+    "score": 8.7,
+    "tags": [
+      "书",
+      "小说",
+      "现代",
+      "全球",
+      "反乌托邦",
+      "政治",
+      "预言"
+    ],
+    "tagline": "老大哥在看着你 + 1984 词进入 20 国官方词典的终极反乌托邦",
+    "subtitle": "书籍 · 1984 · 百科占位",
+    "description": "1984 (Nineteen Eighty-Four) 是英国 乔治·奥威尔 (George Orwell, 真名 Eric Blair) 1949 出版反乌托邦小说, 1948 写成 (把 48 颠倒), 1984 标题设 36 年后未来. 三部曲: 《动物庄园》1945 (寓言苏联) + 《1984》1949 (终极反乌托邦) + 《让叶兰继续飘扬》未完. 内容: 大洋国 (Oceania) 真理部 + 友爱部 + 和平部 + 富裕部 + 战争即和平 + 自由即奴役 + 无知即力量. 老大哥 (Big Brother) 领袖 + 思想警察 (Thought Police) + 新话 (Newspeak, 词汇越少越不能犯罪思想) + 双重思想 (Doublethink 同时接受两个矛盾信念) + 101 房 (Room 101, 恐怖). 名言: 谁控制过去就控制未来 + 谁控制现在就控制过去 + 老大哥在看着你. 影响: 1984 词进入 20 国官方词典, cold war 反共 + 极权符号. 中国 1985 中译本 (董乐山), 2000 后多次再版, 至今畅销 1000 万+ 册. 中国删节版 + 网络禁词. 美国 + 韩国 + 日本 1984 年所建 Big Brother 真人秀节目. （参见：动物庄园, 美丽新世界, 人类简史）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1948",
+        "title": "写作",
+        "body": "1948 乔治 · 奥威尔 (George Orwell) 写作 《1984》, 京 48 颗倒"
+      },
+      {
+        "year": "1949",
+        "title": "出版",
+        "body": "1949 《1984》出版 (上部)"
+      },
+      {
+        "year": "1950",
+        "title": "中译",
+        "body": "1950 《1984》英文版 1950 上部, 中国 1985 董乐山译本"
+      },
+      {
+        "year": "1984",
+        "title": "真实 1984",
+        "body": "1984 全球庆祝 1984 年, Orwell 在 1950 年逝世, 未见到自己预言的年份"
+      },
+      {
+        "year": "2024",
+        "title": "1000 万册",
+        "body": "2024 中国 1000 万+ 册, 美国 + 韩国 + 日本 多版, 20 国官方词典收录 1984"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 1984",
+        "url": "https://zh.wikipedia.org/wiki/1984",
+        "type": "百科"
+      },
+      {
+        "title": "Orwell Foundation",
+        "url": "https://www.orwellfoundation.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Penguin Books 1984",
+        "url": "https://www.penguinrandomhouse.com/books/16590/nineteen-eighty-four-by-george-orwell/",
         "type": "官方"
       }
     ]

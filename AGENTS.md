@@ -2919,3 +2919,66 @@ commit `75c6d22` pushed (`6a028d5 → 75c6d22`).
 - /map animated pin drop (P2)
 - catalog 1000 milestone 预计 R85 左右
 - 配平 status: 26-49 → R81 后 28-49 (差缩小, R82 找 kind 30+ 拉齐)
+
+
+## R82 (2026-07-12) — 24 cards ship: kind 30+ 拉齐
+
+catalog 900 → **920** (+20 new + 4 refreshed). 17 commit post-R66 = 13 content ships + 4 UX polish. R81 距今 1 round 后续内容 ship, 冲 kind 配平 (R82 后 28-49 → 30+ 拉齐).
+
+### A. R82 plan 设计 (6 kind 配平)
+
+`scripts/r82-plan.json` 24 cards, 6 kind 配平:
+
+| Kind | R82 cards | Balance |
+|---|---|---|
+| profession (27→31) | designer-prof / professor-prof / civil-engineer-prof / firefighter | +4 |
+| disease (29→33) | bipolar / crohns / lung-cancer / cystic-fibrosis | +4 |
+| sport (34→38) | surfing / fencing / marathon / chess-sport | +4 |
+| tech (44→48) | vr-headset / llm-model / solar-panel / lab-grown-meat | +4 |
+| food (46→50) | bento / tortilla / bruschetta / kebab | +4 |
+| history (33→37) | great-firewall / meiji / marshall-plan / berlin-airlift | +4 |
+
+totalSubKinds 176 → **178** (R82 加 middle-east + asia-japan 2 个新 subKind).
+
+### B. R82 generate + upload + handwrite 24
+
+`tmp/r82-run-all.cjs` 跟 R80+R81 同 pattern 串行 execFileSync. 实际 generate 20 张 (4 张 cystic-fibrosis/marathon/surfing/fencing 已存在).
+
+**2 张 manual retry**: great-firewall (matrix hang 260s 一次 fail) + berlin-airlift (matrix hang). 跟 R66-R81 同 pattern: 改 topic 重试, 必成功. 2 张 retry 写入, 0 missing.
+
+6 kinds CDN 上传 (profession + disease + sport + tech + food + history). 24/24 R82 cards on CDN.
+
+Handwrite 24 (4 fields + history + sources) 12 个 inline cjs (跟 R80+R81 同 pattern: 1 batch 4-8 cards 试探). 24/24 完整.
+
+### C. R82 handwrite 24 (跟 R80+R81 同 4+4+4 chunks)
+
+- **4 fields (desc + tagline + score + tags)**: 4 inline cjs (6+6+6+6 = 24 cards)
+- **history 5 nodes**: 4 inline cjs (6+5+5+8 = 24 cards × 5 = 120 nodes)
+- **sources 3 each**: 4 inline cjs (6+6+6+6 = 24 cards × 3 = 72 sources)
+
+每张 score 6.5-9.0, tags 5-7, desc 200-300 char 中英混合, history 5 nodes 跨 50-3000 年, sources 3 (百科+学术+官方).
+
+### D. R82 commit + ship
+
+23 files: 2 modified (data/cards.json + data/taxonomy.json) + 21 new public/cards/*/ dirs + scripts/r82-plan.json. Total 24 cards 内容 ship.
+`tsc --noEmit` clean (R82 没碰 src, 跟 R80+R81 同 pattern).
+commit `6207f89` pushed (`1d81c70 → 6207f89`).
+
+### E. Atlas Kit 当前 catalog (R82 后, 2026-07-12)
+
+- **920 cards** (R82 ship 24 后). 17 commit post-R66.
+- **26 kinds / 178 subKinds / 12 series**
+- 6 kind 配平: profession 27→31 / disease 29→33 / sport 34→38 / tech 44→48 / food 46→50 / history 33→37
+- 0 placeholder / 0 no-subKind / 0 missing image on CDN / disk
+- 4 polish rounds (R76-R79) 实战 ship 上 R80+R81+R82 共 61 cards
+- master HEAD: `6207f89`
+
+### F. R83 candidate (next)
+
+- 短 pause 1 round verify R76-R79+R80+R81+R82 polish 实战
+- ship 24+ 张内容 (R83 找 sport/tech/food 拉齐到 50+, 距 1000 还差 80 张 = 4 round)
+- polish 续: 参考来源 ⭐ 权威度 badge
+- series 页 tag cloud
+- /graph cursor hover 详情 (P2)
+- /map animated pin drop (P2)
+- catalog 1000 milestone 预计 R86 左右

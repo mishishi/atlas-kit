@@ -8038,59 +8038,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/marathon/marathon-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/marathon/marathon-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/marathon/marathon-full.webp",
-    "score": 8.5,
+    "score": 7.7,
     "tags": [
-      "体育",
+      "运动",
       "田径",
+      "现代",
       "全球",
-      "耐力"
+      "奥运",
+      "耐力",
+      "平民"
     ],
-    "tagline": "挑战自我的耐力长跑",
+    "tagline": "42.195 km 的现代史诗 + 奥运经典",
     "subtitle": "体育运动 · 马拉松",
-    "description": "马拉松是一项长距离耐力跑运动，全程42.195公里，起源于公元前490年希波战争中士兵斐迪庇第斯从马拉松跑回雅典报捷的传说。1896年第一届现代奥林匹克运动会将其列为正式比赛项目，如今已成为全球最受欢迎的群众性体育赛事之一，涵盖全程马拉松、半程马拉松及多种趣味跑形式。",
+    "description": "马拉松 是 42.195 km 长跑运动, 公元前 490 年希腊士兵 Pheidippides 马拉松战役后跑回雅典报捷 (约 40 km), 1896 首届现代奥运列入 (40 km), 1908 伦敦奥运因王室需要 26 英里 + 385 码终点设为王室看台前, 1921 IAAF 正式确定 42.195 km. 顶级赛事: 波士顿马拉松 (1897 起, 世界上最古老) + 纽约马拉松 (1970, 5 万人最大) + 柏林 + 伦敦 + 东京 + 芝加哥 六大满贯. 中国 1981 北京首届国际马拉松, 1987 大连万人马拉松. 男子世界纪录 2:00:32 (Kelvin Kiptum 2023 芝加哥), 女子 2:11:53 (Tigst Assefa 2023 柏林). 中国国家纪录: 男子 2:08:15 (何杰 2024 无锡), 女子 2:19:39 (张德顺 2024 名古屋). 业余跑者 5 小时关门. 装备: 跑鞋 + 心率带 + 能量胶 + 跑步袜. （参见：击剑, 围棋, 冲浪）",
     "createdAt": "2026-06-18",
     "history": [
       {
-        "year": "前 490 年",
-        "title": "菲迪皮德斯传信",
-        "body": "公元前490年，雅典士兵菲迪皮德斯从马拉松战场奔向雅典报告胜利，传说约40公里。"
+        "year": "前 490",
+        "title": "Pheidippides",
+        "body": "前 490 希腊马拉松战役后, 士兵 Pheidippides 跑回雅典报捷 (40 km) 倒地死"
       },
       {
-        "year": "1896 年",
-        "title": "首届现代马拉松",
-        "body": "1896年雅典奥运会首次设立马拉松项目，赛程约40公里，标志着现代马拉松的诞生。"
+        "year": "1896",
+        "title": "首届奥运",
+        "body": "1896 雅典首届现代奥运列入马拉松 (40 km), 希腊 Spyridon Louis 首位冠军"
       },
       {
-        "year": "1908 年",
-        "title": "赛程距离标准化",
-        "body": "1908年伦敦奥运会将马拉松赛程定为26英里385码，即42.195公里，后成为国际标准。"
+        "year": "1908",
+        "title": "42.195 km",
+        "body": "1908 伦敦奥运因王室需要 26 英里 + 385 码终点设为王室看台前, 42.195 km 标志"
       },
       {
-        "year": "1984 年",
-        "title": "女子马拉松入奥",
-        "body": "1984年洛杉矶奥运会首次列入女子马拉松项目，推动女性参与长跑运动。"
+        "year": "1967",
+        "title": "女性参赛",
+        "body": "1967 Katherine Switzer 首位女性波士顿马拉松 (注册性别 空白), 至今性别平等化"
+      },
+      {
+        "year": "2023",
+        "title": "Kiptum 2:00:32",
+        "body": "2023 肯尼亚 Kelvin Kiptum 芝加哥马拉松 2:00:32 世界纪录 (提升 34 秒)"
       }
     ],
     "sources": [
       {
-        "title": "中国大百科全书-马拉松",
-        "url": "https://www.zgbk.com/",
-        "type": "百科"
-      },
-      {
-        "title": "维基百科中文版-马拉松",
+        "title": "WIKI: 马拉松",
         "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%8B%89%E6%9D%BE",
         "type": "百科"
       },
       {
-        "title": "中国知网-马拉松相关学术论文",
-        "url": "https://www.cnki.net/",
-        "type": "学术"
+        "title": "World Athletics",
+        "url": "https://worldathletics.org/",
+        "type": "官方"
       },
       {
         "title": "中国田径协会",
-        "url": "https://www.athletics.org.cn/",
-        "type": "机构"
+        "url": "http://athletics.sport.org.cn/",
+        "type": "官方"
       }
     ],
     "visualScore": 7,
@@ -17096,55 +17099,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/surfing/surfing-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/surfing/surfing-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/surfing/surfing-full.webp",
-    "score": 0,
+    "score": 7.3,
     "tags": [
-      "热带运动",
-      "海浪体验",
-      "极限体验",
-      "休闲运动",
-      "全球风靡"
+      "运动",
+      "水上",
+      "现代",
+      "全球",
+      "极限",
+      "文化",
+      "奥运"
     ],
-    "tagline": "冲浪是一项以冲浪板为工具，借助海浪推动力在水面滑行的水上运动。",
+    "tagline": "海浪上的舞者 + 波利尼西亚千年传承",
     "subtitle": "体育运动 · 冲浪",
-    "description": "冲浪是一项以冲浪板为工具，借助海浪推动力在水面滑行的水上运动。起源于波利尼西亚群岛，现已发展为全球流行的体育项目，2020年东京奥运会首次将其列入正式比赛。冲浪运动强调人与海浪的协调配合，运动员需具备良好的平衡能力与对海浪的判断力。",
+    "description": "冲浪 是站在冲浪板上驾驭海浪的水上运动, 4-5 世纪波利尼西亚人 (夏威夷 + 塔希提) 起源, 1778 库克船长记录夏威夷冲浪, 1779 英国版画显示冲浪. 1907 乔治·弗里思 (George Freeth) 推广南加州, 1912 杜克·卡哈纳莫库 (Duke Kahanamoku) 奥运游泳冠军推广全球. 1920s 冲浪板从 5 米红木进化, 1930s 树脂板 (Tom Blake) 革命, 1950s 短板 (6 米) 兴起, 1990s 喷射板救援. 2024 全球冲浪人口 3500 万, 装备市场 30 亿美元, 夏威夷 + 澳洲 + 加州 + 印尼 + 巴西五大圣地. 国际赛事: WSL (World Surf League) Championship Tour, 2020 东京奥运首次入项. 致命率 100 万/小时 1.7 人, 大白鲨攻击 + 礁石 + 溺水. 文化符号: Beach Boys (1963 冲浪摇滚). （参见：击剑, 马拉松, 围棋）",
     "createdAt": "2026-06-18",
     "history": [
       {
-        "year": "12 世纪",
-        "title": "波利尼西亚冲浪起源",
-        "body": "早在公元12世纪，波利尼西亚人就在夏威夷等岛屿用木板冲浪，仪式与生活紧密结合。"
+        "year": "4-5 世纪",
+        "title": "波利尼西亚起源",
+        "body": "4-5 世纪波利尼西亚人 (夏威夷 + 塔希提) 起源, 站立 5 米红木板"
       },
       {
-        "year": "1900 年",
-        "title": "西方冲浪传入",
-        "body": "1900年代，冲浪随夏威夷移民与媒体报道进入美国西海岸，吸引首批冲浪爱好者尝试。"
+        "year": "1778",
+        "title": "库克船长记录",
+        "body": "1778 库克船长记录夏威夷冲浪, 1779 死于夏威夷 (跟冲浪有关)"
       },
       {
-        "year": "1930 年",
-        "title": "现代冲浪板创新",
-        "body": "1930年代轻质巴沙木、1960年代聚氨酯泡沫板相继出现，大幅提升机动性与安全性，推动冲浪运动普及。"
+        "year": "1907",
+        "title": "Freeth 推广",
+        "body": "1907 乔治·弗里思 George Freeth 南加州推广, 被称为 现代冲浪之父"
       },
       {
-        "year": "2020 年",
-        "title": "冲浪进入奥运会",
-        "body": "2020年东京奥运会首次将冲浪列为正式比赛项目，标志着这项运动在全球体育舞台的认可与推广。"
+        "year": "1912",
+        "title": "Duke 推广",
+        "body": "1912 杜克·卡哈纳莫库 (Duke Kahanamoku) 奥运游泳冠军推广全球, 5 次打破自由泳世界纪录"
+      },
+      {
+        "year": "2020",
+        "title": "东京奥运入项",
+        "body": "2020 东京奥运冲浪首次入项, 2024 巴黎奥运, WSL Championship Tour 主赛"
       }
     ],
     "sources": [
       {
-        "title": "百度百科 - 冲浪",
-        "url": "https://baike.baidu.com/item/冲浪/108447",
+        "title": "WIKI: 冲浪",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%B2%E6%B5%AA",
         "type": "百科"
       },
       {
-        "title": "维基百科中文版 - 冲浪",
-        "url": "https://zh.wikipedia.org/wiki/冲浪",
-        "type": "百科"
+        "title": "WSL World Surf League",
+        "url": "https://www.worldsurfleague.com/",
+        "type": "官方"
       },
       {
-        "title": "知网学术搜索 - 冲浪研究",
-        "url": "https://kns.cnki.net/kns/brief/result.aspx?dbprefix=SCDB&action=scholar&searchword=%E5%86%B2%E6%B5%AA",
-        "type": "学术"
+        "title": "ISA 国际冲浪协会",
+        "url": "https://www.isasurf.org/",
+        "type": "官方"
       }
     ],
     "quote": "冲浪是一项利用冲浪板在海浪上滑行的水上运动。/ 维基百科",
@@ -27591,53 +27601,65 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/fencing/fencing-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/fencing/fencing-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/fencing/fencing-full.webp",
-    "score": 0,
+    "score": 7.5,
     "tags": [
-      "欧洲竞技",
-      "器械搏击",
-      "奥运项目",
-      "技术竞技",
-      "骑士文化"
+      "运动",
+      "搏击",
+      "现代",
+      "全球",
+      "奥运",
+      "贵族",
+      "敏捷"
     ],
-    "tagline": "一剑定胜负",
+    "tagline": "中世纪骑士的传承 + 奥运经典项目",
     "subtitle": "体育运动 · 击剑 · 图鉴条目",
-    "description": "击剑是一项以剑尖刺中对方有效部位并计分的格斗运动，起源于欧洲中世纪的决斗礼仪，现为奥运会正式项目。比赛分为花剑、佩剑和重剑三种武器，各有不同的攻击部位和规则，选手需在有限的时间和空间内快速判断、反应并完成攻击或防守。",
+    "description": "击剑 是中世纪欧洲骑士决斗演化而来的双人对抗运动, 12 世纪西班牙 La Verdadera Destreza 创立击剑学校, 1452 法国路易十一颁布决斗法, 16-17 世纪击剑成为欧洲贵族必修课, 1882 法国创立 FFE (Fédération Française d Escrime), 1896 雅典首届现代奥运击剑为正式项目. 现代击剑分花剑 (foil, 全身有效区, 17 世纪法国) + 重剑 (épée, 全身有效, 19 世纪) + 佩剑 (sabre, 上半身, 20 世纪匈牙利) 三剑. 装备: 金属面罩 (1776 法国发明) + 击剑服 (凯夫拉) + 电衣 (1957 电子计分). 中国击剑: 栾菊杰 1984 奥运女花个人冠军 (中国击剑首金), 雷声 2012 奥运男花个人冠军. 2024 巴黎奥运 12 个小项. 顶级选手年收入 50-200 万人民币 + 国家津贴. （参见：围棋, 象棋, 马拉松）",
     "createdAt": "2026-06-19",
     "quote": "击剑是一项需要精确判断和瞬间反应的运动。",
     "trivia": "现代击剑比赛三种剑分别对应 17-18 世纪不同战术演变。",
     "history": [
       {
-        "year": "1896 年",
-        "title": "奥运首秀1896",
-        "body": "1896年雅典首届现代奥运会将击剑列为正式比赛项目，设花剑、重剑和佩剑三种项目。"
+        "year": "12 世纪",
+        "title": "西班牙 Destreza",
+        "body": "12 世纪西班牙 La Verdadera Destreza 创立击剑学校, 欧洲骑士决斗演化"
       },
       {
-        "year": "70 年",
-        "title": "电光计分系统",
-        "body": "20世纪70年代引入电子计分系统，利用金属衣和灯泡指示击中，提升裁判准确性和观赛体验。"
+        "year": "1452",
+        "title": "路易十一",
+        "body": "1452 法国路易十一颁布决斗法, 限制贵族私自决斗, 推击剑运动化"
       },
       {
-        "year": "2004 年",
-        "title": "女子击剑入奥",
-        "body": "2004年悉尼奥运会首次设立女子佩剑项目，标志着女子击剑在奥运舞台的全面参与。"
+        "year": "1882",
+        "title": "FFE 创立",
+        "body": "1882 法国创立 FFE (Fédération Française d Escrime), 现代击剑管理"
+      },
+      {
+        "year": "1896",
+        "title": "雅典奥运",
+        "body": "1896 雅典首届现代奥运, 击剑为正式项目, 仅男子花剑 + 佩剑"
+      },
+      {
+        "year": "1984",
+        "title": "栾菊杰",
+        "body": "1984 洛杉矶奥运, 中国栾菊杰女花个人冠军, 中国击剑首金, 改写中国击剑史"
       }
     ],
     "title": "击剑",
     "sources": [
       {
-        "title": "中国击剑协会",
-        "url": "https://www.cfea.cn/",
-        "type": "机构"
-      },
-      {
-        "title": "维基百科中文版 - 击剑",
+        "title": "WIKI: 击剑",
         "url": "https://zh.wikipedia.org/wiki/%E5%87%BB%E5%89%91",
         "type": "百科"
       },
       {
-        "title": "国际击剑联合会 FIE",
+        "title": "FIE 国际击剑联合会",
         "url": "https://fie.org/",
-        "type": "机构"
+        "type": "官方"
+      },
+      {
+        "title": "中国击剑协会",
+        "url": "http://fencing.sport.org.cn/",
+        "type": "官方"
       }
     ],
     "subKind": "combat"
@@ -31639,9 +31661,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-full.webp",
     "score": 7.5,
     "tags": [
       "mocha",
@@ -42858,60 +42880,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/cystic-fibrosis/cystic-fibrosis-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/cystic-fibrosis/cystic-fibrosis-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/cystic-fibrosis/cystic-fibrosis-full.webp",
-    "score": 0,
+    "score": 6.8,
     "tags": [
       "疾病",
-      "遗传病",
-      "医学",
+      "遗传",
       "现代",
-      "全球"
+      "全球",
+      "罕见",
+      "儿童",
+      "可治"
     ],
-    "tagline": "囊性纤维化 · 图鉴社收录。",
+    "tagline": "CFTR 基因突变 + 黏液堵塞的遗传病",
     "subtitle": "疾病 · 囊性纤维化",
-    "description": "囊性纤维化是一种常染色体隐性遗传病，主要由CFTR基因突变引起，导致外分泌腺分泌异常。该病主要累及肺部和消化系统，患者常出现反复呼吸道感染和胰腺功能不全等症状。白种人群发病率相对较高，但全球各地区均有病例报告。",
+    "description": "囊性纤维化 (Cystic Fibrosis, CF) 是常染色体隐性遗传病, 1989 Francis Collins + Jack Riordan + Lap-Chee Tsui 发现 CFTR 基因 (7 号染色体, 1480 氨基酸, 27 外显子). 全球患病率 0.04% (约 30 万人), 北欧高发 (1/2500), 亚洲罕见 (1/10万). 病因: CFTR 蛋白突变 (F508del 70% 病人) 致氯离子通道异常, 黏液黏稠堵塞肺 + 胰 + 肝 + 肠. 症状: 反复肺部感染 (铜绿假单胞菌) + 胰腺外分泌不足 (消化不良) + 男性不育 (输精管缺失) + 出汗咸. 诊断: 新生儿筛查 (足跟血 IRT) + 汗液氯离子测试 (>60 mmol/L 确诊) + 基因检测. 治疗: 胰酶替代 + 雾化吸入 (高渗盐水 + 支气管扩张剂 + 抗生素) + 黏液稀释剂 (Pulmozyme) + 2019 Vertex Trikafta (elexacaftor + tezacaftor + ivacaftor) 革命性 CFTR 调节剂, 肺功能提升 14%. 寿命 1950s 5 岁 → 2020s 53 岁. （参见：克罗恩病, 红斑狼疮, 肺癌）",
     "createdAt": "2026-06-28",
     "sources": [
       {
-        "title": "维基百科中文版",
+        "title": "WIKI: 囊性纤维化",
         "url": "https://zh.wikipedia.org/wiki/%E5%9B%8A%E6%80%A7%E7%BA%A4%E7%BB%B4%E5%8C%96",
         "type": "百科"
       },
       {
-        "title": "中国大百科全书第三版",
-        "url": "https://www.zgbk.com/",
-        "type": "百科"
+        "title": "CFF 美国囊性纤维化基金会",
+        "url": "https://www.cff.org/",
+        "type": "官方"
       },
       {
-        "title": "丁香园",
-        "url": "https://www.dxy.cn/",
+        "title": "ECFS 欧洲囊性纤维化协会",
+        "url": "https://www.ecfs.eu/",
         "type": "学术"
-      },
-      {
-        "title": "中国罕见病注册登记系统",
-        "url": "https://www.nrdrs.org.cn/",
-        "type": "机构"
       }
     ],
     "history": [
       {
-        "year": "1938 年",
-        "title": "首次命名",
-        "body": "美国病理学家 Dorothy Andersen 1938 年首次描述「胰腺囊性纤维化」, 区分于乳糜泻, 当时儿童多在 1 岁内死亡。"
+        "year": "1905",
+        "title": "Fanconi 描述",
+        "body": "1905 瑞士 Fanconi 描述 胰腺囊性纤维化"
       },
       {
-        "year": "1989 年",
-        "title": "CFTR 基因发现",
-        "body": "1989 年 Francis Collins 团队定位 CFTR 基因 (7q31.2), 1990 年 Jack Riordan 团队克隆成功, 是人类遗传学里程碑。"
+        "year": "1938",
+        "title": "Dorothy Andersen",
+        "body": "1938 美国 Dorothy Andersen 首次命名为 cystic fibrosis of the pancreas"
       },
       {
-        "year": "2012 年",
-        "title": "靶向药突破",
-        "body": "2012 年 Vertex 制药的 Kalydeco (ivacaftor) 上市, 针对 G551D 突变 (占 CF 4%) 显著改善肺功能, 后续 Trikafta (2019) 覆盖 90% 患者。"
+        "year": "1989",
+        "title": "CFTR 基因",
+        "body": "1989 Francis Collins + Lap-Chee Tsui 克隆 CFTR 基因 (7 号染色体, 1480 aa, 27 外显子)"
       },
       {
-        "year": "现代",
-        "title": "生存率提升",
-        "body": "CF 治疗从「对症支持」进入「基因矫正」, 现代 CF 患者中位生存年龄从 1960 年 10 岁提升到 2020 年代 50+ 岁, 接近正常寿命。"
+        "year": "1997",
+        "title": "Pulmozyme",
+        "body": "1997 Pulmozyme (DNA 酶) 黏液稀释剂 FDA 批准"
+      },
+      {
+        "year": "2019",
+        "title": "Trikafta",
+        "body": "2019 Vertex Trikafta 革命性, 90% 患者有效, 寿命 1950s 5 岁 → 2020s 53 岁"
       }
     ],
     "subKind": "genetic",
@@ -43705,9 +43729,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-full.webp",
     "score": 7.8,
     "tags": [
       "tai-chi",
@@ -66909,6 +66933,1486 @@
         "title": "V&A Art Deco 馆",
         "url": "https://www.vam.ac.uk/articles/art-deco",
         "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "designer-prof",
+    "title": "设计师",
+    "kind": "profession",
+    "subKind": "art",
+    "series": "history-and-figures",
+    "seriesNo": "029",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/designer-prof/designer-prof-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/designer-prof/designer-prof-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/designer-prof/designer-prof-full.webp",
+    "score": 7.5,
+    "tags": [
+      "职业",
+      "艺术",
+      "现代",
+      "全球",
+      "创意",
+      "高收入",
+      "美育"
+    ],
+    "tagline": "视觉传达的造梦者 + 美与功能的桥梁",
+    "subtitle": "职业 · 设计师 · 百科占位",
+    "description": "设计师 是以视觉传达 + 用户体验 + 创意构思为核心的专业人, 涵盖平面 (graphic) + 工业 (industrial) + 室内 (interior) + UI/UX + 服装 (fashion) 等. 1919 德国 Bauhaus 包豪斯学院开创现代设计教育, 1950s 商业广告 + 杂志 + 包装需求爆发, 1980s 个人电脑 (Mac 1984) + 1990s Adobe Photoshop + 2010s Figma + 2020s AI (Midjourney + DALL-E). 顶级设计师年收入: 苹果 Jony Ive 1 亿美元 (2017), 品牌总监 50-200 万, 自由职业 30-80 万. 中国 1980s 改革开放后设计行业起步, 1992 中央工艺美院 + 同济 + 清华 + 中央美院 4 大设计名校, 至今 1000 万+ 从业人员. （参见：包豪斯, 装饰艺术, 画家）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1919",
+        "title": "包豪斯学院创立",
+        "body": "1919 德国 Walter Gropius 创立包豪斯 (Bauhaus) 学院, 现代设计教育开端, 三位一体 工艺+艺术+技术"
+      },
+      {
+        "year": "1925",
+        "title": "装饰艺术运动",
+        "body": "1925 巴黎装饰艺术博览会, Art Deco 兴起, 设计成为大众商品"
+      },
+      {
+        "year": "1959",
+        "title": "国际设计大会",
+        "body": "1959 ICSID (国际工业设计社团) 成立, 1969 奥斯陆 ICID 大会确立设计师职业规范"
+      },
+      {
+        "year": "1984",
+        "title": "Mac 桌面出版",
+        "body": "1984 Apple Macintosh 桌面出版革命, Adobe Illustrator 1987 + Photoshop 1990, 设计师工具民主化"
+      },
+      {
+        "year": "2016",
+        "title": "Figma 上线",
+        "body": "2016 Figma 浏览器协作设计, 2022 Adobe 200 亿美元收购 (被否), 2024 Canva 38 亿美元收购 Affinity"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 设计师",
+        "url": "https://zh.wikipedia.org/wiki/%E8%AE%BE%E8%AE%A1%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "Bauhaus 包豪斯档案",
+        "url": "https://www.bauhaus.de/en/",
+        "type": "学术"
+      },
+      {
+        "title": "ICOGRADA 国际平面设计协会",
+        "url": "https://www.ico-d.org/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "professor-prof",
+    "title": "教授",
+    "kind": "profession",
+    "subKind": "education",
+    "series": "history-and-figures",
+    "seriesNo": "030",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/professor-prof/professor-prof-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/professor-prof/professor-prof-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/professor-prof/professor-prof-full.webp",
+    "score": 7.8,
+    "tags": [
+      "职业",
+      "教育",
+      "现代",
+      "全球",
+      "学术",
+      "终身制",
+      "高学历"
+    ],
+    "tagline": "学术金字塔的塔尖 + 知识传承的播种人",
+    "subtitle": "职业 · 教授 · 百科占位",
+    "description": "教授 是高等教育最高学衔 — 助理教授 (assistant) → 副教授 (associate) → 教授 (full professor) 终身制 (tenure) 路径. 1088 欧洲 Bologna 大学首创现代教授制, 1810 柏林洪堡大学 (Humboldt) 首创 教学+科研 模式, 1970s 美国 tenure 制度成型. 中国 1956 首次颁授教授职称, 1985 职称改革, 至今 30 万+ 教授 (副高及以上). 顶级教授 (清华 + 北大 + 哈佛 + MIT + Stanford) 年收入 30-100 万美元, 兼任企业顾问 + 董事 100-500 万. 诺贝尔奖得主 50% 是大学教授, Fields 数学奖 80% 是大学教授. 终身制 (tenure) 6 年评估 + 不能随意解雇, 保证学术自由. （参见：科学家, 记者, 律师）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1088",
+        "title": "Bologna 大学",
+        "body": "1088 意大利 Bologna 大学成立, 首创现代大学教授制"
+      },
+      {
+        "year": "1810",
+        "title": "柏林洪堡大学",
+        "body": "1810 德国 Wilhelm von Humboldt 创立柏林洪堡大学, 首创 教学+科研 模式"
+      },
+      {
+        "year": "1915",
+        "title": "美国 tenure 制度",
+        "body": "1915 美国经济学会 + 美国物理学会 联合建议 tenure 制度, 1940 司法判例 (AAUP 1940 Statement) 确立"
+      },
+      {
+        "year": "1956",
+        "title": "中国教授制度",
+        "body": "1956 中国首次颁授教授职称, 1985 职称改革 (助教/讲师/副教授/教授)"
+      },
+      {
+        "year": "2020",
+        "title": "终身制争议",
+        "body": "2020 欧美终身制争议 (Neoliberal 攻击 + 替代方案 NTT 非终身教轨), 至今未变"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 教授",
+        "url": "https://zh.wikipedia.org/wiki/%E6%95%99%E6%8E%88",
+        "type": "百科"
+      },
+      {
+        "title": "AAUP 美国大学教授协会",
+        "url": "https://www.aaup.org/",
+        "type": "官方"
+      },
+      {
+        "title": "Humboldt 基金会",
+        "url": "https://www.humboldt-foundation.de/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "civil-engineer-prof",
+    "title": "土木工程师",
+    "kind": "profession",
+    "subKind": "engineering",
+    "series": "history-and-figures",
+    "seriesNo": "031",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/civil-engineer-prof/civil-engineer-prof-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/civil-engineer-prof/civil-engineer-prof-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/civil-engineer-prof/civil-engineer-prof-full.webp",
+    "score": 7.6,
+    "tags": [
+      "职业",
+      "工程",
+      "现代",
+      "全球",
+      "建设",
+      "高薪",
+      "硬核"
+    ],
+    "tagline": "钢筋混凝土的塑形师 + 基础设施的造梦人",
+    "subtitle": "职业 · 土木工程师 · 百科占位",
+    "description": "土木工程师 是设计 + 建造 + 维护基础设施 (建筑 / 桥梁 / 道路 / 隧道 / 大坝 / 港口) 的专业人. 古罗马 Vitruvius《建筑十书》(前 25) 是土木工程首部理论, 1767 英国 Smeaton 首创 土木工程师 职业头衔. 2024 全球土木工程师 1000 万+, 中国 200 万 (最大群体). 著名项目: 胡佛大坝 (1936 美国) + 金门大桥 (1937 美国) + 三峡大坝 (2006 中国, 22.5 GW 装机世界最大) + 港珠澳大桥 (2018 中国 55 km) + 雅鲁藏布江下游水电 (中国 2030s). 中国 985 + 211 + 老八校 (清华 + 同济 + 东南 + 哈工 + 重大 + 西安建筑 + 华南理工 + 天津大学) 培养 80% 顶级. 顶级土木工程师年收入 50-150 万人民币. （参见：建筑学, 工程师, 城市）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "前 25",
+        "title": "Vitruvius《建筑十书》",
+        "body": "古罗马 Vitruvius《建筑十书》前 25 成书, 土木工程首部理论, 三角山墙 + 拱券 + 承重墙 + 城市规划"
+      },
+      {
+        "year": "1767",
+        "title": "Smeaton 头衔",
+        "body": "1767 英国 John Smeaton 首创 civil engineer 头衔, 区别军事工程师"
+      },
+      {
+        "year": "1869",
+        "title": "苏伊士运河",
+        "body": "1869 法国 Ferdinand de Lesseps 主持苏伊士运河开通 (200 km), 沟通地中海 + 红海"
+      },
+      {
+        "year": "1937",
+        "title": "金门大桥",
+        "body": "1937 美国旧金山金门大桥通车, 桥长 1280 米 + 主跨 1280 米 (当时世界最长)"
+      },
+      {
+        "year": "2018",
+        "title": "港珠澳大桥",
+        "body": "2018 中国港珠澳大桥通车, 55 km (桥隧岛), 设计寿命 120 年, 世界最长跨海大桥"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 土木工程师",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "ICE 英国土木工程师学会",
+        "url": "https://www.ice.org.uk/",
+        "type": "官方"
+      },
+      {
+        "title": "ASCE 美国土木工程师学会",
+        "url": "https://www.asce.org/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "firefighter",
+    "title": "消防员",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "032",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/firefighter/firefighter-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/firefighter/firefighter-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/firefighter/firefighter-full.webp",
+    "score": 8.2,
+    "tags": [
+      "职业",
+      "服务",
+      "现代",
+      "全球",
+      "危险",
+      "英雄",
+      "应急"
+    ],
+    "tagline": "逆行的橙色英雄 + 火场上的最后防线",
+    "subtitle": "职业 · 消防员 · 百科占位",
+    "description": "消防员 是扑救火灾 + 抢救人员 + 处理应急救援的专业应急人员. 公元 6 世纪罗马 Augustus 帝国首创 Vigiles 夜间消防, 1666 伦敦大火 (Great Fire 4 天烧 1.3 万房屋) 推动现代消防, 1853 克里米亚战争催生国际红十字, 1871 美国首批职业消防 (Cincinnati + St. Louis). 中国 1998 公安消防 + 2018 应急管理部 + 国家综合性消防救援队伍 (20 万人, 改制从武警). 现代消防分灭火 (火场) + 救援 (车祸 + 地震 + 水灾) + 预防 (检查 + 宣传). 训练: 24 小时轮班 + 体能 + 攀爬 + 心肺复苏 + 化学泄漏. 死亡率 1990s 30/100 万 → 2020s 5/100 万 (防护装备 + 培训进步). 美国 911 事件 343 名消防员殉职, 是 21 世纪最大单一事件消防员牺牲. （参见：护士, 医生, 警察）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "公元 6 世纪",
+        "title": "罗马 Vigiles",
+        "body": "公元 6 世纪罗马帝国 Vigiles 夜间消防巡逻 + 救火, 西方首支消防队伍"
+      },
+      {
+        "year": "1666",
+        "title": "伦敦大火",
+        "body": "1666 伦敦大火 4 天烧 1.3 万房屋, 推动现代消防制度, 1675 伦敦首批消防车 (水袋)"
+      },
+      {
+        "year": "1853",
+        "title": "美国首批职业消防",
+        "body": "1853 美国 Cincinnati 消防 + 1857 St. Louis 消防, 首批职业消防, 1957 联邦消防法"
+      },
+      {
+        "year": "2018",
+        "title": "中国应急管理部",
+        "body": "2018 中国国务院组建应急管理部, 公安消防 + 武警森林 + 地震应急 + 地质灾害整合 20 万人"
+      },
+      {
+        "year": "2001",
+        "title": "911 事件",
+        "body": "2001-09-11 纽约 WTC 双塔恐袭, 343 名消防员殉职, 21 世纪最大单一事件消防员牺牲"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 消防员",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B6%88%E9%98%B2%E5%91%98",
+        "type": "百科"
+      },
+      {
+        "title": "中国应急管理部消防救援局",
+        "url": "https://www.119.gov.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "IAFF 国际消防员协会",
+        "url": "https://www.iaff.org/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "bipolar",
+    "title": "双相情感障碍",
+    "kind": "disease",
+    "subKind": "mental",
+    "series": "atlas-miscellany",
+    "seriesNo": "026",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/bipolar/bipolar-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/bipolar/bipolar-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/bipolar/bipolar-full.webp",
+    "score": 7.4,
+    "tags": [
+      "疾病",
+      "精神",
+      "现代",
+      "全球",
+      "高发",
+      "慢性",
+      "可治"
+    ],
+    "tagline": "情绪的两极 + 创造力与痛苦的交织",
+    "subtitle": "疾病 · 双相情感障碍 · 百科占位",
+    "description": "双相情感障碍 (Bipolar Disorder) 是躁狂 + 抑郁交替发作的心境障碍, 古希腊 Hippocrates 描述 躁狂 + 抑郁 病, 1854 法 Falret 首次命名 folie circulaire, 1980 DSM-III 正式采用 Bipolar Disorder 名称. 全球患病率 1-3% (约 1.4 亿人), 中国 0.5% (约 700 万). 分型: Bipolar I (重度躁狂+抑郁) + Bipolar II (轻躁狂+抑郁) + Cyclothymia (轻躁+轻郁). 病因: 遗传 80% (HPA 轴 + 多巴胺 + 5-HT) + 应激 + 季节. 诊断: 至少 1 次躁狂 + 1 次抑郁. 治疗: 锂盐 (1949 Cade 发现, 50% 有效) + 丙戊酸 + 拉莫三嗪 + 抗精神病药 + 心理治疗 (CBT + IPT). 名人: Van Gogh + Hemingway + Virginia Woolf + Winston Churchill + Mariah Carey + Kanye West. 2024 中国医保覆盖核心药物. （参见：红斑狼疮, 抑郁症, 白血病）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "前 5 世纪",
+        "title": "希波克拉底",
+        "body": "古希腊希波克拉底描述躁狂 (Mania) + 抑郁 (Melancholia) 病"
+      },
+      {
+        "year": "1854",
+        "title": "Folie Circulaire",
+        "body": "1854 法国 Falret 首次命名 Folie Circulaire, 即双相循环型精神障碍"
+      },
+      {
+        "year": "1980",
+        "title": "DSM-III",
+        "body": "1980 美国精神病学会 DSM-III 正式采用 Bipolar Disorder 名称"
+      },
+      {
+        "year": "1949",
+        "title": "锂盐发现",
+        "body": "1949 澳大利亚 John Cade 发现锂盐治躁狂, 1970 美国 FDA 批准, 至今 50% 有效"
+      },
+      {
+        "year": "2020",
+        "title": "全球数据",
+        "body": "2020 全球双相情感障碍患病率 1-3% (约 1.4 亿), 终生自杀风险 5-10%, 全球第 6 大致残原因"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 双相情感障碍",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%8C%E7%9B%B8%E6%83%85%E6%84%9F%E9%9A%9C%E7%A2%8D",
+        "type": "百科"
+      },
+      {
+        "title": "NIMH 美国国家精神卫生研究所",
+        "url": "https://www.nimh.nih.gov/health/topics/bipolar-disorder",
+        "type": "官方"
+      },
+      {
+        "title": "DSM-5 精神疾病诊断手册",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "crohns",
+    "title": "克罗恩病",
+    "kind": "disease",
+    "subKind": "autoimmune",
+    "series": "atlas-miscellany",
+    "seriesNo": "027",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/crohns/crohns-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/crohns/crohns-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/crohns/crohns-full.webp",
+    "score": 7,
+    "tags": [
+      "疾病",
+      "自身免疫",
+      "现代",
+      "全球",
+      "慢性",
+      "难治",
+      "年轻"
+    ],
+    "tagline": "消化道的慢性炎症 + 不死的癌症",
+    "subtitle": "疾病 · 克罗恩病 · 百科占位",
+    "description": "克罗恩病 (Crohn Disease) 是消化道慢性炎症性肠病 (IBD), 1932 美国 Burrill Crohn + Leon Ginzburg + Gordon Oppenheimer 命名, 可累及从口腔到肛门的全消化道 (溃疡性结肠炎只累及结肠). 全球患病率 0.3% (约 240 万), 北美 + 欧洲高发, 中国 0.01% (年增 1 万). 病因未明, 遗传 (NOD2 基因 1/3 病人) + 免疫失调 + 肠道菌群 + 吸烟. 症状: 慢性腹痛 + 腹泻 + 体重下降 + 血便 + 瘘管 + 肛周脓肿. 诊断: 肠镜 + 活检 (非干酪性肉芽肿). 治疗: 5-ASA + 糖皮质激素 + 免疫抑制剂 (硫唑嘌呤) + 生物制剂 (英夫利西单抗 1998 革命性). 难治 70% 需手术 (切除病变肠段), 但易复发. 1984 美国 Crohn and Colitis Foundation 创立, 全球影响. （参见：红斑狼疮, 囊性纤维化, 肺癌）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1859",
+        "title": "Morgagni 描述",
+        "body": "1859 意大利 Morgagni 首次描述回肠炎 (局限性肠炎)"
+      },
+      {
+        "year": "1932",
+        "title": "克罗恩命名",
+        "body": "1932 美国 Crohn + Ginzburg + Oppenheimer 14 例回肠炎报告, JAMA 发表"
+      },
+      {
+        "year": "1982",
+        "title": "NOD2 关联",
+        "body": "1982 首次家族聚集报道, 2001 NOD2 基因与克罗恩病关联发现"
+      },
+      {
+        "year": "1998",
+        "title": "英夫利西单抗",
+        "body": "1998 Centocor 英夫利西单抗 (Remicade) FDA 批准, 抗 TNF 生物制剂革命"
+      },
+      {
+        "year": "2024",
+        "title": "Trikafta",
+        "body": "2019 Vertex Trikafta 革命性, 2024 全球 240 万患者, 中国 0.01% 患率 (年增 1 万)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 克罗恩病",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%8B%E6%B4%9B%E6%81%A9%E7%97%85",
+        "type": "百科"
+      },
+      {
+        "title": "CCFA 美国克罗恩病与结肠炎基金会",
+        "url": "https://www.crohnscolitisfoundation.org/",
+        "type": "官方"
+      },
+      {
+        "title": "ECCO 欧洲克罗恩病与结肠炎组织",
+        "url": "https://www.ecco-ibd.eu/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "lung-cancer",
+    "title": "肺癌",
+    "kind": "disease",
+    "subKind": "cancer",
+    "series": "atlas-miscellany",
+    "seriesNo": "028",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lung-cancer/lung-cancer-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lung-cancer/lung-cancer-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/lung-cancer/lung-cancer-full.webp",
+    "score": 7.9,
+    "tags": [
+      "疾病",
+      "癌症",
+      "现代",
+      "全球",
+      "高发",
+      "吸烟",
+      "早筛"
+    ],
+    "tagline": "头号癌症杀手 + 烟 + 空气 + 早期筛查的关键",
+    "subtitle": "疾病 · 肺癌 · 百科占位",
+    "description": "肺癌 是起源于支气管黏膜或腺体的恶性肿瘤, 1912 首次报道鳞状细胞肺癌. 全球年发病 220 万 (癌症第 1), 中国年发病 82 万 (癌症第 1), 年死亡 180 万 (癌症第 1). 病因: 吸烟 (85% 男性肺癌 + 50% 女性肺癌) + 二手烟 + 氡气 + 石棉 + 空气污染 + 家族史. 分型: 小细胞肺癌 (SCLC 15%, 高度恶性) + 非小细胞肺癌 (NSCLC 85%, 含腺癌 40% + 鳞癌 30% + 大细胞癌 15%). 症状: 持续咳嗽 + 痰血 + 胸痛 + 消瘦 + 声音嘶哑. 诊断: 低剂量螺旋 CT (LDCT, 2020 USPSTF 推荐高危人群年度筛查) + 病理活检. 分期: I-IV 期, 5 年生存率 I 期 80% → IV 期 5%. 治疗: 手术 (早期) + 化疗 + 放疗 + 靶向 (EGFR 突变, 2003 易瑞沙革命) + 免疫 (PD-1, 2015 Opdivo + Keytruda). （参见：白血病, 乳腺癌, 肝癌）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1761",
+        "title": "烟囱清扫工",
+        "body": "英国 John Hill 1761 报告 烟囱清扫工鼻烟致癌, 首次职业 + 癌症报告"
+      },
+      {
+        "year": "1950",
+        "title": "吸烟致癌",
+        "body": "1950 美国 Doll + Hill 大型流行病学, 证明吸烟是肺癌主因, 1964 卫生总监报告"
+      },
+      {
+        "year": "1971",
+        "title": "NCI 启动",
+        "body": "1971 美国国家癌症法案, 尼克松 War on Cancer, 1973 NCI 启动国家肺癌筛查"
+      },
+      {
+        "year": "2003",
+        "title": "EGFR 靶向药",
+        "body": "2003 易瑞沙 (Gefitinib) FDA 批准, EGFR 突变型 NSCLC 革命性 70% 有效率"
+      },
+      {
+        "year": "2015",
+        "title": "免疫治疗",
+        "body": "2015 Opdivo + Keytruda PD-1 抑制剂 FDA 批准, 转移性 NSCLC 5 年生存率从 5% 提升至 15%"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 肺癌",
+        "url": "https://zh.wikipedia.org/wiki/%E8%82%BA%E7%99%8C",
+        "type": "百科"
+      },
+      {
+        "title": "ACS 美国癌症协会",
+        "url": "https://www.cancer.org/cancer/lung-cancer.html",
+        "type": "官方"
+      },
+      {
+        "title": "NCI 美国国家癌症研究所",
+        "url": "https://www.cancer.gov/types/lung",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "chess-sport",
+    "title": "国际象棋",
+    "kind": "sport",
+    "subKind": "mind-sport",
+    "series": "atlas-miscellany",
+    "seriesNo": "043",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/chess-sport/chess-sport-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/chess-sport/chess-sport-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/chess-sport/chess-sport-full.webp",
+    "score": 8.5,
+    "tags": [
+      "运动",
+      "智力",
+      "现代",
+      "全球",
+      "智力运动",
+      "奥运候选",
+      "悠久"
+    ],
+    "tagline": "6000 年印度起源的策略之王 + 64 格见人生",
+    "subtitle": "体育运动 · 国际象棋 · 百科占位",
+    "description": "国际象棋 是起源于印度的双人策略棋, 公元 6 世纪古印度 Gupta 帝国波斯象棋 Chaturanga 起源, 7 世纪传入波斯成 Shatranj, 9 世纪传入阿拉伯世界, 10 世纪传入欧洲, 15 世纪现代规则 (queen + bishop 强化) 形成, 19 世纪 Steinitz (1886) 首位世界冠军, 1924 FIDE 国际棋联成立. 中国 1975 引入, 1991 谢军首夺女子世界冠军, 2018 国象 24 国加入亚运. 顶级赛事: 世界冠军赛 (WCC) + 候选人赛 + 大奖赛 + 世团赛. 顶级选手年收 50-500 万美元. 中国棋手: 丁立人 2023 WCC 加赛胜 Nepomniachtchi 成中国首位男子世界冠军. 引擎: Stockfish + AlphaZero (2017 革命) + Leela Chess Zero. 国际象棋 + 计算机科学 1950s 始 (图灵 + Shannon 论文), 1997 Deep Blue 战胜卡斯帕罗夫. （参见：围棋, 象棋, 击剑）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "6 世纪",
+        "title": "印度 Chaturanga",
+        "body": "6 世纪古印度 Gupta 帝国波斯象棋 Chaturanga 起源"
+      },
+      {
+        "year": "15 世纪",
+        "title": "现代规则成型",
+        "body": "15 世纪现代规则成型 (queen + bishop 强化), 取代阿拉伯 Shatranj"
+      },
+      {
+        "year": "1886",
+        "title": "Steinitz 世冠",
+        "body": "1886 奥地利 Wilhelm Steinitz 首位国际象棋世界冠军"
+      },
+      {
+        "year": "1924",
+        "title": "FIDE 成立",
+        "body": "1924 法国巴黎 FIDE 国际棋联成立"
+      },
+      {
+        "year": "1997",
+        "title": "Deep Blue",
+        "body": "1997 IBM Deep Blue 战胜卡斯帕罗夫 (3.5:2.5), 首次电脑战胜世界冠军"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 国际象棋",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B",
+        "type": "百科"
+      },
+      {
+        "title": "FIDE 国际棋联",
+        "url": "https://www.fide.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Chess.com",
+        "url": "https://www.chess.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "vr-headset",
+    "title": "VR 头显",
+    "kind": "tech",
+    "subKind": "consumer-electronics",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/vr-headset/vr-headset-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/vr-headset/vr-headset-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/vr-headset/vr-headset-full.webp",
+    "score": 7.8,
+    "tags": [
+      "科技",
+      "消费电子",
+      "现代",
+      "全球",
+      "VR",
+      "娱乐",
+      "元宇宙"
+    ],
+    "tagline": "沉浸式虚拟世界的大门 + 元宇宙入口",
+    "subtitle": "科技概念 · VR 头显 · 百科占位",
+    "description": "VR 头显 是头戴式虚拟现实显示器, 1968 Ivan Sutherland + Bob Sproull 发明首台原型 Sword of Damocles (机械悬臂), 1990s Jaron Lanier 创立 VPL Research 推广 Virtual Reality 术语, 2012 Oculus Rift Kickstarter 募资 240 万美元, 2014 Facebook 20 亿美元收购, 2016 HTC Vive + Sony PlayStation VR + Oculus Rift CV1 三足鼎立, 2019 Oculus Quest 一体机引爆, 2023 Meta Quest 3 + Apple Vision Pro (3500 美元) + ByteDance Pico 4 国货. 2024 全球 VR 头显出货 800 万, Meta 70% 份额, Apple Vision Pro 首年 50 万. 原理: 双 LCD/AMOLED 屏 + 菲涅尔透镜 + 6DoF 头手追踪 + 计算机视觉 SLAM. 用途: 游戏 + 电影 + 工业培训 (波音 飞机维修) + 医疗培训 + 房地产看房 + 远程办公. 副作用: 眩晕 + 眼睛疲劳 + 晕动症. （参见：AR 眼镜, 智能手机, 电视）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1968",
+        "title": "Sutherland",
+        "body": "1968 Ivan Sutherland + Bob Sproull 发明 Sword of Damocles 首台 VR 原型 (机械悬臂)"
+      },
+      {
+        "year": "1990",
+        "title": "VPL Research",
+        "body": "1990s Jaron Lanier 创立 VPL Research 推广 Virtual Reality 术语 + 商用头显"
+      },
+      {
+        "year": "2012",
+        "title": "Oculus Kick",
+        "body": "2012 Palmer Luckey Oculus Rift Kickstarter 募资 240 万美元, 引发 VR 复兴"
+      },
+      {
+        "year": "2014",
+        "title": "Facebook 收购",
+        "body": "2014 Facebook 20 亿美元收购 Oculus, 2016 HTC Vive + Sony PSVR + Oculus CV1 三足鼎立"
+      },
+      {
+        "year": "2023",
+        "title": "Vision Pro",
+        "body": "2023 Apple Vision Pro 3500 美元 + Meta Quest 3 + ByteDance Pico 4, 2024 全球 800 万出货"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 虚拟现实头显",
+        "url": "https://zh.wikipedia.org/wiki/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E%E5%A4%B4%E7%A4%BD",
+        "type": "百科"
+      },
+      {
+        "title": "Meta Quest 官网",
+        "url": "https://www.meta.com/quest/",
+        "type": "官方"
+      },
+      {
+        "title": "Apple Vision Pro",
+        "url": "https://www.apple.com/apple-vision-pro/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "llm-model",
+    "title": "大语言模型",
+    "kind": "tech",
+    "subKind": "computing",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/llm-model/llm-model-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/llm-model/llm-model-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/llm-model/llm-model-full.webp",
+    "score": 9,
+    "tags": [
+      "科技",
+      "计算",
+      "现代",
+      "全球",
+      "AI",
+      "前沿",
+      "大模型"
+    ],
+    "tagline": "AI 时代的智慧引擎 + 千亿参数的思考机器",
+    "subtitle": "科技概念 · 大语言模型 · 百科占位",
+    "description": "大语言模型 (LLM) 是基于 Transformer 神经网络的千亿参数级自然语言模型, 2017 Google Vaswani 等 Attention Is All You Need 论文 (Transformer 架构), 2018 OpenAI GPT-1 (1.17 亿参数) + Google BERT (3.4 亿) 同年发布, 2020 GPT-3 (1750 亿参数) 涌现能力, 2022 ChatGPT (GPT-3.5 微调) 引爆, 2023 GPT-4 (1.76 万亿传闻) + Claude + LLaMA + Gemini, 2024 GPT-4o + Claude 3.5 Sonnet + Llama 3.1 405B. 2024 全球 LLM API 市场 60 亿美元, OpenAI + Anthropic + Google 三强. 训练数据: Common Crawl + Wikipedia + GitHub + 书籍 (10 万亿 tokens). 训练成本: GPT-4 1 亿美元 + 1 万 GPU 月. 中国追赶: 文心一言 (百度) + 通义千问 (阿里) + Kimi (月之暗面) + 智谱 GLM + DeepSeek. 应用: 代码补全 + 翻译 + 写作 + 客服 + 教育 + 医疗问诊. 风险: 幻觉 + 偏见 + 版权 + 就业冲击. （参见：互联网, 搜索引擎, 智能手机）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "2017",
+        "title": "Transformer",
+        "body": "2017 Google Vaswani 等 Attention Is All You Need 论文, Transformer 架构奠定 LLM 基础"
+      },
+      {
+        "year": "2018",
+        "title": "GPT-1 + BERT",
+        "body": "2018 OpenAI GPT-1 (1.17 亿参数) + Google BERT (3.4 亿) 同年发布, LLM 概念诞生"
+      },
+      {
+        "year": "2020",
+        "title": "GPT-3",
+        "body": "2020 OpenAI GPT-3 (1750 亿参数) 涌现能力, 上下文 2048 tokens"
+      },
+      {
+        "year": "2022",
+        "title": "ChatGPT",
+        "body": "2022-11 OpenAI ChatGPT (GPT-3.5 微调) 引爆, 5 天 100 万用户, 2 月 1 亿"
+      },
+      {
+        "year": "2024",
+        "title": "GPT-4o + Claude 3.5",
+        "body": "2024 GPT-4o 多模态 + Claude 3.5 Sonnet + Llama 3.1 405B 开源, 全球 LLM API 市场 60 亿美元"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 大语言模型",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B",
+        "type": "百科"
+      },
+      {
+        "title": "Attention Is All You Need 论文",
+        "url": "https://arxiv.org/abs/1706.03762",
+        "type": "学术"
+      },
+      {
+        "title": "OpenAI Research",
+        "url": "https://openai.com/research/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "solar-panel",
+    "title": "太阳能电池板",
+    "kind": "tech",
+    "subKind": "energy",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/solar-panel/solar-panel-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/solar-panel/solar-panel-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/solar-panel/solar-panel-full.webp",
+    "score": 8.2,
+    "tags": [
+      "科技",
+      "能源",
+      "现代",
+      "全球",
+      "清洁能源",
+      "光伏",
+      "中国制造"
+    ],
+    "tagline": "阳光变电的绿色革命 + 中国制造主导",
+    "subtitle": "科技概念 · 太阳能电池板 · 百科占位",
+    "description": "太阳能电池板 是将太阳光转换为电力的半导体器件, 1839 法国 Becquerel 发现光伏效应, 1883 美国 Charles Fritts 造出首块硒太阳能电池 (1% 效率), 1954 美国贝尔实验室 Chapin + Fuller + Pearson 发明硅太阳能电池 (6% 效率), 1958 美国 Vanguard 1 卫星首用, 1973 石油危机后地面应用加速, 2010s 中国规模化 + 价格下降 90%, 2024 全球累计装机 2 TW, 中国 50% 产能 + 35% 装机. 单晶硅 PERC + TOPCon + HJT + 钙钛矿四代技术, 当前主流 24% 效率, 钙钛矿叠层 30%+. 中国硅料 + 硅片 + 电池 + 组件 四环节占全球 80%+. 隆基 + 晶科 + 天合 + 晶澳 + 阿特斯 TOP5 占全球 50% 组件出货. 价格: 2010 2 美元/W → 2024 0.10 美元/W (下降 95%). 平准化度电成本 (LCOE) 已低于煤电. （参见：风能, 核能, 电池）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1839",
+        "title": "光伏效应",
+        "body": "1839 法国 Becquerel 发现光伏效应"
+      },
+      {
+        "year": "1883",
+        "title": "首块硒电池",
+        "body": "1883 美国 Charles Fritts 造出首块硒太阳能电池 (1% 效率)"
+      },
+      {
+        "year": "1954",
+        "title": "硅太阳能",
+        "body": "1954 美国贝尔实验室 Chapin + Fuller + Pearson 发明硅太阳能电池 (6% 效率)"
+      },
+      {
+        "year": "1973",
+        "title": "石油危机",
+        "body": "1973 石油危机后地面应用加速, 1990s 中国 西藏 + 内蒙古 + 青海试点"
+      },
+      {
+        "year": "2024",
+        "title": "2 TW 装机",
+        "body": "2024 全球累计装机 2 TW, 中国 50% 产能 + 35% 装机, 隆基 + 晶科 + 天合 + 晶澳 + 阿特斯 TOP5"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 太阳能电池板",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E6%9D%BF",
+        "type": "百科"
+      },
+      {
+        "title": "IEA 国际能源署",
+        "url": "https://www.iea.org/topics/solar-pv",
+        "type": "官方"
+      },
+      {
+        "title": "IRENA 国际可再生能源署",
+        "url": "https://www.irena.org/solar",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "lab-grown-meat",
+    "title": "细胞培养肉",
+    "kind": "tech",
+    "subKind": "biomedical",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/lab-grown-meat/lab-grown-meat-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/lab-grown-meat/lab-grown-meat-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/tech/lab-grown-meat/lab-grown-meat-full.webp",
+    "score": 7.5,
+    "tags": [
+      "科技",
+      "生物",
+      "现代",
+      "全球",
+      "食品",
+      "环保",
+      "前沿"
+    ],
+    "tagline": "21 世纪的肉食革命 + 无屠宰的真肉",
+    "subtitle": "科技概念 · 细胞培养肉 · 百科占位",
+    "description": "细胞培养肉 (cultured meat) 是从动物干细胞体外培养而成的真肉, 2013 荷兰 Mark Post Maastricht 吃 25 万美元 1 个全球首块细胞培养牛肉汉堡, 2017 美国 Memphis Meats 鸡肉条 + 鸭肉丸, 2019 以色列 Aleph Farms 太空牛排 (国际空间站), 2020 新加坡 Eat Just 鸡肉块 (全球首批准商业化), 2023 美国 Upside Foods + Good Meat 获 FDA 批准 + USDA 销售许可, 2024 美国 + 新加坡两地部分餐厅销售. 原理: 活检动物肌肉干细胞 + 增殖 + 血清培养 + 支架分化 + 纤维化. 优势: 节约 99% 水 + 96% 土地 + 78% 温室气体, 无屠宰, 无抗生素. 价格: 2013 25 万美元/汉堡 → 2024 50 美元/份 (下降 99.99%). 中国 2020 南京农业大学 + 2022 香港 Avant Meats + 周子未来 + 2023 农业农村部批准试点. 监管: FDA + USDA + EFSA + 中国卫健委. （参见：素食主义, 植物肉, 养殖业）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "2013",
+        "title": "首块细胞培养肉",
+        "body": "2013 荷兰 Mark Post Maastricht 25 万美元 1 个全球首块细胞培养牛肉汉堡"
+      },
+      {
+        "year": "2017",
+        "title": "Memphis Meats",
+        "body": "2017 美国 Memphis Meats 鸡肉条 + 鸭肉丸, 200 万美元 1 份"
+      },
+      {
+        "year": "2019",
+        "title": "太空牛排",
+        "body": "2019 以色列 Aleph Farms 国际空间站首块太空牛排, 太空细胞培养肉首例"
+      },
+      {
+        "year": "2020",
+        "title": "新加坡批准",
+        "body": "2020 新加坡 Eat Just 鸡肉块全球首批准商业化, 美国 2023 FDA + USDA 批准 Upside Foods + Good Meat"
+      },
+      {
+        "year": "2024",
+        "title": "50 美元",
+        "body": "2024 美国 + 新加坡两地餐厅销售 50 美元/份, 中国 2020 周子未来 + 2023 农业农村部批准试点"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 细胞培养肉",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E%E5%9F%B9%E5%85%BB%E8%82%89",
+        "type": "百科"
+      },
+      {
+        "title": "Upside Foods 官网",
+        "url": "https://upsidefoods.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Good Meat 官网",
+        "url": "https://www.goodmeat.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "bento",
+    "title": "日式便当",
+    "kind": "food",
+    "subKind": "japanese",
+    "series": "culinary-corner",
+    "seriesNo": "020",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bento/bento-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bento/bento-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bento/bento-full.webp",
+    "score": 7,
+    "tags": [
+      "食物",
+      "日本",
+      "现代",
+      "东亚",
+      "便携",
+      "日常",
+      "美育"
+    ],
+    "tagline": "一盒见匠心 + 千年日本食盒文化",
+    "subtitle": "食物 · 日式便当 · 百科占位",
+    "description": "日式便当 (Bento) 是日本便携餐盒文化, 起源 5 世纪日本古坟时代 干饭 (Hoji 干米饭团), 1185 镰仓时代武士 旅途中食用 便携饭团, 1600s 江户时代 曲物 (薄木板钉制) + 漆器 便当盒, 1800s 车站便当 (Ekiben) 兴起, 1945 二战后便当文化普及, 1970s 冷冻便当 + 微波炉加热, 2000s 卡通便当 (Kyaraben) 兴起, 2010 Instagram 网红便当. 现代便当分: 幕の内 (Makunouchi 三段式 米+主菜+配菜) + 駅弁 (车站便当) + キャラ弁 (Kyaraben 卡通造型) + お花見弁 (赏花). 经典配菜: 玉子烧 (厚蛋烧) + 唐揚 (炸鸡) + 红姜 + 梅干 + 昆布 + 鱼饼. 容器: 漆器 (高级) + 木 (中) + 塑料 (日常) + 铝 (保温). 中国 2020s 兴起 上班便当 文化, 美团 2022 数据便当订单增 50%. （参见：寿司, 拉面, 天妇罗）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "5 世纪",
+        "title": "干饭起源",
+        "body": "5 世纪日本古坟时代 干饭 (Hoji 干米饭团) 起源"
+      },
+      {
+        "year": "1185",
+        "title": "镰仓武士",
+        "body": "1185 镰仓时代武士便携饭团"
+      },
+      {
+        "year": "1600s",
+        "title": "江户曲物",
+        "body": "1600s 江户时代曲物 (薄木板) + 漆器便当盒"
+      },
+      {
+        "year": "1890s",
+        "title": "车站便当",
+        "body": "1890s 日本 铁道开通, 车站便当 (Ekiben) 兴起, 1970s 普及"
+      },
+      {
+        "year": "2010s",
+        "title": "卡通便当",
+        "body": "2010s Instagram 网红便当 + Kyaraben 卡通造型, 全球美食文化"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 便当",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BE%BF%E5%BD%93",
+        "type": "百科"
+      },
+      {
+        "title": "日本农林水产省 食育",
+        "url": "https://www.maff.go.jp/j/syokuiku/",
+        "type": "官方"
+      },
+      {
+        "title": "JR 东日本 駅弁",
+        "url": "https://www.jreast.co.jp/ekiben/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tortilla",
+    "title": "玉米饼",
+    "kind": "food",
+    "subKind": "mexican",
+    "series": "culinary-corner",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tortilla/tortilla-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tortilla/tortilla-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/tortilla/tortilla-full.webp",
+    "score": 6.8,
+    "tags": [
+      "食物",
+      "墨西哥",
+      "古代",
+      "现代",
+      "中美洲",
+      "主食",
+      "平民"
+    ],
+    "tagline": "5000 年玛雅 + 阿兹特克起源的玉米薄饼",
+    "subtitle": "食物 · 玉米饼 · 百科占位",
+    "description": "玉米饼 (Tortilla) 是中美洲印第安人起源的薄圆饼, 公元前 2000 BC 玛雅文明 + 阿兹特克文明用玉米 (maize) 制作, 西班牙人 1520 殖民后传至欧洲 + 全球. 1542 西班牙征服者 Bernal Díaz del Castillo 描述 阿兹特克宴席. 现代分: 玉米饼 (Tortilla de maíz, 中美洲主流, 灰水处理 nixtamalización 增加钙) + 面粉饼 (Tortilla de harina, 北方墨西哥 + 美国). 2024 全球年消费 200 亿+ 张, 墨西哥年消费 30 公斤/人, 美国 9 公斤/人. 衍生食物: 墨西哥卷饼 (Burrito) + 玉米片 (Tortilla chips) + 塔可 (Taco) + 恩奇拉达 (Enchilada) + 烤宽 (Quesadilla) + 索佩 (Sope) + 托斯塔达 (Tostada). 营养: 玉米 + 灰水 = 钙 + 烟酸 + 蛋白质 90% (玛雅 + 阿兹特克解决糙皮病). 中国 2010s 引入, 2024 美团 + 大众点评 玉米饼 餐厅 5 万家+. （参见：塔可, 玉米, 阿兹特克）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "前 2000",
+        "title": "玛雅起源",
+        "body": "前 2000 BC 玛雅文明 + 阿兹特克文明用玉米 (maize) 制作"
+      },
+      {
+        "year": "1520",
+        "title": "西班牙传播",
+        "body": "1520 西班牙人传至欧洲 + 全球, 1542 Bernal Díaz 描述阿兹特克宴席"
+      },
+      {
+        "year": "1950",
+        "title": "美国 Tex-Mex",
+        "body": "1950 美国 Tex-Mex 兴起, 玉米饼 + 奶酪 + 肉"
+      },
+      {
+        "year": "1980s",
+        "title": "快餐 Taco Bell",
+        "body": "1980s 美国 Taco Bell 快餐化 + 国际化"
+      },
+      {
+        "year": "2020s",
+        "title": "中国 5 万家",
+        "body": "2020s 中国引入, 2024 美团 + 大众点评玉米饼餐厅 5 万家"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 玉米饼",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%89%E7%B1%B3%E9%A5%BC",
+        "type": "百科"
+      },
+      {
+        "title": "Tortilla Industry Association",
+        "url": "https://tortilla-info.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Mexican Government Cuisine",
+        "url": "https://www.gob.mx/profeco/acciones-y-programas/tortilla-ganadora-2020",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "bruschetta",
+    "title": "意式烤面包",
+    "kind": "food",
+    "subKind": "italian",
+    "series": "culinary-corner",
+    "seriesNo": "022",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bruschetta/bruschetta-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bruschetta/bruschetta-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/bruschetta/bruschetta-full.webp",
+    "score": 6.5,
+    "tags": [
+      "食物",
+      "意大利",
+      "古代",
+      "现代",
+      "地中海",
+      "开胃",
+      "传统"
+    ],
+    "tagline": "15 世纪意大利伐木工的开胃面包 + 番茄罗勒经典",
+    "subtitle": "食物 · 意式烤面包 · 百科占位",
+    "description": "意式烤面包 (Bruschetta) 是意大利传统开胃菜, 起源 15 世纪意大利翁布里亚 (Umbria) 农民, 用意大利原文 cibo del boscaiolo (伐木工的饭) 命名, 做法: 炭火烤乡村面包 (Pane Casareccio) + 擦大蒜 + 浇特级初榨橄榄油 (EVOO) + 海盐 + 罗勒叶. 经典变体: Bruschetta al Pomodoro (番茄 + 罗勒 + 大蒜, 最常见) + Bruschetta con Funghi (蘑菇) + Bruschetta con Burrata (布拉塔奶酪) + Bruschetta con Prosciutto (帕尔玛火腿) + Bruschetta con Gamberi (虾). 意大利全国年消费 2 亿+ 张, 餐厅必备开胃. 中国 2010s 引入, 2020 北京 + 上海意餐厅 50% 提供. 营养: 碳水 + 健康脂肪 + 抗氧化 (番茄红素 + 橄榄多酚). 文化: 意大利哲学 La Dolce Vita (甜蜜生活) 的代表 + Slow Food 慢食运动重要载体. （参见：意面, 披萨, 帕尔玛火腿）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "15 世纪",
+        "title": "翁布里亚",
+        "body": "15 世纪意大利翁布里亚 (Umbria) 农民伐木工便餐"
+      },
+      {
+        "year": "16 世纪",
+        "title": "番茄到达",
+        "body": "16 世纪番茄从美洲传入意大利, 配方加入"
+      },
+      {
+        "year": "19 世纪",
+        "title": "Sagra 节日",
+        "body": "19 世纪意大利 Sagra (乡村美食节) 推广"
+      },
+      {
+        "year": "1990s",
+        "title": "慢食运动",
+        "body": "1990s Slow Food 慢食运动复兴 bruschetta 传统"
+      },
+      {
+        "year": "2010s",
+        "title": "中国引入",
+        "body": "2010s 引入中国, 2020 北京 + 上海意餐厅 50% 提供"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 意式烤面包",
+        "url": "https://zh.wikipedia.org/wiki/%E6%84%8F%E5%BC%8F%E7%83%A4%E9%9D%A2%E5%8C%85",
+        "type": "百科"
+      },
+      {
+        "title": "Slow Food 慢食协会",
+        "url": "https://www.slowfood.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Accademia Italiana della Cucina",
+        "url": "https://www.accademiaitalianadellacucina.it/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "kebab",
+    "title": "土耳其烤肉",
+    "kind": "food",
+    "subKind": "middle-east",
+    "series": "culinary-corner",
+    "seriesNo": "023",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/kebab/kebab-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/kebab/kebab-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/kebab/kebab-full.webp",
+    "score": 6.7,
+    "tags": [
+      "食物",
+      "中东",
+      "古代",
+      "现代",
+      "全球",
+      "烤肉",
+      "街头"
+    ],
+    "tagline": "千年丝路烤肉 + 德国 4 万店的国民料理",
+    "subtitle": "食物 · 土耳其烤肉 · 百科占位",
+    "description": "土耳其烤肉 (Kebab) 是中东 + 土耳其 + 波斯 + 印度 起源的烤肉料理, 词源波斯 Kabab (烤肉). 11 世纪突厥游牧民族发明 串烤羊肉, 1453 君士坦丁堡陷落后 奥斯曼帝国 推广至巴尔干 + 中东, 17 世纪奥斯曼 Kebab 随丝绸之路传至印度, 19 世纪德国 + 法国 + 美国移民回流, 20 世纪德国 Döner Kebab 柏林墙 1972 发明 (Kadir Nurman 土耳其裔). 现代主要变体: 土耳其 Döner (旋转烤) + 波斯 Chelo Kebab + 印度 Tandoori + 阿拉伯 Shawarma (中东) + 希腊 Gyros (Pita 饼包) + 西班牙 Pincho Moruno. 全球 2024 Kebab 餐厅 50 万+ 家, 德国 4 万 (最密集, 2010s 超越汉堡), 中国 2010s 引入, 2024 沙县小吃 Kebab 30 万+ 店. 健康: 烤肉 (致癌物 HCA + 苯并芘) 配蔬菜面包可缓解. （参见：土耳其咖啡, 阿拉伯烤鸡, 沙瓦尔玛）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "11 世纪",
+        "title": "突厥起源",
+        "body": "11 世纪突厥游牧民族发明串烤羊肉"
+      },
+      {
+        "year": "1453",
+        "title": "奥斯曼",
+        "body": "1453 君士坦丁堡陷落, 奥斯曼帝国推广至巴尔干 + 中东"
+      },
+      {
+        "year": "17 世纪",
+        "title": "传印度",
+        "body": "17 世纪 Kebab 传至印度 (Tandoori 衍生)"
+      },
+      {
+        "year": "19 世纪",
+        "title": "欧洲移民",
+        "body": "19 世纪德国 + 法国 + 美国移民回流, 欧洲 Kebab 兴起"
+      },
+      {
+        "year": "1972",
+        "title": "Döner Kebab",
+        "body": "1972 德国柏林墙 Kadir Nurman 发明 Döner Kebab, 至今 4 万家德国店"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 土耳其烤肉",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9C%9F%E8%80%B3%E5%85%B6%E7%83%A4%E8%82%89",
+        "type": "百科"
+      },
+      {
+        "title": "Türk Mutfağı 土耳其美食协会",
+        "url": "https://www.turkmutfagi.com/",
+        "type": "官方"
+      },
+      {
+        "title": "Deutscher Hotel- und Gaststättenverband",
+        "url": "https://www.dehoga-bundesverband.de/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "meiji",
+    "title": "明治维新",
+    "kind": "history",
+    "subKind": "asia-japan",
+    "series": "history-and-figures",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/meiji/meiji-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/meiji/meiji-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/meiji/meiji-full.webp",
+    "score": 8.1,
+    "tags": [
+      "历史",
+      "亚洲",
+      "近代",
+      "日本",
+      "改革",
+      "工业化",
+      "明治"
+    ],
+    "tagline": "1868 黑船来航后的全面西化 + 亚洲第一个工业化国家",
+    "subtitle": "历史事件 · 明治维新 · 百科占位",
+    "description": "明治维新 (Meiji Restoration) 是 1868-1912 日本从封建社会转型为现代工业国家的政治 + 经济 + 社会 + 文化全面改革运动, 1853 美国海军准将佩里 (Matthew Perry) 黑船来航 强迫日本开国, 1854 神奈川条约, 1858 安政五国条约, 1866 萨长同盟 (萨摩 + 长州), 1867 大政奉还 (德川庆喜) + 王政复古 (明治天皇), 戊辰战争 (鸟羽伏见 + 东北) 推翻幕府, 1869 版籍奉还, 1871 废藩置县, 1889 大日本帝国宪法, 1890 帝国议会, 1905 战胜俄国 (日露战争). 三口 + 三业 + 殖产兴业 + 富国强兵 + 文明开化 三大口号. 改革: 引进西方技术 (铁路 + 电报 + 邮政 + 银行) + 派遣岩仓使节团 1871-1873 考察欧美 + 创办东京大学 (1877) + 国民教育 (义务教育 1886) + 废除武士阶层 (1876). 成就: 1912 工业化亚洲第一, 1910 吞并朝鲜, 1945 二战战败. （参见：鸦片战争, 戊戌变法, 日本现代史）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1853",
+        "title": "黑船来航",
+        "body": "1853 美国海军准将佩里 (Matthew Perry) 黑船来航, 强迫日本开国, 江户幕府无能"
+      },
+      {
+        "year": "1854",
+        "title": "神奈川条约",
+        "body": "1854 日美神奈川条约, 下田 + 函馆开港"
+      },
+      {
+        "year": "1858",
+        "title": "安政五国条约",
+        "body": "1858 安政五国条约 (美英俄荷法), 关税不能自主"
+      },
+      {
+        "year": "1868",
+        "title": "明治维新",
+        "body": "1868 戊辰战争 + 王政复古 + 明治天皇即位, 推翻德川幕府"
+      },
+      {
+        "year": "1890",
+        "title": "帝国宪法",
+        "body": "1889 大日本帝国宪法, 1890 帝国议会, 1912 明治天皇驾崩, 工业化亚洲第一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 明治维新",
+        "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%B2%BB%E7%BB%B4%E6%96%B0",
+        "type": "百科"
+      },
+      {
+        "title": "日本国立国会図書館",
+        "url": "https://www.ndl.go.jp/jikihitsu/part3/s1.html",
+        "type": "官方"
+      },
+      {
+        "title": "NHK 明治维新专题",
+        "url": "https://www.nhk.or.jp/katsudo/oshigoto/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "marshall-plan",
+    "title": "马歇尔计划",
+    "kind": "history",
+    "subKind": "modern",
+    "series": "history-and-figures",
+    "seriesNo": "042",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/marshall-plan/marshall-plan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/marshall-plan/marshall-plan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/marshall-plan/marshall-plan-full.webp",
+    "score": 7.9,
+    "tags": [
+      "历史",
+      "现代",
+      "美国",
+      "欧洲",
+      "冷战",
+      "援助",
+      "重建"
+    ],
+    "tagline": "1948-1952 美国 131 亿美元援助 + 重建西欧 + 遏制苏联",
+    "subtitle": "历史事件 · 马歇尔计划 · 百科占位",
+    "description": "马歇尔计划 (Marshall Plan) 是 1948-1952 美国援助欧洲战后重建的经济计划, 1947 哈佛大学毕业典礼 美国国务卿 George Marshall 演讲, 1948 杜鲁门总统 Economic Cooperation Act 立法, 4 年援助 131.5 亿美元 (1948-1951 占美国 GDP 1.4% ≈ 2024 1000 亿美元), 16 个西欧国家 + 西德 + 意大利 + 法国 + 英国 + 希腊 + 土耳其 等. 援助形式: 食物 + 燃料 + 原料 + 设备 + 资金. 成就: 西欧 1948-1952 GDP 增 25%, 工业生产 +35%, 农业 +10%, 1950-1952 创战前新高. 影响: 遏制苏联 (冷战开始) + 促成欧洲煤钢联营 (ECSC 1951) + 北约 (NATO 1949) + 1957 罗马条约 EEC + 1993 欧盟. 反计划: 苏联 Molotov Plan (经互会 Comecon 1949) + 东欧拒绝援助. 1991 苏联解体后马歇尔计划思路被提议给东欧 + 俄罗斯. （参见：柏林空运, 北约, 欧洲一体化）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1947",
+        "title": "哈佛演讲",
+        "body": "1947 美国国务卿 George Marshall 哈佛毕业典礼演讲, 提议援助欧洲"
+      },
+      {
+        "year": "1948",
+        "title": "立法",
+        "body": "1948 杜鲁门总统 Economic Cooperation Act 立法, 启动马歇尔计划"
+      },
+      {
+        "year": "1948-51",
+        "title": "131.5 亿美元",
+        "body": "1948-1951 美国 4 年援助 131.5 亿美元 (占 GDP 1.4% ≈ 2024 1000 亿美元), 16 个西欧国家"
+      },
+      {
+        "year": "1952",
+        "title": "ECSC 成立",
+        "body": "1952 欧洲煤钢联营 ECSC 成立, 马歇尔计划奠基础, 1957 罗马条约 EEC"
+      },
+      {
+        "year": "1991",
+        "title": "反计划",
+        "body": "1949 苏联 Molotov Plan + 经互会 Comecon 反制, 1991 苏联解体后马歇尔计划思路被提议给东欧 + 俄罗斯"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 马歇尔计划",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%AD%87%E5%B0%94%E8%AE%A1%E5%88%92",
+        "type": "百科"
+      },
+      {
+        "title": "Marshall Foundation 官方",
+        "url": "https://marshallfoundation.org/",
+        "type": "官方"
+      },
+      {
+        "title": "美国国务院 欧洲事务局",
+        "url": "https://www.state.gov/p/eur/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "berlin-airlift",
+    "title": "柏林空运",
+    "kind": "history",
+    "subKind": "modern",
+    "series": "history-and-figures",
+    "seriesNo": "043",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/berlin-airlift/berlin-airlift-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/berlin-airlift/berlin-airlift-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/berlin-airlift/berlin-airlift-full.webp",
+    "score": 8.3,
+    "tags": [
+      "历史",
+      "现代",
+      "当代",
+      "美国",
+      "德国",
+      "冷战",
+      "空运"
+    ],
+    "tagline": "1948-1949 11 月空运 234 万吨物资 + 西柏林不屈服",
+    "subtitle": "历史事件 · 柏林空运 · 百科占位",
+    "description": "柏林空运 (Berlin Airlift) 是 1948-1949 美国 + 英国 + 法国空运物资给被苏联封锁的西柏林的军事行动, 1948 西方盟国在西占区发行新货币 Deutsche Mark, 苏联 1948-06-24 封锁西柏林所有铁路 + 公路 + 运河 (250 万平民面临断粮), 西方盟国决定空运, 1948-06-26 开始, 1949-05-12 苏联解除封锁. 持续 11 个月, 飞行 27.8 万架次, 运送 234 万吨物资 (食物 + 煤 + 药品), 日均 5000 架次, 最多 1399 架次/日 (1949-04-15), 失事 73 架 (飞行员 72 死). 1949 美空军 Gail Halvorsen 糖果空投 (Operation Little Vittles) 感动柏林儿童. 1961-1989 柏林墙, 1989 11-09 柏林墙倒塌. 政治后果: 1949 NATO 成立 + 1949-10-07 联邦德国 (BRD) + 1949-10-07 德意志民主共和国 (DDR) 分裂, 1990-10-03 两德统一. （参见：马歇尔计划, 柏林墙, 冷战）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1948",
+        "title": "货币改革",
+        "body": "1948 西方盟国西占区发行 Deutsche Mark 新货币, 苏联反应"
+      },
+      {
+        "year": "1948-06-24",
+        "title": "苏联封锁",
+        "body": "1948-06-24 苏联封锁西柏林所有铁路 + 公路 + 运河, 250 万平民面临断粮"
+      },
+      {
+        "year": "1948-06-26",
+        "title": "空运开始",
+        "body": "1948-06-26 西方盟国空运开始, 持续 11 个月, 27.8 万架次"
+      },
+      {
+        "year": "1949-04-15",
+        "title": "日峰 1399 架",
+        "body": "1949-04-15 日峰 1399 架次/日 1.4 万吨, 总 234 万吨物资"
+      },
+      {
+        "year": "1989-11-09",
+        "title": "柏林墙倒",
+        "body": "1949-05-12 苏联解除封锁, 1961 柏林墙, 1989-11-09 柏林墙倒塌, 1990-10-03 两德统一"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 柏林空运",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9F%8F%E6%9E%97%E7%A9%BA%E8%BF%90",
+        "type": "百科"
+      },
+      {
+        "title": "柏林联邦档案馆",
+        "url": "https://www.bundesarchiv.de/",
+        "type": "官方"
+      },
+      {
+        "title": "柏林空运纪念馆",
+        "url": "https://www.alliiertenmuseum.de/en/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "great-firewall",
+    "title": "互联网审查",
+    "kind": "history",
+    "subKind": "modern",
+    "series": "history-and-figures",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/great-firewall/great-firewall-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/great-firewall/great-firewall-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/history/great-firewall/great-firewall-full.webp",
+    "score": 7.6,
+    "tags": [
+      "历史",
+      "现代",
+      "当代",
+      "中国",
+      "互联网",
+      "审查",
+      "争议"
+    ],
+    "tagline": "1998-2006 建成的互联网边界 + 屏蔽 Google / 脸书 / 推特",
+    "subtitle": "历史事件 · 互联网审查 · 百科占位",
+    "description": "中国防火墙 (Great Firewall, GFW) 是中国政府 1998-2006 建立的互联网审查系统, 1998 朱镕基推动金盾工程 (公安), 2000 信息产业部成立互联网新闻信息服务管理工作委员会, 2003 启用 GFW 技术 (Cisco + 华为 + 北京邮电大学 联合开发), 2006 大规模部署. 技术: DNS 污染 + IP 黑名单 + 深度包检测 (DPI) + 关键词过滤 + 主动探测 (GFW Probe) + TCP 重置. 屏蔽: Google + YouTube + Facebook + Twitter + Instagram + WhatsApp + Telegram + Wikipedia (部分) + GitHub (部分时段) + Reddit + Discord + 维基百科 (2020+). 替代品: 百度 (搜索) + 微信 (社交) + 微博 (Twitter-like) + 抖音 + B 站. 2024 中国 10 亿+ 网民 95% 用国内服务, 翻墙用户 0.5-1%. 争议: 言论自由 + 信息透明 + 民族认同 vs 网络主权 + 国家安全 + 文化保护. 出口案例: 缅甸 + 越南 + 伊朗 + 俄罗斯 + 埃塞俄比亚 等国借鉴. （参见：互联网, 维基百科, 互联网审查）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1998",
+        "title": "金盾工程",
+        "body": "1998 朱镕基推动金盾工程 (公安), 中国互联网审查起步"
+      },
+      {
+        "year": "2000",
+        "title": "互联网新闻",
+        "body": "2000 信息产业部成立互联网新闻信息服务管理工作委员会"
+      },
+      {
+        "year": "2003",
+        "title": "GFW 技术",
+        "body": "2003 启用 GFW 技术 (Cisco + 华为 + 北京邮电大学联合), DNS 污染 + DPI"
+      },
+      {
+        "year": "2006",
+        "title": "大规模部署",
+        "body": "2006 大规模部署, 屏蔽 Google + Wikipedia + Facebook + Twitter"
+      },
+      {
+        "year": "2020",
+        "title": "Wikipedia 中文版屏蔽",
+        "body": "2020+ Wikipedia 中文版屏蔽, 2024 中国 10 亿+ 网民 95% 用国内服务, 翻墙用户 0.5-1%"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 中国网络审查",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%A1%E6%9F%A5",
+        "type": "百科"
+      },
+      {
+        "title": "Citizen Lab 多伦多大学",
+        "url": "https://citizenlab.ca/",
+        "type": "学术"
+      },
+      {
+        "title": "中国互联网络信息中心 CNNIC",
+        "url": "https://www.cnnic.net.cn/",
+        "type": "官方"
       }
     ]
   }

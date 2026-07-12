@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "round": "R82",
+    "createdAt": "2026-07-12",
+    "goal": "ship 24 张内容 + 配平 profession 27+ + disease 29+",
+    "strategy": "6 kind 各 4 张: profession (legal/finance/media/military 4 subKind) + disease (mental/autoimmune/cancer/genetic 4 subKind) + 4 topic diversity (sport/tech/food/history). 走 high-recognition 主题让 user verify R76-R79 polish 实战"
+  },
+  "cards": [
+    { "slug": "designer-prof", "title": "设计师", "kind": "profession", "subKind": "art", "series": "history-and-figures", "seriesNo": "029" },
+    { "slug": "professor-prof", "title": "教授", "kind": "profession", "subKind": "education", "series": "history-and-figures", "seriesNo": "030" },
+    { "slug": "civil-engineer-prof", "title": "土木工程师", "kind": "profession", "subKind": "engineering", "series": "history-and-figures", "seriesNo": "031" },
+    { "slug": "firefighter", "title": "消防员", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "032" },
+    { "slug": "bipolar", "title": "双相情感障碍", "kind": "disease", "subKind": "mental", "series": "atlas-miscellany", "seriesNo": "026" },
+    { "slug": "crohns", "title": "克罗恩病", "kind": "disease", "subKind": "autoimmune", "series": "atlas-miscellany", "seriesNo": "027" },
+    { "slug": "lung-cancer", "title": "肺癌", "kind": "disease", "subKind": "cancer", "series": "atlas-miscellany", "seriesNo": "028" },
+    { "slug": "cystic-fibrosis", "title": "囊性纤维化", "kind": "disease", "subKind": "genetic", "series": "atlas-miscellany", "seriesNo": "029" },
+    { "slug": "surfing", "title": "冲浪", "kind": "sport", "subKind": "water-sport", "series": "atlas-miscellany", "seriesNo": "040" },
+    { "slug": "fencing", "title": "击剑", "kind": "sport", "subKind": "combat", "series": "atlas-miscellany", "seriesNo": "041" },
+    { "slug": "marathon", "title": "马拉松", "kind": "sport", "subKind": "athletics", "series": "atlas-miscellany", "seriesNo": "042" },
+    { "slug": "chess-sport", "title": "国际象棋", "kind": "sport", "subKind": "mind-sport", "series": "atlas-miscellany", "seriesNo": "043" },
+    { "slug": "vr-headset", "title": "VR 头显", "kind": "tech", "subKind": "consumer-electronics", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "llm-model", "title": "大语言模型", "kind": "tech", "subKind": "computing", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "solar-panel", "title": "太阳能电池板", "kind": "tech", "subKind": "energy", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "lab-grown-meat", "title": "细胞培养肉", "kind": "tech", "subKind": "biomedical", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "bento", "title": "日式便当", "kind": "food", "subKind": "japanese", "series": "culinary-corner", "seriesNo": "020" },
+    { "slug": "tortilla", "title": "玉米饼", "kind": "food", "subKind": "mexican", "series": "culinary-corner", "seriesNo": "021" },
+    { "slug": "bruschetta", "title": "意式烤面包", "kind": "food", "subKind": "italian", "series": "culinary-corner", "seriesNo": "022" },
+    { "slug": "kebab", "title": "土耳其烤肉", "kind": "food", "subKind": "middle-east", "series": "culinary-corner", "seriesNo": "023" },
+    { "slug": "great-firewall", "title": "中国防火墙", "kind": "history", "subKind": "modern", "series": "history-and-figures", "seriesNo": "040" },
+    { "slug": "meiji", "title": "明治维新", "kind": "history", "subKind": "asia-japan", "series": "history-and-figures", "seriesNo": "041" },
+    { "slug": "marshall-plan", "title": "马歇尔计划", "kind": "history", "subKind": "modern", "series": "history-and-figures", "seriesNo": "042" },
+    { "slug": "berlin-airlift", "title": "柏林空运", "kind": "history", "subKind": "modern", "series": "history-and-figures", "seriesNo": "043" }
+  ]
+}

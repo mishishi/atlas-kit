@@ -17780,16 +17780,19 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/silicon/silicon-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/silicon/silicon-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/silicon/silicon-full.webp",
-    "score": 0,
+    "score": 8.7,
     "tags": [
       "元素",
+      "类金属",
+      "现代",
+      "全球",
       "半导体",
-      "工艺",
-      "现代"
+      "芯片",
+      "工业"
     ],
-    "tagline": "半导体之魂",
+    "tagline": "信息时代的基石 + 沙子到芯片的魔法",
     "subtitle": "化学元素 · 硅",
-    "description": "硅（元素符号Si，原子序数14）是一种准金属元素，在地壳中含量丰富，约占地壳总质量的四分之一。硅在自然界中主要以二氧化硅的形式存在，是半导体工业的核心材料，广泛应用于电子芯片、光伏电池等领域。",
+    "description": "Si 硅 原子序数 14, 元素周期表 14 族 (碳族), 1824 瑞典 Berzelius 首次分离, 占地壳 27.7% (仅次于氧 46.6%), 是 半导体之王. 硅单晶 (12 英寸直径, 99.9999999% 纯度) 是芯片基础, 全球半导体产业 6000 亿美元, 台湾 TSMC + 韩国 Samsung + 美国 Intel 三强. 二氧化硅 (SiO₂) 是玻璃 + 水泥 + 陶瓷主成分, 硅藻土用于过滤. 硅烷 (SiH₄) 用于太阳能光伏 + 平板显示. 中国 2023 硅料产能 150 万吨, 占全球 80%, 但高端芯片仍依赖海外. （参见：碳, 锗, 砷）",
     "createdAt": "2026-06-18",
     "revisions": [
       {
@@ -17802,48 +17805,48 @@
     ],
     "sources": [
       {
-        "title": "维基百科中文版",
-        "url": "https://zh.wikipedia.org/wiki/硅",
+        "title": "WIKI: 硅",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A1%85",
         "type": "百科"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/硅",
-        "type": "百科"
+        "title": "RSC: Silicon",
+        "url": "https://www.rsc.org/periodic-table/element/14/silicon",
+        "type": "学术"
       },
       {
-        "title": "中国大百科全书",
-        "url": "https://bg4.pku.org.cn/baike/%E7%A1%92",
-        "type": "百科"
-      },
-      {
-        "title": "中国科学院化学部",
-        "url": "https://www.chemsoc.org.cn/element/",
-        "type": "机构"
+        "title": "TSMC 官网",
+        "url": "https://www.tsmc.com/",
+        "type": "官方"
       }
     ],
     "quote": "硅是一种准金属，化学符号为Si，原子序数为14，位于元素周期表第14族。/ 维基百科",
     "trivia": "硅的英文名Silicon源自拉丁语silex，意为燧石。",
     "history": [
       {
-        "year": "1823",
-        "title": "贝采利乌斯首次制得硅单质",
-        "body": "1823年，瑞典化学家永斯·雅各布·贝采利乌斯通过还原四氟化硅首次成功获得单质硅，开启了硅的现代研究。"
+        "year": "1824",
+        "title": "Berzelius 首次分离",
+        "body": "瑞典 Jöns Jacob Berzelius 用钾还原氟硅酸钾, 首次分离硅单质, 命名源自拉丁 silex 燧石"
       },
       {
         "year": "1947",
-        "title": "晶体管时代开启",
-        "body": "1947年，贝尔实验室的巴丁、布拉顿和肖克利发明了点接触晶体管，标志着硅在电子学中的关键应用开始。"
+        "title": "晶体管发明",
+        "body": "贝尔实验室 Bardeen + Brattain + Shockley 发明晶体管 (transistor), 硅半导体时代开端, 1956 诺贝尔物理奖"
       },
       {
         "year": "1958",
-        "title": "集成电路首次实现",
-        "body": "1958年，杰克·基尔比在得克萨斯仪器公司研制出首个硅集成电路，奠定了现代半导体工业的基础。"
+        "title": "集成电路",
+        "body": "Jack Kilby 德州仪器 + Robert Noyce 仙童半导体各自发明集成电路 (IC), 硅芯片时代来临, Kilby 2000 诺贝尔物理奖"
       },
       {
-        "year": "1970",
-        "title": "光伏产业大规模发展",
-        "body": "20世纪70年代，硅光伏电池实现商业化生产，逐步成为可再生能源领域的主力技术，推动了全球能源结构的转型。"
+        "year": "1971",
+        "title": "Intel 4004 微处理器",
+        "body": "Intel 推出全球首颗商用微处理器 4004 (4 位, 2300 晶体管), 1 MHz 时钟, 开创微处理器时代"
+      },
+      {
+        "year": "2020",
+        "title": "5nm 制程 + ASML EUV",
+        "body": "台积电 + 三星量产 5nm 工艺, ASML EUV 光刻机 (100 kW 等离子, 氖氟混合激光), 单芯片含 100 亿+ 晶体管"
       }
     ],
     "subKind": "nonmetal"
@@ -17936,64 +17939,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/journalist/journalist-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/journalist/journalist-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/journalist/journalist-full.webp",
-    "score": 0,
+    "score": 8,
     "tags": [
-      "全球职业",
-      "现代人物",
-      "媒体传播",
-      "公共舆论"
+      "职业",
+      "媒体",
+      "现代",
+      "全球",
+      "民主",
+      "危险",
+      "知识密集"
     ],
-    "tagline": "职业 · 记者的图鉴。",
+    "tagline": "真相的挖掘者 + 第四权力的代言人",
     "subtitle": "职业 · 记者",
-    "description": "记者是以采集、整理、报道新闻信息为职业的人员，主要供职于报社、通讯社、广播电台、电视台及网络媒体等机构。工作包括采写新闻稿件、进行现场采访、编辑审核内容等，需要具备新闻敏感度、文字功底与调查能力。记者承担着传递事实、舆论监督和社会教育等职能，是现代信息传播中不可或缺的角色。",
+    "description": "记者 是新闻采写 + 调查报道 + 舆论监督的第四权力 — 1690 德国 Acta Diurna + 1702 英国 Daily Courant 是现代报纸原型, 美国宪法第一修正案 (1791) 保护新闻自由. 普利策奖 (1917 设立) 是新闻业最高荣誉, 水门事件 (1972) + 五角大楼文件 (1971) 是调查记者巅峰. 记者分战地 (战区危险) / 调查 (深挖数月) / 财经 / 体育 / 政治 五类, 顶级战地记者年收 10-20 万美元, 但战死率 0.1-0.5%. 数字时代传统媒体崩溃 (纽约时报 2000-2010 裁员 30%), 但调查记者 + 播客 + Substack 兴起. （参见：律师, 法官, 电影导演）",
     "createdAt": "2026-06-18",
     "history": [
       {
-        "year": "1826",
-        "title": "现代新闻业萌芽",
-        "body": "19世纪初，欧洲工业化推动报纸规模化发行，标志着现代新闻业的萌芽。"
+        "year": "1690",
+        "title": "德国 Acta Diurna",
+        "body": "首份定期报纸, 罗马时期已有 Acta Diurna 手抄新闻"
       },
       {
-        "year": "1840",
-        "title": "通讯社的诞生",
-        "body": "法国哈瓦斯社于1835年成立，成为全球首个新闻通讯社，随后在1840年代向多国扩展业务。"
+        "year": "1702",
+        "title": "英国 Daily Courant",
+        "body": "首份英文日报, 伦敦出版"
       },
       {
-        "year": "1880",
-        "title": "新闻专业教育",
-        "body": "美国密苏里大学于1908年创办新闻学院，但1880年代英国《泰晤士报》已设立编辑培训课程。"
+        "year": "1791",
+        "title": "美国宪法第一修正案",
+        "body": "Congress shall make no law ... abridging the freedom of ... the press, 新闻自由入宪"
       },
       {
-        "year": "1910",
-        "title": "无线广播新闻",
-        "body": "1910年代无线电技术成熟，广播新闻节目首次出现，使记者能够实时报道战争和政治事件。"
+        "year": "1917",
+        "title": "普利策奖设立",
+        "body": "Joseph Pulitzer 设立普利策奖, 至今新闻业最高荣誉"
       },
       {
-        "year": "1990",
-        "title": "网络新闻崛起",
-        "body": "1990年代互联网普及，网络媒体崛起，传统报纸开始数字化转型，新闻分发方式发生根本改变。"
+        "year": "1972",
+        "title": "水门事件",
+        "body": "华盛顿邮报 Bob Woodward + Carl Bernstein 调查水门, 1974 尼克松辞职, 调查记者巅峰"
       }
     ],
     "sources": [
       {
-        "title": "百度百科 - 记者",
-        "url": "https://baike.baidu.com/item/%E8%AE%B0%E8%80%85/331",
-        "type": "百科"
-      },
-      {
-        "title": "维基百科中文版 - 记者",
+        "title": "WIKI: 记者",
         "url": "https://zh.wikipedia.org/wiki/%E8%AE%B0%E8%80%85",
         "type": "百科"
       },
       {
-        "title": "中华全国新闻工作者协会",
-        "url": "https://www.zgjx.cn/",
-        "type": "机构"
+        "title": "普利策奖官网 Pulitzer",
+        "url": "https://www.pulitzer.org/",
+        "type": "官方"
       },
       {
-        "title": "中国知网 - 新闻传播类学术论文",
-        "url": "https://kns.cnki.net/kns8/defaultresult/index?classid=Y8R74A&txt=%E8%AE%B0%E8%80%85",
-        "type": "学术"
+        "title": "中国记协",
+        "url": "https://www.zgjx.cn/",
+        "type": "官方"
       }
     ],
     "quote": "新闻是新近发生的事实的报道。——陆定一《我们对于新闻学的基本观点》",
@@ -18560,66 +18561,64 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/lawyer/lawyer-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/lawyer/lawyer-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/lawyer/lawyer-full.webp",
-    "score": 0,
+    "score": 7.5,
     "tags": [
-      "全球",
-      "现代",
+      "职业",
       "法律",
-      "服务"
+      "现代",
+      "全球",
+      "服务",
+      "知识密集",
+      "高收入"
     ],
-    "tagline": "正义的守护者",
+    "tagline": "法律的执行者 + 权利的守门人",
     "subtitle": "职业 · 律师",
-    "description": "律师是依法取得执业资格，为当事人提供法律服务的法律专业人员。根据法律规定，律师可从事诉讼代理、辩护及非诉讼法律事务，协助客户维护合法权益、解决法律纠纷。律师在法治社会中扮演重要角色，既是法律知识的传播者，也是当事人利益的重要捍卫者。",
+    "description": "律师 是经过法律训练 + 司法考试 + 执业许可的专业法律人. 现代律师制度起源于 12-13 世纪欧洲 (英国普通法 + 教会法 + 罗马法汇流), 19 世纪美国建立 bar association 体系, 中国 1979 恢复律师制度. 律师分诉讼 (法庭辩论) + 非诉讼 (合同 / 收购 / 知识产权) 两大方向, 顶级律所合伙人年收入超 1000 万美元 (Wachtell Lipton / Cravath / Sullivan & Cromwell), 但 90% 律师做中等案值 (10 万 - 100 万美元). （参见：法官, 记者, 会计师）",
     "createdAt": "2026-06-18",
     "sources": [
       {
-        "title": "维基百科（中文）",
+        "title": "WIKI: 律师",
         "url": "https://zh.wikipedia.org/wiki/%E5%BE%8B%E5%B8%88",
         "type": "百科"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E5%BE%8B%E5%B8%88",
-        "type": "百科"
+        "title": "美国律师协会 ABA 官网",
+        "url": "https://www.americanbar.org/",
+        "type": "官方"
       },
       {
-        "title": "知网（CNKI）",
-        "url": "https://www.cnki.net/",
-        "type": "学术"
-      },
-      {
-        "title": "中华全国律师协会",
-        "url": "https://www.acba.org.cn",
-        "type": "机构"
+        "title": "中国司法部律师工作局",
+        "url": "https://www.moj.gov.cn/",
+        "type": "官方"
       }
     ],
     "quote": "本法所称律师，是指依法取得律师执业证书，接受委托或者指定，为当事人提供法律服务的执业人员。——《中华人民共和国律师法》",
     "trivia": "全球约有130个国家设有律师资格考试制度。",
     "history": [
       {
-        "year": "前 5 世纪",
-        "title": "古希腊演说家",
-        "body": "雅典演说家如 Lysias 已为他人代写诉状与法庭辩护, 雏形律师职业出现。"
+        "year": "12 世纪",
+        "title": "英国普通法+教会法成型",
+        "body": "12-13 世纪英国普通法 + 教会法 + 罗马法汇流, 现代律师制度起源"
       },
       {
-        "year": "1215 年",
-        "title": "英国大宪章奠基",
-        "body": "英国《大宪章》确立正当程序原则, 推动职业辩护人阶层的形成。"
+        "year": "1275",
+        "title": "英格兰律师学院",
+        "body": "英国四大 Inns of Court (Lincoln + Gray + Inner + Middle Temple) 培训律师, 至今伦敦律师公会雏形"
       },
       {
-        "year": "1872 年",
-        "title": "中国近代律师",
-        "body": "清政府《诉讼律草案》引入律师制度, 上海出现首批执业律师。"
+        "year": "1791",
+        "title": "美国宪法第一修正案",
+        "body": "美国宪法第六修正案保障刑事被告律师辩护权, 律师成为宪法权利的一部分"
       },
       {
-        "year": "1956 年",
-        "title": "中国律师协会成立",
-        "body": "中华全国律师协会在北京成立, 律师职业在中国正式确立。"
+        "year": "1878",
+        "title": "美国律师协会 ABA 成立",
+        "body": "ABA 统一各州律师执业标准, 推动法律教育 (法学院) 制度化"
       },
       {
-        "year": "1996 年",
-        "title": "中国律师法颁布",
-        "body": "《中华人民共和国律师法》通过, 律师执业资格、权利义务与责任首次以法律形式明确。"
+        "year": "1979",
+        "title": "中国恢复律师制度",
+        "body": "1979 律师暂行条例, 1986 律师资格考试, 1996 律师法, 律师行业全面重建"
       }
     ],
     "subKind": "service"
@@ -18946,37 +18945,35 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/motorcycle/motorcycle-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/motorcycle/motorcycle-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/motorcycle/motorcycle-full.webp",
-    "score": 0,
+    "score": 7.5,
     "tags": [
-      "全球",
+      "载具",
+      "摩托",
       "现代",
-      "交通",
-      "机械"
+      "全球",
+      "工业",
+      "运动",
+      "赛事"
     ],
-    "tagline": "机动灵活，风雨无阻",
+    "tagline": "两轮的激情 + 风的自由",
     "subtitle": "交通工具 · 摩托车",
-    "description": "摩托车是一种由发动机驱动、具有两个轮子的机动车,以其轻便灵活的特点成为全球广受欢迎的交通工具. 相比四轮汽车,摩托车在拥堵城市中更具机动性,且燃油效率通常更高. 从日常通勤到休闲骑行,摩托车凭借多元化的车型和相对亲民的使用成本,在全球交通体系中占据重要地位.",
+    "description": "摩托车 是双轮机动车, 1885 德国戴姆勒 (Daimler) 发明首辆 (Reitwagen), 1903 哈雷戴维森 (Harley-Davidson) 在美国创立, 1949 本田 (Honda) 在日本创业, 1969 川崎 (Kawasaki) Z1 750cc 拉开日系四强序幕. 2024 全球摩托年产 6000 万辆, 印度 (Hero / Bajaj) + 中国 (大长江 / 隆鑫) + 日本 (Honda / Yamaha / Suzuki / Kawasaki) 占 80%. 排量分 50cc 轻便 / 125-250cc 代步 / 400-650cc 运动 / 1000cc+ 巡航 (哈雷 / 宝马 R 1300 GS). MotoGP (1949) + 达喀尔 (1979) + Isle of Man TT (1907) 三大赛事. 电动摩托 (Zero / Energica / 哈雷 LiveWire) 2024 占 5%, 未来趋势. （参见：哈雷, 汽车, Vespa）",
     "createdAt": "2026-06-18",
     "sources": [
       {
-        "title": "维基百科中文版",
-        "url": "https://zh.wikipedia.org/wiki/%E6%91%A9%E6%89%8E%E8%BD%A6",
+        "title": "WIKI: 摩托车",
+        "url": "https://zh.wikipedia.org/wiki/%E6%91%A9%E6%89%98%E8%BD%A6",
         "type": "百科"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E6%91%A9%E6%89%8E%E8%BD%A6",
-        "type": "百科"
+        "title": "Honda 官网",
+        "url": "https://global.honda/",
+        "type": "官方"
       },
       {
-        "title": "中国大百科全书",
-        "url": "https://www.zgbk.com/",
-        "type": "百科"
-      },
-      {
-        "title": "中国知网",
-        "url": "https://www.cnki.net/",
-        "type": "学术"
+        "title": "MotoGP 官网",
+        "url": "https://www.motogp.com/",
+        "type": "官方"
       }
     ],
     "quote": "摩托车是一种使用内燃机驱动的两轮机动车，主要用于个人交通。（维基百科）",
@@ -18984,28 +18981,28 @@
     "history": [
       {
         "year": "1885",
-        "title": "戴姆勒木架摩托",
-        "body": "德国工程师戴姆勒将汽油发动机安装在木架自行车上，制成世界上第一辆摩托车，开启了机动两轮交通的纪元。"
+        "title": "戴姆勒 Reitwagen",
+        "body": "德国 Daimler + Maybach 发明首辆摩托车 Reitwagen, 单缸内燃机, 木制骨架, 11 km/h"
       },
       {
-        "year": "1894",
-        "title": "首批摩托车量产",
-        "body": "德国希尔德布兰德与沃尔夫穆勒公司生产了首批量产摩托车，每小时可行驶40公里，是最早商业化的摩托车产品。"
+        "year": "1903",
+        "title": "Harley-Davidson",
+        "body": "美国 William Harley + Arthur Davidson 创立 Harley-Davidson, 至今美国摩托车文化象征"
       },
       {
-        "year": "1901",
-        "title": "印第安摩托创立",
-        "body": "美国印第安摩托车公司成立，成为北美最早的摩托车制造商之一，主打V型双缸发动机车型，迅速占领北美市场。"
+        "year": "1949",
+        "title": "本田 Honda",
+        "body": "日本 本田宗一郎 创立 Honda, 1959 进入美国市场, 1990s 全球最大摩托车厂商"
       },
       {
-        "year": "1920",
-        "title": "摩托竞赛运动兴起",
-        "body": "欧洲摩托车制造商开始在赛道上一较高下，曼岛TT等赛事吸引全球车手参与，推动了摩托车技术与性能的快速进步。"
+        "year": "1969",
+        "title": "川崎 Z1",
+        "body": "Kawasaki Z1 900cc DOHC 发动机, 开启日本四强 (本田 / 雅马哈 / 铃木 / 川崎) 竞赛"
       },
       {
-        "year": "1959",
-        "title": "本田小狼横空出世",
-        "body": "日本本田公司推出Super Cub小狼踏板摩托车，凭借经济耐用迅速畅销全球，至今累计产量超过1亿辆，创下单一车型传奇。"
+        "year": "1949",
+        "title": "MotoGP",
+        "body": "1949 FIM 创办摩托车大奖赛 (MotoGP), 至今最高级别, 2024 杜卡迪 / 雅马哈 / 本田 三强"
       }
     ],
     "subKind": "car"
@@ -26688,67 +26685,64 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/submarine/submarine-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/submarine/submarine-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/submarine/submarine-full.webp",
-    "score": 0,
+    "score": 8.2,
     "tags": [
-      "海洋军事",
-      "现代舰船",
-      "水下交通",
-      "军事科技",
-      "潜艇技术"
+      "军事",
+      "潜艇",
+      "现代",
+      "全球",
+      "核动力",
+      "战略",
+      "高技术"
     ],
-    "tagline": "深海潜行制敌无形",
+    "tagline": "深海的幽灵 + 二次核反击的最后堡垒",
     "subtitle": "交通工具 · 潜水艇 · 图鉴条目",
-    "description": "潜水艇是一种能够在水下自主航行的军用或民用舰艇，通常配备压载舱和推进系统。现代潜水艇按动力分为核动力和常规柴电两类，核潜艇具备长期潜航能力，排水量可达数千至万吨；常规潜艇多用于近海巡逻，排水量在千吨左右。截至2023年，全球约40个国家拥有潜艇，执行海上作战、侦察和科学考察等任务。",
+    "description": "潜艇 是水下作战舰艇, 1776 美独立战争 海龟号 (Bushnell 设计, 手工操作) 是首艘, 1898 霍兰 (Holland) 设计现代柴电潜艇, 1954 美国 鹦鹉螺号 (Nautilus SSN-571) 首艘核动力. 现代核潜艇 (Virginia / Seawolf / Ohio 级) 水下 25 节, 潜深 500 米, 单次核燃料续航 25 年不需补给. 战略核潜艇 (SSBN) 携带 16-24 枚三叉戟导弹, 每枚 8-12 弹头, 是 二次核反击 核心. 中国 094 型 (晋级) + 俄罗斯 北风之神 (Borei) + 美国 俄亥俄 (Ohio) 是战略核潜艇三强. （参见：航空母舰, 鱼雷, 核反应堆）",
     "createdAt": "2026-06-19",
     "sources": [
       {
-        "title": "百度百科 - 汽车",
-        "url": "https://baike.baidu.com/item/汽车/16714",
+        "title": "WIKI: 潜艇",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BD%9C%E8%89%87",
         "type": "百科"
       },
       {
-        "title": "中国大百科全书 - 车辆",
-        "url": "https://www.zgbk.com/doc?subject=transport&entry=车辆",
-        "type": "百科"
+        "title": "US Navy Submarines",
+        "url": "https://www.navy.com/what-we-do/sea/air-sub",
+        "type": "官方"
       },
       {
-        "title": "中国汽车技术研究中心",
-        "url": "https://www.catarc.ac.cn",
-        "type": "机构"
-      },
-      {
-        "title": "新华网汽车频道",
-        "url": "https://www.xinhuanet.com/auto/",
-        "type": "新闻"
+        "title": "中国海军网",
+        "url": "http://www.china-navy.cn/",
+        "type": "官方"
       }
     ],
     "quote": "潜艇在水下潜航时,需依靠声呐探测水下目标。",
     "trivia": "现代核潜艇水下续航可达数月,无需浮出水面。",
     "history": [
       {
-        "year": "1620",
-        "title": "早期实验潜水器",
-        "body": "1620年荷兰发明家德雷贝尔制造了首艘可潜水的木质容器，标志潜水装置的雏形出现。"
-      },
-      {
         "year": "1776",
-        "title": "美国潜水船海龟",
-        "body": "1776年美国独立战争期间，大卫·布什内尔设计了手动螺旋推进的“乌龟”潜艇，首次用于攻击英国舰队。"
+        "title": "海龟号",
+        "body": "美独立战争 David Bushnell 发明 海龟号, 单人手动螺旋桨, 攻击英国皇家海军鹰号, 未成功但首次潜艇实战"
       },
       {
-        "year": "1864",
-        "title": "亨利号实战记",
-        "body": "1864年美国内战时，CSS亨利于詹姆斯堡成功击沉北方护卫舰，成为历史上首次潜艇击沉敌舰的战例。"
+        "year": "1800",
+        "title": "Fulton 鹦鹉螺号",
+        "body": "美国 Robert Fulton 拿破仑时代设计 鹦鹉螺号 (Nautilus), 2 人手摇, 1800 法国塞纳河试航"
+      },
+      {
+        "year": "1898",
+        "title": "Holland 柴电潜艇",
+        "body": "爱尔兰 John Holland 设计现代柴电潜艇, 1900 美国海军首艘 霍兰号 (USS Holland, SS-1) 列装"
       },
       {
         "year": "1954",
-        "title": "核动力潜航时代",
-        "body": "1954年美国下水全球首艘核动力潜艇鹦鹉螺号，实现无限续航，标志潜艇进入核时代。"
+        "title": "鹦鹉螺号核动力",
+        "body": "美国 USS Nautilus (SSN-571) 全球首艘核动力潜艇, 水下 25 节, 1 核燃料续航 25 年, 核潜艇时代来临"
       },
       {
-        "year": "2005",
-        "title": "深海探测器蛟龙号",
-        "body": "2005年中国研制“蛟龙号”深潜探测器，下潜深度突破7000米，推动海洋科研与资源探测。"
+        "year": "1980",
+        "title": "三叉戟导弹",
+        "body": "美国 Trident 三叉戟导弹 (C-4 + D-5) 列装, 每枚 8-12 弹头, SSBN 战略核潜艇 二级核反击 核心"
       }
     ],
     "title": "潜水艇",
@@ -31645,9 +31639,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/food/matcha/matcha-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/matcha/matcha-full.webp",
     "score": 7.5,
     "tags": [
       "mocha",
@@ -42342,60 +42336,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/krypton/krypton-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/krypton/krypton-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/krypton/krypton-full.webp",
-    "score": 0,
+    "score": 6.9,
     "tags": [
+      "元素",
       "稀有气体",
-      "化学元素",
+      "现代",
       "全球",
       "照明",
-      "科学"
+      "计量",
+      "工业"
     ],
-    "tagline": "氪是一种化学元素，符号Kr，原子序36，属惰性气体族。",
+    "tagline": "白炽灯的守护者 + 1 米的旧标尺",
     "subtitle": "化学元素 · 氪",
-    "description": "氪是一种化学元素，符号Kr，原子序36，属惰性气体族。其化学性质稳定，不易与其他物质发生反应，主要存在于大气中，含量极低。1898年由英国化学家拉姆齐和特拉弗斯在液态空气中首次分离发现。氪在电光源工业中应用广泛，常用于制作氪灯和闪光灯，其放电时产生的白光亮度较高。",
+    "description": "Kr 氪 原子序数 36, 元素周期表 18 族, 沸点 -152 °C, 1898 Ramsay + Travers 在液态空气残渣中发现 (希腊语 kryptos 隐藏). 氪气在白炽灯泡中充入减少钨丝蒸发, 提高灯泡寿命 2-3 倍 (1960s-1990s 标准), 1960 第 7 届国际度量衡大会定义氪 -86 橙红谱线 6057 Å 为 米 基准 (1983 改用光速). 氪气还用于高速摄影闪光灯 (1/10000 秒) + 激光器 (氪离子激光, 白光激光手术). 全球年产氪 5-10 吨, 80% 来自钢铁厂空分副产. （参见：氖, 氙, 氩）",
     "createdAt": "2026-06-28",
     "history": [
       {
         "year": "1898",
-        "title": "氪的首次发现",
-        "body": "1898年，英国科学家拉姆齐与特拉弗斯在液化了空气中首次分离出氪气，证实其为惰性元素。"
-      },
-      {
-        "year": "1910",
-        "title": "氪的放电实验",
-        "body": "1910年，科学家首次在氪气管中施加高压，成功观测到氪气的放电光谱，为后续光谱分析奠定基础。"
+        "title": "Ramsay + Travers 发现氪",
+        "body": "英国 Ramsay + Travers 在液态空气残渣中发现氪, 命名希腊 隐藏 (kryptos)"
       },
       {
         "year": "1960",
-        "title": "氪灯照明应用",
-        "body": "1960年代，氪气被用于高强度闪光灯，显著提升快门速度与曝光控制，成为摄影领域的重要光源。"
+        "title": "氪 -86 定义米",
+        "body": "第 11 届国际度量衡大会定义氪 -86 橙红谱线 6057 Å 为 米 基准, 直至 1983 改用光速"
       },
       {
-        "year": "1980",
-        "title": "氟化氪激光研发",
-        "body": "1980年代初，科学家成功研制出氪氟化物激光器，实现紫外波段高功率输出，被广泛用于激光核聚变和材料加工研究。"
+        "year": "1960s",
+        "title": "氪灯白炽灯泡",
+        "body": "氪气白炽灯泡 + 钨丝 + 氮氩混合气, 寿命延长 2-3 倍, 1990s 主流"
       },
       {
-        "year": "1995",
-        "title": "氪离子推进技术",
-        "body": "1995年，NASA在国际空间站测试中使用氪离子推进器，验证其高效能和长寿命，为深空探测任务提供新动力方案。"
+        "year": "1975",
+        "title": "氪离子激光",
+        "body": "氪离子激光器 (Kr+ laser) 发明, 蓝绿黄红多色激光, 至今激光手术 + 激光显示"
+      },
+      {
+        "year": "2007",
+        "title": "氪在离子推进",
+        "body": "NASA 深空探测 Dawn 探测器用氪离子推进 (NASA Solar Electric Propulsion), 飞向小行星带"
       }
     ],
     "sources": [
       {
-        "title": "中国大百科全书（条目：氪）",
-        "url": "https://www.zgbk.com/doc",
+        "title": "WIKI: 氪",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B0%AA",
         "type": "百科"
       },
       {
-        "title": "维基百科中文版（氪）",
-        "url": "https://zh.wikipedia.org/wiki/氪",
-        "type": "百科"
+        "title": "RSC: Krypton",
+        "url": "https://www.rsc.org/periodic-table/element/36/krypton",
+        "type": "学术"
       },
       {
-        "title": "百度百科（氪）",
-        "url": "https://baike.baidu.com/item/氪",
-        "type": "百科"
+        "title": "BIPM 米定义历史",
+        "url": "https://www.bipm.org/en/history-si",
+        "type": "官方"
       }
     ],
     "subKind": "noble-gas",
@@ -42710,68 +42706,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/accountant/accountant-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/accountant/accountant-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/accountant/accountant-full.webp",
-    "score": 0,
+    "score": 7.3,
     "tags": [
-      "全球",
-      "图鉴社",
-      "百科",
-      "商业",
-      "数学",
-      "现代",
+      "职业",
       "金融",
-      "管理"
+      "现代",
+      "全球",
+      "知识密集",
+      "高收入",
+      "监管"
     ],
-    "tagline": "会计 · 图鉴社收录。",
+    "tagline": "财务的守门人 + 资本市场的可信度",
     "subtitle": "职业 · 会计",
-    "description": "会计是从事财务核算、账务管理和财务报表编制的专业人员，广泛分布于企业、会计师事务所、政府机构和各类组织中。其核心职责包括日常记账、税务申报、成本控制及财务分析，为管理层和利益相关方提供决策支持的财务信息。",
+    "description": "会计师 是审计 + 税务 + 财务报告专业人 — 上市公司必备, 1920s SEC + 1933 Securities Act 推动四大会计师事务所 (PwC / Deloitte / EY / KPMG) 垄断格局. 会计师分注册会计师 (CPA) / 注册税务师 (CTA) / 注册管理会计师 (CMA) 三大证, 顶级四大事务所合伙人年收入 200-500 万美元. 中国 CPA 考试通过率 15-20%, 每年 10 万人考取. 2001 安然事件 + 安达信倒闭 (2002) 是会计行业最大转折 — 萨班斯法案 (SOX) 强制审计独立性, 合伙人轮换制. （参见：投行银行家, 律师, 记者）",
     "createdAt": "2026-06-28",
     "history": [
       {
-        "year": "前 3000 年",
-        "title": "会计的古代萌芽",
-        "body": "早在公元前3000年，埃及和美索不达米亚已有记录收支的簿记制度，为会计雏形。"
+        "year": "1854",
+        "title": "爱丁堡会计师协会",
+        "body": "全球首个会计师专业组织, 1957 改为 ICAS"
       },
       {
-        "year": "1494 年",
-        "title": "复式记账法的诞生",
-        "body": "1494年，意大利数学家卢卡·帕乔利在其著作中系统阐述复式记账法，奠定现代会计理论基础。"
+        "year": "1887",
+        "title": "美国公共会计师协会 AICPA 成立",
+        "body": "1887 21 名会计师纽约创立, 至今美国 40 万 CPA"
       },
       {
-        "year": "19 世纪",
-        "title": "英国公司法与审计",
-        "body": "19世纪末，英国《公司法》首次要求公司保存账簿并接受审计，推动会计职业化和标准化。"
+        "year": "1933",
+        "title": "证券法 + SEC",
+        "body": "1933 罗斯福新政, SEC 监管上市公司财务报告, 四大会计师事务所制度成型"
       },
       {
-        "year": "1973 年",
-        "title": "国际会计准则统一",
-        "body": "1973年，国际会计准则委员会成立，致力于制定全球统一的会计准则，提高财务信息的可比性与透明度。"
+        "year": "1987",
+        "title": "中国 CPA 制度",
+        "body": "1987 中国注册会计师条例, 1991 首次 CPA 考试, 至今 30 万 CPA"
       },
       {
-        "year": "21 世纪",
-        "title": "信息技术渗透会计",
-        "body": "21世纪初，企业资源规划系统和云计算技术渗透会计工作，实现实时财务分析与自动化记账，提升效率。"
+        "year": "2002",
+        "title": "安然事件 + 安达信倒闭",
+        "body": "2001 安然破产, 2002 安达信 (Arthur Andersen) 倒闭, 萨班斯法案 SOX 强制审计独立性"
       }
     ],
     "sources": [
       {
-        "title": "维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AE%A1",
+        "title": "WIKI: 会计师",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AE%A1%E5%B8%88",
         "type": "百科"
       },
       {
-        "title": "百度百科",
-        "url": "https://baike.baidu.com/item/%E4%BC%9A%E8%AE%A1/2261490",
-        "type": "百科"
+        "title": "AICPA 美国注册会计师协会",
+        "url": "https://www.aicpa.org/",
+        "type": "官方"
       },
       {
-        "title": "中国知网",
-        "url": "https://www.cnki.net/",
-        "type": "学术"
-      },
-      {
-        "title": "中国注册会计师协会",
+        "title": "中注协 中国注册会计师协会",
         "url": "https://www.cicpa.org.cn/",
-        "type": "机构"
+        "type": "官方"
       }
     ],
     "subKind": "service",
@@ -43256,54 +43246,62 @@
     "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/mint/mint-card.png",
     "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/mint/mint-thumb.webp",
     "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/mint/mint-full.webp",
-    "score": 0,
+    "score": 7.6,
     "tags": [
-      "全球",
-      "图鉴社",
-      "百科",
       "植物",
-      "草药",
-      "烹饪",
-      "民俗",
-      "芳香",
-      "文化"
+      "香草",
+      "全球",
+      "现代",
+      "香料",
+      "医药",
+      "烹饪"
     ],
-    "tagline": "薄荷 · 图鉴社收录。",
+    "tagline": "清凉的代名词 + 提神万年的草本",
     "subtitle": "植物 · 薄荷",
-    "description": "薄荷是唇形科薄荷属的多年生草本植物，原产于欧洲及亚洲部分地区，现已广泛栽培于世界温带地区。茎直立，叶片边缘有锯齿，搓揉后散发出清凉的香气。薄荷全草可入药，具有疏散风热、清利头目等功效，其提取的薄荷脑也广泛用于食品、医药和日化产品中。",
+    "description": "薄荷 是唇形科薄荷属多年生草本, 原产欧亚温带, 全球 6000 年栽培史 (古埃及 + 古希腊 + 古罗马). 薄荷脑 (薄荷醇 menthol) 是主成分, 提神 + 镇痛 + 驱风, 1879 日本率先商业化提取. 薄荷是全球最大天然香料, 年产 5 万吨 (印度 80% 产 + 中国 10%). 薄荷茶 + 薄荷糖 + 牙膏 (Colgate 1873 第一支商业牙膏) + 风油精 (中国经典). 圣经 当献上薄荷 (马太福音 23:23) 是耶稣批评法利赛人. 留兰香 (Spearmint) + 胡椒薄荷 (Peppermint) + 苹果薄荷 (Apple mint) 三大栽培种. （参见：罗勒, 薰衣草, 迷迭香）",
     "createdAt": "2026-06-28",
     "history": [
       {
-        "year": "前 3000 年",
-        "title": "薄荷古代起源",
-        "body": "早在公元前3000年，古埃及人已使用薄荷作草药和防腐剂，并将其用于祭祀仪式。"
+        "year": "古埃及",
+        "title": "埃及药用",
+        "body": "古埃及 1550 年前 Ebers Papyrus 记载薄荷用于胃部不适, 是最早药用记录"
       },
       {
-        "year": "4 世纪",
-        "title": "薄荷传入欧洲",
-        "body": "公元前4世纪，亚历山大大帝的军队将薄荷带回希腊，随后传入罗马，成为贵族常用的香料与药材。"
+        "year": "古希腊",
+        "title": "希波克拉底",
+        "body": "希波克拉底 400 BC 记载薄荷提神 + 助消化, 西方药用传统"
       },
       {
-        "year": "19 世纪",
-        "title": "薄荷近现代应用",
-        "body": "19世纪起，薄荷被提取成薄荷脑，广泛用于牙膏、口香糖与药品，20世纪后更进入食品工业和化妆品领域。"
+        "year": "罗马",
+        "title": "罗马人带去英国",
+        "body": "罗马人征服不列颠 (43 AD) 引入薄荷, 至今英国留兰香 (Spearmint) 主流"
+      },
+      {
+        "year": "1879",
+        "title": "日本商业化薄荷醇",
+        "body": "日本率先商业化提取薄荷脑 (menthol), 至今日本薄荷醇占全球 30% 产"
+      },
+      {
+        "year": "1873",
+        "title": "Colgate 牙膏",
+        "body": "William Colgate 在美国推首支商业牙膏, 薄荷脑 + 碳酸钙, 至今全球薄荷牙膏主流"
       }
     ],
     "sources": [
       {
-        "title": "百度百科 - 薄荷",
-        "url": "https://baike.baidu.com/item/薄荷",
+        "title": "WIKI: 薄荷",
+        "url": "https://zh.wikipedia.org/wiki/%E8%96%84%E8%8D%B7",
         "type": "百科"
       },
       {
-        "title": "中国大百科全书 - 薄荷",
-        "url": "https://www.baike.com/wiki/薄荷",
-        "type": "百科"
+        "title": "Plants For A Future: Mentha",
+        "url": "https://pfaf.org/user/Plant.aspx?LatinName=Mentha+arvensis",
+        "type": "学术"
       },
       {
-        "title": "维基百科中文版 - 薄荷属",
-        "url": "https://zh.wikipedia.org/wiki/薄荷属",
-        "type": "百科"
+        "title": "USDA 薄荷数据",
+        "url": "https://plants.usda.gov/home/plantProfile?symbol=MEAR4",
+        "type": "官方"
       }
     ],
     "subKind": "grass",
@@ -43705,9 +43703,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-full.webp",
     "score": 7.8,
     "tags": [
       "tai-chi",
@@ -64984,6 +64982,1191 @@
         "title": "中国传统文化促进会",
         "url": "https://www.zggctwh.com/",
         "type": "reference"
+      }
+    ]
+  },
+  {
+    "slug": "judge",
+    "title": "法官",
+    "kind": "profession",
+    "subKind": "legal",
+    "series": "history-and-figures",
+    "seriesNo": "019",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/judge/judge-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/judge/judge-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/judge/judge-full.webp",
+    "score": 7.8,
+    "tags": [
+      "职业",
+      "法律",
+      "现代",
+      "全球",
+      "国家机器",
+      "终身制",
+      "权威"
+    ],
+    "tagline": "司法独立的代言人 + 宪法的最终解释者",
+    "subtitle": "职业 · 法官 · 百科占位",
+    "description": "法官 是国家司法权行使者 — 审判刑事 / 民事 / 行政案件 + 主持庭审 + 撰写判决. 中国古代有 明镜高悬 的 县令 + 推官 + 刑部尚书, 但没有现代意义的独立法官. 1789 美国宪法 + 1803 Marbury v. Madison 确立司法独立, 1980 中国恢复法官制度. 法官分大法官 (最高法院) / 上诉法院 / 地区法院 三级, 美国最高法院大法官终身制, 终审判例永久约束下级法院. （参见：律师, 将军, 记者）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1215",
+        "title": "英国大宪章",
+        "body": "Magna Carta 确立 任何人不得任意逮捕 + 须经法律审判, 法官独立审判原则雏形"
+      },
+      {
+        "year": "1789",
+        "title": "美国宪法第三条",
+        "body": "美国宪法第三条设立最高法院 + 下级法院, 司法权独立"
+      },
+      {
+        "year": "1803",
+        "title": "马伯里诉麦迪逊",
+        "body": "Marbury v. Madison 案确立司法审查权, 最高法院有权推翻违宪法律"
+      },
+      {
+        "year": "1980",
+        "title": "中国恢复法官制度",
+        "body": "1980 法院组织法, 1995 法官法, 2001 统一国家司法考试"
+      },
+      {
+        "year": "2016",
+        "title": "AlphaGo 战胜法官?",
+        "body": "2016 AlphaGo 战胜李世石, AI 辅助判案开始讨论; 2020 中国部分法院试 AI 量刑辅助"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 法官",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%95%E5%AE%98",
+        "type": "百科"
+      },
+      {
+        "title": "美国最高法院官网",
+        "url": "https://www.supremecourt.gov/",
+        "type": "官方"
+      },
+      {
+        "title": "最高人民法院",
+        "url": "https://www.court.gov.cn/",
+        "type": "官方"
+      }
+    ],
+    "quote": "法官 —— 图鉴社编辑整理。"
+  },
+  {
+    "slug": "investment-banker",
+    "title": "投行银行家",
+    "kind": "profession",
+    "subKind": "finance",
+    "series": "history-and-figures",
+    "seriesNo": "021",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/investment-banker/investment-banker-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/investment-banker/investment-banker-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/investment-banker/investment-banker-full.webp",
+    "score": 7.6,
+    "tags": [
+      "职业",
+      "金融",
+      "现代",
+      "全球",
+      "知识密集",
+      "高压力",
+      "高收入"
+    ],
+    "tagline": "资本市场的引擎 + 大企业交易的撮合者",
+    "subtitle": "职业 · 投行银行家 · 百科占位",
+    "description": "投行银行家 是企业融资 + 并购重组 + IPO 上市的中间人 — 19 世纪 J.P. Morgan 把铁路 + 钢铁巨头整合成美国钢铁, 是投行原型. 顶级投行 (Goldman Sachs / Morgan Stanley / JPMorgan / Citi) 服务全球 500 强, 一次 IPO 顾问费 1-3% 募资额 (10 亿美元 IPO 收 1000-3000 万), 一次大并购顾问费 5000 万 - 1 亿美元. 投行家工作强度 80-100 小时 / 周, 入行 3-5 年分析师 30-40 万美元, VP 80-100 万, MD 200-500 万. 2008 金融危机后监管收紧 (Volcker Rule), 但投行仍是金融业最高薪职业. （参见：会计师, 律师, 记者）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1871",
+        "title": "杰伊·库克",
+        "body": "Jay Cooke 资助美国南北战争国债, 投行业务雏形"
+      },
+      {
+        "year": "1901",
+        "title": "J.P. Morgan 整合美国钢铁",
+        "body": "J.P. Morgan 整合 Carnegie + Frick 钢铁, 创立美国钢铁公司 (US Steel), 现代投行典范"
+      },
+      {
+        "year": "1933",
+        "title": "格拉斯-斯蒂格尔法案",
+        "body": "Glass-Steagall Act 分离商业银行 + 投行业务, JP Morgan 拆成商业银行 (JPMorgan) + 投行 (Morgan Stanley)"
+      },
+      {
+        "year": "1999",
+        "title": "金融现代化法案",
+        "body": "Gramm-Leach-Bliley Act 废除格拉斯-斯蒂格尔, 投行 + 商业银行再度混业"
+      },
+      {
+        "year": "2008",
+        "title": "金融危机 + 高盛摩根士丹利",
+        "body": "2008 雷曼破产, 高盛 + 摩根士丹利转为银行控股公司, 接受美联储监管"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 投资银行",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8A%95%E8%B5%84%E9%93%B6%E8%A1%8C",
+        "type": "百科"
+      },
+      {
+        "title": "高盛 Goldman Sachs 官网",
+        "url": "https://www.goldmansachs.com/",
+        "type": "官方"
+      },
+      {
+        "title": "证券业协会",
+        "url": "https://www.sac.net.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "ceramics-artisan",
+    "title": "陶瓷匠人",
+    "kind": "other",
+    "subKind": "craft-and-botanical-mix",
+    "series": "atlas-miscellany",
+    "seriesNo": "097",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ceramics-artisan/ceramics-artisan-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ceramics-artisan/ceramics-artisan-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/ceramics-artisan/ceramics-artisan-full.webp",
+    "score": 8.3,
+    "tags": [
+      "传统",
+      "工艺",
+      "中国",
+      "全球",
+      "非遗",
+      "收藏",
+      "高价值"
+    ],
+    "tagline": "火与土的对话 + 千度窑变的工艺巅峰",
+    "subtitle": "其他 · 陶瓷匠人 · 百科占位",
+    "description": "陶瓷匠人 是手工制陶 + 烧窑 + 上釉的工艺师 — 中国景德镇 1004 年 (北宋) 起 官窑 制皇家瓷器, 明清 青花 + 斗彩 + 珐琅彩 达到顶峰, 1708 法国传教士殷弘绪将中国瓷土配方传回欧洲, 引发 Meissen (1710) / Sèvres (1740) / Wedgwood (1759) 欧洲瓷业革命. 顶级陶瓷匠人 1 件手工瓷瓶拍卖 100 万 - 1 亿美元 (成化斗彩鸡缸杯 2.8 亿港元, 2014). 现代陶瓷分艺术瓷 (单件手工) + 工业瓷 (量产日用), 景德镇仍有 3 万 - 5 万手工艺人. （参见：紫砂壶, 景泰蓝, 漆器）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约 15000 年前",
+        "title": "中国陶器起源",
+        "body": "江西万年仙人洞出土世界最早陶器 (约前 10000 年), 中国陶器独立起源"
+      },
+      {
+        "year": "商代",
+        "title": "原始青瓷",
+        "body": "商代出现原始青瓷, 釉色青黄, 是瓷器雏形"
+      },
+      {
+        "year": "1004",
+        "title": "北宋景德镇官窑",
+        "body": "宋真宗景德年间 1004 设官窑, 景德镇瓷器成皇家御用"
+      },
+      {
+        "year": "1708",
+        "title": "殷弘绪传瓷土配方",
+        "body": "法国传教士殷弘绪将景德镇高岭土配方寄回欧洲, 引发欧洲瓷业革命"
+      },
+      {
+        "year": "1740",
+        "title": "德国 Meissen",
+        "body": "Meissen 瓷器成为欧洲第一品牌, 至今仍在生产"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 陶瓷",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%B6%E7%93%B7",
+        "type": "百科"
+      },
+      {
+        "title": "故宫博物院 瓷器馆",
+        "url": "https://www.dpm.org.cn/collection/ceramic.html",
+        "type": "学术"
+      },
+      {
+        "title": "景德镇市政府 陶瓷官网",
+        "url": "http://www.jdz.gov.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tea-master",
+    "title": "茶艺师",
+    "kind": "other",
+    "subKind": "ceremony",
+    "series": "atlas-miscellany",
+    "seriesNo": "098",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tea-master/tea-master-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tea-master/tea-master-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tea-master/tea-master-full.webp",
+    "score": 7.9,
+    "tags": [
+      "传统",
+      "仪式",
+      "中国",
+      "日本",
+      "东方",
+      "禅意",
+      "非遗"
+    ],
+    "tagline": "茶道的灵魂 + 一杯见禅意",
+    "subtitle": "其他 · 茶艺师 · 百科占位",
+    "description": "茶艺师 是冲泡 + 品鉴 + 茶道表演的专业人 — 中国唐宋 煎茶 + 点茶 (日本抹茶道起源) + 明清 泡茶 三阶段演变, 1587 陆树声《茶寮记》是泡茶法成熟标志. 日本茶道 和敬清寂 由千利休 (1522-1591) 集大成, 17 世纪传到欧洲成 Afternoon Tea (1840 维多利亚时代). 中国现代茶艺师分初 / 中 / 高 / 技师 / 高级技师 5 级, 顶级茶艺师 (国家级) 表演一场 1-3 万元, 是茶文化活化石. 茶道核心 静 + 雅 + 和, 跟禅宗 + 儒家 + 道家三家思想融合. （参见：龙井, 紫砂壶, 书法家）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "神农时代",
+        "title": "茶起源",
+        "body": "传说神农尝百草, 日遇七十二毒, 得茶而解之, 茶药用起源"
+      },
+      {
+        "year": "唐代",
+        "title": "煎茶法成熟",
+        "body": "陆羽《茶经》 760 成书, 煎茶法 (茶粉+葱姜) 成熟, 茶圣 尊号"
+      },
+      {
+        "year": "宋代",
+        "title": "点茶法",
+        "body": "宋徽宗《大观茶论》点茶法, 茶粉击拂成沫, 日本抹茶道源头"
+      },
+      {
+        "year": "明清",
+        "title": "泡茶法",
+        "body": "明洪武废团茶改散茶, 泡茶法 (瀹饮) 流行至今"
+      },
+      {
+        "year": "1522-1591",
+        "title": "千利休集日本茶道",
+        "body": "日本 千利休 集茶道之大成, 和敬清寂, 至今日本茶道主流"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 茶道",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8C%B6%E9%81%93",
+        "type": "百科"
+      },
+      {
+        "title": "中国茶叶博物馆",
+        "url": "https://www.teamuseum.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "陆羽《茶经》全文",
+        "url": "https://www.guoxue.com/shibu/03/chajing/jing00.htm",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "calligrapher",
+    "title": "书法家",
+    "kind": "other",
+    "subKind": "ceremony",
+    "series": "atlas-miscellany",
+    "seriesNo": "099",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/calligrapher/calligrapher-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/calligrapher/calligrapher-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/calligrapher/calligrapher-full.webp",
+    "score": 8.5,
+    "tags": [
+      "传统",
+      "艺术",
+      "中国",
+      "东亚",
+      "非遗",
+      "收藏",
+      "高价值"
+    ],
+    "tagline": "汉字的舞者 + 毛笔下的文化基因",
+    "subtitle": "其他 · 书法家 · 百科占位",
+    "description": "书法家 是汉字书写艺术的专业人 — 从甲骨文 (商) + 金文 (周) + 篆 (秦) + 隶 (汉) + 楷 (魏晋) + 行 + 草 (唐) 七体演变, 1500 年形成完整体系. 王羲之 (303-361)《兰亭序》是 天下第一行书, 颜真卿 (709-784) 楷书雄浑, 怀素 (725-785) 草书狂放. 中国书法家协会 1981 成立, 会员 1.5 万, 中书协理事 200+. 顶级书法家作品拍卖 1 千万 - 1 亿元 (王羲之摹本 3.08 亿, 2010). 书法跟绘画 + 文学 + 哲学融合, 是汉字文化圈独有艺术. （参见：兰亭序, 王维, 围棋棋手）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "商代",
+        "title": "甲骨文",
+        "body": "殷墟出土甲骨文, 中国最早成系统文字, 也是书法雏形"
+      },
+      {
+        "year": "303-361",
+        "title": "王羲之《兰亭序》",
+        "body": "王羲之 永和九年兰亭聚会, 写《兰亭序》, 天下第一行书"
+      },
+      {
+        "year": "709-784",
+        "title": "颜真卿",
+        "body": "颜真卿 楷书雄浑, 《颜勤礼碑》+《多宝塔碑》至今习字范本"
+      },
+      {
+        "year": "1250-1350",
+        "title": "赵孟頫",
+        "body": "赵孟頫 楷书四大家之一, 复古王羲之, 影响明清"
+      },
+      {
+        "year": "1981",
+        "title": "中国书法家协会成立",
+        "body": "1981 中国书协成立, 至今会员 1.5 万, 中书协 国家级书法家平台"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 中国书法",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E4%B9%A6%E6%B3%95",
+        "type": "百科"
+      },
+      {
+        "title": "中国书法家协会",
+        "url": "http://www.ccs1996.com/",
+        "type": "官方"
+      },
+      {
+        "title": "故宫博物院 书法馆",
+        "url": "https://www.dpm.org.cn/collection/calligraphy.html",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "go-player",
+    "title": "围棋棋手",
+    "kind": "other",
+    "subKind": "performing-art",
+    "series": "atlas-miscellany",
+    "seriesNo": "100",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/go-player/go-player-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/go-player/go-player-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/go-player/go-player-full.webp",
+    "score": 8.6,
+    "tags": [
+      "传统",
+      "博弈",
+      "中国",
+      "日本",
+      "韩国",
+      "东方",
+      "智力运动"
+    ],
+    "tagline": "黑白之间的宇宙 + 19 路见人生",
+    "subtitle": "其他 · 围棋棋手 · 百科占位",
+    "description": "围棋棋手 是 19×19 黑白博弈的棋士 — 围棋起源于中国 (春秋 2500 年前), 尧造围棋以教丹朱. 唐代传入日本, 17 世纪 本因坊 坊制建立, 1933 吴清源 (1914-2014) vs 本因坊秀哉 镰仓十番棋 是围棋巅峰. 中韩日三国主导现代围棋, 1988 应氏杯 + 2005 春兰杯 + 2013 百灵杯 国际赛事. 围棋复杂度 10^170 (宇宙原子数 10^80), 比象棋 (10^50) 高 120 数量级, 是 人类最后智力高地. 顶级棋手年收入 100-500 万元, 申真谞 (韩国) / 柯洁 (中国) / 井山裕太 (日本) 当代三强. （参见：象棋, 武术家, 茶艺师）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约公元前 2000",
+        "title": "围棋起源",
+        "body": "传说 尧造围棋以教丹朱, 中国围棋起源"
+      },
+      {
+        "year": "前 5 世纪",
+        "title": "中国围棋成型",
+        "body": "先秦典籍《左传》记围棋 (称为 弈), 孔子孟子论围棋"
+      },
+      {
+        "year": "735",
+        "title": "围棋传入日本",
+        "body": "日本遣唐使吉备真备将围棋带回日本, 至今日本 棋圣 源流"
+      },
+      {
+        "year": "1933",
+        "title": "吴清源 镰仓十番棋",
+        "body": "吴清源 vs 本因坊秀哉 十番棋, 围棋巅峰对决, 改变日本棋界格局"
+      },
+      {
+        "year": "2016",
+        "title": "AlphaGo 战胜李世石",
+        "body": "2016 AlphaGo 4:1 胜李世石, 2017 3:0 胜柯洁, AI 改变围棋生态"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 围棋",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%B4%E6%A3%8B",
+        "type": "百科"
+      },
+      {
+        "title": "中国棋院围棋官网",
+        "url": "https://www.wqgf.com/",
+        "type": "官方"
+      },
+      {
+        "title": "日本棋院",
+        "url": "https://www.nihonkiin.or.jp/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "kungfu-master",
+    "title": "武术家",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "101",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/kungfu-master/kungfu-master-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/kungfu-master/kungfu-master-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/kungfu-master/kungfu-master-full.webp",
+    "score": 8.4,
+    "tags": [
+      "传统",
+      "武术",
+      "中国",
+      "全球",
+      "非遗",
+      "哲学",
+      "表演"
+    ],
+    "tagline": "刚柔并济的东方智慧 + 千年的身体哲学",
+    "subtitle": "其他 · 武术家 · 百科占位",
+    "description": "武术家 是中国武术的传承 + 训练 + 表演的功夫大师 — 少林 (北) + 武当 (南) + 峨眉 + 昆仑 四大门派, 天下功夫出少林 (495 北魏建少林寺). 1936 中国武术代表团柏林奥运表演轰动欧洲, 1949 后简化 24 式 / 48 式太极 + 长拳竞赛套路, 1990 亚运会 + 2008 北京奥运开幕式表演. 2006 国务院公布 少林功夫 + 武当武术 + 太极拳 等 30+ 项国家级非遗. 传统武术分内家 (太极 + 形意 + 八卦) + 外家 (少林 + 洪拳 + 蔡李佛), 实战 vs 套路 / 健身 / 表演 三层. 当代李连杰 / 成龙 / 吴京是武术文化全球推广大使. （参见：书法家, 围棋棋手, 茶艺师）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "495",
+        "title": "少林寺建立",
+        "body": "北魏孝文帝建少林寺, 达摩祖师传 壁观 禅法, 后世少林拳法起源传说"
+      },
+      {
+        "year": "约 1600",
+        "title": "太极拳成型",
+        "body": "明末清初 陈王廷 创太极拳, 河南温县陈家沟陈氏 108 式长拳 + 太极雏形"
+      },
+      {
+        "year": "1936",
+        "title": "柏林奥运武术表演",
+        "body": "1936 中国武术代表团柏林奥运表演, 首次向西方展示中国功夫"
+      },
+      {
+        "year": "1990",
+        "title": "亚运会 + 2008 奥运",
+        "body": "1990 亚运会武术为正式项目, 2008 北京奥运开幕式 2008 人太极表演"
+      },
+      {
+        "year": "2006",
+        "title": "国家级非遗公布",
+        "body": "2006 国务院公布 少林功夫 + 武当武术 + 太极拳 + 形意拳 等 30+ 项国家级非遗"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 中国武术",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%AD%A6%E6%9C%AF",
+        "type": "百科"
+      },
+      {
+        "title": "中国武术协会",
+        "url": "http://wushu.sport.org.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "少林寺官网",
+        "url": "http://www.shaolin.org.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "neon",
+    "title": "氖",
+    "kind": "chemical-element",
+    "subKind": "noble-gas",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/neon/neon-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/neon/neon-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/neon/neon-full.webp",
+    "score": 7.4,
+    "tags": [
+      "元素",
+      "稀有气体",
+      "现代",
+      "全球",
+      "霓虹灯",
+      "半导体",
+      "工业"
+    ],
+    "tagline": "霓虹灯的橙红色 + 宇宙的第 5 元素",
+    "subtitle": "化学元素 · 氖 · 百科占位",
+    "description": "Ne 氖 原子序数 10, 元素周期表 18 族 (0 族) 第二周期, 沸点 -246 °C, 1898 英国 Ramsay + Travers 在蒸发液态空气时发现. 氖气放电发出橙红色光 (霓虹灯 Neon sign), 1910 法国 Claude 发明霓虹灯广告, 1920s 纽约时代广场霓虹灯标志 (Roxy Theatre 1923). 氖气在宇宙中丰度 0.13% (按质量), 是恒星核合成产物, 也用于霓虹灯 / 高压指示灯 / 避雷针 / 激光器. 1 立方米氖气 2020 年价 1.5 万元 (半导体光刻机用氖氟混合激光), 乌克兰 Ingas + 美国 Electron Beam Tech 垄断 70% 全球供应. （参见：氪, 氩, 氦）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1868",
+        "title": "Janssen + Lockyer 发现太阳氦",
+        "body": "Pierre Janssen + Norman Lockyer 通过日珥光谱发现氦 (helium), 命名源自希腊 太阳 (Helios), 太阳上有但地球未发现"
+      },
+      {
+        "year": "1898",
+        "title": "Ramsay + Travers 发现氖",
+        "body": "英国 William Ramsay + Morris Travers 在伦敦大学学院蒸发液态空气, 从重残渣中分离氖, 命名希腊 新 (neos)"
+      },
+      {
+        "year": "1910",
+        "title": "法国 Claude 发明霓虹灯",
+        "body": "法国 Georges Claude 发明商用霓虹灯 (Neon sign), 巴黎首条霓虹灯街道, 1920s 纽约时代广场全面普及"
+      },
+      {
+        "year": "1959",
+        "title": "激光器问世",
+        "body": "Theodore Maiman 发明激光器, 氦氖激光器 1962 发明, 至今条码扫描仪 + 全息摄影 + 教学演示主流光源"
+      },
+      {
+        "year": "2020",
+        "title": "氖气危机",
+        "body": "2020 半导体光刻机 (ASML EUV) 需大量氖氟混合气, 乌克兰 Ingas 70% 供应受地缘政治冲击, 氖气价格涨 10 倍"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 氖",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B0%9A",
+        "type": "百科"
+      },
+      {
+        "title": "RSC: Neon element",
+        "url": "https://www.rsc.org/periodic-table/element/10/neon",
+        "type": "学术"
+      },
+      {
+        "title": "WebElements Neon",
+        "url": "https://www.webelements.com/neon/",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "arsenic",
+    "title": "砷",
+    "kind": "chemical-element",
+    "subKind": "metalloid",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "049",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/arsenic/arsenic-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/arsenic/arsenic-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/arsenic/arsenic-full.webp",
+    "score": 7.6,
+    "tags": [
+      "元素",
+      "类金属",
+      "古代",
+      "现代",
+      "剧毒",
+      "半导体",
+      "工业"
+    ],
+    "tagline": "古之毒药今之半导体 + 砒霜的双面性",
+    "subtitle": "化学元素 · 砷 · 百科占位",
+    "description": "As 砷 原子序数 33, 元素周期表 15 族, 俗称 砒霜 (As₂O₃), 1250 中国宋慈《洗冤集录》记载砒霜中毒症状. 砒霜无色无味, 历史上投毒第一利器 (拿破仑 1821 死因争议 2008 验尸发现砷超标). 现代砷用于半导体 (GaAs 砷化镓, 5G 芯片) + 木材防腐 (CCA 防腐剂, 2003 禁用住宅) + 农药 (1900s 巴黎绿杀虫剂, 禁用). 急性砷中毒 100-200 mg 致死, 慢性砷中毒致皮肤癌 + 肺癌. 孟加拉国地下水含砷, 4000 万人受影响, 是全球最大集体中毒事件. （参见：硅, 锑, 汞）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1250",
+        "title": "宋慈《洗冤集录》",
+        "body": "中国南宋法医学家宋慈《洗冤集录》记载砒霜中毒症状 (口鼻出血, 腹部剧痛), 世界首部法医专著"
+      },
+      {
+        "year": "古希腊",
+        "title": "亚里士多德错误认识",
+        "body": "亚里士多德认为砷是有毒物质, 古希腊罗马多用于毒杀政敌, 罗马帝国多位皇帝疑被砷毒死"
+      },
+      {
+        "year": "1787",
+        "title": "拉瓦锡列入元素表",
+        "body": "法国 Lavoisier 在《化学基础论》将砷列入元素表, 此前误认为金属化合物"
+      },
+      {
+        "year": "1836",
+        "title": "工业规模生产",
+        "body": "欧洲化学家发明工业规模制砷, 用于玻璃 + 颜料 + 农药"
+      },
+      {
+        "year": "2008",
+        "title": "拿破仑死因重新审视",
+        "body": "2008 法国 + 意大利 + 加拿大联合尸检, 拿破仑 1821 死因争议: 砷中毒超标, 但非单一死因"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 砷",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A0%B7",
+        "type": "百科"
+      },
+      {
+        "title": "ATSDR 砷毒理指南",
+        "url": "https://www.atsdr.cdc.gov/toxprofiles/tp2.pdf",
+        "type": "学术"
+      },
+      {
+        "title": "WHO 砷专题",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/arsenic",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "iodine",
+    "title": "碘",
+    "kind": "chemical-element",
+    "subKind": "halogen",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "050",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/iodine/iodine-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/iodine/iodine-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/iodine/iodine-full.webp",
+    "score": 7.7,
+    "tags": [
+      "元素",
+      "卤素",
+      "现代",
+      "全球",
+      "医学",
+      "健康",
+      "工业"
+    ],
+    "tagline": "甲状腺的守护者 + 加碘盐的幕后英雄",
+    "subtitle": "化学元素 · 碘 · 百科占位",
+    "description": "I 碘 原子序数 53, 元素周期表 17 族 (卤素), 1811 法国 Courtois 从海草灰中分离 (希腊语 iodes 紫色). 碘是人体必需微量元素, 甲状腺素 T3/T4 含 3-4 碘原子, 缺碘致甲状腺肿大 (大脖子病) + 克汀病 (智力低下). 全球 30 亿人缺碘风险, 1993 UNICEF 推广加碘盐 (KI/KIO₃). 碘酊 (碘酒) 是经典消毒剂, 1911 WHO 推荐. 碘 131 是核医学重要同位素 (甲状腺癌治疗 + 诊断). 碘还用于偏光片 (LCD 屏幕) + 摄影胶片 (AgI 感光). 日本福岛核事故 2011 释放大量碘 131, 引发全球碘片抢购. （参见：氯, 溴, 氟）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1811",
+        "title": "Courtois 发现碘",
+        "body": "法国 Bernard Courtois 从海草灰母液中加硫酸提取, 命名希腊 紫色 (iodes), 紫色蒸汽为特征"
+      },
+      {
+        "year": "1820s",
+        "title": "碘酊消毒剂",
+        "body": "碘酊 (iodine tincture) 用于外伤消毒, 沿用至今"
+      },
+      {
+        "year": "1896",
+        "title": "Baumann 发现甲状腺含碘",
+        "body": "德国 Baumann 发现甲状腺含碘, 1901 Marrian 提纯甲状腺素, 1926 合成"
+      },
+      {
+        "year": "1917",
+        "title": "美国食盐加碘",
+        "body": "美国 Michigan 州率先食盐加碘预防甲状腺肿, 1924 全国推广"
+      },
+      {
+        "year": "1993",
+        "title": "UNICEF 全球加碘盐",
+        "body": "联合国儿童基金会推动全球加碘盐, 至今 120 国强制, 防止 7 亿人缺碘病"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 碘",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A2%98",
+        "type": "百科"
+      },
+      {
+        "title": "RSC: Iodine",
+        "url": "https://www.rsc.org/periodic-table/element/53/iodine",
+        "type": "学术"
+      },
+      {
+        "title": "UNICEF 碘缺乏症",
+        "url": "https://www.unicef.org/nutrition/iodine-deficiency",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "bromine",
+    "title": "溴",
+    "kind": "chemical-element",
+    "subKind": "halogen",
+    "series": "frontiers-and-wonders",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/bromine/bromine-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/bromine/bromine-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/bromine/bromine-full.webp",
+    "score": 6.8,
+    "tags": [
+      "元素",
+      "卤素",
+      "现代",
+      "全球",
+      "工业",
+      "阻燃",
+      "石油"
+    ],
+    "tagline": "恶臭的赤色液体 + 阻燃 + 摄影双面手",
+    "subtitle": "化学元素 · 溴 · 百科占位",
+    "description": "Br 溴 原子序数 35, 元素周期表 17 族, 唯一非金属液态元素 (沸点 58.8 °C), 1826 法国 Balard 从海盐母液中发现 (希腊语 bromos 恶臭). 早期溴用于摄影 (AgBr 感光, 1839 Daguerreotype 银版摄影), 现代溴 90% 用于溴化阻燃剂 (BFR) + 钻井液 (石油开采) + 农药 (溴甲烷熏蒸). 1920s 抗爆汽油加二溴乙烷 (TEL + EDB), 1970s 因铅污染禁用. 溴化银 (AgBr) 仍是医用 X 光胶片主成分, 2020 全球溴产量 35 万吨, 以色列 Dead Sea 死海 + 美国 Arkansas 两大主产. （参见：碘, 氯, 氟）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1826",
+        "title": "Balard 发现溴",
+        "body": "法国 Antoine Balard 从海盐母液中加氯水提取, 命名希腊 恶臭 (bromos), 红棕色液体"
+      },
+      {
+        "year": "1840s",
+        "title": "银版摄影",
+        "body": "英国 Talbot + Daguerreotype 银版摄影用 AgBr 感光, 摄影技术开端"
+      },
+      {
+        "year": "1920s",
+        "title": "抗爆汽油",
+        "body": "二溴乙烷 (EDB) 加入含铅汽油 (TEL) 作抗爆剂, 1970s 铅污染禁用"
+      },
+      {
+        "year": "1970s",
+        "title": "阻燃剂",
+        "body": "溴化阻燃剂 (BFR) 普及, 用于塑料 + 纺织 + 电子产品, 占现代溴用量 50%"
+      },
+      {
+        "year": "2008",
+        "title": "死海提溴",
+        "body": "以色列 Dead Sea Works 死海提溴, 占全球 30% 产, 死海溴浓度 5-7 g/L (海水 65 mg/L)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 溴",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BA%B4",
+        "type": "百科"
+      },
+      {
+        "title": "RSC: Bromine",
+        "url": "https://www.rsc.org/periodic-table/element/35/bromine",
+        "type": "学术"
+      },
+      {
+        "title": "ICL Dead Sea Works",
+        "url": "https://www.icl-group.com/our-businesses/fertilizers/dead-sea-works/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "consumer-drone",
+    "title": "消费无人机",
+    "kind": "vehicle",
+    "subKind": "drone",
+    "series": "atlas-miscellany",
+    "seriesNo": "051",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/consumer-drone/consumer-drone-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/consumer-drone/consumer-drone-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/consumer-drone/consumer-drone-full.webp",
+    "score": 8,
+    "tags": [
+      "科技",
+      "无人机",
+      "现代",
+      "全球",
+      "航拍",
+      "低空经济",
+      "军民两用"
+    ],
+    "tagline": "天空的新视角 + 千万玩家的飞行相机",
+    "subtitle": "交通工具 · 消费无人机 · 百科占位",
+    "description": "消费无人机 是民用多旋翼飞行器, 2010 法国 Parrot AR.Drone 开创, 2013 大疆 (DJI) Phantom 系列引爆. 2024 全球消费无人机市场 60 亿美元, 大疆占 70% 份额 (北美 80%, 欧洲 75%, 中国 60%). 主流 4K 摄像 + 30 分钟续航 + 15 公里图传 + GPS 自动返航, 价格 5000-30000 元. 消费级用于航拍 + 测绘 + 农业植保 + 物流 (顺丰 / 京东 2018 试运营), 2023 深圳低空经济产值 900 亿元. 美国 2017 禁军方采购大疆, 2024 拟禁全部中国造无人机, 凸显消费无人机的军民两用价值. （参见：直升机, 航拍, 卫星）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "1907",
+        "title": "Breguet-Richet No.1",
+        "body": "法国 Breguet-Richet 设计首架旋翼机, 1907 试飞, 直升机 + 多旋翼雏形"
+      },
+      {
+        "year": "1939",
+        "title": "Oerlikon 军用靶机",
+        "body": "瑞士 Oerlikon 公司造出首架无线电遥控靶机, 军用无人机雏形"
+      },
+      {
+        "year": "2010",
+        "title": "Parrot AR.Drone",
+        "body": "法国 Parrot AR.Drone 1.0 消费级四旋翼, iPhone 控制, 开创消费级无人机时代"
+      },
+      {
+        "year": "2013",
+        "title": "DJI Phantom",
+        "body": "大疆 Phantom 2 4K 版本 + Vision+ 系列, 4K 摄像 + GPS + 自动返航, 民用航拍引爆"
+      },
+      {
+        "year": "2017",
+        "title": "大疆占 70% 全球",
+        "body": "2017 大疆消费级无人机占全球 70% 份额, 2024 仍主导, 美国 2024 拟禁部分中国造无人机"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 无人机",
+        "url": "https://zh.wikipedia.org/wiki/%E6%97%A0%E4%BA%BA%E6%9C%BA",
+        "type": "百科"
+      },
+      {
+        "title": "DJI 大疆创新",
+        "url": "https://www.dji.com/",
+        "type": "官方"
+      },
+      {
+        "title": "FAA 无人机规则",
+        "url": "https://www.faa.gov/uas/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "basil",
+    "title": "罗勒",
+    "kind": "plant",
+    "subKind": "herb",
+    "series": "atlas-miscellany",
+    "seriesNo": "053",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/basil/basil-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/basil/basil-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/basil/basil-full.webp",
+    "score": 7.4,
+    "tags": [
+      "植物",
+      "香草",
+      "全球",
+      "印度",
+      "意大利",
+      "烹饪",
+      "医药"
+    ],
+    "tagline": "青酱的灵魂 + 神草 + 厨房的万金油",
+    "subtitle": "植物 · 罗勒 · 百科占位",
+    "description": "罗勒 是唇形科罗勒属一年生草本, 原产印度 + 东南亚热带, 5000 年前印度药用 (Ayurveda 阿育吠陀), 后传希腊 basileus 王 命名, 罗马时代传入欧洲. 意大利 甜罗勒 (Genovese) 是青酱 (Pesto) 主原料, 1592 配方首次记录, 19 世纪意大利移民传到美国. 泰国 圣罗勒 (Holy Basil / Tulsi) 是印度教神草, 毗湿奴妻子图莉西化身, 家庭种植视为吉祥. 罗勒含芳樟醇 + 丁香酚, 抗氧化 + 抗菌, 2020 年研究证抗炎 + 降血糖. 中国 1980s 引种, 云南 + 福建 + 海南主产. （参见：薄荷, 番茄, 草莓）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "5000 年前",
+        "title": "印度阿育吠陀",
+        "body": "古印度 Ayurveda 经典记载 罗勒 (Tulsi) 为圣草, 家庭种植避邪 + 药用"
+      },
+      {
+        "year": "古希腊",
+        "title": "希腊 basileus 命名",
+        "body": "希腊语 basileus (王) 命名, 古希腊 + 古罗马 烹饪 + 药用"
+      },
+      {
+        "year": "1592",
+        "title": "意大利 Pesto 配方",
+        "body": "意大利 Genoa 1592 Pesto alla Genovese 配方首次记录, 甜罗勒 + 松子 + 帕马森干酪 + 橄榄油"
+      },
+      {
+        "year": "19 世纪",
+        "title": "意大利移民传美国",
+        "body": "意大利移民 19 世纪大量赴美, 罗勒 + Pesto 传美国, 20 世纪风靡全球"
+      },
+      {
+        "year": "2008",
+        "title": "美国研究",
+        "body": "美国 Maryland 大学 2008 研究罗勒含 eugenol 抗炎, 2010 进一步研究抗癌潜力, 西方医药界重视"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 罗勒",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BD%97%E5%8B%92",
+        "type": "百科"
+      },
+      {
+        "title": "Plants For A Future: Basil",
+        "url": "https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum",
+        "type": "学术"
+      },
+      {
+        "title": "印度 Tulsi 文化",
+        "url": "https://www.researchgate.net/publication/312191531_Tulsi",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "tomato",
+    "title": "番茄",
+    "kind": "plant",
+    "subKind": "fruit",
+    "series": "atlas-miscellany",
+    "seriesNo": "054",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tomato/tomato-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tomato/tomato-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/tomato/tomato-full.webp",
+    "score": 7.8,
+    "tags": [
+      "植物",
+      "水果",
+      "全球",
+      "现代",
+      "蔬菜",
+      "抗氧化",
+      "基因"
+    ],
+    "tagline": "曾经是毒草 + 如今世界第一蔬菜",
+    "subtitle": "植物 · 番茄 · 百科占位",
+    "description": "番茄 是茄科番茄属一年生草本, 原产南美安第斯山脉 (今秘鲁 + 厄瓜多尔), 16 世纪西班牙人带回欧洲, 起初观赏 (怀疑有毒), 1544 意大利 金苹果 (Pomodoro) 首次食用, 1596 英国 Gerard 仍警告 多食致癫. 番茄全球年产 1.8 亿吨 (中国 35% 产), 是最大蔬菜作物. 基因组 2012 测序 (950 Mb, 12 染色体), 是模式植物之一. 转基因番茄 (Flavr Savr) 1994 全球首例商业化转基因食品, 抗软化慢熟. 番茄红素 (lycopene) 抗氧化, 加热更易吸收, 预防前列腺癌. 红果 + 樱桃番茄 + 牛排番茄 + 罗马番茄 4 大栽培型. （参见：草莓, 茄子, 辣椒）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "16 世纪",
+        "title": "西班牙引入欧洲",
+        "body": "西班牙人 16 世纪从墨西哥带回番茄, 起初种植观赏, 担心毒性"
+      },
+      {
+        "year": "1544",
+        "title": "意大利食用",
+        "body": "意大利 1544 Pomodoro (金苹果) 首次记录食用, 17 世纪意大利菜主流"
+      },
+      {
+        "year": "1820",
+        "title": "美国番茄酱",
+        "body": "美国 Henry Heinz 1876 创立 Heinz 番茄酱, 工业化推动番茄种植规模化"
+      },
+      {
+        "year": "2012",
+        "title": "基因组测序",
+        "body": "番茄基因组 2012 测序完成 (950 Mb, 12 染色体), 12,000 多年驯化历史"
+      },
+      {
+        "year": "1994",
+        "title": "Flavr Savr 转基因",
+        "body": "Calgene 公司 Flavr Savr 转基因番茄 1994 上市, 抗软化慢熟, 全球首例商业化转基因食品"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 番茄",
+        "url": "https://zh.wikipedia.org/wiki/%E7%95%AA%E8%8C%84",
+        "type": "百科"
+      },
+      {
+        "title": "Tomato Genome Consortium 2012",
+        "url": "https://www.nature.com/articles/nature11119",
+        "type": "学术"
+      },
+      {
+        "title": "FDA 转基因食品",
+        "url": "https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-animal-food-and-beyond",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "strawberry",
+    "title": "草莓",
+    "kind": "plant",
+    "subKind": "fruit",
+    "series": "atlas-miscellany",
+    "seriesNo": "055",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/strawberry/strawberry-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/strawberry/strawberry-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/strawberry/strawberry-full.webp",
+    "score": 7.5,
+    "tags": [
+      "植物",
+      "水果",
+      "全球",
+      "现代",
+      "甜",
+      "维 C",
+      "园艺"
+    ],
+    "tagline": "红心的小心心 + 聚合果的浪漫",
+    "subtitle": "植物 · 草莓 · 百科占位",
+    "description": "草莓 是蔷薇科草莓属多年生草本, 18 世纪法国人 Frezier 从智利带回 智利草莓 (Fragaria chiloensis), 跟北美 弗州草莓 (F. virginiana) 杂交成 凤梨草莓 (F. × ananassa, 1750s), 是现代栽培种. 草莓全球年产 900 万吨, 中国 40% 产 (丹东 99 草莓 + 安徽长丰 + 山东). 草莓果实非真正浆果, 是 聚合果 (花托膨大, 真正果实在表面小颗粒), 是少数 假果. 富含维 C (60 mg/100g, 比橙子高 1.5 倍) + 花青素 + 鞣花酸, 抗氧化. 冬季温室 + 高架栽培 (避免弯腰) 是现代农业新趋势. （参见：番茄, 蓝莓, 树莓）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "约 1 万年前",
+        "title": "智利原生种",
+        "body": "智利 Fragaria chiloensis 原生草莓, 当地原住民 1 万年采集"
+      },
+      {
+        "year": "1624",
+        "title": "北美引种",
+        "body": "北美 Fragaria virginiana 移植到欧洲, 与智利种 1750s 杂交成现代栽培种"
+      },
+      {
+        "year": "1750",
+        "title": "凤梨草莓 F. × ananassa",
+        "body": "法国 Brest 1750 杂交 F. chiloensis × F. virginiana, 命名 凤梨草莓 (ananassa)"
+      },
+      {
+        "year": "1840",
+        "title": "美国规模化",
+        "body": "美国工业化草莓种植, 至今 California 占美国 80% 产, 200 万吨 / 年"
+      },
+      {
+        "year": "2020",
+        "title": "中国占 40% 产",
+        "body": "中国 2020 草莓年产 350 万吨, 占全球 40%, 丹东 99 草莓 + 长丰草莓 最有名"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 草莓",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8D%89%E8%8E%93",
+        "type": "百科"
+      },
+      {
+        "title": "USDA Strawberry",
+        "url": "https://www.usda.gov/media/blog/2018/05/16/whats-fresh-strawberries",
+        "type": "官方"
+      },
+      {
+        "title": "Strawberry Genome 2019",
+        "url": "https://www.nature.com/articles/s41588-019-0351-2",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "spinach",
+    "title": "菠菜",
+    "kind": "plant",
+    "subKind": "vegetable",
+    "series": "atlas-miscellany",
+    "seriesNo": "056",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/spinach/spinach-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/spinach/spinach-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/spinach/spinach-full.webp",
+    "score": 7.3,
+    "tags": [
+      "植物",
+      "蔬菜",
+      "全球",
+      "古代",
+      "铁",
+      "草酸",
+      "料理"
+    ],
+    "tagline": "大力水手的能量 + 波斯特有的绿叶",
+    "subtitle": "植物 · 菠菜 · 百科占位",
+    "description": "菠菜 是藜科菠菜属一年生草本, 原产波斯 (今伊朗), 公元 7 世纪传入中国 (唐贞观二年 628, 尼泊尔国王献), 菠菜 取自波斯语音译 (古称 波棱菜 / 赤根菜). 1492 西班牙从摩尔人传入欧洲, 19 世纪美国罐头 + 速冻 (Birdseye 1929) 推动商业化. 全球年产菠菜 3000 万吨, 中国 90% 产. 菠菜富含铁 (2.7 mg/100g) + 钙 + 维 A + 叶酸, 但草酸高阻碍铁吸收, 沸水焯 1 分钟去草酸 50%. 美国动画 大力水手 (Popeye, 1932) 让菠菜全球闻名, 实际铁含量并非特别高 (夸大宣传 10 倍). 阿拉伯 Spinach pie (Fatayer) + 印度 Palak paneer + 日本 おひたし 三大料理. （参见：薄荷, 番茄, 甘蓝）",
+    "createdAt": "2026-07-12",
+    "history": [
+      {
+        "year": "公元前 2000",
+        "title": "波斯起源",
+        "body": "原产波斯 (今伊朗), 波斯语 aspanakh 命名"
+      },
+      {
+        "year": "628",
+        "title": "唐贞观二年",
+        "body": "尼泊尔国王向唐太宗献菠菜, 中国始种, 称 波棱菜 / 赤根菜"
+      },
+      {
+        "year": "1492",
+        "title": "西班牙传入欧洲",
+        "body": "西班牙收复格拉纳达后, 摩尔人传菠菜入欧洲, 16 世纪普及"
+      },
+      {
+        "year": "1854",
+        "title": "波西米亚传美国",
+        "body": "1854 美国加州首批菠菜商业种植, 1920s 罐头 + 速冻普及"
+      },
+      {
+        "year": "1932",
+        "title": "大力水手 Popeye",
+        "body": "E.C. Segar 漫画大力水手 Popeye 1932 首次出现, 菠菜罐装销量激增 33%"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WIKI: 菠菜",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8F%A0%E8%8F%9C",
+        "type": "百科"
+      },
+      {
+        "title": "USDA Popeye Effect",
+        "url": "https://www.usda.gov/media/blog/2019/03/19/spinach-popeye-and-history",
+        "type": "官方"
+      },
+      {
+        "title": "Plants For A Future: Spinach",
+        "url": "https://pfaf.org/user/Plant.aspx?LatinName=Spinacia+oleracea",
+        "type": "学术"
       }
     ]
   }

@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "version": 5,
-    "createdAt": "2026-07-01",
-    "round": "R68 (artist + emperor + chinese-classical)",
+    "version": 6,
+    "createdAt": "2026-07-12",
+    "round": "R80 (legal+finance+media / performing-art / metalloid+halogen / submarine+drone+motorcycle / herb+fruit+vegetable)",
     "totalKinds": 26,
-    "totalSubKinds": 162,
+    "totalSubKinds": 174,
     "namingConvention": "kebab-case slugs, 1-3 words. Chinese labels in 2-4 字",
     "howToAdd": "Append a new kind entry or subKind under existing kind. Run `node scripts/backfill-subkinds.mjs` to apply to cards.json.",
     "cardMigrationStrategy": "Run `node scripts/plan-subkind-backfill.mjs` to see a draft assignment per card, hand-tweak, then run backfill-subkinds.mjs --apply",
@@ -389,6 +389,21 @@
           "slug": "grass",
           "label": "草本",
           "expected": 1
+        },
+        {
+          "slug": "herb",
+          "label": "香草",
+          "expected": 2
+        },
+        {
+          "slug": "fruit",
+          "label": "水果",
+          "expected": 2
+        },
+        {
+          "slug": "vegetable",
+          "label": "蔬菜",
+          "expected": 2
         }
       ]
     },
@@ -419,6 +434,11 @@
           "slug": "craft-and-botanical-mix",
           "label": "工艺/本草混",
           "expected": 3
+        },
+        {
+          "slug": "performing-art",
+          "label": "表演艺术",
+          "expected": 2
         }
       ]
     },
@@ -619,6 +639,16 @@
           "slug": "noble-gas",
           "label": "稀有气体",
           "expected": 1
+        },
+        {
+          "slug": "metalloid",
+          "label": "类金属",
+          "expected": 2
+        },
+        {
+          "slug": "halogen",
+          "label": "卤素",
+          "expected": 2
         }
       ]
     },
@@ -759,6 +789,21 @@
           "slug": "tech",
           "label": "科技",
           "expected": 2
+        },
+        {
+          "slug": "legal",
+          "label": "法律",
+          "expected": 2
+        },
+        {
+          "slug": "finance",
+          "label": "金融",
+          "expected": 2
+        },
+        {
+          "slug": "media",
+          "label": "媒体",
+          "expected": 2
         }
       ]
     },
@@ -829,6 +874,21 @@
           "slug": "bicycle",
           "label": "自行车",
           "expected": 1
+        },
+        {
+          "slug": "submarine",
+          "label": "潜艇",
+          "expected": 2
+        },
+        {
+          "slug": "drone",
+          "label": "无人机",
+          "expected": 2
+        },
+        {
+          "slug": "motorcycle",
+          "label": "摩托",
+          "expected": 2
         }
       ]
     },

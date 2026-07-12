@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "round": "R80",
+    "createdAt": "2026-07-12",
+    "goal": "fill kind-balance短板 + topic diversity + 配合 R76-R79 4 连续 polish 首次实战 ship",
+    "strategy": "5 kind 短板均衡 (profession 24 / other 26 / chemical-element 27 / vehicle 27 / plant 28), 每 kind 5 张配平 → 25 张 → 取 24 (chemical-element 减 1); 跨 kind 走 high-recognition 主题 (recognizable 全球文化), 让 user verify R76-R79 polish 集中 fire"
+  },
+  "cards": [
+    { "slug": "lawyer", "title": "律师", "kind": "profession", "subKind": "legal", "series": "history-and-figures", "seriesNo": "018" },
+    { "slug": "judge", "title": "法官", "kind": "profession", "subKind": "legal", "series": "history-and-figures", "seriesNo": "019" },
+    { "slug": "accountant", "title": "会计师", "kind": "profession", "subKind": "finance", "series": "history-and-figures", "seriesNo": "020" },
+    { "slug": "investment-banker", "title": "投行银行家", "kind": "profession", "subKind": "finance", "series": "history-and-figures", "seriesNo": "021" },
+    { "slug": "journalist", "title": "记者", "kind": "profession", "subKind": "media", "series": "history-and-figures", "seriesNo": "022" },
+    { "slug": "ceramics-artisan", "title": "陶瓷匠人", "kind": "other", "subKind": "craft-and-botanical-mix", "series": "atlas-miscellany", "seriesNo": "097" },
+    { "slug": "tea-master", "title": "茶艺师", "kind": "other", "subKind": "ceremony", "series": "atlas-miscellany", "seriesNo": "098" },
+    { "slug": "calligrapher", "title": "书法家", "kind": "other", "subKind": "ceremony", "series": "atlas-miscellany", "seriesNo": "099" },
+    { "slug": "go-player", "title": "围棋棋手", "kind": "other", "subKind": "performing-art", "series": "atlas-miscellany", "seriesNo": "100" },
+    { "slug": "kungfu-master", "title": "武术家", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "101" },
+    { "slug": "neon", "title": "氖", "kind": "chemical-element", "subKind": "noble-gas", "series": "frontiers-and-wonders", "seriesNo": "046" },
+    { "slug": "krypton", "title": "氪", "kind": "chemical-element", "subKind": "noble-gas", "series": "frontiers-and-wonders", "seriesNo": "047" },
+    { "slug": "silicon", "title": "硅", "kind": "chemical-element", "subKind": "metalloid", "series": "frontiers-and-wonders", "seriesNo": "048" },
+    { "slug": "arsenic", "title": "砷", "kind": "chemical-element", "subKind": "metalloid", "series": "frontiers-and-wonders", "seriesNo": "049" },
+    { "slug": "iodine", "title": "碘", "kind": "chemical-element", "subKind": "halogen", "series": "frontiers-and-wonders", "seriesNo": "050" },
+    { "slug": "bromine", "title": "溴", "kind": "chemical-element", "subKind": "halogen", "series": "frontiers-and-wonders", "seriesNo": "051" },
+    { "slug": "submarine", "title": "潜艇", "kind": "vehicle", "subKind": "submarine", "series": "atlas-miscellany", "seriesNo": "050" },
+    { "slug": "consumer-drone", "title": "消费无人机", "kind": "vehicle", "subKind": "drone", "series": "atlas-miscellany", "seriesNo": "051" },
+    { "slug": "motorcycle", "title": "摩托车", "kind": "vehicle", "subKind": "motorcycle", "series": "atlas-miscellany", "seriesNo": "052" },
+    { "slug": "mint", "title": "薄荷", "kind": "plant", "subKind": "herb", "series": "atlas-miscellany", "seriesNo": "052" },
+    { "slug": "basil", "title": "罗勒", "kind": "plant", "subKind": "herb", "series": "atlas-miscellany", "seriesNo": "053" },
+    { "slug": "tomato", "title": "番茄", "kind": "plant", "subKind": "fruit", "series": "atlas-miscellany", "seriesNo": "054" },
+    { "slug": "strawberry", "title": "草莓", "kind": "plant", "subKind": "fruit", "series": "atlas-miscellany", "seriesNo": "055" },
+    { "slug": "spinach", "title": "菠菜", "kind": "plant", "subKind": "vegetable", "series": "atlas-miscellany", "seriesNo": "056" }
+  ]
+}

@@ -815,32 +815,64 @@ export default async function CardDetail({
               className="hidden md:block absolute top-2 bottom-2 left-[6.5rem] w-px bg-gradient-to-b from-gold-deep/40 via-border to-transparent"
             />
             <ol className="space-y-6 list-none p-0">
-              {card.history.map((node, idx) => (
-                <li key={idx} className="relative md:pl-[8.5rem]">
-                  {/* Year stamp — left rail (desktop), inline (mobile) */}
-                  <span
-                    className="hidden md:block absolute left-0 top-1 w-[5.5rem] text-right text-xs uppercase tracking-[0.15em] text-gold-deep font-medium tabular-nums"
-                  >
-                    {node.year}
-                  </span>
-                  {/* Timeline dot (desktop) */}
-                  <span
-                    aria-hidden="true"
-                    className="hidden md:block absolute left-[6.15rem] top-2 h-2.5 w-2.5 rounded-full bg-gold-deep ring-4 ring-background"
-                  />
-                  <div>
-                    <p className="md:hidden text-[10px] uppercase tracking-[0.15em] text-gold-deep font-medium tabular-nums mb-1">
+              {card.history!.map((node, idx) => {
+                // R79 (2026-07-12): the LAST node is the "present"
+                // — visually emphasized with bigger font + gold-deep
+                // background. The 5-8 history nodes usually build up
+                // to a final state ("now / current / today"). The
+                // highlight helps users find the "where we are now"
+                // year without reading every body text.
+                const historyLen = card.history!.length;
+                const isLatest = idx === historyLen - 1;
+                return (
+                  <li key={idx} className="relative md:pl-[8.5rem]">
+                    {/* Year stamp — left rail (desktop), inline (mobile).
+                        The latest node gets a bigger size + ink
+                        background pill so it stands out from earlier
+                        milestones. Earlier nodes stay at text-xs
+                        uppercase tracking, the latest is text-sm
+                        font-semibold with bg-cream. */}
+                    <span
+                      className={`hidden md:block absolute left-0 top-1 w-[5.5rem] text-right tabular-nums ${
+                        isLatest
+                          ? "text-base font-bold text-gold-deep bg-cream px-2 py-0.5 rounded-md ring-1 ring-gold/40"
+                          : "text-xs uppercase tracking-[0.15em] text-gold-deep font-medium"
+                      }`}
+                    >
                       {node.year}
-                    </p>
-                    <h3 className="font-serif text-base font-semibold leading-snug mb-1">
-                      {node.title}
-                    </h3>
-                    <p className="text-sm text-foreground/85 leading-relaxed">
-                      {node.body}
-                    </p>
-                  </div>
-                </li>
-              ))}
+                    </span>
+                    {/* Timeline dot (desktop) — latest gets a larger
+                        ring-8 instead of ring-4 to draw the eye. */}
+                    <span
+                      aria-hidden="true"
+                      className={`hidden md:block absolute left-[6.15rem] top-2 rounded-full bg-gold-deep ring-background ${
+                        isLatest ? "h-3.5 w-3.5 ring-[6px]" : "h-2.5 w-2.5 ring-4"
+                      }`}
+                    />
+                    <div>
+                      <p
+                        className={`md:hidden tabular-nums mb-1 ${
+                          isLatest
+                            ? "text-xs font-bold text-gold-deep bg-cream inline-block px-2 py-0.5 rounded-md ring-1 ring-gold/40"
+                            : "text-[10px] uppercase tracking-[0.15em] text-gold-deep font-medium"
+                        }`}
+                      >
+                        {node.year}
+                      </p>
+                      <h3
+                        className={`font-serif leading-snug mb-1 ${
+                          isLatest ? "text-lg font-bold" : "text-base font-semibold"
+                        }`}
+                      >
+                        {node.title}
+                      </h3>
+                      <p className="text-sm text-foreground/85 leading-relaxed">
+                        {node.body}
+                      </p>
+                    </div>
+                  </li>
+                );
+              })}
             </ol>
           </div>
         </section>
@@ -895,7 +927,7 @@ export default async function CardDetail({
               <Link
                 key={c.slug}
                 href={`/cards/${c.slug}`}
-                aria-label={`查看 ${c.title}`}
+                aria-label={`查看 ${c.title} · 评分 ${c.score.toFixed(1)}`}
                 className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all hover:-translate-y-0.5"
               >
                 <div className="relative aspect-[9/16]">
@@ -906,6 +938,25 @@ export default async function CardDetail({
                     sizes="200px"
                     className="object-cover"
                   />
+                  {/* R79 (2026-07-12): score badge. Same visual
+                      treatment as R76 "你可能也会喜欢" + R76 series
+                      "编辑精选" + R77 CardPreview: threshold ≥ 7,
+                      color = palette[1] (跟图片自配色, 跟 R77
+                      CardPreview 同样不硬编码 gold-deep). Top-right
+                      with safe-area padding (top-1.5 right-1.5 跟
+                      series page 一致). 4-card grid 比 6-card series
+                      编辑精选 大 (200px wide vs 16vw), 所以 1.5
+                      padding 看上去比 2 更紧凑, 跟 CardPreview
+                      top-2 right-12 区分. */}
+                  {c.score >= 7 && (
+                    <div
+                      className="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold tabular-nums shadow-md"
+                      style={{ backgroundColor: c.palette[1], color: c.palette[0] }}
+                      aria-hidden="true"
+                    >
+                      ★ {c.score.toFixed(1)}
+                    </div>
+                  )}
                 </div>
                 <div className="p-3">
                   <p className="text-xs text-muted-foreground mb-1">No.{c.seriesNo}</p>

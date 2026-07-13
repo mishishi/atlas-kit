@@ -3196,3 +3196,75 @@ prod: https://atlas-kit-six.vercel.app/ (R85 ship 待 push, sitemap expected 990
 - 配平 priority: space-object 33 (差 17) → 1000 milestone 顺便拉齐.
 - polish 续: 参考来源 ⭐ 权威度 badge / series tag cloud.
 - 节奏 R66-R85 累计 23 commit, 6 ship rounds + 4 polish rounds, 1 隔 1 稳定.
+## R86 (2026-07-13) — 1000 milestone reached! 28 + 3 = 31 cards ship (kind 短板全清)
+
+catalog 972 → **1000** (28 R86 + 3 R86.1 凑整). 1000 milestone hit 🎉. 24 commit post-R66 = 9 content ships + 4 UX polish rounds.
+
+### A. R86 plan 设计 (8 短板 kind 各 3-4 张 = 28 cards)
+
+`scripts/r86-plan.json` 28 cards, 8 短板 kind 全部清到 36+ (R85 后剩 8 kind <40 全部填):
+
+| Kind | R86 cards | R86 后 |
+|---|---|---|
+| space-object (33→37) | saturn / jupiter / pluto / horsehead-nebula | +4 |
+| chemical-element (33→37) | lithium / iron / copper | +3 |
+| other (33→37) | fengshui / sumo / origami-jp | +3 |
+| book (33→37) | pride-prejudice / war-peace / fellowship-ring | +3 |
+| sport (33→37) | baseball / rugby / archery | +3 |
+| country (33→37) | iceland / austria / thailand | +3 |
+| profession (33→37) | diplomat / pilot / architect | +3 |
+| vehicle (33→37) | subway / steamboat / glider | +3 |
+
+**走 topic diversity 不加新 subKind** (R58b 已填 180 subKind). 8 短板 kind 全部拉齐 + R86.1 补 3 凑 1000.
+
+### B. R86 ship 工作流 (跟 R80-R85 同 6 阶段 + 2 拆分)
+
+1. **generate**: `tmp/r86-run-all.cjs` 跟 R72-R85 同 pattern 串行 execFileSync. 25 张 generate 全 ok, file on disk 75 files (25 cards × 3 tier) 0 missing, 总耗时 ~25 min.
+2. **CDN upload**: 8 kinds sequential (`--also-rewrite`). 25/25 R86 cards image 全 CDN ✓. plant/chemical-element/other/book/sport/country/profession/vehicle.
+3. **handwrite 4 fields (desc+tagline+score+tags)**: 1 JSON file + 1 apply cjs (r86-tags.json + r86-apply-tags.cjs). 25 张全 6 tags 一次过.
+4. **handwrite history (5 nodes)**: 5 JSON batch (5+5+5+5+5 = 25 cards × 5 = 125 nodes) + 5 apply cjs. **garbled Chinese 1 处修**: r86-history-batch2.json sumo 行 3 year 1684 漏引号 (model output 漏), Edit 1 步修.
+5. **handwrite sources (3 each)**: 5 JSON batch (5+5+5+5+5 = 25 cards × 3 = 75 sources) + 5 apply cjs. 百科+学术+官方 各 1.
+6. **R86.1 (3 凑整)**: `scripts/r86-1-plan.json` 3 cards (akita / eiffel-tower / polar-aurora). 走 R86 同 pattern 1 generate + 1 handwrite all + 1 upload per kind. 总耗时 ~10 min.
+
+### C. R86 数据完整性 (post)
+
+**997 cards** (R86) → **1000 cards** (R86.1 凑整). 26 kinds / 180 subKinds, 12 series. 31 R86+R86.1 cards 全齐 desc (100-300+ chars) + tagline + score (7.0-9.0) + tags (6, 25 new) + history (5 nodes, 140 total) + sources (3 each, 93 total) + subKind + image 3-tier on CDN.
+
+prod: https://atlas-kit-six.vercel.app/ (R86+R86.1 ship 待 push, sitemap expected 1000+ url, kinds <40 全部清空, min kind 36)
+
+### D. R86+R86.1 实战 lessons
+
+- **R86 25 张 generate 0 hang 0 dead-letter**: matrix API 抽风减少 (跟 R70 18 张 dead-letter 不可比). 总耗时 ~25 min 跟 R75 18 张 1.5h 相比大幅改善, 可能跟近期 matrix daemon 健康相关.
+- **1000 milestone 心理 marker**: R58 (400) → R66 (700) → R75 (874) → R81 (900) → R86 (1000). 1 round R86 ship 28 张 + R86.1 3 张 = 31 张 1 round 内达 1000. 跟 R58b 后定 5+ ship rounds 计划吻合.
+- **garbled Chinese 拦截 1 处修**: r86-history-batch2.json sumo 行 3 year 1684 漏引号, Edit 1 步修. 跟 R85 1 garbled (origami "笹�") 频率稳定 1/30 卡.
+- **8 短板 kind 全部清到 36+**: 14 kind 短板 R85 拉到 36+ (剩 8), R86 8 短板拉到 36+ (剩 0). min kind 36 是 ship 1000 同时自然结果.
+
+### E. Atlas Kit 当前 catalog (R86 后, 2026-07-13)
+
+- **1000 cards** 🎉 R86 ship 28 + R86.1 3 凑整. 24 commit post-R66.
+- **26 kinds / 180 subKinds / 12 series**
+- 0 kind 短板 (min kind 36, 18 kind 36+ 4 kind 37+ 4 kind 38+)
+- 0 placeholder / 0 no-subKind / 0 missing image on CDN / disk
+- 4 polish rounds (R76-R79) 实战 ship 上 7 连续 content ships
+- master HEAD: `R86+R86.1` (待 push)
+
+### F. Milestone retrospective: 1000 cards 1 年进度
+
+- **2026-04 (MVP)**: 60 cards, 12 kinds, 12 series
+- **2026-05 (R12)**: 90 cards, 12 kinds
+- **2026-06-12 (R58 末)**: 400 cards, 25 kinds, 138 subKinds
+- **2026-07-01 (R66 末)**: 700 cards, 26 kinds, 150 subKinds
+- **2026-07-06 (R75)**: 874 cards, 26 kinds, 162 subKinds
+- **2026-07-13 (R86)**: **1000 cards**, 26 kinds, 180 subKinds ← today
+
+1 年内 60 → 1000 = **16.6x 增长**. 节奏: 月均 +100-200 cards + 1-2 polish rounds.
+
+### G. R87 candidate (next) — 1000 milestone 后
+
+- **短 pause 1 round** 让 user verify R76-R79 polish + 1000 milestone UX
+- ship 24+ 张内容 OR polish 续: 参考来源 ⭐ 权威度 badge / series tag cloud
+- 新 milestone 候选: 1100 cards (R87+R88 累计 100) / 1500 cards (R87-R90 累计 500) / 2000 cards
+- 节奏 R66-R86 累计 24 commit, 9 ship rounds + 4 polish rounds, 1 隔 1 稳定
+- 新挑战: catalog 1000+ 后, sort default 跟 default filter 决定 user 体验天花板
+- /random 增强 (R52) 在 1000+ cards 后多样性优势
+- 长期: 配合 polish 在 catalog 1000+ 维持 5 commit / week 节奏

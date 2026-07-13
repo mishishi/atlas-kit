@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "round": "R86.1",
+    "createdAt": "2026-07-13",
+    "goal": "ship 3 cards = 1000 milestone",
+    "strategy": "3 补 cards 凑整 1000. 选 pet/architecture/phenomenon 12-kind 拉齐到 37/38"
+  },
+  "cards": [
+    { "slug": "akita-dog", "title": "秋田犬", "kind": "pet", "subKind": "dog-breed", "series": "pet-breed-guide", "seriesNo": "017" },
+    { "slug": "eiffel-tower-arch", "title": "埃菲尔铁塔", "kind": "architecture", "subKind": "modern", "series": "city-encyclopedia", "seriesNo": "010" },
+    { "slug": "polar-aurora", "title": "极光", "kind": "phenomenon", "subKind": "astronomical", "series": "atlas-miscellany", "seriesNo": "041" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "round": "R86",
+    "createdAt": "2026-07-13",
+    "goal": "ship 28 张内容 + 冲 1000 milestone + 8 kind 短板清空",
+    "strategy": "8 短板 kind 各 3-4 张 (space-object 4 + chem-element 4 + other 4 + book 4 + sport 3 + country 3 + profession 3 + vehicle 3) = 28 张, 距 1000 28. 走 topic diversity 不加新 subKind"
+  },
+  "cards": [
+    { "slug": "saturn-planet", "title": "土星", "kind": "space-object", "subKind": "planet", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "jupiter-planet", "title": "木星", "kind": "space-object", "subKind": "planet", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "pluto-planet", "title": "冥王星", "kind": "space-object", "subKind": "planet", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "horsehead-nebula", "title": "马头星云", "kind": "space-object", "subKind": "nebula", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "lithium-elem", "title": "锂", "kind": "chemical-element", "subKind": "alkali-metal", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "calcium-elem", "title": "钙", "kind": "chemical-element", "subKind": "alkaline-earth", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "iron-elem", "title": "铁", "kind": "chemical-element", "subKind": "transition-metal", "series": "atlas-miscellany", "seriesNo": "040" },
+    { "slug": "copper-elem", "title": "铜", "kind": "chemical-element", "subKind": "transition-metal", "series": "atlas-miscellany", "seriesNo": "041" },
+    { "slug": "fengshui-craft", "title": "风水", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "tea-ceremony", "title": "茶道", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "sumo-wrestling-craft", "title": "相扑", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "origami-jp", "title": "和纸工艺", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "040" },
+    { "slug": "pride-prejudice", "title": "傲慢与偏见", "kind": "book", "subKind": "classical", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "war-peace", "title": "战争与和平", "kind": "book", "subKind": "classical", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "harry-potter", "title": "哈利·波特", "kind": "book", "subKind": "modern-literature", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "fellowship-ring", "title": "魔戒", "kind": "book", "subKind": "modern-literature", "series": "atlas-miscellany", "seriesNo": "040" },
+    { "slug": "baseball-sport", "title": "棒球", "kind": "sport", "subKind": "ball-sport", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "rugby-sport", "title": "橄榄球", "kind": "sport", "subKind": "ball-sport", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "archery-sport", "title": "射箭", "kind": "sport", "subKind": "combat", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "iceland-country", "title": "冰岛", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "austria-country", "title": "奥地利", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "thailand-country", "title": "泰国", "kind": "country", "subKind": "southeast-asia", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "diplomat-prof", "title": "外交官", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "037" },
+    { "slug": "pilot-prof", "title": "飞行员", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "038" },
+    { "slug": "architect-prof", "title": "建筑师", "kind": "profession", "subKind": "service", "series": "history-and-figures", "seriesNo": "039" },
+    { "slug": "subway-vehicle", "title": "地铁", "kind": "vehicle", "subKind": "train", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "steamboat-vehicle", "title": "蒸汽船", "kind": "vehicle", "subKind": "ship", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "glider-vehicle", "title": "滑翔机", "kind": "vehicle", "subKind": "aircraft", "series": "atlas-miscellany", "seriesNo": "038" }
+  ]
+}

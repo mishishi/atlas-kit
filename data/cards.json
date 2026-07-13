@@ -43729,9 +43729,9 @@
       "#B88952",
       "#8C7F6E"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/tai-chi/tai-chi-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/tai-chi/tai-chi-full.webp",
     "score": 7.8,
     "tags": [
       "tai-chi",
@@ -72244,6 +72244,2050 @@
         "title": "History.com·Halloween",
         "url": "https://www.history.com/topics/halloween",
         "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "saturn-planet",
+    "title": "土星",
+    "kind": "space-object",
+    "subKind": "planet",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/saturn-planet/saturn-planet-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/saturn-planet/saturn-planet-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/saturn-planet/saturn-planet-full.webp",
+    "score": 8.6,
+    "tags": [
+      "行星",
+      "太阳系",
+      "土星环",
+      "气态行星",
+      "卡西尼",
+      "天文"
+    ],
+    "tagline": "土星环与 80 余颗卫星的行星之王",
+    "subtitle": "天体 · 土星 · 百科占位",
+    "description": "土星 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 700 年",
+        "title": "古巴比伦观测",
+        "body": "美索不达米亚占星家已记录土星为最慢行星, 命名 Ninurta 战神之星, 是已知最古老行星观测."
+      },
+      {
+        "year": "1610",
+        "title": "伽利略望远镜",
+        "body": "伽利略 1610 年用望远镜观测土星, 看到土星环但未识别环状结构, 误以为是三颗并排星体."
+      },
+      {
+        "year": "1655",
+        "title": "惠更斯环状结构",
+        "body": "荷兰天文学家惠更斯 1655 年用更精密望远镜识别土星环, 1659 年发表《土星系统》."
+      },
+      {
+        "year": "1997",
+        "title": "卡西尼号发射",
+        "body": "1997 年 10 月 NASA 卡西尼-惠更斯号发射, 2004 年进入土星轨道, 2017 年 9 月 15 日坠入土星, 共传回 45 万张照片."
+      },
+      {
+        "year": "2024",
+        "title": "土卫六与生命可能",
+        "body": "2024 年土星已知 146 颗卫星, 土卫六泰坦被列为太阳系内最可能存在生命的卫星之一."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA 卡西尼任务页",
+        "url": "https://science.nasa.gov/mission/cassini/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·土星",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9C%9F%E6%98%9F",
+        "type": "百科"
+      },
+      {
+        "title": "Planetary Society",
+        "url": "https://www.planetary.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "jupiter-planet",
+    "title": "木星",
+    "kind": "space-object",
+    "subKind": "planet",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/jupiter-planet/jupiter-planet-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/jupiter-planet/jupiter-planet-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/jupiter-planet/jupiter-planet-full.webp",
+    "score": 8.5,
+    "tags": [
+      "行星",
+      "太阳系",
+      "气态行星",
+      "大红斑",
+      "伽利略卫星",
+      "木星"
+    ],
+    "tagline": "太阳系最大行星与木星大红斑",
+    "subtitle": "天体 · 木星 · 百科占位",
+    "description": "木星 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 4 世纪",
+        "title": "巴比伦观测",
+        "body": "巴比伦天文学家在公元前 4 世纪已记录木星轨道, 命名为 Mul-babbar 白星, 周期 11.86 年."
+      },
+      {
+        "year": "1610",
+        "title": "伽利略卫星",
+        "body": "1610 年 1 月伽利略用望远镜发现木星四颗最大卫星, 现称伽利略卫星, 是望远镜天文观测的里程碑."
+      },
+      {
+        "year": "1665",
+        "title": "大红斑观察",
+        "body": "英国天文学家罗伯特·胡克 1665 年绘制木星大红斑素描, 大红斑是至少 350 年持续存在的反气旋风暴."
+      },
+      {
+        "year": "1995",
+        "title": "伽利略探测器",
+        "body": "1995 年 12 月伽利略号探测器进入木星轨道, 2003 年 9 月坠入木星大气层, 提供木星大气与卫星科学数据."
+      },
+      {
+        "year": "2024",
+        "title": "木星卫星 95 颗",
+        "body": "2024 年木星已知 95 颗卫星, 朱诺号探测器持续在轨观测, 木星 2024 年 10 月 9 日冲日, 全球业余天文爱好者的盛宴."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA 朱诺任务页",
+        "url": "https://science.nasa.gov/mission/juno/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·木星",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E6%98%9F",
+        "type": "百科"
+      },
+      {
+        "title": "欧洲航天局 (ESA)",
+        "url": "https://www.esa.int/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "pluto-planet",
+    "title": "冥王星",
+    "kind": "space-object",
+    "subKind": "planet",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/pluto-planet/pluto-planet-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/pluto-planet/pluto-planet-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/pluto-planet/pluto-planet-full.webp",
+    "score": 7.9,
+    "tags": [
+      "矮行星",
+      "柯伊伯带",
+      "冥王星",
+      "降级",
+      "新视野号",
+      "太阳系"
+    ],
+    "tagline": "从行星到矮行星的降级争议",
+    "subtitle": "天体 · 冥王星 · 百科占位",
+    "description": "冥王星 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1930",
+        "title": "克莱德·汤博发现",
+        "body": "1930 年 2 月 18 日美国天文学家克莱德·汤博在洛威尔天文台发现冥王星, 后命名 Pluto."
+      },
+      {
+        "year": "2006",
+        "title": "降级为矮行星",
+        "body": "2006 年 8 月 24 日国际天文学联合会 (IAU) 重新定义行星标准, 冥王星因未清除轨道其他天体被降级为矮行星."
+      },
+      {
+        "year": "2015",
+        "title": "新视野号飞掠",
+        "body": "2015 年 7 月 14 日 NASA 新视野号探测器飞掠冥王星, 传回高清表面照片, 发现爱心形 Tombaugh Regio 冰原."
+      },
+      {
+        "year": "2018",
+        "title": "天涯海角",
+        "body": "2019 年 1 月 1 日新视野号飞掠柯伊伯带天体天涯海角 (Arrokoth), 是人类迄今访问最远天体, 距地 65 亿公里."
+      },
+      {
+        "year": "2024",
+        "title": "冥王星大气新数据",
+        "body": "2024 年 JWST 太空望远镜重新观测冥王星大气, 确认其稀薄氮气大气在远离太阳时冻结沉降."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA 新视野号",
+        "url": "https://science.nasa.gov/mission/new-horizons/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·冥王星",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%A5%E7%8E%8B%E6%98%9F",
+        "type": "百科"
+      },
+      {
+        "title": "国际天文学联合会 (IAU)",
+        "url": "https://www.iau.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "horsehead-nebula",
+    "title": "马头星云",
+    "kind": "space-object",
+    "subKind": "nebula",
+    "series": "atlas-miscellany",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/horsehead-nebula/horsehead-nebula-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/horsehead-nebula/horsehead-nebula-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/space-object/horsehead-nebula/horsehead-nebula-full.webp",
+    "score": 8.4,
+    "tags": [
+      "星云",
+      "猎户座",
+      "暗星云",
+      "IC 434",
+      "马头",
+      "天文摄影"
+    ],
+    "tagline": "猎户腰带旁的暗色马头星云",
+    "subtitle": "天体 · 马头星云 · 百科占位",
+    "description": "马头星云 是 Atlas Kit 图鉴社「天体」分类下的百科图鉴占位条目 (category identity: Astronomy encyclopedia celestial-object profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1888",
+        "title": "哈佛天文台发现",
+        "body": "1888 年美国哈佛大学天文台威廉敏娜·弗莱明在巴纳德照片中首次记录马头星云 (Barnard 33), 是 19 世纪天文摄影杰作."
+      },
+      {
+        "year": "1900 年代",
+        "title": "IC 434 背景",
+        "body": "马头星云是位于猎户腰带之南的暗星云, 投影在发光的 IC 434 氢气云上, 形成剪影."
+      },
+      {
+        "year": "20 世纪",
+        "title": "色彩与结构",
+        "body": "天文学家发现马头星云由冷尘埃与分子氢组成, 顶部被猎户座 σ 星紫外辐射缓慢侵蚀, 高度约 0.3 光年."
+      },
+      {
+        "year": "2001",
+        "title": "哈勃高清照",
+        "body": "哈勃太空望远镜 2001 年发布的马头星云高清照片展示其精细的尘埃与气体结构, 成为天文摄影经典."
+      },
+      {
+        "year": "2024",
+        "title": "JWST 红外",
+        "body": "JWST 2024 年红外图像穿透尘埃揭示马头星云内部新生恒星, 是恒星形成研究的重要观测目标."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA 哈勃马头星云",
+        "url": "https://hubblesite.org/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·马头星云",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E5%A4%B4%E6%98%9F%E4%BA%91",
+        "type": "百科"
+      },
+      {
+        "title": "欧洲南方天文台 (ESO)",
+        "url": "https://www.eso.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "lithium-elem",
+    "title": "锂",
+    "kind": "chemical-element",
+    "subKind": "alkali-metal",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/lithium-elem/lithium-elem-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/lithium-elem/lithium-elem-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/lithium-elem/lithium-elem-full.webp",
+    "score": 7.8,
+    "tags": [
+      "化学元素",
+      "碱金属",
+      "锂电池",
+      "精神科",
+      "抑郁症",
+      "轻金属"
+    ],
+    "tagline": "最轻的金属与电池革命关键元素",
+    "subtitle": "化学元素 · 锂 · 百科占位",
+    "description": "锂 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1817",
+        "title": "阿尔费特逊发现",
+        "body": "1817 年瑞典化学家阿尔费特逊在透锂长石 (petalite) 中发现锂元素, 同年命名 Lithium 来自希腊 lithos 石头."
+      },
+      {
+        "year": "1855",
+        "title": "本生与基尔霍夫光谱",
+        "body": "1855 年德国化学家本生与基尔霍夫通过火焰光谱确认锂的红色特征谱线, 是光谱分析早期重大成就."
+      },
+      {
+        "year": "1949",
+        "title": "锂电池临床应用",
+        "body": "1949 年澳大利亚精神科医生 John Cade 发现锂盐对躁狂症治疗有效, 锂盐成为双相情感障碍一线治疗."
+      },
+      {
+        "year": "1991",
+        "title": "锂离子电池商用",
+        "body": "1991 年索尼公司将锂离子电池商业化, 应用于摄像机与移动电话, 开创便携式电子时代."
+      },
+      {
+        "year": "2024",
+        "title": "全球锂需求激增",
+        "body": "2024 年全球碳酸锂需求约 150 万吨, 电动车与储能推动南美锂三角与澳洲锂矿成为地缘战略资源."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·锂",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%82",
+        "type": "百科"
+      },
+      {
+        "title": "美国地质调查局 USGS",
+        "url": "https://www.usgs.gov/",
+        "type": "官方"
+      },
+      {
+        "title": "中国大百科全书·化学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "iron-elem",
+    "title": "铁",
+    "kind": "chemical-element",
+    "subKind": "transition-metal",
+    "series": "atlas-miscellany",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/iron-elem/iron-elem-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/iron-elem/iron-elem-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/iron-elem/iron-elem-full.webp",
+    "score": 8.3,
+    "tags": [
+      "化学元素",
+      "过渡金属",
+      "血红蛋白",
+      "地核",
+      "铁器时代",
+      "钢铁"
+    ],
+    "tagline": "地核与血红蛋白的红色金属",
+    "subtitle": "化学元素 · 铁 · 百科占位",
+    "description": "铁 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 3500 年",
+        "title": "美索不达米亚铁器",
+        "body": "美索不达米亚北部公元前 3500 年开始用陨铁制作装饰品, 是已知最早人类使用铁的证据."
+      },
+      {
+        "year": "公元前 1200 年",
+        "title": "铁器时代开端",
+        "body": "中东地区公元前 1200 年进入铁器时代, 冶铁技术传播, 改变农耕与战争模式."
+      },
+      {
+        "year": "公元前 500 年",
+        "title": "中国春秋冶铁",
+        "body": "中国春秋时期 (前 770-476) 块炼铁与生铁冶炼并行, 战国时期铁器普及推动农业革命."
+      },
+      {
+        "year": "1855",
+        "title": "贝塞麦转炉炼钢",
+        "body": "1855 年英国贝塞麦发明转炉炼钢法, 钢铁成本大幅下降, 推动第二次工业革命."
+      },
+      {
+        "year": "2024",
+        "title": "全球钢铁产量",
+        "body": "2024 年全球粗钢产量约 18.5 亿吨, 中国占约 50%, 是建筑、机械、交通的基础金属."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·铁",
+        "url": "https://zh.wikipedia.org/wiki/%E9%93%81",
+        "type": "百科"
+      },
+      {
+        "title": "世界钢铁协会",
+        "url": "https://worldsteel.org/",
+        "type": "机构"
+      },
+      {
+        "title": "中国大百科全书·冶金学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "copper-elem",
+    "title": "铜",
+    "kind": "chemical-element",
+    "subKind": "transition-metal",
+    "series": "atlas-miscellany",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/copper-elem/copper-elem-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/copper-elem/copper-elem-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/copper-elem/copper-elem-full.webp",
+    "score": 7.7,
+    "tags": [
+      "化学元素",
+      "过渡金属",
+      "电气",
+      "合金",
+      "青铜",
+      "古代"
+    ],
+    "tagline": "导电之王与人类最早冶炼的金属",
+    "subtitle": "化学元素 · 铜 · 百科占位",
+    "description": "铜 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 5000 年",
+        "title": "土耳其早期冶炼",
+        "body": "土耳其安纳托利亚的恰塔霍裕克 (前 5000 年) 出土早期铜珠, 是人类最早冶炼铜的证据之一."
+      },
+      {
+        "year": "公元前 3300 年",
+        "title": "苏美尔青铜",
+        "body": "美索不达米亚苏美尔文明公元前 3300 年开始铜锡合金 (青铜) 制造, 青铜时代正式开启."
+      },
+      {
+        "year": "公元前 220 年",
+        "title": "中国青铜鼎",
+        "body": "秦始皇陵出土青铜鼎 (前 220) 反映中国秦汉青铜铸造技艺的巅峰, 失蜡法与陶范法并用."
+      },
+      {
+        "year": "1831",
+        "title": "法拉第电磁感应",
+        "body": "1831 年法拉第发现电磁感应, 1844 年铜线大规模用于电报传输, 开启铜的电气时代."
+      },
+      {
+        "year": "2024",
+        "title": "全球铜需求",
+        "body": "2024 年全球铜需求约 2700 万吨, 中国占 50%+, 电动车与可再生能源推动铜进入新一轮需求高峰."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·铜",
+        "url": "https://zh.wikipedia.org/wiki/%E9%93%9C",
+        "type": "百科"
+      },
+      {
+        "title": "国际铜业协会",
+        "url": "https://copperalliance.org/",
+        "type": "机构"
+      },
+      {
+        "title": "中国大百科全书·冶金学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "fengshui-craft",
+    "title": "风水",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/fengshui-craft/fengshui-craft-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/fengshui-craft/fengshui-craft-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/fengshui-craft/fengshui-craft-full.webp",
+    "score": 7.2,
+    "tags": [
+      "传统",
+      "堪舆",
+      "中国",
+      "环境",
+      "玄学",
+      "建筑"
+    ],
+    "tagline": "中国传统的环境空间规划学",
+    "subtitle": "其他 · 风水 · 百科占位",
+    "description": "风水 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "远古",
+        "title": "仰韶文化选址",
+        "body": "仰韶文化 (前 5000-3000) 遗址选择注重地形、采光与水源, 是中国风水的早期实践."
+      },
+      {
+        "year": "先秦",
+        "title": "《易经》奠定",
+        "body": "《易经》以阴阳八卦为基础, 战国邹衍发展阴阳五行, 与墓地选择结合, 形成早期风水理论."
+      },
+      {
+        "year": "晋代",
+        "title": "郭璞《葬书》",
+        "body": "晋代郭璞《葬书》提出气乘风则散, 界水则止, 聚之使不散, 行之使有止, 奠定风水形法理论."
+      },
+      {
+        "year": "唐代",
+        "title": "杨筠松与形势派",
+        "body": "唐代杨筠松创立形势派风水, 重视地理形势观察, 推动风水从皇家陵墓走向民间建筑."
+      },
+      {
+        "year": "2024",
+        "title": "全球华人与争议",
+        "body": "2024 年风水在东亚华人圈与西方部分城市建筑仍有市场, 学界对风水是科学还是迷信仍有争议."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·风水",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A3%8E%E6%B0%B4",
+        "type": "百科"
+      },
+      {
+        "title": "中国易学网",
+        "url": "https://www.zhouyi.com/",
+        "type": "机构"
+      },
+      {
+        "title": "中国民俗学会",
+        "url": "http://www.chinafolklore.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "sumo-wrestling-craft",
+    "title": "相扑",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/sumo-wrestling-craft/sumo-wrestling-craft-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/sumo-wrestling-craft/sumo-wrestling-craft-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/sumo-wrestling-craft/sumo-wrestling-craft-full.webp",
+    "score": 7.5,
+    "tags": [
+      "传统体育",
+      "日本",
+      "相扑",
+      "神道",
+      "国技",
+      "武士"
+    ],
+    "tagline": "日本国技与神道祭祀的相扑",
+    "subtitle": "其他 · 相扑 · 百科占位",
+    "description": "相扑 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元 3 世纪",
+        "title": "日本古坟时代起源",
+        "body": "公元 3 世纪日本古坟时代, 相扑作为神道祭祀活动在宫廷举行, 用于占卜丰收."
+      },
+      {
+        "year": "8 世纪",
+        "title": "奈良时代相扑节",
+        "body": "8 世纪奈良时代, 圣武天皇将相扑列入宫廷节庆, 相扑成为贵族体育活动."
+      },
+      {
+        "year": "1684",
+        "title": "江户劝进相扑",
+        "body": "1684 年日本江户时代, 民间劝进相扑 (为寺院募款) 兴起, 相扑脱离宫廷成为大众娱乐."
+      },
+      {
+        "year": "1909",
+        "title": "JR 创立国技馆",
+        "body": "1909 年日本铁道 (JR) 与相扑协会合作, 在两国国技馆定期举办本场所赛事, 现代相扑职业化."
+      },
+      {
+        "year": "2024",
+        "title": "相扑全球化",
+        "body": "2024 年日本大相扑累计约 660 名力士, 蒙古人力士占近一半, 2023 年两人因霸凌事件自杀引发改革讨论."
+      }
+    ],
+    "sources": [
+      {
+        "title": "日本相扑协会",
+        "url": "https://www.sumo.or.jp/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·相扑",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%B8%E6%92%AB",
+        "type": "百科"
+      },
+      {
+        "title": "日本文化厅",
+        "url": "https://www.bunka.go.jp/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "origami-jp",
+    "title": "和纸工艺",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami-jp/origami-jp-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami-jp/origami-jp-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami-jp/origami-jp-full.webp",
+    "score": 7.4,
+    "tags": [
+      "传统工艺",
+      "日本",
+      "和纸",
+      "纸艺",
+      "千年工艺",
+      "折形"
+    ],
+    "tagline": "和纸工艺与日本折纸艺术",
+    "subtitle": "其他 · 和纸工艺 · 百科占位",
+    "description": "和纸工艺 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "8 世纪",
+        "title": "平安时代传入",
+        "body": "8 世纪日本平安时代, 遣唐僧侣将中国造纸术与折纸带入日本, 用于神社祭祀纸垂 (gohei)."
+      },
+      {
+        "year": "江户时代",
+        "title": "和纸工艺成熟",
+        "body": "江户时代 (1603-1868) 和纸 (washi) 工艺成熟, 美浓土岐和纸成为高级折纸专用纸, 出现专业折纸师."
+      },
+      {
+        "year": "1867",
+        "title": "巴黎世博会",
+        "body": "1867 年巴黎世界博览会上日本和纸与折纸惊艳欧洲, 西方开始系统学习日本折纸."
+      },
+      {
+        "year": "1950 年代",
+        "title": "世界折纸协会",
+        "body": "1950 年代日本创刊《折纸》季刊, 西班牙 Akira Yoshizawa 与 Samuel Randlett 创立山谷折法系统."
+      },
+      {
+        "year": "2024",
+        "title": "日本折纸博物馆",
+        "body": "2024 年东京日本折纸博物馆 (Origami Museum) 迁至浅草, 收藏约 5 万件折纸作品, 是全球折纸文化中心."
+      }
+    ],
+    "sources": [
+      {
+        "title": "日本折纸博物馆 (Origami Museum)",
+        "url": "https://origami-museum.jp/",
+        "type": "博物馆"
+      },
+      {
+        "title": "维基百科中文版·折纸",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8A%98%E7%BA%B8",
+        "type": "百科"
+      },
+      {
+        "title": "日本折纸协会",
+        "url": "https://origami-noa.jp/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "pride-prejudice",
+    "title": "傲慢与偏见",
+    "kind": "book",
+    "subKind": "classical",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/pride-prejudice/pride-prejudice-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/pride-prejudice/pride-prejudice-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/pride-prejudice/pride-prejudice-full.webp",
+    "score": 8.5,
+    "tags": [
+      "古典文学",
+      "英国",
+      "简·奥斯汀",
+      "爱情",
+      "社会",
+      "讽刺"
+    ],
+    "tagline": "奥斯汀笔下的英国乡村爱情经典",
+    "subtitle": "书籍 · 傲慢与偏见 · 百科占位",
+    "description": "傲慢与偏见 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1796",
+        "title": "奥斯汀初稿",
+        "body": "简·奥斯汀 1796 年 21 岁时开始创作《第一印象》, 后改写为《傲慢与偏见》."
+      },
+      {
+        "year": "1811",
+        "title": "自费出版尝试",
+        "body": "1811 年奥斯汀自费在伦敦出版, 但首版《傲慢与偏见》销量平平, 几乎全部退回."
+      },
+      {
+        "year": "1813",
+        "title": "正式出版",
+        "body": "1813 年 1 月 28 日《傲慢与偏见》由托马斯·埃杰顿出版社正式出版, 后成为英国小说经典."
+      },
+      {
+        "year": "19 世纪",
+        "title": "维多利亚评论",
+        "body": "维多利亚时代评论家多以浪漫主义框架解读, 20 世纪学者夏洛特·布鲁斯特确立奥斯汀的女性主义与讽刺解读."
+      },
+      {
+        "year": "2024",
+        "title": "BBC 200 周年",
+        "body": "2024 年《傲慢与偏见》是 BBC 大阅读 200 周年票选英国人最喜爱小说第三名, 累计改编影视版本超 30 个."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·傲慢与偏见",
+        "url": "https://zh.wikipedia.org/wiki/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81",
+        "type": "百科"
+      },
+      {
+        "title": "British Library·Pride and Prejudice",
+        "url": "https://www.bl.uk/",
+        "type": "机构"
+      },
+      {
+        "title": "Jane Austen Society",
+        "url": "https://www.janeaustensociety.org.uk/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "war-peace",
+    "title": "战争与和平",
+    "kind": "book",
+    "subKind": "classical",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/war-peace/war-peace-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/war-peace/war-peace-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/war-peace/war-peace-full.webp",
+    "score": 8.9,
+    "tags": [
+      "古典文学",
+      "俄国",
+      "托尔斯泰",
+      "拿破仑",
+      "战争",
+      "人文"
+    ],
+    "tagline": "托尔斯泰的俄国史诗巨著",
+    "subtitle": "书籍 · 战争与和平 · 百科占位",
+    "description": "战争与和平 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1863",
+        "title": "托尔斯泰首部",
+        "body": "列夫·托尔斯泰 1863 年开始构思《战争与和平》, 1867 年完成早期版本《1805》."
+      },
+      {
+        "year": "1869",
+        "title": "《俄国信使》连载",
+        "body": "1865-1869 年《战争与和平》全 4 卷在《俄国信使》杂志连载, 1869 年出版单行本."
+      },
+      {
+        "year": "19 世纪",
+        "title": "杜斯妥也夫斯基盛赞",
+        "body": "杜斯妥也夫斯基盛赞《战争与和平》是欧洲文学的珠穆朗玛峰, 与《安娜·卡列尼娜》并列托尔斯泰双峰."
+      },
+      {
+        "year": "20 世纪",
+        "title": "苏联与翻译",
+        "body": "苏联时期《战争与和平》是社会主义现实主义文学的范例, 1956-67 年苏联导演邦达尔丘克改编的 7 小时电影获奥斯卡最佳外语片."
+      },
+      {
+        "year": "2024",
+        "title": "全球累计销量",
+        "body": "2024 年《战争与和平》全球累计销量超 1 亿册, 是 19 世纪俄罗斯小说在海外影响最大者之一."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·战争与和平",
+        "url": "https://zh.wikipedia.org/wiki/%E6%88%98%E4%BA%89%E4%B8%8E%E5%92%8C%E5%B9%B3",
+        "type": "百科"
+      },
+      {
+        "title": "托尔斯泰博物馆 (莫斯科)",
+        "url": "https://tolstoymuseum.ru/",
+        "type": "博物馆"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy·Tolstoy",
+        "url": "https://plato.stanford.edu/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "fellowship-ring",
+    "title": "魔戒",
+    "kind": "book",
+    "subKind": "modern-literature",
+    "series": "atlas-miscellany",
+    "seriesNo": "040",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/fellowship-ring/fellowship-ring-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/fellowship-ring/fellowship-ring-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/fellowship-ring/fellowship-ring-full.webp",
+    "score": 8.7,
+    "tags": [
+      "现代文学",
+      "英国",
+      "托尔金",
+      "奇幻",
+      "中土",
+      "史诗"
+    ],
+    "tagline": "托尔金的中土世界传奇",
+    "subtitle": "书籍 · 魔戒 · 百科占位",
+    "description": "魔戒 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1937",
+        "title": "托尔金开始构思",
+        "body": "J.R.R. 托尔金 1937 年在批改试卷时写下霍比特人开篇, 此后逐步构建中土世界神话体系."
+      },
+      {
+        "year": "1954",
+        "title": "魔戒三部曲出版",
+        "body": "1954-55 年《魔戒》三部曲在英国出版, 累计售出 1.5 亿册, 1970 年代获美国总统自由勋章."
+      },
+      {
+        "year": "2001",
+        "title": "彼得·杰克逊电影",
+        "body": "2001-2003 年新西兰导演彼得·杰克逊执导的《指环王》电影三部曲获 17 项奥斯卡, 累计票房 60 亿美元."
+      },
+      {
+        "year": "2004",
+        "title": "中土与文化研究",
+        "body": "2004 年《托尔金学会》成立, 中土学 (Tolkien studies) 成为现代奇幻文学与神话学独立学科."
+      },
+      {
+        "year": "2024",
+        "title": "亚马逊剧集",
+        "body": "2022 年亚马逊《力量之戒》剧集 5 季制作, 2024 年第二季上映, 持续扩展中土宇宙影视版图."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·魔戒",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AD%94%E6%88%92",
+        "type": "百科"
+      },
+      {
+        "title": "Tolkien Society",
+        "url": "https://www.tolkiensociety.org/",
+        "type": "机构"
+      },
+      {
+        "title": "英国 Bodleian 图书馆·托尔金档案",
+        "url": "https://www.bodleian.ox.ac.uk/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "baseball-sport",
+    "title": "棒球",
+    "kind": "sport",
+    "subKind": "ball-sport",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/baseball-sport/baseball-sport-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/baseball-sport/baseball-sport-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/baseball-sport/baseball-sport-full.webp",
+    "score": 7.8,
+    "tags": [
+      "体育",
+      "球类",
+      "美国",
+      "日本",
+      "MLB",
+      "甲子园"
+    ],
+    "tagline": "美日国民运动与 MLB 世界",
+    "subtitle": "体育运动 · 棒球 · 百科占位",
+    "description": "棒球 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1839",
+        "title": "美国棒球发明",
+        "body": "1839 年 6 月 19 日美国纽约库珀斯敦, 银行家道布尔戴 (Abner Doubleday) 据信发明现代棒球规则."
+      },
+      {
+        "year": "1903",
+        "title": "美国职业棒球大联盟",
+        "body": "1903 年美国职业棒球大联盟 (MLB) 成立, 至今 121 年历史, 是北美四大职业体育之首."
+      },
+      {
+        "year": "1918",
+        "title": "日本甲子园",
+        "body": "1918 年日本全国高中棒球锦标赛在阪神甲子园球场开赛, 甲子园成为日本棒球文化符号."
+      },
+      {
+        "year": "1969",
+        "title": "古巴革命与棒球",
+        "body": "1969 年古巴革命后, 棒球成为加勒比海地区文化核心, 1992 年棒球列入巴塞罗那奥运会正式项目."
+      },
+      {
+        "year": "2024",
+        "title": "全球棒球市场",
+        "body": "2024 年 MLB 30 支球队总产值约 150 亿美元, 日本 NPB 韩国 KBO 与中华职棒共同构成东亚棒球版图."
+      }
+    ],
+    "sources": [
+      {
+        "title": "MLB 官网",
+        "url": "https://www.mlb.com/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·棒球",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A3%92%E7%90%83",
+        "type": "百科"
+      },
+      {
+        "title": "日本职业棒球机构 (NPB)",
+        "url": "https://www.npb.or.jp/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "rugby-sport",
+    "title": "橄榄球",
+    "kind": "sport",
+    "subKind": "ball-sport",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/rugby-sport/rugby-sport-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/rugby-sport/rugby-sport-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/rugby-sport/rugby-sport-full.webp",
+    "score": 7.4,
+    "tags": [
+      "体育",
+      "球类",
+      "英国",
+      "橄榄球",
+      "世界杯",
+      "对抗"
+    ],
+    "tagline": "英式橄榄球与世界杯的硬派对抗",
+    "subtitle": "体育运动 · 橄榄球 · 百科占位",
+    "description": "橄榄球 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1823",
+        "title": "拉格比公学",
+        "body": "1823 年英国拉格比公学学生 William Webb Ellis 据说在足球比赛中抱球跑, 创立橄榄球运动."
+      },
+      {
+        "year": "1871",
+        "title": "橄榄球总会成立",
+        "body": "1871 年英国橄榄球总会 (RFU) 成立, 1871 年 1 月举办首场国际比赛, 至今仍是橄榄球最高级别国际组织."
+      },
+      {
+        "year": "1905",
+        "title": "橄榄球分裂",
+        "body": "1905 年北半球橄榄球联合会脱离 RFU, 形成 Rugby Union 与 Rugby League 两种规则体系."
+      },
+      {
+        "year": "1987",
+        "title": "首届世界杯",
+        "body": "1987 年第一届橄榄球世界杯在新西兰和澳大利亚举办, 新西兰全黑队与澳大利亚队会师决赛."
+      },
+      {
+        "year": "2024",
+        "title": "法国世界杯",
+        "body": "2023 年法国举办第十届橄榄球世界杯, 南非队第 4 次夺冠, 全球收视累计 17 亿人次, 是橄榄球商业化高峰."
+      }
+    ],
+    "sources": [
+      {
+        "title": "World Rugby 官网",
+        "url": "https://www.world.rugby/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·橄榄球",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A9%84%E6%A6%84%E7%90%83",
+        "type": "百科"
+      },
+      {
+        "title": "英国 Rugby Football Union",
+        "url": "https://www.englandrugby.com/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "archery-sport",
+    "title": "射箭",
+    "kind": "sport",
+    "subKind": "combat",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/archery-sport/archery-sport-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/archery-sport/archery-sport-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/sport/archery-sport/archery-sport-full.webp",
+    "score": 7.3,
+    "tags": [
+      "体育",
+      "射箭",
+      "日本弓道",
+      "奥运",
+      "传统",
+      "精度"
+    ],
+    "tagline": "奥林匹克射箭与和弓传统",
+    "subtitle": "体育运动 · 射箭 · 百科占位",
+    "description": "射箭 是 Atlas Kit 图鉴社「体育运动」分类下的百科图鉴占位条目 (category identity: Sports encyclopedia discipline profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 2 万年",
+        "title": "石器时代弓箭",
+        "body": "南非 Sibudu 洞穴出土公元前 2 万年弓箭与箭, 弓箭是人类最古老的远距离武器, 早于车轮与陶器."
+      },
+      {
+        "year": "公元 1183",
+        "title": "日本弓道起源",
+        "body": "1183 年日本平安末期, 武士阶级将弓道 (Kyudo) 作为武艺必修, 弓术与骑马、剑道并称武家三艺."
+      },
+      {
+        "year": "公元前 776 年",
+        "title": "古代奥运射箭",
+        "body": "公元前 776 年首届古代奥运会有射箭比赛, 古希腊弓为复合弓, 标的是鸽子, 后改用靶环."
+      },
+      {
+        "year": "1900",
+        "title": "现代奥运射箭",
+        "body": "1900 年第二届巴黎现代奥运会射箭列入项目, 1972 年慕尼黑奥运会恢复为正式项目, 国际箭联 1931 年成立."
+      },
+      {
+        "year": "2024",
+        "title": "韩国射箭世界领先",
+        "body": "2024 年韩国国家射箭队累计 27 块奥运奖牌 (含 10 金), 韩国现代弓道是传统弓道与竞技射箭的融合典范."
+      }
+    ],
+    "sources": [
+      {
+        "title": "国际箭联 (World Archery)",
+        "url": "https://worldarchery.org/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·射箭",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B0%84%E7%AE%AD",
+        "type": "百科"
+      },
+      {
+        "title": "韩国弓道协会",
+        "url": "https://www.archery.or.kr/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "iceland-country",
+    "title": "冰岛",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/iceland-country/iceland-country-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/iceland-country/iceland-country-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/iceland-country/iceland-country-full.webp",
+    "score": 8,
+    "tags": [
+      "国家",
+      "欧洲",
+      "北欧",
+      "冰岛",
+      "维京",
+      "地热"
+    ],
+    "tagline": "冰与火之岛与北欧维京后裔",
+    "subtitle": "国家 · 冰岛 · 百科占位",
+    "description": "冰岛 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元 874",
+        "title": "维京人定居",
+        "body": "874 年挪威维京人英格尔夫·阿尔纳逊乘长船定居雷克雅未克, 是冰岛有记录最早定居者."
+      },
+      {
+        "year": "930",
+        "title": "Althing 议会",
+        "body": "930 年冰岛建立 Althing 议会, 辛格韦德利国家公园, 是世界最古老的代议制议会, 比英格兰早 1000 年."
+      },
+      {
+        "year": "1262",
+        "title": "臣服挪威",
+        "body": "1262 年冰岛 Althing 臣服于挪威国王, 1380 年起归丹麦统治, 直至 1918 年独立."
+      },
+      {
+        "year": "1944",
+        "title": "冰岛共和国",
+        "body": "1944 年 6 月 17 日冰岛共和国成立, 结束与丹麦的联邦关系, 6 月 17 日成为冰岛国庆日."
+      },
+      {
+        "year": "2024",
+        "title": "地热能源",
+        "body": "2024 年冰岛人口约 38 万, 80% 以上初级能源来自地热与水电, 是全球地热发电比例最高国家."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·冰岛",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%B0%E5%B2%9B",
+        "type": "百科"
+      },
+      {
+        "title": "冰岛总理府官网",
+        "url": "https://www.government.is/",
+        "type": "官方"
+      },
+      {
+        "title": "冰岛国家博物馆",
+        "url": "https://www.thjodminjasafn.is/",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "austria-country",
+    "title": "奥地利",
+    "kind": "country",
+    "subKind": "europe",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/austria-country/austria-country-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/austria-country/austria-country-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/austria-country/austria-country-full.webp",
+    "score": 7.9,
+    "tags": [
+      "国家",
+      "欧洲",
+      "奥地利",
+      "维也纳",
+      "音乐",
+      "阿尔卑斯"
+    ],
+    "tagline": "阿尔卑斯山脉中的音乐之国",
+    "subtitle": "国家 · 奥地利 · 百科占位",
+    "description": "奥地利 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元 996",
+        "title": "首次文献记载",
+        "body": "996 年巴本堡王朝在《奥塔卡里叙事诗》中首次以 Ostarrîchi 提及奥地利, 是现代国名 Österreich 来源."
+      },
+      {
+        "year": "1276",
+        "title": "哈布斯堡王朝",
+        "body": "1276 年哈布斯堡的鲁道夫一世击败波希米亚国王, 开启哈布斯堡王朝对奥地利的统治, 持续至 1918 年."
+      },
+      {
+        "year": "1740",
+        "title": "玛利亚·特蕾莎",
+        "body": "1740-1780 年玛利亚·特蕾莎女大公在位, 是哈布斯堡王朝鼎盛期, 维也纳成为欧洲艺术与音乐中心."
+      },
+      {
+        "year": "1814",
+        "title": "维也纳会议",
+        "body": "1814-15 年维也纳会议重建拿破仑战后欧洲秩序, 奥地利首相梅特涅主导, 是欧洲保守主义顶点."
+      },
+      {
+        "year": "2024",
+        "title": "奥地利现代化",
+        "body": "2024 年奥地利人口约 910 万, 维也纳连续多年被评为全球最宜居城市, 莫扎特与施特劳斯音乐文化仍是国家品牌."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·奥地利",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A5%A5%E5%9C%B0%E5%88%A9",
+        "type": "百科"
+      },
+      {
+        "title": "奥地利联邦政府",
+        "url": "https://www.bundeskanzleramt.gv.at/",
+        "type": "官方"
+      },
+      {
+        "title": "维也纳旅游局",
+        "url": "https://www.wien.info/zh",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "thailand-country",
+    "title": "泰国",
+    "kind": "country",
+    "subKind": "southeast-asia",
+    "series": "atlas-miscellany",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/thailand-country/thailand-country-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/thailand-country/thailand-country-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/thailand-country/thailand-country-full.webp",
+    "score": 7.7,
+    "tags": [
+      "国家",
+      "东南亚",
+      "泰国",
+      "佛教",
+      "曼谷",
+      "美食"
+    ],
+    "tagline": "佛教之国与微笑的国度",
+    "subtitle": "国家 · 泰国 · 百科占位",
+    "description": "泰国 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "13 世纪",
+        "title": "素可泰王国",
+        "body": "1238 年泰族首领室利·因陀罗建立素可泰王朝, 是泰国第一个独立王朝, 创立泰文文字."
+      },
+      {
+        "year": "1350",
+        "title": "阿瑜陀耶王朝",
+        "body": "1350 年拉玛铁菩提二世建立阿瑜陀耶王朝, 持续 417 年, 1771 年被缅甸贡榜王朝所灭."
+      },
+      {
+        "year": "1782",
+        "title": "却克里王朝",
+        "body": "1782 年拉玛一世建立却克里王朝, 定都曼谷, 延续至今, 现任国王拉玛十世 (瓦栖拉隆功) 2016 年即位."
+      },
+      {
+        "year": "1932",
+        "title": "立宪革命",
+        "body": "1932 年泰国 (暹罗) 立宪革命, 君主放弃绝对权力, 1939 年改名泰国 (Thailand)."
+      },
+      {
+        "year": "2024",
+        "title": "佛教之国",
+        "body": "2024 年泰国人口约 7200 万, 95% 信仰上座部佛教, 曼谷大皇宫与玉佛寺是全球佛教文化中心之一."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·泰国",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B3%B0%E5%9B%BD",
+        "type": "百科"
+      },
+      {
+        "title": "泰国旅游局 (TAT)",
+        "url": "https://www.tourismthailand.org/",
+        "type": "官方"
+      },
+      {
+        "title": "朱拉隆功大学 (Chulalongkorn)",
+        "url": "https://www.chula.ac.th/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "diplomat-prof",
+    "title": "外交官",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/diplomat-prof/diplomat-prof-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/diplomat-prof/diplomat-prof-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/diplomat-prof/diplomat-prof-full.webp",
+    "score": 7.8,
+    "tags": [
+      "职业",
+      "外交",
+      "国际关系",
+      "谈判",
+      "使领馆",
+      "公务员"
+    ],
+    "tagline": "国际谈判与国家利益的代言人",
+    "subtitle": "职业 · 外交官 · 百科占位",
+    "description": "外交官 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 13 世纪",
+        "title": "埃及外交",
+        "body": "古埃及阿玛尔纳书信 (前 1350 年) 是已知最早外交文献, 法老与赫梯、叙利亚王国的外交信函."
+      },
+      {
+        "year": "1648",
+        "title": "威斯特伐利亚体系",
+        "body": "1648 年威斯特伐利亚和约确立现代主权国家体系, 职业外交官随之出现, 是现代外交的起点."
+      },
+      {
+        "year": "1815",
+        "title": "维也纳会议",
+        "body": "1815 年维也纳会议确立职业外交官体系, 19 世纪欧洲常驻大使与公使制度成型."
+      },
+      {
+        "year": "1919",
+        "title": "国联外交",
+        "body": "1919 年国际联盟成立, 推动多边外交, 1945 年联合国继承, 是外交官最大雇主."
+      },
+      {
+        "year": "2024",
+        "title": "全球外交官",
+        "body": "2024 年全球外交官约 8000 名, 联合国常任理事国 5 国 + 区域性组织 (欧盟、东盟、上合) 主导多边外交."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·外交官",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%96%E4%BA%A4%E5%AE%98",
+        "type": "百科"
+      },
+      {
+        "title": "中华人民共和国外交部",
+        "url": "https://www.fmprc.gov.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "中国国际问题研究院",
+        "url": "https://www.ciis.org.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "pilot-prof",
+    "title": "飞行员",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/pilot-prof/pilot-prof-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/pilot-prof/pilot-prof-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/pilot-prof/pilot-prof-full.webp",
+    "score": 7.6,
+    "tags": [
+      "职业",
+      "航空",
+      "飞行员",
+      "驾驶",
+      "民航",
+      "军航"
+    ],
+    "tagline": "驾驶航空器穿越天际的专业人士",
+    "subtitle": "职业 · 飞行员 · 百科占位",
+    "description": "飞行员 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1903",
+        "title": "莱特兄弟首飞",
+        "body": "1903 年 12 月 17 日莱特兄弟在北卡罗来纳州基蒂霍克首飞, 揭开了飞行时代的序幕."
+      },
+      {
+        "year": "1914",
+        "title": "首条商业航线",
+        "body": "1914 年 1 月 1 日美国圣彼得堡-坦帕航线开通, 是世界第一条定期商业航空, 飞行员 Tony Jannus."
+      },
+      {
+        "year": "1930 年代",
+        "title": "民航客机兴起",
+        "body": "1930 年代道格拉斯 DC-2/DC-3 客机开启现代航空运输, 1940 年代二战推动航空器技术飞跃."
+      },
+      {
+        "year": "1970 年代",
+        "title": "喷气客机时代",
+        "body": "1970 年波音 747 巨无霸客机服役, 开启全球大众航空时代, 飞行成为日常交通方式."
+      },
+      {
+        "year": "2024",
+        "title": "全球民航飞行员",
+        "body": "2024 年全球民航飞行员约 50 万人, 中国商飞 C919 入列后中欧美三足鼎立, 飞行员训练体系日趋国际化."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·飞行员",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A3%9E%E8%A1%8C%E5%91%98",
+        "type": "百科"
+      },
+      {
+        "title": "中国民用航空局 (CAAC)",
+        "url": "http://www.caac.gov.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "国际航空运输协会 (IATA)",
+        "url": "https://www.iata.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "architect-prof",
+    "title": "建筑师",
+    "kind": "profession",
+    "subKind": "service",
+    "series": "history-and-figures",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/architect-prof/architect-prof-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/architect-prof/architect-prof-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/profession/architect-prof/architect-prof-full.webp",
+    "score": 7.9,
+    "tags": [
+      "职业",
+      "建筑",
+      "设计",
+      "城市规划",
+      "BIM",
+      "工程"
+    ],
+    "tagline": "塑造城市天际线的空间设计师",
+    "subtitle": "职业 · 建筑师 · 百科占位",
+    "description": "建筑师 是 Atlas Kit 图鉴社「职业」分类下的百科图鉴占位条目 (category identity: Career and social-role encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 2700 年",
+        "title": "伊姆霍特普",
+        "body": "古埃及第三王朝伊姆霍特普 (Imhotep) 设计左塞尔阶梯金字塔, 是人类第一位留下姓名的建筑师."
+      },
+      {
+        "year": "公元 1420",
+        "title": "布鲁内莱斯基",
+        "body": "意大利建筑师布鲁内莱斯基 1420 年设计佛罗伦萨圣母百花大教堂穹顶, 是文艺复兴建筑开山之作."
+      },
+      {
+        "year": "1889",
+        "title": "埃菲尔铁塔",
+        "body": "古斯塔夫·埃菲尔 1889 年设计巴黎埃菲尔铁塔, 庆祝法国大革命 100 周年, 是工业时代建筑象征."
+      },
+      {
+        "year": "1920",
+        "title": "包豪斯学派",
+        "body": "1919 年德国包豪斯 (Bauhaus) 学派创立, 沃尔特·格罗皮乌斯推动现代主义建筑, 功能至上."
+      },
+      {
+        "year": "2024",
+        "title": "BIM 与 AI 设计",
+        "body": "2024 年全球 BIM (建筑信息模型) 普及率约 60%, AI 辅助设计开始进入建筑行业, 扎哈·哈迪德、OMA 等仍引领潮流."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·建筑师",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BB%BA%E7%AD%91%E5%B8%88",
+        "type": "百科"
+      },
+      {
+        "title": "中国建筑学会",
+        "url": "http://www.chinaasc.org/",
+        "type": "机构"
+      },
+      {
+        "title": "国际建筑师联盟 (UIA)",
+        "url": "https://www.uia-architectes.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "subway-vehicle",
+    "title": "地铁",
+    "kind": "vehicle",
+    "subKind": "train",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/subway-vehicle/subway-vehicle-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/subway-vehicle/subway-vehicle-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/subway-vehicle/subway-vehicle-full.webp",
+    "score": 7.3,
+    "tags": [
+      "载具",
+      "地铁",
+      "城市交通",
+      "地下",
+      "铁路",
+      "通勤"
+    ],
+    "tagline": "城市地下轨道公共交通系统",
+    "subtitle": "交通工具 · 地铁 · 百科占位",
+    "description": "地铁 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1863",
+        "title": "伦敦世界首条",
+        "body": "1863 年 1 月 10 日伦敦大都会铁路 (Metropolitan Railway) 开通, 是世界第一条地铁, 使用蒸汽机车."
+      },
+      {
+        "year": "1890",
+        "title": "电力地铁",
+        "body": "1890 年 12 月 18 日伦敦城市与南伦敦铁路开通, 是世界第一条电力驱动地铁, 现代地铁的真正起点."
+      },
+      {
+        "year": "1900",
+        "title": "巴黎地铁",
+        "body": "1900 年 7 月 19 日巴黎地铁 1 号线开通, 至今 124 年历史, 是欧洲地铁典范, 站点艺术化传统延续至今."
+      },
+      {
+        "year": "1969",
+        "title": "北京地铁",
+        "body": "1969 年 10 月 1 日北京地铁 1 号线通车, 是中国第一条地铁, 至今 55 年, 2024 年中国地铁里程约 1.1 万公里."
+      },
+      {
+        "year": "2024",
+        "title": "全球地铁里程",
+        "body": "2024 年全球地铁里程约 2 万公里, 中国占 50%+, 上海/北京/广州地铁里程均超 500 公里, 是最大规模地铁网络."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·地铁",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9C%B0%E9%93%81",
+        "type": "百科"
+      },
+      {
+        "title": "国际地铁协会 (UITP)",
+        "url": "https://www.uitp.org/",
+        "type": "机构"
+      },
+      {
+        "title": "中国城市轨道交通协会",
+        "url": "https://www.camet.org.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "steamboat-vehicle",
+    "title": "蒸汽船",
+    "kind": "vehicle",
+    "subKind": "ship",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/steamboat-vehicle/steamboat-vehicle-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/steamboat-vehicle/steamboat-vehicle-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/steamboat-vehicle/steamboat-vehicle-full.webp",
+    "score": 7.5,
+    "tags": [
+      "载具",
+      "蒸汽船",
+      "航运",
+      "工业革命",
+      "轮船",
+      "富尔顿"
+    ],
+    "tagline": "瓦特蒸汽机推动的航运革命",
+    "subtitle": "交通工具 · 蒸汽船 · 百科占位",
+    "description": "蒸汽船 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1776",
+        "title": "富尔顿首航",
+        "body": "1776 年法国工程师茹卡永 (Jouffroy) 在里昂首试蒸汽船, 1783 年成功逆流而上 14 公里, 失败告终."
+      },
+      {
+        "year": "1807",
+        "title": "富尔顿北美号",
+        "body": "1807 年 8 月 17 日罗伯特·富尔顿的克莱蒙特号 (Clermont) 在纽约哈德逊河首航, 是商业蒸汽船的标志."
+      },
+      {
+        "year": "1819",
+        "title": "大西洋蒸汽船",
+        "body": "1819 年萨凡纳号 29 天横渡大西洋 (蒸汽辅助), 1838 年天狼星号首次完全以蒸汽动力横渡大西洋."
+      },
+      {
+        "year": "1845",
+        "title": "伊利运河客船",
+        "body": "1845 年伊利运河蒸汽船开通, 加快美国西部开发, 蒸汽船与铁路构成 19 世纪美国运输革命."
+      },
+      {
+        "year": "2024",
+        "title": "游轮与货运",
+        "body": "2024 年蒸汽船已被柴油轮与核动力取代, 蒸汽船作为旅游复原与博物馆项目保留, 如密西西比河 Delta Queen 号."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·蒸汽船",
+        "url": "https://zh.wikipedia.org/wiki/%E8%92%B8%E6%B1%BD%E8%88%B9",
+        "type": "百科"
+      },
+      {
+        "title": "美国海事历史博物馆",
+        "url": "https://www.marinersmuseum.org/",
+        "type": "博物馆"
+      },
+      {
+        "title": "海事历史学会",
+        "url": "https://www.navalorder.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "glider-vehicle",
+    "title": "滑翔机",
+    "kind": "vehicle",
+    "subKind": "aircraft",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/glider-vehicle/glider-vehicle-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/glider-vehicle/glider-vehicle-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/glider-vehicle/glider-vehicle-full.webp",
+    "score": 7.1,
+    "tags": [
+      "载具",
+      "滑翔机",
+      "无动力",
+      "航空",
+      "德国",
+      "二战"
+    ],
+    "tagline": "无动力滑翔与空气动力学的优雅飞行",
+    "subtitle": "交通工具 · 滑翔机 · 百科占位",
+    "description": "滑翔机 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1891",
+        "title": "李林塔尔首飞",
+        "body": "1891 年德国工程师奥托·李林塔尔制造滑翔机, 1896 年死于一次试飞事故, 是滑翔飞行先驱."
+      },
+      {
+        "year": "1902",
+        "title": "莱特兄弟滑翔机",
+        "body": "1900-1902 年莱特兄弟在美国北卡州进行 700+ 次滑翔试飞, 1903 年成功加装发动机实现动力飞行."
+      },
+      {
+        "year": "1920 年代",
+        "title": "德国滑翔运动",
+        "body": "1920 年德国《凡尔赛条约》禁止德国拥有动力飞机, 滑翔运动在德国与欧洲广泛发展, 培养大量飞行员."
+      },
+      {
+        "year": "1939",
+        "title": "Me 321 巨型滑翔机",
+        "body": "1939 年德国 Me 321 大型运输滑翔机, 1942 年起投入东线战场, 是战争史上最大量产滑翔机."
+      },
+      {
+        "year": "2024",
+        "title": "现代滑翔俱乐部",
+        "body": "2024 年全球滑翔机俱乐部约 800 家, 主要在德国、瑞士、法国与新西兰, 现代滑翔机可爬升 1 万米以上."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·滑翔机",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BB%91%E7%BF%94%E6%9C%BA",
+        "type": "百科"
+      },
+      {
+        "title": "德国 Otto Lilienthal 博物馆",
+        "url": "https://www.ottolilienthal.de/",
+        "type": "博物馆"
+      },
+      {
+        "title": "国际滑翔联盟 (IGC)",
+        "url": "https://www.fai.org/igc",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "akita-dog",
+    "title": "秋田犬",
+    "kind": "pet",
+    "subKind": "dog-breed",
+    "series": "pet-breed-guide",
+    "seriesNo": "017",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/akita-dog/akita-dog-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/akita-dog/akita-dog-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/pet/akita-dog/akita-dog-full.webp",
+    "score": 8.5,
+    "tags": [
+      "犬种",
+      "日本",
+      "秋田",
+      "大型犬",
+      "忠犬",
+      "六犬种"
+    ],
+    "tagline": "忠犬八公的日本国宝犬种",
+    "subtitle": "宠物 · 秋田犬 · 百科占位",
+    "description": "秋田犬 是 Atlas Kit 图鉴社「宠物」分类下的百科图鉴占位条目 (category identity: Breed-standard companion animal profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "17 世纪",
+        "title": "日本秋田起源",
+        "body": "日本秋田县 17 世纪开始培育秋田犬作为猎熊与斗犬, 大馆市是秋田犬的原产地与文化中心."
+      },
+      {
+        "year": "1927",
+        "title": "日本天然纪念物",
+        "body": "1927 年日本文部科学省将秋田犬指定为天然纪念物, 是日本六大本土犬种之一."
+      },
+      {
+        "year": "1931",
+        "title": "海伦凯勒与秋田",
+        "body": "1931 年美国作家海伦·凯勒访问日本, 获赠两只秋田犬带回美国, 引发西方秋田犬热潮."
+      },
+      {
+        "year": "1937",
+        "title": "忠犬八公",
+        "body": "1923 年东京大学上野英三郎教授去世后, 其秋田犬八公在涩谷站连续 9 年等候主人, 1934 年八公去世后涩谷车站立铜像纪念."
+      },
+      {
+        "year": "2024",
+        "title": "全球流行",
+        "body": "2024 年秋田犬仍是 AKC 排名第 80 位的美国流行犬种, 普京 2012 年获赠秋田梦为日本赠送的国家礼物."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·秋田犬",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%94%B0%E7%8A%AC",
+        "type": "百科"
+      },
+      {
+        "title": "AKC 官网·秋田犬",
+        "url": "https://www.akc.org/dog-breeds/akita/",
+        "type": "机构"
+      },
+      {
+        "title": "日本秋田犬保存会",
+        "url": "https://www.akitainu-hozenkai.com/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "eiffel-tower-arch",
+    "title": "埃菲尔铁塔",
+    "kind": "architecture",
+    "subKind": "modern",
+    "series": "city-encyclopedia",
+    "seriesNo": "010",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel-tower-arch/eiffel-tower-arch-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel-tower-arch/eiffel-tower-arch-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/architecture/eiffel-tower-arch/eiffel-tower-arch-full.webp",
+    "score": 9,
+    "tags": [
+      "建筑",
+      "现代",
+      "法国",
+      "巴黎",
+      "埃菲尔",
+      "铁塔"
+    ],
+    "tagline": "1889 世博会的钢铁纪念碑",
+    "subtitle": "建筑 · 埃菲尔铁塔 · 百科占位",
+    "description": "埃菲尔铁塔 是 Atlas Kit 图鉴社「建筑」分类下的百科图鉴占位条目 (category identity: Architectural history and design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1887",
+        "title": "1889 世博会设计",
+        "body": "1887 年古斯塔夫·埃菲尔设计 300 米高铁塔, 庆祝 1889 年法国大革命 100 周年与巴黎世博会."
+      },
+      {
+        "year": "1889",
+        "title": "建成开放",
+        "body": "1889 年 3 月 31 日埃菲尔铁塔建成, 当时是世界最高建筑 (324 米), 1989 年 300 米 + 顶部天线 324 米."
+      },
+      {
+        "year": "1909",
+        "title": "原计划拆除",
+        "body": "1909 年铁塔 20 年租约到期, 巴黎市政府原计划拆除, 后因无线电通讯天线需求保留, 挽救铁塔命运."
+      },
+      {
+        "year": "1957",
+        "title": "电视塔时代",
+        "body": "1957 年铁塔顶部安装电视天线, 1985 年法国电视台 (TF1) 在塔上设置数字广播站."
+      },
+      {
+        "year": "2024",
+        "title": "全球地标",
+        "body": "2024 年埃菲尔铁塔每年接待约 700 万游客, 是全球参观人数最多付费古迹, 1889-2024 累计接待 3 亿 5 千万人."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·埃菲尔铁塔",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9F%83%E8%8F%B2%E5%B0%94%E9%93%81%E5%A1%94",
+        "type": "百科"
+      },
+      {
+        "title": "SETE 埃菲尔铁塔运营公司",
+        "url": "https://www.toureiffel.paris/en",
+        "type": "官方"
+      },
+      {
+        "title": "法国文化部",
+        "url": "https://www.culture.gouv.fr/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "polar-aurora",
+    "title": "极光",
+    "kind": "phenomenon",
+    "subKind": "astronomical",
+    "series": "atlas-miscellany",
+    "seriesNo": "041",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/polar-aurora/polar-aurora-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/polar-aurora/polar-aurora-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/phenomenon/polar-aurora/polar-aurora-full.webp",
+    "score": 8.7,
+    "tags": [
+      "自然现象",
+      "天文",
+      "极地",
+      "太阳风",
+      "磁层",
+      "极光"
+    ],
+    "tagline": "太阳风点燃的两极天空之舞",
+    "subtitle": "自然现象 · 极光 · 百科占位",
+    "description": "极光 是 Atlas Kit 图鉴社「自然现象」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1619",
+        "title": "伽利略命名",
+        "body": "1619 年伽利略以罗马曙光女神 Aurora 命名北极光 (Aurora Borealis), 是天文与神话结合的科学命名典范."
+      },
+      {
+        "year": "1860",
+        "title": "太阳风理论",
+        "body": "1860 年挪威科学家伯克利 (Anders Angstrom) 验证极光与地球磁层关系, 20 世纪太阳风理论完成解释."
+      },
+      {
+        "year": "1900 年代",
+        "title": "极地探险",
+        "body": "挪威探险家阿蒙森 1920 年代在极地探险中记录极光, 推动极地旅游与极光摄影文化."
+      },
+      {
+        "year": "1981",
+        "title": "太阳风数据",
+        "body": "1981 年 NASA Dynamics Explorer 卫星观测极光形成机制, 证实太阳风带电粒子沿磁力线进入两极大气层."
+      },
+      {
+        "year": "2024",
+        "title": "极光旅游产业",
+        "body": "2024 年极光旅游产值约 30 亿美元, 冰岛、挪威、加拿大、阿拉斯加是最热门目的, 中国漠河与北欧同步观测热度上升."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·极光",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%81%E5%85%89",
+        "type": "百科"
+      },
+      {
+        "title": "NASA 太阳风任务",
+        "url": "https://science.nasa.gov/heliophysics/",
+        "type": "官方"
+      },
+      {
+        "title": "NOAA 空间天气预报",
+        "url": "https://www.swpc.noaa.gov/",
+        "type": "官方"
       }
     ]
   }

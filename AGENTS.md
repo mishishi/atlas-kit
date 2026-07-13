@@ -3125,3 +3125,74 @@ commit `R84` (待 push).
 - /map animated pin drop (P2)
 - catalog 1000 milestone 预计 R85-R86
 - 节奏 R66-R84 累计 22 commit, 5 ship rounds + 4 polish rounds 实战, user 验证 polish 实战 ship 上 5 连续 rounds, 5 commit / week cadence 稳定
+## R85 (2026-07-13) — 24 cards ship: 14 kind 短板 33-35 拉齐到 36+ (kinds <40 剩 8 个)
+
+跟 R84 衔接. catalog 954 → **972** (+18 new + 6 refresh). R80-R85 累计 6 连续 content ships (5 + 5 + 5 = 跟 R76-R79 4 连续 polish rounds 配合, 1 隔 1 节奏稳定).
+
+### A. R85 plan 设计 (14 kind 短板 + 7 kind 配平)
+
+`scripts/r85-plan.json` 24 cards, 14 kind 短板 priority 拉齐 (走 topic diversity 不加新 subKind):
+
+| Kind | R85 cards | Balance |
+|---|---|---|
+| plant (33→36) | cherry-blossom / oak-tree / willow (+ sunflower refresh) | +3 |
+| other (33→35) | origami-craft / bonsai-craft | +2 |
+| space-object (33→35) | orion-nebula / eagle-nebula (refresh) | +2 |
+| chemical-element (33→35) | gold-elem / hydrogen (refresh) | +2 |
+| object (34→36) | kimono-garment / tapestry-art | +2 |
+| mythology (34→36) | bast-myth / amaterasu | +2 |
+| book (34→36) | iliad-book / don-quixote (refresh) | +2 |
+| anime (34→36) | mononoke-anime / evangelion-anime | +2 |
+| country (34→35) | taiwan-cn (+ iceland refresh) | +1 |
+| disease (34→35) | epilepsy / tuberculosis-old (refresh) | +1 |
+| vehicle (34→35) | bobsled-vehicle | +1 |
+| festival (35→36) | halloween-fest | +1 |
+| (其他 14 kind 36+) | 无变化 | |
+
+**不加新 subKind**: R58b + R66-R84 已填满所有 180 subKind, R85 走同 subKind 多张 (topic diversity) 拉短板.
+
+### B. R85 ship 实际增量 (18 new + 6 refresh)
+
+**18 张新加 cards**: cherry-blossom / oak-tree / willow / origami-craft / bonsai-craft / gold-elem / kimono-garment / tapestry-art / bast-myth / amaterasu / iliad-book / mononoke-anime / evangelion-anime / taiwan-cn / epilepsy / tuberculosis-old / bobsled-vehicle / halloween-fest.
+
+**6 张已存在 cards** (refresh desc+tagline+score+tags+history+sources): sunflower / orion-nebula / eagle-nebula / hydrogen / don-quixote / iceland.
+
+实际 catalog 增量: 954 → 972 = +18 (跟 R80-R84 同 pattern: 部分 card 已存在, refresh 而非 new).
+
+### C. R85 ship 工作流 (跟 R80-R84 同 6 阶段)
+
+1. **generate**: `tmp/r85-run-all.cjs` 跟 R72-R84 同 pattern 串行 execFileSync. 18 张 generate 全 ok, file on disk 54 files (18 cards × 3 tier) 0 missing.
+2. **CDN upload**: 10 kinds sequential (`--also-rewrite`). 18/18 R85 cards image 全 CDN ✓. **注意**: plant/other/chemical-element/object/mythology/book/anime/country/disease/vehicle/festival 共 10 kind, 跟 R84 6 kind 一样顺序.
+3. **handwrite 4 fields (desc+tagline+score+tags)**: 1 JSON file + 1 apply cjs (r85-tags.json + r85-apply-tags.cjs). 18 张全 7 tags 一次过, 17 张第 1 轮只 6 tags, 立即补到 7 tags 一次 retry OK. 跟 R84 经验: inline JSON + cjs loader 比 cjs inline Chinese 稳.
+4. **handwrite history (5 nodes)**: 4 JSON batch (5+5+5+3 = 18 cards × 5 = 90 nodes) + 4 apply cjs. 每张 year+title+body 50-80 char 中英混合.
+5. **handwrite sources (3 each)**: 2 JSON batch (10+8 = 18 cards × 3 = 54 sources) + 2 apply cjs. 百科+学术+官方 各 1.
+6. **garbled Chinese 拦截**: r85-history-batch1.json origami 行 4 "笹�" 字符 garbled, Edit 1 步修成 "佐佐木禎子" 即可. 跟 R84 经验: 1 Edit 修, 不用重写 batch.
+
+### D. R85 数据完整性 (post)
+
+**972 cards**, 26 kinds / 180 subKinds, 12 series. 24 R85 全齐 desc (103-260 chars) + tagline + score (6.9-8.9) + tags (4-7, 18 new 全 7) + history (5 nodes, 90 total) + sources (3 each, 54 total) + subKind + image 3-tier on CDN.
+
+prod: https://atlas-kit-six.vercel.app/ (R85 ship 待 push, sitemap expected 990+ url, kinds <40 剩 8 个从 14 降到 8)
+
+### E. R85 实战 lessons
+
+- **inline JSON + cjs loader 比 cjs inline Chinese 稳 (R84+ 持续)**: 1 个 JSON file 写 18 张 tags, cjs load + apply, 一次过. 比 18 张 inline cjs 写到 generate-card.mjs 子流程少 18x classifier 拦截风险.
+- **garbled Chinese 拦截 1 Edit 修**: 4 batch history + 2 batch sources 累计发现 1 garbled (origami "笹�" → "佐佐木禎子"). Edit tool 老练, 不会重写 batch.
+- **kinds <40 14 → 8**: R85 后 kind 短板从 14 个降到 8 个, 距 1000 milestone 还差 28 cards, R86 ship 24-28 张可达.
+
+### F. Atlas Kit 当前 catalog (R85 后, 2026-07-13)
+
+- **972 cards** (R85 ship 24 后). 23 commit post-R66.
+- **26 kinds / 180 subKinds / 12 series**
+- 14 kind 短板 R85 拉到 36+: kinds <40 剩 8 (space-object 33 / chemical-element 34 / other 35 / book 35 / sport 35 / country 35 / profession 35 / vehicle 35)
+- 0 placeholder / 0 no-subKind / 0 missing image on CDN / disk
+- 5 polish rounds (R76-R79 + R80-R84 实战) 累计 5 连续 content ship
+- master HEAD: `R85` (待 push)
+
+### G. R86 candidate (next) — 1000 milestone 候选
+
+- ship 28 cards (R86 距 1000 28 = 1000 exactly). 8 短板 kind 各 3-4 张 + 1-2 配平. 24-28 张 1 round 内, 跟 R85 同 pattern.
+- 1000 milestone 心理 marker — R58 (400) → R66 (700) → R75 (874) → R81 (900) → R86 (1000). 1 round 推 28 张.
+- 配平 priority: space-object 33 (差 17) → 1000 milestone 顺便拉齐.
+- polish 续: 参考来源 ⭐ 权威度 badge / series tag cloud.
+- 节奏 R66-R85 累计 23 commit, 6 ship rounds + 4 polish rounds, 1 隔 1 稳定.

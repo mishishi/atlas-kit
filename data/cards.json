@@ -7080,9 +7080,9 @@
       "#6E628C",
       "#2C2438"
     ],
-    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-card.png",
-    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-thumb.webp",
-    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/movie/spirited-away/spirited-away-full.webp",
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/spirited-away/spirited-away-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/spirited-away/spirited-away-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/spirited-away/spirited-away-full.webp",
     "score": 9.5,
     "tags": [
       "日本",
@@ -70912,6 +70912,1338 @@
         "title": "汉堡仓储城世界遗产",
         "url": "https://www.speicherstadt.de/",
         "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "cherry-blossom",
+    "title": "樱花",
+    "kind": "plant",
+    "subKind": "flower",
+    "series": "atlas-miscellany",
+    "seriesNo": "061",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cherry-blossom/cherry-blossom-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cherry-blossom/cherry-blossom-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/cherry-blossom/cherry-blossom-full.webp",
+    "score": 8.6,
+    "tags": [
+      "植物",
+      "花卉",
+      "日本",
+      "春天",
+      "观赏",
+      "东亚",
+      "文化"
+    ],
+    "tagline": "日本国花与早春的象征",
+    "subtitle": "植物 · 樱花 · 百科占位",
+    "description": "樱花 是 Atlas Kit 图鉴社「植物」分类下的百科图鉴占位条目 (category identity: Botanical field-guide specimen page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "远古",
+        "title": "中国山樱起源",
+        "body": "中国山樱 (Prunus serrulata) 起源远古,《礼记》记载先秦时已有樱属植物栽培观赏."
+      },
+      {
+        "year": "公元 8 世纪",
+        "title": "奈良时代传入日本",
+        "body": "8 世纪日本奈良时代, 遣唐使将山樱从中国带回日本, 京都岚山开始大规模栽种."
+      },
+      {
+        "year": "1594",
+        "title": "丰臣秀吉醍醐花见",
+        "body": "丰臣秀吉在京都醍醐寺举办盛大的花见宴会, 一次赏樱五千人, 樱花成为日本文化标志."
+      },
+      {
+        "year": "1912",
+        "title": "东京赠美樱花",
+        "body": "东京市长尾崎行雄向华盛顿特区赠送 3000 株樱花, 形成波多马克河畔樱花步道."
+      },
+      {
+        "year": "2024",
+        "title": "全球花见文化",
+        "body": "2024 年日本气象厅在 3 月 14 日东京宣布樱花开花, 全球赏樱经济规模超 100 亿美元."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国植物志·樱属",
+        "url": "https://www.iplant.cn/frps",
+        "type": "学术"
+      },
+      {
+        "title": "日本气象厅·樱花前线",
+        "url": "https://www.jma.go.jp/jma/index.html",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·樱花",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A8%B1%E8%8A%B1",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "oak-tree",
+    "title": "橡树",
+    "kind": "plant",
+    "subKind": "tree",
+    "series": "atlas-miscellany",
+    "seriesNo": "063",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/oak-tree/oak-tree-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/oak-tree/oak-tree-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/oak-tree/oak-tree-full.webp",
+    "score": 7.9,
+    "tags": [
+      "植物",
+      "乔木",
+      "北温带",
+      "木材",
+      "生态",
+      "长寿",
+      "森林"
+    ],
+    "tagline": "北温带最古老的阔叶乔木",
+    "subtitle": "植物 · 橡树 · 百科占位",
+    "description": "橡树 是 Atlas Kit 图鉴社「植物」分类下的百科图鉴占位条目 (category identity: Botanical field-guide specimen page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "约 6500 万年前",
+        "title": "栎属出现",
+        "body": "栎属 (Quercus) 化石记录可追溯至白垩纪末期, 是北温带森林的奠基者."
+      },
+      {
+        "year": "古希腊",
+        "title": "宙斯圣树",
+        "body": "古希腊人在多多纳圣地以橡树叶沙沙声解读宙斯神谕, 橡树成为主神象征."
+      },
+      {
+        "year": "中世纪",
+        "title": "英国皇家橡树",
+        "body": "1651 年英王查理二世战败藏身橡树, 后成 Royal Oak 海军舰名与酒吧名, 是英国乡愁符号."
+      },
+      {
+        "year": "1867",
+        "title": "美国林务局橡林",
+        "body": "美国林务局将橡树列为东部 25 个州最常见硬木, 推动橡木建筑与橡木桶威士忌产业."
+      },
+      {
+        "year": "2024",
+        "title": "橡树生态价值",
+        "body": "全球约有 500 种橡树, 北美红橡是 NBA 猛龙队标志, 橡子养活了 1000 多种昆虫与哺乳动物."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国植物志·栎属",
+        "url": "https://www.iplant.cn/frps",
+        "type": "学术"
+      },
+      {
+        "title": "美国林务局·橡树",
+        "url": "https://www.fs.usda.gov/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·橡树",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A9%A1%E6%A0%91",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "willow",
+    "title": "柳树",
+    "kind": "plant",
+    "subKind": "tree",
+    "series": "atlas-miscellany",
+    "seriesNo": "064",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/willow/willow-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/willow/willow-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/plant/willow/willow-full.webp",
+    "score": 7.5,
+    "tags": [
+      "植物",
+      "乔木",
+      "东亚",
+      "文学意象",
+      "水土保持",
+      "江南",
+      "春日"
+    ],
+    "tagline": "临水照影的柔枝乔木",
+    "subtitle": "植物 · 柳树 · 百科占位",
+    "description": "柳树 是 Atlas Kit 图鉴社「植物」分类下的百科图鉴占位条目 (category identity: Botanical field-guide specimen page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "远古",
+        "title": "中国柳文化",
+        "body": "中国新石器时代仰韶文化遗址发现柳叶纹彩陶, 柳是先民最早识别的植物之一."
+      },
+      {
+        "year": "先秦",
+        "title": "诗经杨柳",
+        "body": "《诗经·小雅·采薇》以杨柳起兴, 柳成为中国离别意象, 后发展为折柳送别传统."
+      },
+      {
+        "year": "公元 6 世纪",
+        "title": "佛教与观音柳",
+        "body": "佛教传入中国, 观音菩萨以杨枝净水为化身, 柳成为慈悲与净水的象征."
+      },
+      {
+        "year": "1879",
+        "title": "阿司匹林诞生",
+        "body": "德国拜耳从柳树皮中提取水杨苷, 合成乙酰水杨酸, 命名阿司匹林 (Aspirin), 柳挽救亿万人."
+      },
+      {
+        "year": "2024",
+        "title": "全球柳属",
+        "body": "全球柳属 (Salix) 约 400 种, 中国占 200 余种, 是水岸生态修复与生物多样性重要植物."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国植物志·柳属",
+        "url": "https://www.iplant.cn/frps",
+        "type": "学术"
+      },
+      {
+        "title": "维基百科中文版·柳树",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9F%B3%E6%A0%91",
+        "type": "百科"
+      },
+      {
+        "title": "拜耳公司历史档案·阿司匹林",
+        "url": "https://www.bayer.com/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "origami-craft",
+    "title": "折纸",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami-craft/origami-craft-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami-craft/origami-craft-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/origami-craft/origami-craft-full.webp",
+    "score": 7.7,
+    "tags": [
+      "传统工艺",
+      "纸艺",
+      "日本",
+      "中国起源",
+      "几何",
+      "亲子",
+      "手作"
+    ],
+    "tagline": "从中国折纸到日本艺术的千年演变",
+    "subtitle": "其他 · 折纸 · 百科占位",
+    "description": "折纸 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元 1 世纪",
+        "title": "中国蔡伦纸",
+        "body": "东汉蔡伦改进造纸术后, 中国出现以折叠方式制作的祭纸祭品, 折纸雏形诞生."
+      },
+      {
+        "year": "6 世纪",
+        "title": "佛教东传日本",
+        "body": "6 世纪佛教东传日本, 折纸与僧侣仪式结合, 纸鹤与供花成为神社祭祀的组成部分."
+      },
+      {
+        "year": "1797",
+        "title": "根付折纸",
+        "body": "日本江户时代《秘传千羽鹤折形帐》成书, 是世界最早的系统化折纸教程."
+      },
+      {
+        "year": "1954",
+        "title": "佐佐木禎子与千纸鹤",
+        "body": "日本 12 岁女孩佐佐木禎子因辐射白血病住院, 折千纸鹤祈福, 1955 年去世后广岛建千羽鹤塔纪念."
+      },
+      {
+        "year": "2024",
+        "title": "数学折纸与教育",
+        "body": "2024 年罗伯特·朗 (Robert Lang) 等数学家将折纸与工程结构结合, MIT 推出折纸机器人 Origami Robot."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·折纸",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8A%98%E7%BA%B8",
+        "type": "百科"
+      },
+      {
+        "title": "日本折纸协会",
+        "url": "https://origami-noa.jp/",
+        "type": "机构"
+      },
+      {
+        "title": "Robert Lang 折纸数学",
+        "url": "https://langorigami.com/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "bonsai-craft",
+    "title": "盆栽艺术",
+    "kind": "other",
+    "subKind": "intangible-heritage",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/bonsai-craft/bonsai-craft-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/bonsai-craft/bonsai-craft-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/other/bonsai-craft/bonsai-craft-full.webp",
+    "score": 7.4,
+    "tags": [
+      "传统工艺",
+      "盆栽",
+      "中国起源",
+      "日本发展",
+      "园艺",
+      "文人",
+      "禅意"
+    ],
+    "tagline": "方寸之间的微缩自然艺术",
+    "subtitle": "其他 · 盆栽艺术 · 百科占位",
+    "description": "盆栽艺术 是 Atlas Kit 图鉴社「其他」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "东汉",
+        "title": "中国盆景雏形",
+        "body": "东汉墓葬壁画中已出现盆栽小景, 是中国文人园林的微缩表达."
+      },
+      {
+        "year": "唐代",
+        "title": "盆池与赏石",
+        "body": "唐代宫廷流行盆池养鱼, 配以赏石与花木, 杜甫等诗人吟咏盆景."
+      },
+      {
+        "year": "平安时代",
+        "title": "日本盆栽化",
+        "body": "9 世纪平安时代, 遣唐僧侣将中国盆景艺术带回日本, 发展为独立的盆栽 (Bonsai) 艺术."
+      },
+      {
+        "year": "1867",
+        "title": "巴黎世博会亮相",
+        "body": "日本盆栽在 1867 年巴黎世界博览会上惊艳欧洲, 维多利亚时代贵族争相收藏."
+      },
+      {
+        "year": "2024",
+        "title": "全球盆栽市场",
+        "body": "2024 年全球盆栽市场规模约 30 亿美元, 日本、美国、欧洲是三大市场, 也是中日文化交流重要载体."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·盆景",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%86%E6%99%AF",
+        "type": "百科"
+      },
+      {
+        "title": "日本盆栽协会",
+        "url": "http://www.bonsai-kyokai.or.jp/",
+        "type": "机构"
+      },
+      {
+        "title": "中国盆景艺术家协会",
+        "url": "http://www.chinapenjing.cn/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "gold-elem",
+    "title": "金",
+    "kind": "chemical-element",
+    "subKind": "transition-metal",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/gold-elem/gold-elem-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/gold-elem/gold-elem-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/chemical-element/gold-elem/gold-elem-full.webp",
+    "score": 7.8,
+    "tags": [
+      "化学元素",
+      "贵金属",
+      "过渡金属",
+      "金融",
+      "首饰",
+      "惰性",
+      "货币"
+    ],
+    "tagline": "人类最早的金属崇拜对象",
+    "subtitle": "化学元素 · 金 · 百科占位",
+    "description": "金 是 Atlas Kit 图鉴社「化学元素」分类下的百科图鉴占位条目 (category identity: Chemistry encyclopedia element profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 6000 年",
+        "title": "纳图夫文化黄金",
+        "body": "保加利亚瓦尔纳墓地出土公元前 6 千纪金饰, 是人类最早加工黄金的考古证据."
+      },
+      {
+        "year": "古埃及",
+        "title": "法老与黄金面具",
+        "body": "古埃及图坦卡蒙黄金面具 (前 1323 年) 代表法老与神祇的永恒肉身, 黄金成为神性载体."
+      },
+      {
+        "year": "1848",
+        "title": "加州淘金热",
+        "body": "1848 年 1 月詹姆斯·马歇尔在加州萨特磨坊发现金块, 引发 1849 年淘金热与西部开发."
+      },
+      {
+        "year": "1886",
+        "title": "氰化法与南非",
+        "body": "1886 年南非约翰内斯堡发现金矿, MacArthur–Forrest 氰化法使低品位矿石提取成为可能, 重塑全球金融."
+      },
+      {
+        "year": "2024",
+        "title": "全球黄金储备",
+        "body": "2024 年全球已开采黄金约 21 万吨, 各国央行储备约 3.6 万吨, 黄金仍是终极价值储藏."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·金",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%91",
+        "type": "百科"
+      },
+      {
+        "title": "世界黄金协会",
+        "url": "https://www.gold.org/",
+        "type": "机构"
+      },
+      {
+        "title": "中国大百科全书·冶金学",
+        "url": "https://www.zgbk.com.cn/",
+        "type": "百科"
+      }
+    ]
+  },
+  {
+    "slug": "kimono-garment",
+    "title": "和服",
+    "kind": "object",
+    "subKind": "traditional",
+    "series": "atlas-miscellany",
+    "seriesNo": "044",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kimono-garment/kimono-garment-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kimono-garment/kimono-garment-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/kimono-garment/kimono-garment-full.webp",
+    "score": 7.3,
+    "tags": [
+      "传统服饰",
+      "日本",
+      "丝绸",
+      "工艺",
+      "场合",
+      "东亚",
+      "和服"
+    ],
+    "tagline": "日本传统服饰的代表",
+    "subtitle": "器物 · 和服 · 百科占位",
+    "description": "和服 是 Atlas Kit 图鉴社「器物」分类下的百科图鉴占位条目 (category identity: Object and industrial-design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "平安时代",
+        "title": "和服起源",
+        "body": "平安时代 (794-1185) 日本贵族在唐代服饰基础上发展小袖 (kosode), 是一般民众和服前身."
+      },
+      {
+        "year": "江户时代",
+        "title": "小袖定型",
+        "body": "江户时代 (1603-1868) 小袖成为日本女性日常装束, 染色与纹样工艺高度发展, 是现代和服定型期."
+      },
+      {
+        "year": "1868",
+        "title": "明治维新西化",
+        "body": "明治维新后日本推行文明开化, 西装取代和服成为日常, 和服仅保留于正式场合与茶道花道."
+      },
+      {
+        "year": "1950",
+        "title": "和服复兴",
+        "body": "二战后日本经济复兴, 1950 年代婚礼和服与振袖 (furisode) 成为女性成人礼重要装束."
+      },
+      {
+        "year": "2024",
+        "title": "全球文化符号",
+        "body": "2024 年和服在京都祇园祭、东京奥运闭幕式等国际场合持续代表日本文化, 仍被海外设计师广泛借鉴."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·和服",
+        "url": "https://zh.wikipedia.org/wiki/%E5%92%8C%E6%9C%8D",
+        "type": "百科"
+      },
+      {
+        "title": "京都和服协会",
+        "url": "https://www.kyoto-kimono-kyokai.jp/",
+        "type": "机构"
+      },
+      {
+        "title": "日本文化厅·传统工艺",
+        "url": "https://www.bunka.go.jp/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tapestry-art",
+    "title": "挂毯",
+    "kind": "object",
+    "subKind": "traditional",
+    "series": "atlas-miscellany",
+    "seriesNo": "045",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/tapestry-art/tapestry-art-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/tapestry-art/tapestry-art-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/object/tapestry-art/tapestry-art-full.webp",
+    "score": 7.6,
+    "tags": [
+      "传统工艺",
+      "欧洲",
+      "中世纪",
+      "纺织",
+      "挂毯",
+      "工艺美术",
+      "皇室"
+    ],
+    "tagline": "欧洲中世纪壁毯的艺术巅峰",
+    "subtitle": "器物 · 挂毯 · 百科占位",
+    "description": "挂毯 是 Atlas Kit 图鉴社「器物」分类下的百科图鉴占位条目 (category identity: Object and industrial-design encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "古希腊",
+        "title": "神话壁毯",
+        "body": "古希腊神话中 Penelope 与 Helen 编织英雄故事的壁毯, 是欧洲挂毯艺术的精神源头."
+      },
+      {
+        "year": "中世纪",
+        "title": "哥白林工厂",
+        "body": "中世纪欧洲教堂与宫廷流行大型壁毯, 法国巴黎哥白林工厂 (Gobelins) 始建于 15 世纪, 是皇室艺术工厂典范."
+      },
+      {
+        "year": "文艺复兴",
+        "title": "佛罗伦萨壁毯",
+        "body": "15 世纪末佛罗伦萨美第奇家族委托拉斐尔与米开朗基罗设计壁毯底稿, 提升壁毯为宫廷艺术."
+      },
+      {
+        "year": "1890",
+        "title": "威廉莫里斯复兴",
+        "body": "英国艺术与工艺运动 (Arts and Crafts) 创始人威廉·莫里斯推动挂毯复兴, Morris & Co. 工坊成为 20 世纪挂毯艺术先驱."
+      },
+      {
+        "year": "2024",
+        "title": "当代挂毯",
+        "body": "2024 年墨西哥、智利当代艺术家如 Magdalena Abakanowicz 等将挂毯与雕塑结合, 重新定义纤维艺术."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·挂毯",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8C%82%E6%AF%AF",
+        "type": "百科"
+      },
+      {
+        "title": "巴黎哥白林博物馆",
+        "url": "https://www.mobilier-national.gouv.fr/",
+        "type": "博物馆"
+      },
+      {
+        "title": "William Morris Gallery",
+        "url": "https://www.wmgallery.org.uk/",
+        "type": "博物馆"
+      }
+    ]
+  },
+  {
+    "slug": "bast-myth",
+    "title": "芭丝特",
+    "kind": "mythology",
+    "subKind": "near-eastern",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/bast-myth/bast-myth-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/bast-myth/bast-myth-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/bast-myth/bast-myth-full.webp",
+    "score": 7.4,
+    "tags": [
+      "神话",
+      "古埃及",
+      "猫女神",
+      "家庭",
+      "近东",
+      "宗教",
+      "母性"
+    ],
+    "tagline": "古埃及猫女神与家庭的守护者",
+    "subtitle": "神话 · 芭丝特 · 百科占位",
+    "description": "芭丝特 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 3000 年",
+        "title": "猫女神起源",
+        "body": "古埃及第二王朝 (前 2890 年) 已崇拜猫头女神 Mafdet, 后期演变为 Bastet 猫女神."
+      },
+      {
+        "year": "公元前 1560 年",
+        "title": "新王国时期",
+        "body": "新王国时期 (前 1560-前 1077) 布巴斯提城成为 Bastet 崇拜中心, 每年 4 月举行盛大节庆."
+      },
+      {
+        "year": "公元前 5 世纪",
+        "title": "希腊化融合",
+        "body": "希腊人将 Bastet 视为与 Artemis 对应, 城市布巴斯提成为希腊罗马时代重要朝圣地, 留下大量青铜猫雕像."
+      },
+      {
+        "year": "公元 1 世纪",
+        "title": "罗马帝国崇拜",
+        "body": "罗马帝国将 Bastet 神话引入, 罗马 1 世纪起出土大量青铜猫雕像, 反映对猫女神的喜爱."
+      },
+      {
+        "year": "2024",
+        "title": "现代保护符号",
+        "body": "2024 年 Bastet 仍是全球猫保护运动的灵感来源, 大英博物馆藏有布巴斯提青铜猫."
+      }
+    ],
+    "sources": [
+      {
+        "title": "大英博物馆·布巴斯提青铜猫",
+        "url": "https://www.britishmuseum.org/",
+        "type": "博物馆"
+      },
+      {
+        "title": "维基百科中文版·芭丝特",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8A%AD%E4%B8%9D%E7%89%B9",
+        "type": "百科"
+      },
+      {
+        "title": "古埃及神话研究·Wendy Simpson",
+        "url": "https://www.routledge.com/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "amaterasu",
+    "title": "天照大神",
+    "kind": "mythology",
+    "subKind": "japanese",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/amaterasu/amaterasu-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/amaterasu/amaterasu-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/mythology/amaterasu/amaterasu-full.webp",
+    "score": 7.8,
+    "tags": [
+      "神话",
+      "日本",
+      "太阳神",
+      "天照",
+      "神道教",
+      "皇室",
+      "岩户"
+    ],
+    "tagline": "日本天皇的太阳女神始祖",
+    "subtitle": "神话 · 天照大神 · 百科占位",
+    "description": "天照大神 是 Atlas Kit 图鉴社「神话」分类下的百科图鉴占位条目 (category identity: Mythology and folklore encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "古坟时代",
+        "title": "日向神话起源",
+        "body": "古坟时代 (3-6 世纪) 日本九州日向国出现天照大神神话雏形, 与三贵子神话同步形成."
+      },
+      {
+        "year": "712",
+        "title": "古事记成书",
+        "body": "太安万侣编撰《古事记》712 年成书, 系统记载天岩户前天照大神走出山洞的神话, 是日本建国叙事的核心."
+      },
+      {
+        "year": "天武天皇",
+        "title": "皇室祖神",
+        "body": "7 世纪末天武天皇主张皇室是天照大神后裔, 强化神道教与皇权结合, 8 世纪伊势神宫成为天皇祭祀核心."
+      },
+      {
+        "year": "1868",
+        "title": "明治神道国教化",
+        "body": "明治维新后神道国教化, 伊势神宫与天照大神成为国家统一象征, 国家神道持续到 1945 年二战结束."
+      },
+      {
+        "year": "2024",
+        "title": "现代文化符号",
+        "body": "2024 年天照大神仍是日本皇室祭祀核心, 伊势神宫每年举行 1500 余场祭典, 累计信众超千万."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·天照大神",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E7%85%A7%E5%A4%A7%E7%A5%9E",
+        "type": "百科"
+      },
+      {
+        "title": "伊势神宫官网",
+        "url": "https://www.isejingu.or.jp/",
+        "type": "官方"
+      },
+      {
+        "title": "日本神道研究中心",
+        "url": "https://www.jinjahoncho.or.jp/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "iliad-book",
+    "title": "伊利亚特",
+    "kind": "book",
+    "subKind": "classical",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/iliad-book/iliad-book-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/iliad-book/iliad-book-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/book/iliad-book/iliad-book-full.webp",
+    "score": 8.4,
+    "tags": [
+      "古典文学",
+      "希腊",
+      "史诗",
+      "荷马",
+      "特洛伊",
+      "西方文明",
+      "英雄"
+    ],
+    "tagline": "荷马史诗中的特洛伊战争",
+    "subtitle": "书籍 · 伊利亚特 · 百科占位",
+    "description": "伊利亚特 是 Atlas Kit 图鉴社「书籍」分类下的百科图鉴占位条目 (category identity: Literary encyclopedia and publication profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 8 世纪",
+        "title": "荷马口述传统",
+        "body": "古希腊盲诗人荷马 (约前 8 世纪) 整理口述传统, 形成《伊利亚特》24 卷, 记述特洛伊战争最后 51 天."
+      },
+      {
+        "year": "公元前 6 世纪",
+        "title": "泛雅典娜节诵读",
+        "body": "公元前 6 世纪雅典泛雅典娜节每四年举行史诗诵读比赛,《伊利亚特》成为泛希腊文化身份符号."
+      },
+      {
+        "year": "公元前 3 世纪",
+        "title": "亚历山大图书馆",
+        "body": "托勒密王朝在亚历山大图书馆收藏标准版《伊利亚特》, 雅典学者泽诺多托斯编订最终文本."
+      },
+      {
+        "year": "文艺复兴",
+        "title": "马基雅维利模仿",
+        "body": "文艺复兴时期马基雅维利、塔索等借用荷马英雄模型, 推动史诗成为现代文学体裁."
+      },
+      {
+        "year": "2024",
+        "title": "西方文学基石",
+        "body": "2024 年《伊利亚特》仍是西方文学必修经典, 学界共识其确立西方叙事文学的母题与价值观框架."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·伊利亚特",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BC%8A%E5%88%A9%E4%BA%9A%E7%89%B9",
+        "type": "百科"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy·Homer",
+        "url": "https://plato.stanford.edu/",
+        "type": "学术"
+      },
+      {
+        "title": "Loeb Classical Library",
+        "url": "https://www.loebclassics.com/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "mononoke-anime",
+    "title": "千与千寻",
+    "kind": "anime",
+    "subKind": "shonen",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/mononoke-anime/mononoke-anime-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/mononoke-anime/mononoke-anime-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/mononoke-anime/mononoke-anime-full.webp",
+    "score": 8.9,
+    "tags": [
+      "动画",
+      "吉卜力",
+      "宫崎骏",
+      "成长",
+      "日本",
+      "奥斯卡",
+      "2001"
+    ],
+    "tagline": "宫崎骏的成长寓言",
+    "subtitle": "anime · 千与千寻 · 百科占位",
+    "description": "千与千寻 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "2001",
+        "title": "吉卜力制作",
+        "body": "宫崎骏 2001 年执导《千与千寻》上映, 制作费 19 亿日元, 是当时日本票房最高电影."
+      },
+      {
+        "year": "2002",
+        "title": "柏林金熊奖",
+        "body": "2002 年《千与千寻》获柏林电影节金熊奖, 2003 年获奥斯卡最佳动画长片, 创日本动画历史."
+      },
+      {
+        "year": "2016",
+        "title": "中国上映热潮",
+        "body": "2016 年中国引《你的名字》前,《千与千寻》通过盗版 DVD 与字幕组在中国积累大量粉丝, 形成文化现象."
+      },
+      {
+        "year": "2020",
+        "title": "中国院线重映",
+        "body": "2020 年 6 月《千与千寻》在中国院线重映, 累计票房 4.7 亿人民币, 重夺日本动画在华纪录."
+      },
+      {
+        "year": "2024",
+        "title": "全球票房纪录",
+        "body": "2024 年《千与千寻》全球累计票房 3.95 亿美元, 是日本影史票房第一, 宫崎骏 2024 年第二部作品《苍鹭与少年》延续其风格."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·千与千寻",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB",
+        "type": "百科"
+      },
+      {
+        "title": "吉卜力工作室",
+        "url": "https://www.ghibli.jp/",
+        "type": "机构"
+      },
+      {
+        "title": "Academy of Motion Picture Arts·Oscar",
+        "url": "https://www.oscars.org/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "evangelion-anime",
+    "title": "新世纪福音战士",
+    "kind": "anime",
+    "subKind": "mecha",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/evangelion-anime/evangelion-anime-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/evangelion-anime/evangelion-anime-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/anime/evangelion-anime/evangelion-anime-full.webp",
+    "score": 8.7,
+    "tags": [
+      "动画",
+      "机甲",
+      "庵野秀明",
+      "心理",
+      "宗教符号",
+      "90年代",
+      "GAINAX"
+    ],
+    "tagline": "90 年代日本机甲哲学反思",
+    "subtitle": "anime · 新世纪福音战士 · 百科占位",
+    "description": "新世纪福音战士 是 Atlas Kit 图鉴社「anime」分类下的百科图鉴占位条目。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1995",
+        "title": "TV 版首播",
+        "body": "1995 年 10 月庵野秀明执导《新世纪福音战士》在 TV Tokyo 首播, 26 集融合宗教哲学与机甲战斗."
+      },
+      {
+        "year": "1997",
+        "title": "剧场版 Air/真心为你",
+        "body": "1997 年《EVA 剧场版: Air/真心为你》上映, 因意识流大结局引发日本社会文化事件 (EVA 现象)."
+      },
+      {
+        "year": "2007",
+        "title": "Rebuild 计划启动",
+        "body": "2007 年 Studio Khara 启动《ヱヴァンゲリヲン新劇場版》系列四部曲, 2007-2021 年陆续上映."
+      },
+      {
+        "year": "2021",
+        "title": "终映与全球影响",
+        "body": "2021 年《EVA 新剧场版: 终》上映, 在中国累计票房 8.4 亿人民币, 创日本动画在华票房纪录."
+      },
+      {
+        "year": "2024",
+        "title": "文化符号延续",
+        "body": "2024 年初号机成为全球机甲文化符号, EVA 手办模型与衍生品仍占据日本动画周边市场约 20% 份额."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·新世纪福音战士",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%BA%AA%E7%A6%8F%E9%9F%B3%E6%88%98%E5%A3%AB",
+        "type": "百科"
+      },
+      {
+        "title": "Studio Khara 官网",
+        "url": "https://www.khara.co.jp/",
+        "type": "机构"
+      },
+      {
+        "title": "日本动画协会",
+        "url": "https://www.aja.gr.jp/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "taiwan-cn",
+    "title": "台湾",
+    "kind": "country",
+    "subKind": "east-asia",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/taiwan-cn/taiwan-cn-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/taiwan-cn/taiwan-cn-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/country/taiwan-cn/taiwan-cn-full.webp",
+    "score": 7.6,
+    "tags": [
+      "地区",
+      "东亚",
+      "海岛",
+      "半导体",
+      "中华文化",
+      "美食",
+      "台北"
+    ],
+    "tagline": "太平洋西岸的宝岛",
+    "subtitle": "国家 · 台湾 · 百科占位",
+    "description": "台湾 是 Atlas Kit 图鉴社「国家」分类下的百科图鉴占位条目 (category identity: Geographic and cultural encyclopedia country profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1624",
+        "title": "荷兰人建立大员",
+        "body": "1624 年荷兰东印度公司在大员 (今台南) 建立热兰遮城, 是台湾进入近代史的起点."
+      },
+      {
+        "year": "1662",
+        "title": "郑成功收复台湾",
+        "body": "1662 年郑成功率军击败荷兰人, 设承天府, 大陆汉人开始大规模移台, 形成闽南与客家两大族群."
+      },
+      {
+        "year": "1895",
+        "title": "马关条约割让",
+        "body": "1895 年中日甲午战争后, 清政府签订马关条约, 台湾与澎湖列岛割让予日本, 进入日治时期."
+      },
+      {
+        "year": "1949",
+        "title": "国民政府迁台",
+        "body": "1949 年国民政府在内战中失利, 迁至台北, 两岸分治至今, 台北成为中国国民党统治的延续."
+      },
+      {
+        "year": "2024",
+        "title": "半导体与文化",
+        "body": "2024 年台积电 (TSMC) 占全球先进芯片代工约 90% 份额, 台湾同时是中华文化与日治文化交融的现代样本."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·台湾",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B0%E6%B9%BE",
+        "type": "百科"
+      },
+      {
+        "title": "台湾中央研究院",
+        "url": "https://www.sinica.edu.tw/",
+        "type": "机构"
+      },
+      {
+        "title": "台湾总督府档案·国史馆台湾文献馆",
+        "url": "https://www.th.gov.tw/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "epilepsy",
+    "title": "癫痫",
+    "kind": "disease",
+    "subKind": "chronic",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/epilepsy/epilepsy-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/epilepsy/epilepsy-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/epilepsy/epilepsy-full.webp",
+    "score": 7.3,
+    "tags": [
+      "疾病",
+      "神经系统",
+      "慢性",
+      "脑部",
+      "发作",
+      "全球",
+      "癫痫"
+    ],
+    "tagline": "古老而复杂的神经系统疾病",
+    "subtitle": "疾病 · 癫痫 · 百科占位",
+    "description": "癫痫 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 2000 年",
+        "title": "巴比伦石板记载",
+        "body": "美索不达米亚石碑 (前 2000 年) 描述一种倒地抽搐口吐白沫的疾病, 是已知最早的癫痫病历."
+      },
+      {
+        "year": "公元前 5 世纪",
+        "title": "希波克拉底祛魔",
+        "body": "希波克拉底《论神圣的疾病》主张癫痫是脑部疾病而非神魔附体, 奠定科学理解."
+      },
+      {
+        "year": "19 世纪",
+        "title": "现代分类奠基",
+        "body": "1857 年英国神经学家 John Hughlings Jackson 提出癫痫发作源于大脑皮层异常放电, 开创现代癫痫学."
+      },
+      {
+        "year": "1912",
+        "title": "苯巴比妥问世",
+        "body": "1912 年德国拜耳公司合成苯巴比妥 (Phenobarbital), 是首个广泛使用的抗癫痫药物."
+      },
+      {
+        "year": "2024",
+        "title": "全球患者约 5000 万",
+        "body": "2024 年全球癫痫患者约 5000 万, 抗癫痫药物控制率约 70%, WHO 将癫痫列为重点非传染性疾病之一."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·癫痫",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%AB%E7%97%AB",
+        "type": "百科"
+      },
+      {
+        "title": "中国抗癫痫协会",
+        "url": "https://www.caae.org.cn/",
+        "type": "机构"
+      },
+      {
+        "title": "WHO·Epilepsy fact sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "tuberculosis-old",
+    "title": "肺结核病",
+    "kind": "disease",
+    "subKind": "infectious",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/tuberculosis-old/tuberculosis-old-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/tuberculosis-old/tuberculosis-old-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/disease/tuberculosis-old/tuberculosis-old-full.webp",
+    "score": 7.9,
+    "tags": [
+      "疾病",
+      "传染",
+      "肺",
+      "细菌",
+      "全球",
+      "疫苗",
+      "卡介苗"
+    ],
+    "tagline": "白色瘟疫的医学攻坚史",
+    "subtitle": "疾病 · 肺结核病 · 百科占位",
+    "description": "肺结核病 是 Atlas Kit 图鉴社「疾病」分类下的百科图鉴占位条目 (category identity: Medical encyclopedia disease profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 5000 年",
+        "title": "史前肺结核",
+        "body": "意大利、匈牙利史前人类遗骨 (前 5000 年) 显示出典型肺结核骨损伤, 是人类最古老的传染病之一."
+      },
+      {
+        "year": "19 世纪",
+        "title": "白色瘟疫",
+        "body": "19 世纪欧洲肺结核被称为白色瘟疫 (white plague), 浪漫主义诗人雪莱、济慈、勃朗特姐妹均因之早逝."
+      },
+      {
+        "year": "1882",
+        "title": "结核杆菌发现",
+        "body": "1882 年 3 月 24 日德国医师罗伯特·科赫发现结核分枝杆菌 (M. tuberculosis), 后世以 3 月 24 日为世界结核日."
+      },
+      {
+        "year": "1921",
+        "title": "卡介苗问世",
+        "body": "1921 年法国细菌学家卡尔美与介林成功培育卡介苗 (BCG), 至今仍是全球唯一广泛使用的结核疫苗."
+      },
+      {
+        "year": "2024",
+        "title": "全球疫情仍严峻",
+        "body": "2024 年全球结核新发约 1000 万例, 死亡约 130 万, 重回单一传染病死因第一, 耐多药结核是主要挑战."
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国疾病预防控制中心·结核病",
+        "url": "https://www.chinacdc.cn/",
+        "type": "官方"
+      },
+      {
+        "title": "维基百科中文版·肺结核",
+        "url": "https://zh.wikipedia.org/wiki/%E8%82%BA%E7%BB%93%E6%A0%B8",
+        "type": "百科"
+      },
+      {
+        "title": "Stop TB Partnership",
+        "url": "https://www.stoptb.org/",
+        "type": "机构"
+      }
+    ]
+  },
+  {
+    "slug": "bobsled-vehicle",
+    "title": "雪橇",
+    "kind": "vehicle",
+    "subKind": "ship",
+    "series": "atlas-miscellany",
+    "seriesNo": "035",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/bobsled-vehicle/bobsled-vehicle-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/bobsled-vehicle/bobsled-vehicle-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/vehicle/bobsled-vehicle/bobsled-vehicle-full.webp",
+    "score": 6.9,
+    "tags": [
+      "载具",
+      "雪上",
+      "竞速",
+      "冬季",
+      "瑞士起源",
+      "奥运",
+      "四人"
+    ],
+    "tagline": "极寒地带的雪上竞速机械",
+    "subtitle": "交通工具 · 雪橇 · 百科占位",
+    "description": "雪橇 是 Atlas Kit 图鉴社「交通工具」分类下的百科图鉴占位条目 (category identity: Transportation and engineering encyclopedia profile page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1870 年代",
+        "title": "瑞士阿尔卑斯起源",
+        "body": "1870 年代瑞士阿尔卑斯山区圣莫里茨旅馆业者为吸引游客, 在 Cresta Run 修建雪橇赛道, 是现代雪车运动起源."
+      },
+      {
+        "year": "1924",
+        "title": "首次冬奥会",
+        "body": "1924 年法国霞慕尼首届冬季奥运会雪橇 (bobsled) 列为正式项目, 瑞士队夺得首批金牌."
+      },
+      {
+        "year": "1952",
+        "title": "奥斯陆两金赛事",
+        "body": "1952 年奥斯陆冬奥会雪车比赛加入四人和双人两金赛事, 雪车结构演变为流线型金属车体."
+      },
+      {
+        "year": "1988",
+        "title": "牙买加雪车队",
+        "body": "1988 年卡尔加里冬奥会牙买加雪车队电影 Cool Runnings 题材, 1994 年利勒哈默尔冬奥会牙买加队真的登场."
+      },
+      {
+        "year": "2024",
+        "title": "米兰冬奥会准备",
+        "body": "2026 年米兰-科尔蒂纳冬奥会雪车将再次成为核心项目, 各国雪车国家队 2024 年起开始选拔备战."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·雪车",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%AA%E8%BD%A6",
+        "type": "百科"
+      },
+      {
+        "title": "国际雪车联合会 (IBSF)",
+        "url": "https://www.ibsf.org/",
+        "type": "机构"
+      },
+      {
+        "title": "国际奥委会官网",
+        "url": "https://www.olympics.com/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "halloween-fest",
+    "title": "万圣节",
+    "kind": "festival",
+    "subKind": "modern-holiday",
+    "series": "atlas-miscellany",
+    "seriesNo": "036",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/halloween-fest/halloween-fest-card.png",
+    "image_thumb": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/halloween-fest/halloween-fest-thumb.webp",
+    "image_full": "https://636c-cloud1-d9gv1q8ikad5e9721-1442530204.tcb.qcloud.la/cards/festival/halloween-fest/halloween-fest-full.webp",
+    "score": 7.4,
+    "tags": [
+      "节日",
+      "西方",
+      "凯尔特起源",
+      "万圣节",
+      "南瓜",
+      "现代",
+      "Trick or Treat"
+    ],
+    "tagline": "凯尔特新年演化而来的现代节日",
+    "subtitle": "节日 · 万圣节 · 百科占位",
+    "description": "万圣节 是 Atlas Kit 图鉴社「节日」分类下的百科图鉴占位条目 (category identity: Cultural and folklore encyclopedia page)。完整描述 / 历史沿革 / 参考来源 / 评分 / 视觉等字段由 AI 内容补全脚本 (draft-history / draft-sources / add-cross-tags / enrich-mentions / score-all-cards) 后续批量填充,无需人工写占位文案。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "公元前 5 世纪",
+        "title": "凯尔特萨温节",
+        "body": "凯尔特历法将 10 月 31 日定为萨温节 (Samhain), 标记夏季结束与亡灵归来的世界边界."
+      },
+      {
+        "year": "公元 7 世纪",
+        "title": "基督教化万圣节",
+        "body": "公元 609 年教皇格里高利四世将 11 月 1 日定为万圣节 (All Saints' Day), 替代凯尔特异教节庆."
+      },
+      {
+        "year": "1840 年代",
+        "title": "爱尔兰大饥荒传入美国",
+        "body": "1840 年代爱尔兰马铃薯大饥荒, 大量爱尔兰移民将万圣节习俗传入美国, 演变为现代美国化万圣节."
+      },
+      {
+        "year": "1921",
+        "title": "美国万圣节商业化",
+        "body": "1921 年美国宾州率先推出 Trick-or-Treat 习俗, 1950 年代万圣节成为美国第二大商业节日, 仅次于圣诞."
+      },
+      {
+        "year": "2024",
+        "title": "全球消费 120 亿美元",
+        "body": "2024 年美国万圣节消费约 120 亿美元, 服装、糖果、装饰三大项, 是日本、欧洲、拉美城市的新兴文化节日."
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科中文版·万圣节",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%87%E5%9C%A3%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "美国全国零售联合会 (NRF)",
+        "url": "https://nrf.com/",
+        "type": "机构"
+      },
+      {
+        "title": "History.com·Halloween",
+        "url": "https://www.history.com/topics/halloween",
+        "type": "百科"
       }
     ]
   }

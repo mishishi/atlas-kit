@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "round": "R85",
+    "createdAt": "2026-07-13",
+    "goal": "ship 24 张内容 + 14 kind 短板 33-35 拉齐到 36+ + 冲 978",
+    "strategy": "14 kind 各 1-3 张, kind 短板 priority 拉齐. 不加新 subKind, 走同 subKind 多张 (topic diversity)"
+  },
+  "cards": [
+    { "slug": "cherry-blossom", "title": "樱花", "kind": "plant", "subKind": "flower", "series": "atlas-miscellany", "seriesNo": "061" },
+    { "slug": "sunflower", "title": "向日葵", "kind": "plant", "subKind": "flower", "series": "atlas-miscellany", "seriesNo": "062" },
+    { "slug": "oak-tree", "title": "橡树", "kind": "plant", "subKind": "tree", "series": "atlas-miscellany", "seriesNo": "063" },
+    { "slug": "willow", "title": "柳树", "kind": "plant", "subKind": "tree", "series": "atlas-miscellany", "seriesNo": "064" },
+    { "slug": "origami-craft", "title": "折纸", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "bonsai-craft", "title": "盆栽艺术", "kind": "other", "subKind": "intangible-heritage", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "orion-nebula", "title": "猎户座大星云", "kind": "space-object", "subKind": "nebula", "series": "atlas-miscellany", "seriesNo": "034" },
+    { "slug": "eagle-nebula", "title": "鹰状星云", "kind": "space-object", "subKind": "nebula", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "hydrogen", "title": "氢", "kind": "chemical-element", "subKind": "nonmetal", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "gold-elem", "title": "金", "kind": "chemical-element", "subKind": "transition-metal", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "kimono-garment", "title": "和服", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "044" },
+    { "slug": "tapestry-art", "title": "挂毯", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "045" },
+    { "slug": "bast-myth", "title": "芭丝特", "kind": "mythology", "subKind": "near-eastern", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "amaterasu", "title": "天照大神", "kind": "mythology", "subKind": "japanese", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "iliad-book", "title": "伊利亚特", "kind": "book", "subKind": "classical", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "don-quixote", "title": "堂吉诃德", "kind": "book", "subKind": "classical", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "mononoke-anime", "title": "千与千寻", "kind": "anime", "subKind": "shonen", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "evangelion-anime", "title": "新世纪福音战士", "kind": "anime", "subKind": "mecha", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "iceland", "title": "冰岛", "kind": "country", "subKind": "europe", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "taiwan-cn", "title": "台湾", "kind": "country", "subKind": "east-asia", "series": "atlas-miscellany", "seriesNo": "036" },
+    { "slug": "epilepsy", "title": "癫痫", "kind": "disease", "subKind": "chronic", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "tuberculosis-old", "title": "肺结核病", "kind": "disease", "subKind": "infectious", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "bobsled-vehicle", "title": "雪橇", "kind": "vehicle", "subKind": "ship", "series": "atlas-miscellany", "seriesNo": "035" },
+    { "slug": "halloween-fest", "title": "万圣节", "kind": "festival", "subKind": "modern-holiday", "series": "atlas-miscellany", "seriesNo": "036" }
+  ]
+}

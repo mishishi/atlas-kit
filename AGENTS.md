@@ -3268,3 +3268,49 @@ prod: https://atlas-kit-six.vercel.app/ (R86+R86.1 ship 待 push, sitemap expect
 - 新挑战: catalog 1000+ 后, sort default 跟 default filter 决定 user 体验天花板
 - /random 增强 (R52) 在 1000+ cards 后多样性优势
 - 长期: 配合 polish 在 catalog 1000+ 维持 5 commit / week 节奏
+
+## R87 (2026-07-15) — 13 cards ship partial: mavis daemon 死了, ship 13 改 plan 24
+
+跟 R86+R86.1 衔接. catalog 1000 → **1013** (+13, 11 张 R87 plan 留给 R87.1). 25 commit post-R66 = 10 content ships + 4 UX polish rounds.
+
+### A. mavis daemon 死, R87 24 → 13 partial ship
+
+R87 plan 写 24 张, 跑 `tmp/r87-run-all.cjs` (跟 R72-R86 同 pattern 串行 execFileSync) 时 11 张 (bamboo-plant / ukiyo-e-artwork / ra-myth / isis-myth / quetzalcoatl-myth / noir-movie / neorealism-movie / samurai-movie / shojo-anime / kodomo-anime / scabies-disease) 全 fail "matrix: fetch failed".
+
+`Test-NetConnection 127.0.0.1:15321` = False, mavis daemon 端口不通. 6 个 `MiniMax Code` 主进程在跑但 daemon 子进程没了. mavis CLI 也炸 (`Cannot find module '...\resources\resources\daemon\cli.js'` 路径重复, install bug).
+
+13 张 R87 (R86 commit 后 R87 prep 阶段) image on disk (matrix 当时 "no output_url" 抽风但**还是落盘了**), 跟 R81 900 milestone 同 pattern: **改 ship 13, daemon 起来后补 R87.1 11 张**.
+
+### B. R87 handwrite 13 (4 阶段 inline JSON + apply cjs)
+
+跟 R85 实战经验同: 不用 mmx (hang 风险), 改用 inline JSON + apply cjs loader, 避免 cjs inline Chinese classifier 拦截 + model garbling:
+
+1. **Stage 1 (4 fields)**: `tmp/r87-4fields.json` + `tmp/r87-apply-4fields.cjs`. 13 张 desc (134-182 char) + tagline + score (7.0-8.4) + tags (7 each) 一次过. JSON ASCII 双引号 escape bug 修了 1 次 (用中文「」 替代).
+2. **Stage 2 (history 5 nodes each)**: `tmp/r87-history.json` + `tmp/r87-apply-history.cjs`. 13 × 5 = 65 nodes 一次过, 0 bad.
+3. **Stage 3 (sources 3 each)**: `tmp/r87-sources.json` + `tmp/r87-apply-sources.cjs`. 13 × 3 = 39 sources 一次过. iplant.cn + cqlyj.gov.cn 是 http 学术/官方站点, 改 validation 允许 http (R85 之前 https-only 误伤).
+4. **Verify**: 13/13 全 OK (desc ≥ 100 / score > 0 / tags ≥ 4 / history ≥ 3 / sources ≥ 2 / subKind / image on CDN), 0 issues.
+
+### C. R87 实战 lessons
+
+- **mavis daemon 端口 15321 死了 = matrix 端到端不可用**: 11 张全 "fetch failed", 不是 matrix API 抽风 (R70-R86 常见) 而是 daemon 死了. 6 个 `MiniMax Code` 进程在跑但子进程没起.
+- **mavis CLI install bug**: `resources\resources\daemon\cli.js` 路径重复, daemon 启不来. 改 MiniMax Code 重启可能修.
+- **JSON ASCII 双引号 escape bug 1 处**: hanukkah-fest description 写 `象征"光明驱散黑暗"`, ASCII " 没用 \" 转义, JSON parser 提前 close string. 修法: 一律用中文「」 替代 ASCII " 避免 escape.
+- **inline JSON + apply cjs 比 inline cjs Chinese 稳 (R85+ 持续)**: 13 张 4 fields 一次过, 0 garbled 0 classifier 拦截. R86+ pattern 标准.
+- **sources URL 放宽 http**: iplant.cn (中国植物志) + cqlyj.gov.cn (重庆市林业局) 是 http 学术/官方站点, https-only validation 误伤 2 张. 改 allows http, 13/13 OK.
+
+### D. Atlas Kit 当前 catalog (R87 后, 2026-07-15)
+
+- **1013 cards** (R86+R86.1 1000 + R87 13). 25 commit post-R66.
+- **26 kinds / 180 subKinds / 12 series**
+- 0 placeholder / 0 no-subKind / 0 missing image on CDN / disk
+- 13 R87 全齐 desc (134-182 chars) + tagline + score (7.0-8.4) + tags (7 each) + history (5 nodes) + sources (3 each) + subKind + image 3-tier on CDN
+- prod: https://atlas-kit-six.vercel.app/ (R86 push ✓, R87 待 commit + push)
+
+### E. R87.1 candidate (next) — daemon 起来后补 11 张
+
+- `node --env-file=.env.local scripts/generate-card.mjs` 重跑 11 张 (R87 plan 剩 bamboo-plant / ukiyo-e-artwork / ra-myth / isis-myth / quetzalcoatl-myth / noir-movie / neorealism-movie / samurai-movie / shojo-anime / kodomo-anime / scabies-disease)
+- daemon 起来信号: `Test-NetConnection 127.0.0.1:15321` True / mavis CLI `mavis --version` 不抛 / 6+1 个进程 (MiniMax Code + mavis daemon child)
+- R87.1 handwrite 4 fields + history + sources 11 张
+- R87.1 commit + push
+- **archive 那 6 个 stale `MiniMax Code` processes**: 5 个 7/14 15:58 起, 1 个 7/15 4:53 起 (current session), 都不是 daemon child
+

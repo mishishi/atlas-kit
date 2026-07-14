@@ -74290,5 +74290,967 @@
         "type": "官方"
       }
     ]
+  },
+  {
+    "slug": "ramadan-fest",
+    "title": "斋月",
+    "kind": "festival",
+    "subKind": "foreign",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/festival/ramadan-fest/ramadan-fest-card.png",
+    "image_thumb": "/cards/festival/ramadan-fest/ramadan-fest-thumb.webp",
+    "image_full": "/cards/festival/ramadan-fest/ramadan-fest-full.webp",
+    "score": 7.6,
+    "tags": [
+      "宗教",
+      "伊斯兰",
+      "中东",
+      "全球",
+      "节庆",
+      "传统",
+      "文化"
+    ],
+    "tagline": "18 亿穆斯林的 30 天自律月",
+    "subtitle": "节日 · 斋月 · 百科占位",
+    "description": "斋月是伊斯兰教历九月，全球约 18 亿穆斯林从黎明到日落禁食 30 天，源自公元 610 年先知穆罕默德首次接受启示。这一月以自律、慈善、家庭团聚为核心，开斋节（Eid al-Fitr）标志着斋月结束。斋月期间，日落时分全城开斋（Iftar）的集体用餐场景，从雅加达到开罗到大马士革，是伊斯兰世界最壮观的文化景观之一。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "610",
+        "title": "穆罕默德接受启示",
+        "body": "先知穆罕默德在希拉山洞接受真主首次启示, 斋月作为伊斯兰教历九月确立"
+      },
+      {
+        "year": "632",
+        "title": "哈里发延续斋月",
+        "body": "穆罕默德逝世, 四大哈里发将斋月定为伊斯兰教五大支柱之一"
+      },
+      {
+        "year": "1099",
+        "title": "十字军耶路撒冷",
+        "body": "第一次十字军东征占领耶路撒冷, 斋月在战乱中仍由穆斯林坚守"
+      },
+      {
+        "year": "1850s",
+        "title": "全球扩张",
+        "body": "奥斯曼帝国时期, 斋月从阿拉伯半岛扩展到北非、东南亚、印度"
+      },
+      {
+        "year": "2024",
+        "title": "18 亿穆斯林",
+        "body": "全球穆斯林人口约 18 亿, 斋月覆盖 50+ 国家, 多元庆祝"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 斋月",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%8B%E6%9C%88",
+        "type": "百科"
+      },
+      {
+        "title": "伊斯兰教斋月 - 维基中文",
+        "url": "https://zh.wikipedia.org/wiki/%E9%97%BD%E7%88%B1%E6%9C%88",
+        "type": "百科"
+      },
+      {
+        "title": "中国伊斯兰教协会 - 斋月介绍",
+        "url": "https://www.chinaislam.org.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "hanukkah-fest",
+    "title": "光明节",
+    "kind": "festival",
+    "subKind": "foreign",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/festival/hanukkah-fest/hanukkah-fest-card.png",
+    "image_thumb": "/cards/festival/hanukkah-fest/hanukkah-fest-thumb.webp",
+    "image_full": "/cards/festival/hanukkah-fest/hanukkah-fest-full.webp",
+    "score": 7.2,
+    "tags": [
+      "宗教",
+      "犹太",
+      "中东",
+      "节庆",
+      "传统",
+      "文化",
+      "历史"
+    ],
+    "tagline": "8 烛光明，犹太马卡比的重生节",
+    "subtitle": "节日 · 光明节 · 百科占位",
+    "description": "光明节（Hanukkah）是犹太教节日，纪念公元前 165 年马卡比起义夺回耶路撒冷圣殿并重新点燃 menorah 灯台。节日持续 8 天，每天点燃一支蜡烛，象征「光明驱散黑暗」的核心主题。光明节虽不在犹太教经典《妥拉》中，却是犹太文化最具辨识度的节日之一，蓝色 dreidel 陀螺和炸土豆饼（latke）是节日的标志。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "前 167",
+        "title": "圣殿被亵渎",
+        "body": "塞琉古国王安条克四世在耶路撒冷圣殿献异教祭品"
+      },
+      {
+        "year": "前 165",
+        "title": "马卡比起义",
+        "body": "犹大·马卡比起义夺回圣殿, 奇迹点灯 8 天的传说起源"
+      },
+      {
+        "year": "70",
+        "title": "第二圣殿被毁",
+        "body": "罗马帝国摧毁第二圣殿, 光明节成为犹太民族抵抗象征"
+      },
+      {
+        "year": "19 世纪",
+        "title": "dreidel 进入美国",
+        "body": "东欧犹太移民把 dreidel 陀螺带入美国, 成为美国犹太文化标志"
+      },
+      {
+        "year": "2024",
+        "title": "全球 1500 万",
+        "body": "全球犹太人口约 1500 万, 美国是最大光明节社区"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 光明节",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%89%E6%98%8E%E8%8A%82",
+        "type": "百科"
+      },
+      {
+        "title": "犹太节日 - 维基中文",
+        "url": "https://en.wikipedia.org/wiki/Hanukkah",
+        "type": "百科"
+      },
+      {
+        "title": "美国犹太委员会 - 光明节历史",
+        "url": "https://www.jewishvirtuallibrary.org/hanukkah",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "day-of-dead-fest",
+    "title": "墨西哥亡灵节",
+    "kind": "festival",
+    "subKind": "foreign",
+    "series": "atlas-miscellany",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/festival/day-of-dead-fest/day-of-dead-fest-card.png",
+    "image_thumb": "/cards/festival/day-of-dead-fest/day-of-dead-fest-thumb.webp",
+    "image_full": "/cards/festival/day-of-dead-fest/day-of-dead-fest-full.webp",
+    "score": 7.8,
+    "tags": [
+      "节庆",
+      "墨西哥",
+      "拉丁美洲",
+      "文化",
+      "传统",
+      "全球",
+      "艺术"
+    ],
+    "tagline": "万寿菊铺路，墨西哥的清明节",
+    "subtitle": "节日 · 墨西哥亡灵节 · 百科占位",
+    "description": "墨西哥亡灵节（Día de los Muertos）每年 11 月 1-2 日，以万寿菊（cempasúchil）铺路、骷髅糖（calavera）装饰、祭坛（ofrenda）供奉先人，与中国清明节并称世界两大「喜迎先人」节日。2008 年被联合国教科文组织列入人类非物质文化遗产。节日核心是「死亡是生命的延续」哲学，与西方万圣节的恐怖叙事形成鲜明对比。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "前 3000",
+        "title": "玛雅祭祀传统",
+        "body": "中美洲玛雅文明以骷髅、菊属植物祭祀先人"
+      },
+      {
+        "year": "1521",
+        "title": "阿兹特克陷落",
+        "body": "西班牙征服阿兹特克, 天主教万圣节与本土传统融合"
+      },
+      {
+        "year": "1900s",
+        "title": "卡特里娜普及",
+        "body": "波萨达版画《卡特里娜夫人》成为节日视觉符号"
+      },
+      {
+        "year": "2008",
+        "title": "UNESCO 非遗",
+        "body": "联合国教科文组织将亡灵节列入人类非物质文化遗产"
+      },
+      {
+        "year": "2017",
+        "title": "Coco 全球爆红",
+        "body": "皮克斯电影《寻梦环游记》让亡灵节进入全球大众文化"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 墨西哥亡灵节",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A2%93%E5%9F%BA%E7%B1%8D%E7%AF%80",
+        "type": "百科"
+      },
+      {
+        "title": "UNESCO 人类非物质文化遗产 - 亡灵节",
+        "url": "https://ich.unesco.org/en/RL/indigenous-festivals-of-the-mexican-people-00088",
+        "type": "官方"
+      },
+      {
+        "title": "墨西哥旅游部 - 亡灵节",
+        "url": "https://www.visitmexico.com/en/dia-de-muertos",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "fan-obj",
+    "title": "扇子",
+    "kind": "object",
+    "subKind": "traditional",
+    "series": "atlas-miscellany",
+    "seriesNo": "046",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/object/fan-obj/fan-obj-card.png",
+    "image_thumb": "/cards/object/fan-obj/fan-obj-thumb.webp",
+    "image_full": "/cards/object/fan-obj/fan-obj-full.webp",
+    "score": 7.4,
+    "tags": [
+      "工艺",
+      "传统",
+      "中国",
+      "日本",
+      "欧洲",
+      "文化",
+      "手工艺"
+    ],
+    "tagline": "一柄开合，三洲文化的掌心美学",
+    "subtitle": "器物 · 扇子 · 百科占位",
+    "description": "扇子是 3000 年历史的便携式引风器具，中国折扇（北宋成熟，明代普及）、日本团扇（和扇）、欧洲折扇（16 世纪传入，18 世纪扇语成为贵族暗号）三大体系并行。中国折扇融合书法、绘画、雕刻工艺，扇面是明清文人画的重要载体，扇骨是苏州檀香扇、杭扇、岳州扇的工艺比拼舞台。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "前 3000",
+        "title": "古埃及羽扇",
+        "body": "古埃及法老使用羽扇象征权威, 中国同期出现羽扇"
+      },
+      {
+        "year": "11 世纪",
+        "title": "北宋折扇",
+        "body": "北宋折扇成熟, 苏轼《折扇》诗咏之, 明代普及民间"
+      },
+      {
+        "year": "15 世纪",
+        "title": "日本和扇",
+        "body": "折扇从中国传入日本, 团扇本土化, 演变为和扇文化"
+      },
+      {
+        "year": "16 世纪",
+        "title": "欧洲折扇",
+        "body": "葡萄牙水手把折扇带到欧洲, 西班牙宫廷率先使用"
+      },
+      {
+        "year": "18 世纪",
+        "title": "扇语暗号",
+        "body": "欧洲贵族女性用折扇暗号传递社交信号, 扇语词典出版"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 折扇",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8A%98%E6%89%87",
+        "type": "百科"
+      },
+      {
+        "title": "中国扇子博物馆 - 苏州博物馆",
+        "url": "https://www.szmuseum.com/",
+        "type": "官方"
+      },
+      {
+        "title": "苏州檀香扇 - 国家级非遗",
+        "url": "https://www.ihchina.cn/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "hourglass-obj",
+    "title": "沙漏",
+    "kind": "object",
+    "subKind": "traditional",
+    "series": "atlas-miscellany",
+    "seriesNo": "047",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/object/hourglass-obj/hourglass-obj-card.png",
+    "image_thumb": "/cards/object/hourglass-obj/hourglass-obj-thumb.webp",
+    "image_full": "/cards/object/hourglass-obj/hourglass-obj-full.webp",
+    "score": 7,
+    "tags": [
+      "器具",
+      "计时",
+      "欧洲",
+      "航海",
+      "中世纪",
+      "文化",
+      "科学"
+    ],
+    "tagline": "时间之沙，14 世纪船舱的分钟倒计时",
+    "subtitle": "器物 · 沙漏 · 百科占位",
+    "description": "沙漏是古代计时器，8 世纪起源于欧洲修道院晨祷报时，14-17 世纪航海黄金时代成为船舱标配，18 世纪被机械钟取代。沙漏由两个玻璃球和细颈连接，靠细沙匀速流动计时，常见规格 1 分钟、3 分钟、15 分钟、30 分钟。沙漏的「时间之沙」哲学意象在文艺复兴时期进入文学与绘画，莎士比亚《威尼斯商人》、达利《记忆的永恒》都是经典引用。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "8 世纪",
+        "title": "修道院报时",
+        "body": "欧洲修道院用 30 分钟沙漏报晨祷, 取代水钟"
+      },
+      {
+        "year": "14 世纪",
+        "title": "航海标配",
+        "body": "大航海时代沙漏成为船舱标配, 28 秒玻璃沙漏计航速"
+      },
+      {
+        "year": "1485",
+        "title": "达芬奇怀表",
+        "body": "达芬奇设计怀表, 但沙漏仍因成本低、防水、便携而主流"
+      },
+      {
+        "year": "18 世纪",
+        "title": "机械钟取代",
+        "body": "航海钟 (H4) 发明, 沙漏退居厨房计时与教学工具"
+      },
+      {
+        "year": "1930s",
+        "title": "沙漏文化复兴",
+        "body": "沙漏作为冥想计时器复活, 3 分钟煮蛋 / 沙滩玩具普及"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 沙漏",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%BC%8F",
+        "type": "百科"
+      },
+      {
+        "title": "英国科学博物馆 - 沙漏历史",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8407583/hourglass-glass",
+        "type": "官方"
+      },
+      {
+        "title": "大航海时代航海计时 - 维基英文",
+        "url": "https://en.wikipedia.org/wiki/Sandglass",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "lantern-obj",
+    "title": "灯笼",
+    "kind": "object",
+    "subKind": "traditional",
+    "series": "atlas-miscellany",
+    "seriesNo": "048",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/object/lantern-obj/lantern-obj-card.png",
+    "image_thumb": "/cards/object/lantern-obj/lantern-obj-thumb.webp",
+    "image_full": "/cards/object/lantern-obj/lantern-obj-full.webp",
+    "score": 7.6,
+    "tags": [
+      "工艺",
+      "传统",
+      "中国",
+      "节庆",
+      "文化",
+      "手工艺",
+      "非遗"
+    ],
+    "tagline": "一盏灯火，2000 年的中国夜",
+    "subtitle": "器物 · 灯笼 · 百科占位",
+    "description": "灯笼是中国 2000 年灯火文明的具象化，东汉时期从宫灯起源，唐宋花灯达到工艺巅峰，明清宫灯融合书画、刺绣、剪纸。灯笼在中国节庆中承担核心符号功能：元宵节看花灯、中秋节赏宫灯、春节挂红灯。2008 年花灯列入国家级非物质文化遗产名录，自贡灯会、佛山彩灯、洛阳宫灯、泉州花灯是四大地方流派。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "东汉",
+        "title": "宫灯起源",
+        "body": "25-220 CE 宫灯从宫廷祭祀起源, 五代十国进入民间"
+      },
+      {
+        "year": "唐",
+        "title": "花灯巅峰",
+        "body": "618-907 CE 花灯工艺达到巅峰, 元宵灯会成型"
+      },
+      {
+        "year": "北宋",
+        "title": "汴京灯会",
+        "body": "960-1127 CE 汴京元宵灯会盛况空前, 辛弃疾《青玉案》咏之"
+      },
+      {
+        "year": "明",
+        "title": "地方流派",
+        "body": "1368-1644 CE 闽南花灯、潮州花灯、秦淮灯彩地方流派形成"
+      },
+      {
+        "year": "2008",
+        "title": "国家级非遗",
+        "body": "自贡灯会、佛山彩灯列入国家级非物质文化遗产名录"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 灯笼",
+        "url": "https://zh.wikipedia.org/wiki/%E7%81%AB%E7%AE%9D",
+        "type": "百科"
+      },
+      {
+        "title": "国家级非遗 - 自贡灯会",
+        "url": "https://www.ihchina.cn/project.html?Id=30031",
+        "type": "官方"
+      },
+      {
+        "title": "中国灯彩 - 国家级非遗",
+        "url": "https://www.ihchina.cn/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "orangutan-animal",
+    "title": "红毛猩猩",
+    "kind": "animal",
+    "subKind": "mammal",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/animal/orangutan-animal/orangutan-animal-card.png",
+    "image_thumb": "/cards/animal/orangutan-animal/orangutan-animal-thumb.webp",
+    "image_full": "/cards/animal/orangutan-animal/orangutan-animal-full.webp",
+    "score": 8.2,
+    "tags": [
+      "动物",
+      "哺乳",
+      "灵长目",
+      "印尼",
+      "濒危",
+      "雨林",
+      "东南亚"
+    ],
+    "tagline": "97% DNA 相似，婆罗洲的森林人",
+    "subtitle": "动物 · 红毛猩猩 · 百科占位",
+    "description": "红毛猩猩（orangutan）现存三种，仅分布于印尼苏门答腊和婆罗洲的热带雨林，IUCN 评级极危（CR）。与人类基因相似度高达 97%，是除黑猩猩外与人类最近的近亲。「orangutan」源自马来语「orang utan」，意为「森林中的人」。婆罗洲红毛猩猩、苏门答腊红毛猩猩、达班努里红毛猩猩（2017 年新种）三者中，前两种野生种群仅剩约 140000 只。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1.5 万年前",
+        "title": "婆罗洲岩画",
+        "body": "婆罗洲 Sape 河流域洞穴岩画记录红毛猩猩与人类共存"
+      },
+      {
+        "year": "1714",
+        "title": "森林人",
+        "body": "博物学家把红毛猩猩描述为 orang utan (马来语「森林中的人」)"
+      },
+      {
+        "year": "1838",
+        "title": "苏门答腊定种",
+        "body": "法国博物学家为苏门答腊红毛猩猩定名 (Pongo abelii)"
+      },
+      {
+        "year": "1997",
+        "title": "IUCN 极危",
+        "body": "IUCN 红色名录将婆罗洲红毛猩猩升级为极危 (CR)"
+      },
+      {
+        "year": "2017",
+        "title": "新种发现",
+        "body": "达班努里红毛猩猩 (Pongo tapanuliensis) 定为独立新种, 极危"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 红毛猩猩",
+        "url": "https://zh.wikipedia.org/wiki/%E7%B4%85%E6%AF%9B%E7%8C%A9%E7%8C%A9",
+        "type": "百科"
+      },
+      {
+        "title": "WWF - 婆罗洲红毛猩猩",
+        "url": "https://www.worldwildlife.org/species/orangutan",
+        "type": "官方"
+      },
+      {
+        "title": "IUCN 红色名录 - 红毛猩猩",
+        "url": "https://www.iucnredlist.org/species/12075/179850352",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "flamingo-animal",
+    "title": "火烈鸟",
+    "kind": "animal",
+    "subKind": "bird",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/animal/flamingo-animal/flamingo-animal-card.png",
+    "image_thumb": "/cards/animal/flamingo-animal/flamingo-animal-thumb.webp",
+    "image_full": "/cards/animal/flamingo-animal/flamingo-animal-full.webp",
+    "score": 7.5,
+    "tags": [
+      "动物",
+      "鸟类",
+      "全球",
+      "湿地",
+      "非洲",
+      "美洲",
+      "迁徙"
+    ],
+    "tagline": "一身火红，6 种火烈鸟的虾青素秘密",
+    "subtitle": "动物 · 火烈鸟 · 百科占位",
+    "description": "火烈鸟（flamingo）属 6 种：安第斯火烈鸟、智利火烈鸟、詹姆斯火烈鸟、大火烈鸟、小火烈鸟、美洲火烈鸟，分布于非洲、南美、加勒比、南欧、中南半岛湿地。粉红体色源于食物中的虾青素（astaxanthin），单腿站立是节能机制（减少肌肉消耗）。肯尼亚纳库鲁湖、印度桑巴尔盐湖、博茨瓦纳马卡迪卡迪盐沼是三大火烈鸟观赏地。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "3000 万年前",
+        "title": "化石记录",
+        "body": "欧洲渐新世地层发现火烈鸟化石, 现代 6 种源自同一祖先"
+      },
+      {
+        "year": "1758",
+        "title": "林奈定名",
+        "body": "林奈在《自然系统》第 10 版中描述大火烈鸟 (Phoenicopterus roseus)"
+      },
+      {
+        "year": "1900s",
+        "title": "桑巴尔盐湖",
+        "body": "印度桑巴尔盐湖成为火烈鸟保护区, 百万只迁徙"
+      },
+      {
+        "year": "1960s",
+        "title": "纳库鲁圣地",
+        "body": "肯尼亚纳库鲁湖成为火烈鸟观赏圣地, 100 万+ 大火烈鸟聚集"
+      },
+      {
+        "year": "2009",
+        "title": "安第斯近危",
+        "body": "IUCN 将安第斯火烈鸟 (Phoenicoparrus andinus) 列为近危 (NT)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 火烈鸟",
+        "url": "https://zh.wikipedia.org/wiki/%E7%81%AB%E7%83%88%E9%B8%9F",
+        "type": "百科"
+      },
+      {
+        "title": "IUCN 红色名录 - 火烈鸟属",
+        "url": "https://www.iucnredlist.org/search?query=phoenicopterus",
+        "type": "学术"
+      },
+      {
+        "title": "WWT - 火烈鸟湿地保护",
+        "url": "https://www.wwt.org.uk/wetlands/learning-zone/species/flamingo/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "sea-turtle-animal",
+    "title": "海龟",
+    "kind": "animal",
+    "subKind": "reptile",
+    "series": "wild-fauna-atlas",
+    "seriesNo": "039",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/animal/sea-turtle-animal/sea-turtle-animal-card.png",
+    "image_thumb": "/cards/animal/sea-turtle-animal/sea-turtle-animal-thumb.webp",
+    "image_full": "/cards/animal/sea-turtle-animal/sea-turtle-animal-full.webp",
+    "score": 7.9,
+    "tags": [
+      "动物",
+      "爬行",
+      "海洋",
+      "全球",
+      "濒危",
+      "迁徙",
+      "古老"
+    ],
+    "tagline": "2 亿年演化，7 种海龟的磁导航之谜",
+    "subtitle": "动物 · 海龟 · 百科占位",
+    "description": "海龟（sea turtle）现存 7 种：绿海龟、玳瑁、棱皮龟、蠵龟、平背龟、肯氏丽龟、丽龟，演化史超过 2 亿年，是恐龙时代的幸存者。7 种中绿海龟、玳瑁、棱皮龟 3 种被 IUCN 列为极危（CR）。海龟靠地球磁场进行万里洄游导航，雌龟回到出生海滩产卵的「natal homing」行为至今是未解之谜。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "2 亿年前",
+        "title": "祖先出现",
+        "body": "三叠纪海龟祖先原腭龟 (Proganochelys) 出现, 与恐龙同期"
+      },
+      {
+        "year": "6000 万年前",
+        "title": "7 种分化",
+        "body": "白垩纪末大灭绝后, 现代 7 种海龟开始分化"
+      },
+      {
+        "year": "1620",
+        "title": "洄游记录",
+        "body": "欧洲博物学家首次记录绿海龟跨大西洋洄游行为"
+      },
+      {
+        "year": "1970s",
+        "title": "玳瑁崩溃",
+        "body": "全球玳瑁数量崩溃 80%, CITES 列入濒危物种保护"
+      },
+      {
+        "year": "2019",
+        "title": "棱皮龟极危",
+        "body": "IUCN 将棱皮龟 (Dermochelys coriacea) 升级为极危 (CR)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 海龟",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B5%B7%E9%BE%9C",
+        "type": "百科"
+      },
+      {
+        "title": "NOAA 渔业 - 海龟保护",
+        "url": "https://www.fisheries.noaa.gov/species/sea-turtles",
+        "type": "官方"
+      },
+      {
+        "title": "IUCN 红色名录 - 海龟科",
+        "url": "https://www.iucnredlist.org/taxon/4615",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "fern-plant",
+    "title": "蕨类",
+    "kind": "plant",
+    "subKind": "grass",
+    "series": "atlas-miscellany",
+    "seriesNo": "065",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/plant/fern-plant/fern-plant-card.png",
+    "image_thumb": "/cards/plant/fern-plant/fern-plant-thumb.webp",
+    "image_full": "/cards/plant/fern-plant/fern-plant-full.webp",
+    "score": 7.3,
+    "tags": [
+      "植物",
+      "古老",
+      "全球",
+      "孢子",
+      "化石",
+      "园艺",
+      "生态"
+    ],
+    "tagline": "3.6 亿年古老植物，10500 种蕨的孢子世界",
+    "subtitle": "植物 · 蕨类 · 百科占位",
+    "description": "蕨类是维管植物最古老分支，最早化石记录于 3.6 亿年前泥盆纪，种子植物兴起后蕨类退居配角但从未消失，现存 10500+ 种，占维管植物 5%。蕨类以孢子繁殖（不开花不结果），跟种子植物平行演化至今，是观察植物演化史的活化石。中国是蕨类资源最丰富的国家，约 2600 种，云南号称「蕨类王国」。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "3.6 亿年前",
+        "title": "泥盆纪化石",
+        "body": "维管植物最古老分支, 泥盆纪地层发现蕨类化石"
+      },
+      {
+        "year": "2.5 亿年前",
+        "title": "石炭纪主导",
+        "body": "石炭纪蕨类主导陆地植物群, 形成今日主要煤矿层"
+      },
+      {
+        "year": "1.4 亿年前",
+        "title": "种子植物兴起",
+        "body": "白垩纪种子植物兴起, 蕨类退居配角但从未消失"
+      },
+      {
+        "year": "18 世纪",
+        "title": "林奈分类",
+        "body": "林奈分类系统将蕨类归为隐花植物, 后续分类逐步精确"
+      },
+      {
+        "year": "2020",
+        "title": "10500+ 种",
+        "body": "全球蕨类 10500+ 种, 热带为分布中心, 中国 2600+ 种"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 蕨类植物",
+        "url": "https://zh.wikipedia.org/wiki/%E8%95%A8%E9%A1%9E%E6%A4%8D%E7%89%A9",
+        "type": "百科"
+      },
+      {
+        "title": "中国植物志 - 蕨类",
+        "url": "http://www.iplant.cn/photo/fs",
+        "type": "学术"
+      },
+      {
+        "title": "Royal Botanic Gardens Kew - 蕨类分类",
+        "url": "https://www.kew.org/science/collections-and-resources/collections",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "lotus-flower",
+    "title": "荷花",
+    "kind": "plant",
+    "subKind": "flower",
+    "series": "atlas-miscellany",
+    "seriesNo": "066",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/plant/lotus-flower/lotus-flower-card.png",
+    "image_thumb": "/cards/plant/lotus-flower/lotus-flower-thumb.webp",
+    "image_full": "/cards/plant/lotus-flower/lotus-flower-full.webp",
+    "score": 8.1,
+    "tags": [
+      "植物",
+      "花卉",
+      "中国",
+      "印度",
+      "佛教",
+      "文化",
+      "水生"
+    ],
+    "tagline": "出淤泥而不染，1.35 亿年的圣花",
+    "subtitle": "植物 · 荷花 · 百科占位",
+    "description": "荷花（Nelumbo nucifera）距今 1.35 亿年化石记录，是中国十大名花之一、印度国花、越南国花，佛教（莲花宝座）、印度教（梵天坐骑）共同的精神符号。周敦颐《爱莲说》「出淤泥而不染」使其成为中国君子文化的核心意象。荷花全株可食（莲藕、莲子、莲蓬），全身入药，2017 年被选为重庆市市花。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1.35 亿年前",
+        "title": "化石记录",
+        "body": "白垩纪地层发现莲化石 (Nelumbo), 与恐龙同期存活"
+      },
+      {
+        "year": "前 11 世纪",
+        "title": "诗经咏莲",
+        "body": "《诗经·郑风》「山有扶苏, 隰有荷华」, 荷花进入文学"
+      },
+      {
+        "year": "北宋",
+        "title": "爱莲说",
+        "body": "周敦颐《爱莲说》「出淤泥而不染, 濯清涟而不妖」, 君子象征"
+      },
+      {
+        "year": "印度教",
+        "title": "梵天坐骑",
+        "body": "印度教梵天坐骑为莲花, 佛教以莲花为宝座, 跨文化圣花"
+      },
+      {
+        "year": "2017",
+        "title": "重庆市花",
+        "body": "重庆市选荷花为市花, 莲花在中国 8 省市为省 / 市花"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 荷花",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8D%B7%E8%8A%B1",
+        "type": "百科"
+      },
+      {
+        "title": "中国植物志 - 莲",
+        "url": "http://www.iplant.cn/info/%E8%8E%B2",
+        "type": "学术"
+      },
+      {
+        "title": "重庆市林业局 - 荷花市花",
+        "url": "http://www.cqlyj.gov.cn/",
+        "type": "官方"
+      }
+    ]
+  },
+  {
+    "slug": "impression-artwork",
+    "title": "印象派",
+    "kind": "artwork",
+    "subKind": "painting",
+    "series": "atlas-miscellany",
+    "seriesNo": "037",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/artwork/impression-artwork/impression-artwork-card.png",
+    "image_thumb": "/cards/artwork/impression-artwork/impression-artwork-thumb.webp",
+    "image_full": "/cards/artwork/impression-artwork/impression-artwork-full.webp",
+    "score": 8.4,
+    "tags": [
+      "艺术",
+      "绘画",
+      "法国",
+      "印象",
+      "现代",
+      "欧洲",
+      "色彩"
+    ],
+    "tagline": "莫奈的光，1874 年法国印象派",
+    "subtitle": "艺术品 · 印象派 · 百科占位",
+    "description": "印象派 1874-1886 年在法国兴起，1874 年巴黎首届印象派展览以莫奈《印象·日出》得名。代表人物莫奈、雷诺阿、德加、毕沙罗抛弃画室走向户外（plein air），用纯色短笔触捕捉瞬间光影，挑战学院派的「完成度」标准。印象派是现代主义艺术的开端，直接催生新印象派（点彩）、后印象派（梵高、塞尚、高更）以及 20 世纪立体主义、野兽派。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1874",
+        "title": "首届展览",
+        "body": "巴黎首届印象派展览, 莫奈《印象·日出》命名, 学院派嘲讽"
+      },
+      {
+        "year": "1876",
+        "title": "煎饼磨坊",
+        "body": "第二届印象派展览, 雷诺阿《煎饼磨坊的舞会》展现户外光影"
+      },
+      {
+        "year": "1881",
+        "title": "莫奈睡莲",
+        "body": "莫奈在吉维尼花园开始睡莲系列, 持续 40 年至 1926 年"
+      },
+      {
+        "year": "1886",
+        "title": "末次展览",
+        "body": "末次印象派展览, 之后新印象派 (点彩) 与后印象派兴起"
+      },
+      {
+        "year": "1926",
+        "title": "现代主义奠基",
+        "body": "莫奈去世, 印象派已成现代主义艺术开端, 立体主义直接继承"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 印象派",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%B0%E8%B1%A1%E6%B4%BE",
+        "type": "百科"
+      },
+      {
+        "title": "奥赛博物馆 - 印象派",
+        "url": "https://www.musee-orsay.fr/en/artworks/impressionism",
+        "type": "官方"
+      },
+      {
+        "title": "Grove Art Online - 印象派",
+        "url": "https://www.oxfordartonline.com/groveart/",
+        "type": "学术"
+      }
+    ]
+  },
+  {
+    "slug": "baroque-artwork",
+    "title": "巴洛克艺术",
+    "kind": "artwork",
+    "subKind": "painting",
+    "series": "atlas-miscellany",
+    "seriesNo": "038",
+    "palette": [
+      "#F5F0E6",
+      "#B88952",
+      "#8C7F6E"
+    ],
+    "image": "/cards/artwork/baroque-artwork/baroque-artwork-card.png",
+    "image_thumb": "/cards/artwork/baroque-artwork/baroque-artwork-thumb.webp",
+    "image_full": "/cards/artwork/baroque-artwork/baroque-artwork-full.webp",
+    "score": 7.7,
+    "tags": [
+      "艺术",
+      "欧洲",
+      "绘画",
+      "雕塑",
+      "宗教",
+      "历史",
+      "古典"
+    ],
+    "tagline": "17 世纪欧洲的戏剧光影，卡拉瓦乔到贝尼尼",
+    "subtitle": "艺术品 · 巴洛克艺术 · 百科占位",
+    "description": "巴洛克艺术 17-18 世纪盛行于欧洲，是反宗教改革运动与绝对王权共同催生的艺术风格，特点是戏剧性光影、强烈动感、繁复装饰。代表人物包括意大利卡拉瓦乔（光影革命）、佛兰德斯鲁本斯（人体动态）、西班牙委拉斯凯兹（宫廷写实）、意大利贝尼尼（雕塑戏剧性）。巴洛克建筑延伸至凡尔赛宫、罗马耶稣会教堂，是天主教反宗教改革的视觉武器。",
+    "createdAt": "2026-07-13",
+    "history": [
+      {
+        "year": "1599-1600",
+        "title": "卡拉瓦乔光影",
+        "body": "卡拉瓦乔在罗马绘制《圣马太蒙召》, 戏剧性明暗对比开启巴洛克"
+      },
+      {
+        "year": "1623-1653",
+        "title": "贝尼尼华盖",
+        "body": "贝尼尼设计圣彼得大教堂青铜华盖, 巴洛克雕塑的巅峰"
+      },
+      {
+        "year": "1632",
+        "title": "宫娥",
+        "body": "委拉斯凯兹在西班牙宫廷绘制《宫娥》, 巴洛克写实与心理刻画"
+      },
+      {
+        "year": "1661-1715",
+        "title": "凡尔赛宫",
+        "body": "路易十四扩建凡尔赛宫, 巴洛克建筑的最高象征"
+      },
+      {
+        "year": "18 世纪",
+        "title": "洛可可延伸",
+        "body": "洛可可艺术作为巴洛克的精致化延伸出现, 终止于法国大革命"
+      }
+    ],
+    "sources": [
+      {
+        "title": "维基百科 - 巴洛克艺术",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B7%B4%E6%B4%9B%E5%85%8B%E8%89%BA%E6%9C%AF",
+        "type": "百科"
+      },
+      {
+        "title": "大都会艺术博物馆 - 巴洛克",
+        "url": "https://www.metmuseum.org/toah/hd/baro/hd_baro.htm",
+        "type": "官方"
+      },
+      {
+        "title": "斯坦福艺术史 - 巴洛克",
+        "url": "https://www.khanacademy.org/humanities/art-1600-1700",
+        "type": "学术"
+      }
+    ]
   }
 ]

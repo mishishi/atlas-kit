@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "round": "R87",
+    "createdAt": "2026-07-13",
+    "goal": "ship 24 cards content, 9 kind 36 拉到 39 (catalog 1000 → 1024)",
+    "strategy": "9 短板 kind 各 3 张 (festival/object/animal/plant/artwork/mythology/movie/anime/disease 各 +3) = 27 → 24 with 3 拉齐 polish. 走 topic diversity 不加新 subKind"
+  },
+  "cards": [
+    { "slug": "ramadan-fest", "title": "斋月", "kind": "festival", "subKind": "foreign", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "hanukkah-fest", "title": "光明节", "kind": "festival", "subKind": "foreign", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "day-of-dead-fest", "title": "墨西哥亡灵节", "kind": "festival", "subKind": "foreign", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "fan-obj", "title": "扇子", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "046" },
+    { "slug": "hourglass-obj", "title": "沙漏", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "047" },
+    { "slug": "lantern-obj", "title": "灯笼", "kind": "object", "subKind": "traditional", "series": "atlas-miscellany", "seriesNo": "048" },
+    { "slug": "orangutan-animal", "title": "红毛猩猩", "kind": "animal", "subKind": "mammal", "series": "wild-fauna-atlas", "seriesNo": "037" },
+    { "slug": "flamingo-animal", "title": "火烈鸟", "kind": "animal", "subKind": "bird", "series": "wild-fauna-atlas", "seriesNo": "038" },
+    { "slug": "sea-turtle-animal", "title": "海龟", "kind": "animal", "subKind": "reptile", "series": "wild-fauna-atlas", "seriesNo": "039" },
+    { "slug": "fern-plant", "title": "蕨类", "kind": "plant", "subKind": "grass", "series": "atlas-miscellany", "seriesNo": "065" },
+    { "slug": "lotus-flower", "title": "荷花", "kind": "plant", "subKind": "flower", "series": "atlas-miscellany", "seriesNo": "066" },
+    { "slug": "bamboo-plant", "title": "竹子", "kind": "plant", "subKind": "grass", "series": "atlas-miscellany", "seriesNo": "067" },
+    { "slug": "impression-artwork", "title": "印象派", "kind": "artwork", "subKind": "painting", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "baroque-artwork", "title": "巴洛克艺术", "kind": "artwork", "subKind": "painting", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "ukiyo-e-artwork", "title": "浮世绘", "kind": "artwork", "subKind": "painting", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "ra-myth", "title": "拉神", "kind": "mythology", "subKind": "egyptian", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "isis-myth", "title": "伊西斯", "kind": "mythology", "subKind": "egyptian", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "quetzalcoatl-myth", "title": "羽蛇神", "kind": "mythology", "subKind": "americas", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "noir-movie", "title": "黑色电影", "kind": "movie", "subKind": "hollywood", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "neorealism-movie", "title": "意大利新现实主义", "kind": "movie", "subKind": "european", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "samurai-movie", "title": "武士电影", "kind": "movie", "subKind": "japanese", "series": "atlas-miscellany", "seriesNo": "039" },
+    { "slug": "shojo-anime", "title": "少女漫画改编动画", "kind": "anime", "subKind": "shoujo", "series": "atlas-miscellany", "seriesNo": "037" },
+    { "slug": "kodomo-anime", "title": "子供向动画", "kind": "anime", "subKind": "shoujo", "series": "atlas-miscellany", "seriesNo": "038" },
+    { "slug": "scabies-disease", "title": "疥疮", "kind": "disease", "subKind": "infectious", "series": "atlas-miscellany", "seriesNo": "039" }
+  ]
+}

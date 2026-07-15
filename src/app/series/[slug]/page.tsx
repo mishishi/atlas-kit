@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { ArrowLeft, BookMarked, Sparkles } from "lucide-react";
+import { ArrowLeft, BookMarked, Sparkles, Tag } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllSeries, getSeriesBySlug } from "@/lib/data";
@@ -212,6 +212,54 @@ export default function SeriesDetail({ params }: { params: { slug: string } }) {
           </div>
         </section>
       )}
+
+      {/* R88 (2026-07-15): 主题分布 — top 12 tags across this series's
+          cards, sorted by frequency. Complements the curated
+          `series.themeTags` shown in the header (editor-set, ~3-5 tags)
+          by surfacing the actual content distribution visitors will
+          see when they scroll the grid. Each pill links to
+          /cards?tag=X with kind filter dropped, so the user can
+          discover the tag across the full catalog, not just this
+          series. Same pill style as the /search input's tag
+          suggestions so the pattern is recognizable across surfaces. */}
+      {(() => {
+        const tagCounts = new Map<string, number>();
+        for (const c of series.cards) {
+          for (const t of c.tags ?? []) {
+            tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
+          }
+        }
+        const topTags = [...tagCounts.entries()]
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+          .slice(0, 12);
+        if (topTags.length === 0) return null;
+        return (
+          <section className="mb-10">
+            <div className="flex items-baseline justify-between mb-4">
+              <h2 className="font-serif text-xl font-bold flex items-center gap-2">
+                <Tag className="h-4 w-4 text-gold-deep" aria-hidden="true" />
+                主题分布
+              </h2>
+              <span className="text-xs text-muted-foreground tabular-nums">
+                按 series 内 cards 频率 · 取前 {topTags.length}
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {topTags.map(([tag, count]) => (
+                <Link
+                  key={tag}
+                  href={`/cards?tag=${encodeURIComponent(tag)}`}
+                  aria-label={`查看标签 ${tag} 的全部图鉴 (${count} 张)`}
+                  className="inline-flex items-center gap-1.5 min-h-[36px] px-3 py-1.5 rounded-full text-sm font-medium border border-border bg-card hover:border-gold-deep hover:bg-gold-deep/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+                >
+                  <span>{tag}</span>
+                  <span className="text-[10px] tabular-nums text-muted-foreground">×{count}</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
 
       {/* Tabs + grid */}
       <SeriesDetailTabs cards={series.cards} />

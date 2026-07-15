@@ -131,8 +131,16 @@ export default async function CardDetail({
 
   // Map a source's `type` string to an icon. Default to BookOpen
   // for any unrecognized type so the UI never falls back to nothing.
+  // R88 (2026-07-15): type-specific icon color (gold-deep for authoritative
+  // types — 学术/机构/博物馆/官方 — muted for generic — 百科/新闻/其他).
+  // Pairs with the type badge below; both encode the same authority
+  // hierarchy so a glance at the source list tells you which ones
+  // are curator-grade vs. general-reference.
   function SourceIcon({ type }: { type?: string }) {
-    const iconClass = "h-4 w-4 text-muted-foreground group-hover:text-gold-deep transition-colors shrink-0";
+    const authorityTypes = new Set(["学术", "机构", "博物馆", "官方"]);
+    const isAuthority = type ? authorityTypes.has(type) : false;
+    const baseColor = isAuthority ? "text-gold-deep" : "text-muted-foreground";
+    const iconClass = `h-4 w-4 ${baseColor} group-hover:text-gold-deep transition-colors shrink-0`;
     switch (type) {
       case "百科": return <BookOpen className={iconClass} aria-hidden="true" />;
       case "学术": return <GraduationCap className={iconClass} aria-hidden="true" />;
@@ -1200,7 +1208,20 @@ export default async function CardDetail({
                 >
                   <SourceIcon type={s.type} />
                   <span className="font-serif text-sm font-medium truncate">{s.title}</span>
-                  <span className="hidden sm:inline text-[10px] uppercase tracking-[0.15em] text-muted-foreground/70 shrink-0">
+                  {/* R88 (2026-07-15): 权威度 badge — academic/institutional/
+                      museum/official sources get gold-deep pill, generic
+                      (百科/新闻) get muted pill. Same visual hierarchy as
+                      the SourceIcon color above. text-[10px] to keep it
+                      metadata-sized, not body-sized. */}
+                  <span
+                    aria-label={s.type === "学术" || s.type === "机构" || s.type === "博物馆" || s.type === "官方" ? `权威来源 · ${s.type}` : `参考来源 · ${s.type}`}
+                    className={cn(
+                      "hidden sm:inline-block text-[10px] font-medium tracking-[0.1em] px-2 py-0.5 rounded-md shrink-0",
+                      s.type === "学术" || s.type === "机构" || s.type === "博物馆" || s.type === "官方"
+                        ? "bg-gold-deep/10 text-gold-deep ring-1 ring-gold-deep/20"
+                        : "bg-muted text-muted-foreground"
+                    )}
+                  >
                     {s.type}
                   </span>
                   {s.url && (

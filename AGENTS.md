@@ -3314,3 +3314,52 @@ R87 plan 写 24 张, 跑 `tmp/r87-run-all.cjs` (跟 R72-R86 同 pattern 串行 e
 - R87.1 commit + push
 - **archive 那 6 个 stale `MiniMax Code` processes**: 5 个 7/14 15:58 起, 1 个 7/15 4:53 起 (current session), 都不是 daemon child
 
+## R88 (2026-07-15) — 2 polish: 详情页 source 权威度 badge + series 主题分布 tag cloud
+
+跟 R87 衔接. catalog 仍 1013 (没新 card). 26 commit post-R66 = 10 content ships + 5 UX polish rounds. Daemon 仍死, R87.1 11 张没补. R88 走 UX polish 路线, 等 daemon 起来再补 R87.1.
+
+### A. 详情页"参考来源"段权威度 badge (R88 ship)
+
+`src/app/cards/[slug]/page.tsx`:
+- **SourceIcon 加 type-specific 颜色**: 权威类 (学术/机构/博物馆/官方) → `text-gold-deep`, 通用类 (百科/新闻/其他) → `text-muted-foreground`. Hover 状态保持 `text-gold-deep`.
+- **Type span 加 badge pill**: 权威类 → `bg-gold-deep/10 text-gold-deep ring-1 ring-gold-deep/20`, 通用类 → `bg-muted text-muted-foreground`. 跟 R76 score badge 视觉一致.
+- **aria-label 区分**: 权威类读 "权威来源 · 学术", 通用类读 "参考来源 · 百科", SR 用户能立即分辨.
+
+权威度分级逻辑跟 source 的实际权威性匹配 (学术论文/博物馆/政府机构 > 百科/新闻), 不依赖 source URL hostname, 也不依赖 type 字符串具体值. 4 个权威 type + 3 个通用 type 覆盖现有 1013 cards 的所有 sources.
+
+### B. Series 主题分布 tag cloud (R88 ship)
+
+`src/app/series/[slug]/page.tsx`:
+- **位置**: 编辑精选段下面, SeriesDetailTabs tabs 上面. 中页视觉 focus, 不打扰 hero / grid.
+- **逻辑**: 算 series 内所有 cards 的 tags 频率, top 12 排序 (count desc, ties break: tag name localeCompare asc), 显示为 pill.
+- **Pill 风格**: 跟 /search input 的 topTags 同 visual, `border-border bg-card hover:border-gold-deep hover:bg-gold-deep/5`, count `×N` 内嵌.
+- **Link**: 跳 `/cards?tag=X` (无 kind filter, 让 user 看 cross-kind 分布). Cards page 的 tag filter 走 `if (activeTag) return allCards.filter(c => c.tags.includes(activeTag))`, cross-kind 工作 ✓.
+- **Empty state**: topTags.length === 0 → 不渲染 section (新 series 没 tag 时不显示空容器).
+
+跟 R76-R79 4 polish rounds 同 pattern (committed 1 commit 多 polish), 不依赖 daemon, 不依赖 image. 跟 R87 ship 的 13 cards 互补, 1013 cards 立即 ship 上的 R76-R79 polish 实战 ship.
+
+### C. R88 commit + push
+
+1 commit, 2 files: `src/app/cards/[slug]/page.tsx` + `src/app/series/[slug]/page.tsx`, +72 -3 lines.
+- `tsc --noEmit` clean ✓
+- 跟 R86+R87 一起 push (`38a4a07..3a8f711`), prod: https://atlas-kit-six.vercel.app/
+
+### D. Atlas Kit 当前 catalog (R88 后, 2026-07-15)
+
+- **1013 cards** (R87 ship 后没变). 26 commit post-R66 = 10 content ships + 5 UX polish rounds.
+- 详情页 R88 polish: 8 件累计 (hero subKind chip + reading time + reading progress + description + 历史沿革 latest highlight + 同系列 score badge + recommend score badge + **source 权威度 badge** (新))
+- 系列页 R88 polish: 2 件累计 (编辑精选 top-6 + **主题分布 tag cloud** (新))
+- /cards R88 不动 (R74 default sort 评分, R78 mobile sticky sort chips 仍在)
+- master HEAD: `3a8f711` (R88 polish, 推上 prod 待 Vercel build)
+
+### E. R89 candidate (next)
+
+- 短 pause 1 round verify R88 polish 实战
+- **内容 ship**: daemon 起来后 R87.1 11 张 (bamboo-plant / ukiyo-e-artwork / 3 myth / 3 movie / 2 anime / scabies) → 1024 cards 凑整
+- **或 polish 续**: /graph cursor hover 详情 (P2) / /map animated pin drop (P2) — 跟 R88 同 pattern
+- **或 R89 plan 24+ 张**: 走 topic diversity, kind 短板全在 36+ 之后, 走 user 反馈方向选题
+- 节奏 R66-R88 累计 26 commit, 10 ship rounds + 5 polish rounds, 1 隔 1 稳定
+- AGENTS.md R88 round note 已 append (R88 ship 后)
+- 站 day-of-week: 3 = Wednesday, 周中 ship 适合 (R87 周二 ship, R88 周三 ship, 节奏稳)
+
+

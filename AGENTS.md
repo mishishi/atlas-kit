@@ -3362,4 +3362,51 @@ R87 plan 写 24 张, 跑 `tmp/r87-run-all.cjs` (跟 R72-R86 同 pattern 串行 e
 - AGENTS.md R88 round note 已 append (R88 ship 后)
 - 站 day-of-week: 3 = Wednesday, 周中 ship 适合 (R87 周二 ship, R88 周三 ship, 节奏稳)
 
+## R89 (2026-07-16) — 2 polish: /map pin drop animation + /graph hover panel description preview
+
+跟 R88 衔接. catalog 仍 1013 (没新 card, daemon 仍死 R87.1 没补). 27 commit post-R66 = 10 content ships + 6 UX polish rounds. R89 走 polish 续路线.
+
+### A. /map pin drop animation (R89 ship)
+
+`src/app/globals.css` + `src/components/map-view.tsx`:
+- **`@keyframes atlas-pin-drop`**: translateY -48px → 0 + scale 0.6 → 1.08 → 0.97 → 1 + opacity 0 → 1, 0.6s `cubic-bezier(0.34, 1.56, 0.64, 1)` (back-out easing 给弹跳感)
+- **inner div 上 animation**: Leaflet 拥有 `.atlas-marker` 父级的 `transform: translate3d()` 做定位, 父级动画会跟 Leaflet 冲突每帧打架. 改 inner div 跑动画, 父级 Leaflet 移动, child 在内部弹跳.
+- **staggered 60ms per pin**: `Math.min(idx * 60, 720)` 给每张 pin 不同 animation-delay, 12 张错落 60ms drop 完 (~1.3s total). 720ms cap 防止 idx 大时延迟太久.
+- **`prefers-reduced-motion: reduce` query**: 关 animation, 尊重 a11y preference.
+- **`will-change: transform, opacity`**: GPU 提示, 12 张同时动画不卡.
+
+效果: 12 张 pin 错落从天上掉下来, 落地轻微弹一下. 不再是"地图一加载就 12 张同时出现".
+
+### B. /graph hover panel description preview (R89 ship)
+
+`src/lib/graph.ts` + `src/components/graph-view.tsx`:
+- **`GraphNode.preview`** 新字段: buildGraphData 时 `truncateAtBoundary(c.description, 80)`, 把 card.description 切到 80 chars 附近
+- **`truncateAtBoundary` helper**: 找最近的 `。/！/?/.` 句号边界, 在 `maxLen * 0.5` 之后最近一个. 没找到 → hard slice 80 chars. 一律加 `...` 后缀
+- **Panel 渲染**: `text-xs leading-relaxed text-foreground/80 line-clamp-4`, 在 seriesNo 下面, button 上面. Hover graph 节点就能看到 1 句话预览, 决定要不要点进详情.
+
+效果: graph 节点的 hover panel 从"image + name + series + 跳转" → "image + name + series + **1 句描述** + 跳转". User 不用 navigate 出去就能判读这卡值不值得看.
+
+### C. R89 commit + push
+
+1 commit, 4 files: `src/app/globals.css` + `src/components/map-view.tsx` + `src/lib/graph.ts` + `src/components/graph-view.tsx`, +93 -0 lines.
+- `tsc --noEmit` clean ✓
+- 跟 R88 round note 一起 push (`418b37a..d65d2e2`), prod: https://atlas-kit-six.vercel.app/
+
+### D. Atlas Kit 当前 catalog (R89 后, 2026-07-16)
+
+- **1013 cards** (没新 card, daemon 仍死). 27 commit post-R66 = 10 content ships + 6 UX polish rounds.
+- /map polish 累计: 12 card animated pin drop (R89)
+- /graph polish 累计: hover side panel + series filter + search (R37 v2) + description preview (R89)
+- 5 commits 待 Vercel build: R86+R86.1 + R87 + R88 polish + R88 round note + R89 polish
+- master HEAD: `d65d2e2` (R89 polish, 推上 prod)
+
+### E. R90 candidate (next)
+
+- 短 pause 1 round verify R89 polish 实战 (Vercel build 通了看 /map /graph 实际效果)
+- **内容 ship**: daemon 起来跑 R87.1 11 张 (凑 1024) + R90 plan 24+ 张新主题 (凑 1024+)
+- **polish 续 (剩余 P2)**: 暂无可 ship polish (R76-R89 4 连续 polish rounds 收口, 大部分常规 polish 完). 后续 user 反馈驱动.
+- 节奏 R66-R89 累计 27 commit, 10 ship rounds + 6 polish rounds, 1 隔 1 稳定
+- 站 day-of-week: 4 = Thursday, 周中 ship 适合
+- 长期: 节奏 R66-R89 23 commit / 17 days = 1.35 commit/day, 7.5 commit/week 节奏, 跟 R58 后 "5+ commit/week" 节奏吻合
+
 

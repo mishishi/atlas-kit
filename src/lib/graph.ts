@@ -47,6 +47,11 @@ export interface GraphNode {
   image: string | null; // 缩略图
   image_thumb?: string;
   visualScore?: number;
+  /** R89 (2026-07-16) — first ~80 chars of card.description, surfaced in
+   *  the hover side panel so the visitor can decide whether to click
+   *  through without leaving the graph. Truncated at the next sentence
+   *  boundary if the cut lands mid-character. */
+  preview?: string;
   // Force-graph layout coords (filled client-side after force sim)
   x?: number;
   y?: number;
@@ -148,6 +153,10 @@ export function getGraphData(): GraphData {
     image: c.image_thumb ?? c.image ?? null,
     image_thumb: c.image_thumb,
     visualScore: c.visualScore,
+    // R89 (2026-07-16): surface a 80-char description preview in the
+    // hover side panel. Cuts at the next 。/！/?/... boundary so the
+    // preview ends on a complete clause instead of mid-word.
+    preview: c.description ? truncateAtBoundary(c.description, 80) : undefined,
   }));
 
   // Links
@@ -187,4 +196,27 @@ export function getGraphStats(data: GraphData) {
     tagEdges: tagCount,
     totalEdges: data.links.length,
   };
+}
+
+// ─── R89 (2026-07-16) — preview helper ────────────────────────────
+/** Cut `text` at a sentence boundary closest to `maxLen`. Falls back
+ *  to a hard slice if no Chinese full-stop (。/！/?) is found in the
+ *  first `maxLen * 1.4` chars (long descriptive paragraphs without
+ *  internal punctuation). Always appends "..." when truncated so the
+ *  preview reads as a fragment, not a complete sentence. */
+function truncateAtBoundary(text: string, maxLen: number): string {
+  if (text.length <= maxLen) return text;
+  const window = Math.floor(maxLen * 1.4);
+  const slice = text.slice(0, window);
+  // Find last Chinese full-stop / question / exclamation within the slice
+  const lastStop = Math.max(
+    slice.lastIndexOf("。"),
+    slice.lastIndexOf("！"),
+    slice.lastIndexOf("？"),
+    slice.lastIndexOf("."),
+  );
+  if (lastStop >= maxLen * 0.5) {
+    return slice.slice(0, lastStop + 1) + "...";
+  }
+  return slice.slice(0, maxLen) + "...";
 }

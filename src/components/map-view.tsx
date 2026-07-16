@@ -214,6 +214,15 @@ export function MapView({ markers }: MapViewProps) {
         }).addTo(map);
 
         for (const m of markersRef.current) {
+          // R89 (2026-07-16): stagger the pin drop animation by 60ms per
+          // marker (i*60ms) so the 12 pins cascade in rather than all
+          // popping at once. The inner <div> carries the animation
+          // (see globals.css .atlas-marker > div), the outer .atlas-marker
+          // is owned by Leaflet's transform positioning. Cap stagger at
+          // 720ms (12 * 60) so the last pin still drops within ~1.3s
+          // total, not waiting a full second after the first.
+          const idx = markersRef.current.indexOf(m);
+          const dropDelay = Math.min(idx * 60, 720);
           const icon = L.divIcon({
             className: "atlas-marker",
             html: `<div style="
@@ -224,6 +233,7 @@ export function MapView({ markers }: MapViewProps) {
               display: flex; align-items: center; justify-content: center;
               color: hsl(38 30% 92%); font-family: serif; font-size: 16px;
               font-weight: 700;
+              animation-delay: ${dropDelay}ms;
             ">${escapeHtml(m.title).slice(0, 1)}</div>`,
             iconSize: [PIN_SIZE, PIN_SIZE],
             iconAnchor: [PIN_ANCHOR, PIN_ANCHOR],

@@ -310,6 +310,45 @@
     font-size: 10px;
     background: rgba(255, 255, 255, 0.7) !important;
   }
+
+  /* R89 (2026-07-16): atlas pin drop animation.
+     Each marker is rendered with className="atlas-marker" + a per-marker
+     inline animation-delay on its child <div> (set in map-view.tsx as
+     i * 60ms) so the 12 pins cascade in rather than all popping at once.
+     Falls back to no-animation if the user prefers reduced motion.
+
+     The animation runs on the inner <div>, not on .atlas-marker itself,
+     because Leaflet owns the .atlas-marker element's `transform: translate3d()`
+     to position the pin. Animating the parent's transform would fight
+     Leaflet's transform every frame and produce a stuttering landing.
+     The child <div> only carries the animation transform — Leaflet
+     moves the parent around, the child bounces within. */
+  @keyframes atlas-pin-drop {
+    0% {
+      transform: translateY(-48px) scale(0.6);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(0) scale(1.08);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-4px) scale(0.97);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+  .atlas-marker > div {
+    animation: atlas-pin-drop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    will-change: transform, opacity;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .atlas-marker > div {
+      animation: none;
+    }
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────

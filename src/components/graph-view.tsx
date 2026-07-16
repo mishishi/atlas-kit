@@ -391,6 +391,18 @@ export function GraphView({ data }: { data: GraphData }) {
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground text-center mt-1">
             No.{hoveredNode.seriesNo} · {hoveredNode.series.replace(/-/g, " ")}
           </p>
+          {/* R89 (2026-07-16): 80-char description preview so the visitor
+              can decide whether to click through without leaving the
+              graph. Cuts at sentence boundary (see truncateAtBoundary
+              in lib/graph.ts) so the preview always reads as a complete
+              clause, not a mid-word fragment. Hidden when the node
+              carries no preview (e.g. an older graph cache from before
+              this field landed). */}
+          {hoveredNode.preview && (
+            <p className="mt-3 text-xs leading-relaxed text-foreground/80 line-clamp-4 text-center">
+              {hoveredNode.preview}
+            </p>
+          )}
           <button
             type="button"
             onClick={() => router.push(`/cards/${hoveredNode.id}`)}
